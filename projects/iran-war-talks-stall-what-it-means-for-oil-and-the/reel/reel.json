@@ -1,0 +1,82 @@
+{
+ "v": 2,
+ "master_mtime": 1794548558,
+ "ok": true,
+ "plan": {
+  "beats": [
+   {
+    "type": "vo",
+    "text": "Washington says it controls the Strait of Hormuz. Iran says it's closed. So, is it open?",
+    "scene": "s01",
+    "card": "OPEN OR CLOSED?",
+    "wav": "/home/mundax/Documents/REL/ExplainerStudio/projects/iran-war-talks-stall-what-it-means-for-oil-and-the/reel/voice/b0.wav",
+    "t0": 0.0,
+    "dur": 5.66,
+    "dur_v": 5.66,
+    "lip_risk": false
+   },
+   {
+    "type": "vo",
+    "text": "Before the war, about a hundred and thirty ships crossed every day. Recently? Eight. Eight very brave ships.",
+    "scene": "s05",
+    "card": "SHIPS: A TRICKLE",
+    "wav": "/home/mundax/Documents/REL/ExplainerStudio/projects/iran-war-talks-stall-what-it-means-for-oil-and-the/reel/voice/b1.wav",
+    "t0": 5.66,
+    "dur": 7.264,
+    "dur_v": 7.264,
+    "lip_risk": false
+   },
+   {
+    "type": "bite",
+    "scene": "s13",
+    "i": 2,
+    "speaker": "fatima",
+    "text": "So we pay higher gas prices to wait for a deal that might not happen. Classic economic strategy.",
+    "start": 12.513,
+    "end": 17.674,
+    "name": "Fatima",
+    "role": "",
+    "tag": true,
+    "ref": "s13#2",
+    "card": "",
+    "win_start": 12.453,
+    "lip_risk": false,
+    "t0": 12.924,
+    "dur": 5.361,
+    "dur_v": 5.361
+   },
+   {
+    "type": "vo",
+    "text": "Tehran wants sanctions lifted and a wider ceasefire first. A draft deal is ready. Getting both sides to sign it is the hard part.",
+    "scene": "s04",
+    "card": "CONDITIONS FIRST",
+    "wav": "/home/mundax/Documents/REL/ExplainerStudio/projects/iran-war-talks-stall-what-it-means-for-oil-and-the/reel/voice/b3.wav",
+    "t0": 18.285,
+    "dur": 8.3,
+    "dur_v": 8.3,
+    "lip_risk": false
+   },
+   {
+    "type": "vo",
+    "text": "So, is the strait open? Washington says yes, Tehran says no, and the tankers would like a second opinion.",
+    "scene": "s12",
+    "card": "",
+    "wav": "/home/mundax/Documents/REL/ExplainerStudio/projects/iran-war-talks-stall-what-it-means-for-oil-and-the/reel/voice/b4.wav",
+    "t0": 26.585,
+    "dur": 7.259,
+    "dur_v": 7.259,
+    "lip_risk": false
+   }
+  ],
+  "hook": "Is Hormuz Open? Depends Who Asks",
+  "cta": "Watch the full breakdown on our YouTube channel, link in bio.",
+  "caption": "Washington says it controls the Strait of Hormuz. Iran says it's closed. Ship traffic has collapsed while a draft deal waits for signatures. So is it open? Depends who you ask. \ud83d\udee2\ufe0f Watch the full breakdown on our YouTube channel. Link in bio.",
+  "hashtags": [
+   "#StraitOfHormuz",
+   "#OilPrices",
+   "#Geopolitics",
+   "#MiddleEastNews",
+   "#EnergyMarkets"
+  ]
+ }
+}

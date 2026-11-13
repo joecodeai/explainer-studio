@@ -1,0 +1,9 @@
+{
+ "name": "rival_miguel",
+ "design": "Male, early 40s, crisp Southern European accent, mid-high pitch, bright timbre, brisk pace. Speaking naturally in English, expressive and conversational.",
+ "language": "English",
+ "instruct": "Male, early 40s, crisp Southern European accent, mid-mid pitch, bright timbre, brisk pace. Speaking naturally in English, expressive and conversational. IMPORTANT: this is clearly an adult MAN's voice \u2014 low-to-mid male pitch, masculine chest resonance, never a female or child voice.",
+ "f0": 146.0,
+ "gender": "male",
+ "redesigns": 0
+}

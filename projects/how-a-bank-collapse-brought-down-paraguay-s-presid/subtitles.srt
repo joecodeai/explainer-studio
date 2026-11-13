@@ -1,0 +1,475 @@
+1
+00:00:00,000 --> 00:00:01,900
+What happens when three million people lose
+
+2
+00:00:01,800 --> 00:00:03,000
+their life savings overnight?
+
+3
+00:00:03,399 --> 00:00:06,099
+Meet Ueno, a homegrown digital bank that
+
+4
+00:00:06,000 --> 00:00:08,299
+became deeply embedded in Paraguay's payments
+
+5
+00:00:08,199 --> 00:00:08,679
+system.
+
+6
+00:00:08,926 --> 00:00:11,186
+So this app just won over half the country?
+
+7
+00:00:11,427 --> 00:00:14,467
+Exactly! It offered a sleek interface for
+
+8
+00:00:14,367 --> 00:00:16,487
+those underserved by brick-and-mortar banks.
+
+9
+00:00:16,771 --> 00:00:17,591
+Until it didn't?
+
+10
+00:00:17,686 --> 00:00:19,905
+Until regulators stepped in. The solvency
+
+11
+00:00:19,805 --> 00:00:21,925
+ratio fell below half the legal minimum.
+
+12
+00:00:22,276 --> 00:00:25,256
+Reuters reported around $850 million in
+
+13
+00:00:25,156 --> 00:00:26,976
+public funds administered by the lender.
+
+14
+00:00:27,370 --> 00:00:29,510
+We just shifted to a resolution process
+
+15
+00:00:29,410 --> 00:00:30,630
+on November 3rd.
+
+16
+00:00:30,719 --> 00:00:32,699
+Which means your mobile app, cards, and
+
+17
+00:00:32,599 --> 00:00:34,939
+transfers are completely frozen right now.
+
+18
+00:00:34,996 --> 00:00:37,096
+But the Central Bank inspectors found poorly
+
+19
+00:00:36,996 --> 00:00:38,956
+documented loans to connected companies!
+
+20
+00:00:39,370 --> 00:00:41,430
+Wait, can people just get their money back?
+
+21
+00:00:41,630 --> 00:00:44,950
+Deposit insurance covers up to roughly $35,000
+
+22
+00:00:44,850 --> 00:00:45,589
+per customer.
+
+23
+00:00:45,807 --> 00:00:46,947
+Does that mean everyone is safe?
+
+24
+00:00:47,188 --> 00:00:49,747
+It covers the full balances of an estimated
+
+25
+00:00:49,647 --> 00:00:52,668
+97 percent. The rest are waiting.
+
+26
+00:00:53,320 --> 00:00:55,840
+When branches closed and apps stopped working,
+
+27
+00:00:56,179 --> 00:00:58,160
+a rush to open accounts elsewhere disrupted
+
+28
+00:00:58,060 --> 00:00:59,259
+other banks' systems.
+
+29
+00:00:59,653 --> 00:01:02,573
+Demonstrators marched through Asunción demanding
+
+30
+00:01:02,473 --> 00:01:04,693
+their savings and accountability from the
+
+31
+00:01:04,593 --> 00:01:04,953
+government.
+
+32
+00:01:05,346 --> 00:01:08,286
+The lower house voted 78 in favor of impeachment
+
+33
+00:01:08,186 --> 00:01:09,406
+on November 5th.
+
+34
+00:01:09,381 --> 00:01:11,522
+But President Peña submitted his resignation
+
+35
+00:01:11,422 --> 00:01:14,002
+a day earlier! Why push forward?
+
+36
+00:01:14,269 --> 00:01:16,509
+Because the Senate proceeded with the trial.
+
+37
+00:01:16,829 --> 00:01:18,689
+The vote was 44 to zero.
+
+38
+00:01:19,074 --> 00:01:21,493
+A unanimous removal? That's a political
+
+39
+00:01:21,393 --> 00:01:21,974
+landslide!
+
+40
+00:01:22,479 --> 00:01:24,899
+Lawmakers accused Peña's government of allowing
+
+41
+00:01:24,799 --> 00:01:28,179
+$355 million from the state pension fund
+
+42
+00:01:28,079 --> 00:01:30,219
+to be deposited beyond legal limits.
+
+43
+00:01:30,579 --> 00:01:32,679
+So does the resignation save his legal standing?
+
+44
+00:01:32,915 --> 00:01:35,974
+Under Article 189, resignation would grant
+
+45
+00:01:35,875 --> 00:01:37,955
+a lifetime Senate seat and immunity.
+
+46
+00:01:38,390 --> 00:01:39,849
+And because they impeached him instead?
+
+47
+00:01:40,109 --> 00:01:42,648
+Precisely. He was stripped of protections
+
+48
+00:01:42,548 --> 00:01:44,869
+and placed under house arrest on November
+
+49
+00:01:44,769 --> 00:01:45,508
+6th.
+
+50
+00:01:45,706 --> 00:01:47,846
+Prosecutors charged him with breach of trust
+
+51
+00:01:47,746 --> 00:01:49,846
+and administration for personal gain the
+
+52
+00:01:49,746 --> 00:01:50,566
+very next day.
+
+53
+00:01:50,823 --> 00:01:52,983
+Peña's attorney argued that ousting a president
+
+54
+00:01:52,883 --> 00:01:55,443
+during a bank resolution could destabilize
+
+55
+00:01:55,343 --> 00:01:56,343
+the financial system.
+
+56
+00:01:56,616 --> 00:01:58,156
+Did his own party abandon him?
+
+57
+00:01:58,362 --> 00:02:00,962
+Former president Horacio Cartes withdrew
+
+58
+00:02:00,862 --> 00:02:03,822
+support, calling it the plundering of pensioners'
+
+59
+00:02:03,802 --> 00:02:04,062
+money.
+
+60
+00:02:04,348 --> 00:02:05,408
+So he's completely alone?
+
+61
+00:02:05,674 --> 00:02:07,813
+He sent lawyers to the Senate but refused
+
+62
+00:02:07,713 --> 00:02:10,414
+to attend himself. A political isolation.
+
+63
+00:02:10,866 --> 00:02:13,286
+What about Carlos Carvallo? He led the central
+
+64
+00:02:13,186 --> 00:02:14,106
+bank after all.
+
+65
+00:02:14,199 --> 00:02:16,619
+He was also charged with breach of trust
+
+66
+00:02:16,519 --> 00:02:19,519
+and producing false documents. Pretrial
+
+67
+00:02:19,419 --> 00:02:20,559
+detention approved.
+
+68
+00:02:20,813 --> 00:02:22,932
+So both the president and the regulator
+
+69
+00:02:22,832 --> 00:02:23,553
+are down?
+
+70
+00:02:23,781 --> 00:02:26,300
+Investigators are examining whether officials
+
+71
+00:02:26,200 --> 00:02:28,201
+failed to act on warning signs.
+
+72
+00:02:28,566 --> 00:02:30,786
+A judge ordered Peña held at a military
+
+73
+00:02:30,686 --> 00:02:33,106
+facility, marking the second Paraguayan
+
+74
+00:02:33,006 --> 00:02:35,026
+president removed via impeachment since
+
+75
+00:02:34,926 --> 00:02:35,666
+1989.
+
+76
+00:02:36,259 --> 00:02:37,099
+Who takes over now?
+
+77
+00:02:37,277 --> 00:02:39,877
+Vice-President Pedro Alliana was sworn in
+
+78
+00:02:39,777 --> 00:02:42,837
+to complete the term until August 2028.
+
+79
+00:02:43,083 --> 00:02:44,143
+Is he safe from scrutiny?
+
+80
+00:02:44,450 --> 00:02:46,870
+He is also under investigation in connection
+
+81
+00:02:46,770 --> 00:02:49,590
+with the bank. Political uncertainty remains.
+
+82
+00:02:50,093 --> 00:02:52,073
+The Central Bank estimates the guarantee
+
+83
+00:02:51,973 --> 00:02:54,873
+covers around 97 percent of Ueno's customers.
+
+84
+00:02:55,259 --> 00:02:57,439
+Authorities have promised that depositors
+
+85
+00:02:57,339 --> 00:02:58,879
+will be reimbursed entirely.
+
+86
+00:02:59,308 --> 00:03:00,908
+How much has been returned so far?
+
+87
+00:03:01,124 --> 00:03:04,744
+The equivalent of $160 million paid out
+
+88
+00:03:04,644 --> 00:03:07,044
+to nearly 1.2 million savers.
+
+89
+00:03:07,363 --> 00:03:09,923
+That's progress, but analysts warn the damage
+
+90
+00:03:09,823 --> 00:03:11,242
+to reputation may linger.
+
+91
+00:03:11,619 --> 00:03:13,979
+This is the moment when Paraguay must demonstrate
+
+92
+00:03:13,879 --> 00:03:15,719
+that its institutions are functioning.
+
+93
+00:03:16,069 --> 00:03:19,009
+Peña denied wrongdoing, while a state electricity
+
+94
+00:03:18,909 --> 00:03:21,469
+worker called the crisis an enormous betrayal
+
+95
+00:03:21,370 --> 00:03:21,989
+of trust.
+
+96
+00:03:22,330 --> 00:03:24,110
+How do people even describe this mess?
+
+97
+00:03:24,457 --> 00:03:26,695
+An economist called it a modern-day Bonnie
+
+98
+00:03:26,596 --> 00:03:29,736
+and Clyde. They didn't rob us with a pistol.
+
+99
+00:03:30,110 --> 00:03:31,730
+They robbed us with an app? Seriously?
+
+100
+00:03:32,144 --> 00:03:35,584
+Exactly. A sleek app, a hidden shortfall,
+
+101
+00:03:35,844 --> 00:03:37,584
+and a political domino effect.
+
+102
+00:03:37,990 --> 00:03:39,969
+So no more lifetime senate seats for failed
+
+103
+00:03:39,870 --> 00:03:40,250
+presidents?
+
+104
+00:03:40,694 --> 00:03:43,854
+Impeachment strips that protection. Democracy
+
+105
+00:03:43,754 --> 00:03:45,394
+isn't a revolving door.
+
+106
+00:03:45,638 --> 00:03:47,198
+I guess keeping your accounts safe matters
+
+107
+00:03:47,098 --> 00:03:48,217
+more than political perks?
+
+108
+00:03:48,539 --> 00:03:51,259
+Without public funds, the whole system collapses.
+
+109
+00:03:51,737 --> 00:03:52,639
+It really does.
+
+110
+00:03:53,056 --> 00:03:55,196
+Next time I'll just stick to physical branches
+
+111
+00:03:55,096 --> 00:03:56,296
+and paper receipts.
+
+112
+00:03:56,607 --> 00:03:59,807
+Better yet, check your solvency ratios before
+
+113
+00:03:59,707 --> 00:04:00,447
+you go viral.
+
+114
+00:04:00,744 --> 00:04:02,944
+Don't worry, my app is perfectly regulated.
+
+115
+00:04:03,224 --> 00:04:04,784
+I swear on my coffee machine!
+
+116
+00:04:05,183 --> 00:04:06,843
+That's the story of how a banking glitch
+
+117
+00:04:06,743 --> 00:04:08,723
+toppled a government. Thanks for watching!
+
+118
+00:04:08,864 --> 00:04:10,784
+Like and subscribe before I check my own
+
+119
+00:04:10,684 --> 00:04:11,664
+bank account in panic.

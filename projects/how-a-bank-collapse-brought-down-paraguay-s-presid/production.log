@@ -1,0 +1,85 @@
+[10:51:13] research: 7 sources
+[11:18:04] BATCH script FAILED: LLM returned invalid JSON: Extra data: line 1 column 6101 (char 6100)
+[11:18:57] research: 7 sources
+[11:32:26] BATCH script ready in 13 min, 0 fact-check flag(s)
+[12:02:16] === How a bank collapse brought down Paraguay's president Santiago Peña (6 min) ===
+[12:02:16] research: 7 sources
+[12:06:22] voice: 4.1 min of dialogue, 5 distinct voices
+[12:06:22] character every_man: 8 poses/expressions
+[12:08:20] character tech_boss_leo: 10 poses/expressions
+[12:10:49] character mayor_santos: 9 poses/expressions
+[12:12:57] character investigator_rivera: 7 poses/expressions
+[12:15:46] hero s01: LTX-2.5 4s — A sleek smartphone screen fractures into thousands of frozen
+[12:16:39] hero s12: LTX-2.5 5s — A heavy gavel strikes down next to a pair of handcuffs resti
+[12:17:50] hero s20: LTX-2.5 5s — A cracked mirror reflecting a fractured smartphone, surround
+[12:19:18] sound: 6 sfx, 11 music beds, ambience for 5 environments
+[12:19:18] render: 25 scene(s)
+[12:20:56] QC found 1 problem(s): [('s06', 'audio', "line 'Does that mean everyone is saf' speech rate 4.9 w/s (TTS glitch?)")] -> repairing (attempt 1)
+[12:21:13] voice: 4.1 min of dialogue, 5 distinct voices
+[12:21:13] render: 1 scene(s)
+[12:22:16] master: /home/mundax/Documents/REL/ExplainerStudio/projects/how-a-bank-collapse-brought-down-paraguay-s-presid/how-a-bank-collapse-brought-down-paraguay-s-presid.mp4 (4.2 min)
+[12:22:16] done in 20.0 min -> /home/mundax/Documents/REL/ExplainerStudio/projects/how-a-bank-collapse-brought-down-paraguay-s-presid/how-a-bank-collapse-brought-down-paraguay-s-presid.mp4
+[13:29:17] === How a bank collapse brought down Paraguay's president Santiago Peña (6 min) ===
+[13:29:17] research: 7 sources
+[13:29:17] voice: 4.1 min of dialogue, 5 distinct voices
+[13:29:17] character every_man: 8 poses/expressions
+[13:29:18] character tech_boss_leo: 10 poses/expressions
+[13:29:18] character mayor_santos: 9 poses/expressions
+[13:29:18] character investigator_rivera: 7 poses/expressions
+[13:29:18] sound: 6 sfx, 11 music beds, ambience for 5 environments
+[13:29:19] render: 25 scene(s)
+[13:31:45] master: /home/mundax/Documents/REL/ExplainerStudio/projects/how-a-bank-collapse-brought-down-paraguay-s-presid/how-a-bank-collapse-brought-down-paraguay-s-presid.mp4 (4.2 min)
+[13:31:45] done in 2.5 min -> /home/mundax/Documents/REL/ExplainerStudio/projects/how-a-bank-collapse-brought-down-paraguay-s-presid/how-a-bank-collapse-brought-down-paraguay-s-presid.mp4
+[13:54:06] === How a bank collapse brought down Paraguay's president Santiago Peña (6 min) ===
+[13:54:06] research: 7 sources
+[13:54:07] voice: 4.1 min of dialogue, 5 distinct voices
+[13:54:07] character every_man: 8 poses/expressions
+[13:54:08] character tech_boss_leo: 10 poses/expressions
+[13:54:08] character mayor_santos: 9 poses/expressions
+[13:54:30] character investigator_rivera: 7 poses/expressions
+[13:54:48] sound: 6 sfx, 11 music beds, ambience for 5 environments
+[13:54:49] render: 25 scene(s)
+[13:57:02] master: /home/mundax/Documents/REL/ExplainerStudio/projects/how-a-bank-collapse-brought-down-paraguay-s-presid/how-a-bank-collapse-brought-down-paraguay-s-presid.mp4 (4.2 min)
+[13:57:02] done in 2.9 min -> /home/mundax/Documents/REL/ExplainerStudio/projects/how-a-bank-collapse-brought-down-paraguay-s-presid/how-a-bank-collapse-brought-down-paraguay-s-presid.mp4
+[14:54:50] === How a bank collapse brought down Paraguay's president Santiago Peña (6 min) ===
+[14:54:50] research: 7 sources
+[14:54:51] voice: 4.1 min of dialogue, 5 distinct voices
+[14:54:51] character every_man: 8 poses/expressions
+[14:54:51] character tech_boss_leo: 10 poses/expressions
+[14:54:51] character mayor_santos: 9 poses/expressions
+[14:54:52] character investigator_rivera: 7 poses/expressions
+[14:54:52] sound: 6 sfx, 11 music beds, ambience for 5 environments
+[14:54:52] render: 25 scene(s)
+[14:57:08] master: /home/mundax/Documents/REL/ExplainerStudio/projects/how-a-bank-collapse-brought-down-paraguay-s-presid/how-a-bank-collapse-brought-down-paraguay-s-presid.mp4 (4.2 min)
+[14:57:08] done in 2.3 min -> /home/mundax/Documents/REL/ExplainerStudio/projects/how-a-bank-collapse-brought-down-paraguay-s-presid/how-a-bank-collapse-brought-down-paraguay-s-presid.mp4
+[15:10:36] === How a bank collapse brought down Paraguay's president Santiago Peña (6 min) ===
+[15:10:36] research: 7 sources
+[15:10:36] voice: 4.1 min of dialogue, 5 distinct voices
+[15:10:36] character every_man: 8 poses/expressions
+[15:10:37] character tech_boss_leo: 10 poses/expressions
+[15:10:37] character mayor_santos: 9 poses/expressions
+[15:10:37] character investigator_rivera: 7 poses/expressions
+[15:10:37] sound: 6 sfx, 11 music beds, ambience for 5 environments
+[15:10:38] render: 25 scene(s)
+[15:12:55] master: /home/mundax/Documents/REL/ExplainerStudio/projects/how-a-bank-collapse-brought-down-paraguay-s-presid/how-a-bank-collapse-brought-down-paraguay-s-presid.mp4 (4.2 min)
+[15:12:55] done in 2.3 min -> /home/mundax/Documents/REL/ExplainerStudio/projects/how-a-bank-collapse-brought-down-paraguay-s-presid/how-a-bank-collapse-brought-down-paraguay-s-presid.mp4
+[17:32:08] === How a bank collapse brought down Paraguay's president Santiago Peña (6 min) ===
+[17:32:08] research: 7 sources
+[17:32:09] voice: 4.1 min of dialogue, 5 distinct voices
+[17:32:09] character every_man: 8 poses/expressions
+[17:32:10] character tech_boss_leo: 10 poses/expressions
+[17:32:10] character mayor_santos: 9 poses/expressions
+[17:32:10] character investigator_rivera: 7 poses/expressions
+[17:32:10] sound: 6 sfx, 11 music beds, ambience for 5 environments
+[17:43:37] render: 25 scene(s)
+[17:45:54] master: /home/mundax/Documents/REL/ExplainerStudio/projects/how-a-bank-collapse-brought-down-paraguay-s-presid/how-a-bank-collapse-brought-down-paraguay-s-presid.mp4 (4.2 min)
+[17:46:39] review: /home/mundax/Documents/REL/ExplainerStudio/projects/how-a-bank-collapse-brought-down-paraguay-s-presid/review/REVIEW.md  fails=2 warns=2 sheets=5
+[17:46:39] REVIEW: automatic checks FAILED — see /home/mundax/Documents/REL/ExplainerStudio/projects/how-a-bank-collapse-brought-down-paraguay-s-presid/review/REVIEW.md
+[17:46:39] done in 14.5 min -> /home/mundax/Documents/REL/ExplainerStudio/projects/how-a-bank-collapse-brought-down-paraguay-s-presid/how-a-bank-collapse-brought-down-paraguay-s-presid.mp4
+[11:50:53] === How a bank collapse brought down Paraguay's president Santiago Peña (6 min) ===
+[11:50:53] research: 7 sources
+[11:50:53] voice: 4.1 min of dialogue, 5 distinct voices
+[11:50:53] character every_man: 8 poses/expressions
+[11:50:54] character tech_boss_leo: 10 poses/expressions
+[11:50:54] character mayor_santos: 9 poses/expressions
+[11:50:54] character investigator_rivera: 7 poses/expressions

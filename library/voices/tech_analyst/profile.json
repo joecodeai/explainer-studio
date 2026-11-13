@@ -1,0 +1,9 @@
+{
+ "name": "tech_analyst",
+ "design": "Male, late 20s, light British accent, high pitch, clear timbre, rapid but precise pace. Speaking naturally in English, expressive and conversational.",
+ "language": "English",
+ "instruct": "Male, late 20s, light British accent, mid pitch, clear timbre, rapid but precise pace. Speaking naturally in English, expressive and conversational. IMPORTANT: this is clearly an adult MAN's voice \u2014 low-to-mid male pitch, masculine chest resonance, never a female or child voice.",
+ "f0": 121.0,
+ "gender": "male",
+ "redesigns": 0
+}

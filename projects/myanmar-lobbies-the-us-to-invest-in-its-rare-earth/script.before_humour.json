@@ -1,0 +1,1861 @@
+{
+ "title": "Myanmar's Rare Earth Gamble",
+ "thumbnail_text": "Bribing Beijing?",
+ "description": "Why is Myanmar lobbying the US to invest in its rare earth mines, and what makes this geopolitical chess game so complicated? We break down the mining stakes, rebel control, and supply chain realities.",
+ "tags": [
+  "geopolitics",
+  "rare earths",
+  "myanmar",
+  "china",
+  "supply chain",
+  "explainer"
+ ],
+ "characters": [
+  {
+   "id": "minister_ko_htwe",
+   "name": "Ko Htwe",
+   "look": "mid 50s, short black hair with silver temples, warm brown skin, tailored burgundy longyi and a light beige shirt, holding a printed briefing folder.",
+   "voice": "male, 50s, gentle Burmese-accented English, calm but persuasive tone, moderate pace.",
+   "role": "Myanmar affairs reporter",
+   "real_person": false
+  },
+  {
+   "id": "dr_aris_thorne",
+   "name": "Aris Thorne",
+   "look": "late 40s, graying hair in a bun, sharp glasses, slate blue blazer over a crisp white shirt, holding a tablet.",
+   "voice": "female, 40s, crisp Midwestern accent, measured and analytical pace, clear timbre.",
+   "role": "US policy analyst",
+   "real_person": false
+  },
+  {
+   "id": "elena_vance",
+   "name": "Elena Vance",
+   "look": "early 40s, curly auburn hair tied back, practical denim jacket over a gray t-shirt, holding a coffee mug and a small rare earth sample puck.",
+   "voice": "female, 30s, sharp Southern accent, brisk energetic pace, bright timbre.",
+   "role": "Battery supply chain consultant",
+   "real_person": false
+  },
+  {
+   "id": "director_wei_chen",
+   "name": "Wei Chen",
+   "look": "late 50s, sleek black bob haircut, dark navy suit with a subtle dragon-scale pattern tie, holding a slim leather portfolio.",
+   "voice": "male, 50s, smooth Beijing accent in English, deliberate and confident pace, low timbre.",
+   "role": "China trade analyst",
+   "real_person": false
+  }
+ ],
+ "environments": [
+  {
+   "id": "myanmar_state_dept",
+   "prompt": "A formal government office in Naypyidaw with marble columns, wooden desks covered in diplomatic cables and rare earth maps, warm ambient lighting.",
+   "ambience": "quiet paper shuffling, distant air conditioning hum",
+   "_file": "/home/mundax/Documents/REL/ExplainerStudio/library/backgrounds_news/myanmar_state_dept_2fdd1a.png",
+   "_text_ok": "4ea91c34a551"
+  },
+  {
+   "id": "kachin_mine_site",
+   "prompt": "Rugged northern mountainous terrain with heavy mining excavators, dusty red soil roads, and makeshift security checkpoints amidst dense forest.",
+   "ambience": "heavy machinery idling, wind through pines"
+  },
+  {
+   "id": "us_policy_center",
+   "prompt": "A modern Washington DC conference room with floor-to-ceiling windows overlooking the Capitol skyline, large digital screens displaying supply chain graphs.",
+   "ambience": "soft keyboard clacking, muffled hallway footsteps",
+   "_file": "/home/mundax/Documents/REL/ExplainerStudio/library/backgrounds_news/us_policy_center_387fda.png",
+   "_text_ok": "2ed6bc8586e3"
+  },
+  {
+   "id": "beijing_trade_hub",
+   "prompt": "A sleek high-rise office in Beijing with glass walls, minimalist furniture, and a large wall map highlighting Asian trade routes.",
+   "ambience": "elegant elevator chimes, low strategic murmurs",
+   "_file": "/home/mundax/Documents/REL/ExplainerStudio/library/backgrounds_news/beijing_trade_hub_444556.png",
+   "_text_ok": "4da79a52498a"
+  },
+  {
+   "id": "us_battery_factory",
+   "prompt": "An industrial manufacturing floor with assembly robots, glowing battery cells on conveyor belts, and safety yellow markings.",
+   "ambience": "rhythmic mechanical whirring, automated voice prompts",
+   "_file": "/home/mundax/Documents/REL/ExplainerStudio/library/backgrounds_news/us_battery_factory_c55c32.png",
+   "_text_ok": "51e8029df381"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "s01",
+   "kind": "hero",
+   "environment": "",
+   "transition": "fade",
+   "music": "tense",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Myanmar sits on some of the world's most wanted rare earths. Now it wants Washington to come and dig.",
+     "emotion": "neutral",
+     "pose": "point",
+     "shot": "wide"
+    }
+   ],
+   "beats": [],
+   "sfx": [
+    {
+     "at_word": "start",
+     "sound": "deep rumble"
+    }
+   ],
+   "hero_prompt": "cinematic editorial shot of jagged mountain peaks at dawn, heavy mining excavators silhouetted against a glowing sunrise, dust particles catching the light, no text or logos",
+   "cast": [],
+   "narration": "Myanmar sits on some of the world's most wanted rare earths. Now it wants Washington to come and dig.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "_dur": 5.4427916666666665
+  },
+  {
+   "id": "s02",
+   "kind": "map",
+   "environment": "",
+   "label": "Rare earth ore heads to China",
+   "countries": [
+    "Myanmar",
+    "China"
+   ],
+   "places": [
+    {
+     "name": "Kachin State",
+     "lat": 25.3889,
+     "lon": 97.54
+    },
+    {
+     "name": "Ruili border crossing",
+     "lat": 24.013,
+     "lon": 97.851
+    }
+   ],
+   "routes": [
+    {
+     "from": "Kachin State",
+     "to": "Ruili border crossing",
+     "via": [],
+     "label": "Ore to China",
+     "icon": "truck",
+     "blocked": false
+    }
+   ],
+   "transition": "zoom",
+   "music": "tense",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Myanmar is one of the world's main sources of heavy rare earths.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "wide"
+    },
+    {
+     "speaker": "narrator",
+     "text": "But most of it is exported to China, to be turned into magnets.",
+     "emotion": "worried",
+     "pose": "side_listen",
+     "shot": "two_shot"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "heavy rare earths",
+     "type": "keyword",
+     "text": "HEAVY RARE EARTHS"
+    }
+   ],
+   "sfx": [],
+   "cast": [],
+   "narration": "Myanmar is one of the world's main sources of heavy rare earths. But most of it is exported to China, to be turned into magnets.",
+   "title_text": "",
+   "map": {
+    "label": "Rare earths flow to China",
+    "countries": [
+     "Myanmar",
+     "China"
+    ],
+    "places": [
+     {
+      "name": "Myitkyina, Kachin State",
+      "lat": 25.3833,
+      "lon": 97.4
+     },
+     {
+      "name": "Kunming",
+      "lat": 25.0389,
+      "lon": 102.7183
+     }
+    ],
+    "routes": [
+     {
+      "from": "Myitkyina, Kachin State",
+      "to": "Kunming",
+      "via": [],
+      "label": "Ore exports",
+      "icon": "truck",
+      "blocked": false
+     }
+    ]
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 7.357583333333333
+  },
+  {
+   "id": "s03",
+   "kind": "stage",
+   "environment": "myanmar_state_dept",
+   "cast": [
+    {
+     "char": "minister_ko_htwe",
+     "position": "left"
+    },
+    {
+     "char": "dr_aris_thorne",
+     "position": "right"
+    }
+   ],
+   "transition": "cut",
+   "music": "upbeat",
+   "lines": [
+    {
+     "speaker": "minister_ko_htwe",
+     "text": "Myanmar's military government is urging Washington to rapidly boost investment in its rare earth mines.",
+     "emotion": "confident",
+     "pose": "side_talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "dr_aris_thorne",
+     "text": "That's after the State Department released a strategy aiming for at least three deals worth over five million dollars each.",
+     "emotion": "neutral",
+     "pose": "side_listen",
+     "shot": "wide"
+    },
+    {
+     "speaker": "minister_ko_htwe",
+     "text": "Myanmar's lobbyists, DCI Group, call that modest, given the country's mineral resources.",
+     "emotion": "excited",
+     "pose": "point",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "modest",
+     "type": "keyword",
+     "text": "\"MODEST\""
+    }
+   ],
+   "sfx": [],
+   "narration": "Myanmar's military government is urging Washington to rapidly boost investment in its rare earth mines. That's after the State Department released a strategy aiming for at least three deals worth over five million dollars each. Myanmar's lobbyists, DCI Group, call that modest, given the country's mineral resources.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 17.828833333333332
+  },
+  {
+   "id": "s04",
+   "kind": "chart",
+   "environment": "",
+   "transition": "slide",
+   "music": "tense",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "China turns out about ninety percent of the world's rare earth magnets.",
+     "emotion": "neutral",
+     "pose": "point",
+     "shot": "wide"
+    },
+    {
+     "speaker": "narrator",
+     "text": "And it partly relies on raw material shipped in from Myanmar.",
+     "emotion": "worried",
+     "pose": "talk",
+     "shot": "two_shot"
+    }
+   ],
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "China's grip on magnets",
+    "mode": "stats",
+    "items": [
+     {
+      "value": "~90%",
+      "label": "World rare earth magnets made in China"
+     },
+     {
+      "value": "3+",
+      "label": "US target: deals over $5M each"
+     }
+    ]
+   },
+   "beats": [
+    {
+     "at_word": "ninety",
+     "type": "number",
+     "text": "90%"
+    }
+   ],
+   "sfx": [
+    {
+     "at_word": "percent",
+     "sound": "cash register"
+    }
+   ],
+   "cast": [],
+   "narration": "China turns out about ninety percent of the world's rare earth magnets. And it partly relies on raw material shipped in from Myanmar.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "hero_prompt": "",
+   "_dur": 6.879875
+  },
+  {
+   "id": "s05",
+   "kind": "stage",
+   "environment": "us_battery_factory",
+   "cast": [
+    {
+     "char": "elena_vance",
+     "position": "left"
+    },
+    {
+     "char": "dr_aris_thorne",
+     "position": "right"
+    }
+   ],
+   "transition": "cut",
+   "music": "tense",
+   "lines": [
+    {
+     "speaker": "elena_vance",
+     "text": "These heavy rare earths go into magnets for electric vehicles, wind turbines, even fighter jets.",
+     "emotion": "neutral",
+     "pose": "side_talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "dr_aris_thorne",
+     "text": "And President Trump made rare earths a national security priority, pouring billions into companies to loosen China's grip.",
+     "emotion": "neutral",
+     "pose": "side_listen",
+     "shot": "wide"
+    },
+    {
+     "speaker": "elena_vance",
+     "text": "So a country at war suddenly looks very attractive.",
+     "emotion": "confused",
+     "pose": "shrug",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "security",
+     "type": "keyword",
+     "text": "NATIONAL SECURITY"
+    }
+   ],
+   "sfx": [
+    {
+     "at_word": "turbines",
+     "sound": "whoosh"
+    }
+   ],
+   "narration": "These heavy rare earths go into magnets for electric vehicles, wind turbines, even fighter jets. And President Trump made rare earths a national security priority, pouring billions into companies to loosen China's grip. So a country at war suddenly looks very attractive.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 15.141583333333333
+  },
+  {
+   "id": "s06",
+   "kind": "map",
+   "environment": "",
+   "label": "Main mines held by the KIA",
+   "countries": [
+    "Myanmar"
+   ],
+   "places": [
+    {
+     "name": "Kachin State",
+     "lat": 25.3889,
+     "lon": 97.54
+    },
+    {
+     "name": "Naypyidaw",
+     "lat": 19.7633,
+     "lon": 96.0785
+    }
+   ],
+   "routes": [],
+   "transition": "zoom",
+   "music": "mysterious",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "But Myanmar's main mining areas are in Kachin state.",
+     "emotion": "neutral",
+     "pose": "point",
+     "shot": "wide"
+    },
+    {
+     "speaker": "narrator",
+     "text": "Those sites are controlled by the Kachin Independence Army, a rebel group fighting the military.",
+     "emotion": "worried",
+     "pose": "side_listen",
+     "shot": "two_shot"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "Kachin",
+     "type": "label",
+     "text": "KIA CONTROLLED"
+    }
+   ],
+   "sfx": [
+    {
+     "at_word": "controlled",
+     "sound": "pop"
+    }
+   ],
+   "cast": [],
+   "narration": "But Myanmar's main mining areas are in Kachin state. Those sites are controlled by the Kachin Independence Army, a rebel group fighting the military.",
+   "title_text": "",
+   "map": {
+    "label": "Kachin State mining areas",
+    "countries": [
+     "Myanmar"
+    ],
+    "places": [
+     {
+      "name": "Myitkyina, Kachin State",
+      "lat": 25.3833,
+      "lon": 97.4
+     },
+     {
+      "name": "Naypyidaw",
+      "lat": 19.7633,
+      "lon": 96.0785
+     }
+    ],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 8.513833333333334
+  },
+  {
+   "id": "s07",
+   "kind": "stage",
+   "environment": "beijing_trade_hub",
+   "cast": [
+    {
+     "char": "minister_ko_htwe",
+     "position": "left"
+    },
+    {
+     "char": "director_wei_chen",
+     "position": "right"
+    }
+   ],
+   "transition": "cut",
+   "music": "tense",
+   "lines": [
+    {
+     "speaker": "minister_ko_htwe",
+     "text": "DCI Group also warned that China has spent years building its position in Myanmar's resource sector.",
+     "emotion": "neutral",
+     "pose": "side_talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "director_wei_chen",
+     "text": "Beijing's foreign ministry calls China and Myanmar friendly neighbours and important partners.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "wide"
+    },
+    {
+     "speaker": "minister_ko_htwe",
+     "text": "It added that China opposes the politicisation of economic and trade cooperation.",
+     "emotion": "sarcastic",
+     "pose": "facepalm",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "politicisation",
+     "type": "keyword",
+     "text": "NO POLITICISATION"
+    }
+   ],
+   "sfx": [
+    {
+     "at_word": "trade",
+     "sound": "cash register"
+    }
+   ],
+   "narration": "DCI Group also warned that China has spent years building its position in Myanmar's resource sector. Beijing's foreign ministry calls China and Myanmar friendly neighbours and important partners. It added that China opposes the politicisation of economic and trade cooperation.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 14.632291666666667
+  },
+  {
+   "id": "s08",
+   "kind": "chart",
+   "environment": "",
+   "transition": "slide",
+   "music": "tense",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Since the 2021 coup, Washington froze assets and imposed sanctions.",
+     "emotion": "neutral",
+     "pose": "point",
+     "shot": "wide"
+    },
+    {
+     "speaker": "narrator",
+     "text": "But in September, they reversed course, holding direct talks with the generals.",
+     "emotion": "surprised",
+     "pose": "talk",
+     "shot": "two_shot"
+    }
+   ],
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "From sanctions to talks",
+    "mode": "timeline",
+    "items": [
+     {
+      "value": "2021",
+      "label": "Coup; US freezes assets, sanctions"
+     },
+     {
+      "value": "Sept",
+      "label": "Direct US talks with the generals"
+     },
+     {
+      "value": "Early Nov",
+      "label": "State Dept strategy released"
+     },
+     {
+      "value": "Nov 10",
+      "label": "Myanmar's lobbyists ask for more"
+     }
+    ]
+   },
+   "beats": [
+    {
+     "at_word": "reversed",
+     "type": "label",
+     "text": "POLICY U-TURN"
+    }
+   ],
+   "sfx": [
+    {
+     "at_word": "sanctions",
+     "sound": "pop"
+    }
+   ],
+   "cast": [],
+   "narration": "Since the 2021 coup, Washington froze assets and imposed sanctions. But in September, they reversed course, holding direct talks with the generals.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "hero_prompt": "",
+   "_dur": 10.017125
+  },
+  {
+   "id": "s09",
+   "kind": "stage",
+   "environment": "us_policy_center",
+   "cast": [
+    {
+     "char": "dr_aris_thorne",
+     "position": "left"
+    },
+    {
+     "char": "elena_vance",
+     "position": "right"
+    }
+   ],
+   "transition": "cut",
+   "music": "tense",
+   "lines": [
+    {
+     "speaker": "dr_aris_thorne",
+     "text": "Some advisers have urged Washington to act as a peace broker between the junta and the Kachin rebels.",
+     "emotion": "neutral",
+     "pose": "side_talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "elena_vance",
+     "text": "Nice idea. But who actually guarantees the deliveries?",
+     "emotion": "worried",
+     "pose": "shrug",
+     "shot": "wide"
+    },
+    {
+     "speaker": "dr_aris_thorne",
+     "text": "Contracts with central authorities offer limited protection where those authorities lack control.",
+     "emotion": "sad",
+     "pose": "facepalm",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "deliveries",
+     "type": "keyword",
+     "text": "NO GUARANTEE"
+    }
+   ],
+   "sfx": [
+    {
+     "at_word": "contracts",
+     "sound": "paper rustle"
+    }
+   ],
+   "narration": "Some advisers have urged Washington to act as a peace broker between the junta and the Kachin rebels. Nice idea. But who actually guarantees the deliveries? Contracts with central authorities offer limited protection where those authorities lack control.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 13.776875
+  },
+  {
+   "id": "s10",
+   "kind": "map",
+   "environment": "",
+   "label": "Idea: process ore with Quad partners",
+   "countries": [
+    "Myanmar",
+    "India"
+   ],
+   "places": [
+    {
+     "name": "Kachin State",
+     "lat": 25.3889,
+     "lon": 97.54
+    }
+   ],
+   "routes": [],
+   "transition": "zoom",
+   "music": "tense",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Even then, mining is only the first step. The ore still has to be processed.",
+     "emotion": "neutral",
+     "pose": "point",
+     "shot": "wide"
+    },
+    {
+     "speaker": "narrator",
+     "text": "One idea floated to US officials: process Myanmar's heavy rare earths with Quad partners like India.",
+     "emotion": "worried",
+     "pose": "side_listen",
+     "shot": "two_shot"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "India",
+     "type": "label",
+     "text": "PROCESS IN INDIA?"
+    }
+   ],
+   "sfx": [],
+   "cast": [],
+   "narration": "Even then, mining is only the first step. The ore still has to be processed. One idea floated to US officials: process Myanmar's heavy rare earths with Quad partners like India.",
+   "title_text": "",
+   "map": {
+    "label": "Processing with Quad partners?",
+    "countries": [
+     "Myanmar",
+     "India"
+    ],
+    "places": [
+     {
+      "name": "Myitkyina, Kachin State",
+      "lat": 25.3833,
+      "lon": 97.4
+     },
+     {
+      "name": "New Delhi",
+      "lat": 28.6139,
+      "lon": 77.209
+     }
+    ],
+    "routes": [
+     {
+      "from": "Myitkyina, Kachin State",
+      "to": "New Delhi",
+      "via": [],
+      "label": "Possible processing route",
+      "icon": "truck",
+      "blocked": false
+     }
+    ]
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 11.649708333333333
+  },
+  {
+   "id": "s11",
+   "kind": "stage",
+   "environment": "beijing_trade_hub",
+   "cast": [
+    {
+     "char": "director_wei_chen",
+     "position": "left"
+    },
+    {
+     "char": "elena_vance",
+     "position": "right"
+    }
+   ],
+   "transition": "cut",
+   "music": "tense",
+   "lines": [
+    {
+     "speaker": "director_wei_chen",
+     "text": "The KIA's ties to Beijing are murky. Reuters says China backs it, but earlier reports had it seeking leverage against China.",
+     "emotion": "confident",
+     "pose": "side_talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "elena_vance",
+     "text": "So nobody's quite sure whose side the people holding the mines are on.",
+     "emotion": "sarcastic",
+     "pose": "facepalm",
+     "shot": "wide"
+    },
+    {
+     "speaker": "director_wei_chen",
+     "text": "Exactly. And when the KIA captured the mining belt, exports were disrupted.",
+     "emotion": "neutral",
+     "pose": "point",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "murky",
+     "type": "label",
+     "text": "MURKY ALLIANCES"
+    }
+   ],
+   "sfx": [],
+   "narration": "The KIA's ties to Beijing are murky. Reuters says China backs it, but earlier reports had it seeking leverage against China. So nobody's quite sure whose side the people holding the mines are on. Exactly. And when the KIA captured the mining belt, exports were disrupted.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 15.231916666666667
+  },
+  {
+   "id": "s12",
+   "kind": "hero",
+   "environment": "",
+   "transition": "cut",
+   "music": "tense",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Diplomatic outreach meets the brutal reality of a civil war.",
+     "emotion": "neutral",
+     "pose": "point",
+     "shot": "wide"
+    }
+   ],
+   "beats": [],
+   "sfx": [
+    {
+     "at_word": "start",
+     "sound": "distant thunder"
+    }
+   ],
+   "hero_prompt": "editorial illustration of a cracked map on a wooden table, surrounded by scattered rare earth mineral samples and faded diplomatic cables, dramatic side lighting casting long shadows",
+   "cast": [],
+   "narration": "Diplomatic outreach meets the brutal reality of a civil war.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "_dur": 3.6945
+  },
+  {
+   "id": "s13",
+   "kind": "stage",
+   "environment": "myanmar_state_dept",
+   "cast": [
+    {
+     "char": "dr_aris_thorne",
+     "position": "left"
+    },
+    {
+     "char": "minister_ko_htwe",
+     "position": "right"
+    }
+   ],
+   "transition": "cut",
+   "music": "tense",
+   "lines": [
+    {
+     "speaker": "dr_aris_thorne",
+     "text": "The State Department says it's encouraging Myanmar to improve the operating environment for US businesses.",
+     "emotion": "neutral",
+     "pose": "side_talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "minister_ko_htwe",
+     "text": "And to build towards a genuine peace process that stabilizes the country.",
+     "emotion": "worried",
+     "pose": "shrug",
+     "shot": "wide"
+    },
+    {
+     "speaker": "dr_aris_thorne",
+     "text": "Which is a polite way of saying: no peace, no serious money.",
+     "emotion": "sad",
+     "pose": "facepalm",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "peace",
+     "type": "keyword",
+     "text": "PEACE FIRST"
+    }
+   ],
+   "sfx": [],
+   "narration": "The State Department says it's encouraging Myanmar to improve the operating environment for US businesses. And to build towards a genuine peace process that stabilizes the country. Which is a polite way of saying: no peace, no serious money.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 12.857291666666667
+  },
+  {
+   "id": "s14",
+   "kind": "map",
+   "environment": "",
+   "label": "Civil war shapes the supply risk",
+   "countries": [
+    "Myanmar"
+   ],
+   "places": [
+    {
+     "name": "Kachin State",
+     "lat": 25.3889,
+     "lon": 97.54
+    }
+   ],
+   "routes": [],
+   "transition": "zoom",
+   "music": "mysterious",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Changes in local taxation, border access, or security conditions could alter delivery costs.",
+     "emotion": "neutral",
+     "pose": "point",
+     "shot": "wide"
+    },
+    {
+     "speaker": "narrator",
+     "text": "An agreement excluding those controlling the mines will struggle to produce dependable trade.",
+     "emotion": "worried",
+     "pose": "side_listen",
+     "shot": "two_shot"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "security",
+     "type": "label",
+     "text": "SECURITY RISK"
+    }
+   ],
+   "sfx": [],
+   "cast": [],
+   "narration": "Changes in local taxation, border access, or security conditions could alter delivery costs. An agreement excluding those controlling the mines will struggle to produce dependable trade.",
+   "title_text": "",
+   "map": {
+    "label": "Mines held by armed groups",
+    "countries": [
+     "Myanmar"
+    ],
+    "places": [
+     {
+      "name": "Myitkyina, Kachin State",
+      "lat": 25.3833,
+      "lon": 97.4
+     },
+     {
+      "name": "Naypyidaw",
+      "lat": 19.7633,
+      "lon": 96.0785
+     }
+    ],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 9.89125
+  },
+  {
+   "id": "s15",
+   "kind": "chart",
+   "environment": "",
+   "transition": "slide",
+   "music": "tense",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "The International Energy Agency puts China at around sixty percent of mining for magnet rare earths, and more than ninety percent of refining.",
+     "emotion": "neutral",
+     "pose": "point",
+     "shot": "wide"
+    },
+    {
+     "speaker": "narrator",
+     "text": "So American access would need its own processing capacity and dependable buyers.",
+     "emotion": "worried",
+     "pose": "talk",
+     "shot": "two_shot"
+    }
+   ],
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "Mining vs refining",
+    "mode": "stats",
+    "items": [
+     {
+      "value": "~60%",
+      "label": "Magnet rare earth mining in China (IEA)"
+     },
+     {
+      "value": "90%+",
+      "label": "Refining in China (IEA)"
+     },
+     {
+      "value": "~90%",
+      "label": "Magnet production in China"
+     }
+    ]
+   },
+   "beats": [
+    {
+     "at_word": "ninety",
+     "type": "number",
+     "text": "90%+"
+    }
+   ],
+   "sfx": [
+    {
+     "at_word": "capacity",
+     "sound": "whir"
+    }
+   ],
+   "cast": [],
+   "narration": "The International Energy Agency puts China at around sixty percent of mining for magnet rare earths, and more than ninety percent of refining. So American access would need its own processing capacity and dependable buyers.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "hero_prompt": "",
+   "_dur": 12.538166666666665
+  },
+  {
+   "id": "s16",
+   "kind": "stage",
+   "environment": "beijing_trade_hub",
+   "cast": [
+    {
+     "char": "minister_ko_htwe",
+     "position": "left"
+    },
+    {
+     "char": "director_wei_chen",
+     "position": "right"
+    }
+   ],
+   "transition": "cut",
+   "music": "tense",
+   "lines": [
+    {
+     "speaker": "minister_ko_htwe",
+     "text": "Myanmar is pitching itself as a way for Washington to counter China's dominance.",
+     "emotion": "neutral",
+     "pose": "side_talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "director_wei_chen",
+     "text": "But Chinese companies and intermediaries already hold advantages that won't be easily displaced.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "wide"
+    },
+    {
+     "speaker": "minister_ko_htwe",
+     "text": "That's the lobbyists' own warning, and the reason they want Washington to move faster.",
+     "emotion": "angry",
+     "pose": "arms_up",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "displaced",
+     "type": "keyword",
+     "text": "CHINA'S HEAD START"
+    }
+   ],
+   "sfx": [],
+   "narration": "Myanmar is pitching itself as a way for Washington to counter China's dominance. But Chinese companies and intermediaries already hold advantages that won't be easily displaced. That's the lobbyists' own warning, and the reason they want Washington to move faster.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 13.520708333333335
+  },
+  {
+   "id": "s17",
+   "kind": "map",
+   "environment": "",
+   "label": "US eases some junta sanctions",
+   "countries": [
+    "Myanmar",
+    "United States"
+   ],
+   "places": [
+    {
+     "name": "Washington DC",
+     "lat": 38.9072,
+     "lon": -77.0369
+    },
+    {
+     "name": "Naypyidaw",
+     "lat": 19.7633,
+     "lon": 96.0785
+    }
+   ],
+   "routes": [],
+   "transition": "zoom",
+   "music": "tense",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Washington has already lifted sanctions on several junta-linked individuals and companies.",
+     "emotion": "neutral",
+     "pose": "point",
+     "shot": "wide"
+    },
+    {
+     "speaker": "narrator",
+     "text": "But US officials insisted that did not signal a formal change in policy.",
+     "emotion": "worried",
+     "pose": "side_listen",
+     "shot": "two_shot"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "sanctions",
+     "type": "label",
+     "text": "SANCTIONS LIFTED"
+    }
+   ],
+   "sfx": [
+    {
+     "at_word": "lifted",
+     "sound": "lock click"
+    }
+   ],
+   "cast": [],
+   "narration": "Washington has already lifted sanctions on several junta-linked individuals and companies. But US officials insisted that did not signal a formal change in policy.",
+   "title_text": "",
+   "map": {
+    "label": "Washington and the junta",
+    "countries": [
+     "Myanmar",
+     "United States"
+    ],
+    "places": [
+     {
+      "name": "Washington",
+      "lat": 38.9072,
+      "lon": -77.0369
+     },
+     {
+      "name": "Naypyidaw",
+      "lat": 19.7633,
+      "lon": 96.0785
+     }
+    ],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 8.874541666666667
+  },
+  {
+   "id": "s18",
+   "kind": "stage",
+   "environment": "us_policy_center",
+   "cast": [
+    {
+     "char": "dr_aris_thorne",
+     "position": "left"
+    },
+    {
+     "char": "elena_vance",
+     "position": "right"
+    }
+   ],
+   "transition": "cut",
+   "music": "tense",
+   "lines": [
+    {
+     "speaker": "dr_aris_thorne",
+     "text": "Officials have even floated appointing a special envoy for rare earth diplomacy.",
+     "emotion": "neutral",
+     "pose": "side_talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "elena_vance",
+     "text": "Diplomacy is nice, but my clients need predictable volumes.",
+     "emotion": "sarcastic",
+     "pose": "facepalm",
+     "shot": "wide"
+    },
+    {
+     "speaker": "dr_aris_thorne",
+     "text": "Investment announcements alone won't fix the security, infrastructure and governance problems.",
+     "emotion": "sad",
+     "pose": "shrug",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "envoy",
+     "type": "keyword",
+     "text": "SPECIAL ENVOY?"
+    }
+   ],
+   "sfx": [],
+   "narration": "Officials have even floated appointing a special envoy for rare earth diplomacy. Diplomacy is nice, but my clients need predictable volumes. Investment announcements alone won't fix the security, infrastructure and governance problems.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 12.557000000000002
+  },
+  {
+   "id": "s19",
+   "kind": "hero",
+   "environment": "",
+   "transition": "wipe",
+   "music": "epic",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "For now, Myanmar's offer is a strategic pitch, not a secured supply chain.",
+     "emotion": "neutral",
+     "pose": "point",
+     "shot": "wide"
+    }
+   ],
+   "beats": [],
+   "sfx": [
+    {
+     "at_word": "start",
+     "sound": "chip stack sound"
+    }
+   ],
+   "hero_prompt": "editorial illustration of a heavy chess piece made of raw ore blocks resting on a wooden board, casting long strategic shadows across a blurred map background",
+   "cast": [],
+   "narration": "For now, Myanmar's offer is a strategic pitch, not a secured supply chain.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "_dur": 4.4
+  },
+  {
+   "id": "s20",
+   "kind": "stage",
+   "environment": "myanmar_state_dept",
+   "cast": [
+    {
+     "char": "minister_ko_htwe",
+     "position": "left"
+    },
+    {
+     "char": "dr_aris_thorne",
+     "position": "right"
+    }
+   ],
+   "transition": "cut",
+   "music": "tense",
+   "lines": [
+    {
+     "speaker": "minister_ko_htwe",
+     "text": "Myanmar hired DCI Group last year to help rebuild ties with Washington.",
+     "emotion": "neutral",
+     "pose": "side_talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "dr_aris_thorne",
+     "text": "Its pitch: minerals connect Myanmar's potential to US security and supply-chain priorities.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "wide"
+    },
+    {
+     "speaker": "minister_ko_htwe",
+     "text": "In the firm's words, treat Myanmar as a critical minerals priority, not simply a diplomatic challenge.",
+     "emotion": "excited",
+     "pose": "arms_up",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "priority",
+     "type": "keyword",
+     "text": "CRITICAL PRIORITY"
+    }
+   ],
+   "sfx": [
+    {
+     "at_word": "ties",
+     "sound": "handshake"
+    }
+   ],
+   "narration": "Myanmar hired DCI Group last year to help rebuild ties with Washington. Its pitch: minerals connect Myanmar's potential to US security and supply-chain priorities. In the firm's words, treat Myanmar as a critical minerals priority, not simply a diplomatic challenge.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 16.005708333333335
+  },
+  {
+   "id": "s21",
+   "kind": "chart",
+   "environment": "",
+   "transition": "slide",
+   "music": "tense",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "The US strategy also aims to expand American exports and combat scam compounds.",
+     "emotion": "neutral",
+     "pose": "point",
+     "shot": "wide"
+    },
+    {
+     "speaker": "narrator",
+     "text": "And officials have floated easing a proposed forty percent tariff on Myanmar.",
+     "emotion": "worried",
+     "pose": "talk",
+     "shot": "two_shot"
+    }
+   ],
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "What the US strategy wants",
+    "mode": "timeline",
+    "items": [
+     {
+      "value": "40%",
+      "label": "Proposed US tariff on Myanmar"
+     },
+     {
+      "value": "3+",
+      "label": "US target: deals over $5M each"
+     }
+    ]
+   },
+   "beats": [
+    {
+     "at_word": "forty",
+     "type": "number",
+     "text": "40%"
+    }
+   ],
+   "sfx": [
+    {
+     "at_word": "strategy",
+     "sound": "typewriter"
+    }
+   ],
+   "cast": [],
+   "narration": "The US strategy also aims to expand American exports and combat scam compounds. And officials have floated easing a proposed forty percent tariff on Myanmar.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "hero_prompt": "",
+   "_dur": 8.748
+  },
+  {
+   "id": "s22",
+   "kind": "map",
+   "environment": "",
+   "label": "Ore alone is not a supply chain",
+   "countries": [
+    "Myanmar"
+   ],
+   "places": [
+    {
+     "name": "Kachin State",
+     "lat": 25.3889,
+     "lon": 97.54
+    }
+   ],
+   "routes": [],
+   "transition": "zoom",
+   "music": "tense",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "For traders and consumers, potential supply gains depend on reliable trade routes.",
+     "emotion": "neutral",
+     "pose": "point",
+     "shot": "wide"
+    },
+    {
+     "speaker": "narrator",
+     "text": "There is no basis to predict cheaper vehicles or electronics from today's outreach.",
+     "emotion": "worried",
+     "pose": "side_listen",
+     "shot": "two_shot"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "outreach",
+     "type": "label",
+     "text": "PROMISES vs REALITY"
+    }
+   ],
+   "sfx": [
+    {
+     "at_word": "route",
+     "sound": "whoosh"
+    }
+   ],
+   "cast": [],
+   "narration": "For traders and consumers, potential supply gains depend on reliable trade routes. There is no basis to predict cheaper vehicles or electronics from today's outreach.",
+   "title_text": "",
+   "map": {
+    "label": "Supply depends on trade routes",
+    "countries": [
+     "Myanmar"
+    ],
+    "places": [
+     {
+      "name": "Myitkyina, Kachin State",
+      "lat": 25.3833,
+      "lon": 97.4
+     },
+     {
+      "name": "Kunming",
+      "lat": 25.0389,
+      "lon": 102.7183
+     },
+     {
+      "name": "New Delhi",
+      "lat": 28.6139,
+      "lon": 77.209
+     }
+    ],
+    "routes": [
+     {
+      "from": "Myitkyina, Kachin State",
+      "to": "Kunming",
+      "via": [],
+      "label": "Border route",
+      "icon": "truck",
+      "blocked": false
+     }
+    ]
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 9.144916666666667
+  },
+  {
+   "id": "s23",
+   "kind": "stage",
+   "environment": "us_policy_center",
+   "cast": [
+    {
+     "char": "dr_aris_thorne",
+     "position": "left"
+    },
+    {
+     "char": "minister_ko_htwe",
+     "position": "right"
+    }
+   ],
+   "transition": "cut",
+   "music": "tense",
+   "lines": [
+    {
+     "speaker": "dr_aris_thorne",
+     "text": "Diversification could improve resilience over time, but it also needs real investment.",
+     "emotion": "neutral",
+     "pose": "side_talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "minister_ko_htwe",
+     "text": "The next signals to watch are named investors and identifiable projects.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "wide"
+    },
+    {
+     "speaker": "dr_aris_thorne",
+     "text": "And workable deals with whoever actually controls the mines.",
+     "emotion": "sarcastic",
+     "pose": "facepalm",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "investors",
+     "type": "keyword",
+     "text": "WATCH: NAMED INVESTORS"
+    }
+   ],
+   "sfx": [],
+   "narration": "Diversification could improve resilience over time, but it also needs real investment. The next signals to watch are named investors and identifiable projects. And workable deals with whoever actually controls the mines.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 11.846291666666668
+  },
+  {
+   "id": "s24",
+   "kind": "map",
+   "environment": "",
+   "label": "Can minerals outpace the war?",
+   "countries": [
+    "Myanmar"
+   ],
+   "places": [
+    {
+     "name": "Kachin State",
+     "lat": 25.3889,
+     "lon": 97.54
+    },
+    {
+     "name": "Naypyidaw",
+     "lat": 19.7633,
+     "lon": 96.0785
+    }
+   ],
+   "routes": [],
+   "transition": "zoom",
+   "music": "epic",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Myanmar's leadership could gain investment if negotiations advance, but neither side can assume cooperation.",
+     "emotion": "neutral",
+     "pose": "point",
+     "shot": "wide"
+    },
+    {
+     "speaker": "narrator",
+     "text": "The gamble hinges on whether mineral diplomacy can outpace civil war logistics.",
+     "emotion": "worried",
+     "pose": "side_listen",
+     "shot": "two_shot"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "gamble",
+     "type": "keyword",
+     "text": "THE FINAL GAMBLE"
+    }
+   ],
+   "sfx": [
+    {
+     "at_word": "hinges",
+     "sound": "thud"
+    }
+   ],
+   "cast": [],
+   "narration": "Myanmar's leadership could gain investment if negotiations advance, but neither side can assume cooperation. The gamble hinges on whether mineral diplomacy can outpace civil war logistics.",
+   "title_text": "",
+   "map": {
+    "label": "Mineral diplomacy",
+    "countries": [
+     "Myanmar",
+     "United States",
+     "China"
+    ],
+    "places": [
+     {
+      "name": "Naypyidaw",
+      "lat": 19.7633,
+      "lon": 96.0785
+     },
+     {
+      "name": "Washington",
+      "lat": 38.9072,
+      "lon": -77.0369
+     },
+     {
+      "name": "Beijing",
+      "lat": 39.9042,
+      "lon": 116.4074
+     }
+    ],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 10.882541666666665
+  },
+  {
+   "id": "s25",
+   "kind": "title_card",
+   "environment": "",
+   "transition": "fade",
+   "music": "upbeat",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Myanmar wants US money for its rare earths, but rebel-held mines and China's processing grip stand in the way. Thanks for watching — subscribe for more explainers.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "wide"
+    }
+   ],
+   "beats": [],
+   "sfx": [
+    {
+     "at_word": "watching",
+     "sound": "pop"
+    }
+   ],
+   "cast": [],
+   "narration": "Myanmar wants US money for its rare earths, but rebel-held mines and China's processing grip stand in the way. Thanks for watching — subscribe for more explainers.",
+   "title_text": "",
+   "_needs_title": true,
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 9.04
+  }
+ ],
+ "sources": [
+  "https://www.moneycontrol.com/world/myanmar-urges-us-to-ramp-up-investment-in-rare-earths-to-counter-china-s-dominance-article-14076059.html",
+  "https://theprint.in/world/myanmar-lobbies-us-to-invest-in-its-rare-earths-sector-dominated-by-china/2/3096477/",
+  "https://ijr.com/discover/us-plans-myanmar-rare-earth-investment-push-070c3651",
+  "https://www.devdiscourse.com/article/other/4004330-beyond-chinas-grip-why-myanmars-rare-earth-offers-washington-opportunity-and-difficult-choices",
+  "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/12/govt-seeks-greater-us-role-in-rare-earths",
+  "https://www.businesstoday.in/world/story/deal-with-myanmar-rebels-america-plots-big-rare-earth-move-to-counter-china-486850-2025-07-29",
+  "https://en.wikipedia.org/wiki/Myanmar%E2%80%93United_States_relations"
+ ],
+ "seo": {
+  "title": "Why the US Wants Myanmar's Rare Earths",
+  "description": "Myanmar sits on massive rare earth deposits, but rebel-controlled mines and a brutal civil war complicate its push to sell directly to the US instead of relying on China's dominance. The Pentagon has lifted sanctions for talks, yet processing capacity and security risks remain huge hurdles; this strategic gamble could reshape global supply chains or collapse before delivery begins.",
+  "tags": [
+   "myanmar",
+   "rare earths",
+   "rare earth minerals",
+   "us china trade",
+   "heavy rare earths",
+   "kachin state",
+   "civil war",
+   "sanctions",
+   "mining",
+   "magnets",
+   "processing",
+   "global supply chain",
+   "geopolitics",
+   "quad partners",
+   "india mining",
+   "scam compounds",
+   "tariffs",
+   "international energy agency",
+   "strategic gamble",
+   "economics"
+  ],
+  "hashtags": [
+   "#RareEarths",
+   "#Myanmar",
+   "#Geopolitics"
+  ]
+ },
+ "_problems": []
+}

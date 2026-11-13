@@ -1,0 +1,9 @@
+{
+ "name": "farmer_tom",
+ "design": "male, NZ accent, warm and relaxed pace, slightly gravelly timbre. Speaking naturally in English, expressive and conversational.",
+ "language": "English",
+ "instruct": "male, NZ accent, warm and relaxed pace, slightly gravelly timbre. Speaking naturally in English, expressive and conversational. IMPORTANT: this is clearly an adult MAN's voice \u2014 low-to-mid male pitch, masculine chest resonance, never a female or child voice.",
+ "f0": 120.7,
+ "gender": "male",
+ "redesigns": 2
+}

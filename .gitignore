@@ -1,0 +1,59 @@
+# --- Big, downloadable or regenerable things (not in git) ---
+.venv/
+ComfyUI/
+models/
+bin/
+remotion/node_modules/
+remotion/public/*
+!remotion/public/.gitkeep
+__pycache__/
+*.pyc
+logs/
+
+# Generated art libraries (large PNG/FLAC). Voices ARE kept: they make every video sound the same.
+library/characters/
+library/characters_news/
+library/backgrounds/
+library/backgrounds_news/
+library/sounds/
+
+# --- Projects: keep scripts, research, reports and captions; drop media ---
+projects/*/audio/
+projects/*/hero/
+projects/*/talk/
+projects/*/renders/
+projects/*/public/
+projects/*/work/
+projects/*/props/
+projects/*/reel/*
+!projects/*/reel/reel.json
+projects/*/review/*.png
+projects/*/review/*.jpg
+projects/*/review/sheets/
+
+# Media anywhere
+*.mp4
+*.mov
+*.webm
+*.wav
+!library/voices/**/*.wav
+*.flac
+*.mp3
+*.m4a
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.safetensors
+*.ckpt
+*.gguf
+
+# Local backups made while editing
+*.bak*
+*.orig
+
+# Editor / OS
+.DS_Store
+*.swp
+.idea/
+.vscode/

@@ -1,0 +1,258 @@
+[11:18:12] research: 7 sources
+[11:33:11] research: 7 sources
+[11:49:10] script problems -> repairing: ['s01: hero scene without hero_prompt', 's21: hero scene without hero_prompt']
+[12:01:51] BATCH script ready in 29 min, 0 fact-check flag(s)
+[12:22:16] === Democrats win both houses of Congress in the 2026 midterms (6 min) ===
+[12:22:16] research: 7 sources
+[12:25:15] voice: 3.1 min of dialogue, 4 distinct voices
+[12:25:15] character everyman: 6 poses/expressions
+[12:25:52] character lawmaker: 6 poses/expressions
+[12:27:13] character strategist: 11 poses/expressions
+[12:30:57] hero s01: LTX-2.5 4s — A sweeping flat-cartoon panorama of a stylized US map rapidl
+[12:31:56] hero s09: LTX-2.5 6s — a worried cartoon family in a small kitchen staring in shock
+[12:33:12] hero s21: LTX-2.5 5s — A dramatic flat-cartoon illustration of a heavy gavel slammi
+[12:34:36] sound: 13 sfx, 11 music beds, ambience for 6 environments
+[12:34:36] render: 25 scene(s)
+[12:36:02] QC found 2 problem(s): [('s22', 'audio', "line 'So we just have to wait and se' speech rate 4.9 w/s (TTS glitch?)"), ('s25', 'audio', "line 'I guess I should buy more red ' speech rate 5.0 w/s (TTS glitch?)")] -> repairing (attempt 1)
+[12:36:34] voice: 3.1 min of dialogue, 4 distinct voices
+[12:36:35] render: 2 scene(s)
+[12:37:37] master: /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/democrats-win-both-houses-of-congress-in-the-2026-.mp4 (3.2 min)
+[12:37:37] done in 15.3 min -> /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/democrats-win-both-houses-of-congress-in-the-2026-.mp4
+[13:31:45] === Democrats win both houses of Congress in the 2026 midterms (6 min) ===
+[13:31:45] research: 7 sources
+[13:31:46] voice: 3.1 min of dialogue, 4 distinct voices
+[13:31:46] character everyman: 6 poses/expressions
+[13:31:46] character lawmaker: 6 poses/expressions
+[13:31:46] character strategist: 11 poses/expressions
+[13:31:47] sound: 13 sfx, 11 music beds, ambience for 6 environments
+[13:31:47] render: 25 scene(s)
+[13:34:11] master: /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/democrats-win-both-houses-of-congress-in-the-2026-.mp4 (3.2 min)
+[13:34:11] done in 2.4 min -> /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/democrats-win-both-houses-of-congress-in-the-2026-.mp4
+[13:57:02] === Democrats win both houses of Congress in the 2026 midterms (6 min) ===
+[13:57:02] research: 7 sources
+[13:57:03] voice: 3.1 min of dialogue, 4 distinct voices
+[13:57:03] character everyman: 6 poses/expressions
+[13:57:03] character lawmaker: 6 poses/expressions
+[13:57:03] character strategist: 11 poses/expressions
+[13:57:04] sound: 13 sfx, 11 music beds, ambience for 6 environments
+[13:57:04] render: 25 scene(s)
+[13:58:59] master: /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/democrats-win-both-houses-of-congress-in-the-2026-.mp4 (3.2 min)
+[13:58:59] done in 1.9 min -> /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/democrats-win-both-houses-of-congress-in-the-2026-.mp4
+[14:33:38] === Democrats win both houses of Congress in the 2026 midterms (6 min) ===
+[14:33:38] research: 7 sources
+[14:33:39] voice: 3.1 min of dialogue, 4 distinct voices
+[14:33:39] character everyman: 6 poses/expressions
+[14:33:39] character lawmaker: 6 poses/expressions
+[14:33:39] character strategist: 11 poses/expressions
+[14:33:40] sound: 13 sfx, 11 music beds, ambience for 6 environments
+[14:33:40] render: 25 scene(s)
+[14:35:39] master: /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/democrats-win-both-houses-of-congress-in-the-2026-.mp4 (3.2 min)
+[14:35:39] done in 2.0 min -> /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/democrats-win-both-houses-of-congress-in-the-2026-.mp4
+[14:59:05] === Democrats win both houses of Congress in the 2026 midterms (6 min) ===
+[14:59:05] research: 7 sources
+[14:59:06] voice: 3.1 min of dialogue, 4 distinct voices
+[14:59:06] character everyman: 6 poses/expressions
+[14:59:06] character lawmaker: 6 poses/expressions
+[14:59:06] character strategist: 11 poses/expressions
+[14:59:06] sound: 13 sfx, 11 music beds, ambience for 6 environments
+[14:59:07] render: 25 scene(s)
+[15:01:04] master: /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/democrats-win-both-houses-of-congress-in-the-2026-.mp4 (3.2 min)
+[15:01:04] done in 2.0 min -> /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/democrats-win-both-houses-of-congress-in-the-2026-.mp4
+[15:14:52] === Democrats win both houses of Congress in the 2026 midterms (6 min) ===
+[15:14:52] research: 7 sources
+[15:14:52] voice: 3.1 min of dialogue, 4 distinct voices
+[15:14:52] character everyman: 6 poses/expressions
+[15:14:53] character lawmaker: 6 poses/expressions
+[15:14:53] character strategist: 11 poses/expressions
+[15:14:53] sound: 13 sfx, 11 music beds, ambience for 6 environments
+[15:14:53] render: 25 scene(s)
+[15:16:51] master: /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/democrats-win-both-houses-of-congress-in-the-2026-.mp4 (3.2 min)
+[15:16:51] done in 2.0 min -> /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/democrats-win-both-houses-of-congress-in-the-2026-.mp4
+[17:00:13] === Democrats win both houses of Congress in the 2026 midterms (6 min) ===
+[17:00:13] research: 7 sources
+[17:00:14] voice: 3.1 min of dialogue, 4 distinct voices
+[17:00:14] character everyman: 6 poses/expressions
+[17:00:14] character lawmaker: 6 poses/expressions
+[17:00:14] character strategist: 11 poses/expressions
+[17:00:15] sound: 13 sfx, 11 music beds, ambience for 6 environments
+[17:07:17] render: 25 scene(s)
+[17:09:16] master: /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/democrats-win-both-houses-of-congress-in-the-2026-.mp4 (3.2 min)
+[17:09:46] review: /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/review/REVIEW.md  fails=3 warns=0 sheets=4
+[17:09:46] REVIEW: automatic checks FAILED — see /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/review/REVIEW.md
+[17:09:46] done in 9.5 min -> /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/democrats-win-both-houses-of-congress-in-the-2026-.mp4
+[11:29:04] === Democrats win both houses of Congress in the 2026 midterms (6 min) ===
+[11:29:04] research: 7 sources
+[11:29:05] voice: 3.1 min of dialogue, 4 distinct voices
+[11:29:05] character everyman: 6 poses/expressions
+[11:29:05] character lawmaker: 6 poses/expressions
+[11:29:05] character strategist: 11 poses/expressions
+[11:29:05] sound: 13 sfx, 11 music beds, ambience for 6 environments
+[11:29:06] render: 25 scene(s)
+[11:35:24] master: /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/democrats-win-both-houses-of-congress-in-the-2026-.mp4 (3.2 min)
+[11:35:55] review: /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/review/REVIEW.md  fails=0 warns=0 sheets=4
+[11:35:56] QC stage 1: frames
+[11:36:02] QC stage 1: transitions
+[11:36:08] QC stage 1: audio
+[11:36:13] QC stage 1: speech
+[11:36:22] QC stage 1: voices
+[11:36:23] QC stage 1: ocr
+[11:37:16] QC stage 1: lipsync
+[11:37:20] QC stage 1: camera
+[11:37:20] QC stage 1: animation
+[11:37:20] QC stage 1: grounding (floor + furniture segmentation)
+[11:37:30] QC stage 2: vision-language review
+[11:37:30] QC VLM: 17 character poses
+[11:43:56] QC inspection round 0: 29 findings in 480s
+[11:43:56] QC report: FAIL overall 84.1 — {'CRITICAL': 0, 'HIGH': 14, 'MEDIUM': 9, 'LOW': 6}
+[11:43:56] QC auto-fix round 1: 16 fixable findings
+[11:44:04] === Democrats win both houses of Congress in the 2026 midterms (6 min) ===
+[11:44:04] research: 7 sources
+[11:44:06] voice: 3.1 min of dialogue, 4 distinct voices
+[11:44:06] character everyman: 6 poses/expressions
+[11:44:06] character lawmaker: 6 poses/expressions
+[11:44:06] character strategist: 11 poses/expressions
+[11:44:33] hero s09: LTX-2.5 6s — a worried cartoon family in a small kitchen staring in shock
+[11:45:53] sound: 13 sfx, 11 music beds, ambience for 6 environments
+[11:45:53] render: 8 scene(s)
+[11:47:07] master: /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/democrats-win-both-houses-of-congress-in-the-2026-.mp4 (3.2 min)
+[11:47:38] review: /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/review/REVIEW.md  fails=0 warns=0 sheets=4
+[11:47:38] done in 3.6 min -> /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/democrats-win-both-houses-of-congress-in-the-2026-.mp4
+[11:47:39] QC stage 1: frames
+[11:47:42] QC stage 1: transitions
+[11:47:47] QC stage 1: audio
+[11:47:53] QC stage 1: speech
+[11:47:57] QC stage 1: voices
+[11:47:57] QC stage 1: ocr
+[11:48:30] QC stage 1: lipsync
+[11:48:32] QC stage 1: camera
+[11:48:32] QC stage 1: animation
+[11:48:32] QC stage 1: grounding (floor + furniture segmentation)
+[11:48:40] QC stage 2: vision-language review
+[11:48:40] QC VLM: 17 character poses
+[11:50:21] QC inspection round 1: 11 findings in 162s
+[11:50:21] QC report: PASS overall 97.9 — {'CRITICAL': 0, 'HIGH': 1, 'MEDIUM': 5, 'LOW': 5}
+[11:50:21] QC report: PASS overall 97.9 — {'CRITICAL': 0, 'HIGH': 1, 'MEDIUM': 5, 'LOW': 5}
+[11:50:53] review: /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/review/REVIEW.md  fails=0 warns=0 sheets=4
+[11:50:53] QC PASS: {'Visual quality': 96.1, 'Character consistency': 100.0, 'Physical positioning': 100.0, 'Animation quality': 100.0, 'Audio quality': 100.0, 'Lip synchronization': 100.0, 'Subtitle accuracy': 91.5, 'Scene continuity': 100.0, 'Semantic accuracy': 93.5, 'Overall': 97.9} — see /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/review/QC_REPORT.md
+[11:50:53] done in 21.8 min -> /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/democrats-win-both-houses-of-congress-in-the-2026-.mp4
+[12:23:58] === Democrats win both houses of Congress in the 2026 midterms (6 min) ===
+[12:23:58] research: 7 sources
+[12:29:07] ending: added outro -> Gridlock reigns as subpoenas meet vetoes, so watch closely to see which branch finally blinks first. Subscribe now, because the next chapter is already written.
+[12:30:09] voice: 3.3 min of dialogue, 4 distinct voices
+[12:30:09] character everyman: 6 poses/expressions
+[12:30:09] character lawmaker: 6 poses/expressions
+[12:30:10] character strategist: 11 poses/expressions
+[12:30:18] sound: 13 sfx, 11 music beds, ambience for 6 environments
+[12:30:18] render: 8 scene(s)
+[12:31:34] master: /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/democrats-win-both-houses-of-congress-in-the-2026-.mp4 (3.4 min)
+[12:32:06] review: /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/review/REVIEW.md  fails=0 warns=0 sheets=4
+[12:32:07] QC stage 1: frames
+[12:32:10] QC stage 1: transitions
+[12:32:15] QC stage 1: audio
+[12:32:21] QC stage 1: speech
+[12:32:26] QC stage 1: voices
+[12:32:26] QC stage 1: ocr
+[12:33:01] QC stage 1: lipsync
+[12:33:04] QC stage 1: camera
+[12:33:04] QC stage 1: animation
+[12:33:04] QC stage 1: ending
+[12:33:04] QC stage 1: grounding (floor + furniture segmentation)
+[12:33:05] QC stage 2: vision-language review
+[12:33:05] QC VLM: 17 character poses
+[12:34:01] QC inspection round 0: 12 findings in 114s
+[12:34:01] QC report: FAIL overall 94.1 — {'CRITICAL': 1, 'HIGH': 1, 'MEDIUM': 5, 'LOW': 5}
+[12:34:01] QC auto-fix round 1: 1 fixable findings
+[12:34:01] === Democrats win both houses of Congress in the 2026 midterms (6 min) ===
+[12:34:01] research: 7 sources
+[12:34:54] voice: 3.3 min of dialogue, 4 distinct voices
+[12:34:54] character everyman: 6 poses/expressions
+[12:34:54] character lawmaker: 6 poses/expressions
+[12:34:54] character strategist: 11 poses/expressions
+[12:34:54] sound: 13 sfx, 11 music beds, ambience for 6 environments
+[12:34:55] render: 4 scene(s)
+[12:35:55] master: /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/democrats-win-both-houses-of-congress-in-the-2026-.mp4 (3.4 min)
+[12:36:27] review: /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/review/REVIEW.md  fails=1 warns=0 sheets=4
+[12:36:27] REVIEW: automatic checks FAILED — see /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/review/REVIEW.md
+[12:36:27] done in 2.4 min -> /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/democrats-win-both-houses-of-congress-in-the-2026-.mp4
+[12:36:28] QC stage 1: frames
+[12:36:29] QC stage 1: transitions
+[12:36:35] QC stage 1: audio
+[12:36:41] QC stage 1: speech
+[12:36:46] QC stage 1: voices
+[12:36:46] QC stage 1: ocr
+[12:45:33] === Democrats win both houses of Congress in the 2026 midterms (6 min) ===
+[12:45:33] research: 7 sources
+[12:46:04] voice: 3.3 min of dialogue, 4 distinct voices
+[12:46:04] character everyman: 6 poses/expressions
+[12:46:04] character lawmaker: 6 poses/expressions
+[12:46:05] character strategist: 11 poses/expressions
+[12:46:46] sound: 13 sfx, 11 music beds, ambience for 6 environments
+[12:46:47] render: 4 scene(s)
+[12:47:33] master: 51 of 51 segments re-encoded
+[12:47:44] master: /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/democrats-win-both-houses-of-congress-in-the-2026-.mp4 (3.5 min)
+[12:48:14] review: /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/review/REVIEW.md  fails=0 warns=0 sheets=4
+[12:48:15] QC stage 1: frames
+[12:48:16] QC stage 1: transitions
+[12:48:21] QC stage 1: audio
+[12:48:28] QC stage 1: speech
+[12:48:33] QC stage 1: voices
+[12:48:33] QC stage 1: ocr
+[12:49:04] QC stage 1: lipsync
+[12:49:07] QC stage 1: camera
+[12:49:07] QC stage 1: animation
+[12:49:07] QC stage 1: ending
+[12:49:07] QC stage 1: grounding (floor + furniture segmentation)
+[12:49:07] QC stage 2: vision-language review
+[12:49:07] QC VLM: 17 character poses
+[12:49:48] QC inspection round 0: 15 findings in 93s
+[12:49:48] QC report: FAIL overall 92.9 — {'CRITICAL': 1, 'HIGH': 1, 'MEDIUM': 8, 'LOW': 5}
+[12:49:48] QC auto-fix round 1: 4 fixable findings
+[12:49:48] === Democrats win both houses of Congress in the 2026 midterms (6 min) ===
+[12:49:48] research: 7 sources
+[12:50:31] voice: 3.3 min of dialogue, 4 distinct voices
+[12:50:31] character everyman: 6 poses/expressions
+[12:50:31] character lawmaker: 6 poses/expressions
+[12:50:31] character strategist: 11 poses/expressions
+[12:50:32] sound: 13 sfx, 11 music beds, ambience for 6 environments
+[12:50:32] render: 4 scene(s)
+[12:51:17] master: 46 of 51 segments re-encoded
+[12:51:29] master: /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/democrats-win-both-houses-of-congress-in-the-2026-.mp4 (3.4 min)
+[12:51:29] done in 1.7 min -> /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/democrats-win-both-houses-of-congress-in-the-2026-.mp4
+[12:51:29] QC fix touched scenes: ['s04', 's12', 's20', 's22']
+[12:51:30] QC scoped re-inspection: ['s03', 's04', 's11', 's12', 's19', 's20', 's21', 's22'] (+ whole-video audio/voice/ending checks)
+[12:51:30] QC stage 1: frames
+[12:51:31] QC stage 1: transitions
+[12:51:33] QC stage 1: audio
+[12:51:40] QC stage 1: speech
+[12:51:43] QC stage 1: voices
+[12:51:43] QC stage 1: ocr
+[12:52:02] QC stage 1: lipsync
+[12:52:04] QC stage 1: camera
+[12:52:04] QC stage 1: animation
+[12:52:04] QC stage 1: ending
+[12:52:04] QC stage 1: grounding (floor + furniture segmentation)
+[12:52:04] QC stage 2: vision-language review
+[12:52:04] QC VLM: 17 character poses
+[12:52:42] QC inspection round 1: 5 findings in 73s
+[12:52:42] QC report: FAIL overall 94.1 — {'CRITICAL': 1, 'HIGH': 1, 'MEDIUM': 5, 'LOW': 5}
+[12:52:43] QC auto-fix round 2: 1 fixable findings
+[12:52:43] QC report: FAIL overall 94.1 — {'CRITICAL': 1, 'HIGH': 1, 'MEDIUM': 5, 'LOW': 5}
+[12:53:12] review: /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/review/REVIEW.md  fails=0 warns=0 sheets=4
+[12:53:12] QC FAIL: {'Visual quality': 96.1, 'Character consistency': 100.0, 'Physical positioning': 100.0, 'Animation quality': 100.0, 'Audio quality': 66.0, 'Lip synchronization': 100.0, 'Subtitle accuracy': 91.5, 'Scene continuity': 100.0, 'Semantic accuracy': 93.5, 'Overall': 94.1} — see /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/review/QC_REPORT.md
+[12:53:12] done in 7.6 min -> /home/mundax/Documents/REL/ExplainerStudio/projects/democrats-win-both-houses-of-congress-in-the-2026-/democrats-win-both-houses-of-congress-in-the-2026-.mp4
+[10:42:36] QC stage 1: frames
+[10:42:36] QC stage 1: transitions
+[10:42:37] QC stage 1: audio
+[10:42:49] QC stage 1: speech
+[10:42:58] QC stage 1: voices
+[10:43:00] QC stage 1: ocr
+[10:43:20] QC stage 1: lipsync
+[10:43:20] QC stage 1: camera
+[10:43:20] QC stage 1: animation
+[10:43:20] QC stage 1: ending
+[10:43:20] QC stage 1: grounding (floor + furniture segmentation)
+[10:43:21] QC stage 2: vision-language review
+[10:43:21] QC VLM: 17 character poses
+[10:43:33] QC inspection round 0: 11 findings in 57s
+[10:43:33] QC report: PASS overall 97.9 — {'CRITICAL': 0, 'HIGH': 1, 'MEDIUM': 5, 'LOW': 5}
+[10:43:33] QC report: PASS overall 97.9 — {'CRITICAL': 0, 'HIGH': 1, 'MEDIUM': 5, 'LOW': 5}

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+DIR="$(cd "$(dirname "$0")" && pwd)"
+PYTHONNOUSERSITE=1 exec "$DIR/.venv/bin/python" "$DIR/make_video.py" "$@" 2> >(grep -v -iE "sox|flash-attn|SoX could not|sox.sourceforge|^\s*$|If you do|double-check|path variables|- - -" >&2)

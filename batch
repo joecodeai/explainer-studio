@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+DIR="$(cd "$(dirname "$0")" && pwd)"
+PYTHONNOUSERSITE=1 exec "$DIR/.venv/bin/python" "$DIR/batch.py" "$@"

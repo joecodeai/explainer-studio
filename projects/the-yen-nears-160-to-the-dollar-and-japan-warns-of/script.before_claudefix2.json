@@ -1,0 +1,1687 @@
+{
+ "title": "The Yen Hits 160: Japan's Intervention Gamble",
+ "thumbnail_text": "YEN CRISIS AT 160?",
+ "description": "The Japanese yen is plunging toward the psychological 160 mark against the dollar, driven by hot US inflation and Fed rate hike bets. We break down why Tokyo is issuing stern warnings, what intervention actually costs, and how a widening policy gap leaves Japan scrambling.",
+ "tags": [
+  "economics",
+  "forex",
+  "japan",
+  "yen",
+  "federal reserve",
+  "inflation",
+  "currency markets"
+ ],
+ "characters": [
+  {
+   "id": "kenji",
+   "name": "Kenji",
+   "look": "Male, late 30s, short black hair, round face, wearing a muted grey cardigan over a white shirt and dark slacks. Signature prop: a worn leather coffee cup.",
+   "voice": "Male, late 30s, Tokyo accent, flat timbre, moderate pace, grounded energy.",
+   "role": "Everyman",
+   "real_person": false
+  },
+  {
+   "id": "aiko",
+   "name": "Aiko Tanaka",
+   "look": "Female, early 30s, shoulder-length brown hair, sharp features, wearing a dark navy blazer and white blouse. Signature prop: a slim tablet with yen graphs.",
+   "voice": "Female, early 30s, crisp Tokyo accent, bright pitch, steady pace, authoritative energy.",
+   "role": "Currency markets reporter",
+   "real_person": false,
+   "tag_name": "Currency markets reporter"
+  },
+  {
+   "id": "david",
+   "name": "David Chen",
+   "look": "Male, 50s, salt-and-pepper hair, clean-shaven, wearing a charcoal sweater and smart trousers. Signature prop: a silver pen tapped against his notes.",
+   "voice": "Male, 50s, neutral Asian-American accent, warm timbre, deliberate pace, analytical energy.",
+   "role": "FX Analyst",
+   "real_person": false
+  },
+  {
+   "id": "hiroshi",
+   "name": "Hiroshi Sato",
+   "look": "Male, 60s, thinning grey hair, stern expression, wearing a traditional dark suit and patterned tie. Signature prop: a leather-bound policy report.",
+   "voice": "Male, 60s, slight Kansai dialect hint, deep pitch, slow pace, measured energy.",
+   "role": "Monetary policy economist",
+   "real_person": false,
+   "tag_name": "Monetary policy economist"
+  }
+ ],
+ "environments": [
+  {
+   "id": "env_ministry",
+   "prompt": "A modern Japanese ministry briefing room with large windows overlooking Tokyo skyscrapers, muted blue and grey tones, polished wood tables.",
+   "ambience": "Quiet air conditioning hum, distant city traffic",
+   "_file": "/home/mundax/Documents/REL/ExplainerStudio/library/backgrounds_news/env_ministry_22fcf9.png",
+   "_text_ok": "b79870c81049"
+  },
+  {
+   "id": "env_trading_floor",
+   "prompt": "A dimly lit financial trading desk with multiple monitors showing currency charts, glowing green and red tickers, ergonomic chairs.",
+   "ambience": "Low keyboard clacking, soft monitor fans",
+   "_file": "/home/mundax/Documents/REL/ExplainerStudio/library/backgrounds_news/env_trading_floor_7fcabd.png",
+   "_text_ok": "a2ceb6e2edea"
+  },
+  {
+   "id": "env_boj_building",
+   "prompt": "The interior of the Bank of Japan policy room with marble walls, circular tables, and a large glass window showing Tokyo Bay.",
+   "ambience": "Muffled footsteps, gentle paper rustling",
+   "_file": "/home/mundax/Documents/REL/ExplainerStudio/library/backgrounds_news/env_boj_building_76536b.png",
+   "_text_ok": "b0d12bf4b6e2"
+  },
+  {
+   "id": "env_import_terminal",
+   "prompt": "A busy Japanese shipping port at dusk with stacked cargo containers, crane silhouettes, and neon warning lights reflecting on wet pavement.",
+   "ambience": "Crane motors, distant ship horns, wind",
+   "_file": "/home/mundax/Documents/REL/ExplainerStudio/library/backgrounds_news/env_import_terminal_e1ac85.png",
+   "_text_ok": "91c9b327c852"
+  },
+  {
+   "id": "env_cafe",
+   "prompt": "A cozy Tokyo cafe corner with wooden shelves, warm pendant lighting, steam rising from ceramic cups, and a chalkboard menu.",
+   "ambience": "Espresso machine hiss, soft jazz guitar",
+   "_file": "/home/mundax/Documents/REL/ExplainerStudio/library/backgrounds_news/env_cafe_a62871.png",
+   "_text_ok": "a7b8d10db348"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "s01",
+   "kind": "hero",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "The yen is sliding back toward 160 to the dollar, its weakest in two months. And Tokyo is warning it could step in again.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "crashing",
+     "type": "keyword",
+     "text": "160 YEN"
+    }
+   ],
+   "hero_prompt": "A stylized visual metaphor of a Japanese yen coin balancing precariously on a steep downward slope, while a heavy US dollar weight pushes from the opposite side. Muted gold and silver tones, dramatic lighting.",
+   "transition": "cut",
+   "sfx": [
+    {
+     "at_word": "crashing",
+     "sound": "heavy thud"
+    }
+   ],
+   "music": "tense",
+   "narration": "The yen is sliding back toward 160 to the dollar, its weakest in two months. And Tokyo is warning it could step in again.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "_dur": 7.241041666666667
+  },
+  {
+   "id": "s02",
+   "kind": "stage",
+   "environment": "env_cafe",
+   "cast": [
+    {
+     "char": "kenji",
+     "position": "left"
+    },
+    {
+     "char": "david",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "kenji",
+     "text": "The yen just hit its weakest level in two months. Should I be worried?",
+     "emotion": "worried",
+     "pose": "side_listen",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "david",
+     "text": "It's not just a dip. We're approaching the psychological 160 mark.",
+     "emotion": "neutral",
+     "pose": "point",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "weakest",
+     "type": "number",
+     "text": "-2 months"
+    }
+   ],
+   "transition": "slide",
+   "sfx": [],
+   "music": "tense",
+   "narration": "The yen just hit its weakest level in two months. Should I be worried? It's not just a dip. We're approaching the psychological 160 mark.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 7.354291666666667
+  },
+  {
+   "id": "s03",
+   "kind": "title_card",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "The 160 line isn't just a number. It's a red flag.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [],
+   "title_text": "THE 160 LINE",
+   "transition": "wipe",
+   "sfx": [
+    {
+     "at_word": "line",
+     "sound": "sharp whoosh"
+    }
+   ],
+   "music": "tense",
+   "narration": "The 160 line isn't just a number. It's a red flag.",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 3.8957916666666668
+  },
+  {
+   "id": "s04",
+   "kind": "chart",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Hot US inflation data just shifted the global balance.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [],
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "US inflation, October",
+    "mode": "stats",
+    "items": [
+     {
+      "value": "0.4%",
+      "label": "Prices rose in October"
+     },
+     {
+      "value": "0.3%",
+      "label": "What forecasters expected"
+     }
+    ]
+   },
+   "transition": "zoom",
+   "sfx": [],
+   "music": "tense",
+   "narration": "Hot US inflation data just shifted the global balance.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "hero_prompt": "",
+   "_dur": 3.31125
+  },
+  {
+   "id": "s05",
+   "kind": "stage",
+   "environment": "env_trading_floor",
+   "cast": [
+    {
+     "char": "kenji",
+     "position": "left"
+    },
+    {
+     "char": "david",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "kenji",
+     "text": "So the Fed just keeps hiking rates?",
+     "emotion": "confused",
+     "pose": "side_talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "david",
+     "text": "Odds are now at 100% for December. Some even bet on a jumbo half-point move.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "100%",
+     "type": "number",
+     "text": "DEC HIKE CERTAIN"
+    }
+   ],
+   "transition": "cut",
+   "sfx": [
+    {
+     "at_word": "hiking",
+     "sound": "cash register"
+    }
+   ],
+   "music": "tense",
+   "narration": "So the Fed just keeps hiking rates? Odds are now at 100% for December. Some even bet on a jumbo half-point move.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 6.82825
+  },
+  {
+   "id": "s06",
+   "kind": "map",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "This policy gap is forcing money straight into the dollar.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "dollar",
+     "type": "label",
+     "text": "FLOW TO USD"
+    }
+   ],
+   "map": {
+    "label": "Money chases higher US rates",
+    "countries": [
+     "United States"
+    ],
+    "places": [
+     {
+      "name": "Tokyo",
+      "lat": 35.6762,
+      "lon": 139.6503
+     },
+     {
+      "name": "New York",
+      "lat": 40.7128,
+      "lon": -74.006
+     }
+    ],
+    "routes": []
+   },
+   "transition": "zoom",
+   "sfx": [],
+   "music": "tense",
+   "narration": "This policy gap is forcing money straight into the dollar.",
+   "title_text": "",
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 2.696125
+  },
+  {
+   "id": "s07",
+   "kind": "stage",
+   "environment": "env_ministry",
+   "cast": [
+    {
+     "char": "aiko",
+     "position": "left"
+    },
+    {
+     "char": "kenji",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "aiko",
+     "text": "Japan's top currency official, Atsushi Mimura, says the moves are *too rapid*.",
+     "emotion": "worried",
+     "pose": "side_listen",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "kenji",
+     "text": "Are they actually going to step in?",
+     "emotion": "surprised",
+     "pose": "talk",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "rapid",
+     "type": "keyword",
+     "text": "WARNING ISSUED"
+    }
+   ],
+   "transition": "cut",
+   "sfx": [],
+   "music": "tense",
+   "narration": "Japan's top currency official, Atsushi Mimura, says the moves are *too rapid*. Are they actually going to step in?",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 6.834625
+  },
+  {
+   "id": "s08",
+   "kind": "title_card",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Verbal warnings are step one. But history shows they only buy time.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [],
+   "title_text": "THE COST OF DEFENSE",
+   "transition": "slide",
+   "sfx": [
+    {
+     "at_word": "time",
+     "sound": "ticking clock"
+    }
+   ],
+   "music": "tense",
+   "narration": "Verbal warnings are step one. But history shows they only buy time.",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 4.128583333333333
+  },
+  {
+   "id": "s09",
+   "kind": "chart",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Tokyo's intervention budget is already stretched thin.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [],
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "Japan's yen defence this year",
+    "mode": "stats",
+    "items": [
+     {
+      "value": "¥15.4T",
+      "label": "Spent from July 30 to August 3"
+     },
+     {
+      "value": "¥27T+",
+      "label": "Total so far this year"
+     }
+    ]
+   },
+   "transition": "wipe",
+   "sfx": [],
+   "music": "tense",
+   "narration": "Tokyo's intervention budget is already stretched thin.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "hero_prompt": "",
+   "_dur": 2.8388333333333335
+  },
+  {
+   "id": "s10",
+   "kind": "hero",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "This summer Japan bought yen three times in a week. The yen bounced, but now it's drifting back toward the same line.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "trillions",
+     "type": "number",
+     "text": "-¥7.98 TRILLION"
+    }
+   ],
+   "hero_prompt": "A dramatic wide shot of a massive Japanese ledger book open on a desk, its pages fluttering violently in the wind as heavy gold coins scatter across the surface.",
+   "transition": "cut",
+   "sfx": [
+    {
+     "at_word": "slipping",
+     "sound": "paper rustle"
+    }
+   ],
+   "music": "tense",
+   "narration": "This summer Japan bought yen three times in a week. The yen bounced, but now it's drifting back toward the same line.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "_dur": 7.0324583333333335
+  },
+  {
+   "id": "s11",
+   "kind": "stage",
+   "environment": "env_boj_building",
+   "cast": [
+    {
+     "char": "hiroshi",
+     "position": "left"
+    },
+    {
+     "char": "david",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "hiroshi",
+     "text": "Intervention buys time. It cannot close the rate gap.",
+     "emotion": "neutral",
+     "pose": "shrug",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "david",
+     "text": "Exactly. Even if Japan hikes rates to 1.5%, the US is far ahead.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "gap",
+     "type": "keyword",
+     "text": "POLICY DIVERGENCE"
+    }
+   ],
+   "transition": "cut",
+   "sfx": [],
+   "music": "tense",
+   "narration": "Intervention buys time. It cannot close the rate gap. Exactly. Even if Japan hikes rates to 1.5%, the US is far ahead.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 9.759125000000001
+  },
+  {
+   "id": "s12",
+   "kind": "map",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "The Bank of Japan faces its own dilemma. Wholesale inflation hit 7.1%.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "dilemma",
+     "type": "keyword",
+     "text": "BOJ PRESSURE"
+    }
+   ],
+   "map": {
+    "label": "Prices are rising in Japan too",
+    "countries": [
+     "Japan"
+    ],
+    "places": [
+     {
+      "name": "Tokyo",
+      "lat": 35.6895,
+      "lon": 139.6917
+     }
+    ],
+    "routes": []
+   },
+   "transition": "zoom",
+   "sfx": [],
+   "music": "tense",
+   "narration": "The Bank of Japan faces its own dilemma. Wholesale inflation hit 7.1%.",
+   "title_text": "",
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 5.136166666666667
+  },
+  {
+   "id": "s13",
+   "kind": "stage",
+   "environment": "env_import_terminal",
+   "cast": [
+    {
+     "char": "kenji",
+     "position": "left"
+    },
+    {
+     "char": "hiroshi",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "kenji",
+     "text": "A weak yen makes everything we import more expensive?",
+     "emotion": "worried",
+     "pose": "side_talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "hiroshi",
+     "text": "Import prices jumped 24.8%. Energy, food, raw materials all hit harder.",
+     "emotion": "neutral",
+     "pose": "side_listen",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "expensive",
+     "type": "number",
+     "text": "+24.8% IMPORTS"
+    }
+   ],
+   "transition": "cut",
+   "sfx": [
+    {
+     "at_word": "import",
+     "sound": "heavy cargo drop"
+    }
+   ],
+   "music": "tense",
+   "narration": "A weak yen makes everything we import more expensive? Import prices jumped 24.8%. Energy, food, raw materials all hit harder.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 9.620041666666665
+  },
+  {
+   "id": "s14",
+   "kind": "chart",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Markets are now watching the 160 line like a hawk.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [],
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "Dollar vs yen",
+    "mode": "stats",
+    "items": [
+     {
+      "value": "159.48",
+      "label": "Highest since early September"
+     },
+     {
+      "value": "160",
+      "label": "The line Tokyo defended this summer"
+     }
+    ]
+   },
+   "transition": "wipe",
+   "sfx": [],
+   "music": "tense",
+   "narration": "Markets are now watching the 160 line like a hawk.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "hero_prompt": "",
+   "_dur": 3.1438333333333333
+  },
+  {
+   "id": "s15",
+   "kind": "stage",
+   "environment": "env_ministry",
+   "cast": [
+    {
+     "char": "aiko",
+     "position": "left"
+    },
+    {
+     "char": "kenji",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "aiko",
+     "text": "Words still work, for now. The yen bounced right after the ministry's warning.",
+     "emotion": "confident",
+     "pose": "side_listen",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "kenji",
+     "text": "So it's all talk for now?",
+     "emotion": "surprised",
+     "pose": "talk",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "warning",
+     "type": "label",
+     "text": "MARKET REACTS"
+    }
+   ],
+   "transition": "cut",
+   "sfx": [],
+   "music": "tense",
+   "narration": "Words still work, for now. The yen bounced right after the ministry's warning. So it's all talk for now?",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 6.0996250000000005
+  },
+  {
+   "id": "s16",
+   "kind": "title_card",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "But history is a poor predictor for the next move.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [],
+   "title_text": "WHAT NEXT?",
+   "transition": "slide",
+   "sfx": [
+    {
+     "at_word": "move",
+     "sound": "paper flip"
+    }
+   ],
+   "music": "tense",
+   "narration": "But history is a poor predictor for the next move.",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 2.311916666666667
+  },
+  {
+   "id": "s17",
+   "kind": "stage",
+   "environment": "env_trading_floor",
+   "cast": [
+    {
+     "char": "david",
+     "position": "left"
+    },
+    {
+     "char": "hiroshi",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "david",
+     "text": "Fed meets December 9. BOJ follows on the 17th.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "hiroshi",
+     "text": "If Washington hikes half a point, Tokyo's gap widens instantly.",
+     "emotion": "worried",
+     "pose": "thinking",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "widens",
+     "type": "keyword",
+     "text": "POLICY GAP"
+    }
+   ],
+   "transition": "cut",
+   "sfx": [],
+   "music": "tense",
+   "narration": "Fed meets December 9. BOJ follows on the 17th. If Washington hikes half a point, Tokyo's gap widens instantly.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 9.471458333333334
+  },
+  {
+   "id": "s18",
+   "kind": "chart",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Asian currencies are weakening across the board.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [],
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "Asia feels it too",
+    "mode": "stats",
+    "items": [
+     {
+      "value": "Peso",
+      "label": "Philippines: weaker"
+     },
+     {
+      "value": "Taiwan $",
+      "label": "Weaker"
+     },
+     {
+      "value": "Aussie $",
+      "label": "Weaker"
+     }
+    ]
+   },
+   "transition": "wipe",
+   "sfx": [],
+   "music": "tense",
+   "narration": "Asian currencies are weakening across the board.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "hero_prompt": "",
+   "_dur": 2.1455416666666665
+  },
+  {
+   "id": "s19",
+   "kind": "map",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "And it's not just Japan. Currencies from Manila to Sydney are slipping against a stronger dollar.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [],
+   "map": {
+    "label": "Asia slips against the dollar",
+    "countries": [],
+    "places": [
+     {
+      "name": "Manila",
+      "lat": 14.5995,
+      "lon": 120.9842
+     },
+     {
+      "name": "Taipei",
+      "lat": 25.033,
+      "lon": 121.5654
+     },
+     {
+      "name": "Sydney",
+      "lat": -33.8688,
+      "lon": 151.2093
+     }
+    ],
+    "routes": []
+   },
+   "transition": "zoom",
+   "sfx": [],
+   "music": "tense",
+   "narration": "And it's not just Japan. Currencies from Manila to Sydney are slipping against a stronger dollar.",
+   "title_text": "",
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 5.638583333333333
+  },
+  {
+   "id": "s20",
+   "kind": "stage",
+   "environment": "env_cafe",
+   "cast": [
+    {
+     "char": "kenji",
+     "position": "left"
+    },
+    {
+     "char": "david",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "kenji",
+     "text": "Does this mean carry trades are unwinding?",
+     "emotion": "confused",
+     "pose": "side_talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "david",
+     "text": "If the yen jumps suddenly, traders will dump leveraged positions fast.",
+     "emotion": "neutral",
+     "pose": "point",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "unwinding",
+     "type": "keyword",
+     "text": "CARRY TRADE RISK"
+    }
+   ],
+   "transition": "cut",
+   "sfx": [],
+   "music": "tense",
+   "narration": "Does this mean carry trades are unwinding? If the yen jumps suddenly, traders will dump leveraged positions fast.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 6.009166666666667
+  },
+  {
+   "id": "s21",
+   "kind": "title_card",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Intervention is a temporary shield. Rates are the real weapon.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [],
+   "title_text": "THE REAL PLAY",
+   "transition": "slide",
+   "sfx": [
+    {
+     "at_word": "weapon",
+     "sound": "sword unsheath"
+    }
+   ],
+   "music": "tense",
+   "narration": "Intervention is a temporary shield. Rates are the real weapon.",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 3.8253333333333335
+  },
+  {
+   "id": "s22",
+   "kind": "stage",
+   "environment": "env_boj_building",
+   "cast": [
+    {
+     "char": "hiroshi",
+     "position": "left"
+    },
+    {
+     "char": "aiko",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "hiroshi",
+     "text": "A quarter-point hike just matches the Fed. The gap stays wide.",
+     "emotion": "neutral",
+     "pose": "shrug",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "aiko",
+     "text": "Policymakers are divided on how fast to tighten.",
+     "emotion": "worried",
+     "pose": "facepalm",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "divided",
+     "type": "label",
+     "text": "POLICY DEADLOCK"
+    }
+   ],
+   "transition": "cut",
+   "sfx": [],
+   "music": "tense",
+   "narration": "A quarter-point hike just matches the Fed. The gap stays wide. Policymakers are divided on how fast to tighten.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 7.0115
+  },
+  {
+   "id": "s23",
+   "kind": "title_card",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Markets see a 100% chance the Fed hikes in December, and some are betting on a bigger, half-point move.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [],
+   "transition": "wipe",
+   "sfx": [],
+   "music": "tense",
+   "narration": "Markets see a 100% chance the Fed hikes in December, and some are betting on a bigger, half-point move.",
+   "title_text": "Fed: 100% odds",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "hero_prompt": "",
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "_dur": 6.130875
+  },
+  {
+   "id": "s24",
+   "kind": "stage",
+   "environment": "env_import_terminal",
+   "cast": [
+    {
+     "char": "kenji",
+     "position": "left"
+    },
+    {
+     "char": "hiroshi",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "kenji",
+     "text": "So Japan is playing defense with a broken shield?",
+     "emotion": "confused",
+     "pose": "side_talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "hiroshi",
+     "text": "They're buying time. Waiting for inflation to cool.",
+     "emotion": "neutral",
+     "pose": "thinking",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "defense",
+     "type": "keyword",
+     "text": "STRATEGIC PAUSE"
+    }
+   ],
+   "transition": "cut",
+   "sfx": [],
+   "music": "tense",
+   "narration": "So Japan is playing defense with a broken shield? They're buying time. Waiting for inflation to cool.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 5.686166666666667
+  },
+  {
+   "id": "s25",
+   "kind": "title_card",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "The battle for 160 is just beginning.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [],
+   "title_text": "THE BATTLE BEGINS",
+   "transition": "slide",
+   "sfx": [
+    {
+     "at_word": "battle",
+     "sound": "drum roll fade"
+    }
+   ],
+   "music": "tense",
+   "narration": "The battle for 160 is just beginning.",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 2.88
+  },
+  {
+   "id": "s26",
+   "kind": "stage",
+   "environment": "env_cafe",
+   "cast": [
+    {
+     "char": "kenji",
+     "position": "left"
+    },
+    {
+     "char": "david",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "kenji",
+     "text": "If the yen keeps falling, will we see another summer of trillion-yen spending?",
+     "emotion": "worried",
+     "pose": "side_listen",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "david",
+     "text": "Only if they're willing to burn through reserves again.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "burn",
+     "type": "keyword",
+     "text": "RESERVE WATCH"
+    }
+   ],
+   "transition": "cut",
+   "sfx": [],
+   "music": "comedic",
+   "narration": "If the yen keeps falling, will we see another summer of trillion-yen spending? Only if they're willing to burn through reserves again.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 6.374458333333333
+  },
+  {
+   "id": "s27",
+   "kind": "stage",
+   "environment": "env_ministry",
+   "cast": [
+    {
+     "char": "kenji",
+     "position": "left"
+    },
+    {
+     "char": "david",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "kenji",
+     "text": "So everyone is waiting on everyone else. Very relaxing for anyone holding yen.",
+     "emotion": "sarcastic",
+     "pose": "facepalm",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "david",
+     "text": "Exactly. Markets hate waiting, but Tokyo has no magic wand.",
+     "emotion": "neutral",
+     "pose": "point",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "strategy",
+     "type": "label",
+     "text": "WAIT & SEE"
+    }
+   ],
+   "transition": "cut",
+   "sfx": [],
+   "music": "comedic",
+   "narration": "So everyone is waiting on everyone else. Very relaxing for anyone holding yen. Exactly. Markets hate waiting, but Tokyo has no magic wand.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 8.905833333333334
+  },
+  {
+   "id": "s28",
+   "kind": "title_card",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "The yen's fate hinges on two December meetings.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [],
+   "title_text": "THE VERDICT",
+   "transition": "wipe",
+   "sfx": [
+    {
+     "at_word": "fate",
+     "sound": "gavel strike"
+    }
+   ],
+   "music": "tense",
+   "narration": "The yen's fate hinges on two December meetings.",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 2.465333333333333
+  },
+  {
+   "id": "s29",
+   "kind": "stage",
+   "environment": "env_trading_floor",
+   "cast": [
+    {
+     "char": "aiko",
+     "position": "left"
+    },
+    {
+     "char": "kenji",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "aiko",
+     "text": "Watch the gap between US and Japanese rates. That's what decides the next move.",
+     "emotion": "confident",
+     "pose": "side_talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "kenji",
+     "text": "Thanks for breaking it down before my wallet panicked.",
+     "emotion": "happy",
+     "pose": "shrug",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "differentals",
+     "type": "keyword",
+     "text": "RATE GAP KEY"
+    }
+   ],
+   "transition": "cut",
+   "sfx": [],
+   "music": "tense",
+   "narration": "Watch the gap between US and Japanese rates. That's what decides the next move. Thanks for breaking it down before my wallet panicked.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 6.824666666666666
+  },
+  {
+   "id": "s30",
+   "kind": "title_card",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Japan's yen defense is a war of attrition against global rates. Thanks for watching — subscribe for more explainers.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [],
+   "title_text": "THE BOTTOM LINE",
+   "transition": "fade",
+   "sfx": [
+    {
+     "at_word": "attrition",
+     "sound": "paper shuffle"
+    }
+   ],
+   "music": "upbeat",
+   "narration": "Japan's yen defense is a war of attrition against global rates. Thanks for watching — subscribe for more explainers.",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 6.074041666666667
+  }
+ ],
+ "sources": [
+  "[1] Japan’s Mimura warns yen moves are too rapid as USD/JPY pushes back toward 160",
+  "[2] Japanese yen nears 160 per dollar as US rate hike bets strengthen",
+  "[3] Fed December Rate Hike All but Certain as Yen Nears 160 Line, Indonesian Rupiah Hits Record Low",
+  "[4] USD/JPY: Intervention risk near 160 – Societe Generale",
+  "[5] Hot US Inflation Drags the Yen Close to 160. Will Japan Step In Again?",
+  "[6] Japanese Yen recovers from two-month low as BoJ rate hike bets meet intervention risk"
+ ],
+ "seo": {
+  "title": "Yen Hits 160: Is Japan Running Out of Ammo?",
+  "description": "The yen is crashing toward the historic 160 mark as US rate hikes widen the policy gap with Japan. While Tokyo deploys verbal warnings and spends trillions to intervene, history shows these moves only buy time against a stronger dollar. Will Japan's defenses hold, or are reserves running dry? Markets now watch December Fed and BOJ meetings closely, as the interest rate differential dictates whether carry trades unwind and Asian currencies face further volatility in this war of attrition against global rates.",
+  "tags": [
+   "world news",
+   "atsushi mimura",
+   "why is the yen falling",
+   "yen news today",
+   "yen hits 160 dollar",
+   "economics explained",
+   "economics",
+   "forex",
+   "japan",
+   "yen",
+   "fed",
+   "what will japan do next",
+   "latest forex updates 2026",
+   "japan intervention strategy explained",
+   "global markets",
+   "bank of japan",
+   "how does fed rate hike affect yen",
+   "global economy news today",
+   "us fed rate impact on yen",
+   "currency exchange",
+   "tokyo",
+   "why did japan warn about intervention",
+   "fed rate decision 2026",
+   "bank of japan policy dilemma",
+   "manila"
+  ],
+  "hashtags": [
+   "#yen",
+   "#forex",
+   "#economics",
+   "#japan"
+  ],
+  "tags_v": 2
+ }
+}

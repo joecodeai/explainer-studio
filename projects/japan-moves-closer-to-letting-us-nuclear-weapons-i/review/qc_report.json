@@ -1,0 +1,312 @@
+{
+ "passed": true,
+ "scores": {
+  "Visual quality": 98.5,
+  "Character consistency": 100.0,
+  "Physical positioning": 100.0,
+  "Animation quality": 85.6,
+  "Audio quality": 97.6,
+  "Lip synchronization": 100.0,
+  "Subtitle accuracy": 85.9,
+  "Scene continuity": 100.0,
+  "Semantic accuracy": 98.5,
+  "Overall": 96.2
+ },
+ "pass_score": 85,
+ "findings": [
+  {
+   "category": "voice",
+   "severity": "MEDIUM",
+   "description": "narrator's voice pitch jumps +5.4 semitones on this line",
+   "start": 5.691,
+   "end": null,
+   "scene": "s01",
+   "confidence": 0.6,
+   "fix": "retake_line",
+   "fix_args": {
+    "scene": "s01",
+    "key": "18ca9bfb4f"
+   },
+   "recommendation": "",
+   "source": "stage1",
+   "status": "open",
+   "frame": 171,
+   "auto_fixable": true
+  },
+  {
+   "category": "animation",
+   "severity": "MEDIUM",
+   "description": "animated shot s12 line 0 (lipsync): mouth keeps moving when the speech stops (silent 2.73 vs speaking 2.32) \u2014 best of 2 attempts",
+   "start": 78.86,
+   "end": null,
+   "scene": "s12",
+   "confidence": 0.8,
+   "fix": null,
+   "fix_args": {},
+   "recommendation": "regenerate this shot: delete it from talk/ and re-run, or ./fix with a FEEDBACK note",
+   "source": "stage1",
+   "status": "open",
+   "frame": 2366,
+   "auto_fixable": false
+  },
+  {
+   "category": "text",
+   "severity": "MEDIUM",
+   "description": "chart text missing/misread: ['Extracted plutonium (end of 2024)'] (read [\"Japan's plutonium, as cited by China's envoy\", '44.4 t', '~5,500', '191 t', 'Extracted plutonium (end', 'Warheads it could make,', 'of 2024)', 'he claimed', 'Unexracted, in spent fuel'])",
+   "start": 92.46000099999999,
+   "end": null,
+   "scene": "s13",
+   "confidence": 0.7,
+   "fix": null,
+   "fix_args": {},
+   "recommendation": "check chart labels/values in script.json",
+   "source": "stage1",
+   "status": "open",
+   "frame": 2774,
+   "auto_fixable": false
+  },
+  {
+   "category": "animation",
+   "severity": "MEDIUM",
+   "description": "animated shot s16 line 1 (people): person size jumps (x0.59) at frame 0 \u2014 best of 3 attempts",
+   "start": 101.05,
+   "end": null,
+   "scene": "s16",
+   "confidence": 0.8,
+   "fix": null,
+   "fix_args": {},
+   "recommendation": "regenerate this shot: delete it from talk/ and re-run, or ./fix with a FEEDBACK note",
+   "source": "stage1",
+   "status": "open",
+   "frame": 3032,
+   "auto_fixable": false
+  },
+  {
+   "category": "animation",
+   "severity": "MEDIUM",
+   "description": "animated shot s19 line 0 (lipsync): lip movement does not follow the speech (correlation 0.04)",
+   "start": 113.35,
+   "end": null,
+   "scene": "s19",
+   "confidence": 0.8,
+   "fix": null,
+   "fix_args": {},
+   "recommendation": "regenerate this shot: delete it from talk/ and re-run, or ./fix with a FEEDBACK note",
+   "source": "stage1",
+   "status": "open",
+   "frame": 3400,
+   "auto_fixable": false
+  },
+  {
+   "category": "subtitle",
+   "severity": "MEDIUM",
+   "description": "subtitles out of sync with speech (median 230 ms, worst 260 ms)",
+   "start": 141.65000099999997,
+   "end": null,
+   "scene": "s23",
+   "confidence": 0.9,
+   "fix": "retime_subtitles",
+   "fix_args": {
+    "scene": "s23"
+   },
+   "recommendation": "",
+   "source": "stage1",
+   "status": "open",
+   "frame": 4250,
+   "auto_fixable": true
+  },
+  {
+   "category": "animation",
+   "severity": "MEDIUM",
+   "description": "sudden jump inside a shot (no cut expected here)",
+   "start": 143.2833343333333,
+   "end": null,
+   "scene": "s23",
+   "confidence": 0.6,
+   "fix": null,
+   "fix_args": {},
+   "recommendation": "check pose switch / camera move at this time",
+   "source": "stage1",
+   "status": "open",
+   "frame": 4299,
+   "auto_fixable": false
+  },
+  {
+   "category": "subtitle",
+   "severity": "MEDIUM",
+   "description": "subtitles out of sync with speech (median 306 ms, worst 326 ms)",
+   "start": 143.59800099999998,
+   "end": null,
+   "scene": "s23",
+   "confidence": 0.9,
+   "fix": "retime_subtitles",
+   "fix_args": {
+    "scene": "s23"
+   },
+   "recommendation": "",
+   "source": "stage1",
+   "status": "open",
+   "frame": 4308,
+   "auto_fixable": true
+  },
+  {
+   "category": "animation",
+   "severity": "MEDIUM",
+   "description": "sudden jump inside a shot (no cut expected here)",
+   "start": 146.8833343333333,
+   "end": null,
+   "scene": "s23",
+   "confidence": 0.6,
+   "fix": null,
+   "fix_args": {},
+   "recommendation": "check pose switch / camera move at this time",
+   "source": "stage1",
+   "status": "open",
+   "frame": 4407,
+   "auto_fixable": false
+  },
+  {
+   "category": "subtitle",
+   "severity": "MEDIUM",
+   "description": "subtitles out of sync with speech (median 0 ms, worst 700 ms)",
+   "start": 160.693335,
+   "end": null,
+   "scene": "s25",
+   "confidence": 0.9,
+   "fix": "retime_subtitles",
+   "fix_args": {
+    "scene": "s25"
+   },
+   "recommendation": "",
+   "source": "stage1",
+   "status": "open",
+   "frame": 4821,
+   "auto_fixable": true
+  },
+  {
+   "category": "semantic",
+   "severity": "LOW",
+   "description": "hero shot: The lantern's paper shade is depicted as cracked glass or stone, which is inconsistent with the intended description of a paper shade.",
+   "start": 0.0,
+   "end": 10.366667,
+   "scene": "s01",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s01"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 0,
+   "auto_fixable": false
+  },
+  {
+   "category": "text",
+   "severity": "LOW",
+   "description": "s02: The label 'Hiroshima' is positioned slightly to the west of its actual geographical location relative to Tokyo on the map, which may cause confusion.",
+   "start": 14.037667,
+   "end": null,
+   "scene": "s02",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {},
+   "recommendation": "Reposition the 'Hiroshima' label to align more accurately with its geographical location on the map.",
+   "source": "stage2",
+   "status": "open",
+   "frame": 421,
+   "auto_fixable": false
+  },
+  {
+   "category": "visual",
+   "severity": "LOW",
+   "description": "hero shot: The shield has a slightly irregular top edge, appearing to merge with the character's back, which could be interpreted as a minor rendering artifact.",
+   "start": 64.473334,
+   "end": 68.440001,
+   "scene": "s10",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s10"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 1934,
+   "auto_fixable": false
+  },
+  {
+   "category": "semantic",
+   "severity": "LOW",
+   "description": "hero shot: The fan's design includes a hibiscus flower, but the flower's petals appear slightly distorted, potentially affecting the clarity of the intended symbol.",
+   "start": 64.473334,
+   "end": 68.440001,
+   "scene": "s10",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s10"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 1934,
+   "auto_fixable": false
+  },
+  {
+   "category": "visual",
+   "severity": "LOW",
+   "description": "hero shot: The image clearly shows a chessboard with stone and metal-like pieces, including a prominent red rook casting a long shadow, effectively conveying the intended cinematic and symbolic idea.",
+   "start": 94.94333399999998,
+   "end": 97.44333399999998,
+   "scene": "s15",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s15"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 2848,
+   "auto_fixable": false
+  },
+  {
+   "category": "visual",
+   "severity": "LOW",
+   "description": "hero shot: The compass needle appears to be physically embedded in the man's chest, which is an unrealistic and visually jarring merging of objects.",
+   "start": 129.16333399999996,
+   "end": 132.83000099999995,
+   "scene": "s21",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s21"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 3875,
+   "auto_fixable": false
+  },
+  {
+   "category": "semantic",
+   "severity": "LOW",
+   "description": "hero shot: The image conveys the intended idea of a compass spinning over a map with floating papers and ink blots, but the compass's placement on the man's chest may distract from the intended metaphor.",
+   "start": 129.16333399999996,
+   "end": 132.83000099999995,
+   "scene": "s21",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s21"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 3875,
+   "auto_fixable": false
+  }
+ ],
+ "fix_history": []
+}

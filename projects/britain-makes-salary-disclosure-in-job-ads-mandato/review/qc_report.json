@@ -1,0 +1,1022 @@
+{
+ "passed": true,
+ "scores": {
+  "Visual quality": 89.5,
+  "Character consistency": 100.0,
+  "Physical positioning": 100.0,
+  "Animation quality": 100.0,
+  "Audio quality": 90.4,
+  "Lip synchronization": 86.4,
+  "Subtitle accuracy": 100.0,
+  "Scene continuity": 100.0,
+  "Semantic accuracy": 99.0,
+  "Overall": 96.1
+ },
+ "pass_score": 85,
+ "findings": [
+  {
+   "category": "lipsync",
+   "severity": "HIGH",
+   "description": "sue_hr's mouth stays closed while speaking (open in 0% of frames)",
+   "start": 10.620999999999999,
+   "end": 13.933,
+   "scene": "s03",
+   "confidence": 0.9,
+   "fix": "regen_talk",
+   "fix_args": {
+    "char": "sue_hr",
+    "pose": "point"
+   },
+   "recommendation": "",
+   "source": "stage1",
+   "status": "manual",
+   "frame": 319,
+   "auto_fixable": true
+  },
+  {
+   "category": "lipsync",
+   "severity": "MEDIUM",
+   "description": "sue_hr's mouth shapes match the audio in only 6% of frames",
+   "start": 10.620999999999999,
+   "end": 13.933,
+   "scene": "s03",
+   "confidence": 0.7,
+   "fix": null,
+   "fix_args": {},
+   "recommendation": "",
+   "source": "stage1",
+   "status": "open",
+   "frame": 319,
+   "auto_fixable": false
+  },
+  {
+   "category": "voice",
+   "severity": "MEDIUM",
+   "description": "narrator's voice pitch jumps +5.1 semitones on this line",
+   "start": 22.877333,
+   "end": null,
+   "scene": "s04",
+   "confidence": 0.6,
+   "fix": "retake_line",
+   "fix_args": {
+    "scene": "s04",
+    "key": "1715dc6602"
+   },
+   "recommendation": "",
+   "source": "stage1",
+   "status": "open",
+   "frame": 686,
+   "auto_fixable": true
+  },
+  {
+   "category": "audio",
+   "severity": "MEDIUM",
+   "description": "spoken line does not match script (match 0.77) wrong: [\"'two hundred thousand'->'200 000'\"] \u2014 \"Yes! Plus, they are hunting for two hundred thousand placeme\"",
+   "start": 100.03866699999998,
+   "end": 103.44866699999997,
+   "scene": "s13",
+   "confidence": 0.9,
+   "fix": "retake_line",
+   "fix_args": {
+    "scene": "s13",
+    "key": "cb11b63537"
+   },
+   "recommendation": "regenerate this TTS line",
+   "source": "stage1",
+   "status": "open",
+   "frame": 3001,
+   "auto_fixable": true
+  },
+  {
+   "category": "audio",
+   "severity": "MEDIUM",
+   "description": "spoken line does not match script (match 0.87) wrong: [\"'ten thousand'->'10 000'\"] \u2014 \"Companies like Siemens have pledged ten thousand engineering\"",
+   "start": 107.34999999999998,
+   "end": 110.94699999999997,
+   "scene": "s14",
+   "confidence": 0.9,
+   "fix": "retake_line",
+   "fix_args": {
+    "scene": "s14",
+    "key": "42a4525316"
+   },
+   "recommendation": "regenerate this TTS line",
+   "source": "stage1",
+   "status": "open",
+   "frame": 3220,
+   "auto_fixable": true
+  },
+  {
+   "category": "visual",
+   "severity": "LOW",
+   "description": "hero shot: The text 'competitive salary' is clearly visible and legible, with no garbling or fake writing.",
+   "start": 2.833333,
+   "end": 6.6,
+   "scene": "s02",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s02"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 85,
+   "auto_fixable": false
+  },
+  {
+   "category": "visual",
+   "severity": "LOW",
+   "description": "hero shot: The cartoon style is consistent with flat animation, featuring bold outlines and simple rounded characters. The character's hands are simplified but appropriate for the style, with no visible rendering artefacts or merging of objects.",
+   "start": 2.833333,
+   "end": 6.6,
+   "scene": "s02",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s02"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 85,
+   "auto_fixable": false
+  },
+  {
+   "category": "visual",
+   "severity": "LOW",
+   "description": "hero shot: The character has a standard cartoon anatomy with no extra or missing limbs or fingers. The hands are simplified but correctly proportioned for the style.",
+   "start": 2.833333,
+   "end": 6.6,
+   "scene": "s02",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s02"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 85,
+   "auto_fixable": false
+  },
+  {
+   "category": "visual",
+   "severity": "LOW",
+   "description": "hero shot: The laptop and its screen are clearly depicted without merging or distortion. The screen content is distinct and readable.",
+   "start": 2.833333,
+   "end": 6.6,
+   "scene": "s02",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s02"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 85,
+   "auto_fixable": false
+  },
+  {
+   "category": "visual",
+   "severity": "LOW",
+   "description": "hero shot: The book appears to float with a fog effect around it, which is consistent with the intended cinematic and symbolic representation of a hovering rulebook.",
+   "start": 73.496667,
+   "end": 76.83,
+   "scene": "s10",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s10"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 2205,
+   "auto_fixable": false
+  },
+  {
+   "category": "visual",
+   "severity": "LOW",
+   "description": "hero shot: The characters' expressions (question marks above heads) clearly convey confusion and hope, aligning with the intended idea.",
+   "start": 73.496667,
+   "end": 76.83,
+   "scene": "s10",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s10"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 2205,
+   "auto_fixable": false
+  },
+  {
+   "category": "visual",
+   "severity": "LOW",
+   "description": "hero shot: No continuity issues are present; the scene is static and coherent.",
+   "start": 73.496667,
+   "end": 76.83,
+   "scene": "s10",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s10"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 2205,
+   "auto_fixable": false
+  },
+  {
+   "category": "visual",
+   "severity": "LOW",
+   "description": "hero shot: The characters are generic and not identifiable, which is appropriate for representing 'employers and job seekers' in a symbolic way.",
+   "start": 73.496667,
+   "end": 76.83,
+   "scene": "s10",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s10"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 2205,
+   "auto_fixable": false
+  },
+  {
+   "category": "visual",
+   "severity": "LOW",
+   "description": "hero shot: No objects are merging into each other; the book is clearly separate from the characters and the background.",
+   "start": 73.496667,
+   "end": 76.83,
+   "scene": "s10",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s10"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 2205,
+   "auto_fixable": false
+  },
+  {
+   "category": "visual",
+   "severity": "LOW",
+   "description": "hero shot: All characters have consistent anatomy (two eyes, one head, no extra limbs or fingers), which is appropriate for the cartoon style.",
+   "start": 73.496667,
+   "end": 76.83,
+   "scene": "s10",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s10"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 2205,
+   "auto_fixable": false
+  },
+  {
+   "category": "visual",
+   "severity": "LOW",
+   "description": "hero shot: The document held by the giant hand has a gold seal and blue ribbon, but the text is garbled and unreadable, which is acceptable for a cartoon style where the content is symbolic rather than legible.",
+   "start": 107.34999999999998,
+   "end": 114.44999999999997,
+   "scene": "s14",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s14"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 3220,
+   "auto_fixable": false
+  },
+  {
+   "category": "semantic",
+   "severity": "LOW",
+   "description": "hero shot: The giant hand holding the certificate appears to be a symbolic representation of opportunity or mentorship, which aligns with the intended idea of offering training. However, the hand is disproportionately large compared to the people, which may be visually jarring but is stylistically consistent with the cartoon's exaggerated proportions.",
+   "start": 107.34999999999998,
+   "end": 114.44999999999997,
+   "scene": "s14",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s14"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 3220,
+   "auto_fixable": false
+  },
+  {
+   "category": "visual",
+   "severity": "LOW",
+   "description": "hero shot: The characters have simplified features typical of cartoon style, including small dot eyes and missing noses, which are not defects but stylistic choices. There are no visible rendering artifacts or watermarks.",
+   "start": 107.34999999999998,
+   "end": 114.44999999999997,
+   "scene": "s14",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s14"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 3220,
+   "auto_fixable": false
+  },
+  {
+   "category": "visual",
+   "severity": "LOW",
+   "description": "hero shot: The text 'PAY TRANSPARENCY' is clearly legible and correctly spelled on the weight, with no garbling or fake writing.",
+   "start": 124.94333299999997,
+   "end": 129.27666599999998,
+   "scene": "s16",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s16"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 3748,
+   "auto_fixable": false
+  },
+  {
+   "category": "visual",
+   "severity": "LOW",
+   "description": "hero shot: The balance scale and its components (weights, pans, beam) are clearly defined and do not merge into each other. The pile of papers is distinct and not fused with the pan.",
+   "start": 124.94333299999997,
+   "end": 129.27666599999998,
+   "scene": "s16",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s16"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 3748,
+   "auto_fixable": false
+  },
+  {
+   "category": "visual",
+   "severity": "LOW",
+   "description": "hero shot: The image is a single, coherent shot with no continuity errors. The scale's tilt and the positioning of the hands are consistent with the intended cinematic framing.",
+   "start": 124.94333299999997,
+   "end": 129.27666599999998,
+   "scene": "s16",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s16"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 3748,
+   "auto_fixable": false
+  },
+  {
+   "category": "visual",
+   "severity": "LOW",
+   "description": "hero shot: The hands holding the pans have three fingers each, which is a stylized representation common in cartoon art. This is not an anatomical defect.",
+   "start": 124.94333299999997,
+   "end": 129.27666599999998,
+   "scene": "s16",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s16"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 3748,
+   "auto_fixable": false
+  },
+  {
+   "category": "visual",
+   "severity": "LOW",
+   "description": "hero shot: There are no rendering artefacts such as pixelation, blurring, or unnatural shadows. The lighting and shading are consistent with a flat cartoon style.",
+   "start": 124.94333299999997,
+   "end": 129.27666599999998,
+   "scene": "s16",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s16"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 3748,
+   "auto_fixable": false
+  },
+  {
+   "category": "visual",
+   "severity": "LOW",
+   "description": "hero shot: There are no visible watermarks or logos in the image.",
+   "start": 124.94333299999997,
+   "end": 129.27666599999998,
+   "scene": "s16",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s16"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 3748,
+   "auto_fixable": false
+  },
+  {
+   "category": "visual",
+   "severity": "LOW",
+   "description": "hero shot: The character on the left has a wide, joyful expression with large eyes and a broad smile, which is consistent with cartoon style but may appear exaggerated in a cinematic context.",
+   "start": 180.173333,
+   "end": 183.84,
+   "scene": "s22",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s22"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 5405,
+   "auto_fixable": false
+  },
+  {
+   "category": "visual",
+   "severity": "LOW",
+   "description": "hero shot: The text 'VOLUNTARY DISCLOSURE' on the shredder is legible but not clearly integrated into the scene; it could be more prominent or stylized to enhance readability.",
+   "start": 180.173333,
+   "end": 183.84,
+   "scene": "s22",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s22"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 5405,
+   "auto_fixable": false
+  },
+  {
+   "category": "semantic",
+   "severity": "LOW",
+   "description": "hero shot: The scene implies a conflict between a job seeker and an HR manager, but the job seeker's action of holding a 'salary card' as a shield may not clearly convey the intended metaphor of protection or negotiation.",
+   "start": 180.173333,
+   "end": 183.84,
+   "scene": "s22",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s22"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 5405,
+   "auto_fixable": false
+  },
+  {
+   "category": "visual",
+   "severity": "LOW",
+   "description": "hero shot: The HR manager is shown with a distressed expression and is actively stuffing envelopes into the shredder, but the connection between the envelopes and the job seeker's actions is not explicitly shown.",
+   "start": 180.173333,
+   "end": 183.84,
+   "scene": "s22",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s22"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 5405,
+   "auto_fixable": false
+  }
+ ],
+ "fix_history": [
+  {
+   "round": 1,
+   "finding": {
+    "category": "lipsync",
+    "severity": "HIGH",
+    "description": "sue_hr's mouth stays closed while speaking (open in 0% of frames)",
+    "start": 10.620999999999999,
+    "end": 13.933,
+    "scene": "s03",
+    "confidence": 0.9,
+    "fix": "regen_talk",
+    "fix_args": {
+     "char": "sue_hr",
+     "pose": "point"
+    },
+    "recommendation": "",
+    "source": "stage1",
+    "status": "open",
+    "frame": 319,
+    "auto_fixable": true
+   },
+   "result": "mouth frames for sue_hr/point will be regenerated"
+  },
+  {
+   "round": 1,
+   "finding": {
+    "category": "continuity",
+    "severity": "MEDIUM",
+    "description": "garbled large text in background modern_office_2b1b45.png: ['SECONDARY ATOCIC']",
+    "start": null,
+    "end": null,
+    "scene": "s05",
+    "confidence": 0.7,
+    "fix": "regen_background",
+    "fix_args": {
+     "env": "modern_office"
+    },
+    "recommendation": "",
+    "source": "stage1",
+    "status": "open",
+    "frame": null,
+    "auto_fixable": true
+   },
+   "result": "background 'modern_office' regenerated with open floor (attempt 1)"
+  },
+  {
+   "round": 1,
+   "finding": {
+    "category": "physical",
+    "severity": "HIGH",
+    "description": "sue_hr (side_listen) is drawn inside/through the table that stands in front of them (8% overlap)",
+    "start": 6.56,
+    "end": 19.793333,
+    "scene": "s03",
+    "confidence": 0.9,
+    "fix": "reposition",
+    "fix_args": {
+     "scene": "s03",
+     "env": "cozy_cafe"
+    },
+    "recommendation": "move the character to clear floor; if there is none, regenerate the background with open floor",
+    "source": "stage1",
+    "status": "open",
+    "frame": 197,
+    "auto_fixable": true
+   },
+   "result": "s03: moved dan_everyman->0.27, sue_hr->0.56"
+  },
+  {
+   "round": 1,
+   "finding": {
+    "category": "physical",
+    "severity": "HIGH",
+    "description": "paul_union (side_talk) is drawn inside/through the table that stands in front of them (31% overlap)",
+    "start": 93.43333399999999,
+    "end": 107.96666699999999,
+    "scene": "s13",
+    "confidence": 0.9,
+    "fix": "reposition",
+    "fix_args": {
+     "scene": "s13",
+     "env": "union_hall"
+    },
+    "recommendation": "move the character to clear floor; if there is none, regenerate the background with open floor",
+    "source": "stage1",
+    "status": "open",
+    "frame": 2803,
+    "auto_fixable": true
+   },
+   "result": "s13: moved paul_union->0.11, dan_everyman->0.82"
+  },
+  {
+   "round": 1,
+   "finding": {
+    "category": "physical",
+    "severity": "HIGH",
+    "description": "dan_everyman (side_listen) is drawn inside/through the table that stands in front of them (30% overlap)",
+    "start": 93.43333399999999,
+    "end": 107.96666699999999,
+    "scene": "s13",
+    "confidence": 0.9,
+    "fix": "reposition",
+    "fix_args": {
+     "scene": "s13",
+     "env": "union_hall"
+    },
+    "recommendation": "move the character to clear floor; if there is none, regenerate the background with open floor",
+    "source": "stage1",
+    "status": "open",
+    "frame": 2803,
+    "auto_fixable": true
+   },
+   "result": "same fix as above"
+  },
+  {
+   "round": 1,
+   "finding": {
+    "category": "physical",
+    "severity": "HIGH",
+    "description": "sue_hr (side_listen) is drawn inside/through the table that stands in front of them (8% overlap)",
+    "start": 133.953333,
+    "end": 147.32,
+    "scene": "s18",
+    "confidence": 0.9,
+    "fix": "reposition",
+    "fix_args": {
+     "scene": "s18",
+     "env": "cozy_cafe"
+    },
+    "recommendation": "move the character to clear floor; if there is none, regenerate the background with open floor",
+    "source": "stage1",
+    "status": "open",
+    "frame": 4019,
+    "auto_fixable": true
+   },
+   "result": "s18: moved dan_everyman->0.27, sue_hr->0.56"
+  },
+  {
+   "round": 1,
+   "finding": {
+    "category": "visual",
+    "severity": "HIGH",
+    "description": "garbled text inside the AI image: ['jrai', 'prat', 'serbi']",
+    "start": 180.173333,
+    "end": 183.84,
+    "scene": "s22",
+    "confidence": 0.9,
+    "fix": "regen_hero",
+    "fix_args": {
+     "scene": "s22"
+    },
+    "recommendation": "regenerate the hero shot without text",
+    "source": "stage1",
+    "status": "open",
+    "frame": 5405,
+    "auto_fixable": true
+   },
+   "result": "s22: hero shot regenerated (new seed)"
+  },
+  {
+   "round": 1,
+   "finding": {
+    "category": "audio",
+    "severity": "MEDIUM",
+    "description": "spoken line does not match script (match 0.77) wrong: [\"'two hundred thousand'->'200 000'\"] \u2014 \"Yes! Plus, they are hunting for two hundred thousand placeme\"",
+    "start": 100.10533399999998,
+    "end": 103.62133399999999,
+    "scene": "s13",
+    "confidence": 0.9,
+    "fix": "retake_line",
+    "fix_args": {
+     "scene": "s13",
+     "key": "cb11b63537"
+    },
+    "recommendation": "regenerate this TTS line",
+    "source": "stage1",
+    "status": "open",
+    "frame": 3003,
+    "auto_fixable": true
+   },
+   "result": "s13: line cb11b63537 re-voiced"
+  },
+  {
+   "round": 1,
+   "finding": {
+    "category": "audio",
+    "severity": "MEDIUM",
+    "description": "spoken line does not match script (match 0.87) wrong: [\"'ten thousand'->'10 000'\"] \u2014 \"Companies like Siemens have pledged ten thousand engineering\"",
+    "start": 107.51666699999998,
+    "end": 110.94766699999998,
+    "scene": "s14",
+    "confidence": 0.9,
+    "fix": "retake_line",
+    "fix_args": {
+     "scene": "s14",
+     "key": "42a4525316"
+    },
+    "recommendation": "regenerate this TTS line",
+    "source": "stage1",
+    "status": "open",
+    "frame": 3226,
+    "auto_fixable": true
+   },
+   "result": "s14: line 42a4525316 re-voiced"
+  },
+  {
+   "round": 1,
+   "finding": {
+    "category": "voice",
+    "severity": "MEDIUM",
+    "description": "narrator's voice pitch jumps +5.1 semitones on this line",
+    "start": 22.877333,
+    "end": null,
+    "scene": "s04",
+    "confidence": 0.6,
+    "fix": "retake_line",
+    "fix_args": {
+     "scene": "s04",
+     "key": "1715dc6602"
+    },
+    "recommendation": "",
+    "source": "stage1",
+    "status": "open",
+    "frame": 686,
+    "auto_fixable": true
+   },
+   "result": "s04: line 1715dc6602 re-voiced"
+  },
+  {
+   "round": 1,
+   "finding": {
+    "category": "subtitle",
+    "severity": "MEDIUM",
+    "description": "subtitles out of sync with speech (median 275 ms, worst 435 ms)",
+    "start": 10.620999999999999,
+    "end": null,
+    "scene": "s03",
+    "confidence": 0.9,
+    "fix": "retime_subtitles",
+    "fix_args": {
+     "scene": "s03"
+    },
+    "recommendation": "",
+    "source": "stage1",
+    "status": "open",
+    "frame": 319,
+    "auto_fixable": true
+   },
+   "result": "s03: subtitle timing rebuilt from speech"
+  },
+  {
+   "round": 1,
+   "finding": {
+    "category": "subtitle",
+    "severity": "MEDIUM",
+    "description": "subtitles out of sync with speech (median 562 ms, worst 602 ms)",
+    "start": 13.972999999999999,
+    "end": null,
+    "scene": "s03",
+    "confidence": 0.9,
+    "fix": "retime_subtitles",
+    "fix_args": {
+     "scene": "s03"
+    },
+    "recommendation": "",
+    "source": "stage1",
+    "status": "open",
+    "frame": 419,
+    "auto_fixable": true
+   },
+   "result": "same fix as above"
+  },
+  {
+   "round": 1,
+   "finding": {
+    "category": "subtitle",
+    "severity": "MEDIUM",
+    "description": "subtitles out of sync with speech (median 1206 ms, worst 1326 ms)",
+    "start": 16.578,
+    "end": null,
+    "scene": "s03",
+    "confidence": 0.9,
+    "fix": "retime_subtitles",
+    "fix_args": {
+     "scene": "s03"
+    },
+    "recommendation": "",
+    "source": "stage1",
+    "status": "open",
+    "frame": 497,
+    "auto_fixable": true
+   },
+   "result": "same fix as above"
+  },
+  {
+   "round": 1,
+   "finding": {
+    "category": "continuity",
+    "severity": "MEDIUM",
+    "description": "garbled large text in background modern_office_2b1b45.png: ['SECONDARY ATOCIC']",
+    "start": null,
+    "end": null,
+    "scene": "s05",
+    "confidence": 0.7,
+    "fix": "regen_background",
+    "fix_args": {
+     "env": "modern_office"
+    },
+    "recommendation": "",
+    "source": "stage1",
+    "status": "open",
+    "frame": null,
+    "auto_fixable": true
+   },
+   "result": "fixed (verified by re-inspection)"
+  },
+  {
+   "round": 1,
+   "finding": {
+    "category": "physical",
+    "severity": "HIGH",
+    "description": "sue_hr (side_listen) is drawn inside/through the table that stands in front of them (8% overlap)",
+    "start": 6.56,
+    "end": 19.793333,
+    "scene": "s03",
+    "confidence": 0.9,
+    "fix": "reposition",
+    "fix_args": {
+     "scene": "s03",
+     "env": "cozy_cafe"
+    },
+    "recommendation": "move the character to clear floor; if there is none, regenerate the background with open floor",
+    "source": "stage1",
+    "status": "open",
+    "frame": 197,
+    "auto_fixable": true
+   },
+   "result": "fixed (verified by re-inspection)"
+  },
+  {
+   "round": 1,
+   "finding": {
+    "category": "physical",
+    "severity": "HIGH",
+    "description": "paul_union (side_talk) is drawn inside/through the table that stands in front of them (31% overlap)",
+    "start": 93.43333399999999,
+    "end": 107.96666699999999,
+    "scene": "s13",
+    "confidence": 0.9,
+    "fix": "reposition",
+    "fix_args": {
+     "scene": "s13",
+     "env": "union_hall"
+    },
+    "recommendation": "move the character to clear floor; if there is none, regenerate the background with open floor",
+    "source": "stage1",
+    "status": "open",
+    "frame": 2803,
+    "auto_fixable": true
+   },
+   "result": "fixed (verified by re-inspection)"
+  },
+  {
+   "round": 1,
+   "finding": {
+    "category": "physical",
+    "severity": "HIGH",
+    "description": "dan_everyman (side_listen) is drawn inside/through the table that stands in front of them (30% overlap)",
+    "start": 93.43333399999999,
+    "end": 107.96666699999999,
+    "scene": "s13",
+    "confidence": 0.9,
+    "fix": "reposition",
+    "fix_args": {
+     "scene": "s13",
+     "env": "union_hall"
+    },
+    "recommendation": "move the character to clear floor; if there is none, regenerate the background with open floor",
+    "source": "stage1",
+    "status": "open",
+    "frame": 2803,
+    "auto_fixable": true
+   },
+   "result": "fixed (verified by re-inspection)"
+  },
+  {
+   "round": 1,
+   "finding": {
+    "category": "physical",
+    "severity": "HIGH",
+    "description": "sue_hr (side_listen) is drawn inside/through the table that stands in front of them (8% overlap)",
+    "start": 133.953333,
+    "end": 147.32,
+    "scene": "s18",
+    "confidence": 0.9,
+    "fix": "reposition",
+    "fix_args": {
+     "scene": "s18",
+     "env": "cozy_cafe"
+    },
+    "recommendation": "move the character to clear floor; if there is none, regenerate the background with open floor",
+    "source": "stage1",
+    "status": "open",
+    "frame": 4019,
+    "auto_fixable": true
+   },
+   "result": "fixed (verified by re-inspection)"
+  },
+  {
+   "round": 1,
+   "finding": {
+    "category": "visual",
+    "severity": "HIGH",
+    "description": "garbled text inside the AI image: ['jrai', 'prat', 'serbi']",
+    "start": 180.173333,
+    "end": 183.84,
+    "scene": "s22",
+    "confidence": 0.9,
+    "fix": "regen_hero",
+    "fix_args": {
+     "scene": "s22"
+    },
+    "recommendation": "regenerate the hero shot without text",
+    "source": "stage1",
+    "status": "open",
+    "frame": 5405,
+    "auto_fixable": true
+   },
+   "result": "fixed (verified by re-inspection)"
+  },
+  {
+   "round": 1,
+   "finding": {
+    "category": "subtitle",
+    "severity": "MEDIUM",
+    "description": "subtitles out of sync with speech (median 275 ms, worst 435 ms)",
+    "start": 10.620999999999999,
+    "end": null,
+    "scene": "s03",
+    "confidence": 0.9,
+    "fix": "retime_subtitles",
+    "fix_args": {
+     "scene": "s03"
+    },
+    "recommendation": "",
+    "source": "stage1",
+    "status": "open",
+    "frame": 319,
+    "auto_fixable": true
+   },
+   "result": "fixed (verified by re-inspection)"
+  },
+  {
+   "round": 1,
+   "finding": {
+    "category": "subtitle",
+    "severity": "MEDIUM",
+    "description": "subtitles out of sync with speech (median 562 ms, worst 602 ms)",
+    "start": 13.972999999999999,
+    "end": null,
+    "scene": "s03",
+    "confidence": 0.9,
+    "fix": "retime_subtitles",
+    "fix_args": {
+     "scene": "s03"
+    },
+    "recommendation": "",
+    "source": "stage1",
+    "status": "open",
+    "frame": 419,
+    "auto_fixable": true
+   },
+   "result": "fixed (verified by re-inspection)"
+  },
+  {
+   "round": 1,
+   "finding": {
+    "category": "subtitle",
+    "severity": "MEDIUM",
+    "description": "subtitles out of sync with speech (median 1206 ms, worst 1326 ms)",
+    "start": 16.578,
+    "end": null,
+    "scene": "s03",
+    "confidence": 0.9,
+    "fix": "retime_subtitles",
+    "fix_args": {
+     "scene": "s03"
+    },
+    "recommendation": "",
+    "source": "stage1",
+    "status": "open",
+    "frame": 497,
+    "auto_fixable": true
+   },
+   "result": "fixed (verified by re-inspection)"
+  }
+ ]
+}

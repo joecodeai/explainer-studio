@@ -1,0 +1,37 @@
+{
+ "checks": {
+  "frames": true,
+  "transitions": true,
+  "audio": true,
+  "speech": true,
+  "voices": true,
+  "subtitles": true,
+  "ocr": true,
+  "grounding": true,
+  "lipsync": true,
+  "camera": true,
+  "animation": true,
+  "vlm_assets": true,
+  "vlm_scenes": true
+ },
+ "pass_score": 85,
+ "max_fix_rounds": 3,
+ "vlm_model": "qwen/qwen3-vl-30b",
+ "frame_scale": [
+  320,
+  180
+ ],
+ "lipsync_fps": 15,
+ "transition_window": 0.8,
+ "auto_fix": {
+  "reposition": true,
+  "regen_background": true,
+  "regen_hero": true,
+  "regen_talk": true,
+  "fix_pose": true,
+  "retake_line": true,
+  "retime_subtitles": true,
+  "transition": true,
+  "music_level": true
+ }
+}

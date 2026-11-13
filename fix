@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# ./fix <project-dir-or-name> [--qc]   — apply notes from <project>/FEEDBACK.txt fast (see studio/fastfix.py)
+DIR="$(cd "$(dirname "$0")" && pwd)"
+P="$1"; [ -d "$P" ] || P="$DIR/projects/$1"
+shift
+PYTHONNOUSERSITE=1 exec "$DIR/.venv/bin/python" -m studio.fastfix "$P" "$@"

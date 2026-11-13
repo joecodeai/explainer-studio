@@ -1,0 +1,9 @@
+{
+ "name": "everyman",
+ "design": "male, 20s, relaxed Australian accent, thoughtful pace, bright timbre Speaking naturally in English, expressive and conversational.",
+ "language": "English",
+ "instruct": "male, 20s, relaxed Australian accent, thoughtful pace, bright timbre Speaking naturally in English, expressive and conversational. IMPORTANT: this is clearly an adult MAN's voice \u2014 low-to-mid male pitch, masculine chest resonance, never a female or child voice.",
+ "f0": 146.0,
+ "gender": "male",
+ "redesigns": 0
+}

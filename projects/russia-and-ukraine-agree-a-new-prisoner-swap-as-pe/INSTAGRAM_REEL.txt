@@ -1,0 +1,18 @@
+=== INSTAGRAM REEL ===
+Video ................ reel/russia-and-ukraine-agree-a-new-prisoner-swap-as-pe_reel.mp4  (38 s, 1080x1920)
+Cover ................ reel/cover.jpg (or pick a frame in the app)
+Made as .............. summary edit of the YouTube video (5 beats, 1 soundbite) + YouTube call to action
+Checks ............... PASS
+
+
+=== CAPTION (copy everything below) ===
+Russia and Ukraine agreed what could be the war's biggest prisoner swap, a real lifeline for families. But territory is still unresolved. Is peace close? Let's call it a very cautious maybe. Watch the full breakdown on our YouTube channel. Link in bio.
+
+#UkraineWar #RussiaUkraine #Diplomacy #Geopolitics #PeaceTalks
+
+
+=== SETTINGS ===
+Audio ................ keep original audio (music is already mixed in)
+AI label ............. turn ON "AI info" (AI-generated illustrations and animation)
+Link ................. caption says "link in bio" — your bio already has the YouTube link
+Share to Facebook .... optional

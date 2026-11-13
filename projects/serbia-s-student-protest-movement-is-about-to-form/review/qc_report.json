@@ -1,0 +1,195 @@
+{
+ "passed": true,
+ "scores": {
+  "Visual quality": 96.0,
+  "Character consistency": 100.0,
+  "Physical positioning": 100.0,
+  "Animation quality": 100.0,
+  "Audio quality": 100.0,
+  "Lip synchronization": 100.0,
+  "Subtitle accuracy": 97.5,
+  "Scene continuity": 100.0,
+  "Semantic accuracy": 97.0,
+  "Overall": 98.9
+ },
+ "pass_score": 85,
+ "findings": [
+  {
+   "category": "semantic",
+   "severity": "MEDIUM",
+   "description": "hero shot: The image shows a man in a suit with a small backpack on his chest, but the backpack is not swallowing the man. Instead, the backpack appears to be a separate object with a face, which is not consistent with the intended idea of a backpack swallowing a statue.",
+   "start": 0.0,
+   "end": 6.733333,
+   "scene": "s01",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s01"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 0,
+   "auto_fixable": false
+  },
+  {
+   "category": "visual",
+   "severity": "MEDIUM",
+   "description": "hero shot: The text on the blueprints is garbled and unreadable, appearing as nonsensical lines and blocks, which is a common issue in animated scenes where text is used for visual effect but not meant to be legible.",
+   "start": 82.83,
+   "end": 86.763333,
+   "scene": "s11",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s11"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 2485,
+   "auto_fixable": false
+  },
+  {
+   "category": "text",
+   "severity": "MEDIUM",
+   "description": "s17: The label 'Kyiv' is missing; the capital of Ukraine is labeled as 'Ukraine' instead, which is incorrect.",
+   "start": 128.31433299999998,
+   "end": null,
+   "scene": "s17",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {},
+   "recommendation": "Replace the label 'Ukraine' with 'Kyiv' to correctly identify the capital city.",
+   "source": "stage2",
+   "status": "open",
+   "frame": 3849,
+   "auto_fixable": false
+  },
+  {
+   "category": "text",
+   "severity": "LOW",
+   "description": "s05: The label 'VOJVODINA' is partially cut off at the top right, making it slightly difficult to read.",
+   "start": 35.203833,
+   "end": null,
+   "scene": "s05",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {},
+   "recommendation": "Reposition the 'VOJVODINA' label to ensure it is fully visible and not cut off at the edge of the frame.",
+   "source": "stage2",
+   "status": "open",
+   "frame": 1056,
+   "auto_fixable": false
+  },
+  {
+   "category": "semantic",
+   "severity": "LOW",
+   "description": "hero shot: The blueprints are not clearly shown morphing into government paperwork; the transition is not visually depicted, making the intended idea less clear.",
+   "start": 82.83,
+   "end": 86.763333,
+   "scene": "s11",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s11"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 2485,
+   "auto_fixable": false
+  },
+  {
+   "category": "visual",
+   "severity": "LOW",
+   "description": "hero shot: The blueprints/papers are held in a way that suggests the characters are holding them with one hand, but the hands are not clearly gripping the edges, which could imply merging or floating.",
+   "start": 82.83,
+   "end": 86.763333,
+   "scene": "s11",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s11"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 2485,
+   "auto_fixable": false
+  },
+  {
+   "category": "visual",
+   "severity": "LOW",
+   "description": "hero shot: The stacks of paper are depicted as teetering, which is a visual exaggeration for comedic effect and not a physical impossibility.",
+   "start": 110.19999899999998,
+   "end": 115.86666599999998,
+   "scene": "s15",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s15"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 3306,
+   "auto_fixable": false
+  },
+  {
+   "category": "visual",
+   "severity": "LOW",
+   "description": "hero shot: The chalk dust cloud is drawn as a solid white shape rather than a fine, scattered cloud, which makes it look less realistic and more like a flat graphic element.",
+   "start": 156.38666700000002,
+   "end": 160.88666700000002,
+   "scene": "s21",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s21"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 4692,
+   "auto_fixable": false
+  },
+  {
+   "category": "semantic",
+   "severity": "LOW",
+   "description": "hero shot: The student's hand holding the eraser appears to have only three fingers, which is inconsistent with the otherwise simple but standard cartoon hand design.",
+   "start": 156.38666700000002,
+   "end": 160.88666700000002,
+   "scene": "s21",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s21"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 4692,
+   "auto_fixable": false
+  },
+  {
+   "category": "visual",
+   "severity": "LOW",
+   "description": "hero shot: The eraser is depicted as a solid blue and white cylinder, but the chalk dust is shown as a white cloud, which may imply the eraser is made of chalk dust rather than rubber.",
+   "start": 156.38666700000002,
+   "end": 160.88666700000002,
+   "scene": "s21",
+   "confidence": 0.5,
+   "fix": null,
+   "fix_args": {
+    "scene": "s21"
+   },
+   "recommendation": "",
+   "source": "stage2",
+   "status": "open",
+   "frame": 4692,
+   "auto_fixable": false
+  }
+ ],
+ "fix_history": []
+}

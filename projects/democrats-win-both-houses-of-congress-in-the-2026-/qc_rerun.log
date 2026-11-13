@@ -1,0 +1,18 @@
+[10:42:36] QC stage 1: frames
+[10:42:36] QC stage 1: transitions
+[10:42:37] QC stage 1: audio
+[10:42:49] QC stage 1: speech
+[10:42:58] QC stage 1: voices
+[10:43:00] QC stage 1: ocr
+[10:43:20] QC stage 1: lipsync
+[10:43:20] QC stage 1: camera
+[10:43:20] QC stage 1: animation
+[10:43:20] QC stage 1: ending
+[10:43:20] QC stage 1: grounding (floor + furniture segmentation)
+[10:43:21] QC stage 2: vision-language review
+[10:43:21] QC VLM: 17 character poses
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+[10:43:33] QC inspection round 0: 11 findings in 57s
+[10:43:33] QC report: PASS overall 97.9 — {'CRITICAL': 0, 'HIGH': 1, 'MEDIUM': 5, 'LOW': 5}
+[10:43:33] QC report: PASS overall 97.9 — {'CRITICAL': 0, 'HIGH': 1, 'MEDIUM': 5, 'LOW': 5}
+PASS {'Visual quality': 96.1, 'Character consistency': 100.0, 'Physical positioning': 100.0, 'Animation quality': 100.0, 'Audio quality': 100.0, 'Lip synchronization': 100.0, 'Subtitle accuracy': 91.5, 'Scene continuity': 100.0, 'Semantic accuracy': 93.5, 'Overall': 97.9}

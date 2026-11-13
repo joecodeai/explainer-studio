@@ -1,0 +1,13 @@
+{
+ "duration": 183.84,
+ "lufs": -14.2,
+ "true_peak": -1.3,
+ "findings": [
+  {
+   "level": "warn",
+   "area": "text",
+   "t": 19.34,
+   "msg": "chart s04 has very long labels"
+  }
+ ]
+}

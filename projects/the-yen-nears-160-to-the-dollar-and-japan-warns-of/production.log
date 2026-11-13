@@ -1,0 +1,291 @@
+[17:46:56] research: 6 sources
+[18:28:57] BATCH script ready in 42 min, 2 fact-check flag(s)
+[02:54:32] === The yen nears 160 to the dollar and Japan warns of intervention (6 min) ===
+[02:54:32] research: 6 sources
+[02:56:40] === The yen nears 160 to the dollar and Japan warns of intervention (6 min) ===
+[02:56:40] research: 6 sources
+[02:57:42] voice: 2.8 min of dialogue, 5 distinct voices
+[02:57:42] character kenji: 6 poses/expressions
+[02:59:06] character david: 7 poses/expressions
+[03:00:56] character aiko: 6 poses/expressions
+[03:02:54] character hiroshi: 6 poses/expressions
+[03:06:44] hero s01: LTX-2.5 8s — A stylized visual metaphor of a Japanese yen coin balancing 
+[03:08:09] hero s10: LTX-2.5 8s — A dramatic wide shot of a massive Japanese ledger book open 
+[03:32:45] animation QC s02#0 try 1: PASS
+[03:33:39] animation QC s02#1 try 1: PASS
+[03:34:06] animation QC s05#0 try 1: PASS
+[03:35:19] animation QC s05#1 try 1: PASS
+[03:36:05] animation QC s07#0 try 1: PASS
+[03:36:42] animation QC s07#1 try 1: PASS
+[03:37:14] animation QC s11#0 try 1: PASS
+[03:38:28] animation QC s11#1 try 1: PASS
+[03:38:57] animation QC s13#0 try 1: PASS
+[03:40:24] animation QC s13#1 try 1: FAIL — glitch: sudden jump at frames 20-20 (change 5.9 vs typical 1.1)
+[03:41:01] animation QC s15#0 try 1: PASS
+[03:41:38] animation QC s15#1 try 1: PASS
+[03:42:25] animation QC s17#0 try 1: PASS
+[03:43:30] animation QC s17#1 try 1: PASS
+[03:44:04] animation QC s20#0 try 1: PASS
+[03:44:57] animation QC s20#1 try 1: PASS
+[03:45:34] animation QC s22#0 try 1: PASS
+[03:46:20] animation QC s22#1 try 1: PASS
+[03:46:58] animation QC s24#0 try 1: PASS
+[03:47:58] animation QC s24#1 try 1: PASS
+[03:48:34] animation QC s26#0 try 1: PASS
+[03:49:21] animation QC s26#1 try 1: PASS
+[03:50:07] animation QC s27#0 try 1: PASS
+[03:51:06] animation QC s27#1 try 1: PASS
+[03:51:51] animation QC s29#0 try 1: PASS
+[03:52:38] animation QC s29#1 try 1: PASS
+[03:55:42] animation QC s13#1 try 2: PASS
+[03:55:42] talk: 27 new animated shots; animation QC 26/26 shots clean
+[03:56:09] sound: 11 sfx, 4 music beds, ambience for 5 environments
+[04:05:49] render: 30 scene(s)
+[04:07:15] QC found 1 problem(s): [('s15', 'audio', "line 'So it's all talk for now?' speech rate 4.8 w/s (TTS glitch?)")] -> repairing (attempt 1)
+[04:07:27] voice: 2.8 min of dialogue, 5 distinct voices
+[04:08:17] render: 1 scene(s)
+[04:08:27] QC found 1 problem(s): [('s15', 'audio', "line 'So it's all talk for now?' speech rate 5.1 w/s (TTS glitch?)")] -> repairing (attempt 2)
+[04:08:37] voice: 2.8 min of dialogue, 5 distinct voices
+[04:09:28] render: 1 scene(s)
+[04:09:38] QC still reports: [('s15', 'audio', "line 'So it's all talk for now?' speech rate 4.9 w/s (TTS glitch?)")]
+[04:10:04] master: 59 of 59 segments re-encoded
+[04:14:18] master: /home/mundax/Documents/REL/ExplainerStudio/projects/the-yen-nears-160-to-the-dollar-and-japan-warns-of/the-yen-nears-160-to-the-dollar-and-japan-warns-of.mp4 (2.9 min)
+[04:14:31] review: /home/mundax/Documents/REL/ExplainerStudio/projects/the-yen-nears-160-to-the-dollar-and-japan-warns-of/review/REVIEW.md  fails=0 warns=0 sheets=3
+[04:14:33] QC stage 1: frames
+[04:14:39] QC stage 1: transitions
+[04:14:43] QC stage 1: audio
+[04:14:48] QC stage 1: speech
+[04:14:56] QC stage 1: voices
+[04:14:57] QC stage 1: ocr
+[04:15:52] QC stage 1: lipsync
+[04:15:52] QC stage 1: camera
+[04:15:52] QC stage 1: animation
+[04:15:52] QC stage 1: talkshots
+[04:15:52] QC stage 1: ending
+[04:15:52] QC stage 1: grounding (floor + furniture segmentation)
+[04:16:02] QC stage 2: vision-language review
+[04:16:02] QC VLM: 0 character poses
+[04:20:06] QC inspection round 0: 17 findings in 333s
+[04:20:06] QC report: PASS overall 96.8 — {'CRITICAL': 0, 'HIGH': 0, 'MEDIUM': 9, 'LOW': 8}
+[04:20:06] QC report: PASS overall 96.8 — {'CRITICAL': 0, 'HIGH': 0, 'MEDIUM': 9, 'LOW': 8}
+[04:20:19] review: /home/mundax/Documents/REL/ExplainerStudio/projects/the-yen-nears-160-to-the-dollar-and-japan-warns-of/review/REVIEW.md  fails=0 warns=0 sheets=3
+[04:20:19] QC PASS: {'Visual quality': 93.5, 'Character consistency': 100.0, 'Physical positioning': 100.0, 'Animation quality': 87.2, 'Audio quality': 100.0, 'Lip synchronization': 100.0, 'Subtitle accuracy': 93.9, 'Scene continuity': 100.0, 'Semantic accuracy': 97.0, 'Overall': 96.8} — see /home/mundax/Documents/REL/ExplainerStudio/projects/the-yen-nears-160-to-the-dollar-and-japan-warns-of/review/QC_REPORT.md
+[04:32:08] reel: try 1: 6 beats (2 soundbites), hook "Yen Nears Critical 160 Mark"
+[04:34:36] reel: checks PASS: 
+[04:34:36] reel: PASS -> /home/mundax/Documents/REL/ExplainerStudio/projects/the-yen-nears-160-to-the-dollar-and-japan-warns-of/reel/the-yen-nears-160-to-the-dollar-and-japan-warns-of_reel.mp4 (38 s)
+[04:34:36] done in 97.9 min -> /home/mundax/Documents/REL/ExplainerStudio/projects/the-yen-nears-160-to-the-dollar-and-japan-warns-of/the-yen-nears-160-to-the-dollar-and-japan-warns-of.mp4
+[09:21:21] === The yen nears 160 to the dollar and Japan warns of intervention (6 min) ===
+[09:21:21] research: 6 sources
+[09:21:33] voice: 2.8 min of dialogue, 5 distinct voices
+[09:21:33] character kenji: 6 poses/expressions
+[09:21:34] character david: 7 poses/expressions
+[09:21:34] character aiko: 6 poses/expressions
+[09:21:34] character hiroshi: 6 poses/expressions
+[09:23:25] animation QC s02#0 try 1: PASS
+[09:23:25] animation QC s02#1 try 1: PASS
+[09:23:25] animation QC s05#0 try 1: PASS
+[09:23:25] animation QC s05#1 try 1: PASS
+[09:24:31] animation QC s07#0 try 1: PASS
+[09:24:31] animation QC s07#1 try 1: PASS
+[09:24:31] animation QC s11#0 try 1: PASS
+[09:24:31] animation QC s11#1 try 1: PASS
+[09:24:31] animation QC s13#0 try 1: PASS
+[09:24:31] animation QC s13#1 try 1: FAIL — glitch: sudden jump at frames 20-20 (change 5.9 vs typical 1.1)
+[09:25:16] animation QC s15#0 try 1: PASS
+[09:25:58] animation QC s15#1 try 1: PASS
+[09:25:58] animation QC s17#0 try 1: PASS
+[09:27:05] animation QC s17#1 try 1: PASS
+[09:27:05] animation QC s20#0 try 1: PASS
+[09:27:05] animation QC s20#1 try 1: PASS
+[09:27:05] animation QC s22#0 try 1: PASS
+[09:27:05] animation QC s22#1 try 1: PASS
+[09:27:05] animation QC s24#0 try 1: PASS
+[09:27:05] animation QC s24#1 try 1: PASS
+[09:27:05] animation QC s26#0 try 1: PASS
+[09:27:05] animation QC s26#1 try 1: PASS
+[09:27:05] animation QC s27#0 try 1: PASS
+[09:27:05] animation QC s27#1 try 1: PASS
+[09:27:05] animation QC s29#0 try 1: PASS
+[09:27:52] animation QC s29#1 try 1: PASS
+[09:27:53] animation QC s13#1 try 2: PASS
+[09:27:53] talk: 2 new animated shots; animation QC 26/26 shots clean
+[09:28:04] sound: 11 sfx, 4 music beds, ambience for 5 environments
+[09:28:57] render: 2 scene(s)
+[09:29:10] QC found 1 problem(s): [('s15', 'audio', "line 'So it's all talk for now?' speech rate 4.9 w/s (TTS glitch?)")] -> repairing (attempt 1)
+[09:29:20] voice: 2.8 min of dialogue, 5 distinct voices
+[09:30:10] render: 1 scene(s)
+[09:30:37] master: 44 of 59 segments re-encoded
+[09:30:57] master: /home/mundax/Documents/REL/ExplainerStudio/projects/the-yen-nears-160-to-the-dollar-and-japan-warns-of/the-yen-nears-160-to-the-dollar-and-japan-warns-of.mp4 (3.0 min)
+[09:31:10] review: /home/mundax/Documents/REL/ExplainerStudio/projects/the-yen-nears-160-to-the-dollar-and-japan-warns-of/review/REVIEW.md  fails=0 warns=0 sheets=3
+[09:31:11] QC stage 1: frames
+[09:31:12] QC stage 1: transitions
+[09:31:16] QC stage 1: audio
+[09:31:21] QC stage 1: speech
+[09:31:25] QC stage 1: voices
+[09:31:25] QC stage 1: ocr
+[09:31:52] QC stage 1: lipsync
+[09:31:52] QC stage 1: camera
+[09:31:52] QC stage 1: animation
+[09:31:52] QC stage 1: talkshots
+[09:31:52] QC stage 1: ending
+[09:31:52] QC stage 1: grounding (floor + furniture segmentation)
+[09:31:52] QC stage 2: vision-language review
+[09:31:52] QC VLM: 0 character poses
+[09:32:03] QC inspection round 0: 16 findings in 52s
+[09:32:03] QC report: PASS overall 97.2 — {'CRITICAL': 0, 'HIGH': 0, 'MEDIUM': 8, 'LOW': 8}
+[09:32:03] QC report: PASS overall 97.2 — {'CRITICAL': 0, 'HIGH': 0, 'MEDIUM': 8, 'LOW': 8}
+[09:32:19] review: /home/mundax/Documents/REL/ExplainerStudio/projects/the-yen-nears-160-to-the-dollar-and-japan-warns-of/review/REVIEW.md  fails=0 warns=0 sheets=3
+[09:32:19] QC PASS: {'Visual quality': 93.5, 'Character consistency': 100.0, 'Physical positioning': 100.0, 'Animation quality': 93.6, 'Audio quality': 100.0, 'Lip synchronization': 100.0, 'Subtitle accuracy': 90.3, 'Scene continuity': 100.0, 'Semantic accuracy': 97.0, 'Overall': 97.2} — see /home/mundax/Documents/REL/ExplainerStudio/projects/the-yen-nears-160-to-the-dollar-and-japan-warns-of/review/QC_REPORT.md
+[09:32:21] reel: try 1: 6 beats (2 soundbites), hook "Yen Nears Critical 160 Mark"
+[09:37:02] reel: checks PASS: 
+[09:37:02] reel: PASS -> /home/mundax/Documents/REL/ExplainerStudio/projects/the-yen-nears-160-to-the-dollar-and-japan-warns-of/reel/the-yen-nears-160-to-the-dollar-and-japan-warns-of_reel.mp4 (38 s)
+[09:37:02] done in 15.7 min -> /home/mundax/Documents/REL/ExplainerStudio/projects/the-yen-nears-160-to-the-dollar-and-japan-warns-of/the-yen-nears-160-to-the-dollar-and-japan-warns-of.mp4
+[10:04:36] reel: up to date
+[10:04:51] reel: try 1: 6 beats (2 soundbites), hook "Yen Nears Critical 160 Mark"
+[10:05:42] reel: checks PASS: 
+[10:05:42] reel: PASS -> /home/mundax/Documents/REL/ExplainerStudio/projects/the-yen-nears-160-to-the-dollar-and-japan-warns-of/reel/the-yen-nears-160-to-the-dollar-and-japan-warns-of_reel.mp4 (37 s)
+[10:34:21] === The yen nears 160 to the dollar and Japan warns of intervention (6 min) ===
+[10:34:21] research: 6 sources
+[10:36:32] === The yen nears 160 to the dollar and Japan warns of intervention (6 min) ===
+[10:36:32] research: 6 sources
+[10:36:47] voice: 3.0 min of dialogue, 5 distinct voices
+[10:36:47] character kenji: 6 poses/expressions
+[10:36:47] character david: 7 poses/expressions
+[10:36:48] character aiko: 6 poses/expressions
+[10:36:48] character hiroshi: 6 poses/expressions
+[10:37:17] === The yen nears 160 to the dollar and Japan warns of intervention (6 min) ===
+[10:37:17] research: 6 sources
+[10:37:18] voice: 2.9 min of dialogue, 5 distinct voices
+[10:37:18] character kenji: 6 poses/expressions
+[10:37:18] character david: 7 poses/expressions
+[10:37:18] character aiko: 6 poses/expressions
+[10:37:18] character hiroshi: 6 poses/expressions
+[10:39:28] animation QC s02#0 try 1: PASS
+[10:39:28] animation QC s02#1 try 1: PASS
+[10:39:28] animation QC s05#0 try 1: PASS
+[10:39:28] animation QC s05#1 try 1: PASS
+[10:39:28] animation QC s07#0 try 1: PASS
+[10:39:28] animation QC s07#1 try 1: PASS
+[10:39:28] animation QC s11#0 try 1: PASS
+[10:39:28] animation QC s11#1 try 1: PASS
+[10:39:28] animation QC s13#0 try 1: PASS
+[10:39:28] animation QC s13#1 try 1: FAIL — glitch: sudden jump at frames 20-20 (change 5.9 vs typical 1.1)
+[10:39:59] === The yen nears 160 to the dollar and Japan warns of intervention (6 min) ===
+[10:39:59] research: 6 sources
+[10:40:19] voice: 2.9 min of dialogue, 5 distinct voices
+[10:40:19] character kenji: 6 poses/expressions
+[10:40:19] character david: 7 poses/expressions
+[10:40:20] character aiko: 6 poses/expressions
+[10:40:20] character hiroshi: 6 poses/expressions
+[10:40:29] animation QC s02#0 try 1: PASS
+[10:40:29] animation QC s02#1 try 1: PASS
+[10:40:29] animation QC s05#0 try 1: PASS
+[10:40:29] animation QC s05#1 try 1: PASS
+[10:40:29] animation QC s07#0 try 1: PASS
+[10:40:29] animation QC s07#1 try 1: PASS
+[10:40:29] animation QC s11#0 try 1: PASS
+[10:40:29] animation QC s11#1 try 1: PASS
+[10:40:29] animation QC s13#0 try 1: PASS
+[10:40:29] animation QC s13#1 try 1: FAIL — glitch: sudden jump at frames 20-20 (change 5.9 vs typical 1.1)
+[10:41:34] animation QC s15#0 try 1: FAIL — anatomy: Hand distortion: the woman's right hand (viewer's left) shows extra, f
+[10:42:12] animation QC s15#1 try 1: PASS
+[10:42:12] animation QC s17#0 try 1: PASS
+[10:42:12] animation QC s17#1 try 1: PASS
+[10:42:12] animation QC s20#0 try 1: PASS
+[10:42:12] animation QC s20#1 try 1: PASS
+[10:42:12] animation QC s22#0 try 1: PASS
+[10:42:12] animation QC s22#1 try 1: PASS
+[10:42:12] animation QC s24#0 try 1: PASS
+[10:42:12] animation QC s24#1 try 1: PASS
+[10:42:12] animation QC s26#0 try 1: PASS
+[10:42:12] animation QC s26#1 try 1: PASS
+[10:42:12] animation QC s27#0 try 1: PASS
+[10:42:12] animation QC s27#1 try 1: PASS
+[10:42:12] animation QC s29#0 try 1: PASS
+[10:42:12] animation QC s29#1 try 1: PASS
+[10:43:03] animation QC s13#1 try 2: PASS
+[10:44:06] animation QC s15#0 try 2: PASS
+[10:44:06] talk: 1 new animated shots; animation QC 26/26 shots clean
+[10:44:17] sound: 11 sfx, 4 music beds, ambience for 5 environments
+[10:45:16] render: 30 scene(s)
+[10:47:08] master: 59 of 59 segments re-encoded
+[10:47:19] master: /home/mundax/Documents/REL/ExplainerStudio/projects/the-yen-nears-160-to-the-dollar-and-japan-warns-of/the-yen-nears-160-to-the-dollar-and-japan-warns-of.mp4 (3.0 min)
+[10:47:37] review: /home/mundax/Documents/REL/ExplainerStudio/projects/the-yen-nears-160-to-the-dollar-and-japan-warns-of/review/REVIEW.md  fails=0 warns=0 sheets=4
+[10:47:39] QC stage 1: frames
+[10:47:50] QC stage 1: transitions
+[10:47:54] QC stage 1: audio
+[10:47:59] QC stage 1: speech
+[10:48:04] QC stage 1: voices
+[10:48:04] QC stage 1: ocr
+[10:49:01] QC stage 1: lipsync
+[10:49:01] QC stage 1: camera
+[10:49:01] QC stage 1: animation
+[10:49:01] QC stage 1: talkshots
+[10:49:01] QC stage 1: ending
+[10:49:01] QC stage 1: grounding (floor + furniture segmentation)
+[10:49:01] QC stage 2: vision-language review
+[10:49:01] QC VLM: 0 character poses
+[10:49:30] === The yen nears 160 to the dollar and Japan warns of intervention (6 min) ===
+[10:49:30] research: 6 sources
+[10:50:03] voice: 3.1 min of dialogue, 5 distinct voices
+[10:50:03] character kenji: 6 poses/expressions
+[10:50:04] character david: 7 poses/expressions
+[10:50:04] character aiko: 6 poses/expressions
+[10:50:04] character hiroshi: 6 poses/expressions
+[10:50:14] animation QC s02#0 try 1: PASS
+[10:50:14] animation QC s02#1 try 1: PASS
+[10:50:14] animation QC s05#0 try 1: PASS
+[10:50:14] animation QC s05#1 try 1: PASS
+[10:50:14] animation QC s07#0 try 1: PASS
+[10:50:14] animation QC s07#1 try 1: PASS
+[10:50:14] animation QC s11#0 try 1: PASS
+[10:50:14] animation QC s11#1 try 1: PASS
+[10:50:14] animation QC s13#0 try 1: PASS
+[10:50:14] animation QC s13#1 try 1: FAIL — glitch: sudden jump at frames 20-20 (change 5.9 vs typical 1.1)
+[10:50:14] animation QC s15#0 try 1: FAIL — anatomy: Hand distortion: the woman's right hand (viewer's left) shows extra, f
+[10:50:14] animation QC s15#1 try 1: PASS
+[10:50:14] animation QC s17#0 try 1: PASS
+[10:50:14] animation QC s17#1 try 1: PASS
+[10:50:14] animation QC s20#0 try 1: PASS
+[10:50:14] animation QC s20#1 try 1: PASS
+[10:50:14] animation QC s22#0 try 1: PASS
+[10:50:14] animation QC s22#1 try 1: PASS
+[10:50:14] animation QC s24#0 try 1: PASS
+[10:50:14] animation QC s24#1 try 1: PASS
+[10:50:14] animation QC s26#0 try 1: PASS
+[10:50:14] animation QC s26#1 try 1: PASS
+[10:50:14] animation QC s27#0 try 1: PASS
+[10:50:14] animation QC s27#1 try 1: PASS
+[10:50:14] animation QC s29#0 try 1: PASS
+[10:50:14] animation QC s29#1 try 1: PASS
+[10:50:14] animation QC s13#1 try 2: PASS
+[10:50:14] animation QC s15#0 try 2: PASS
+[10:50:14] talk: 0 new animated shots; animation QC 26/26 shots clean
+[10:50:26] sound: 11 sfx, 4 music beds, ambience for 5 environments
+[10:51:23] render: 3 scene(s)
+[10:52:00] master: 59 of 59 segments re-encoded
+[10:52:10] master: /home/mundax/Documents/REL/ExplainerStudio/projects/the-yen-nears-160-to-the-dollar-and-japan-warns-of/the-yen-nears-160-to-the-dollar-and-japan-warns-of.mp4 (3.2 min)
+[10:52:24] review: /home/mundax/Documents/REL/ExplainerStudio/projects/the-yen-nears-160-to-the-dollar-and-japan-warns-of/review/REVIEW.md  fails=0 warns=0 sheets=4
+[10:52:25] QC stage 1: frames
+[10:52:26] QC stage 1: transitions
+[10:52:30] QC stage 1: audio
+[10:52:35] QC stage 1: speech
+[10:52:40] QC stage 1: voices
+[10:52:40] QC stage 1: ocr
+[10:53:08] QC stage 1: lipsync
+[10:53:08] QC stage 1: camera
+[10:53:08] QC stage 1: animation
+[10:53:08] QC stage 1: talkshots
+[10:53:08] QC stage 1: ending
+[10:53:08] QC stage 1: grounding (floor + furniture segmentation)
+[10:53:08] QC stage 2: vision-language review
+[10:53:08] QC VLM: 0 character poses
+[10:55:24] QC inspection round 0: 18 findings in 179s
+[10:55:24] QC report: PASS overall 96.6 — {'CRITICAL': 0, 'HIGH': 0, 'MEDIUM': 10, 'LOW': 8}
+[10:55:24] QC report: PASS overall 96.6 — {'CRITICAL': 0, 'HIGH': 0, 'MEDIUM': 10, 'LOW': 8}
+[10:55:37] review: /home/mundax/Documents/REL/ExplainerStudio/projects/the-yen-nears-160-to-the-dollar-and-japan-warns-of/review/REVIEW.md  fails=0 warns=0 sheets=4
+[10:55:37] QC PASS: {'Visual quality': 93.5, 'Character consistency': 100.0, 'Physical positioning': 100.0, 'Animation quality': 93.6, 'Audio quality': 95.2, 'Lip synchronization': 100.0, 'Subtitle accuracy': 90.3, 'Scene continuity': 100.0, 'Semantic accuracy': 97.0, 'Overall': 96.6} — see /home/mundax/Documents/REL/ExplainerStudio/projects/the-yen-nears-160-to-the-dollar-and-japan-warns-of/review/QC_REPORT.md
+[10:55:38] reel: try 1: 6 beats (2 soundbites), hook "Is Japan Worried? Hard to Say"
+[11:00:51] reel: checks PASS: 
+[11:00:51] reel: PASS -> /home/mundax/Documents/REL/ExplainerStudio/projects/the-yen-nears-160-to-the-dollar-and-japan-warns-of/reel/the-yen-nears-160-to-the-dollar-and-japan-warns-of_reel.mp4 (43 s)
+[11:00:51] done in 11.3 min -> /home/mundax/Documents/REL/ExplainerStudio/projects/the-yen-nears-160-to-the-dollar-and-japan-warns-of/the-yen-nears-160-to-the-dollar-and-japan-warns-of.mp4

@@ -1,0 +1,112 @@
+{
+ "v": 2,
+ "master_mtime": 1794476864,
+ "ok": true,
+ "plan": {
+  "beats": [
+   {
+    "type": "vo",
+    "text": "Factories shutter and transit halts as millions demand urgent rent action.",
+    "scene": "s01",
+    "card": "HITTING PAUSE",
+    "wav": "/home/mundax/Documents/REL/ExplainerStudio/projects/spain-holds-its-first-general-strike-in-14-years-o/reel/voice/b0.wav",
+    "t0": 0.0,
+    "dur": 4.46,
+    "dur_v": 4.46,
+    "lip_risk": false
+   },
+   {
+    "type": "bite",
+    "scene": "s05",
+    "i": 1,
+    "speaker": "everyman",
+    "text": "Construction collapsed after the 2008 bubble burst.",
+    "start": 1.736,
+    "end": 4.935,
+    "name": "Everyman",
+    "role": "",
+    "tag": false,
+    "ref": "s05#1",
+    "card": "",
+    "win_start": 1.676,
+    "t0": 4.46,
+    "dur": 3.519,
+    "dur_v": 3.519,
+    "lip_risk": false
+   },
+   {
+    "type": "vo",
+    "text": "Average rent nearly doubles while officials demand seven hundred fifty thousand new homes urgently.",
+    "scene": "s03",
+    "card": "RENT DOUBLED",
+    "wav": "/home/mundax/Documents/REL/ExplainerStudio/projects/spain-holds-its-first-general-strike-in-14-years-o/reel/voice/b2.wav",
+    "t0": 7.979,
+    "dur": 5.417,
+    "dur_v": 5.417,
+    "lip_risk": false
+   },
+   {
+    "type": "bite",
+    "scene": "s12",
+    "i": 2,
+    "speaker": "union_leader",
+    "text": "Rights are won on the streets first. Then in institutions.",
+    "start": 7.692,
+    "end": 11.093,
+    "name": "Union organiser",
+    "role": "",
+    "tag": true,
+    "ref": "s12#2",
+    "card": "",
+    "win_start": 7.632000000000001,
+    "t0": 13.396,
+    "dur": 3.601,
+    "dur_v": 3.601,
+    "lip_risk": false
+   },
+   {
+    "type": "vo",
+    "text": "Parliamentary gridlock forces the prime minister to dissolve congress for a late November vote.",
+    "scene": "s05",
+    "card": "SNAP ELECTION",
+    "wav": "/home/mundax/Documents/REL/ExplainerStudio/projects/spain-holds-its-first-general-strike-in-14-years-o/reel/voice/b4.wav",
+    "t0": 16.997,
+    "dur": 4.826,
+    "dur_v": 4.826,
+    "lip_risk": true
+   },
+   {
+    "type": "vo",
+    "text": "A tragic train collision pauses campaigning while unions force housing onto the national ballot.",
+    "scene": "s06",
+    "card": "",
+    "wav": "/home/mundax/Documents/REL/ExplainerStudio/projects/spain-holds-its-first-general-strike-in-14-years-o/reel/voice/b5.wav",
+    "t0": 21.823,
+    "dur": 4.849,
+    "dur_v": 4.849,
+    "lip_risk": false
+   },
+   {
+    "type": "vo",
+    "text": "Voters now choose between emergency tenant protections and strict market-driven supply solutions.",
+    "scene": "s07",
+    "card": "",
+    "wav": "/home/mundax/Documents/REL/ExplainerStudio/projects/spain-holds-its-first-general-strike-in-14-years-o/reel/voice/b6.wav",
+    "t0": 26.672,
+    "dur": 5.7570000000000014,
+    "dur_v": 5.7570000000000014,
+    "lip_risk": false
+   }
+  ],
+  "hook": "Spain Halts For Historic Vote",
+  "cta": "Watch the full breakdown on our YouTube channel; link in bio.",
+  "caption": "Spain halts with its first general strike in fourteen years over soaring rent costs. Millions demand emergency tenant protections ahead of a late November snap election. Watch the full breakdown on our YouTube channel; link in bio. \ud83c\udfe0\ud83d\udcc9",
+  "hashtags": [
+   "#SpainStrike",
+   "#HousingCrisis",
+   "#SnapElection",
+   "#RentAffordability",
+   "#PoliticalExplainer"
+  ]
+ }
+}

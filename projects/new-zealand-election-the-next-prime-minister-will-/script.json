@@ -1,0 +1,1379 @@
+{
+ "title": "New Zealand Election: The Next PM is Chris Either Way",
+ "thumbnail_text": "TWO CHRIS?!",
+ "description": "A fast-paced explainer on New Zealand's 2026 election, covering the cost of living crisis, the Christopher Luxon vs Chris Hipkins rematch, the electoral overhang math, and the long wait for special votes.",
+ "tags": [
+  "New Zealand",
+  "election",
+  "Luxon",
+  "Hipkins",
+  "politics",
+  "economy",
+  "MMP",
+  "explained"
+ ],
+ "characters": [
+  {
+   "id": "everyman_alex",
+   "name": "Alex",
+   "look": "30s male, short brown hair, wearing a grey flannel shirt over a white tee and dark jeans. Carries a reusable coffee tumbler.",
+   "voice": "Male, 30s, Kiwi accent, mid-pitch, conversational pace, slightly anxious energy",
+   "real_person": false
+  },
+  {
+   "id": "mayor_maya",
+   "name": "Maya",
+   "look": "50s female, curly grey hair tied back, wearing a navy blazer with a silver fern pin, holding a leather clipboard.",
+   "voice": "Female, 50s, Kiwi accent, lower pitch, steady timbre, moderate energy, authoritative but warm",
+   "real_person": false
+  },
+  {
+   "id": "cafe_owner_mike",
+   "name": "Mike",
+   "look": "40s male, receding black hair, wearing a beige apron over a mustard shirt, holding a ceramic mug.",
+   "voice": "Male, 40s, Kiwi accent, slightly higher pitch, fast pace, anxious but good-natured energy",
+   "real_person": false
+  }
+ ],
+ "environments": [
+  {
+   "id": "env_bus_stop",
+   "prompt": "Grey concrete bus shelter with a faded timetable and peeling advertisements. Overcast sky and wet pavement.",
+   "ambience": "Distant traffic hum, light wind rustling leaves"
+  },
+  {
+   "id": "env_cafe",
+   "prompt": "Cozy corner café with exposed brick walls, hanging potted plants, wooden tables, and large windows overlooking a harbour.",
+   "ambience": "Espresso machine hissing, soft jazz guitar, clinking ceramic cups"
+  },
+  {
+   "id": "env_parliament_steps",
+   "prompt": "Wide stone staircase leading to a colonial-style government building with fluttering flags and carved stone pillars.",
+   "ambience": "Wind buffeting heavy flags, distant crowd murmur echoing off stone"
+  },
+  {
+   "id": "env_voting_corridor",
+   "prompt": "Long institutional hall lined with wooden voting booths, fluorescent lighting overhead, and diverse citizens waiting in orderly queues.",
+   "ambience": "Quiet murmurs of conversation, rhythmic paper shuffling from ballot boxes"
+  },
+  {
+   "id": "env_studio_greenroom",
+   "prompt": "Modern studio backdrop with blurred city lights, comfortable charcoal armchairs, a glass coffee table, and soft accent lighting.",
+   "ambience": "Low hum of studio lighting rigs, muffled broadcast monitor sounds"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "s01",
+   "kind": "hero",
+   "transition": "cut",
+   "music": "tense",
+   "hero_prompt": "A flat-cartoon split-screen showing a blue National tie and red Labour scarf clinking coffee mugs shaped like New Zealand's islands against a stormy grey sky.",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Tomorrow, *New Zealand* votes to decide its next leader.",
+     "emotion": "neutral",
+     "pose": "side_listen",
+     "shot": "wide"
+    }
+   ],
+   "sfx": [
+    {
+     "at_word": "votes",
+     "sound": "pop"
+    }
+   ],
+   "environment": "",
+   "cast": [],
+   "narration": "Tomorrow, *New Zealand* votes to decide its next leader.",
+   "beats": [],
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   }
+  },
+  {
+   "id": "s02",
+   "kind": "title_card",
+   "transition": "slide",
+   "music": "upbeat",
+   "title_text": "The Two Chrises",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "But here is the wild part of this high-stakes *election*.",
+     "emotion": "confident",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "environment": "",
+   "cast": [],
+   "narration": "But here is the wild part of this high-stakes *election*.",
+   "beats": [],
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "id": "s03",
+   "kind": "map",
+   "transition": "zoom",
+   "music": "upbeat",
+   "map": {
+    "label": "NZ Election 2026",
+    "countries": [
+     "New Zealand"
+    ],
+    "places": [
+     {
+      "name": "Auckland",
+      "lat": -36.85,
+      "lon": 174.76
+     },
+     {
+      "name": "Wellington",
+      "lat": -41.29,
+      "lon": 174.78
+     }
+    ],
+    "routes": []
+   },
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Voters head to the polls on November *seventh*.",
+     "emotion": "neutral",
+     "pose": "point",
+     "shot": "wide"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "seventh",
+     "type": "number",
+     "text": "Nov 7"
+    }
+   ],
+   "environment": "",
+   "cast": [],
+   "narration": "Voters head to the polls on November *seventh*.",
+   "title_text": "",
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "id": "s04",
+   "kind": "stage",
+   "transition": "cut",
+   "music": "upbeat",
+   "environment": "env_bus_stop",
+   "cast": [
+    {
+     "char": "everyman_alex",
+     "position": "left"
+    },
+    {
+     "char": "mayor_maya",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "everyman_alex",
+     "text": "Why is everyone so *tense* out here?",
+     "emotion": "worried",
+     "pose": "side_listen",
+     "shot": "wide"
+    },
+    {
+     "speaker": "mayor_maya",
+     "text": "Cost of living. Inflation is killing the *suburbs*. Almost two-thirds worry about it.",
+     "emotion": "sad",
+     "pose": "shrug",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "everyman_alex",
+     "text": "So who's running things now?",
+     "emotion": "confused",
+     "pose": "side_talk",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "suburbs",
+     "type": "label",
+     "text": "Cost of Living Crisis"
+    },
+    {
+     "at_word": "two-thirds",
+     "type": "number",
+     "text": "65%"
+    }
+   ],
+   "sfx": [
+    {
+     "at_word": "tense",
+     "sound": "whoosh"
+    }
+   ],
+   "narration": "Why is everyone so *tense* out here? Cost of living. Inflation is killing the *suburbs*. Almost two-thirds worry about it. So who's running things now?",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": ""
+  },
+  {
+   "id": "s05",
+   "kind": "stage",
+   "transition": "cut",
+   "music": "upbeat",
+   "environment": "env_cafe",
+   "cast": [
+    {
+     "char": "cafe_owner_mike",
+     "position": "left"
+    },
+    {
+     "char": "everyman_alex",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "cafe_owner_mike",
+     "text": "Business has been *grim* since the pandemic cuts.",
+     "emotion": "sad",
+     "pose": "thinking",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "everyman_alex",
+     "text": "Can't you just raise *wages* for your staff?",
+     "emotion": "worried",
+     "pose": "side_talk",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "cafe_owner_mike",
+     "text": "Margins are gone. I can only push prices so far.",
+     "emotion": "confident",
+     "pose": "facepalm",
+     "shot": "detail"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "grim",
+     "type": "keyword",
+     "text": "ANÆMIC ECONOMY"
+    },
+    {
+     "at_word": "wages",
+     "type": "number",
+     "text": "$0.50 raise"
+    }
+   ],
+   "narration": "Business has been *grim* since the pandemic cuts. Can't you just raise *wages* for your staff? Margins are gone. I can only push prices so far.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "id": "s06",
+   "kind": "stage",
+   "transition": "wipe",
+   "music": "upbeat",
+   "environment": "env_parliament_steps",
+   "cast": [
+    {
+     "char": "mayor_maya",
+     "position": "left"
+    },
+    {
+     "char": "cafe_owner_mike",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "mayor_maya",
+     "text": "So we have Christopher *Luxon* trying to hold power.",
+     "emotion": "neutral",
+     "pose": "point",
+     "shot": "wide"
+    },
+    {
+     "speaker": "cafe_owner_mike",
+     "text": "And his challenger is... another Chris?",
+     "emotion": "surprised",
+     "pose": "shrug",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "mayor_maya",
+     "text": "*Chris Hipkins*. Former PM. He wants it back.",
+     "emotion": "confident",
+     "pose": "side_talk",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "Luxon",
+     "type": "keyword",
+     "text": "INCUMBENT"
+    },
+    {
+     "at_word": "Hipkins",
+     "type": "keyword",
+     "text": "CHALLENGER"
+    }
+   ],
+   "narration": "So we have Christopher *Luxon* trying to hold power. And his challenger is... another Chris? *Chris Hipkins*. Former PM. He wants it back.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "id": "s07",
+   "kind": "map",
+   "transition": "zoom",
+   "music": "upbeat",
+   "map": {
+    "label": "The Brain Drain",
+    "countries": [
+     "New Zealand",
+     "Australia"
+    ],
+    "places": [
+     {
+      "name": "Wellington",
+      "lat": -41.29,
+      "lon": 174.78
+     },
+     {
+      "name": "Auckland",
+      "lat": -36.85,
+      "lon": 174.76
+     },
+     {
+      "name": "Sydney",
+      "lat": -33.87,
+      "lon": 151.21
+     },
+     {
+      "name": "Tasman Sea Waypoint",
+      "lat": -39.0,
+      "lon": 170.0
+     }
+    ],
+    "routes": [
+     {
+      "from": "Wellington",
+      "to": "Sydney",
+      "via": [
+       "Auckland",
+       "Tasman Sea Waypoint"
+      ],
+      "label": "Youth Exodus",
+      "icon": "plane",
+      "blocked": false
+     }
+    ]
+   },
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Young Kiwis are voting with their *feet*, flocking to Australia.",
+     "emotion": "worried",
+     "pose": "neutral",
+     "shot": "wide"
+    },
+    {
+     "speaker": "narrator",
+     "text": "Higher wages lure them across the *ditch*. It is an exodus.",
+     "emotion": "sad",
+     "pose": "side_talk",
+     "shot": "two_shot"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "feet",
+     "type": "keyword",
+     "text": "MIGRATION CRISIS"
+    },
+    {
+     "at_word": "exodus",
+     "type": "label",
+     "text": "DRAINING YOUTH"
+    }
+   ],
+   "environment": "",
+   "cast": [],
+   "narration": "Young Kiwis are voting with their *feet*, flocking to Australia. Higher wages lure them across the *ditch*. It is an exodus.",
+   "title_text": "",
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "id": "s08",
+   "kind": "stage",
+   "transition": "fade",
+   "music": "upbeat",
+   "environment": "env_studio_greenroom",
+   "cast": [
+    {
+     "char": "everyman_alex",
+     "position": "left"
+    },
+    {
+     "char": "mayor_maya",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "everyman_alex",
+     "text": "If everyone leaves for *Australia*, who votes?",
+     "emotion": "confused",
+     "pose": "arms_up",
+     "shot": "wide"
+    },
+    {
+     "speaker": "mayor_maya",
+     "text": "Those staying feel a sad aura. Cities are losing their spark.",
+     "emotion": "sad",
+     "pose": "side_talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "everyman_alex",
+     "text": "Seriously? Is the next PM going to be named *Chris*?",
+     "emotion": "sarcastic",
+     "pose": "point",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [],
+   "narration": "If everyone leaves for *Australia*, who votes? Those staying feel a sad aura. Cities are losing their spark. Seriously? Is the next PM going to be named *Chris*?",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "id": "s09",
+   "kind": "title_card",
+   "transition": "slide",
+   "music": "upbeat",
+   "title_text": "The Seat Math",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Wait until you hear how the *seats* are counted.",
+     "emotion": "confident",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "environment": "",
+   "cast": [],
+   "narration": "Wait until you hear how the *seats* are counted.",
+   "beats": [],
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "id": "s10",
+   "kind": "stage",
+   "transition": "cut",
+   "music": "upbeat",
+   "environment": "env_parliament_steps",
+   "cast": [
+    {
+     "char": "cafe_owner_mike",
+     "position": "left"
+    },
+    {
+     "char": "everyman_alex",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "cafe_owner_mike",
+     "text": "So who wins? Do they get a majority?",
+     "emotion": "worried",
+     "pose": "thinking",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "everyman_alex",
+     "text": "Preliminary results say National leads by six *seats*!",
+     "emotion": "excited",
+     "pose": "point",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "cafe_owner_mike",
+     "text": "But they lost the popular vote? How is that even legal?",
+     "emotion": "confused",
+     "pose": "shrug",
+     "shot": "wide"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "seats",
+     "type": "number",
+     "text": "+6 LEAD"
+    },
+    {
+     "at_word": "legal",
+     "type": "keyword",
+     "text": "OVERHANG!"
+    }
+   ],
+   "narration": "So who wins? Do they get a majority? Preliminary results say National leads by six *seats*! But they lost the popular vote? How is that even legal?",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "id": "s11",
+   "kind": "hero",
+   "transition": "whip",
+   "music": "upbeat",
+   "hero_prompt": "A flat-cartoon parliament building growing extra wooden seats like overfilled pancakes spilling off the roof into a pile of voting papers.",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "An electoral *overhang* added eleven extra seats to the house.",
+     "emotion": "neutral",
+     "pose": "side_talk",
+     "shot": "wide"
+    }
+   ],
+   "environment": "",
+   "cast": [],
+   "narration": "An electoral *overhang* added eleven extra seats to the house.",
+   "beats": [],
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "sfx": []
+  },
+  {
+   "id": "s12",
+   "kind": "stage",
+   "transition": "cut",
+   "music": "upbeat",
+   "environment": "env_voting_corridor",
+   "cast": [
+    {
+     "char": "mayor_maya",
+     "position": "left"
+    },
+    {
+     "char": "cafe_owner_mike",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "mayor_maya",
+     "text": "The coalition holds 67 seats. Just two over the *threshold*.",
+     "emotion": "neutral",
+     "pose": "point",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "cafe_owner_mike",
+     "text": "So they win, but barely? What about list members?",
+     "emotion": "worried",
+     "pose": "side_talk",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "mayor_maya",
+     "text": "Some aren't returning. Even the finance *minister*.",
+     "emotion": "surprised",
+     "pose": "facepalm",
+     "shot": "wide"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "threshold",
+     "type": "number",
+     "text": "66 SEATS"
+    },
+    {
+     "at_word": "minister",
+     "type": "keyword",
+     "text": "BUMPED!"
+    }
+   ],
+   "narration": "The coalition holds 67 seats. Just two over the *threshold*. So they win, but barely? What about list members? Some aren't returning. Even the finance *minister*.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "id": "s13",
+   "kind": "map",
+   "transition": "zoom",
+   "music": "upbeat",
+   "map": {
+    "label": "The Long Count",
+    "countries": [
+     "New Zealand"
+    ],
+    "places": [
+     {
+      "name": "Wellington",
+      "lat": -41.29,
+      "lon": 174.78
+     }
+    ],
+    "routes": []
+   },
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "All major parties agree the result is too *close* to call.",
+     "emotion": "neutral",
+     "pose": "side_talk",
+     "shot": "wide"
+    },
+    {
+     "speaker": "narrator",
+     "text": "They will operate under caretaker conventions while counting finishes.",
+     "emotion": "worried",
+     "pose": "thinking",
+     "shot": "two_shot"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "close",
+     "type": "keyword",
+     "text": "TIGHT RACE"
+    },
+    {
+     "at_word": "counting",
+     "type": "number",
+     "text": "399k PENDING"
+    }
+   ],
+   "environment": "",
+   "cast": [],
+   "narration": "All major parties agree the result is too *close* to call. They will operate under caretaker conventions while counting finishes.",
+   "title_text": "",
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "id": "s14",
+   "kind": "stage",
+   "transition": "wipe",
+   "music": "upbeat",
+   "environment": "env_parliament_steps",
+   "cast": [
+    {
+     "char": "everyman_alex",
+     "position": "left"
+    },
+    {
+     "char": "mayor_maya",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "everyman_alex",
+     "text": "So the government just... waits? Like a *hold music* queue?",
+     "emotion": "confused",
+     "pose": "shrug",
+     "shot": "wide"
+    },
+    {
+     "speaker": "mayor_maya",
+     "text": "Exactly. Official results arrive November twenty-seventh.",
+     "emotion": "confident",
+     "pose": "side_talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "everyman_alex",
+     "text": "Three weeks of waiting for a Chris? My *coffee* is cold.",
+     "emotion": "sad",
+     "pose": "arms_up",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [],
+   "narration": "So the government just... waits? Like a *hold music* queue? Exactly. Official results arrive November twenty-seventh. Three weeks of waiting for a Chris? My *coffee* is cold.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "id": "s15",
+   "kind": "title_card",
+   "transition": "slide",
+   "music": "upbeat",
+   "title_text": "The Verdict Awaits",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "History suggests incumbents often get a *second chance*.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "environment": "",
+   "cast": [],
+   "narration": "History suggests incumbents often get a *second chance*.",
+   "beats": [],
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "id": "s16",
+   "kind": "stage",
+   "transition": "cut",
+   "music": "upbeat",
+   "environment": "env_cafe",
+   "cast": [
+    {
+     "char": "cafe_owner_mike",
+     "position": "left"
+    },
+    {
+     "char": "everyman_alex",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "cafe_owner_mike",
+     "text": "If the economy stays sickly, will they get it?",
+     "emotion": "worried",
+     "pose": "thinking",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "everyman_alex",
+     "text": "Maybe they'll just merge into one *Chris* to save time.",
+     "emotion": "sarcastic",
+     "pose": "facepalm",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [],
+   "narration": "If the economy stays sickly, will they get it? Maybe they'll just merge into one *Chris* to save time.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "id": "s17",
+   "kind": "stage",
+   "transition": "zoom",
+   "music": "upbeat",
+   "environment": "env_bus_stop",
+   "cast": [
+    {
+     "char": "mayor_maya",
+     "position": "left"
+    },
+    {
+     "char": "cafe_owner_mike",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "mayor_maya",
+     "text": "Don't joke. People are angry. The *gloom* is real.",
+     "emotion": "sad",
+     "pose": "side_listen",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "cafe_owner_mike",
+     "text": "I just hope whoever wins can fix the *rent*, bro.",
+     "emotion": "worried",
+     "pose": "shrug",
+     "shot": "wide"
+    }
+   ],
+   "beats": [],
+   "narration": "Don't joke. People are angry. The *gloom* is real. I just hope whoever wins can fix the *rent*, bro.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "id": "s18",
+   "kind": "hero",
+   "transition": "fade",
+   "music": "upbeat",
+   "hero_prompt": "A flat-cartoon silhouette of a voter dropping a ballot into a box that transforms into a giant question mark shaped like New Zealand.",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "The people have spoken. Now we wait for the *count*.",
+     "emotion": "neutral",
+     "pose": "side_talk",
+     "shot": "wide"
+    }
+   ],
+   "environment": "",
+   "cast": [],
+   "narration": "The people have spoken. Now we wait for the *count*.",
+   "beats": [],
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "sfx": []
+  },
+  {
+   "id": "s19",
+   "kind": "stage",
+   "transition": "cut",
+   "music": "upbeat",
+   "environment": "env_studio_greenroom",
+   "cast": [
+    {
+     "char": "everyman_alex",
+     "position": "left"
+    },
+    {
+     "char": "mayor_maya",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "everyman_alex",
+     "text": "So who is going to be our next prime minister?",
+     "emotion": "confused",
+     "pose": "arms_up",
+     "shot": "wide"
+    },
+    {
+     "speaker": "mayor_maya",
+     "text": "Either Christopher or Chris. The names are *identical*.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "two_shot"
+    }
+   ],
+   "beats": [],
+   "narration": "So who is going to be our next prime minister? Either Christopher or Chris. The names are *identical*.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "id": "s20",
+   "kind": "title_card",
+   "transition": "slide",
+   "music": "upbeat",
+   "title_text": "One Name to Rule Them All?",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "A tightly fought contest hangs in the *balance*.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "environment": "",
+   "cast": [],
+   "narration": "A tightly fought contest hangs in the *balance*.",
+   "beats": [],
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "id": "s21",
+   "kind": "stage",
+   "transition": "wipe",
+   "music": "upbeat",
+   "environment": "env_parliament_steps",
+   "cast": [
+    {
+     "char": "cafe_owner_mike",
+     "position": "left"
+    },
+    {
+     "char": "everyman_alex",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "cafe_owner_mike",
+     "text": "I just need groceries to stop *inflating*.",
+     "emotion": "angry",
+     "pose": "point",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "everyman_alex",
+     "text": "If they both leave for Australia, we're doomed.",
+     "emotion": "worried",
+     "pose": "facepalm",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [],
+   "narration": "I just need groceries to stop *inflating*. If they both leave for Australia, we're doomed.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "id": "s22",
+   "kind": "map",
+   "transition": "zoom",
+   "music": "upbeat",
+   "map": {
+    "label": "Final Stretch",
+    "countries": [
+     "New Zealand"
+    ],
+    "places": [
+     {
+      "name": "Auckland",
+      "lat": -36.85,
+      "lon": 174.76
+     },
+     {
+      "name": "Wellington",
+      "lat": -41.29,
+      "lon": 174.78
+     }
+    ],
+    "routes": []
+   },
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Special votes are still being counted across the *nation*.",
+     "emotion": "neutral",
+     "pose": "side_talk",
+     "shot": "wide"
+    },
+    {
+     "speaker": "narrator",
+     "text": "Everything depends on those final envelopes arriving in time.",
+     "emotion": "worried",
+     "pose": "thinking",
+     "shot": "two_shot"
+    }
+   ],
+   "beats": [],
+   "environment": "",
+   "cast": [],
+   "narration": "Special votes are still being counted across the *nation*. Everything depends on those final envelopes arriving in time.",
+   "title_text": "",
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "id": "s23",
+   "kind": "stage",
+   "transition": "cut",
+   "music": "upbeat",
+   "environment": "env_cafe",
+   "cast": [
+    {
+     "char": "mayor_maya",
+     "position": "left"
+    },
+    {
+     "char": "cafe_owner_mike",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "mayor_maya",
+     "text": "Just remember: optimism is what we need *most*.",
+     "emotion": "confident",
+     "pose": "side_talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "cafe_owner_mike",
+     "text": "Or at least cheaper beans. I can't do this alone.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "wide"
+    }
+   ],
+   "beats": [],
+   "narration": "Just remember: optimism is what we need *most*. Or at least cheaper beans. I can't do this alone.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "id": "s24",
+   "kind": "hero",
+   "transition": "fade",
+   "music": "upbeat",
+   "hero_prompt": "A flat-cartoon graphic of two identical coffee mugs labeled 'Chris' clinking together, spilling foam that forms the shape of New Zealand's flags.",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Until then, grab a drink and let history *unfold*.",
+     "emotion": "neutral",
+     "pose": "side_talk",
+     "shot": "wide"
+    }
+   ],
+   "environment": "",
+   "cast": [],
+   "narration": "Until then, grab a drink and let history *unfold*.",
+   "beats": [],
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "sfx": []
+  },
+  {
+   "id": "s25",
+   "kind": "stage",
+   "transition": "slide",
+   "music": "upbeat",
+   "environment": "env_bus_stop",
+   "cast": [
+    {
+     "char": "everyman_alex",
+     "position": "left"
+    },
+    {
+     "char": "mayor_maya",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "everyman_alex",
+     "text": "Wait, so the next PM is definitely named Chris?",
+     "emotion": "surprised",
+     "pose": "point",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "mayor_maya",
+     "text": "*Either way*. Now get on your bus before it leaves.",
+     "emotion": "confident",
+     "pose": "side_listen",
+     "shot": "two_shot"
+    }
+   ],
+   "beats": [],
+   "narration": "Wait, so the next PM is definitely named Chris? *Either way*. Now get on your bus before it leaves.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "sfx": []
+  }
+ ],
+ "sources": [
+  "[1] Inflation and wages gloom weigh heavily in New Zealand's high-stakes election contest",
+  "[2] 2026 New Zealand general election",
+  "[3] 53rd New Zealand Parliament"
+ ],
+ "_problems": [],
+ "seo": {
+  "title": "New Zealand Election: The Next PM is Chris Either Way",
+  "description": "A fast-paced explainer on New Zealand's 2026 election, covering the cost of living crisis, the Christopher Luxon vs Chris Hipkins rematch, the electoral overhang math, and the long wait for special votes.",
+  "tags": [
+   "New Zealand",
+   "election",
+   "Luxon",
+   "Hipkins",
+   "politics",
+   "economy",
+   "MMP",
+   "explained"
+  ],
+  "hashtags": []
+ }
+}

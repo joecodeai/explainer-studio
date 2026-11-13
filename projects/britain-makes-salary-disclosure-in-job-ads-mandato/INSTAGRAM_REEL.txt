@@ -1,0 +1,18 @@
+=== INSTAGRAM REEL ===
+Video ................ reel/britain-makes-salary-disclosure-in-job-ads-mandato_reel.mp4  (28 s, 1080x1920)
+Cover ................ reel/cover.jpg (or pick a frame in the app)
+Taken from ........... 0:02.8 - 0:26.0 of the YouTube video + closing line
+Checks ............... PASS
+
+
+=== CAPTION (copy everything below) ===
+Job seekers used to face a wall of secrecy and vague listings like competitive salary. This clip explains why hiding pay enables lower wages for young people and women, and how today’s announcement is changing the rules. Watch the full breakdown on our YouTube channel (link in bio). 📉✨
+
+#PayTransparency #UKJobs #SalaryDisclosure #JobSearchTips #LabourMarket
+
+
+=== SETTINGS ===
+Audio ................ keep original audio (music is already mixed in)
+AI label ............. turn ON "AI info" if the reel has realistic-looking AI footage; optional for cartoon-only
+Link ................. put the YouTube video link in your bio before posting
+Share to Facebook .... optional

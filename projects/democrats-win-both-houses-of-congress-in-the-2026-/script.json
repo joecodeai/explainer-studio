@@ -1,0 +1,1516 @@
+{
+ "title": "The Blue Wave: Democrats Win 2026 Midterms",
+ "thumbnail_text": "BLUE WAVE 2026",
+ "description": "Animated explainer of the historic 2026 US midterm results, analyzing how affordability and foreign policy shifted power to Congress, the impeachment math, and what gridlock means next.",
+ "tags": [
+  "politics",
+  "2026 midterms",
+  "US elections",
+  "impeachment",
+  "congress"
+ ],
+ "characters": [
+  {
+   "id": "everyman",
+   "name": "Everyman",
+   "look": "Plain cartoon guy in his 30s with messy brown hair, wearing a light blue button-down shirt and khaki pants. Carries a worn coffee mug that reads 'VOTE' on the side.",
+   "voice": "Male, 32, Midwestern accent, warm conversational pitch, steady but slightly anxious pace, high energy when surprised.",
+   "real_person": false
+  },
+  {
+   "id": "strategist",
+   "name": "Strategist",
+   "look": "Sharp cartoon woman in her 40s with short black bob hair, wearing a dark navy blazer over a white turtleneck, gold glasses, and holding a sleek digital tablet.",
+   "voice": "Female, 45, sharp New York accent, slightly higher pitch, crisp timbre, fast delivery, confident and sarcastic undertones.",
+   "real_person": false
+  },
+  {
+   "id": "lawmaker",
+   "name": "Lawmaker",
+   "look": "Diverse cartoon man in his late 20s with curly dark hair, wearing a red tie loosened at the collar, rolled-up sleeves, holding a thick stack of legislative papers.",
+   "voice": "Male, 28, Southern accent, optimistic bright pitch, smooth timbre, moderate pace, enthusiastic and earnest delivery.",
+   "real_person": false
+  }
+ ],
+ "environments": [
+  {
+   "id": "cozy_kitchen",
+   "prompt": "A small suburban kitchen with wooden tables, checkered curtains, a fridge covered in notes, and morning sunlight streaming through a window.",
+   "ambience": "Gentle clinking of ceramic mugs, low hum of refrigerator",
+   "_file": "/home/mundax/Documents/REL/ExplainerStudio/library/backgrounds/cozy_kitchen_504266.png",
+   "_text_ok": "89ecaaac79b1"
+  },
+  {
+   "id": "campaign_war_room",
+   "prompt": "Cluttered political operations center with whiteboards full of red and blue markers, stacks of coffee cups, tangled charging cables, and a large wall map of congressional districts. Wide open empty floor across the whole lower half of the picture; all furniture pushed far back against the walls.",
+   "ambience": "Frantic typing on keyboards, overlapping phone rings, distant shouting",
+   "_file": "/home/mundax/Documents/REL/ExplainerStudio/library/backgrounds/campaign_war_room_1c35c4.png",
+   "_qc_base_prompt": "Cluttered political operations center with whiteboards full of red and blue markers, stacks of coffee cups, tangled charging cables, and a large wall map of congressional districts.",
+   "_qc_bg_attempt": 1,
+   "_text_ok": "b4d1cf6de8a0"
+  },
+  {
+   "id": "news_studio",
+   "prompt": "Modern broadcast set with sleek glass backdrop, multiple monitors displaying live election tickers, professional ring lights, and minimalist desk furniture.",
+   "ambience": "Low studio lighting hum, soft microphone rustles, subtle background music cue",
+   "_file": "/home/mundax/Documents/REL/ExplainerStudio/library/backgrounds/news_studio_39d76b.png",
+   "_text_ok": "d76668e4fcdc"
+  },
+  {
+   "id": "capitol_hallway",
+   "prompt": "Grand marble corridor inside the US Capitol with tall columns, framed historical portraits, polished floors reflecting overhead chandeliers, and wide arched doorways. Wide open empty floor across the whole lower half of the picture; all furniture pushed far back against the walls.",
+   "ambience": "Distant crowd murmur echoing, slow deliberate footsteps on stone",
+   "_file": "/home/mundax/Documents/REL/ExplainerStudio/library/backgrounds/capitol_hallway_6b0bff.png",
+   "_qc_base_prompt": "Grand marble corridor inside the US Capitol with tall columns, framed historical portraits, polished floors reflecting overhead chandeliers, and wide arched doorways.",
+   "_qc_bg_attempt": 1,
+   "_text_ok": "2e1eb80fb7be"
+  },
+  {
+   "id": "legal_library",
+   "prompt": "Old-fashioned law library with towering mahogany bookshelves filled with leather-bound volumes, a large central desk, warm lamp glow, and plush armchairs.",
+   "ambience": "Slow page turning, rhythmic ticking of an antique wall clock",
+   "_file": "/home/mundax/Documents/REL/ExplainerStudio/library/backgrounds/legal_library_826342.png",
+   "_text_ok": "36838b1d385a"
+  },
+  {
+   "id": "community_center",
+   "prompt": "Bright neighborhood hall with folding chairs arranged in circles, bulletin boards covered in flyers, large windows letting in natural light, and a coffee station in the corner.",
+   "ambience": "Light chatter between neighbors, bubbling coffee machine, soft chair scraping",
+   "_file": "/home/mundax/Documents/REL/ExplainerStudio/library/backgrounds/community_center_c86d27.png",
+   "_text_ok": "e828c001a9d4"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "s01",
+   "kind": "hero",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Imagine the *entire* map turning blue overnight... what happens next?",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "wide"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "blue",
+     "type": "keyword",
+     "text": "BLUE WAVE"
+    }
+   ],
+   "transition": "fade",
+   "sfx": [],
+   "music": "tense",
+   "narration": "Imagine the *entire* map turning blue overnight... what happens next?",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "A sweeping flat-cartoon panorama of a stylized US map rapidly flooding with vibrant blue waves, leaving only a few scattered red strongholds untouched.",
+   "_dur": 3.8652083333333334
+  },
+  {
+   "id": "s02",
+   "kind": "map",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Democrats just swept the 2026 midterms, flipping key Republican strongholds like *Texas*, Kansas, and Ohio.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "wide"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "swept",
+     "type": "label",
+     "text": "FLIPPED STATE"
+    }
+   ],
+   "map": {
+    "label": "The Blue Wave",
+    "countries": [
+     "United States"
+    ],
+    "places": [
+     {
+      "name": "Texas",
+      "lat": 31.0,
+      "lon": -97.5
+     },
+     {
+      "name": "Kansas",
+      "lat": 38.5,
+      "lon": -98.0
+     },
+     {
+      "name": "Ohio",
+      "lat": 40.5,
+      "lon": -82.5
+     }
+    ],
+    "routes": []
+   },
+   "transition": "zoom",
+   "sfx": [
+    {
+     "at_word": "map",
+     "sound": "whoosh"
+    }
+   ],
+   "music": "upbeat",
+   "narration": "Democrats just swept the 2026 midterms, flipping key Republican strongholds like *Texas*, Kansas, and Ohio.",
+   "title_text": "",
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "_dur": 7.946291666666666
+  },
+  {
+   "id": "s03",
+   "kind": "title_card",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "It's the biggest House win since Watergate... but how did this happen?",
+     "emotion": "surprised",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [],
+   "transition": "slide",
+   "sfx": [],
+   "music": "upbeat",
+   "narration": "It's the biggest House win since Watergate... but how did this happen?",
+   "title_text": "Biggest House Win Since Watergate",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "_dur": 3.6794583333333333
+  },
+  {
+   "id": "s04",
+   "kind": "stage",
+   "environment": "cozy_kitchen",
+   "cast": [
+    {
+     "char": "everyman",
+     "position": "left"
+    },
+    {
+     "char": "lawmaker",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "everyman",
+     "text": "Wait—did you see the numbers? Democrats crossed *253 seats* in the House!",
+     "emotion": "worried",
+     "pose": "side_listen",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "lawmaker",
+     "text": "That's a massive shift! They're taking control of both chambers for the first time during Trump's second term.",
+     "emotion": "happy",
+     "pose": "point",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "everyman",
+     "text": "But doesn't that just mean more paperwork?",
+     "emotion": "confused",
+     "pose": "side_talk",
+     "shot": "wide"
+    },
+    {
+     "speaker": "lawmaker",
+     "text": "Not exactly. It means they control committees, investigations, and even budget negotiations.",
+     "emotion": "confident",
+     "pose": "talk",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "seats",
+     "type": "number",
+     "text": "253 SEATS"
+    }
+   ],
+   "transition": "cut",
+   "sfx": [
+    {
+     "at_word": "seats",
+     "sound": "pop"
+    }
+   ],
+   "music": "upbeat",
+   "narration": "Wait—did you see the numbers? Democrats crossed *253 seats* in the House! That's a massive shift! They're taking control of both chambers for the first time during Trump's second term. But doesn't that just mean more paperwork? Not exactly. It means they control committees, investigations, and even budget negotiations.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "_dur": 18.714458333333333,
+   "layout": {
+    "everyman": 0.12,
+    "lawmaker": 0.73
+   }
+  },
+  {
+   "id": "s05",
+   "kind": "chart",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "With Democrats holding well past the majority mark, the balance of power has fundamentally shifted.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [],
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "transition": "wipe",
+   "sfx": [],
+   "chart": {
+    "labels": [
+     "Democrats",
+     "Republicans"
+    ],
+    "values": [
+     253,
+     155
+    ],
+    "unit": "",
+    "title": "House seats as of Nov 5 (27 races uncalled)"
+   },
+   "music": "tense",
+   "narration": "With Democrats holding well past the majority mark, the balance of power has fundamentally shifted.",
+   "title_text": "",
+   "hero_prompt": "",
+   "_dur": 5.277
+  },
+  {
+   "id": "s06",
+   "kind": "map",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "In the Senate, Democrats flipped at least *seven* seats, including Iowa and Maine.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "wide"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "seven",
+     "type": "number",
+     "text": "+7 SENATE SEATS"
+    }
+   ],
+   "map": {
+    "label": "Senate Shift",
+    "countries": [
+     "United States"
+    ],
+    "places": [
+     {
+      "name": "Iowa",
+      "lat": 42.0,
+      "lon": -93.5
+     },
+     {
+      "name": "Maine",
+      "lat": 45.5,
+      "lon": -70.0
+     },
+     {
+      "name": "North Carolina",
+      "lat": 35.5,
+      "lon": -79.5
+     }
+    ],
+    "routes": []
+   },
+   "transition": "zoom",
+   "sfx": [
+    {
+     "at_word": "Senate",
+     "sound": "cash register"
+    }
+   ],
+   "music": "tense",
+   "narration": "In the Senate, Democrats flipped at least *seven* seats, including Iowa and Maine.",
+   "title_text": "",
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "_dur": 4.759916666666666
+  },
+  {
+   "id": "s07",
+   "kind": "title_card",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "So what drove this massive realignment?",
+     "emotion": "surprised",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [],
+   "transition": "slide",
+   "sfx": [],
+   "music": "mysterious",
+   "narration": "So what drove this massive realignment?",
+   "title_text": "What Drove It?",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "_dur": 2.56
+  },
+  {
+   "id": "s08",
+   "kind": "stage",
+   "environment": "campaign_war_room",
+   "cast": [
+    {
+     "char": "strategist",
+     "position": "left"
+    },
+    {
+     "char": "everyman",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "strategist",
+     "text": "Look at the data! Inflation and gas prices *exploded*.",
+     "emotion": "angry",
+     "pose": "point",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "everyman",
+     "text": "Gas went up because of the Iran war? I thought that was just news headlines!",
+     "emotion": "worried",
+     "pose": "side_listen",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "strategist",
+     "text": "Exactly. The Strait of Hormuz crisis hit fuel costs, and voters are furious about affordability.",
+     "emotion": "sarcastic",
+     "pose": "arms_up",
+     "shot": "wide"
+    },
+    {
+     "speaker": "everyman",
+     "text": "Wait—does this mean they're really blaming the war?",
+     "emotion": "confused",
+     "pose": "side_talk",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "exploded",
+     "type": "keyword",
+     "text": "GAS PRICES"
+    }
+   ],
+   "transition": "whip",
+   "sfx": [
+    {
+     "at_word": "exploded",
+     "sound": "pop"
+    }
+   ],
+   "music": "mysterious",
+   "narration": "Look at the data! Inflation and gas prices *exploded*. Gas went up because of the Iran war? I thought that was just news headlines! Exactly. The Strait of Hormuz crisis hit fuel costs, and voters are furious about affordability. Wait—does this mean they're really blaming the war?",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "_dur": 16.685624999999998
+  },
+  {
+   "id": "s09",
+   "kind": "hero",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Exit polls show affordability was the main theme, with costs for gas and groceries surging.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [],
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "transition": "cut",
+   "sfx": [],
+   "chart": {
+    "labels": [
+     "Gas Prices",
+     "Healthcare Costs",
+     "Groceries"
+    ],
+    "values": [
+     45,
+     30,
+     25
+    ],
+    "unit": "%",
+    "title": "Cost of Living Crisis"
+   },
+   "music": "tense",
+   "narration": "Exit polls show affordability was the main theme, with costs for gas and groceries surging.",
+   "title_text": "",
+   "hero_prompt": "a worried cartoon family in a small kitchen staring in shock at an extremely long grocery receipt unrolling across the floor, warm evening light",
+   "_dur": 5.002291666666666,
+   "_qc_hero_attempt": 1
+  },
+  {
+   "id": "s10",
+   "kind": "map",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Gas prices have climbed since the war with Iran began, and the administration's tariffs pushed up prices on everyday goods.",
+     "emotion": "worried",
+     "pose": "point",
+     "shot": "wide"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "crisis",
+     "type": "label",
+     "text": "STRAIT BLOCKED"
+    }
+   ],
+   "map": {
+    "label": "Fuel Route Disrupted",
+    "countries": [
+     "United States",
+     "Iran"
+    ],
+    "places": [
+     {
+      "name": "Strait of Hormuz",
+      "lat": 26.5,
+      "lon": 56.0
+     }
+    ],
+    "routes": []
+   },
+   "transition": "zoom",
+   "sfx": [
+    {
+     "at_word": "crisis",
+     "sound": "whoosh"
+    }
+   ],
+   "music": "tense",
+   "narration": "Gas prices have climbed since the war with Iran began, and the administration's tariffs pushed up prices on everyday goods.",
+   "title_text": "",
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "_dur": 6.668583333333333
+  },
+  {
+   "id": "s11",
+   "kind": "title_card",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "What changes now that Democrats control Congress?",
+     "emotion": "confident",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [],
+   "transition": "slide",
+   "sfx": [],
+   "music": "upbeat",
+   "narration": "What changes now that Democrats control Congress?",
+   "title_text": "What Changes Now",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "_dur": 2.7255
+  },
+  {
+   "id": "s12",
+   "kind": "stage",
+   "environment": "capitol_hallway",
+   "cast": [
+    {
+     "char": "lawmaker",
+     "position": "left"
+    },
+    {
+     "char": "strategist",
+     "position": "center"
+    },
+    {
+     "char": "everyman",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "lawmaker",
+     "text": "We can finally summon officials and demand documents!",
+     "emotion": "excited",
+     "pose": "point",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "strategist",
+     "text": "Oh joy, more subpoenas. The White House will have to play defense.",
+     "emotion": "sarcastic",
+     "pose": "side_listen",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "everyman",
+     "text": "Wait—does this mean he gets veto everything?",
+     "emotion": "worried",
+     "pose": "side_talk",
+     "shot": "wide"
+    },
+    {
+     "speaker": "lawmaker",
+     "text": "He can try... but gridlock is the new reality.",
+     "emotion": "confident",
+     "pose": "talk",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "documents",
+     "type": "keyword",
+     "text": "SUBPOENAS"
+    }
+   ],
+   "transition": "cut",
+   "sfx": [
+    {
+     "at_word": "documents",
+     "sound": "pop"
+    }
+   ],
+   "music": "upbeat",
+   "narration": "We can finally summon officials and demand documents! Oh joy, more subpoenas. The White House will have to play defense. Wait—does this mean he gets veto everything? He can try... but gridlock is the new reality.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "_dur": 12.344041666666666
+  },
+  {
+   "id": "s13",
+   "kind": "chart",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "With a Senate majority of at least 54-44, Democrats control committee proceedings and nominations.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [],
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "transition": "wipe",
+   "sfx": [],
+   "chart": {
+    "labels": [
+     "Democrats + Independents",
+     "Republicans"
+    ],
+    "values": [
+     54,
+     44
+    ],
+    "unit": "",
+    "title": "Senate majority (at least)"
+   },
+   "music": "tense",
+   "narration": "With a Senate majority of at least 54-44, Democrats control committee proceedings and nominations.",
+   "title_text": "",
+   "hero_prompt": "",
+   "_dur": 6.674
+  },
+  {
+   "id": "s14",
+   "kind": "map",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Control of both chambers means Democrats can lead committees and scrutinize federal spending.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "wide"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "control",
+     "type": "label",
+     "text": "MAJORITY RULE"
+    }
+   ],
+   "map": {
+    "label": "Congressional Power",
+    "countries": [
+     "United States"
+    ],
+    "places": [
+     {
+      "name": "US Capitol",
+      "lat": 38.9,
+      "lon": -77.0
+     }
+    ],
+    "routes": []
+   },
+   "transition": "zoom",
+   "sfx": [
+    {
+     "at_word": "control",
+     "sound": "cash register"
+    }
+   ],
+   "music": "tense",
+   "narration": "Control of both chambers means Democrats can lead committees and scrutinize federal spending.",
+   "title_text": "",
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "_dur": 4.700083333333334
+  },
+  {
+   "id": "s15",
+   "kind": "title_card",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "And the big question everyone is asking... what about impeachment?",
+     "emotion": "surprised",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [],
+   "transition": "slide",
+   "sfx": [],
+   "music": "epic",
+   "narration": "And the big question everyone is asking... what about impeachment?",
+   "title_text": "What About Impeachment?",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "_dur": 3.5224583333333332
+  },
+  {
+   "id": "s16",
+   "kind": "stage",
+   "environment": "legal_library",
+   "cast": [
+    {
+     "char": "everyman",
+     "position": "left"
+    },
+    {
+     "char": "strategist",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "everyman",
+     "text": "So Democrats win both houses, and Trump falls? That sounds easy!",
+     "emotion": "surprised",
+     "pose": "side_listen",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "strategist",
+     "text": "Not even close. The Constitution sets a *two-thirds* threshold in the Senate for conviction.",
+     "emotion": "neutral",
+     "pose": "point",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "everyman",
+     "text": "Wait—does that mean they can't do it alone?",
+     "emotion": "confused",
+     "pose": "side_talk",
+     "shot": "wide"
+    },
+    {
+     "speaker": "strategist",
+     "text": "Exactly! They'll need Republican support to reach 67 votes!",
+     "emotion": "angry",
+     "pose": "arms_up",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "conviction",
+     "type": "keyword",
+     "text": "VOTE COUNT"
+    }
+   ],
+   "transition": "whip",
+   "sfx": [
+    {
+     "at_word": "conviction",
+     "sound": "pop"
+    }
+   ],
+   "music": "epic",
+   "narration": "So Democrats win both houses, and Trump falls? That sounds easy! Not even close. The Constitution sets a *two-thirds* threshold in the Senate for conviction. Wait—does that mean they can't do it alone? Exactly! They'll need Republican support to reach 67 votes!",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "_dur": 16.362333333333332,
+   "layout": {
+    "everyman": 0.27,
+    "strategist": 0.66
+   }
+  },
+  {
+   "id": "s17",
+   "kind": "chart",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "The House needs just 218 votes to impeach, but the Senate requires 67 votes to remove a president.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [],
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "transition": "cut",
+   "sfx": [],
+   "chart": {
+    "labels": [
+     "House Simple Majority",
+     "Senate Conviction"
+    ],
+    "values": [
+     218,
+     67
+    ],
+    "unit": "",
+    "title": "Impeachment Thresholds"
+   },
+   "music": "epic",
+   "narration": "The House needs just 218 votes to impeach, but the Senate requires 67 votes to remove a president.",
+   "title_text": "",
+   "hero_prompt": "",
+   "_dur": 6.156125
+  },
+  {
+   "id": "s18",
+   "kind": "map",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Even with a Democratic Senate, conviction requires substantial Republican support.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "wide"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "votes",
+     "type": "number",
+     "text": "67 NEEDED"
+    }
+   ],
+   "map": {
+    "label": "Constitutional Scales",
+    "countries": [
+     "United States"
+    ],
+    "places": [
+     {
+      "name": "Supreme Court",
+      "lat": 38.9,
+      "lon": -77.0
+     }
+    ],
+    "routes": []
+   },
+   "transition": "zoom",
+   "sfx": [
+    {
+     "at_word": "votes",
+     "sound": "cash register"
+    }
+   ],
+   "music": "epic",
+   "narration": "Even with a Democratic Senate, conviction requires substantial Republican support.",
+   "title_text": "",
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "_dur": 4.947041666666666
+  },
+  {
+   "id": "s19",
+   "kind": "title_card",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "But investigations are already underway...",
+     "emotion": "confident",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [],
+   "transition": "slide",
+   "sfx": [],
+   "music": "mysterious",
+   "narration": "But investigations are already underway...",
+   "title_text": "Investigations Begin",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "_dur": 1.9479583333333332
+  },
+  {
+   "id": "s20",
+   "kind": "stage",
+   "environment": "news_studio",
+   "cast": [
+    {
+     "char": "lawmaker",
+     "position": "left"
+    },
+    {
+     "char": "everyman",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "lawmaker",
+     "text": "We're looking at executive orders, immigration enforcement, and federal spending.",
+     "emotion": "neutral",
+     "pose": "side_talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "everyman",
+     "text": "What about the Iran war decisions? Those are huge!",
+     "emotion": "worried",
+     "pose": "side_listen",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "lawmaker",
+     "text": "Exactly. Committees will examine military decisions and internal records.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "wide"
+    },
+    {
+     "speaker": "everyman",
+     "text": "So the watchdogs are out of their cages?",
+     "emotion": "neutral",
+     "pose": "side_talk",
+     "shot": "two_shot"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "underway",
+     "type": "label",
+     "text": "INVESTIGATIONS LIVE"
+    }
+   ],
+   "transition": "cut",
+   "sfx": [
+    {
+     "at_word": "underway",
+     "sound": "whoosh"
+    }
+   ],
+   "music": "mysterious",
+   "narration": "We're looking at executive orders, immigration enforcement, and federal spending. What about the Iran war decisions? Those are huge! Exactly. Committees will examine military decisions and internal records. So the watchdogs are out of their cages?",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "_dur": 15.060166666666666
+  },
+  {
+   "id": "s21",
+   "kind": "hero",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Trump has already signaled he'll use his veto authority, but gridlock is the new normal.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "wide"
+    }
+   ],
+   "beats": [],
+   "transition": "fade",
+   "sfx": [],
+   "music": "comedic",
+   "narration": "Trump has already signaled he'll use his veto authority, but gridlock is the new normal.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "A dramatic flat-cartoon illustration of a heavy gavel slamming onto a desk next to a locked presidential seal, symbolizing political gridlock and divided power.",
+   "_dur": 4.86475
+  },
+  {
+   "id": "s22",
+   "kind": "stage",
+   "environment": "cozy_kitchen",
+   "cast": [
+    {
+     "char": "strategist",
+     "position": "left"
+    },
+    {
+     "char": "lawmaker",
+     "position": "center"
+    },
+    {
+     "char": "everyman",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "strategist",
+     "text": "It's a constrained lame-duck phase for the administration.",
+     "emotion": "neutral",
+     "pose": "side_listen",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "lawmaker",
+     "text": "That gives us leverage to block their agenda or demand changes!",
+     "emotion": "happy",
+     "pose": "point",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "everyman",
+     "text": "So we just have to wait and see who blinks first?",
+     "emotion": "neutral",
+     "pose": "side_talk",
+     "shot": "wide"
+    },
+    {
+     "speaker": "strategist",
+     "text": "Oh, absolutely. Gridlock is an art form.",
+     "emotion": "sarcastic",
+     "pose": "facepalm",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "changes",
+     "type": "keyword",
+     "text": "GRIDLOCK"
+    }
+   ],
+   "transition": "wipe",
+   "sfx": [
+    {
+     "at_word": "changes",
+     "sound": "pop"
+    }
+   ],
+   "music": "comedic",
+   "narration": "It's a constrained lame-duck phase for the administration. That gives us leverage to block their agenda or demand changes! So we just have to wait and see who blinks first? Oh, absolutely. Gridlock is an art form.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "_dur": 12.264125,
+   "layout": {
+    "strategist": 0.12,
+    "lawmaker": 0.66,
+    "everyman": 0.83
+   }
+  },
+  {
+   "id": "s23",
+   "kind": "map",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "For the remaining two years, executive power faces intense legislative constraints.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "wide"
+    }
+   ],
+   "beats": [],
+   "map": {
+    "label": "Lame Duck Phase",
+    "countries": [
+     "United States"
+    ],
+    "places": [
+     {
+      "name": "Washington D.C.",
+      "lat": 38.9,
+      "lon": -77.0
+     }
+    ],
+    "routes": []
+   },
+   "transition": "zoom",
+   "sfx": [
+    {
+     "at_word": "phase",
+     "sound": "cash register"
+    }
+   ],
+   "music": "comedic",
+   "narration": "For the remaining two years, executive power faces intense legislative constraints.",
+   "title_text": "",
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "_dur": 4.403208333333334
+  },
+  {
+   "id": "s24",
+   "kind": "title_card",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "The political landscape has shifted forever...",
+     "emotion": "confident",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [],
+   "transition": "slide",
+   "sfx": [],
+   "music": "upbeat",
+   "narration": "The political landscape has shifted forever...",
+   "title_text": "The Political Landscape Has Shifted",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "_dur": 2.2404166666666665
+  },
+  {
+   "id": "s25",
+   "kind": "stage",
+   "environment": "community_center",
+   "cast": [
+    {
+     "char": "everyman",
+     "position": "left"
+    },
+    {
+     "char": "strategist",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "everyman",
+     "text": "So the map is blue again! What happens when they actually try to govern?",
+     "emotion": "happy",
+     "pose": "side_listen",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "strategist",
+     "text": "They'll have to work with him... or watch him slap veto stickers on everything.",
+     "emotion": "sarcastic",
+     "pose": "point",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "everyman",
+     "text": "I guess I should buy more red caps for the next one, huh?",
+     "emotion": "neutral",
+     "pose": "side_talk",
+     "shot": "wide"
+    },
+    {
+     "speaker": "strategist",
+     "text": "Oh, you just wait. The hats might just go out of style.",
+     "emotion": "sad",
+     "pose": "shrug",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "style",
+     "type": "number",
+     "text": "HATS OUT?"
+    }
+   ],
+   "transition": "fade",
+   "sfx": [
+    {
+     "at_word": "style",
+     "sound": "pop"
+    }
+   ],
+   "music": "upbeat",
+   "narration": "So the map is blue again! What happens when they actually try to govern? They'll have to work with him... or watch him slap veto stickers on everything. I guess I should buy more red caps for the next one, huh? Oh, you just wait. The hats might just go out of style.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": "",
+   "_dur": 15.498208333333334
+  },
+  {
+   "id": "s26",
+   "kind": "title_card",
+   "environment": "",
+   "cast": [],
+   "_outro": true,
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Gridlock reigns as subpoenas meet vetoes, so watch closely to see which branch finally blinks first. Subscribe now, because the next chapter is already written.",
+     "emotion": "happy",
+     "pose": "neutral",
+     "shot": "detail"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "watching",
+     "type": "keyword",
+     "text": "THANKS!"
+    }
+   ],
+   "title_text": "Thanks for Watching",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": ""
+   },
+   "hero_prompt": null,
+   "transition": "fade",
+   "sfx": [],
+   "music": "upbeat",
+   "narration": "Gridlock reigns as subpoenas meet vetoes, so watch closely to see which branch finally blinks first. Subscribe now, because the next chapter is already written.",
+   "_dur": 9.530541666666666
+  }
+ ],
+ "sources": [
+  "[1] US Midterm Election Results 2026: Democrats win Congress, what happens next? Will Trump now face impeachment?",
+  "[2] US Midterm Election 2026: Democrats win control of Congress, cross 218-seat mark in House of Representatives",
+  "[3] US Midterms 2026 Results: Democrats Stun Republicans With Historic Congress Sweep; Five Reasons Behind Their Big Win",
+  "[4] US Midterms 2026: Democrats Head For Biggest House Win Since Watergate, Trump Faces Hostile Congress",
+  "[5] US midterms: Democrats win Congress, Red states flip Blue as JD Vance blames war",
+  "[6] 2026 United States elections",
+  "[7] 2026 United States House of Representatives elections"
+ ],
+ "seo": {
+  "title": "The Blue Wave: Democrats Win 2026 Midterms",
+  "description": "Animated explainer of the historic 2026 US midterm results, analyzing how affordability and foreign policy shifted power to Congress, the impeachment math, and what gridlock means next.",
+  "tags": [
+   "politics explained",
+   "trump",
+   "why did democrats win 2026 midterms",
+   "2026 midterm election results",
+   "democratic party house majority",
+   "us elections",
+   "politics",
+   "2026 midterms",
+   "impeachment",
+   "democrats",
+   "what happens when democrats control congress",
+   "latest us politics news",
+   "senate impeachment trial rules",
+   "congressional races",
+   "republicans",
+   "how many seats do democrats have in house",
+   "2026 congressional race update",
+   "gas prices impact election results",
+   "american government",
+   "political analysis",
+   "ohio"
+  ],
+  "hashtags": [
+   "#bluewave",
+   "#2026midterms",
+   "#congressupdate",
+   "#politicsexplained"
+  ],
+  "tags_v": 2
+ },
+ "_problems": []
+}

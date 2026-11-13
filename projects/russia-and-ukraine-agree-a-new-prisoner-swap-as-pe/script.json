@@ -1,0 +1,1927 @@
+{
+ "title": "The Abu Dhabi Swap: Prisoner Deal Stalls Peace Talks",
+ "thumbnail_text": "SWAP AGREED, WAR CONTINUES?",
+ "description": "Russia and Ukraine agree to a major prisoner exchange in Abu Dhabi, but territorial disputes and trust deficits stall broader peace efforts. We break down the deal, the diplomatic routes, and what comes next.",
+ "tags": [
+  "geopolitics",
+  "ukraine-russia-war",
+  "diplomacy",
+  "prisoner-swap",
+  "peace-talks"
+ ],
+ "characters": [
+  {
+   "id": "everyman",
+   "name": "Leo Vance",
+   "look": "Mid-30s, tousled dark hair, beige trench coat over a grey hoodie, holding a crumpled newspaper. Realistic proportions, muted newsroom colours.",
+   "voice": "Male, 30s, neutral accent, mid-pitch, steady pace, earnest energy.",
+   "role": "Everyman",
+   "real_person": false
+  },
+  {
+   "id": "diplomat",
+   "name": "Elena Rostova",
+   "look": "Late-50s, silver hair slicked back, sharp navy blazer with lapel pins, leather briefcase. Realistic proportions, muted newsroom colours.",
+   "voice": "Female, 50s, British accent, alto pitch, deliberate pace, calm but firm energy.",
+   "role": "Diplomatic correspondent",
+   "real_person": false,
+   "tag_name": "Diplomatic correspondent"
+  },
+  {
+   "id": "grid_engineer",
+   "name": "Marko Petrov",
+   "look": "Early-40s, stubble, high-vis orange vest over a dark thermal shirt, holding a tablet showing power grid schematics. Realistic proportions, muted newsroom colours.",
+   "voice": "Male, 40s, Eastern European accent, baritone pitch, fast pace, pragmatic energy.",
+   "role": "Kyiv power engineer",
+   "real_person": false,
+   "tag_name": "Kyiv power engineer"
+  },
+  {
+   "id": "security_analyst",
+   "name": "Dr. Aris Thorne",
+   "look": "Late-30s, short brown hair, dark suit with a red tie, holding a stylus and pointing at a holographic map. Realistic proportions, muted newsroom colours.",
+   "voice": "Female, 35s, American accent, contralto pitch, measured pace, analytical energy.",
+   "role": "Security analyst",
+   "real_person": false,
+   "tag_name": "Security analyst"
+  }
+ ],
+ "environments": [
+  {
+   "id": "env_uae_talks",
+   "prompt": "A sleek, neutral conference room in Abu Dhabi with floor-to-ceiling windows overlooking the desert skyline, polished marble tables, and flags of UAE, Russia, Ukraine, US.",
+   "ambience": "Quiet hum of air conditioning and distant city traffic.",
+   "_file": "/home/mundax/Documents/REL/ExplainerStudio/library/backgrounds_news/env_uae_talks_2fbb53.png",
+   "_text_ok": "b2f26f699604"
+  },
+  {
+   "id": "env_ukraine_shelter",
+   "prompt": "A reinforced concrete underground bunker with stacked sandbags, flickering emergency lights, a large topographical map on the wall, and a crackling radio.",
+   "ambience": "Distant thumps of artillery, low generator rumble.",
+   "_file": "/home/mundax/Documents/REL/ExplainerStudio/library/backgrounds_news/env_ukraine_shelter_73a241.png",
+   "_text_ok": "7c9ff11bcc9b"
+  },
+  {
+   "id": "env_us_embassy",
+   "prompt": "A formal briefing room in Washington D.C., dark wood paneling, American flags, a long table with coffee cups and diplomatic folders. Wide open empty floor across the whole lower half of the picture; all furniture pushed far back against the walls.",
+   "ambience": "Muffled footsteps, paper shuffling, HVAC hum.",
+   "_file": "/home/mundax/Documents/REL/ExplainerStudio/library/backgrounds_news/env_us_embassy_363888.png",
+   "_text_ok": "0f0fa7f6e08d",
+   "_qc_base_prompt": "A formal briefing room in Washington D.C., dark wood paneling, American flags, a long table with coffee cups and diplomatic folders.",
+   "_qc_bg_attempt": 1
+  },
+  {
+   "id": "env_russian_bunker",
+   "prompt": "A dimly lit underground command center in Moscow, green-tinted monitors displaying map grids, thick steel doors, leather chairs.",
+   "ambience": "Low-frequency server fans, static crackle from radios.",
+   "_file": "/home/mundax/Documents/REL/ExplainerStudio/library/backgrounds_news/env_russian_bunker_8c2ef5.png",
+   "_text_ok": "e96606d690af"
+  },
+  {
+   "id": "env_dublin_summit",
+   "prompt": "A modern conference hall in Ireland with large glass walls overlooking a rainy street, round tables draped in blue cloth, microphones on stands.",
+   "ambience": "Murmuring crowd, rain against glass, camera shutters.",
+   "_file": "/home/mundax/Documents/REL/ExplainerStudio/library/backgrounds_news/env_dublin_summit_d17fde.png",
+   "_text_ok": "56bfbcb9270b"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "s01",
+   "kind": "hero",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Russia and Ukraine just agreed what could be the war's biggest prisoner swap.",
+     "emotion": "excited",
+     "pose": "neutral",
+     "shot": "wide"
+    },
+    {
+     "speaker": "narrator",
+     "text": "So, is peace close? Let's not get ahead of ourselves.",
+     "emotion": "sarcastic",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "peace",
+     "type": "keyword",
+     "text": "PEACE CLOSE?"
+    }
+   ],
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "Cinematic editorial illustration of two weathered military helmets resting on a glass table, separated by a faint glowing line dividing the surface. Soft desert light streams through blinds, casting long shadows across diplomatic folders and a cracked peace accord document.",
+   "transition": "cut",
+   "sfx": [
+    {
+     "at_word": "start",
+     "sound": "pop"
+    }
+   ],
+   "music": "tense",
+   "narration": "Russia and Ukraine just agreed what could be the war's biggest prisoner swap. So, is peace close? Let's not get ahead of ourselves.",
+   "_dur": 7.751083333333334
+  },
+  {
+   "id": "s02",
+   "kind": "map",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Two days of U.S.-brokered peace talks concluded in Abu Dhabi on November 11. Mediators say a major prisoner exchange was agreed in principle, though final numbers are still being tallied.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "Abu Dhabi",
+     "type": "label",
+     "text": "NEUTRAL VENUE"
+    },
+    {
+     "at_word": "prisoner exchange",
+     "type": "keyword",
+     "text": "SWAP DEAL"
+    }
+   ],
+   "title_text": "",
+   "map": {
+    "label": "Peace Talks Location",
+    "countries": [],
+    "places": [
+     {
+      "name": "Abu Dhabi",
+      "lat": 24.4539,
+      "lon": 54.3773
+     },
+     {
+      "name": "Dubai",
+      "lat": 25.2048,
+      "lon": 55.2708
+     }
+    ],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "transition": "zoom",
+   "sfx": [
+    {
+     "at_word": "Abu Dhabi",
+     "sound": "whoosh"
+    }
+   ],
+   "music": "mysterious",
+   "narration": "Two days of U.S.-brokered peace talks concluded in Abu Dhabi on November 11. Mediators say a major prisoner exchange was agreed in principle, though final numbers are still being tallied.",
+   "hero_prompt": "",
+   "_dur": 10.463083333333334
+  },
+  {
+   "id": "s03",
+   "kind": "stage",
+   "environment": "env_uae_talks",
+   "cast": [
+    {
+     "char": "everyman",
+     "position": "left"
+    },
+    {
+     "char": "diplomat",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "everyman",
+     "text": "Wait, they actually agreed to a swap? After nine months of silence?",
+     "emotion": "surprised",
+     "pose": "side_talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "diplomat",
+     "text": "In principle, yes. U.S. envoy Jared Kushner called it the \"biggest humanitarian release\" of this war, though Kyiv and Moscow haven't published exact figures yet.",
+     "emotion": "confident",
+     "pose": "talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "everyman",
+     "text": "So it's basically a handshake on paper while the missiles keep flying?",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "diplomat",
+     "text": "Precisely. They agreed to determine the numbers on Thursday, but territorial disputes remain completely unresolved.",
+     "emotion": "neutral",
+     "pose": "side_listen",
+     "shot": "two_shot"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "biggest humanitarian release",
+     "type": "keyword",
+     "text": "MAJOR SWAP"
+    },
+    {
+     "at_word": "numbers",
+     "type": "label",
+     "text": "FINALISE THURSDAY"
+    }
+   ],
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "transition": "cut",
+   "sfx": [
+    {
+     "at_word": "handshake",
+     "sound": "pop"
+    },
+    {
+     "at_word": "missiles",
+     "sound": "distant rumble"
+    }
+   ],
+   "music": "tense",
+   "narration": "Wait, they actually agreed to a swap? After nine months of silence? In principle, yes. U.S. envoy Jared Kushner called it the \"biggest humanitarian release\" of this war, though Kyiv and Moscow haven't published exact figures yet. So it's basically a handshake on paper while the missiles keep flying? Precisely. They agreed to determine the numbers on Thursday, but territorial disputes remain completely unresolved.",
+   "hero_prompt": "",
+   "_dur": 24.247583333333335
+  },
+  {
+   "id": "s04",
+   "kind": "title_card",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "The agreement marks a rare cooperative moment in nearly five years of conflict, yet it stands isolated from broader ceasefire efforts.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "cooperative moment",
+     "type": "label",
+     "text": "RARE COOPERATION"
+    },
+    {
+     "at_word": "isolated",
+     "type": "keyword",
+     "text": "NO CEASEFIRE"
+    }
+   ],
+   "title_text": "The Swap Deal",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "transition": "wipe",
+   "sfx": [
+    {
+     "at_word": "agreement",
+     "sound": "paper rustle"
+    }
+   ],
+   "music": "tense",
+   "narration": "The agreement marks a rare cooperative moment in nearly five years of conflict, yet it stands isolated from broader ceasefire efforts.",
+   "hero_prompt": "",
+   "_dur": 7.775875
+  },
+  {
+   "id": "s05",
+   "kind": "chart",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "According to recent reports, a prior exchange saw 150 Ukrainian troops swapped for 150 Russian soldiers. This new deal aims to surpass that scale significantly.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "150 Ukrainian troops",
+     "type": "number",
+     "text": "150 + 150"
+    },
+    {
+     "at_word": "surpass",
+     "type": "label",
+     "text": "BIGGEST EVER"
+    }
+   ],
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "Prisoner Exchange Scale",
+    "mode": "stats",
+    "items": [
+     {
+      "value": "150",
+      "label": "Ukrainian troops returned (latest swap)"
+     },
+     {
+      "value": "150",
+      "label": "Russian soldiers exchanged"
+     },
+     {
+      "value": "Pending",
+      "label": "Final numbers for Abu Dhabi deal"
+     }
+    ]
+   },
+   "transition": "slide",
+   "sfx": [
+    {
+     "at_word": "reports",
+     "sound": "click"
+    }
+   ],
+   "music": "tense",
+   "narration": "According to recent reports, a prior exchange saw 150 Ukrainian troops swapped for 150 Russian soldiers. This new deal aims to surpass that scale significantly.",
+   "hero_prompt": "",
+   "_dur": 10.439875
+  },
+  {
+   "id": "s06",
+   "kind": "map",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "U.S. mediators Jared Kushner and Steve Witkoff are flying to Moscow on Thursday to meet President Putin, before heading to Dublin to debrief President Zelenskyy.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "Moscow",
+     "type": "label",
+     "text": "PUTIN MEETING"
+    },
+    {
+     "at_word": "Dublin",
+     "type": "keyword",
+     "text": "ZELINSKY DEBRIEF"
+    }
+   ],
+   "title_text": "",
+   "map": {
+    "label": "Diplomatic Travel Route",
+    "countries": [],
+    "places": [
+     {
+      "name": "Abu Dhabi",
+      "lat": 24.4539,
+      "lon": 54.3773
+     },
+     {
+      "name": "Moscow",
+      "lat": 55.7558,
+      "lon": 37.6173
+     },
+     {
+      "name": "Dublin",
+      "lat": 53.3498,
+      "lon": -6.2603
+     }
+    ],
+    "routes": [
+     {
+      "from": "Abu Dhabi",
+      "to": "Moscow",
+      "via": [],
+      "label": "Envoy Flight Path",
+      "icon": "plane",
+      "blocked": false
+     },
+     {
+      "from": "Moscow",
+      "to": "Dublin",
+      "via": [],
+      "label": "Continued Negotiations",
+      "icon": "plane",
+      "blocked": false
+     }
+    ]
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "transition": "zoom",
+   "sfx": [
+    {
+     "at_word": "flying",
+     "sound": "whoosh"
+    }
+   ],
+   "music": "mysterious",
+   "narration": "U.S. mediators Jared Kushner and Steve Witkoff are flying to Moscow on Thursday to meet President Putin, before heading to Dublin to debrief President Zelenskyy.",
+   "hero_prompt": "",
+   "_dur": 8.697958333333334
+  },
+  {
+   "id": "s07",
+   "kind": "stage",
+   "environment": "env_ukraine_shelter",
+   "cast": [
+    {
+     "char": "grid_engineer",
+     "position": "left"
+    },
+    {
+     "char": "security_analyst",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "grid_engineer",
+     "text": "They're shaking hands in a desert hotel while my grid keeps taking hits. Six electricity substations were struck overnight alone.",
+     "emotion": "angry",
+     "pose": "point",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "security_analyst",
+     "text": "The front line has barely moved this year. So Moscow pounds power stations, and Kyiv answers with long-range drones.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "grid_engineer",
+     "text": "So the prisoners get a bus ride while the power grid gets a missile tour?",
+     "emotion": "sarcastic",
+     "pose": "facepalm",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "security_analyst",
+     "text": "Exactly. Diplomatic momentum does not stop aerial bombardment. The reality on the ground remains completely disconnected from the conference table.",
+     "emotion": "confident",
+     "pose": "side_listen",
+     "shot": "two_shot"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "six electricity substations",
+     "type": "label",
+     "text": "GRID STRIKES"
+    },
+    {
+     "at_word": "static",
+     "type": "keyword",
+     "text": "FRONT LINE STALLED"
+    }
+   ],
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "transition": "cut",
+   "sfx": [
+    {
+     "at_word": "hits",
+     "sound": "thump"
+    },
+    {
+     "at_word": "bus ride",
+     "sound": "distant rumble"
+    }
+   ],
+   "music": "tense",
+   "narration": "They're shaking hands in a desert hotel while my grid keeps taking hits. Six electricity substations were struck overnight alone. The front line has barely moved this year. So Moscow pounds power stations, and Kyiv answers with long-range drones. So the prisoners get a bus ride while the power grid gets a missile tour? Exactly. Diplomatic momentum does not stop aerial bombardment. The reality on the ground remains completely disconnected from the conference table.",
+   "hero_prompt": "",
+   "_dur": 27.082500000000003
+  },
+  {
+   "id": "s08",
+   "kind": "chart",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "The diplomatic timeline shows a clear pattern: long silences, short bursts of talks, and very few lasting results. A bit like a group chat nobody replies to.",
+     "emotion": "sarcastic",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "timeline",
+     "type": "keyword",
+     "text": "TALKS TIMELINE"
+    },
+    {
+     "at_word": "bursts",
+     "type": "label",
+     "text": "NO LASTING OUTCOMES"
+    }
+   ],
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "Diplomatic Timeline",
+    "mode": "timeline",
+    "items": [
+     {
+      "value": "Feb 2026",
+      "label": "Last meeting in Geneva"
+     },
+     {
+      "value": "Nov 10-11, 2026",
+      "label": "Abu Dhabi talks conclude"
+     },
+     {
+      "value": "Nov 12, 2026",
+      "label": "Moscow & Dublin meetings"
+     }
+    ]
+   },
+   "transition": "slide",
+   "sfx": [
+    {
+     "at_word": "pattern",
+     "sound": "click"
+    }
+   ],
+   "music": "tense",
+   "narration": "The diplomatic timeline shows a clear pattern: long silences, short bursts of talks, and very few lasting results. A bit like a group chat nobody replies to.",
+   "hero_prompt": "",
+   "_dur": 10.01575
+  },
+  {
+   "id": "s09",
+   "kind": "map",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Russian forces control roughly a fifth of Ukraine, much captured before 2022. Attacks continue across central and eastern regions, including Odesa and Kharkiv.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "parched of Ukraine",
+     "type": "keyword",
+     "text": "TERRITORY CONTROLLED"
+    },
+    {
+     "at_word": "Odesa and Kharkiv",
+     "type": "label",
+     "text": "ACTIVE FRONTLINES"
+    }
+   ],
+   "title_text": "",
+   "map": {
+    "label": "Conflict & Strike Zones",
+    "countries": [
+     "Ukraine",
+     "Russia"
+    ],
+    "places": [
+     {
+      "name": "Moscow",
+      "lat": 55.7558,
+      "lon": 37.6173
+     },
+     {
+      "name": "Kyiv",
+      "lat": 50.4501,
+      "lon": 30.5234
+     },
+     {
+      "name": "Kharkiv",
+      "lat": 49.9935,
+      "lon": 36.2304
+     },
+     {
+      "name": "Odesa",
+      "lat": 46.4825,
+      "lon": 30.7233
+     },
+     {
+      "name": "Zaporizhzhia",
+      "lat": 47.8388,
+      "lon": 35.1396
+     }
+    ],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "transition": "zoom",
+   "sfx": [
+    {
+     "at_word": "control roughly a fifth",
+     "sound": "map slide"
+    }
+   ],
+   "music": "tense",
+   "narration": "Russian forces control roughly a fifth of Ukraine, much captured before 2022. Attacks continue across central and eastern regions, including Odesa and Kharkiv.",
+   "hero_prompt": "",
+   "_dur": 10.075583333333332
+  },
+  {
+   "id": "s10",
+   "kind": "stage",
+   "environment": "env_us_embassy",
+   "cast": [
+    {
+     "char": "everyman",
+     "position": "left"
+    },
+    {
+     "char": "diplomat",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "everyman",
+     "text": "If they can't even agree on who gets swapped first, how are they supposed to solve territory?",
+     "emotion": "confused",
+     "pose": "thinking",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "diplomat",
+     "text": "Kushner explicitly noted there is \"no trust right now\" between the sides. After years of combat, expecting immediate compromise on land is unrealistic.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "everyman",
+     "text": "So they're just hoping trust magically appears by next Tuesday?",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "diplomat",
+     "text": "Mediators are steering discussions toward postwar security guarantees and reconstruction to build incremental confidence.",
+     "emotion": "confident",
+     "pose": "side_listen",
+     "shot": "two_shot"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "no trust right now",
+     "type": "keyword",
+     "text": "TRUST DEFICIT"
+    },
+    {
+     "at_word": "incremental confidence",
+     "type": "label",
+     "text": "BUILDING BLOCKS"
+    }
+   ],
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "transition": "cut",
+   "sfx": [
+    {
+     "at_word": "trust",
+     "sound": "paper rustle"
+    }
+   ],
+   "music": "tense",
+   "narration": "If they can't even agree on who gets swapped first, how are they supposed to solve territory? Kushner explicitly noted there is \"no trust right now\" between the sides. After years of combat, expecting immediate compromise on land is unrealistic. So they're just hoping trust magically appears by next Tuesday? Mediators are steering discussions toward postwar security guarantees and reconstruction to build incremental confidence.",
+   "hero_prompt": "",
+   "_dur": 22.989291666666666
+  },
+  {
+   "id": "s11",
+   "kind": "title_card",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "The US envoy himself says there's no trust right now. So, is peace close? Still a bit early to say.",
+     "emotion": "sarcastic",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "trust",
+     "type": "label",
+     "text": "NO TRUST"
+    }
+   ],
+   "title_text": "No Trust Yet",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "transition": "wipe",
+   "sfx": [
+    {
+     "at_word": "fragile",
+     "sound": "glass tap"
+    }
+   ],
+   "music": "tense",
+   "narration": "The US envoy himself says there's no trust right now. So, is peace close? Still a bit early to say.",
+   "hero_prompt": "",
+   "_dur": 5.280583333333333,
+   "_qc_retakes": {
+    "7d00e574a1": 2
+   }
+  },
+  {
+   "id": "s12",
+   "kind": "hero",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "The battlefield shows little movement, but the diplomatic chessboard is shifting as mediators push for security frameworks ahead of any ceasefire.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "shifting",
+     "type": "label",
+     "text": "DIPLOMATIC SHIFT"
+    },
+    {
+     "at_word": "frameworks",
+     "type": "keyword",
+     "text": "SECURITY DEALS"
+    }
+   ],
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "Cinematic editorial illustration of a weathered wooden table divided by a faint crack. On one side, a stack of military maps and a compass; on the other, diplomatic pens and sealed envelopes. Dust motes float in slanted afternoon light.",
+   "transition": "zoom",
+   "sfx": [
+    {
+     "at_word": "shifting",
+     "sound": "whoosh"
+    }
+   ],
+   "music": "mysterious",
+   "narration": "The battlefield shows little movement, but the diplomatic chessboard is shifting as mediators push for security frameworks ahead of any ceasefire.",
+   "_dur": 7.3974166666666665
+  },
+  {
+   "id": "s13",
+   "kind": "stage",
+   "environment": "env_russian_bunker",
+   "cast": [
+    {
+     "char": "grid_engineer",
+     "position": "left"
+    },
+    {
+     "char": "security_analyst",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "security_analyst",
+     "text": "Russia's chief negotiator Medinsky stated Moscow aims for a \"new, modern Yalta,\" demanding sweeping security architecture changes before discussing war specifics.",
+     "emotion": "neutral",
+     "pose": "point",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "grid_engineer",
+     "text": "A new Yalta? The 1945 deal where the big powers carved up Europe?",
+     "emotion": "worried",
+     "pose": "thinking",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "security_analyst",
+     "text": "That's the reference. And Medinsky says 'every inch' of what Moscow calls Russian land must be handed over. Kyiv refuses.",
+     "emotion": "confident",
+     "pose": "talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "grid_engineer",
+     "text": "So they're negotiating peace by rewriting the entire security map of Europe. Groundbreaking strategy.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "new Yalta",
+     "type": "keyword",
+     "text": "YALLA DEMAND"
+    },
+    {
+     "at_word": "capitulating",
+     "type": "label",
+     "text": "KYIV REJECTS"
+    }
+   ],
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "transition": "cut",
+   "sfx": [
+    {
+     "at_word": "strategy",
+     "sound": "pop"
+    }
+   ],
+   "music": "tense",
+   "narration": "Russia's chief negotiator Medinsky stated Moscow aims for a \"new, modern Yalta,\" demanding sweeping security architecture changes before discussing war specifics. A new Yalta? The 1945 deal where the big powers carved up Europe? That's the reference. And Medinsky says 'every inch' of what Moscow calls Russian land must be handed over. Kyiv refuses. So they're negotiating peace by rewriting the entire security map of Europe. Groundbreaking strategy.",
+   "hero_prompt": "",
+   "_dur": 27.904083333333332
+  },
+  {
+   "id": "s14",
+   "kind": "chart",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Reports estimate the war has killed hundreds of thousands of people since Russia's full-scale invasion.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "hundreds of thousands",
+     "type": "label",
+     "text": "COST OF CONFLICT"
+    },
+    {
+     "at_word": "millions displaced",
+     "type": "keyword",
+     "text": "MASS DISPLACEMENT"
+    }
+   ],
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "Humanitarian Impact",
+    "mode": "stats",
+    "items": [
+     {
+      "value": "Hundreds of thousands",
+      "label": "Killed since 2022, reports estimate"
+     },
+     {
+      "value": "4½ years",
+      "label": "Of full-scale war"
+     }
+    ]
+   },
+   "transition": "slide",
+   "sfx": [
+    {
+     "at_word": "estimate",
+     "sound": "click"
+    }
+   ],
+   "music": "tense",
+   "narration": "Reports estimate the war has killed hundreds of thousands of people since Russia's full-scale invasion.",
+   "hero_prompt": "",
+   "_dur": 4.7485
+  },
+  {
+   "id": "s15",
+   "kind": "map",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Fifty European leaders will gather in Dublin on Thursday. EU and NATO officials attended Abu Dhabi talks but were refused direct negotiation access by Moscow.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "Dublin",
+     "type": "keyword",
+     "text": "EUROPEAN SUMMIT"
+    },
+    {
+     "at_word": "refused direct access",
+     "type": "label",
+     "text": "MOSCOW RESISTS"
+    }
+   ],
+   "title_text": "",
+   "map": {
+    "label": "European Diplomatic Assembly",
+    "countries": [
+     "Ireland",
+     "United Kingdom",
+     "France",
+     "Germany",
+     "Italy"
+    ],
+    "places": [
+     {
+      "name": "Dublin",
+      "lat": 53.3498,
+      "lon": -6.2603
+     },
+     {
+      "name": "London",
+      "lat": 51.5074,
+      "lon": -0.1278
+     },
+     {
+      "name": "Paris",
+      "lat": 48.8566,
+      "lon": 2.3522
+     },
+     {
+      "name": "Berlin",
+      "lat": 52.52,
+      "lon": 13.405
+     }
+    ],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "transition": "zoom",
+   "sfx": [
+    {
+     "at_word": "gather",
+     "sound": "crowd murmur"
+    }
+   ],
+   "music": "tense",
+   "narration": "Fifty European leaders will gather in Dublin on Thursday. EU and NATO officials attended Abu Dhabi talks but were refused direct negotiation access by Moscow.",
+   "hero_prompt": "",
+   "_dur": 9.244
+  },
+  {
+   "id": "s16",
+   "kind": "stage",
+   "environment": "env_dublin_summit",
+   "cast": [
+    {
+     "char": "everyman",
+     "position": "left"
+    },
+    {
+     "char": "diplomat",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "everyman",
+     "text": "So Europe wants in, but Russia keeps saying they don't understand what there is to talk about with them?",
+     "emotion": "confused",
+     "pose": "side_talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "diplomat",
+     "text": "Medinsky argued Moscow hasn't received concrete proposals from European nations. Yet Zelenskyy insists Europe must be represented at every stage of diplomacy.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "everyman",
+     "text": "It's like trying to book a group dinner where half the guests haven't read the menu.",
+     "emotion": "sarcastic",
+     "pose": "facepalm",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "diplomat",
+     "text": "A fitting analogy. The U.S. is now actively pushing to get Europeans added to the format, marking a shift in Washington's approach.",
+     "emotion": "confident",
+     "pose": "side_listen",
+     "shot": "two_shot"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "Europe must be represented",
+     "type": "keyword",
+     "text": "EUROPE AT TABLE"
+    },
+    {
+     "at_word": "shift",
+     "type": "label",
+     "text": "NEW U.S. APPROACH"
+    }
+   ],
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "transition": "cut",
+   "sfx": [
+    {
+     "at_word": "menu",
+     "sound": "paper flip"
+    }
+   ],
+   "music": "tense",
+   "narration": "So Europe wants in, but Russia keeps saying they don't understand what there is to talk about with them? Medinsky argued Moscow hasn't received concrete proposals from European nations. Yet Zelenskyy insists Europe must be represented at every stage of diplomacy. It's like trying to book a group dinner where half the guests haven't read the menu. A fitting analogy. The U.S. is now actively pushing to get Europeans added to the format, marking a shift in Washington's approach.",
+   "hero_prompt": "",
+   "_dur": 25.749125
+  },
+  {
+   "id": "s17",
+   "kind": "title_card",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Territory is still the wall. Moscow wants all of the Donbas, and Kyiv says it won't surrender land.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "territorial stalemate",
+     "type": "label",
+     "text": "LAND DEADLOCK"
+    },
+    {
+     "at_word": "ceasefire before land",
+     "type": "keyword",
+     "text": "KYIV STANCE"
+    }
+   ],
+   "title_text": "The Territory Stalemate",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "transition": "wipe",
+   "sfx": [
+    {
+     "at_word": "primary obstacle",
+     "sound": "thud"
+    }
+   ],
+   "music": "tense",
+   "narration": "Territory is still the wall. Moscow wants all of the Donbas, and Kyiv says it won't surrender land.",
+   "hero_prompt": "",
+   "_dur": 6.35025
+  },
+  {
+   "id": "s18",
+   "kind": "hero",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "As mediators navigate competing security demands and historic grievances, the path to a dignified peace remains heavily contested.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "contested",
+     "type": "label",
+     "text": "HARDEST ISSUES"
+    },
+    {
+     "at_word": "dignified peace",
+     "type": "keyword",
+     "text": "KYIV'S GOAL"
+    }
+   ],
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "Cinematic editorial illustration of two weathered hands reaching across a scarred wooden desk. One hand holds a folded map marked with contested borders; the other grips a pen hovering over a blank accord page. Warm lamplight highlights dust and tension.",
+   "transition": "cut",
+   "sfx": [
+    {
+     "at_word": "navigating",
+     "sound": "whoosh"
+    }
+   ],
+   "music": "mysterious",
+   "narration": "As mediators navigate competing security demands and historic grievances, the path to a dignified peace remains heavily contested.",
+   "_dur": 7.724916666666667
+  },
+  {
+   "id": "s19",
+   "kind": "stage",
+   "environment": "env_us_embassy",
+   "cast": [
+    {
+     "char": "security_analyst",
+     "position": "left"
+    },
+    {
+     "char": "grid_engineer",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "security_analyst",
+     "text": "As direct U.S. aid scales back, European nations have become the leading providers of finance and military support to Kyiv.",
+     "emotion": "neutral",
+     "pose": "point",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "grid_engineer",
+     "text": "So Europe is footing the bill while Washington brokers deals? That changes the leverage dynamic completely.",
+     "emotion": "surprised",
+     "pose": "thinking",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "security_analyst",
+     "text": "Precisely. NATO chief Mark Rutte noted Abu Dhabi talks showed alignment, but Russian officials explicitly reject European involvement in direct negotiations.",
+     "emotion": "confident",
+     "pose": "talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "grid_engineer",
+     "text": "It's a diplomatic tug-of-war where the rope keeps getting heavier. Great for morale.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "leading providers",
+     "type": "keyword",
+     "text": "EUROPE LEADS AID"
+    },
+    {
+     "at_word": "leverage dynamic",
+     "type": "label",
+     "text": "SHIFTING POWER"
+    }
+   ],
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "transition": "cut",
+   "sfx": [
+    {
+     "at_word": "leverage dynamic",
+     "sound": "click"
+    }
+   ],
+   "music": "tense",
+   "narration": "As direct U.S. aid scales back, European nations have become the leading providers of finance and military support to Kyiv. So Europe is footing the bill while Washington brokers deals? That changes the leverage dynamic completely. Precisely. NATO chief Mark Rutte noted Abu Dhabi talks showed alignment, but Russian officials explicitly reject European involvement in direct negotiations. It's a diplomatic tug-of-war where the rope keeps getting heavier. Great for morale.",
+   "hero_prompt": "",
+   "_dur": 28.323083333333336
+  },
+  {
+   "id": "s20",
+   "kind": "map",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Ukraine also hoped for a ceasefire on Black Sea grain shipments. Its foreign minister says Kyiv is still waiting for Russia's answer.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "Black Sea grain",
+     "type": "keyword",
+     "text": "GRAIN SHIPMENTS"
+    },
+    {
+     "at_word": "awaiting response",
+     "type": "label",
+     "text": "BLOCKED DEALS"
+    }
+   ],
+   "title_text": "",
+   "map": {
+    "label": "Kyiv's Black Sea proposal",
+    "countries": [
+     "Ukraine",
+     "Russia"
+    ],
+    "places": [
+     {
+      "name": "Odesa",
+      "lat": 46.4825,
+      "lon": 30.7233
+     },
+     {
+      "name": "Istanbul",
+      "lat": 41.0082,
+      "lon": 28.9784
+     }
+    ],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "transition": "zoom",
+   "sfx": [
+    {
+     "at_word": "awaiting response",
+     "sound": "distant rumble"
+    }
+   ],
+   "music": "tense",
+   "narration": "Ukraine also hoped for a ceasefire on Black Sea grain shipments. Its foreign minister says Kyiv is still waiting for Russia's answer.",
+   "hero_prompt": "",
+   "_dur": 7.392458333333333
+  },
+  {
+   "id": "s21",
+   "kind": "stage",
+   "environment": "env_dublin_summit",
+   "cast": [
+    {
+     "char": "everyman",
+     "position": "left"
+    },
+    {
+     "char": "diplomat",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "everyman",
+     "text": "Zelenskyy mentioned a \"window of opportunity\" before 2027. Is that actually possible, or just diplomatic optimism?",
+     "emotion": "worried",
+     "pose": "side_talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "diplomat",
+     "text": "He acknowledged skepticism but noted the Americans are flying to Putin with specifics. Mediators see openings, but progress requires compromises neither side currently wants.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "everyman",
+     "text": "So we're waiting for the other shoe to drop, but the shoe might just be a handshake.",
+     "emotion": "sarcastic",
+     "pose": "facepalm",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "diplomat",
+     "text": "In diplomacy, a handshake today often precedes a treaty tomorrow. The momentum is real, even if the destination remains distant.",
+     "emotion": "confident",
+     "pose": "side_listen",
+     "shot": "two_shot"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "window of opportunity",
+     "type": "keyword",
+     "text": "2027 WINDOW?"
+    },
+    {
+     "at_word": "momentum is real",
+     "type": "label",
+     "text": "CAUTIOUS OPTIMISM"
+    }
+   ],
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "transition": "cut",
+   "sfx": [
+    {
+     "at_word": "handshake",
+     "sound": "pop"
+    }
+   ],
+   "music": "tense",
+   "narration": "Zelenskyy mentioned a \"window of opportunity\" before 2027. Is that actually possible, or just diplomatic optimism? He acknowledged skepticism but noted the Americans are flying to Putin with specifics. Mediators see openings, but progress requires compromises neither side currently wants. So we're waiting for the other shoe to drop, but the shoe might just be a handshake. In diplomacy, a handshake today often precedes a treaty tomorrow. The momentum is real, even if the destination remains distant.",
+   "hero_prompt": "",
+   "_dur": 31.678333333333335
+  },
+  {
+   "id": "s22",
+   "kind": "hero",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "As envoys prepare for high-stakes meetings in Moscow and Dublin, the world watches to see if humanitarian wins can translate into lasting stability.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "high-stakes meetings",
+     "type": "keyword",
+     "text": "CRUCIAL NEXT STEPS"
+    },
+    {
+     "at_word": "lasting stability",
+     "type": "label",
+     "text": "PEACE OUTLOOK"
+    }
+   ],
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "Cinematic editorial illustration of a vintage brass compass resting on an open diplomatic ledger. Sunlight filters through tall windows onto scattered maps and sealed envelopes, casting long geometric shadows across the polished wood.",
+   "transition": "cut",
+   "sfx": [
+    {
+     "at_word": "watches",
+     "sound": "camera shutter"
+    }
+   ],
+   "music": "mysterious",
+   "narration": "As envoys prepare for high-stakes meetings in Moscow and Dublin, the world watches to see if humanitarian wins can translate into lasting stability.",
+   "_dur": 8.225541666666667
+  },
+  {
+   "id": "s23",
+   "kind": "stage",
+   "environment": "env_us_embassy",
+   "cast": [
+    {
+     "char": "security_analyst",
+     "position": "left"
+    },
+    {
+     "char": "grid_engineer",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "security_analyst",
+     "text": "The immediate priority is finalising the prisoner exchange numbers and expanding security guarantee discussions. Both sides must agree on format before territory enters the room.",
+     "emotion": "neutral",
+     "pose": "point",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "grid_engineer",
+     "text": "So they're building a bridge plank by plank while the river underneath is still raging. Classic diplomatic pacing.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "security_analyst",
+     "text": "It's either that or leap blindly. Mediators are buying time to bring Europe in and find concessions both sides can live with.",
+     "emotion": "confident",
+     "pose": "talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "grid_engineer",
+     "text": "I'll believe it when I see a functioning power grid. Until then, I'm just watching the news.",
+     "emotion": "worried",
+     "pose": "facepalm",
+     "shot": "closeup"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "finalising numbers",
+     "type": "keyword",
+     "text": "SWAP DETAILS"
+    },
+    {
+     "at_word": "concrete concessions",
+     "type": "label",
+     "text": "PRESSURE APPLIED"
+    }
+   ],
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "transition": "cut",
+   "sfx": [
+    {
+     "at_word": "river underneath",
+     "sound": "water flow"
+    }
+   ],
+   "music": "tense",
+   "narration": "The immediate priority is finalising the prisoner exchange numbers and expanding security guarantee discussions. Both sides must agree on format before territory enters the room. So they're building a bridge plank by plank while the river underneath is still raging. Classic diplomatic pacing. It's either that or leap blindly. Mediators are buying time to bring Europe in and find concessions both sides can live with. I'll believe it when I see a functioning power grid. Until then, I'm just watching the news.",
+   "hero_prompt": "",
+   "_dur": 28.623458333333335
+  },
+  {
+   "id": "s24",
+   "kind": "stage",
+   "environment": "env_ukraine_shelter",
+   "cast": [
+    {
+     "char": "everyman",
+     "position": "left"
+    },
+    {
+     "char": "diplomat",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "everyman",
+     "text": "So we've got tough directives, strict deadlines, and a swap that might actually work. What's the realistic takeaway?",
+     "emotion": "neutral",
+     "pose": "side_talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "diplomat",
+     "text": "The agreement proves dialogue is still possible despite hostility. But without territory resolved, any peace remains provisional.",
+     "emotion": "confident",
+     "pose": "talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "everyman",
+     "text": "So: prisoners first, peace maybe later. At least someone gets to go home.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "diplomat",
+     "text": "Exactly. In diplomacy they call that sequencing. For the families, it's everything.",
+     "emotion": "neutral",
+     "pose": "side_listen",
+     "shot": "two_shot"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "realistic takeaway",
+     "type": "keyword",
+     "text": "BOTTOM LINE"
+    },
+    {
+     "at_word": "sequencing",
+     "type": "label",
+     "text": "MOBILIZE MOMENTUM"
+    }
+   ],
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "transition": "cut",
+   "sfx": [
+    {
+     "at_word": "innovation",
+     "sound": "pop"
+    }
+   ],
+   "music": "tense",
+   "narration": "So we've got tough directives, strict deadlines, and a swap that might actually work. What's the realistic takeaway? The agreement proves dialogue is still possible despite hostility. But without territory resolved, any peace remains provisional. So: prisoners first, peace maybe later. At least someone gets to go home. Exactly. In diplomacy they call that sequencing. For the families, it's everything.",
+   "hero_prompt": "",
+   "_dur": 23.9985
+  },
+  {
+   "id": "s25",
+   "kind": "title_card",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "The prisoner swap is a real lifeline for the families. But is peace close? One swap, no deal on territory, and a lot of flights. Let's call it... a very cautious maybe.",
+     "emotion": "sarcastic",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "swap",
+     "type": "label",
+     "text": "SWAP: A LIFELINE"
+    },
+    {
+     "at_word": "territory",
+     "type": "keyword",
+     "text": "NO LAND DEAL"
+    }
+   ],
+   "title_text": "The Bottom Line",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "transition": "fade",
+   "sfx": [
+    {
+     "at_word": "depends on resolving",
+     "sound": "paper rustle"
+    }
+   ],
+   "music": "tense",
+   "narration": "The prisoner swap is a real lifeline for the families. But is peace close? One swap, no deal on territory, and a lot of flights. Let's call it... a very cautious maybe.",
+   "hero_prompt": "",
+   "_dur": 10.223375
+  },
+  {
+   "id": "s26",
+   "kind": "title_card",
+   "environment": "",
+   "cast": [],
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Thanks for watching — subscribe for more explainers.",
+     "emotion": "neutral",
+     "pose": "neutral",
+     "shot": "wide"
+    }
+   ],
+   "beats": [],
+   "title_text": "The Bottom Line & Sign Off",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "transition": "fade",
+   "sfx": [
+    {
+     "at_word": "watching",
+     "sound": "click"
+    }
+   ],
+   "music": "tense",
+   "narration": "Thanks for watching — subscribe for more explainers.",
+   "hero_prompt": "",
+   "_dur": 2.6982916666666665
+  }
+ ],
+ "sources": [
+  "[1] Russia, Ukraine reach deal on prisoner swap as US says lack of trust holds back talks (https://theprint.in/world/russia-ukraine-reach-deal-on-prisoner-swap-as-us-says-lack-of-trust-holds-back-talks/3096494/)",
+  "[2] Russia, Ukraine agree to major prisoner swap after U.S.-brokered talks in Abu Dhabi (https://www.thehindu.com/news/international/russia-ukraine-agree-to-prisoner-swap-at-us-brokered-talks/article71689267.ece)",
+  "[3] Russia and Ukraine agree to major prisoner swap as peace talks end (https://www.modernghana.com/news/1543807/russia-and-ukraine-agree-to-major-prisoner-swap.html)",
+  "[4] Russia, Ukraine Exchange 300 Prisoners Of War In Latest Swap (https://www.news18.com/world/russia-ukraine-exchange-150-prisoners-of-war-each-in-latest-swap-9216069.html)",
+  "[5] U.S. brokers another Russia-Ukraine prisoner swap, but war continues as Putin sticks to demand for territory (https://www.cbsnews.com/news/us-russia-ukraine-war-talks-prisoner-swap-no-ceasaefire-putin-trump/)",
+  "[6] Russia, Ukraine agree large prisoner swap; talks end without breakthrough (https://egyptian-gazette.com/world/russia-ukraine-agree-large-prisoner-swap-talks-end-without-breakthrough/)"
+ ],
+ "seo": {
+  "title": "Prisoner Deal Agreed, But Why Are Peace Talks Stalled?",
+  "description": "Russia and Ukraine just agreed to a historic prisoner exchange in Abu Dhabi, yet the broader peace process remains completely stalled while battlefield strikes continue to tear at power grids and infrastructure. With key envoys heading to Moscow and Dublin, the real question is whether this diplomatic momentum can survive territorial disputes and shifting geopolitical leverage before any lasting ceasefire takes hold.",
+  "tags": [
+   "world news",
+   "jared kushner",
+   "why are peace talks stalling",
+   "ukraine russia news today 2026",
+   "abu dhabi peace talks explained",
+   "politics explained",
+   "geopolitics",
+   "ukraine-russia-war",
+   "diplomacy",
+   "prisoner-swap",
+   "steve witkoff",
+   "what is the abu dhabi swap",
+   "latest peace talks update",
+   "prisoner swap deal breakdown",
+   "international relations",
+   "president putin",
+   "who is mediating ukraine russia talks",
+   "abu dhabi summit 2026",
+   "ukraine russia diplomacy stalled",
+   "president zelenskyy",
+   "ukraine russia war"
+  ],
+  "hashtags": [
+   "#ukraine",
+   "#russia",
+   "#peacetalks",
+   "#geopolitics"
+  ],
+  "tags_v": 2
+ },
+ "_problems": []
+}
