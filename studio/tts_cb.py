@@ -25,7 +25,7 @@ def _norm(t):
     """Words for the error check; numbers are dropped on both sides (the ASR writes '159,000' where the script says
     'a hundred and fifty-nine thousand')."""
     t = re.sub(r"\ba (?=(hundred|thousand|million|billion|trillion)\b)", "", t.lower().replace("-", " "))
-    w = re.sub(r"[^a-z0-9' ]+", " ", t).split()
+    w = re.sub(r"[^a-z0-9 ]+", " ", t.replace("'", "")).split()      # "it's" == "its"
     return [x for x in w if x not in NUMW and not re.search(r"\d", x)]
 
 

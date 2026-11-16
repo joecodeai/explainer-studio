@@ -149,7 +149,7 @@ def _grid(imgs, labels, out, cols=3):
     G.save(out); return out
 
 
-def check_shot(video, audio, desc, n_people, refs=(), silent=False, work=None, vlm=True, cfg=None):
+def check_shot(video, audio, desc, n_people, refs=(), silent=False, work=None, vlm=True, cfg=None, speaker_side=None, vlm_every=1):
     """video: the generated mp4; audio: the wav it was conditioned on; desc: who/what is in the shot; n_people: expected people;
     refs: reference images of the characters (identity); silent: True for listening/group shots."""
     from PIL import Image
@@ -179,7 +179,9 @@ def check_shot(video, audio, desc, n_people, refs=(), silent=False, work=None, v
         counts[i] = len(ppl); areas[i] = max([(b[2] - b[0]) * (b[3] - b[1]) for b in ppl], default=0)   # largest box: nested duplicate boxes made false 'size jumps'
         fb = [b for s, b in _boxes(M, ims[i], "a human head.", 0.3) if (b[3] - b[1]) < 0.35 * H and (b[2] - b[0]) < 0.3 * W]
         if fb:
-            if not silent: faces[i] = max(fb, key=lambda b: (b[2] - b[0]) * (b[3] - b[1]))
+            if speaker_side and not silent:          # conversation two-shot: the speaker is the left- or right-most head
+                faces[i] = (min if speaker_side == "left" else max)(fb, key=lambda b: (b[0] + b[2]) / 2)
+            elif not silent: faces[i] = max(fb, key=lambda b: (b[2] - b[0]) * (b[3] - b[1]))
             else: faces[i] = fb[0]
     wrong = [i for i in samp if counts[i] != n_people]
     if len(wrong) > 0.15 * len(samp):
@@ -215,7 +217,7 @@ def check_shot(video, audio, desc, n_people, refs=(), silent=False, work=None, v
     if vlm:
         from .stage2 import ask
         model = (cfg or {}).get("vlm_model", "qwen/qwen3-vl-30b")
-        todo = sorted(set(samp) | {i for i in flagged if 0 <= i < n})
+        todo = sorted(set(samp[::max(1, int(vlm_every))]) | {i for i in flagged if 0 <= i < n})   # vlm_every>1: fewer frames (faster)
         reports = []
         for k in range(0, len(todo), 6):
             chunk = todo[k:k + 6]

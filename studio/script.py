@@ -155,7 +155,8 @@ def normalize(d):
             emo = ln.get("emotion") if ln.get("emotion") in EMOTIONS else "neutral"
             pose = ln.get("pose") if ln.get("pose") in C.POSES else EMOTION_POSE[emo]
             shot = ln.get("shot") if ln.get("shot") in SHOTS else "two_shot"
-            s["lines"].append({"speaker": spk, "text": " ".join(str(ln["text"]).split()), "emotion": emo, "pose": pose, "shot": shot})
+            s["lines"].append({"speaker": spk, "text": " ".join(str(ln["text"]).split()), "emotion": emo, "pose": pose, "shot": shot,
+                               **{k: ln[k] for k in ("pause_after", "act", "react") if ln.get(k) not in (None, "")}})
         if s["kind"] in ("map", "chart", "title_card", "hero"):
             for ln in s["lines"]: ln["speaker"] = "narrator" if s["kind"] != "hero" else ln["speaker"]
         # a character who speaks in a stage scene must be on stage

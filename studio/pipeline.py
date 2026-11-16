@@ -175,6 +175,181 @@ def _talk_style(c):
             else "Clean modern editorial illustration style, muted colours")
 
 
+
+# ---------------------------------------------------------------- 6b: conversation staging (show episodes)
+CONV_W, CONV_H = 1280, 704
+CONV_CROP = (83, 20, 1114, 627)                 # steady medium two-shot window in reference coordinates
+CU_WIN = {"left": (0, 1120), "right": (800, 1120), "center": (400, 1120)}     # closeup windows in the 1920 frame (exclude the other face)
+
+
+def _tag(c):
+    return c.get("tag") or ("the " + " ".join(c["look"].replace("a ", "", 1).split(",")[0].split()[:6]))
+
+
+def _conv_still(bg, cast, out):
+    """Reference still: two characters facing each other (left uses side_talk, right uses side_listen mirrored), or one centred."""
+    from PIL import Image, ImageOps
+    B = Image.open(bg).convert("RGB").resize((CONV_W, CONV_H))
+    def put(img, x, hpx, top, mirror=False):
+        ch = Image.open(img).convert("RGBA")
+        if mirror: ch = ImageOps.mirror(ch)
+        ch = ch.resize((max(1, int(ch.width * hpx / ch.height)), hpx)); bb = ch.getbbox() or (0, 0, ch.width, ch.height)
+        B.paste(ch, (int(CONV_W * x - ch.width / 2), int(top) - bb[1]), ch)
+    if len(cast) >= 2:
+        put(_pose_img_any(cast[0]["char"], "side_talk"), 0.385, 800, 66)
+        put(_pose_img_any(cast[1]["char"], "side_listen"), 0.615, 780, 80, mirror=True)
+    else:
+        put(_pose_img_any(cast[0]["char"], "talk"), 0.5, 800, 66)
+    B.save(out); return out
+
+
+def _pose_img_any(cid, want):
+    rig = _j(os.path.join(C.CHAR_LIB, assets.slug(cid), "rig.json")) or {}
+    poses = rig.get("poses", {})
+    for p in [want, "side_talk", "talk", "neutral"]:
+        if p in poses: return os.path.join(C.LIBRARY, poses[p]["img"])
+    return _pose_img(cid, "neutral")
+
+
+DEFAULT_ACT = {"excited": "talks excitedly, eyes bright", "happy": "smiles and talks warmly", "surprised": "reacts with genuine surprise, then talks",
+               "confused": "frowns slightly, puzzled, and talks", "worried": "talks with a worried look", "sarcastic": "says it dryly with a tiny knowing smile",
+               "confident": "talks confidently", "sad": "talks quietly, a little deflated", "angry": "talks with controlled irritation",
+               "neutral": "talks naturally"}
+
+
+def stage_conversation(proj, sc):
+    """Show episodes: every stage scene is ONE continuous conversation. Each line is an LTX shot that starts from the previous
+    shot's (stabilised) last frame, so expressions carry over instead of resetting; both characters stay in frame, the listener
+    reacts with mouth closed. Every shot is stabilised to a fixed medium two-shot (no zoom creep); a closeup is a crop of the same
+    take. Shots are cached by content in library/talk_cache. A shot with a HIGH/CRITICAL glitch is regenerated once from the same
+    start frame. Writes talk/<scene>.json and talk/ANIMATION_QC.json. Returns the scene ids handled."""
+    from . import stabilize
+    from .qc import animcheck as A, core as QC
+    chars = {c["id"]: c for c in sc["characters"]}
+    envs = {e["id"]: e for e in sc["environments"]}
+    TALK_CACHE = f"{proj}/talk/cache"            # per project: every video gets its own takes, nothing reused from other videos
+    os.makedirs(f"{proj}/talk", exist_ok=True); os.makedirs(f"{proj}/work/talk", exist_ok=True); os.makedirs(TALK_CACHE, exist_ok=True)
+    style = _talk_style(next(iter(chars.values()), {}))
+    scenes = [s for s in sc["scenes"] if s["kind"] == "stage" and s.get("cast") and envs.get(s.get("environment"), {}).get("_file")]
+    shots = []                                   # per line: dict with everything needed to (re)generate + edit
+
+    def gen(sh, attempt):
+        key = hashlib.md5(open(sh["start"], "rb").read() + open(sh["aud"], "rb").read() + sh["prompt"].encode() + str(attempt).encode()).hexdigest()[:16]
+        raw = os.path.join(TALK_CACHE, key + ".mp4")
+        if not os.path.exists(raw):
+            out = talk.clip(sh["start"], sh["aud"], sh["prompt"], f"{proj}/work/talk", f"{sh['scene']}_{sh['i']}_a{attempt}", sh["secs"],
+                            seed=sh["seed"] + 7919 * attempt, neg=talk.NEG_SCENE)
+            shutil.copy(out, raw); talk.fix_doubled(raw)
+        stab = os.path.join(TALK_CACHE, key + f"_stab_{sh['crop_sig']}.mp4")
+        last = stab.rsplit(".", 1)[0] + "_last.png"
+        if not (os.path.exists(stab) and os.path.exists(last)):
+            stabilize.stabilize(raw, sh["ref"], stab, sh["crop"])
+        return raw, stab, last
+
+    # 1) generate every scene as a chain
+    for s in scenes:
+        cast = s["cast"][:2]
+        lines = _j(f"{proj}/audio/{s['id']}.lines.json") or []
+        wav = f"{proj}/audio/{s['id']}.wav"
+        if not lines or not os.path.exists(wav): continue
+        ref = _conv_still(envs[s["environment"]]["_file"], cast, f"{proj}/work/talk/{s['id']}_ref.png")
+        side = {c["char"]: ("left" if k == 0 else "right") for k, c in enumerate(cast)} if len(cast) >= 2 else {cast[0]["char"]: "center"}
+        place = envs[s["environment"]]["prompt"].split(":")[0].split(".")[0].lower()
+        end = s["_dur"] + TAIL + 2.6
+        start = ref
+        for i, ln in enumerate(lines):
+            a = 0.0 if i == 0 else ln["start"]
+            b = lines[i + 1]["start"] if i + 1 < len(lines) else end
+            src = s["lines"][i] if i < len(s["lines"]) else {}
+            sp = ln["speaker"]
+            aud, secs = talk.cut_audio(wav, a, b, f"{proj}/work/talk/{s['id']}_{i}.wav", pad=0.0)
+            others = [c["char"] for c in cast if c["char"] != sp]
+            if sp in chars and sp in side:
+                who = f"{_tag(chars[sp])} on the {side[sp]}" if side[sp] != "center" else _tag(chars[sp])
+                act = src.get("act") or f"{who} {DEFAULT_ACT.get(src.get('emotion', 'neutral'), 'talks naturally')}"
+                react = src.get("react") or (f"{_tag(chars[others[0]])} listens and reacts naturally, mouth closed" if others else "")
+                talking = (f"{act}; {react}. Only the speaking person's lips move, in exact sync with the speech; "
+                           f"the listener's mouth stays closed.") if others else f"{act}. Lips move in exact sync with the speech."
+                silent = False
+            else:                                # narrator voice-over over a stage scene: everyone listens / idles
+                talking = (src.get("act") or "they share a quiet look and react naturally to what is being said") + ". Nobody on screen speaks; mouths closed."
+                silent = True
+            two = len(cast) >= 2
+            prompt = ((f"Two friends having a conversation in {place}, medium two-shot, they look at each other. " if two else
+                       f"One person in {place}, medium shot. ") + talking +
+                      " Natural, subtle acting: blinking, small head movements, expressions change gradually and stay. "
+                      "Static locked-off camera, no zoom. " + style + ", natural hands with five fingers, hands mostly relaxed.")
+            sh = {"scene": s["id"], "i": i, "start": start, "ref": ref, "aud": aud, "secs": secs, "prompt": prompt, "a": round(a, 3), "b": round(b, 3),
+                  "seed": int(hashlib.md5((sp + ln["text"] + s["environment"]).encode()).hexdigest()[:7], 16),
+                  "crop": CONV_CROP, "crop_sig": "c1", "side": side.get(sp), "silent": silent, "n": len(cast),
+                  "shot": src.get("shot", "two_shot"), "pause_after": src.get("pause_after"),
+                  "listener_side": side.get(others[0]) if others and others[0] in side else None,
+                  "refs": [_pose_img_any(c["char"], "neutral") for c in cast], "desc": f"{len(cast)} people talking in {place}"}
+            try:
+                sh["raw"], sh["stab"], last = gen(sh, 0)
+                start = last
+            except Exception as e:
+                log(proj, f"conversation shot {s['id']}#{i} failed: {e!r}")
+            shots.append(sh)
+        log(proj, f"conversation {s['id']}: {len(lines)} shots")
+    comfy.free()
+    # 2) check every shot (glitches, people, identity, speaker lip-sync, anatomy on a third of the sampled frames)
+    cfg = QC.load_config(proj)
+    for rnd in range(int(os.environ.get("TALK_TRIES", "3"))):
+        todo = [sh for sh in shots if sh.get("raw") and (rnd == 0 or not sh["qc"]["ok"])]
+        if not todo: break
+        if rnd >= 1:                              # regenerate failures with a new seed, from the same start frame
+            for sh in todo:
+                try: sh["raw2"], sh["stab2"], _ = gen(sh, rnd)
+                except Exception as e: log(proj, f"conversation shot {sh['scene']}#{sh['i']} retry failed: {e!r}")
+            comfy.free()
+        for sh in todo:
+            v = sh.get("raw2") if rnd >= 1 else sh["raw"]
+            if not v: continue
+            try:
+                r = A.check_shot(v, sh["aud"], sh["desc"], sh["n"], refs=sh["refs"], silent=sh["silent"], work=f"{proj}/work/talk", cfg=cfg,
+                                 speaker_side=sh["side"] if sh["side"] in ("left", "right") else None, vlm_every=1)
+            except Exception as e:
+                r = {"findings": [{"severity": "MEDIUM", "check": "qc", "msg": f"check crashed: {e!r}", "frame": None, "t": None}], "score": 1, "ok": True}
+            if rnd == 0: sh["qc"] = r
+            elif r["score"] < sh["qc"]["score"]: sh["qc"] = r; sh["stab"] = sh["stab2"]; sh["retried_better"] = rnd + 1
+            bad = [f for f in r["findings"] if f["severity"] in ("CRITICAL", "HIGH")]
+            log(proj, f"conversation QC {sh['scene']}#{sh['i']} try {rnd + 1}: " + ("PASS" if r["ok"] else "FAIL — " +
+                "; ".join(f"{f['check']}: {f['msg'][:70]}" for f in bad[:3])))
+        from .qc import models as QM
+        QM.free(); llm.unload()
+    # 3) edit: wide two-shot or closeup crop of the same take; after a written beat, cut to the listener's reaction
+    report = []
+    for sid in dict.fromkeys(sh["scene"] for sh in shots):
+        man = []
+        for sh in [x for x in shots if x["scene"] == sid]:
+            if not sh.get("stab"): continue
+            def cut(t0, t1, side, tag):
+                o = f"{proj}/talk/{sid}_{sh['i']}_{tag}_{hashlib.md5(sh['stab'].encode()).hexdigest()[:8]}.mp4"
+                if not os.path.exists(o):
+                    vf = "scale=1920:1080"
+                    if side in CU_WIN:
+                        x, w = CU_WIN[side]; vf = f"crop={w}:{int(w * 9 / 16)}:{x}:30,scale=1920:1080:flags=lanczos"
+                    subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{t0:.3f}", "-i", sh["stab"], "-t", f"{t1 - t0:.3f}", "-vf", vf, "-an",
+                                    "-c:v", "libx264", "-crf", "17", "-pix_fmt", "yuv420p", "-r", str(C.FPS), o], check=True)
+                return o
+            dur = sh["b"] - sh["a"]
+            cu = sh["side"] if sh["shot"] == "closeup" and sh["side"] else None
+            beat = float(sh["pause_after"] or 0)
+            if beat >= 0.6 and sh["listener_side"] and dur - beat > 0.8:
+                split = dur - beat + 0.1                     # reaction: hold on the listener during the beat
+                man.append({"video": cut(0, split, cu, "a"), "start": sh["a"], "end": round(sh["a"] + split, 3)})
+                man.append({"video": cut(split, dur, sh["listener_side"], "r"), "start": round(sh["a"] + split, 3), "end": sh["b"]})
+            else:
+                man.append({"video": cut(0, dur, cu, "a"), "start": sh["a"], "end": sh["b"]})
+            q = sh.get("qc") or {"findings": [], "ok": False}
+            report.append({"scene": sid, "line": sh["i"], "start": sh["a"], "end": sh["b"], "video": sh["stab"], "ok": q.get("ok", False),
+                           "attempts": 1 + bool(sh.get("raw2")), "chosen_attempt": sh.get("retried_better") or 1, "findings": q.get("findings", [])})
+        json.dump(man, open(f"{proj}/talk/{sid}.json", "w"), indent=1)
+    json.dump(report, open(f"{proj}/talk/ANIMATION_QC.json", "w"), indent=1)
+    log(proj, f"conversation: {len(shots)} shots; QC {sum(r['ok'] for r in report)}/{len(report)} clean")
+    return {s["id"] for s in scenes}
+
 def stage_talk(proj, sc):
     """Every stage scene becomes a run of animated shots: the speaker alone (interview framing) animated to their REAL voice
     line, or the whole cast listening quietly (silent audio) while the narrator talks. Cached by content hash.
@@ -183,13 +358,14 @@ def stage_talk(proj, sc):
     new seeds (max 3 attempts, best kept). Writes talk/<scene>.json = [{video, start, end}] and talk/ANIMATION_QC.json;
     a scene whose best shot still has a CRITICAL problem falls back to the cut-out puppets."""
     from .qc import animcheck as A, core as QC
+    done = stage_conversation(proj, sc) if sc.get("show") else set()
     chars = {c["id"]: c for c in sc["characters"]}
     envs = {e["id"]: e for e in sc["environments"]}
     os.makedirs(f"{proj}/talk", exist_ok=True); os.makedirs(f"{proj}/work/talk", exist_ok=True)
     X = {"left": 0.36, "center": 0.5, "right": 0.64}
     jobs = []                                                   # one per line of every stage scene
     for s in sc["scenes"]:
-        if s["kind"] != "stage" or not s.get("cast"): continue
+        if s["kind"] != "stage" or not s.get("cast") or s["id"] in done: continue
         bg = envs.get(s.get("environment"), {}).get("_file")
         lines = _j(f"{proj}/audio/{s['id']}.lines.json") or []
         wav = f"{proj}/audio/{s['id']}.wav"

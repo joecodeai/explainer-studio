@@ -1,27 +1,29 @@
 {
  "name": "Benny Figures It Out",
- "style": "polished modern 2D animated-series illustration, warm and expressive, realistic adult proportions (normal-sized head, not chibi, not a caricature), very expressive face with clear readable emotions, big expressive eyes and eyebrows, warm friendly colour palette (soft orange, teal, cream, navy accents), smooth flat shading, clean dark outlines, simple but detailed face with visible eyes and a clear mouth",
+ "style": "vibrant modern 2D anime-inspired character illustration, like a polished animated series character sheet, clean confident dark outlines, warm cel shading with soft highlights, large expressive brown eyes, attractive appealing faces, natural adult proportions, rich warm colour palette (burnt orange, olive green, navy, cream, warm browns)",
  "cast": [
   {
    "id": "benny",
    "name": "Benny",
    "role": "",
    "real_person": false,
-   "look": "a handsome, charming young man in his late twenties, warm brown eyes, tousled dark brown hair, clean-shaven, bright boyish smile, fit build, bright orange hoodie over a white t-shirt, slim blue jeans, white sneakers, holding a smartphone",
+   "look": "a cheerful young man in his mid twenties with thick curly dark brown hair, big expressive brown eyes, a wide confident grin, burnt-orange zip-up hoodie worn open over a white t-shirt, black crossbody bag strap across his chest, black wristwatch, navy blue cargo trousers, white and orange sneakers",
    "voice": "A charming young man in his late twenties with a warm, pleasant male voice, friendly and sincere, energetic and very expressive, casual neutral English accent, natural comedic timing.",
-   "bio": "late 20s, lives alone in a small flat with his goldfish Dividend, vague office job ('something in operations'). Handsome, charming, confidently wrong, takes everything personally and literally, big plans, short attention span, sincere, never mean. Catchphrase: 'Okay, but how does this affect me?'"
+   "bio": "late 20s, lives alone in a small flat with his goldfish Dividend, vague office job ('something in operations'). Handsome, charming, confidently wrong, takes everything personally and literally, big plans, short attention span, sincere, never mean. Catchphrase: 'Okay, but how does this affect me?'",
+   "tag": "the young man with curly hair in the orange hoodie"
   },
   {
    "id": "maya",
    "name": "Maya",
    "role": "",
    "real_person": false,
-   "look": "a beautiful, stylish young woman in her late twenties, long wavy dark brown hair, bright intelligent eyes, warm confident smile, light natural makeup, fitted olive green bomber jacket over a cream top, dark slim jeans, ankle boots",
+   "look": "a confident, beautiful young woman in her mid twenties with long voluminous wavy dark brown hair, warm brown eyes, gold hoop earrings, a knowing half-smile, olive green utility shirt-jacket with rolled sleeves over a cream top, high-waisted black wide-leg trousers with a black belt, black wristwatch, white sneakers",
    "voice": "A friendly woman in her late twenties with a smooth, natural, mellow voice, relaxed conversational pace, neutral American accent, easy warmth and a quiet sense of humour, like a favourite podcast host.",
-   "bio": "Benny's smart, quick-witted best friend AND the show's narrator: she tells the story in voice-over and corrects Benny on screen. Fond of him, playfully sarcastic, always right about the facts."
+   "bio": "Benny's smart, quick-witted best friend AND the show's narrator: she tells the story in voice-over and corrects Benny on screen. Fond of him, playfully sarcastic, always right about the facts.",
+   "tag": "the woman with long wavy hair in the olive green jacket"
   }
  ],
  "active": true,
  "narrator": "maya",
- "bg_style": "polished modern 2D animated-series background illustration, warm and inviting, realistic perspective, warm friendly palette (soft orange, teal, cream, navy accents), soft natural light, smooth flat shading, subtle depth, no people, no text, wide 16:9 composition, plenty of empty space in the lower middle for characters: open clear floor across the whole foreground, furniture and props only along the back wall and the far left/right edges, nothing in the lower centre, eye-level camera, absolutely no text, letters or writing on any sign, board, screen or paper"
+ "bg_style": "vibrant modern 2D anime-inspired background illustration matching a polished animated series, warm cinematic light, rich colours, soft depth of field, realistic perspective, no people, no text, wide 16:9 composition, open clear floor across the foreground, furniture and props only along the back wall and the far left/right edges, nothing in the lower centre, eye-level camera, absolutely no text, letters or writing on any sign, board, screen or paper"
 }
