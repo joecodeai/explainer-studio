@@ -144,7 +144,8 @@ def normalize(d):
         s["id"] = f"s{i + 1:02d}"
         if s.get("kind") not in KINDS: s["kind"] = "stage"
         s["environment"] = _id(s.get("environment") or s.get("background") or "")
-        s["cast"] = [{"char": _id(c.get("char")), "position": c.get("position") if c.get("position") in ("left", "right", "center") else "center"}
+        s["cast"] = [{"char": _id(c.get("char")), "position": c.get("position") if c.get("position") in ("left", "right", "center") else "center",
+                      **({"outfit": str(c["outfit"])} if c.get("outfit") else {})}
                      for c in s.get("cast", []) if isinstance(c, dict) and _id(c.get("char", "")) in chars][:3]
         lines = s.get("lines") or ([{"speaker": "narrator", "text": s["narration"]}] if s.get("narration") else [])
         s["lines"] = []
@@ -218,6 +219,10 @@ def autofix(d):
         names = {p["name"] for p in s["map"]["places"]}
         s["map"]["routes"] = [r for r in s["map"]["routes"] if all(n in names for n in [r["from"], r["to"], *r["via"]])]
     envs = [e["id"] for e in d["environments"]]
+    if d.get("show"):                            # a story stays in one place across scenes: never move scenes to other locations
+        for s in d["scenes"]:
+            if s["kind"] == "stage" and s["environment"] not in envs and envs: s["environment"] = envs[0]
+        return d
     prev = None
     for s in d["scenes"]:
         if s["kind"] != "stage": continue
@@ -237,7 +242,7 @@ def validate(d):
         if s["kind"] == "stage":
             if not s["cast"]: probs.append(f"{s['id']}: stage scene with no characters on stage")
             if s["environment"] not in envs: probs.append(f"{s['id']}: unknown environment '{s['environment']}'")
-            if s["environment"] == prev_env: probs.append(f"{s['id']}: same environment as the previous stage scene")
+            if s["environment"] == prev_env and not d.get("show"): probs.append(f"{s['id']}: same environment as the previous stage scene")
             prev_env = s["environment"]
         if s["kind"] == "hero" and not s["hero_prompt"].strip(): probs.append(f"{s['id']}: hero scene without hero_prompt")
         if s["kind"] == "map" and not (s["map"]["countries"] or s["map"]["places"]): probs.append(f"{s['id']}: map with nothing to show")
@@ -346,7 +351,7 @@ def apply_show(d, sh):
     chars = [c for c in d["characters"] if c["id"] not in fixed]
     for cid, c in fixed.items():
         if cid in used or cid == sh["cast"][0]["id"]:
-            chars.insert(0, {k: c[k] for k in ("id", "name", "look", "voice", "role", "real_person")})
+            chars.insert(0, {k: c[k] for k in ("id", "name", "look", "voice", "role", "real_person")} | {k: c[k] for k in ("tag", "outfits") if c.get(k)})
     for c in chars: c["style"] = sh["style"]
     for e in d.get("environments", []):
         if sh.get("bg_style"): e["style"] = sh["bg_style"]

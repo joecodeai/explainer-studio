@@ -1,0 +1,930 @@
+{
+ "version": 2,
+ "views": [
+  "front",
+  "side",
+  "back"
+ ],
+ "animation_poses": [
+  "neutral",
+  "talk",
+  "side_talk",
+  "side_listen",
+  "walking",
+  "sitting",
+  "surprised",
+  "happy",
+  "thinking",
+  "shrug",
+  "worried",
+  "point"
+ ],
+ "outfits": [
+  {
+   "id": "benny_signature",
+   "outfit": "signature",
+   "char": "benny",
+   "use": "default / everyday",
+   "season": "spring, autumn",
+   "desc": "burnt-orange zip-up hoodie worn open over a white t-shirt, navy blue cargo trousers",
+   "accessories": "black crossbody bag strap, black wristwatch",
+   "footwear": "white and orange sneakers",
+   "palette": [
+    "burnt orange",
+    "white",
+    "navy"
+   ],
+   "fabrics": "cotton fleece, twill",
+   "notes": "The character-sheet look. Default when nothing else applies."
+  },
+  {
+   "id": "benny_evening",
+   "outfit": "evening",
+   "char": "benny",
+   "use": "evenings out, city at night",
+   "season": "autumn, spring",
+   "desc": "dark brown bomber jacket over a grey crew-neck t-shirt, black slim jeans",
+   "accessories": "black wristwatch, black crossbody bag",
+   "footwear": "white leather sneakers",
+   "palette": [
+    "brown",
+    "charcoal",
+    "black"
+   ],
+   "fabrics": "nylon, cotton, denim",
+   "notes": ""
+  },
+  {
+   "id": "benny_smart_casual",
+   "outfit": "smart_casual",
+   "char": "benny",
+   "use": "meetings, nice restaurant, meeting the parents",
+   "season": "all",
+   "desc": "navy unstructured blazer over a cream knit polo, charcoal tailored trousers",
+   "accessories": "brown leather watch strap",
+   "footwear": "brown suede loafers",
+   "palette": [
+    "navy",
+    "cream",
+    "charcoal",
+    "brown"
+   ],
+   "fabrics": "wool-blend, knit",
+   "notes": "Benny trying to look grown-up."
+  },
+  {
+   "id": "benny_office",
+   "outfit": "office",
+   "char": "benny",
+   "use": "job, interviews, work stories",
+   "season": "all",
+   "desc": "light blue oxford shirt with sleeves rolled, navy chinos, burnt-orange knit tie loosened",
+   "accessories": "black wristwatch, brown leather backpack",
+   "footwear": "brown leather sneakers",
+   "palette": [
+    "light blue",
+    "navy",
+    "burnt orange",
+    "brown"
+   ],
+   "fabrics": "cotton oxford, twill",
+   "notes": "The slightly-too-casual tie is the joke."
+  },
+  {
+   "id": "benny_date_night",
+   "outfit": "date_night",
+   "char": "benny",
+   "use": "dates, romance episodes",
+   "season": "all",
+   "desc": "charcoal knit polo shirt tucked into cream pleated trousers, brown suede bomber",
+   "accessories": "silver chain, black wristwatch",
+   "footwear": "white leather sneakers",
+   "palette": [
+    "charcoal",
+    "cream",
+    "brown"
+   ],
+   "fabrics": "knit, suede",
+   "notes": "His best effort."
+  },
+  {
+   "id": "benny_party",
+   "outfit": "party",
+   "char": "benny",
+   "use": "parties, celebrations",
+   "season": "all",
+   "desc": "burnt-orange short-sleeve camp-collar shirt with a subtle cream wave pattern, black straight trousers",
+   "accessories": "wristwatch",
+   "footwear": "chunky cream sneakers",
+   "palette": [
+    "burnt orange",
+    "cream",
+    "black"
+   ],
+   "fabrics": "rayon, twill",
+   "notes": ""
+  },
+  {
+   "id": "benny_winter",
+   "outfit": "winter",
+   "char": "benny",
+   "use": "cold weather",
+   "season": "winter",
+   "desc": "navy padded puffer jacket over a burnt-orange hoodie, charcoal wool trousers",
+   "accessories": "brown knit beanie, cream scarf, gloves",
+   "footwear": "brown leather high-top sneakers",
+   "palette": [
+    "navy",
+    "burnt orange",
+    "charcoal",
+    "brown",
+    "cream"
+   ],
+   "fabrics": "down nylon, fleece, wool",
+   "notes": ""
+  },
+  {
+   "id": "benny_summer",
+   "outfit": "summer",
+   "char": "benny",
+   "use": "hot weather, beach, holidays",
+   "season": "summer",
+   "desc": "cream short-sleeve linen shirt open over a burnt-orange t-shirt, navy shorts",
+   "accessories": "sunglasses, canvas crossbody",
+   "footwear": "brown leather sandals",
+   "palette": [
+    "cream",
+    "burnt orange",
+    "navy",
+    "brown"
+   ],
+   "fabrics": "linen, cotton",
+   "notes": ""
+  },
+  {
+   "id": "benny_rain",
+   "outfit": "rain",
+   "char": "benny",
+   "use": "rainy days",
+   "season": "any",
+   "desc": "navy hooded rain jacket over a cream hoodie, charcoal joggers",
+   "accessories": "black backpack",
+   "footwear": "dark rubber-soled sneakers",
+   "palette": [
+    "navy",
+    "cream",
+    "charcoal"
+   ],
+   "fabrics": "nylon, fleece",
+   "notes": ""
+  },
+  {
+   "id": "benny_home",
+   "outfit": "home",
+   "char": "benny",
+   "use": "at home, lazy days, late-night scenes",
+   "season": "all",
+   "desc": "faded burnt-orange oversized t-shirt, grey sweatpants",
+   "accessories": "none",
+   "footwear": "navy slides with socks",
+   "palette": [
+    "burnt orange",
+    "grey",
+    "navy"
+   ],
+   "fabrics": "cotton jersey",
+   "notes": "Socks with slides is canon."
+  },
+  {
+   "id": "benny_gym",
+   "outfit": "gym",
+   "char": "benny",
+   "use": "fitness, health episodes",
+   "season": "all",
+   "desc": "navy athletic t-shirt, charcoal training shorts, burnt-orange zip-up track jacket tied at the waist",
+   "accessories": "black fitness watch, water bottle",
+   "footwear": "orange running shoes",
+   "palette": [
+    "navy",
+    "charcoal",
+    "burnt orange"
+   ],
+   "fabrics": "technical fabric",
+   "notes": ""
+  },
+  {
+   "id": "benny_formal",
+   "outfit": "formal",
+   "char": "benny",
+   "use": "weddings, galas, awards",
+   "season": "all",
+   "desc": "navy slim two-piece suit, crisp white shirt, burnt-orange silk tie, brown leather belt",
+   "accessories": "silver watch",
+   "footwear": "brown leather oxford shoes",
+   "palette": [
+    "navy",
+    "white",
+    "burnt orange",
+    "brown"
+   ],
+   "fabrics": "wool suiting",
+   "notes": ""
+  },
+  {
+   "id": "benny_luckycat",
+   "outfit": "luckycat",
+   "char": "benny",
+   "use": "story extra: Japan yen episode, last days",
+   "season": "autumn",
+   "desc": "white t-shirt with a small cute golden lucky-cat print on the chest (no text), burnt-orange hoodie tied around his waist, navy cargo trousers",
+   "accessories": "black crossbody bag, wristwatch",
+   "footwear": "white and orange sneakers",
+   "palette": [
+    "white",
+    "burnt orange",
+    "navy",
+    "gold"
+   ],
+   "fabrics": "cotton",
+   "notes": "Callback to Lucky the giant cat."
+  },
+  {
+   "id": "maya_signature",
+   "outfit": "signature",
+   "char": "maya",
+   "use": "default / everyday",
+   "season": "spring, autumn",
+   "desc": "olive green utility shirt-jacket with rolled sleeves over a cream top, high-waisted black wide-leg trousers with a black belt",
+   "accessories": "gold hoop earrings, black wristwatch, small black crossbody bag",
+   "footwear": "white sneakers",
+   "palette": [
+    "olive",
+    "cream",
+    "black",
+    "muted gold"
+   ],
+   "fabrics": "cotton twill, jersey",
+   "notes": "The character-sheet look. Default when nothing else applies."
+  },
+  {
+   "id": "maya_evening",
+   "outfit": "evening",
+   "char": "maya",
+   "use": "evenings out, city at night",
+   "season": "autumn, spring",
+   "desc": "cosy cream cable-knit sweater tucked into high-waisted black wide-leg trousers, long chocolate-brown cardigan coat",
+   "accessories": "gold hoop earrings, gold bracelet",
+   "footwear": "white leather sneakers",
+   "palette": [
+    "cream",
+    "black",
+    "chocolate brown",
+    "muted gold"
+   ],
+   "fabrics": "wool, cashmere-blend",
+   "notes": ""
+  },
+  {
+   "id": "maya_smart_casual",
+   "outfit": "smart_casual",
+   "char": "maya",
+   "use": "meetings, nice restaurant, meeting the parents",
+   "season": "all",
+   "desc": "chocolate-brown tailored blazer over a cream silk blouse, black straight trousers",
+   "accessories": "gold hoops, thin gold necklace, black structured bag",
+   "footwear": "black loafers",
+   "palette": [
+    "chocolate brown",
+    "cream",
+    "black",
+    "muted gold"
+   ],
+   "fabrics": "wool crepe, silk",
+   "notes": ""
+  },
+  {
+   "id": "maya_office",
+   "outfit": "office",
+   "char": "maya",
+   "use": "job, interviews, work stories",
+   "season": "all",
+   "desc": "olive green tailored trouser suit with a cream fitted knit top",
+   "accessories": "gold hoops, gold watch, black leather tote",
+   "footwear": "black block-heel pumps",
+   "palette": [
+    "olive",
+    "cream",
+    "black",
+    "muted gold"
+   ],
+   "fabrics": "wool suiting, knit",
+   "notes": ""
+  },
+  {
+   "id": "maya_date_night",
+   "outfit": "date_night",
+   "char": "maya",
+   "use": "dates, romance episodes",
+   "season": "all",
+   "desc": "black satin midi slip dress with a cropped olive green tailored jacket over the shoulders",
+   "accessories": "gold hoops, delicate gold necklace, small gold clutch",
+   "footwear": "black strappy heeled sandals",
+   "palette": [
+    "black",
+    "olive",
+    "muted gold"
+   ],
+   "fabrics": "satin, wool",
+   "notes": ""
+  },
+  {
+   "id": "maya_party",
+   "outfit": "party",
+   "char": "maya",
+   "use": "parties, celebrations",
+   "season": "all",
+   "desc": "chocolate-brown satin wrap dress, knee length",
+   "accessories": "statement gold earrings, gold cuff",
+   "footwear": "gold flat sandals",
+   "palette": [
+    "chocolate brown",
+    "muted gold"
+   ],
+   "fabrics": "satin",
+   "notes": ""
+  },
+  {
+   "id": "maya_winter",
+   "outfit": "winter",
+   "char": "maya",
+   "use": "cold weather",
+   "season": "winter",
+   "desc": "long black wool coat over an olive turtleneck, chocolate-brown tailored trousers",
+   "accessories": "cream cashmere scarf, gold hoops, black leather gloves",
+   "footwear": "black ankle boots",
+   "palette": [
+    "black",
+    "olive",
+    "chocolate brown",
+    "cream"
+   ],
+   "fabrics": "wool, cashmere",
+   "notes": ""
+  },
+  {
+   "id": "maya_summer",
+   "outfit": "summer",
+   "char": "maya",
+   "use": "hot weather, beach, holidays",
+   "season": "summer",
+   "desc": "olive green linen midi shirt-dress with a thin muted gold belt",
+   "accessories": "gold hoops, straw tote, sunglasses",
+   "footwear": "tan flat sandals",
+   "palette": [
+    "olive",
+    "muted gold",
+    "cream"
+   ],
+   "fabrics": "linen",
+   "notes": ""
+  },
+  {
+   "id": "maya_rain",
+   "outfit": "rain",
+   "char": "maya",
+   "use": "rainy days",
+   "season": "any",
+   "desc": "classic olive trench coat over a cream knit and black trousers",
+   "accessories": "gold hoops, black umbrella",
+   "footwear": "black Chelsea boots",
+   "palette": [
+    "olive",
+    "cream",
+    "black"
+   ],
+   "fabrics": "gabardine, knit",
+   "notes": ""
+  },
+  {
+   "id": "maya_home",
+   "outfit": "home",
+   "char": "maya",
+   "use": "at home, lazy days, late-night scenes",
+   "season": "all",
+   "desc": "oversized cream knit sweater, olive lounge trousers, hair in a loose bun",
+   "accessories": "small gold studs",
+   "footwear": "cosy brown slippers",
+   "palette": [
+    "cream",
+    "olive",
+    "chocolate brown"
+   ],
+   "fabrics": "knit, jersey",
+   "notes": ""
+  },
+  {
+   "id": "maya_gym",
+   "outfit": "gym",
+   "char": "maya",
+   "use": "fitness, health episodes",
+   "season": "all",
+   "desc": "olive green sports top and matching leggings, cream zip-up jacket, hair in a high ponytail",
+   "accessories": "black fitness watch",
+   "footwear": "white running shoes",
+   "palette": [
+    "olive",
+    "cream"
+   ],
+   "fabrics": "technical fabric",
+   "notes": ""
+  },
+  {
+   "id": "maya_formal",
+   "outfit": "formal",
+   "char": "maya",
+   "use": "weddings, galas, awards",
+   "season": "all",
+   "desc": "floor-length olive green satin gown with a muted gold belt, hair styled in soft waves",
+   "accessories": "gold drop earrings, gold clutch",
+   "footwear": "gold heels",
+   "palette": [
+    "olive",
+    "muted gold"
+   ],
+   "fabrics": "satin",
+   "notes": ""
+  },
+  {
+   "id": "maya_denim",
+   "outfit": "denim",
+   "char": "maya",
+   "use": "story extra: casual travel day",
+   "season": "spring, autumn",
+   "desc": "light blue denim jacket over a white fitted t-shirt, high-waisted black wide-leg trousers with a black belt",
+   "accessories": "gold hoop earrings, small black crossbody bag",
+   "footwear": "white sneakers",
+   "palette": [
+    "light blue",
+    "white",
+    "black",
+    "muted gold"
+   ],
+   "fabrics": "denim, cotton",
+   "notes": ""
+  }
+ ],
+ "index": {
+  "benny_signature": {
+   "id": "benny_signature",
+   "outfit": "signature",
+   "char": "benny",
+   "use": "default / everyday",
+   "season": "spring, autumn",
+   "desc": "burnt-orange zip-up hoodie worn open over a white t-shirt, navy blue cargo trousers",
+   "accessories": "black crossbody bag strap, black wristwatch",
+   "footwear": "white and orange sneakers",
+   "palette": [
+    "burnt orange",
+    "white",
+    "navy"
+   ],
+   "fabrics": "cotton fleece, twill",
+   "notes": "The character-sheet look. Default when nothing else applies."
+  },
+  "benny_evening": {
+   "id": "benny_evening",
+   "outfit": "evening",
+   "char": "benny",
+   "use": "evenings out, city at night",
+   "season": "autumn, spring",
+   "desc": "dark brown bomber jacket over a grey crew-neck t-shirt, black slim jeans",
+   "accessories": "black wristwatch, black crossbody bag",
+   "footwear": "white leather sneakers",
+   "palette": [
+    "brown",
+    "charcoal",
+    "black"
+   ],
+   "fabrics": "nylon, cotton, denim",
+   "notes": ""
+  },
+  "benny_smart_casual": {
+   "id": "benny_smart_casual",
+   "outfit": "smart_casual",
+   "char": "benny",
+   "use": "meetings, nice restaurant, meeting the parents",
+   "season": "all",
+   "desc": "navy unstructured blazer over a cream knit polo, charcoal tailored trousers",
+   "accessories": "brown leather watch strap",
+   "footwear": "brown suede loafers",
+   "palette": [
+    "navy",
+    "cream",
+    "charcoal",
+    "brown"
+   ],
+   "fabrics": "wool-blend, knit",
+   "notes": "Benny trying to look grown-up."
+  },
+  "benny_office": {
+   "id": "benny_office",
+   "outfit": "office",
+   "char": "benny",
+   "use": "job, interviews, work stories",
+   "season": "all",
+   "desc": "light blue oxford shirt with sleeves rolled, navy chinos, burnt-orange knit tie loosened",
+   "accessories": "black wristwatch, brown leather backpack",
+   "footwear": "brown leather sneakers",
+   "palette": [
+    "light blue",
+    "navy",
+    "burnt orange",
+    "brown"
+   ],
+   "fabrics": "cotton oxford, twill",
+   "notes": "The slightly-too-casual tie is the joke."
+  },
+  "benny_date_night": {
+   "id": "benny_date_night",
+   "outfit": "date_night",
+   "char": "benny",
+   "use": "dates, romance episodes",
+   "season": "all",
+   "desc": "charcoal knit polo shirt tucked into cream pleated trousers, brown suede bomber",
+   "accessories": "silver chain, black wristwatch",
+   "footwear": "white leather sneakers",
+   "palette": [
+    "charcoal",
+    "cream",
+    "brown"
+   ],
+   "fabrics": "knit, suede",
+   "notes": "His best effort."
+  },
+  "benny_party": {
+   "id": "benny_party",
+   "outfit": "party",
+   "char": "benny",
+   "use": "parties, celebrations",
+   "season": "all",
+   "desc": "burnt-orange short-sleeve camp-collar shirt with a subtle cream wave pattern, black straight trousers",
+   "accessories": "wristwatch",
+   "footwear": "chunky cream sneakers",
+   "palette": [
+    "burnt orange",
+    "cream",
+    "black"
+   ],
+   "fabrics": "rayon, twill",
+   "notes": ""
+  },
+  "benny_winter": {
+   "id": "benny_winter",
+   "outfit": "winter",
+   "char": "benny",
+   "use": "cold weather",
+   "season": "winter",
+   "desc": "navy padded puffer jacket over a burnt-orange hoodie, charcoal wool trousers",
+   "accessories": "brown knit beanie, cream scarf, gloves",
+   "footwear": "brown leather high-top sneakers",
+   "palette": [
+    "navy",
+    "burnt orange",
+    "charcoal",
+    "brown",
+    "cream"
+   ],
+   "fabrics": "down nylon, fleece, wool",
+   "notes": ""
+  },
+  "benny_summer": {
+   "id": "benny_summer",
+   "outfit": "summer",
+   "char": "benny",
+   "use": "hot weather, beach, holidays",
+   "season": "summer",
+   "desc": "cream short-sleeve linen shirt open over a burnt-orange t-shirt, navy shorts",
+   "accessories": "sunglasses, canvas crossbody",
+   "footwear": "brown leather sandals",
+   "palette": [
+    "cream",
+    "burnt orange",
+    "navy",
+    "brown"
+   ],
+   "fabrics": "linen, cotton",
+   "notes": ""
+  },
+  "benny_rain": {
+   "id": "benny_rain",
+   "outfit": "rain",
+   "char": "benny",
+   "use": "rainy days",
+   "season": "any",
+   "desc": "navy hooded rain jacket over a cream hoodie, charcoal joggers",
+   "accessories": "black backpack",
+   "footwear": "dark rubber-soled sneakers",
+   "palette": [
+    "navy",
+    "cream",
+    "charcoal"
+   ],
+   "fabrics": "nylon, fleece",
+   "notes": ""
+  },
+  "benny_home": {
+   "id": "benny_home",
+   "outfit": "home",
+   "char": "benny",
+   "use": "at home, lazy days, late-night scenes",
+   "season": "all",
+   "desc": "faded burnt-orange oversized t-shirt, grey sweatpants",
+   "accessories": "none",
+   "footwear": "navy slides with socks",
+   "palette": [
+    "burnt orange",
+    "grey",
+    "navy"
+   ],
+   "fabrics": "cotton jersey",
+   "notes": "Socks with slides is canon."
+  },
+  "benny_gym": {
+   "id": "benny_gym",
+   "outfit": "gym",
+   "char": "benny",
+   "use": "fitness, health episodes",
+   "season": "all",
+   "desc": "navy athletic t-shirt, charcoal training shorts, burnt-orange zip-up track jacket tied at the waist",
+   "accessories": "black fitness watch, water bottle",
+   "footwear": "orange running shoes",
+   "palette": [
+    "navy",
+    "charcoal",
+    "burnt orange"
+   ],
+   "fabrics": "technical fabric",
+   "notes": ""
+  },
+  "benny_formal": {
+   "id": "benny_formal",
+   "outfit": "formal",
+   "char": "benny",
+   "use": "weddings, galas, awards",
+   "season": "all",
+   "desc": "navy slim two-piece suit, crisp white shirt, burnt-orange silk tie, brown leather belt",
+   "accessories": "silver watch",
+   "footwear": "brown leather oxford shoes",
+   "palette": [
+    "navy",
+    "white",
+    "burnt orange",
+    "brown"
+   ],
+   "fabrics": "wool suiting",
+   "notes": ""
+  },
+  "benny_luckycat": {
+   "id": "benny_luckycat",
+   "outfit": "luckycat",
+   "char": "benny",
+   "use": "story extra: Japan yen episode, last days",
+   "season": "autumn",
+   "desc": "white t-shirt with a small cute golden lucky-cat print on the chest (no text), burnt-orange hoodie tied around his waist, navy cargo trousers",
+   "accessories": "black crossbody bag, wristwatch",
+   "footwear": "white and orange sneakers",
+   "palette": [
+    "white",
+    "burnt orange",
+    "navy",
+    "gold"
+   ],
+   "fabrics": "cotton",
+   "notes": "Callback to Lucky the giant cat."
+  },
+  "maya_signature": {
+   "id": "maya_signature",
+   "outfit": "signature",
+   "char": "maya",
+   "use": "default / everyday",
+   "season": "spring, autumn",
+   "desc": "olive green utility shirt-jacket with rolled sleeves over a cream top, high-waisted black wide-leg trousers with a black belt",
+   "accessories": "gold hoop earrings, black wristwatch, small black crossbody bag",
+   "footwear": "white sneakers",
+   "palette": [
+    "olive",
+    "cream",
+    "black",
+    "muted gold"
+   ],
+   "fabrics": "cotton twill, jersey",
+   "notes": "The character-sheet look. Default when nothing else applies."
+  },
+  "maya_evening": {
+   "id": "maya_evening",
+   "outfit": "evening",
+   "char": "maya",
+   "use": "evenings out, city at night",
+   "season": "autumn, spring",
+   "desc": "cosy cream cable-knit sweater tucked into high-waisted black wide-leg trousers, long chocolate-brown cardigan coat",
+   "accessories": "gold hoop earrings, gold bracelet",
+   "footwear": "white leather sneakers",
+   "palette": [
+    "cream",
+    "black",
+    "chocolate brown",
+    "muted gold"
+   ],
+   "fabrics": "wool, cashmere-blend",
+   "notes": ""
+  },
+  "maya_smart_casual": {
+   "id": "maya_smart_casual",
+   "outfit": "smart_casual",
+   "char": "maya",
+   "use": "meetings, nice restaurant, meeting the parents",
+   "season": "all",
+   "desc": "chocolate-brown tailored blazer over a cream silk blouse, black straight trousers",
+   "accessories": "gold hoops, thin gold necklace, black structured bag",
+   "footwear": "black loafers",
+   "palette": [
+    "chocolate brown",
+    "cream",
+    "black",
+    "muted gold"
+   ],
+   "fabrics": "wool crepe, silk",
+   "notes": ""
+  },
+  "maya_office": {
+   "id": "maya_office",
+   "outfit": "office",
+   "char": "maya",
+   "use": "job, interviews, work stories",
+   "season": "all",
+   "desc": "olive green tailored trouser suit with a cream fitted knit top",
+   "accessories": "gold hoops, gold watch, black leather tote",
+   "footwear": "black block-heel pumps",
+   "palette": [
+    "olive",
+    "cream",
+    "black",
+    "muted gold"
+   ],
+   "fabrics": "wool suiting, knit",
+   "notes": ""
+  },
+  "maya_date_night": {
+   "id": "maya_date_night",
+   "outfit": "date_night",
+   "char": "maya",
+   "use": "dates, romance episodes",
+   "season": "all",
+   "desc": "black satin midi slip dress with a cropped olive green tailored jacket over the shoulders",
+   "accessories": "gold hoops, delicate gold necklace, small gold clutch",
+   "footwear": "black strappy heeled sandals",
+   "palette": [
+    "black",
+    "olive",
+    "muted gold"
+   ],
+   "fabrics": "satin, wool",
+   "notes": ""
+  },
+  "maya_party": {
+   "id": "maya_party",
+   "outfit": "party",
+   "char": "maya",
+   "use": "parties, celebrations",
+   "season": "all",
+   "desc": "chocolate-brown satin wrap dress, knee length",
+   "accessories": "statement gold earrings, gold cuff",
+   "footwear": "gold flat sandals",
+   "palette": [
+    "chocolate brown",
+    "muted gold"
+   ],
+   "fabrics": "satin",
+   "notes": ""
+  },
+  "maya_winter": {
+   "id": "maya_winter",
+   "outfit": "winter",
+   "char": "maya",
+   "use": "cold weather",
+   "season": "winter",
+   "desc": "long black wool coat over an olive turtleneck, chocolate-brown tailored trousers",
+   "accessories": "cream cashmere scarf, gold hoops, black leather gloves",
+   "footwear": "black ankle boots",
+   "palette": [
+    "black",
+    "olive",
+    "chocolate brown",
+    "cream"
+   ],
+   "fabrics": "wool, cashmere",
+   "notes": ""
+  },
+  "maya_summer": {
+   "id": "maya_summer",
+   "outfit": "summer",
+   "char": "maya",
+   "use": "hot weather, beach, holidays",
+   "season": "summer",
+   "desc": "olive green linen midi shirt-dress with a thin muted gold belt",
+   "accessories": "gold hoops, straw tote, sunglasses",
+   "footwear": "tan flat sandals",
+   "palette": [
+    "olive",
+    "muted gold",
+    "cream"
+   ],
+   "fabrics": "linen",
+   "notes": ""
+  },
+  "maya_rain": {
+   "id": "maya_rain",
+   "outfit": "rain",
+   "char": "maya",
+   "use": "rainy days",
+   "season": "any",
+   "desc": "classic olive trench coat over a cream knit and black trousers",
+   "accessories": "gold hoops, black umbrella",
+   "footwear": "black Chelsea boots",
+   "palette": [
+    "olive",
+    "cream",
+    "black"
+   ],
+   "fabrics": "gabardine, knit",
+   "notes": ""
+  },
+  "maya_home": {
+   "id": "maya_home",
+   "outfit": "home",
+   "char": "maya",
+   "use": "at home, lazy days, late-night scenes",
+   "season": "all",
+   "desc": "oversized cream knit sweater, olive lounge trousers, hair in a loose bun",
+   "accessories": "small gold studs",
+   "footwear": "cosy brown slippers",
+   "palette": [
+    "cream",
+    "olive",
+    "chocolate brown"
+   ],
+   "fabrics": "knit, jersey",
+   "notes": ""
+  },
+  "maya_gym": {
+   "id": "maya_gym",
+   "outfit": "gym",
+   "char": "maya",
+   "use": "fitness, health episodes",
+   "season": "all",
+   "desc": "olive green sports top and matching leggings, cream zip-up jacket, hair in a high ponytail",
+   "accessories": "black fitness watch",
+   "footwear": "white running shoes",
+   "palette": [
+    "olive",
+    "cream"
+   ],
+   "fabrics": "technical fabric",
+   "notes": ""
+  },
+  "maya_formal": {
+   "id": "maya_formal",
+   "outfit": "formal",
+   "char": "maya",
+   "use": "weddings, galas, awards",
+   "season": "all",
+   "desc": "floor-length olive green satin gown with a muted gold belt, hair styled in soft waves",
+   "accessories": "gold drop earrings, gold clutch",
+   "footwear": "gold heels",
+   "palette": [
+    "olive",
+    "muted gold"
+   ],
+   "fabrics": "satin",
+   "notes": ""
+  },
+  "maya_denim": {
+   "id": "maya_denim",
+   "outfit": "denim",
+   "char": "maya",
+   "use": "story extra: casual travel day",
+   "season": "spring, autumn",
+   "desc": "light blue denim jacket over a white fitted t-shirt, high-waisted black wide-leg trousers with a black belt",
+   "accessories": "gold hoop earrings, small black crossbody bag",
+   "footwear": "white sneakers",
+   "palette": [
+    "light blue",
+    "white",
+    "black",
+    "muted gold"
+   ],
+   "fabrics": "denim, cotton",
+   "notes": ""
+  }
+ }
+}

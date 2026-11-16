@@ -88,20 +88,21 @@ REACTIONS = {"surprised": "surprised", "angry": "worried", "excited": "happy", "
 
 
 def stage_assets(proj, sc):
-    need = {}
+    need = {}                                    # (character, outfit) -> poses
     for s in sc["scenes"]:
-        on = [c["char"] for c in s["cast"]]
-        for cid in on:
-            need.setdefault(cid, {"neutral", "talk", "side_talk", "side_listen"})
+        on = [(c["char"], c.get("outfit")) for c in s["cast"]]
+        for k in on:
+            need.setdefault(k, {"neutral", "talk", "side_talk", "side_listen"})
         for ln in s["lines"]:
-            if ln["speaker"] in on: need[ln["speaker"]].add(ln["pose"])
-            for cid in on:
-                if cid != ln["speaker"] and ln["emotion"] in REACTIONS: need[cid].add(REACTIONS[ln["emotion"]])
+            for k in on:
+                if k[0] == ln["speaker"]: need[k].add(ln["pose"])
+                elif ln["emotion"] in REACTIONS: need[k].add(REACTIONS[ln["emotion"]])
     chars = {c["id"]: c for c in sc["characters"]}
-    for cid, poses in need.items():
+    for (cid, outfit), poses in need.items():
         if cid not in chars: continue
-        log(proj, f"character {cid}: {len(poses)} poses/expressions")
-        assets.build_character(chars[cid], sorted(poses))
+        log(proj, f"character {cid}{' (' + outfit + ')' if outfit else ''}: {len(poses)} poses/expressions")
+        if outfit: assets.build_outfit(chars[cid], outfit, sorted(poses))
+        else: assets.build_character(chars[cid], sorted(poses))
     for e in sc["environments"]:
         if any(s.get("environment") == e["id"] for s in sc["scenes"]):
             e["_file"] = assets.build_background(e)
@@ -182,7 +183,9 @@ CONV_CROP = (83, 20, 1114, 627)                 # steady medium two-shot window 
 CU_WIN = {"left": (0, 1120), "right": (800, 1120), "center": (400, 1120)}     # closeup windows in the 1920 frame (exclude the other face)
 
 
-def _tag(c):
+def _tag(c, outfit=None):
+    o = (c.get("outfits") or {}).get(outfit) if outfit else None
+    if o and o.get("tag"): return o["tag"]
     return c.get("tag") or ("the " + " ".join(c["look"].replace("a ", "", 1).split(",")[0].split()[:6]))
 
 
@@ -196,10 +199,10 @@ def _conv_still(bg, cast, out):
         ch = ch.resize((max(1, int(ch.width * hpx / ch.height)), hpx)); bb = ch.getbbox() or (0, 0, ch.width, ch.height)
         B.paste(ch, (int(CONV_W * x - ch.width / 2), int(top) - bb[1]), ch)
     if len(cast) >= 2:
-        put(_pose_img_any(cast[0]["char"], "side_talk"), 0.385, 800, 66)
-        put(_pose_img_any(cast[1]["char"], "side_listen"), 0.615, 780, 80, mirror=True)
+        put(_pose_img_any(assets.art_id(cast[0]["char"], cast[0].get("outfit")), "side_talk"), 0.385, 800, 66)
+        put(_pose_img_any(assets.art_id(cast[1]["char"], cast[1].get("outfit")), "side_listen"), 0.615, 780, 80, mirror=True)
     else:
-        put(_pose_img_any(cast[0]["char"], "talk"), 0.5, 800, 66)
+        put(_pose_img_any(assets.art_id(cast[0]["char"], cast[0].get("outfit")), "talk"), 0.5, 800, 66)
     B.save(out); return out
 
 
@@ -246,7 +249,8 @@ def stage_conversation(proj, sc):
             stabilize.stabilize(raw, sh["ref"], stab, sh["crop"])
         return raw, stab, last
 
-    # 1) generate every scene as a chain
+    # 1) generate every scene as a chain (a scene in the same place with the same people continues from the previous scene's last frame)
+    prev_key, prev_last = None, None
     for s in scenes:
         cast = s["cast"][:2]
         lines = _j(f"{proj}/audio/{s['id']}.lines.json") or []
@@ -254,9 +258,11 @@ def stage_conversation(proj, sc):
         if not lines or not os.path.exists(wav): continue
         ref = _conv_still(envs[s["environment"]]["_file"], cast, f"{proj}/work/talk/{s['id']}_ref.png")
         side = {c["char"]: ("left" if k == 0 else "right") for k, c in enumerate(cast)} if len(cast) >= 2 else {cast[0]["char"]: "center"}
+        outfit = {c["char"]: c.get("outfit") for c in cast}
         place = envs[s["environment"]]["prompt"].split(":")[0].split(".")[0].lower()
         end = s["_dur"] + TAIL + 2.6
-        start = ref
+        key_here = (s["environment"], tuple((c["char"], c.get("outfit")) for c in cast))
+        start = prev_last if key_here == prev_key and prev_last and os.path.exists(prev_last) else ref
         for i, ln in enumerate(lines):
             a = 0.0 if i == 0 else ln["start"]
             b = lines[i + 1]["start"] if i + 1 < len(lines) else end
@@ -265,9 +271,9 @@ def stage_conversation(proj, sc):
             aud, secs = talk.cut_audio(wav, a, b, f"{proj}/work/talk/{s['id']}_{i}.wav", pad=0.0)
             others = [c["char"] for c in cast if c["char"] != sp]
             if sp in chars and sp in side:
-                who = f"{_tag(chars[sp])} on the {side[sp]}" if side[sp] != "center" else _tag(chars[sp])
+                who = f"{_tag(chars[sp], outfit.get(sp))} on the {side[sp]}" if side[sp] != "center" else _tag(chars[sp], outfit.get(sp))
                 act = src.get("act") or f"{who} {DEFAULT_ACT.get(src.get('emotion', 'neutral'), 'talks naturally')}"
-                react = src.get("react") or (f"{_tag(chars[others[0]])} listens and reacts naturally, mouth closed" if others else "")
+                react = src.get("react") or (f"{_tag(chars[others[0]], outfit.get(others[0]))} listens and reacts naturally, mouth closed" if others else "")
                 talking = (f"{act}; {react}. Only the speaking person's lips move, in exact sync with the speech; "
                            f"the listener's mouth stays closed.") if others else f"{act}. Lips move in exact sync with the speech."
                 silent = False
@@ -284,13 +290,14 @@ def stage_conversation(proj, sc):
                   "crop": CONV_CROP, "crop_sig": "c1", "side": side.get(sp), "silent": silent, "n": len(cast),
                   "shot": src.get("shot", "two_shot"), "pause_after": src.get("pause_after"),
                   "listener_side": side.get(others[0]) if others and others[0] in side else None,
-                  "refs": [_pose_img_any(c["char"], "neutral") for c in cast], "desc": f"{len(cast)} people talking in {place}"}
+                  "refs": [_pose_img_any(assets.art_id(c["char"], c.get("outfit")), "neutral") for c in cast], "desc": f"{len(cast)} people talking in {place}"}
             try:
                 sh["raw"], sh["stab"], last = gen(sh, 0)
                 start = last
             except Exception as e:
                 log(proj, f"conversation shot {s['id']}#{i} failed: {e!r}")
             shots.append(sh)
+        prev_key, prev_last = key_here, start
         log(proj, f"conversation {s['id']}: {len(lines)} shots")
     comfy.free()
     # 2) check every shot (glitches, people, identity, speaker lip-sync, anatomy on a third of the sampled frames)

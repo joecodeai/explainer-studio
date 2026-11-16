@@ -24,7 +24,7 @@ SCENES = [
  # cold open
  stage("airport_exchange", BC, [
    L(B, "Hi! Hello. Konnichiwa! I'd like to change one thousand dollars, please.", "excited",
-     act="the young man with curly hair in the orange hoodie on the left slides a few dollar bills across the counter, beaming",
+     act="the young man on the left slides a few dollar bills across the counter, beaming",
      react="the clerk in the navy uniform on the right smiles politely, mouth closed"),
    L(CL, "Of course. After our fee... that's one hundred and fifty-six thousand yen.", "neutral", pause=0.9,
      act="the clerk in the navy uniform on the right counts a thick stack of banknotes and pushes it toward him",
@@ -233,14 +233,28 @@ CHARS = [
   "voice": "A kind Japanese man in his fifties, warm, gentle and slightly gravelly, Japanese accent in English, calm unhurried pace."},
 ]
 
+# outfits by story day: day 1 = signature outfits; that night = "night"; the last days = "home"
+NIGHT_ENVS, HOME_FROM = {"konbini_street", "hotel_room", "souvenir_shop"}, "The Other Side"
+
+def dress(scenes):
+    home = False
+    for s in scenes:
+        if s.get("kind") == "title_card" and s.get("title_text") == HOME_FROM: home = True
+        for c in s.get("cast", []):
+            if c["char"] in ("benny", "maya"):
+                o = ({"benny": "luckycat", "maya": "denim"}[c["char"]] if home else ("evening" if s.get("environment") in NIGHT_ENVS else None))
+                if o: c["outfit"] = o
+    return scenes
+
 def build(proj, scenes=SCENES, title="Benny Became a Millionaire in Japan (He Didn't)"):
     sh = script.load_show()
+    scenes = dress(json.loads(json.dumps(scenes)))
     research = json.load(open(os.path.join(proj, "research.json")))
     d = {"title": title, "thumbnail_text": "I'M RICH?", "description":
          "Benny changes $1,000 at a Tokyo airport and thinks he's a millionaire. Maya walks him through why the yen is so cheap, why Japan "
          "spent a record ¥27 trillion defending it, and who pays the price for his ramen discount.",
          "characters": [{"id": c["id"], "name": c["name"], "look": c["look"], "voice": c["voice"], "role": c.get("role", ""), "real_person": False} for c in sh["cast"]] + CHARS,
-         "environments": ENVS, "scenes": json.loads(json.dumps(scenes)), "sources": [s["url"] for s in research["sources"]]}
+         "environments": ENVS, "scenes": json.loads(json.dumps(scenes)), "sources": [s["url"] for s in research["sources"]], "show": sh["name"]}
     d = script.apply_show(script.validate(d), sh)
     for c in d["characters"]:                                  # keep the guests' short tags (validate drops unknown fields? keep explicitly)
         g = next((x for x in CHARS if x["id"] == c["id"]), None)

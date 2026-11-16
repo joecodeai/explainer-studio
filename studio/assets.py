@@ -19,6 +19,10 @@ POSE_TEXT = {
     "worried": "worried anxious expression, eyebrows tilted, hands clasped nervously",
     "side_talk": "body and head turned three-quarters to the RIGHT side of the image as if talking to someone standing on the right, one hand gesturing toward them",
     "side_listen": "body and head turned three-quarters to the RIGHT side of the image, listening attentively to someone on the right, arms relaxed, slight smile",
+    "side_view": "standing in full side profile facing the RIGHT side of the image, arms relaxed, neutral expression (turnaround side view)",
+    "back_view": "standing seen from directly behind, back to the viewer, arms relaxed (turnaround back view, face not visible)",
+    "walking": "walking toward the right side of the image mid-stride, natural arm swing, relaxed friendly expression, three-quarter view",
+    "sitting": "sitting relaxed on an invisible chair, three-quarter view facing right, hands resting on the knees, friendly expression",
 }
 
 
@@ -89,8 +93,9 @@ def build_character(c, poses=None, det=None):
             if pose == "neutral":
                 Image.open(base).save(out)
             else:
-                p = imagegen.edit(f"The exact same cartoon character from image 1 — same face, hair, outfit, colours and art style — now "
-                                  f"{POSE_TEXT[pose]}. Mouth closed (small simple closed mouth line). Full body, facing the viewer, isolated on a transparent background, no text.",
+                facing = "" if pose in ("side_view", "back_view", "walking", "sitting", "side_talk", "side_listen") else ", facing the viewer"
+                p = imagegen.edit(f"The exact same character from image 1 — same face, skin tone, hair, outfit, colours and art style — now "
+                                  f"{POSE_TEXT[pose]}. Mouth closed (small simple closed mouth line). Full body{facing}, isolated on a plain white background, no text.",
                                   [base], os.path.join(d, "_tmp"), pose, seed=seed + len(pose))
                 p = _ensure_alpha(p, os.path.join(d, "_tmp"), pose)
                 _crop(Image.open(p).convert("RGBA")).save(out)
@@ -371,3 +376,29 @@ def talk_frames(cid, poses=None, det=None):
             pz.pop("talk", None)
         json.dump(rig, open(rp, "w"), indent=1)
     return made
+
+
+def art_id(cid, outfit=None):
+    """Library id of a character in a given outfit ('benny' or 'benny_o_night')."""
+    return f"{slug(cid)}_o_{slug(outfit)}" if outfit else slug(cid)        # slug-stable (build_character slugs the id)
+
+
+def build_outfit(c, outfit, poses=None):
+    """c: character dict with 'outfits': {name: {'desc', 'tag'}}. Draws the SAME character (base.png of c['id']) in another outfit,
+    then builds the poses for it under library/characters_news/<id>__<outfit>/."""
+    o = (c.get("outfits") or {}).get(outfit)
+    if not o: return build_character(c, poses)
+    aid = art_id(c["id"], outfit); d = os.path.join(C.CHAR_LIB, aid)
+    os.makedirs(os.path.join(d, "poses"), exist_ok=True); os.makedirs(os.path.join(d, "_tmp"), exist_ok=True)
+    base = os.path.join(d, "base.png")
+    if not os.path.exists(base):
+        src = os.path.join(C.CHAR_LIB, slug(c["id"]), "base.png")
+        if not os.path.exists(src): build_character(c, ["neutral"])
+        p = imagegen.edit(f"The exact same character from image 1 — identical face, eyes, hairstyle, hair colour, skin tone, body proportions and "
+                          f"art style — but now wearing a different outfit: {o['desc']}. Full body, standing relaxed, facing the viewer, mouth closed. "
+                          f"Isolated on a plain white background, no text.", [src], os.path.join(d, "_tmp"), "base", 896, 1344,
+                          seed=int(hashlib.md5(aid.encode()).hexdigest()[:7], 16), fixed_size=True)
+        p = _ensure_alpha(p, os.path.join(d, "_tmp"), "base")
+        _crop(Image.open(p).convert("RGBA")).save(base)
+    look = c["look"].split(",")[0] + ", " + o["desc"]
+    return build_character(dict(c, id=aid, look=look), poses)

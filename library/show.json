@@ -1,26 +1,128 @@
 {
  "name": "Benny Figures It Out",
- "style": "vibrant modern 2D anime-inspired character illustration, like a polished animated series character sheet, clean confident dark outlines, warm cel shading with soft highlights, large expressive brown eyes, attractive appealing faces, natural adult proportions, rich warm colour palette (burnt orange, olive green, navy, cream, warm browns)",
+ "style": "vibrant modern 2D anime-inspired character illustration, like a polished animated series character sheet, clean confident dark outlines, warm cel shading with soft highlights, large expressive brown eyes, attractive appealing faces, natural adult proportions, rich saturated colours",
  "cast": [
   {
    "id": "benny",
    "name": "Benny",
    "role": "",
    "real_person": false,
-   "look": "a cheerful young man in his mid twenties with thick curly dark brown hair, big expressive brown eyes, a wide confident grin, burnt-orange zip-up hoodie worn open over a white t-shirt, black crossbody bag strap across his chest, black wristwatch, navy blue cargo trousers, white and orange sneakers",
+   "look": "a cheerful young man in his mid twenties with fair skin with a warm peachy undertone, thick curly dark brown hair, big expressive brown eyes, a wide confident grin, burnt-orange zip-up hoodie worn open over a white t-shirt, black crossbody bag strap across his chest, black wristwatch, navy blue cargo trousers, white and orange sneakers",
    "voice": "A charming young man in his late twenties with a warm, pleasant male voice, friendly and sincere, energetic and very expressive, casual neutral English accent, natural comedic timing.",
    "bio": "late 20s, lives alone in a small flat with his goldfish Dividend, vague office job ('something in operations'). Handsome, charming, confidently wrong, takes everything personally and literally, big plans, short attention span, sincere, never mean. Catchphrase: 'Okay, but how does this affect me?'",
-   "tag": "the young man with curly hair in the orange hoodie"
+   "tag": "the young man with curly hair in the orange hoodie",
+   "outfits": {
+    "evening": {
+     "desc": "dark brown bomber jacket over a grey crew-neck t-shirt, black slim jeans",
+     "tag": "the young man with curly hair in the dark brown bomber jacket"
+    },
+    "smart_casual": {
+     "desc": "navy unstructured blazer over a cream knit polo, charcoal tailored trousers",
+     "tag": "the young man with curly hair in the navy unstructured blazer"
+    },
+    "office": {
+     "desc": "light blue oxford shirt with sleeves rolled, navy chinos, burnt-orange knit tie loosened",
+     "tag": "the young man with curly hair in the light blue oxford shirt with sleeves rolled"
+    },
+    "date_night": {
+     "desc": "charcoal knit polo shirt tucked into cream pleated trousers, brown suede bomber",
+     "tag": "the young man with curly hair in the charcoal knit polo shirt tucked into cream pleated trousers"
+    },
+    "party": {
+     "desc": "burnt-orange short-sleeve camp-collar shirt with a subtle cream wave pattern, black straight trousers",
+     "tag": "the young man with curly hair in the burnt-orange short-sleeve camp-collar shirt with subtle cream wave pattern"
+    },
+    "winter": {
+     "desc": "navy padded puffer jacket over a burnt-orange hoodie, charcoal wool trousers",
+     "tag": "the young man with curly hair in the navy padded puffer jacket"
+    },
+    "summer": {
+     "desc": "cream short-sleeve linen shirt open over a burnt-orange t-shirt, navy shorts",
+     "tag": "the young man with curly hair in the cream short-sleeve linen shirt open"
+    },
+    "rain": {
+     "desc": "navy hooded rain jacket over a cream hoodie, charcoal joggers",
+     "tag": "the young man with curly hair in the navy hooded rain jacket"
+    },
+    "home": {
+     "desc": "faded burnt-orange oversized t-shirt, grey sweatpants",
+     "tag": "the young man with curly hair in the faded burnt-orange oversized t-shirt"
+    },
+    "gym": {
+     "desc": "navy athletic t-shirt, charcoal training shorts, burnt-orange zip-up track jacket tied at the waist",
+     "tag": "the young man with curly hair in the navy athletic t-shirt"
+    },
+    "formal": {
+     "desc": "navy slim two-piece suit, crisp white shirt, burnt-orange silk tie, brown leather belt",
+     "tag": "the young man with curly hair in the navy slim two-piece suit"
+    },
+    "luckycat": {
+     "desc": "white t-shirt with a small cute golden lucky-cat print on the chest (no text), burnt-orange hoodie tied around his waist, navy cargo trousers",
+     "tag": "the young man with curly hair in the white t-shirt with small cute golden lucky-cat print on the chest (no text)"
+    }
+   },
+   "colors": "BRIGHT BURNT-ORANGE hoodie (orange, NOT green), white t-shirt, NAVY BLUE cargo trousers; fair skin with a warm peachy undertone (natural, not pale)"
   },
   {
    "id": "maya",
    "name": "Maya",
    "role": "",
    "real_person": false,
-   "look": "a confident, beautiful young woman in her mid twenties with long voluminous wavy dark brown hair, warm brown eyes, gold hoop earrings, a knowing half-smile, olive green utility shirt-jacket with rolled sleeves over a cream top, high-waisted black wide-leg trousers with a black belt, black wristwatch, white sneakers",
+   "look": "a confident, beautiful young woman in her mid twenties with fair skin with a warm peachy undertone, long voluminous wavy dark brown hair, warm brown eyes, gold hoop earrings, a knowing half-smile, olive green utility shirt-jacket with rolled sleeves over a cream top, high-waisted black wide-leg trousers with a black belt, black wristwatch, white sneakers",
    "voice": "A friendly woman in her late twenties with a smooth, natural, mellow voice, relaxed conversational pace, neutral American accent, easy warmth and a quiet sense of humour, like a favourite podcast host.",
    "bio": "Benny's smart, quick-witted best friend AND the show's narrator: she tells the story in voice-over and corrects Benny on screen. Fond of him, playfully sarcastic, always right about the facts.",
-   "tag": "the woman with long wavy hair in the olive green jacket"
+   "tag": "the woman with long wavy hair in the olive green jacket",
+   "outfits": {
+    "evening": {
+     "desc": "cosy cream cable-knit sweater tucked into high-waisted black wide-leg trousers, long chocolate-brown cardigan coat",
+     "tag": "the woman with long wavy hair in the cosy cream cable-knit sweater tucked into high-waisted black wide-leg trousers"
+    },
+    "smart_casual": {
+     "desc": "chocolate-brown tailored blazer over a cream silk blouse, black straight trousers",
+     "tag": "the woman with long wavy hair in the chocolate-brown tailored blazer"
+    },
+    "office": {
+     "desc": "olive green tailored trouser suit with a cream fitted knit top",
+     "tag": "the woman with long wavy hair in the olive green tailored trouser suit with cream fitted knit top"
+    },
+    "date_night": {
+     "desc": "black satin midi slip dress with a cropped olive green tailored jacket over the shoulders",
+     "tag": "the woman with long wavy hair in the black satin midi slip dress with cropped olive green tailored jacket"
+    },
+    "party": {
+     "desc": "chocolate-brown satin wrap dress, knee length",
+     "tag": "the woman with long wavy hair in the chocolate-brown satin wrap dress"
+    },
+    "winter": {
+     "desc": "long black wool coat over an olive turtleneck, chocolate-brown tailored trousers",
+     "tag": "the woman with long wavy hair in the long black wool coat"
+    },
+    "summer": {
+     "desc": "olive green linen midi shirt-dress with a thin muted gold belt",
+     "tag": "the woman with long wavy hair in the olive green linen midi shirt-dress with thin muted gold belt"
+    },
+    "rain": {
+     "desc": "classic olive trench coat over a cream knit and black trousers",
+     "tag": "the woman with long wavy hair in the classic olive trench coat"
+    },
+    "home": {
+     "desc": "oversized cream knit sweater, olive lounge trousers, hair in a loose bun",
+     "tag": "the woman with long wavy hair in the oversized cream knit sweater"
+    },
+    "gym": {
+     "desc": "olive green sports top and matching leggings, cream zip-up jacket, hair in a high ponytail",
+     "tag": "the woman with long wavy hair in the olive green sports top and matching leggings"
+    },
+    "formal": {
+     "desc": "floor-length olive green satin gown with a muted gold belt, hair styled in soft waves",
+     "tag": "the woman with long wavy hair in the floor-length olive green satin gown with muted gold belt"
+    },
+    "denim": {
+     "desc": "light blue denim jacket over a white fitted t-shirt, high-waisted black wide-leg trousers with a black belt",
+     "tag": "the woman with long wavy hair in the light blue denim jacket"
+    }
+   },
+   "colors": "OLIVE GREEN shirt-jacket, cream top, BLACK trousers; fair skin with a warm peachy undertone (natural, not pale)"
   }
  ],
  "active": true,
