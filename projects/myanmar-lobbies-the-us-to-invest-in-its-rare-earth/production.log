@@ -28,3 +28,68 @@
 [13:02:00] character dr_aris_thorne: 9 poses/expressions
 [13:02:00] character elena_vance: 7 poses/expressions
 [13:02:00] character director_wei_chen: 6 poses/expressions
+[13:07:08] animation QC s03#0 try 1: PASS
+[13:08:03] animation QC s03#1 try 1: PASS
+[13:09:23] animation QC s03#2 try 1: FAIL — identity: character stops looking like their reference art (similarity 0.74 vs 0
+[13:10:17] animation QC s05#0 try 1: PASS
+[13:11:18] animation QC s05#1 try 1: PASS
+[13:12:15] animation QC s05#2 try 1: PASS
+[13:13:06] animation QC s07#0 try 1: PASS
+[13:13:49] animation QC s07#1 try 1: PASS
+[13:14:56] animation QC s07#2 try 1: PASS
+[13:16:04] animation QC s09#0 try 1: PASS
+[13:16:43] animation QC s09#1 try 1: PASS
+[13:19:20] animation QC s09#2 try 1: FAIL — glitch: sudden jump at frames 125-190 (change 5.1 vs typical 0.9)
+[13:20:36] animation QC s11#0 try 1: PASS
+[13:21:12] animation QC s11#1 try 1: PASS
+[13:22:28] animation QC s11#2 try 1: PASS
+[13:23:25] animation QC s13#0 try 1: PASS
+[13:24:06] animation QC s13#1 try 1: FAIL — identity: character stops looking like their reference art (similarity 0.77 vs 0
+[13:24:59] animation QC s13#2 try 1: FAIL — lipsync: lips do not match the speech: mouth moves in the pauses (silent 2.14 v
+[13:26:00] animation QC s16#0 try 1: PASS
+[13:26:51] animation QC s16#1 try 1: PASS
+[13:27:43] animation QC s16#2 try 1: PASS
+[13:28:42] animation QC s18#0 try 1: PASS
+[13:29:18] animation QC s18#1 try 1: PASS
+[13:30:29] animation QC s18#2 try 1: PASS
+[13:31:16] animation QC s20#0 try 1: PASS
+[13:32:21] animation QC s20#1 try 1: FAIL — glitch: sudden jump at frames 141-144 (change 8.2 vs typical 0.5)
+[13:33:47] animation QC s20#2 try 1: PASS
+[13:34:32] animation QC s23#0 try 1: PASS
+[13:35:09] animation QC s23#1 try 1: PASS
+[13:36:06] animation QC s23#2 try 1: PASS
+[13:43:27] animation QC s03#2 try 2: FAIL — identity: character stops looking like their reference art (similarity 0.75 vs 0
+[13:44:35] animation QC s09#2 try 2: PASS
+[13:45:14] animation QC s13#1 try 2: FAIL — identity: character stops looking like their reference art (similarity 0.79 vs 0
+[13:46:13] animation QC s13#2 try 2: FAIL — lipsync: lips do not match the speech: mouth moves in the pauses (silent 1.77 v
+[13:47:22] animation QC s20#1 try 2: PASS
+[13:52:13] animation QC s03#2 try 3: PASS
+[13:52:58] animation QC s13#1 try 3: FAIL — identity: character stops looking like their reference art (similarity 0.78 vs 0
+[13:53:49] animation QC s13#2 try 3: PASS
+[13:53:50] talk: 12 new animated shots; animation QC 29/30 shots clean
+[13:54:14] sound: 16 sfx, 11 music beds, ambience for 5 environments
+[14:05:18] render: 25 scene(s)
+[14:08:31] master: 49 of 49 segments re-encoded
+[14:17:15] master: /home/mundax/Documents/REL/ExplainerStudio/projects/myanmar-lobbies-the-us-to-invest-in-its-rare-earth/myanmar-lobbies-the-us-to-invest-in-its-rare-earth.mp4 (4.9 min)
+[14:17:34] review: /home/mundax/Documents/REL/ExplainerStudio/projects/myanmar-lobbies-the-us-to-invest-in-its-rare-earth/review/REVIEW.md  fails=0 warns=1 sheets=5
+[14:17:36] QC stage 1: frames
+[14:17:46] QC stage 1: transitions
+[14:17:52] QC stage 1: audio
+[14:18:03] QC stage 1: speech
+[14:18:14] QC stage 1: voices
+[14:18:15] QC stage 1: ocr
+[14:19:15] QC stage 1: lipsync
+[14:19:15] QC stage 1: camera
+[14:19:15] QC stage 1: animation
+[14:19:15] QC stage 1: talkshots
+[14:19:15] QC stage 1: ending
+[14:19:15] QC stage 1: grounding (floor + furniture segmentation)
+[14:19:25] QC stage 2: vision-language review
+[14:19:25] QC VLM: 0 character poses
+[14:23:47] QC inspection round 0: 15 findings in 371s
+[14:23:47] QC report: PASS overall 95.4 — {'CRITICAL': 0, 'HIGH': 2, 'MEDIUM': 9, 'LOW': 4}
+[14:23:47] QC report: PASS overall 95.4 — {'CRITICAL': 0, 'HIGH': 2, 'MEDIUM': 9, 'LOW': 4}
+[14:24:05] review: /home/mundax/Documents/REL/ExplainerStudio/projects/myanmar-lobbies-the-us-to-invest-in-its-rare-earth/review/REVIEW.md  fails=0 warns=1 sheets=5
+[14:24:05] QC PASS: {'Visual quality': 97.6, 'Character consistency': 100.0, 'Physical positioning': 98.0, 'Animation quality': 90.4, 'Audio quality': 88.0, 'Lip synchronization': 100.0, 'Subtitle accuracy': 85.3, 'Scene continuity': 100.0, 'Semantic accuracy': 99.5, 'Overall': 95.4} — see /home/mundax/Documents/REL/ExplainerStudio/projects/myanmar-lobbies-the-us-to-invest-in-its-rare-earth/review/QC_REPORT.md
+[14:34:46] reel: try 1: 5 beats (1 soundbites), hook "Simple deal? Let’s see."
+[14:39:58] reel: checks FAIL: MEDIUM narration at 10.5 s plays over a shot of someone talking (s03); MEDIUM narration at 21.3 s plays over a shot of someone talking (s05); CRITICAL judge: whole_story = false — The reel omits the strategic context explaining why

@@ -38,6 +38,8 @@ def voice_profiles(sc):
     for c in sc["characters"]:
         prof[c["id"]] = {"name": c["id"], "design": f"{c['voice']} Speaking naturally in English, expressive and conversational.",
                          "language": "English"}
+    nv = sc.get("narrator_voice")         # a show can make one of its characters the narrator (same voice on and off screen)
+    if nv in prof and nv != "narrator": prof["narrator"] = dict(prof[nv])
     return prof
 
 

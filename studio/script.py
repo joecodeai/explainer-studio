@@ -249,10 +249,111 @@ def validate(d):
     return d
 
 
-def repair(d):
+def repair(d, system=None):
     if not d.get("_problems"):
         return d
-    msg = [{"role": "system", "content": SYSTEM},
+    msg = [{"role": "system", "content": system or SYSTEM},
            {"role": "user", "content": "This storyboard has problems:\n- " + "\n- ".join(d["_problems"][:30]) +
             "\nFix them and return the full corrected JSON.\n" + json.dumps({k: v for k, v in d.items() if not k.startswith('_')})}]
     return validate(llm.chat(msg, SCHEMA, temperature=0.3, max_tokens=30000))
+
+
+# ---------------------------------------------------------------- recurring show (library/show.json)
+import os
+
+
+def load_show():
+    """The channel's recurring show (cast, art style), or None. PLAIN=1 makes a plain explainer instead."""
+    f = os.path.join(C.LIBRARY, "show.json")
+    if os.environ.get("PLAIN") == "1" or not os.path.exists(f): return None
+    sh = json.load(open(f))
+    return sh if sh.get("active", True) else None
+
+
+def show_system(sh):
+    lead = sh["cast"][0]
+    nar = next((c for c in sh["cast"] if c["id"] == sh.get("narrator")), None)
+    cast = "\n".join(f"  - id \"{c['id']}\" ({c['name']}{', ' + c['role'] if c.get('role') else ''}): {c.get('bio', '')}" for c in sh["cast"])
+    scenes = SYSTEM[SYSTEM.index("SCENES (kinds"):SYSTEM.index("CHARACTERS (3-5)")]
+    return f"""You write and storyboard episodes of "{sh['name']}", an animated YouTube comedy-explainer series.
+{lead['name']} is a lovable, confidently clueless guy. Every episode something real (a news story, money, career, dating, social life,
+health, tech) hits HIS life; he gets it hilariously wrong; {nar['name'] if nar else 'the NARRATOR'} (dry, warm, witty, has known {lead['name']} far
+too long) explains how it really works with real facts, maps and charts. {lead['name']} learns — and so does the viewer. Funny AND informative.
+
+RECURRING CAST (use these exact ids; do not redefine their look or voice):
+{cast}
+  - "narrator": {(nar['name'] + "'s voice-over — " + nar['name'] + " tells the story to the viewer (same voice as on screen) and is the straight man who corrects " + lead['name']) if nar else "off-screen voice, the straight man"} ("No, {lead['name']}." / "That's... not what that means.").
+    {("Use speaker 'narrator' for " + nar['name'] + "'s voice-over on maps, charts, hero shots and title cards; use speaker '" + nar['id'] + "' when she is ON SCREEN talking with " + lead['name'] + " in stage scenes. Put " + nar['name'] + " and " + lead['name'] + " on stage together in most stage scenes: he gets it wrong, she corrects him, he reacts. Their banter is the heart of the show — friendly, playful, never mean.") if nar else ""}
+Add 0-2 GUEST characters per episode only when the story needs them (a landlord, a boss, a date, a banker, an expert).
+
+FACTS
+- Use ONLY facts in the provided sources. Never invent numbers, quotes, names or dates. Attribute claims ("according to ...").
+- {lead['name']}'s mistakes are the joke — the facts are never wrong. When he says something false, the narrator corrects it on screen.
+- Never put real people on screen as characters and never invent quotes from real people.
+
+EPISODE STRUCTURE
+1. COLD OPEN (first 6 seconds — most viewers leave here): a "hero" or "stage" scene. Narrator line 1 (emotion "excited", max ~16 words)
+   states the funny situation: {lead['name']} did something dumb because of the topic ("{lead['name']} just cancelled his Japan trip
+   because he heard the yen collapsed."). Line 2: a short deadpan narrator reaction that hints at the real fact (emotion "sarcastic",
+   max ~14 words): "The yen collapsing is the best thing that ever happened to his holiday."
+2. {lead['name']} says his catchphrase early (scene 2 or 3): "Okay, but how does this affect *me*?" — then the narrator promises what we'll learn.
+3. {lead['name']}'s WRONG THEORY: a short funny stage scene showing the misconception viewers may share.
+4. EXPLAIN in 3-4 chunks (map / chart / hero / stage). After each chunk {lead['name']} reacts or asks the next "dumb" question —
+   which is really the viewer's question. Keep facts exact and concrete (numbers from the sources).
+5. HOW IT REALLY AFFECTS {lead['name'].upper()}: his wallet, job, rent, dating life or plans — concrete and relatable.
+6. {lead['name']} TRIES TO USE THE LESSON and gets it 80% right — the payoff joke.
+7. FINAL scene: a narrator "title_card" with the one-sentence takeaway for the viewer, then {lead['name']} asks the audience one
+   question for the comments (a character line is allowed here: "Would you have cancelled the trip? Tell me in the comments."),
+   then the narrator signs off ("Subscribe — {lead['name']} has a lot more to learn.").
+
+HUMOUR
+- Character comedy, not stand-up: the joke is {lead['name']}'s logic, reactions and over-confidence, and the narrator's understatement.
+- A {lead['name']} reaction or exchange every ~20-30 s. Jokes must sound spontaneous and conversational, never a written punchline.
+  Vary them. Never reuse stock phrases. One joke at a time.
+- {lead['name']} is dumb but never cruel, sexist or offensive; he is likeable and he genuinely learns.
+- Never joke about deaths, victims, tragedies, illness or ordinary people's suffering. If the topic has a tragic side, keep {lead['name']}
+  out of it and let the narrator state it plainly.
+- Voice: give every line a real emotion — {lead['name']} is very expressive (excited, confused, surprised, worried, happy); the narrator
+  is "excited" for the hook, "sarcastic" for dry asides, "neutral" for explaining. Vary the tone; never monotonous.
+- About 155 spoken words per minute; a visual change at EVERY new idea; {lead['name']} appears in at least half of the stage scenes.
+
+{scenes}
+GUEST CHARACTERS (only if needed)
+- id snake_case; look = description for an illustrator, adult realistic proportions (age, hair, face, clothes, colours, a prop);
+  role = short on-screen job title; voice = distinct voice description (gender, age, accent, pitch, pace, energy), clearly different
+  from the recurring cast.
+- In "characters" list the recurring cast members who appear (just id + name) plus any guests.
+
+Return ONE JSON object only.
+"""
+
+
+def apply_show(d, sh):
+    """Force the recurring cast's look/voice/name and the show's art style onto the storyboard."""
+    fixed = {c["id"]: c for c in sh["cast"]}
+    used = {ln["speaker"] for s in d["scenes"] for ln in s["lines"]} | {c["char"] for s in d["scenes"] for c in s["cast"]}
+    chars = [c for c in d["characters"] if c["id"] not in fixed]
+    for cid, c in fixed.items():
+        if cid in used or cid == sh["cast"][0]["id"]:
+            chars.insert(0, {k: c[k] for k in ("id", "name", "look", "voice", "role", "real_person")})
+    for c in chars: c["style"] = sh["style"]
+    for e in d.get("environments", []):
+        if sh.get("bg_style"): e["style"] = sh["bg_style"]
+    d["characters"] = chars
+    d["show"] = sh["name"]
+    if sh.get("narrator"):
+        d["narrator_voice"] = sh["narrator"]
+        if all(c["id"] != sh["narrator"] for c in chars):
+            c = fixed[sh["narrator"]]; chars.append({k: c[k] for k in ("id", "name", "look", "voice", "role", "real_person")} | {"style": sh["style"]})
+    return d
+
+
+def write_episode(pack, minutes, sh):
+    msg = [{"role": "system", "content": show_system(sh)}, {"role": "user", "content": _brief(pack, minutes)}]
+    raw = llm.chat(msg, SCHEMA, temperature=0.85, max_tokens=30000)
+    ids = {c["id"] for c in sh["cast"]}
+    raw.setdefault("characters", [])
+    have = {_id(c.get("id") or c.get("name", "")) for c in raw["characters"] if isinstance(c, dict)}
+    raw["characters"] += [{"id": c["id"], "name": c["name"], "look": c["look"], "voice": c["voice"]} for c in sh["cast"] if c["id"] not in have]
+    d = validate(raw)
+    return apply_show(d, sh)

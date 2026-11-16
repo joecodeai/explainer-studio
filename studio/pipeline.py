@@ -39,12 +39,14 @@ def stage_script(proj, topic, minutes):
     log(proj, f"research: {len(res['sources'])} sources")
     sc = _j(f"{proj}/script.json")
     if not sc:
-        sc = script.write(res, minutes)
+        sh = script.load_show()      # recurring show (library/show.json); PLAIN=1 for a plain explainer
+        sc = script.write_episode(res, minutes, sh) if sh else script.write(res, minutes)
         _j(f"{proj}/script.draft.json", sc)
         for _ in range(1):
             if not sc["_problems"]: break
             log(proj, f"script problems -> repairing: {sc['_problems'][:5]}")
-            sc = script.repair(sc)
+            sc = script.repair(sc, script.show_system(sh) if sh else None)
+            if sh: sc = script.apply_show(sc, sh)
         _j(f"{proj}/script.json", sc)
     if "seo" not in sc:
         try:

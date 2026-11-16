@@ -15,7 +15,7 @@ POSE_TEXT = {
     "thinking": "one hand on the chin, thinking, eyes looking up",
     "talk": "one hand open in a natural explaining gesture, friendly expression",
     "happy": "big happy grin, relaxed open arms, cheerful",
-    "surprised": "shocked surprised face, eyebrows raised high, wide eyes, hands up near the cheeks",
+    "surprised": "pleasantly surprised, eyebrows slightly raised, eyes a little wider than normal, lips slightly parted, hands relaxed at chest height, still looking attractive and composed (subtle, not shocked)",
     "worried": "worried anxious expression, eyebrows tilted, hands clasped nervously",
     "side_talk": "body and head turned three-quarters to the RIGHT side of the image as if talking to someone standing on the right, one hand gesturing toward them",
     "side_listen": "body and head turned three-quarters to the RIGHT side of the image, listening attentively to someone on the right, arms relaxed, slight smile",
@@ -79,7 +79,7 @@ def build_character(c, poses=None, det=None):
     base = os.path.join(d, "base.png")
     seed = int(hashlib.md5(cid.encode()).hexdigest()[:7], 16)
     if not os.path.exists(base):
-        p = imagegen.t2i(f"{C.ART_STYLE}. {c['look']}. {POSE_TEXT['neutral']}. {C.CHAR_SUFFIX}", os.path.join(d, "_tmp"), "base", 896, 1344, seed=seed)
+        p = imagegen.t2i(f"{c.get('style') or C.ART_STYLE}. {c['look']}. {POSE_TEXT['neutral']}. {C.CHAR_SUFFIX}", os.path.join(d, "_tmp"), "base", 896, 1344, seed=seed)
         p = _ensure_alpha(p, os.path.join(d, "_tmp"), "base")
         _crop(Image.open(p).convert("RGBA")).save(base)
     for pose in poses:
@@ -121,10 +121,10 @@ def build_character(c, poses=None, det=None):
 def build_background(b):
     """b = {'id','prompt'}; cached by prompt hash so the same location is reused across videos."""
     if b.get("bg_file") and os.path.exists(b["bg_file"]): return b["bg_file"]      # locally repaired version (studio.repaint)
-    key = slug(b["id"]) + "_" + hashlib.md5(b["prompt"].encode()).hexdigest()[:6]
+    key = slug(b["id"]) + "_" + hashlib.md5((b["prompt"] + (b.get("style") or "")).encode()).hexdigest()[:6]   # a show's own style -> its own file
     out = os.path.join(C.BG_LIB, key + ".png")
     if not os.path.exists(out):
-        p = imagegen.t2i(f"{C.BG_STYLE}. {b['prompt']}", os.path.join(C.BG_LIB, "_tmp"), key, 1920, 1088)
+        p = imagegen.t2i(f"{b.get('style') or C.BG_STYLE}. {b['prompt']}", os.path.join(C.BG_LIB, "_tmp"), key, 1920, 1088)
         Image.open(p).convert("RGB").resize((C.W, C.H), Image.LANCZOS).save(out)
     return out
 
