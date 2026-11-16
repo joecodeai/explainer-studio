@@ -1,0 +1,18 @@
+[
+ {"spk":"benny","emotion":"excited","text":"Maya! Maya. Okay, are you sitting down? Because I'm rich.","pause_after":0.6,"cam":"wide",
+  "act":"the young man in the orange hoodie on the left hurries in toward the woman, beaming, holding up his phone","react":"the woman on the right turns to him and slowly raises one eyebrow, mouth closed"},
+ {"spk":"maya","emotion":"sarcastic","text":"I'm standing, Benny.","cam":"cu_maya",
+  "act":"the woman on the right answers flatly with a tiny dry smile, hands still","react":"the man on the left keeps beaming, mouth closed"},
+ {"spk":"benny","emotion":"excited","text":"In Japan, I'm basically a millionaire! I changed a thousand dollars, and they gave me a hundred and fifty-nine thousand yen. Six figures!","cam":"wide",
+  "act":"the man on the left talks excitedly to the woman, showing her his phone screen","react":"the woman on the right listens and slowly folds her arms, mouth closed"},
+ {"spk":"maya","emotion":"sarcastic","text":"Okay... that's not really how money works.","cam":"cu_maya",
+  "act":"the woman on the right pauses, then says it calmly with a patient, amused look","react":"the man on the left listens, still smiling, mouth closed"},
+ {"spk":"benny","emotion":"confused","text":"It's six digits. I counted them. Twice.","pause_after":0.8,"cam":"cu_benny",
+  "act":"the man on the left frowns slightly, puzzled, and explains seriously, holding his phone","react":"the woman on the right just looks at him in silence, arms folded, mouth closed"},
+ {"spk":"maya","emotion":"neutral","text":"It's the same thousand dollars, Benny. It just comes in smaller pieces.","cam":"wide",
+  "act":"the woman on the right explains gently with a warm half-smile, one small hand gesture","react":"the man on the left listens, his smile slowly fading, mouth closed"},
+ {"spk":"benny","emotion":"worried","text":"...Smaller pieces.","pause_after":1.0,"cam":"cu_benny",
+  "act":"the man on the left looks down at his phone, deflated, and says it quietly","react":"the woman on the right watches him, holding back a smile, mouth closed"},
+ {"spk":"benny","emotion":"confused","text":"Okay. But how does this affect me?","cam":"wide",
+  "act":"the man on the left looks up at the woman and asks hopefully","react":"the woman on the right smiles and unfolds her arms, mouth closed"}
+]
