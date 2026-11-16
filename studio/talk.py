@@ -3,17 +3,20 @@
 import os, random, subprocess
 from . import comfy, config as C, workflows as W
 
+NEG_SCENE = ("blurry, distorted face, extra limbs, extra fingers, extra hands, deformed hands, fused fingers, text, letters, captions, "
+             "subtitles, watermark, logo, photorealistic, live action, 3d render, jitter, flicker, morphing, exaggerated expressions, "
+             "camera shake, zoom in, zoom out, push in, dolly, camera movement, pan, frantic hand waving, both people talking at once")
 NEG = ("blurry, distorted face, extra limbs, extra fingers, text, letters, captions, subtitles, watermark, logo, photorealistic, "
        "live action, 3d render, jitter, flicker, morphing, cartoon, childish, exaggerated expressions, camera shake")
 
 
-def clip(image, audio, prompt, out_dir, name, seconds, fps=24, w=1280, h=704, seed=None):
+def clip(image, audio, prompt, out_dir, name, seconds, fps=24, w=1280, h=704, seed=None, neg=None):
     """image: composed still (character in the scene); audio: wav of exactly this line. Returns mp4 path (video only is used)."""
     api = W.load("ltx_i2v")
     seed = seed if seed is not None else random.randint(0, 2**31)
     n = lambda i: f"398:{i}"
     api[n(364)]["inputs"]["text"] = prompt          # our prompt as-is (bypasses the LLM prompt-rewrite switch)
-    api[n(373)]["inputs"]["text"] = NEG
+    api[n(373)]["inputs"]["text"] = neg or NEG
     api[n(362)]["inputs"]["value"] = max(1, int(-(-seconds // 1)))   # whole seconds, rounded up
     api[n(361)]["inputs"]["value"] = int(fps)
     api[n(372)]["inputs"]["value"] = int(w)

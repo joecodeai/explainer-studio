@@ -57,3 +57,4 @@ projects/*/review/sheets/
 *.swp
 .idea/
 .vscode/
+.venv-tts/

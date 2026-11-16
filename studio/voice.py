@@ -2,7 +2,7 @@
 voice clean-up + loudness matching, tight scene assembly, word timings and per-line visemes."""
 import glob, gc, hashlib, json, os, re, subprocess
 import numpy as np, soundfile as sf
-from . import config as C
+from . import config as C, pace
 
 PRON_FILE = os.path.join(C.VOICE_LIB, "pronunciations.json")
 REF_TEXT = ("Okay, here's the thing nobody tells you. It's not the big decisions that get you, it's the small ones, "
@@ -129,7 +129,7 @@ def check_library(profiles):
 
 
 def _line_key(speaker, text):
-    return hashlib.md5(f"{speaker}|{text}".encode()).hexdigest()[:10]
+    return hashlib.md5((f"{speaker}|{text}" + ("|cb" if ENGINE == "chatterbox" else "")).encode()).hexdigest()[:10]
 
 
 def line_pitch_wrong(sc, out_dir, profiles, n=5):
@@ -145,6 +145,44 @@ def line_pitch_wrong(sc, out_dir, profiles, n=5):
             if cache[key]: per.setdefault(ln["speaker"], []).append(cache[key])
     json.dump(cache, open(cache_f, "w"))
     return [k for k, v in per.items() if k in profiles and not gender_ok(gender(profiles[k]["design"]), float(np.median(v)), tol=10)]
+
+
+ENGINE = os.environ.get("TTS_ENGINE") or ("chatterbox" if os.path.exists(os.path.join(C.ROOT, ".venv-tts", "bin", "python")) else "qwen")
+
+
+def _chatterbox(todo, profiles):
+    """Every line cloned from the speaker's ONE reference (fixed identity); emotion only changes delivery. Runs in .venv-tts."""
+    import subprocess, tempfile
+    jobs, outs = [], []
+    for spk, items in todo.items():
+        ref = os.path.join(C.VOICE_LIB, profiles[spk]["name"], "reference.wav")
+        for ln, f in items:
+            jobs.append({"text": _pron(ln["text"].replace("*", "")), "ref": ref, "emotion": ln.get("emotion", "neutral"), "out": f + ".cb.wav"})
+            outs.append(f)
+    jf = tempfile.NamedTemporaryFile("w", suffix=".json", delete=False); json.dump(jobs, jf); jf.close()
+    subprocess.run([os.path.join(C.ROOT, ".venv-tts", "bin", "python"), os.path.join(C.ROOT, "studio", "tts_cb.py"), jf.name], check=True)
+    for j, f in zip(jobs, outs):
+        w, sr = sf.read(j["out"], dtype="float32")
+        raw = f + ".raw.wav"; sf.write(raw, _trim(w, sr), sr); _clean(raw, f); os.remove(raw); os.remove(j["out"])
+
+
+def _pace_lines(files, texts):
+    """Re-time every new line: breaths between sentences, beats on '...', no random pauses inside phrases (studio/pace.py)."""
+    from faster_whisper import WhisperModel
+    import torch, torchaudio
+    try: m = WhisperModel("small.en", device="cuda", compute_type="float16")
+    except Exception: m = WhisperModel("small.en", device="cpu", compute_type="int8")      # GPU busy (e.g. LTX running)
+    for f in files:
+        a, sr = sf.read(f, dtype="float32")
+        a16 = torchaudio.functional.resample(torch.from_numpy(a), sr, 16000).numpy()
+        segs, _ = m.transcribe(a16, word_timestamps=True, initial_prompt=texts[f], beam_size=5)
+        asr = [(w.word, w.start, w.end) for seg in segs for w in seg.words]
+        sw = texts[f].replace("*", "").split()
+        if not asr or not sw: continue
+        lw = align_words(sw, asr, len(a) / sr)
+        sf.write(f, pace.pace(a, sr, lw), sr)
+        for c in glob.glob(f.replace(".wav", ".words*.json")): os.remove(c)
+    del m; gc.collect()
 
 
 def narrate(sc, out_dir, _round=0):
@@ -172,7 +210,10 @@ def narrate(sc, out_dir, _round=0):
         for ln in s["lines"]:
             f = os.path.join(out_dir, "lines", f"{_line_key(ln['speaker'], ln['text'])}.wav")
             if not os.path.exists(f): todo.setdefault(ln["speaker"], []).append((ln, f))
-    if todo:
+    if todo and ENGINE == "chatterbox":
+        ensure_voices({k: profiles[k] for k in profiles})
+        _chatterbox(todo, profiles)
+    elif todo:
         ensure_voices({k: profiles[k] for k in profiles})
         import torch
         from qwen_tts import Qwen3TTSModel
@@ -195,6 +236,8 @@ def narrate(sc, out_dir, _round=0):
                 for (ln, f), w in zip(batch, wavs):
                     raw = f + ".raw.wav"; sf.write(raw, _trim(w, sr), sr); _clean(raw, f); os.remove(raw)
         del m; gc.collect(); torch.cuda.empty_cache()
+    if todo:
+        _pace_lines([f for items in todo.values() for _, f in items], {f: ln["text"] for items in todo.values() for ln, f in items})
         if _round < 1 and line_pitch_wrong(sc, out_dir, profiles):
             return narrate(sc, out_dir, _round + 1)
     # assemble scenes
@@ -203,12 +246,11 @@ def narrate(sc, out_dir, _round=0):
         for ln in s["lines"]:
             a, sr = sf.read(os.path.join(out_dir, "lines", f"{_line_key(ln['speaker'], ln['text'])}.wav"), dtype="float32")
             if prev is not None:
-                g = GAP_SAME if prev == ln["speaker"] else GAP
-                if ln["text"].lstrip().startswith(("Wait", "But", "No", "Hold")): g = 0.04      # interruptions land fast
-                parts.append(np.zeros(int(sr * g), np.float32)); t += g
+                g = pace.gap_between(prev, ln)          # conversational timing: questions, interruptions, joke beats
+                parts.append(np.random.default_rng(len(parts)).normal(0, 2e-4, int(sr * g)).astype(np.float32)); t += g
             timing.append({"speaker": ln["speaker"], "start": round(t, 3), "end": round(t + len(a) / sr, 3), "text": ln["text"],
                            "key": _line_key(ln["speaker"], ln["text"])})
-            parts.append(a); t += len(a) / sr; prev = ln["speaker"]
+            parts.append(a); t += len(a) / sr; prev = ln
         sf.write(os.path.join(out_dir, f"{s['id']}.wav"), np.concatenate(parts) if parts else np.zeros(4800, np.float32), 48000)
         json.dump(timing, open(os.path.join(out_dir, f"{s['id']}.lines.json"), "w"), indent=1)
         s["_dur"] = t

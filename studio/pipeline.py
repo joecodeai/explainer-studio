@@ -169,6 +169,12 @@ def _still(bg, chars, out, top=None):
     B.save(out); return out
 
 
+def _talk_style(c):
+    """Style words for the LTX prompt: the show's warm animated look, or the default muted newsroom look."""
+    return ("Polished 2D animated-series illustration style, warm friendly colours, attractive expressive faces" if c.get("style")
+            else "Clean modern editorial illustration style, muted colours")
+
+
 def stage_talk(proj, sc):
     """Every stage scene becomes a run of animated shots: the speaker alone (interview framing) animated to their REAL voice
     line, or the whole cast listening quietly (silent audio) while the narrator talks. Cached by content hash.
@@ -203,15 +209,15 @@ def stage_talk(proj, sc):
                 look = chars[sp]["look"].split(".")[0]
                 prompt = (f"{look}. In {place}, the person speaks {src.get('emotion', 'calmly')} and naturally to the viewer, natural hand "
                           f"gestures, subtle head movement, blinking, lips moving exactly in sync with the speech. Locked-off tripod camera that never "
-                          f"moves or zooms, waist-up medium shot, framing stays exactly the same. Clean modern editorial illustration style, muted colours, consistent face and clothes, "
+                          f"moves or zooms, waist-up medium shot, framing stays exactly the same. {_talk_style(chars[sp])}, consistent face and clothes, "
                           f"correct anatomy, five fingers on each hand.")
                 silent, refs, desc = False, [pose_img], f"one person ({look}) speaking to the viewer in {place}"
             else:
                 xs = [0.5] if len(cast) == 1 else [0.3, 0.7] if len(cast) == 2 else [0.22, 0.5, 0.78]
                 people = [(_pose_img(c["char"], "neutral"), xs[k % len(xs)], 0.74) for k, c in enumerate(cast[:3])]
                 prompt = (f"In {place}, the people stand and listen quietly, mouths closed, small natural idle movements, breathing, "
-                          f"occasional glance and nod. Nobody speaks. Locked-off tripod camera that never moves or zooms, wide shot. Clean modern editorial "
-                          f"illustration style, muted colours, correct anatomy.")
+                          f"occasional glance and nod. Nobody speaks. Locked-off tripod camera that never moves or zooms, wide shot. "
+                          f"{_talk_style(chars.get(cast[0]['char'], {}) if cast else {})}, correct anatomy.")
                 silent, refs, desc = True, [p[0] for p in people], f"{len(people)} people standing and listening quietly in {place}"
             if not people: continue
             still = _still(bg, people, f"{proj}/work/talk/{s['id']}_{i}.png", top=None if silent else 0.07)
@@ -414,7 +420,11 @@ def build_props(proj, sc):
         man = _j(f"{proj}/talk/{s['id']}.json")
         if s["kind"] == "stage" and man and all(os.path.exists(x["video"]) for x in man):
             shots = [{"video": _stage_file(proj, x["video"], "talk"), "start": x["start"], "end": x["end"]} for x in man]
-        if s["kind"] == "title_card": chapter += 1
+        # "PART n" only on real chapter cards: never on the closing card(s) or sign-offs, and never in a show episode (sketch, not a lecture)
+        closing = s is sc["scenes"][-1] or bool(ending.SIGNOFF.search(s.get("narration", ""))) or \
+            (s.get("title_text") or "").lower().strip() in ("the takeaway", "takeaway", "see you next time", "thanks for watching")
+        if s["kind"] == "title_card" and not closing and not sc.get("show"): chapter += 1
+        shown_chapter = chapter if s["kind"] == "title_card" and not closing and not sc.get("show") else 0
         beats = [{"atMs": _when(words, b["at_word"], 400) if b["at_word"] != "start" else 300, "type": b["type"], "text": b["text"]} for b in s["beats"]]
         # each beat gets >= 1.1 s on screen before the next replaces it (no flashing text); drop ones that no longer fit
         beats.sort(key=lambda b: b["atMs"]); spaced = []
@@ -439,7 +449,7 @@ def build_props(proj, sc):
                       "names": names, "introduce": intro, "sources": srcs, "brand": C.BRAND,
                       "background": bg if kind != "title_card" else last_bg, "cast": cast if kind == "stage" and not shots else [], "shots": shots,
                       "lines": lines, "words": words, "beats": beats,
-                      "titleText": s.get("title_text") or sc["title"], "chapter": chapter, "map": mp,
+                      "titleText": s.get("title_text") or sc["title"], "chapter": shown_chapter, "map": mp,
                       "chart": s["chart"] if kind == "chart" else None, "heroVideo": hv, "heroRate": rate,
                       "accent": ACCENTS[chapter % len(ACCENTS)], "speakerColors": colors,
                       "_transition": s["transition"], "_overlap": overlap})
