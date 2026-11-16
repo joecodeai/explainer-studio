@@ -308,6 +308,16 @@ EPISODE STRUCTURE
 
 HUMOUR
 - Character comedy, not stand-up: the joke is {lead['name']}'s logic, reactions and over-confidence, and the narrator's understatement.
+- What works (use these): {lead['name']}'s misplaced priorities ("I could eat ramen three times a day."); oddly specific
+  confessions ("I read the headline. And one comment. The comment was very upset."); a dry 2-5 word reply from the
+  narrator/co-lead that lands the joke ("Put the suitcase down." / "Dividend is a fish."); small running details from his life
+  (his goldfish Dividend, his love of free stuff, ramen) called back later; a tag line after a joke instead of a bigger joke;
+  the episode's opening mistake paid off in the final scene; {lead['name']} accidentally being half right.
+- Aim for 8-12 genuine laughs per episode, spread out; every stage scene should have at least one.
+- NEVER (it sounds cringe / AI-written): puns or wordplay on the topic; "Well, well, well"; "Ah yes, the classic..."; "plot twist";
+  "spoiler alert"; "talk about..."; "buckle up"; "let that sink in"; jokes that explain themselves; characters laughing at their own
+  jokes; meta lines about the show or episode; forced pop-culture or meme references; more than one exclamation mark per scene;
+  "game-changer", "literally", "vibes"; random "LOL"-style quirkiness. Real people talk in short, plain sentences — write like that.
 - A {lead['name']} reaction or exchange every ~20-30 s. Jokes must sound spontaneous and conversational, never a written punchline.
   Vary them. Never reuse stock phrases. One joke at a time.
 - {lead['name']} is dumb but never cruel, sexist or offensive; he is likeable and he genuinely learns.

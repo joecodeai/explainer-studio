@@ -80,14 +80,14 @@
     },
     {
      "speaker": "benny",
-     "text": "Maya, it's at *one-sixty*. The whole country's going down, and I'm not going down with it.",
+     "text": "Maya, it's at *one-sixty*. I read it. Well... I read the headline. And one comment. The comment was very upset.",
      "emotion": "worried",
      "pose": "worried",
      "shot": "closeup"
     },
     {
      "speaker": "maya",
-     "text": "One-sixty *yen*, Benny. Per dollar. Sit down.",
+     "text": "One-sixty *yen*, Benny. Per dollar. Put the suitcase down.",
      "emotion": "sarcastic",
      "pose": "shrug",
      "shot": "two_shot"
@@ -109,7 +109,7 @@
     }
    ],
    "id": "s01",
-   "narration": "Benny just *cancelled* his trip to Japan, because he read that the yen collapsed. Which is honestly the *best thing* that's ever happened to his holiday. Maya, it's at *one-sixty*. The whole country's going down, and I'm not going down with it. One-sixty *yen*, Benny. Per dollar. Sit down.",
+   "narration": "Benny just *cancelled* his trip to Japan, because he read that the yen collapsed. Which is honestly the *best thing* that's ever happened to his holiday. Maya, it's at *one-sixty*. I read it. Well... I read the headline. And one comment. The comment was very upset. One-sixty *yen*, Benny. Per dollar. Put the suitcase down.",
    "title_text": "",
    "map": {
     "label": "",
@@ -326,6 +326,13 @@
      "emotion": "sarcastic",
      "pose": "shrug",
      "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "I've never been on the *right side* of a collapse before.",
+     "emotion": "happy",
+     "pose": "happy",
+     "shot": "closeup"
     }
    ],
    "beats": [
@@ -339,7 +346,7 @@
    "music": "comedic",
    "sfx": [],
    "id": "s05",
-   "narration": "So the yen got *weaker*... And your dollar got *stronger*. Every dollar you take to Japan turns into more yen. Wait. So the collapse... is a *sale*? For you? Basically.",
+   "narration": "So the yen got *weaker*... And your dollar got *stronger*. Every dollar you take to Japan turns into more yen. Wait. So the collapse... is a *sale*? For you? Basically. I've never been on the *right side* of a collapse before.",
    "title_text": "",
    "map": {
     "label": "",
@@ -432,9 +439,9 @@
     },
     {
      "speaker": "benny",
-     "text": "Yeah, but in *Japan*.",
-     "emotion": "happy",
-     "pose": "happy",
+     "text": "Yeah, but *there*, it's culture.",
+     "emotion": "confident",
+     "pose": "point",
      "shot": "two_shot"
     }
    ],
@@ -443,7 +450,7 @@
    "music": "comedic",
    "sfx": [],
    "id": "s07",
-   "narration": "Six dollars! I could eat ramen *three times a day*. You already do that here. Yeah, but in *Japan*.",
+   "narration": "Six dollars! I could eat ramen *three times a day*. You already do that here. Yeah, but *there*, it's culture.",
    "title_text": "",
    "map": {
     "label": "",
@@ -638,6 +645,20 @@
      "emotion": "sarcastic",
      "pose": "shrug",
      "shot": "closeup"
+    },
+    {
+     "speaker": "maya",
+     "text": "You changed banks for a free pen.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "It was a *really* good pen.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "closeup"
     }
    ],
    "beats": [],
@@ -645,7 +666,7 @@
    "music": "upbeat",
    "sfx": [],
    "id": "s11",
-   "narration": "So everyone's just... buying *dollars*? Investors are. Higher rates, better returns. Money goes where it's *treated best*. Honestly? Same.",
+   "narration": "So everyone's just... buying *dollars*? Investors are. Higher rates, better returns. Money goes where it's *treated best*. Honestly? Same. You changed banks for a free pen. It was a *really* good pen.",
    "title_text": "",
    "map": {
     "label": "",
@@ -669,7 +690,7 @@
    "lines": [
     {
      "speaker": "narrator",
-     "text": "Of course, Tokyo isn't thrilled about any of this.",
+     "text": "Tokyo, meanwhile, is *not* enjoying the sale.",
      "emotion": "sarcastic",
      "pose": "shrug",
      "shot": "two_shot"
@@ -680,7 +701,7 @@
    "id": "s12",
    "environment": "",
    "cast": [],
-   "narration": "Of course, Tokyo isn't thrilled about any of this.",
+   "narration": "Tokyo, meanwhile, is *not* enjoying the sale.",
    "beats": [],
    "map": {
     "label": "",
@@ -827,6 +848,20 @@
      "emotion": "neutral",
      "pose": "side_talk",
      "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "Dividend says change it all *now*.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "Dividend is a *fish*.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup"
     }
    ],
    "beats": [],
@@ -834,7 +869,7 @@
    "music": "tense",
    "sfx": [],
    "id": "s15",
-   "narration": "Twenty-seven *trillion*? And it still went back down? Markets. They don't really do *thank you*. Wait. So if Japan steps in again, my *sale* ends? The yen could bounce back for a while, yes. And nobody knows when. Not even Tokyo.",
+   "narration": "Twenty-seven *trillion*? And it still went back down? Markets. They don't really do *thank you*. Wait. So if Japan steps in again, my *sale* ends? The yen could bounce back for a while, yes. And nobody knows when. Not even Tokyo. Dividend says change it all *now*. Dividend is a *fish*.",
    "title_text": "",
    "map": {
     "label": "",
@@ -1000,6 +1035,13 @@
      "emotion": "sarcastic",
      "pose": "shrug",
      "shot": "closeup"
+    },
+    {
+     "speaker": "benny",
+     "text": "But the ramen's cheaper, so I'm basically even. In about... two hundred bowls.",
+     "emotion": "neutral",
+     "pose": "thinking",
+     "shot": "two_shot"
     }
    ],
    "beats": [],
@@ -1012,7 +1054,7 @@
     }
    ],
    "id": "s18",
-   "narration": "Maya. I *un-cancelled* it. Wait, you can do that? No. I booked a *new* trip. It cost more than the old one. Of course it did.",
+   "narration": "Maya. I *un-cancelled* it. Wait, you can do that? No. I booked a *new* trip. It cost more than the old one. Of course it did. But the ramen's cheaper, so I'm basically even. In about... two hundred bowls.",
    "title_text": "",
    "map": {
     "label": "",

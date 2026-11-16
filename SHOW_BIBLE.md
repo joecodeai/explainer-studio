@@ -65,3 +65,21 @@
 ## Titles / thumbnails
 - **Titles:** Benny's situation + curiosity, e.g. "Benny Cancelled Japan Because of the Yen (Big Mistake)" or "Why Benny Keeps Getting Ghosted (It's Science)".
 - **Thumbnail:** Benny's huge expressive face + one object + max 3 words.
+
+## Comedy rules (what makes it funny without being cringe)
+- **What works:**
+  - Benny's misplaced priorities ("I could eat ramen three times a day").
+  - Oddly specific confessions ("I read the headline. And one comment. The comment was very upset").
+  - Maya's dry 2–5 word replies ("Put the suitcase down." / "Dividend is a fish.").
+  - Small running details from his life (Dividend the goldfish, free stuff, ramen), called back later.
+  - A small tag after a joke instead of a bigger joke.
+  - The opening mistake paid off at the end.
+- **Aim:** 8–12 real laughs per episode, at least one in every scene with Benny and Maya.
+- **Never:**
+  - puns or wordplay;
+  - "well, well, well", "plot twist", "buckle up", "let that sink in", "game-changer", "vibes";
+  - jokes that explain themselves;
+  - meta lines about the show;
+  - forced memes or pop-culture references;
+  - lots of exclamation marks.
+- **Dialogue:** short, plain sentences, the way real people talk.
