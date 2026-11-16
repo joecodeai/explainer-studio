@@ -179,8 +179,10 @@ def _talk_style(c):
 
 # ---------------------------------------------------------------- 6b: conversation staging (show episodes)
 CONV_W, CONV_H = 1280, 704
-CONV_CROP = (83, 20, 1114, 627)                 # steady medium two-shot window in reference coordinates
-CU_WIN = {"left": (0, 1120), "right": (800, 1120), "center": (400, 1120)}     # closeup windows in the 1920 frame (exclude the other face)
+# Medium two-shot (mid-thigh up): LTX keeps this framing (measured +7% drift per shot vs +30% from a wide shot), and the crop
+# leaves enough margin that the stabiliser never has to invent edges.
+CONV_CROP = (45, 24, 1190, 669)                 # steady window in reference coordinates (covers up to ~7.5% zoom without fill)
+CU_WIN = {"left": (0, 1080), "right": (840, 1080), "center": (420, 1080)}     # closeup windows in the 1920 frame (exclude the other face)
 
 
 def _tag(c, outfit=None):
@@ -199,10 +201,10 @@ def _conv_still(bg, cast, out):
         ch = ch.resize((max(1, int(ch.width * hpx / ch.height)), hpx)); bb = ch.getbbox() or (0, 0, ch.width, ch.height)
         B.paste(ch, (int(CONV_W * x - ch.width / 2), int(top) - bb[1]), ch)
     if len(cast) >= 2:
-        put(_pose_img_any(assets.art_id(cast[0]["char"], cast[0].get("outfit")), "side_talk"), 0.385, 800, 66)
-        put(_pose_img_any(assets.art_id(cast[1]["char"], cast[1].get("outfit")), "side_listen"), 0.615, 780, 80, mirror=True)
+        put(_pose_img_any(assets.art_id(cast[0]["char"], cast[0].get("outfit")), "side_talk"), 0.36, 1150, 40)
+        put(_pose_img_any(assets.art_id(cast[1]["char"], cast[1].get("outfit")), "side_listen"), 0.64, 1120, 52, mirror=True)
     else:
-        put(_pose_img_any(assets.art_id(cast[0]["char"], cast[0].get("outfit")), "talk"), 0.5, 800, 66)
+        put(_pose_img_any(assets.art_id(cast[0]["char"], cast[0].get("outfit")), "talk"), 0.5, 1150, 40)
     B.save(out); return out
 
 
@@ -281,13 +283,13 @@ def stage_conversation(proj, sc):
                 talking = (src.get("act") or "they share a quiet look and react naturally to what is being said") + ". Nobody on screen speaks; mouths closed."
                 silent = True
             two = len(cast) >= 2
-            prompt = ((f"Two friends having a conversation in {place}, medium two-shot, they look at each other. " if two else
+            prompt = ((f"Two people having a conversation in {place}, medium two-shot from mid-thigh up, they look at each other. " if two else
                        f"One person in {place}, medium shot. ") + talking +
                       " Natural, subtle acting: blinking, small head movements, expressions change gradually and stay. "
                       "Static locked-off camera, no zoom. " + style + ", natural hands with five fingers, hands mostly relaxed.")
             sh = {"scene": s["id"], "i": i, "start": start, "ref": ref, "aud": aud, "secs": secs, "prompt": prompt, "a": round(a, 3), "b": round(b, 3),
                   "seed": int(hashlib.md5((sp + ln["text"] + s["environment"]).encode()).hexdigest()[:7], 16),
-                  "crop": CONV_CROP, "crop_sig": "c1", "side": side.get(sp), "silent": silent, "n": len(cast),
+                  "crop": CONV_CROP, "crop_sig": "c2", "side": side.get(sp), "silent": silent, "n": len(cast),
                   "shot": src.get("shot", "two_shot"), "pause_after": src.get("pause_after"),
                   "listener_side": side.get(others[0]) if others and others[0] in side else None,
                   "refs": [_pose_img_any(assets.art_id(c["char"], c.get("outfit")), "neutral") for c in cast], "desc": f"{len(cast)} people talking in {place}"}

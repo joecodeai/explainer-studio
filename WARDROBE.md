@@ -22,7 +22,7 @@ General outfits for any topic. ID = `<character>_<outfit>`; in a script use `cas
 | `benny_home` | at home, lazy days, late-night scenes | all | faded burnt-orange oversized t-shirt, grey sweatpants | none | navy slides with socks | burnt orange, grey, navy | cotton jersey | Socks with slides is canon. |
 | `benny_gym` | fitness, health episodes | all | navy athletic t-shirt, charcoal training shorts, burnt-orange zip-up track jacket tied at the waist | black fitness watch, water bottle | orange running shoes | navy, charcoal, burnt orange | technical fabric |  |
 | `benny_formal` | weddings, galas, awards | all | navy slim two-piece suit, crisp white shirt, burnt-orange silk tie, brown leather belt | silver watch | brown leather oxford shoes | navy, white, burnt orange, brown | wool suiting |  |
-| `benny_luckycat` | story extra: Japan yen episode, last days | autumn | white t-shirt with a small cute golden lucky-cat print on the chest (no text), burnt-orange hoodie tied around his waist, navy cargo trousers | black crossbody bag, wristwatch | white and orange sneakers | white, burnt orange, navy, gold | cotton | Callback to Lucky the giant cat. |
+| `benny_luckycat` | story extra: Japan yen episode, last days | autumn | plain white t-shirt with a small simple golden-yellow lucky-cat face icon printed on the chest (flat yellow and white cartoon cat face, no text), burnt-orange hoodie tied around his waist, navy cargo trousers | black crossbody bag, wristwatch | white and orange sneakers | white, burnt orange, navy, gold | cotton | Callback to Lucky the giant cat. |
 
 ## Maya
 

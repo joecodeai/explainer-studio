@@ -94,9 +94,17 @@ def build_character(c, poses=None, det=None):
                 Image.open(base).save(out)
             else:
                 facing = "" if pose in ("side_view", "back_view", "walking", "sitting", "side_talk", "side_listen") else ", facing the viewer"
-                p = imagegen.edit(f"The exact same character from image 1 — same face, skin tone, hair, outfit, colours and art style — now "
-                                  f"{POSE_TEXT[pose]}. Mouth closed (small simple closed mouth line). Full body{facing}, isolated on a plain white background, no text.",
-                                  [base], os.path.join(d, "_tmp"), pose, seed=seed + len(pose))
+                if c.get("style"):        # show characters: tall canvas (faces get enough pixels), base on white, no forced mouth repaint
+                    wb = os.path.join(d, "_tmp", "base_white.png")
+                    if not os.path.exists(wb):
+                        bi = Image.open(base).convert("RGBA"); bw = Image.new("RGBA", bi.size, (255, 255, 255, 255)); bw.alpha_composite(bi); bw.convert("RGB").save(wb)
+                    p = imagegen.edit(f"The exact same character from image 1 — same face, skin tone, hair, outfit, colours and art style — now "
+                                      f"{POSE_TEXT[pose]}. Full body{facing}, isolated on a plain white background, no text.",
+                                      [wb], os.path.join(d, "_tmp"), pose, 896, 1344, seed=seed + len(pose), fixed_size=True)
+                else:
+                    p = imagegen.edit(f"The exact same cartoon character from image 1 — same face, hair, outfit, colours and art style — now "
+                                      f"{POSE_TEXT[pose]}. Mouth closed (small simple closed mouth line). Full body{facing}, isolated on a plain white background, no text.",
+                                      [base], os.path.join(d, "_tmp"), pose, seed=seed + len(pose))
                 p = _ensure_alpha(p, os.path.join(d, "_tmp"), pose)
                 _crop(Image.open(p).convert("RGBA")).save(out)
         det = det or _detector()
@@ -118,7 +126,16 @@ def build_character(c, poses=None, det=None):
                               "skin": _skin(img, mb) if mb else "#f1c27d",
                               "eye_skin": _skin(img, eyes[0]) if eyes else (_skin(img, mb) if mb else "#f1c27d")}
         json.dump(rig, open(rig_path, "w"), indent=1)
-    close_mouths(cid)
+    if not c.get("style"): close_mouths(cid)     # show characters are animated by LTX: no mouth repainting (it smeared faces)
+    else:
+        det = det or _detector()
+        for pose in poses:
+            f = os.path.join(d, "poses", f"{pose}.png")
+            if os.path.exists(f) and not rig["poses"].get(pose, {}).get("spots_checked"):
+                fixed = clean_face_spots(f, det)
+                if fixed: print(f"cleaned {fixed} blotch pixels on {cid}/{pose}", flush=True)
+                rig = json.load(open(rig_path)); rig["poses"].setdefault(pose, {})["spots_checked"] = True
+                json.dump(rig, open(rig_path, "w"), indent=1)
     fix_anchors()
     return rig_path
 
@@ -208,8 +225,9 @@ def fix_anchors():
     out = []
     for cid in sorted(os.listdir(C.CHAR_LIB)):
         rp = os.path.join(C.CHAR_LIB, cid, "rig.json")
-        if not os.path.exists(rp): continue
+        if not os.path.exists(rp) or "_old_" in cid: continue          # skip backed-up old designs
         rig = json.load(open(rp)); changed = False
+        rig["poses"] = {k: v for k, v in rig.get("poses", {}).items() if os.path.exists(os.path.join(C.LIBRARY, v["img"]))}
         for pose, pz in rig["poses"].items():
             # drop impossible eye boxes (the detector sometimes boxes the whole body or a hand)
             good = [e for e in pz["eyes"] if e[2] < 0.25 and e[3] < 0.08 and e[1] < 0.45 and e[0] >= 0 and e[0] + e[2] <= 1]
@@ -392,8 +410,10 @@ def build_outfit(c, outfit, poses=None):
     os.makedirs(os.path.join(d, "poses"), exist_ok=True); os.makedirs(os.path.join(d, "_tmp"), exist_ok=True)
     base = os.path.join(d, "base.png")
     if not os.path.exists(base):
-        src = os.path.join(C.CHAR_LIB, slug(c["id"]), "base.png")
-        if not os.path.exists(src): build_character(c, ["neutral"])
+        src0 = os.path.join(C.CHAR_LIB, slug(c["id"]), "base.png")
+        if not os.path.exists(src0): build_character(c, ["neutral"])
+        src = os.path.join(d, "_tmp", "src_white.png")
+        bi = Image.open(src0).convert("RGBA"); bw = Image.new("RGBA", bi.size, (255, 255, 255, 255)); bw.alpha_composite(bi); bw.convert("RGB").save(src)
         p = imagegen.edit(f"The exact same character from image 1 — identical face, eyes, hairstyle, hair colour, skin tone, body proportions and "
                           f"art style — but now wearing a different outfit: {o['desc']}. Full body, standing relaxed, facing the viewer, mouth closed. "
                           f"Isolated on a plain white background, no text.", [src], os.path.join(d, "_tmp"), "base", 896, 1344,
@@ -402,3 +422,41 @@ def build_outfit(c, outfit, poses=None):
         _crop(Image.open(p).convert("RGBA")).save(base)
     look = c["look"].split(",")[0] + ", " + o["desc"]
     return build_character(dict(c, id=aid, look=look), poses)
+
+
+def clean_face_spots(path, det=None):
+    """The image editor sometimes leaves small green/purple blotches on skin (cheeks, nose). Find the face, detect blotches whose
+    colour is far from the surrounding skin, and paint them out with the skin around them. Returns the number of pixels fixed."""
+    import cv2
+    img = Image.open(path).convert("RGBA")
+    det = det or _detector()
+    faces = [b for sc, b in _boxes(det, img, "face.", 0.3) if b[2] < 0.6 and b[1] < 0.5]
+    if not faces: return 0
+    a = np.array(img); rgb = a[..., :3].astype(np.int16); H, W = rgb.shape[:2]
+    mask = np.zeros((H, W), np.uint8)
+    for fx, fy, fw, fh in faces[:1]:
+        x0, y0, x1, y1 = int(fx * W), int(fy * H), int((fx + fw) * W), int((fy + fh) * H)
+        r, g, b = rgb[y0:y1, x0:x1, 0], rgb[y0:y1, x0:x1, 1], rgb[y0:y1, x0:x1, 2]
+        green = (g > r + 8) & (g > b + 8)                                  # skin is never greener than red
+        purple = (b > g + 25) & (r > g + 15) & (a[y0:y1, x0:x1, 3] > 200)  # chroma-key purple leftovers
+        m = (green | purple).astype(np.uint8) * 255
+        n, lab, st, _ = cv2.connectedComponentsWithStats(m)
+        keep = np.zeros_like(m)
+        for i in range(1, n):
+            area = st[i, cv2.CC_STAT_AREA]
+            if 6 <= area <= 0.05 * m.size: keep[lab == i] = 255           # blotch-sized, not a whole garment
+        mask[y0:y1, x0:x1] = cv2.dilate(keep, np.ones((3, 3), np.uint8))
+        fr = rgb[y0:y1, x0:x1]; lum = fr.mean(axis=2)
+        skin = (fr[..., 0] > fr[..., 1]) & (fr[..., 1] > fr[..., 2]) & (lum > 110) & (keep == 0)
+        tone = np.median(fr[skin], axis=0) if skin.sum() > 50 else None
+    n = int((mask > 0).sum())
+    if n:
+        if tone is not None:                     # fill with the face's own skin tone, soft edges (no dark colour pulled from eyes/hair)
+            soft = cv2.GaussianBlur((mask > 0).astype(np.float32), (0, 0), 1.2)[..., None]
+            soft = np.clip(soft * 1.6, 0, 1)
+            a[..., :3] = (a[..., :3] * (1 - soft) + tone[None, None, :] * soft).astype(np.uint8)
+        else:
+            fixed = cv2.inpaint(np.ascontiguousarray(a[..., :3]), mask, 7, cv2.INPAINT_TELEA)
+            a[..., :3] = np.where(mask[..., None] > 0, fixed, a[..., :3])
+        Image.fromarray(a).save(path)
+    return n

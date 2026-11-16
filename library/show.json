@@ -57,8 +57,8 @@
      "tag": "the young man with curly hair in the navy slim two-piece suit"
     },
     "luckycat": {
-     "desc": "white t-shirt with a small cute golden lucky-cat print on the chest (no text), burnt-orange hoodie tied around his waist, navy cargo trousers",
-     "tag": "the young man with curly hair in the white t-shirt with small cute golden lucky-cat print on the chest (no text)"
+     "desc": "plain white t-shirt with a small simple golden-yellow lucky-cat face icon printed on the chest (flat yellow and white cartoon cat face, no text), burnt-orange hoodie tied around his waist, navy cargo trousers",
+     "tag": "the young man with curly hair in the plain white t-shirt with small simple golden-yellow lucky-cat face icon printed on the chest (flat yellow and white cartoon cat face"
     }
    },
    "colors": "BRIGHT BURNT-ORANGE hoodie (orange, NOT green), white t-shirt, NAVY BLUE cargo trousers; fair skin with a warm peachy undertone (natural, not pale)"
@@ -127,5 +127,5 @@
  ],
  "active": true,
  "narrator": "maya",
- "bg_style": "vibrant modern 2D anime-inspired background illustration matching a polished animated series, warm cinematic light, rich colours, soft depth of field, realistic perspective, no people, no text, wide 16:9 composition, open clear floor across the foreground, furniture and props only along the back wall and the far left/right edges, nothing in the lower centre, eye-level camera, absolutely no text, letters or writing on any sign, board, screen or paper"
+ "bg_style": "hand-painted 2D anime background art like a modern Japanese animated film (painted, illustrated, NOT photographic, not 3D), warm cinematic light, rich but soft colours, clean shapes, gentle depth, realistic perspective, no people, wide 16:9 composition, open clear floor across the foreground, furniture and props only along the back wall and the far left/right edges, nothing in the lower centre, eye-level camera. Absolutely no text: no signs with letters, no logos, no writing on boards, screens, menus or paper (screens and signs are blank or show simple pictures only)"
 }

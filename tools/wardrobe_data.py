@@ -49,7 +49,7 @@ O("benny", "gym", "fitness, health episodes", "all", "navy athletic t-shirt, cha
   "black fitness watch, water bottle", "orange running shoes", ["navy", "charcoal", "burnt orange"], "technical fabric")
 O("benny", "formal", "weddings, galas, awards", "all", "navy slim two-piece suit, crisp white shirt, burnt-orange silk tie, brown leather belt",
   "silver watch", "brown leather oxford shoes", ["navy", "white", "burnt orange", "brown"], "wool suiting")
-O("benny", "luckycat", "story extra: Japan yen episode, last days", "autumn", "white t-shirt with a small cute golden lucky-cat print on the chest (no text), burnt-orange hoodie tied around his waist, navy cargo trousers",
+O("benny", "luckycat", "story extra: Japan yen episode, last days", "autumn", "plain white t-shirt with a small simple golden-yellow lucky-cat face icon printed on the chest (flat yellow and white cartoon cat face, no text), burnt-orange hoodie tied around his waist, navy cargo trousers",
   "black crossbody bag, wristwatch", "white and orange sneakers", ["white", "burnt orange", "navy", "gold"], "cotton", "Callback to Lucky the giant cat.")
 # ---------------------------------------------------------------- Maya
 O("maya", "signature", "default / everyday", "spring, autumn", "olive green utility shirt-jacket with rolled sleeves over a cream top, high-waisted black wide-leg trousers with a black belt",
