@@ -8,5 +8,6 @@ const demo: SceneProps = { id: "demo", kind: "title_card", durationInFrames: 90,
 
 export const Root: React.FC = () => (
   <Composition id="Scene" component={Scene as any} width={1920} height={1080} fps={30} durationInFrames={90} defaultProps={demo}
-    calculateMetadata={({ props }) => ({ durationInFrames: (props as SceneProps).durationInFrames })} />
+    calculateMetadata={({ props }) => ({ durationInFrames: (props as SceneProps).durationInFrames, fps: (props as SceneProps).fps ?? 30,
+      width: (props as SceneProps).width ?? 1920, height: (props as SceneProps).height ?? 1080 })} />
 );

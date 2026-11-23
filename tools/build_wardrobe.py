@@ -1,4 +1,4 @@
-"""Draw wardrobe outfits for Benny/Maya: turnaround views (front/side/back) + animation poses, from the character's base drawing.
+"""Draw wardrobe outfits for Ryan/Maya: turnaround views (front/side/back) + animation poses, from the character's base drawing.
 
   .venv/bin/python tools/build_wardrobe.py                         # base designs + every outfit used by an episode script given with --script
   .venv/bin/python tools/build_wardrobe.py benny:evening maya:denim  # specific outfits ("signature" = the base design)

@@ -1,0 +1,112 @@
+[
+ {
+  "id": "s01",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "In 1943, a Harvard chemist armed six sleeping bats with tiny firebombs, while Army cameramen filmed him doing it.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "s02",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "dry",
+    "text": "The desert sun woke them up early.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "s03",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Exactly fifteen minutes later, the barracks caught fire.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "s04",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Then the control tower went up like a giant candle.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "s05",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "deadpan",
+    "text": "The fire trucks raced to the gate, and the guards refused to open it, because the whole thing was top secret.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "s06",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "It all started with a dentist, who wrote to the President with a plan to firebomb Japan with bats.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "s07",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Franklin Roosevelt passed it on with a note. This man is not a nut.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "s08",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "disbelief",
+    "text": "That's the reference? Not a nut?",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "s09",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Two years and two million dollars later, the bats finally worked, and the project was cancelled.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "s10",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "dry",
+    "text": "Subscribe for more.",
+    "emotion": "neutral"
+   }
+  ]
+ }
+]

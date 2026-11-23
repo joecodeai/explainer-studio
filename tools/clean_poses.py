@@ -1,4 +1,4 @@
-"""Run assets.clean_face_spots on every pose of the given library characters (default: Benny and Maya in all outfits)."""
+"""Run assets.clean_face_spots on every pose of the given library characters (default: Ryan and Maya in all outfits)."""
 import os, sys, glob
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from studio import assets, config as C

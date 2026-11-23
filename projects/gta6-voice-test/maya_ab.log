@@ -1,0 +1,79 @@
+/home/mundax/Documents/REL/ExplainerStudio/.venv-tts/lib/python3.11/site-packages/perth/perth_net/__init__.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_filename
+/home/mundax/Documents/REL/ExplainerStudio/.venv-tts/lib/python3.11/site-packages/diffusers/models/lora.py:393: FutureWarning: `LoRACompatibleLinear` is deprecated and will be removed in version 1.0.0. Use of `LoRACompatibleLinear` is deprecated. Please switch to PEFT backend by installing PEFT: `pip install peft`.
+  deprecate("LoRACompatibleLinear", "1.0.0", deprecation_message)
+/home/mundax/.local/share/uv/python/cpython-3.11.18-linux-x86_64-gnu/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+LlamaModel is using LlamaSdpaAttention, but `torch.nn.functional.scaled_dot_product_attention` does not support `output_attentions=True`. Falling back to the manual attention implementation, but specifying the manual implementation will be required from Transformers version v5.0.0 onwards. This warning can be removed using the argument `attn_implementation="eager"` when loading the model.
+loaded PerthNet (Implicit) at step 250,000
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+Sampling:   1%|          | 11/1000 [00:00<00:09, 108.41it/s]Sampling:   3%|▎         | 26/1000 [00:00<00:07, 130.19it/s]Sampling:   4%|▍         | 41/1000 [00:00<00:07, 136.01it/s]Sampling:   4%|▍         | 42/1000 [00:00<00:07, 132.36it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   2%|▏         | 15/1000 [00:00<00:06, 144.07it/s]Sampling:   3%|▎         | 30/1000 [00:00<00:06, 146.03it/s]Sampling:   4%|▍         | 45/1000 [00:00<00:06, 146.77it/s]Sampling:   4%|▍         | 45/1000 [00:00<00:06, 146.13it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   2%|▏         | 15/1000 [00:00<00:06, 143.63it/s]Sampling:   3%|▎         | 30/1000 [00:00<00:06, 143.16it/s]Sampling:   4%|▍         | 45/1000 [00:00<00:06, 143.08it/s]Sampling:   5%|▌         | 52/1000 [00:00<00:06, 143.01it/s]
+tts A_0.cb.wav [neutral] sim 0.836 wer 0.00 pitch 2.3 rate 3.0 | sim 0.876 wer 0.00 pitch 2.7 rate 3.4 * | sim 0.839 wer 0.00 pitch 3.3 rate 2.8
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   2%|▏         | 15/1000 [00:00<00:06, 141.54it/s]Sampling:   3%|▎         | 26/1000 [00:00<00:06, 142.11it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|          | 12/1000 [00:00<00:08, 114.16it/s]Sampling:   3%|▎         | 26/1000 [00:00<00:07, 127.99it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   2%|▏         | 15/1000 [00:00<00:07, 140.62it/s]Sampling:   3%|▎         | 30/1000 [00:00<00:06, 142.65it/s]Sampling:   4%|▎         | 36/1000 [00:00<00:06, 142.38it/s]
+tts A_1.cb.wav [neutral] sim 0.862 wer 0.00 pitch 5.4 rate 2.6 | sim 0.842 wer 0.00 pitch 4.5 rate 3.3 | sim 0.863 wer 0.00 pitch 4.0 rate 2.8 *
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   2%|▏         | 15/1000 [00:00<00:06, 141.80it/s]Sampling:   3%|▎         | 30/1000 [00:00<00:06, 143.17it/s]Sampling:   3%|▎         | 32/1000 [00:00<00:06, 142.75it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   2%|▏         | 15/1000 [00:00<00:06, 140.99it/s]Sampling:   3%|▎         | 29/1000 [00:00<00:06, 141.74it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|▏         | 14/1000 [00:00<00:07, 137.84it/s]Sampling:   3%|▎         | 29/1000 [00:00<00:06, 140.20it/s]Sampling:   3%|▎         | 30/1000 [00:00<00:06, 139.54it/s]
+tts A_2.cb.wav [neutral] sim 0.859 wer 0.00 pitch 2.5 rate 4.2 * | sim 0.857 wer 0.00 pitch 2.1 rate 4.2 | sim 0.859 wer 0.00 pitch 2.5 rate 3.8
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|▏         | 14/1000 [00:00<00:07, 135.90it/s]Sampling:   3%|▎         | 29/1000 [00:00<00:06, 141.17it/s]Sampling:   4%|▍         | 44/1000 [00:00<00:06, 143.62it/s]Sampling:   6%|▌         | 59/1000 [00:00<00:06, 144.84it/s]Sampling:   7%|▋         | 67/1000 [00:00<00:06, 143.79it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|▏         | 14/1000 [00:00<00:07, 137.69it/s]Sampling:   3%|▎         | 29/1000 [00:00<00:06, 143.41it/s]Sampling:   4%|▍         | 44/1000 [00:00<00:06, 146.10it/s]Sampling:   6%|▌         | 59/1000 [00:00<00:06, 147.12it/s]Sampling:   6%|▌         | 62/1000 [00:00<00:06, 145.79it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|▏         | 14/1000 [00:00<00:07, 138.04it/s]Sampling:   3%|▎         | 29/1000 [00:00<00:06, 144.35it/s]Sampling:   4%|▍         | 44/1000 [00:00<00:06, 144.94it/s]Sampling:   6%|▌         | 59/1000 [00:00<00:06, 146.17it/s]Sampling:   6%|▌         | 59/1000 [00:00<00:06, 144.95it/s]
+tts A_3.cb.wav [neutral] sim 0.846 wer 0.00 pitch 3.4 rate 3.2 | sim 0.853 wer 0.00 pitch 2.5 rate 3.6 * | sim 0.860 wer 0.00 pitch 3.7 rate 3.6
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|▏         | 14/1000 [00:00<00:07, 138.41it/s]Sampling:   3%|▎         | 29/1000 [00:00<00:06, 140.50it/s]Sampling:   4%|▍         | 44/1000 [00:00<00:06, 141.35it/s]Sampling:   5%|▍         | 47/1000 [00:00<00:06, 140.90it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|▏         | 14/1000 [00:00<00:07, 137.86it/s]Sampling:   3%|▎         | 29/1000 [00:00<00:06, 141.20it/s]Sampling:   4%|▍         | 44/1000 [00:00<00:06, 142.02it/s]Sampling:   5%|▍         | 49/1000 [00:00<00:06, 141.49it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|▏         | 14/1000 [00:00<00:07, 137.35it/s]Sampling:   3%|▎         | 29/1000 [00:00<00:06, 141.04it/s]Sampling:   4%|▍         | 44/1000 [00:00<00:06, 141.79it/s]Sampling:   5%|▌         | 51/1000 [00:00<00:06, 140.54it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|▏         | 14/1000 [00:00<00:07, 138.25it/s]Sampling:   3%|▎         | 29/1000 [00:00<00:06, 141.52it/s]Sampling:   4%|▍         | 44/1000 [00:00<00:06, 142.37it/s]Sampling:   4%|▍         | 45/1000 [00:00<00:06, 141.63it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|▏         | 14/1000 [00:00<00:07, 137.17it/s]Sampling:   3%|▎         | 29/1000 [00:00<00:06, 141.02it/s]Sampling:   4%|▍         | 44/1000 [00:00<00:06, 142.31it/s]Sampling:   5%|▍         | 46/1000 [00:00<00:06, 141.49it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|          | 12/1000 [00:00<00:08, 117.87it/s]Sampling:   3%|▎         | 27/1000 [00:00<00:07, 131.56it/s]Sampling:   4%|▍         | 41/1000 [00:00<00:07, 135.11it/s]Sampling:   4%|▍         | 45/1000 [00:00<00:07, 133.05it/s]
+tts A_4.cb.wav [neutral] sim 0.862 wer 0.00 pitch 2.4 rate 6.8 | sim 0.851 wer 0.00 pitch 3.5 rate 6.2 | sim 0.868 wer 0.00 pitch 3.0 rate 6.0 * | sim 0.859 wer 0.00 pitch 2.8 rate 6.6 | sim 0.869 wer 0.00 pitch 3.7 rate 6.2 | sim 0.847 wer 0.00 pitch 2.5 rate 6.7
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|▏         | 14/1000 [00:00<00:07, 139.56it/s]Sampling:   3%|▎         | 29/1000 [00:00<00:06, 143.48it/s]Sampling:   4%|▍         | 44/1000 [00:00<00:06, 145.54it/s]Sampling:   6%|▌         | 59/1000 [00:00<00:06, 146.41it/s]Sampling:   7%|▋         | 74/1000 [00:00<00:06, 147.47it/s]Sampling:   9%|▉         | 89/1000 [00:00<00:06, 147.43it/s]Sampling:   9%|▉         | 89/1000 [00:00<00:06, 146.25it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   2%|▏         | 15/1000 [00:00<00:07, 140.63it/s]Sampling:   3%|▎         | 30/1000 [00:00<00:06, 144.98it/s]Sampling:   4%|▍         | 45/1000 [00:00<00:06, 146.26it/s]Sampling:   6%|▌         | 60/1000 [00:00<00:06, 147.14it/s]Sampling:   8%|▊         | 75/1000 [00:00<00:06, 147.58it/s]Sampling:   8%|▊         | 80/1000 [00:00<00:06, 146.53it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|▏         | 14/1000 [00:00<00:07, 139.08it/s]Sampling:   3%|▎         | 29/1000 [00:00<00:06, 143.97it/s]Sampling:   4%|▍         | 44/1000 [00:00<00:06, 146.06it/s]Sampling:   6%|▌         | 59/1000 [00:00<00:06, 146.93it/s]Sampling:   7%|▋         | 74/1000 [00:00<00:06, 147.67it/s]Sampling:   9%|▉         | 88/1000 [00:00<00:06, 146.85it/s]
+tts A_5.cb.wav [neutral] sim 0.921 wer 0.00 pitch 3.5 rate 4.7 | sim 0.851 wer 0.00 pitch 1.9 rate 4.5 | sim 0.923 wer 0.00 pitch 2.8 rate 4.2 *
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|          | 11/1000 [00:00<00:09, 103.56it/s]Sampling:   3%|▎         | 26/1000 [00:00<00:07, 128.19it/s]Sampling:   4%|▍         | 41/1000 [00:00<00:07, 136.11it/s]Sampling:   6%|▌         | 56/1000 [00:00<00:06, 140.42it/s]Sampling:   7%|▋         | 67/1000 [00:00<00:06, 137.00it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|▏         | 14/1000 [00:00<00:07, 139.84it/s]Sampling:   3%|▎         | 29/1000 [00:00<00:06, 145.05it/s]Sampling:   4%|▍         | 44/1000 [00:00<00:06, 146.81it/s]Sampling:   5%|▌         | 52/1000 [00:00<00:06, 146.19it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|▏         | 14/1000 [00:00<00:07, 139.36it/s]Sampling:   3%|▎         | 29/1000 [00:00<00:06, 143.77it/s]Sampling:   4%|▍         | 44/1000 [00:00<00:06, 145.77it/s]Sampling:   6%|▌         | 59/1000 [00:00<00:06, 146.99it/s]Sampling:   6%|▌         | 59/1000 [00:00<00:06, 145.64it/s]
+tts A_6.cb.wav [neutral] sim 0.915 wer 0.00 pitch 2.5 rate 4.4 * | sim 0.887 wer 0.00 pitch 3.8 rate 4.2 | sim 0.873 wer 0.00 pitch 3.2 rate 4.6
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   2%|▏         | 15/1000 [00:00<00:06, 141.14it/s]Sampling:   3%|▎         | 28/1000 [00:00<00:06, 140.84it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   2%|▏         | 15/1000 [00:00<00:07, 140.11it/s]Sampling:   3%|▎         | 30/1000 [00:00<00:06, 140.17it/s]Sampling:   4%|▎         | 36/1000 [00:00<00:06, 139.73it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   2%|▏         | 15/1000 [00:00<00:06, 140.92it/s]Sampling:   3%|▎         | 28/1000 [00:00<00:06, 141.33it/s]
+tts A_7.cb.wav [neutral] sim 0.852 wer 0.00 pitch 3.9 rate 4.0 | sim 0.887 wer 0.00 pitch 4.5 rate 3.8 * | sim 0.866 wer 0.00 pitch 6.5 rate 4.2
+/bin/sh: 1: sox: not found
+SoX could not be found!
+
+    If you do not have SoX, proceed here:
+     - - - http://sox.sourceforge.net/ - - -
+
+    If you do (or think that you should) have SoX, double-check your
+    path variables.
+    
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+
+********
+Warning: flash-attn is not installed. Will only run the manual PyTorch version. Please install flash-attn for faster inference.
+********
+ 
+made A
+made B
+made C
+made D

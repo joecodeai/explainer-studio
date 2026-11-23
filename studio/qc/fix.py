@@ -198,7 +198,7 @@ def rerender(pr, cache, f):
 
 def add_outro(pr, cache, f):
     from .. import ending
-    if pr.script.get("_qc_outro_tries", 0) >= 2: return None
+    if pr.script.get("no_outro") or pr.script.get("_qc_outro_tries", 0) >= 2: return None
     pr.script["_qc_outro_tries"] = pr.script.get("_qc_outro_tries", 0) + 1
     changed = ending.ensure_outro(pr.script, pr.script.get("title", ""))
     last = pr.script["scenes"][-1]

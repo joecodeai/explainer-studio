@@ -25,8 +25,13 @@ export type Route = { from: string; to: string; via: string[]; label: string; ic
 
 export type SceneProps = {
   id: string;
-  kind: "stage" | "map" | "title_card" | "chart" | "hero";
+  kind: "stage" | "map" | "title_card" | "chart" | "hero" | "screen";
+  width?: number;                 // 1920x1080 (default) or 1080x1920 (native vertical reels)
+  height?: number;
+  screen?: any;                   // ScreenSpec for kind "screen" (Screens.tsx)
+  topText?: { text: string; at?: number; until?: number }[];   // captions pinned to the top (reel hooks, time stamps)
   durationInFrames: number;
+  fps?: number;
   background: string | null;
   cast: CastMember[];
   lines: Line[];

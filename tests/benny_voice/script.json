@@ -1,0 +1,12 @@
+{"note": "Same ~40 s Benny script for every voice option. Each line names the delivery profile it tests.",
+ "lines": [
+  {"profile": "storytelling / overconfident", "text": "Okay, so here's how it works. In Japan, everything costs thousands. Thousands! So the yen must be super valuable."},
+  {"profile": "noticing / curious pause", "text": "...What? Why are you doing the eyebrow?"},
+  {"profile": "confusion", "text": "Less than... one cent?"},
+  {"profile": "embarrassment / hesitant", "text": "So I've been bragging about being rich... in pennies."},
+  {"profile": "nervous laugh / defensive", "text": "Okay, but they're very nice pennies. Some of them have holes in them!"},
+  {"profile": "whisper / conspiratorial", "text": "Don't tell the chef. I tried to tip him with them."},
+  {"profile": "excited / quick", "text": "Wait, wait, wait. So Japan is on sale? Like, the whole country?"},
+  {"profile": "serious explanation / slower", "text": "Alright. When the dollar gets stronger, every dollar turns into more yen. That part I actually get."},
+  {"profile": "playful teasing", "text": "See? I know things. Write that down."}
+ ]}

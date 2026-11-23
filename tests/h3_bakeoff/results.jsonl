@@ -1,0 +1,6 @@
+{"out": "/home/mundax/Documents/REL/ExplainerStudio/tests/h3_bakeoff/out/b1_flex480.mp4", "wall_s": 72.1, "comfy_s": 70.699, "mode": "flex", "size": "864x480", "frames": 226, "seed": 7}
+{"out": "/home/mundax/Documents/REL/ExplainerStudio/tests/h3_bakeoff/out/b2_flex480.mp4", "wall_s": 86.1, "comfy_s": 85.736, "mode": "flex", "size": "864x480", "frames": 260, "seed": 7}
+{"out": "/home/mundax/Documents/REL/ExplainerStudio/tests/h3_bakeoff/out/b3_flex480.mp4", "wall_s": 52.1, "comfy_s": 50.965, "mode": "flex", "size": "864x480", "frames": 175, "seed": 7}
+{"out": "/home/mundax/Documents/REL/ExplainerStudio/tests/h3_bakeoff/out/b4_flex480.mp4", "wall_s": 58.1, "comfy_s": 57.878, "mode": "flex", "size": "864x480", "frames": 192, "seed": 7}
+{"out": "/home/mundax/Documents/REL/ExplainerStudio/tests/h3_bakeoff/out/b2_base480.mp4", "wall_s": 174.2, "comfy_s": 173.836, "mode": "base", "size": "864x480", "frames": 260, "seed": 7}
+{"out": "/home/mundax/Documents/REL/ExplainerStudio/tests/h3_bakeoff/out/b2_flex768.mp4", "wall_s": 446.6, "comfy_s": 354.12, "mode": "flex", "size": "1344x768", "frames": 260, "seed": 7}

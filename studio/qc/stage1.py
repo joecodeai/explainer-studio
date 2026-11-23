@@ -335,6 +335,7 @@ def check_voices(pr, cache, cfg):
     prof = V.voice_profiles(pr.script)
     for spk_id, (_, f0) in cent.items():      # voice must match the character's gender
         g = V.gender(prof.get(spk_id, {}).get("design", ""))
+        if prof.get(spk_id, {}).get("tts"): continue      # a voice the user chose (show cast): locked, never auto-redesigned
         if f0 and not V.gender_ok(g, f0, tol=10):
             first = feats[spk_id][0]
             res.append(Finding("voice", "CRITICAL", f"{spk_id} is a {g} character but the voice sounds {'female' if g == 'male' else 'male'} "
@@ -358,7 +359,7 @@ def check_ending(pr, cache, cfg):
     res = []
     last = pr.scenes[-1]; sid = last["id"]; props = pr.props[sid]
     t_end = pr.start[sid] + pr.dur[sid]
-    for why in ending.problems(pr.script):
+    for why in ([] if pr.script.get("no_outro") else ending.problems(pr.script)):   # show episodes end on their own joke
         res.append(Finding("ending", "CRITICAL", f"no proper ending: {why}", start=pr.start[sid], scene=sid, confidence=0.95, fix="add_outro",
                            recommendation="end with a narrator wrap-up (key takeaway) and a thanks-for-watching / subscribe sign-off"))
     lines = pr.lines.get(sid) or []

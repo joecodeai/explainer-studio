@@ -1,0 +1,18 @@
+For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.
+
+subject_definitions:
+<Subject 1> is the young man in <Picture 1>, whose face and hair follow <Picture 2> exactly: tousled curly dark-brown hair, warm brown eyes, fair skin with a warm peachy undertone, a burnt-orange zip hoodie over a plain white T-shirt, a thin dark crossbody strap.
+<Subject 2> is the young woman in <Picture 1>, whose face and hair follow <Picture 3> exactly: long wavy dark-brown hair, warm brown eyes, fair skin with a warm peachy undertone, small gold hoop earrings, an olive-green shirt jacket over a cream top.
+Do not carry over the white backgrounds, the crossed-arm poses or any lettering of <Picture 2> and <Picture 3>.
+
+integrated_multimodal_description:
+2D hand-drawn anime cartoon exactly matching <Picture 1>: clean ink line art, flat cel shading, warm lantern light inside a small Japanese ramen shop with cloth noren curtains and steaming pots behind the counter. Expressions are subtle and natural, never exaggerated.
+[Shot 1] Medium close-up on <Subject 1> on the left, <Subject 2> partly visible at the right edge. The camera holds a static shot with no zoom and no movement for the whole clip.
+<Subject 1> (S1), in a lively, warm young male voice, repeats it slowly in disbelief, looking down at his hands, and says: <d>[English] Half a... cent?</d> While <Subject 1> speaks, <Subject 2>'s lips remain completely closed: nods slowly, pressing her lips together to hide a smile, mouth closed.
+At 00:02.180, <Subject 1> (S1), in a lively, warm young male voice, looks away awkwardly, embarrassed, rubbing the back of his neck, and says: <d>[English] So I've been bragging about being rich... in pennies.</d> While <Subject 1> speaks, <Subject 2>'s lips remain completely closed: tries not to laugh, mouth closed.
+
+overall_soundscape:
+Quiet ramen-shop room tone with a faint simmer of broth; no other voices.
+
+non_diegetic_music:
+N/A

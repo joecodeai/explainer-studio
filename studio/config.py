@@ -21,7 +21,19 @@ BG_LIB = os.path.join(LIBRARY, "backgrounds_news")
 TTS_DESIGN = os.path.join(ROOT, "models", "Qwen3-TTS-12Hz-1.7B-VoiceDesign")
 TTS_BASE = os.path.join(ROOT, "models", "Qwen3-TTS-12Hz-1.7B-Base")
 
-W, H, FPS = 1920, 1080, 30
+W, H = 1920, 1080
+FORMAT = "landscape"          # "vertical" = native 9:16 (1080x1920): reels are GENERATED vertically, never cropped from 16:9
+
+
+def set_format(fmt):
+    """Per project (script.json "format"): sets the output frame for every stage (H3 shots, renders, QC)."""
+    global W, H, FORMAT
+    FORMAT = "vertical" if fmt == "vertical" else "landscape"
+    W, H = (1080, 1920) if FORMAT == "vertical" else (1920, 1080)
+
+
+set_format(os.environ.get("VIDEO_FORMAT", "landscape"))
+FPS = int(os.environ.get("VIDEO_FPS", "24"))   # 24 = native rate of H3/LTX: no frame duplication (24->30 duplication reads as judder)
 
 # Channel name for the on-screen bug (top right); "" = no bug
 BRAND = os.environ.get("EXPLAINER_BRAND", "")

@@ -53,13 +53,15 @@ def stage_script(proj, topic, minutes):
             txt = llm.chat([{"role": "user", "content": "Write YouTube metadata for this explainer video, in EXACTLY this plain-text format:\n"
                 "TITLE: <max 70 chars, curiosity-driven but accurate>\nDESCRIPTION: <2 short engaging paragraphs on one line>\n"
                 "TAGS: <20 comma-separated lowercase search keywords>\nHASHTAGS: <3 hashtags>\n\nVideo: " + sc["title"] + "\nScript: " +
-                " ".join(x["narration"] for x in sc["scenes"])[:6000]}], temperature=0.6, max_tokens=900)
+                " ".join(x["narration"] for x in sc["scenes"])[:6000] + " /no_think"}], temperature=0.6, max_tokens=4000)   # 900 was eaten by thinking
             g = lambda k: (re.search(rf"^{k}:\s*(.+)$", txt, re.M) or [None, ""])[1].strip()
             sc["seo"] = {"title": g("TITLE") or sc["title"], "description": g("DESCRIPTION") or sc.get("description", ""),
                          "tags": [t.strip() for t in g("TAGS").split(",") if t.strip()] or sc.get("tags", []), "hashtags": g("HASHTAGS").split()}
             _j(f"{proj}/script.json", sc)
         except Exception as e:
             log(proj, f"SEO metadata generation failed ({e}); falling back to script title/tags")
+            sc["seo"] = {"title": sc["title"], "description": sc.get("description", ""), "tags": sc.get("tags", []), "hashtags": [], "fallback": True}
+            _j(f"{proj}/script.json", sc)                 # do not retry (and reload the LLM) on every restart
     words = sum(len(s["narration"].split()) for s in sc["scenes"])
     review = [f"# {sc['title']}\n", f"~{words / 155:.1f} min, {len(sc['scenes'])} scenes. Edit script.json, then run with --approve.\n",
               "## Sources\n" + "\n".join(f"- {u}" for u in sc["sources"]) + "\n",
@@ -178,10 +180,10 @@ def _talk_style(c):
 
 
 # ---------------------------------------------------------------- 6b: conversation staging (show episodes)
-CONV_W, CONV_H = 1280, 704
+CONV_W, CONV_H = 1280, 704           # LTX renders half size internally and upsamples 2x (1920x1088 = sharper but ~2x slower)
 # Medium two-shot (mid-thigh up): LTX keeps this framing (measured +7% drift per shot vs +30% from a wide shot), and the crop
 # leaves enough margin that the stabiliser never has to invent edges.
-CONV_CROP = (45, 24, 1190, 669)                 # steady window in reference coordinates (covers up to ~7.5% zoom without fill)
+CONV_CROP = (45, 24, 1190, 669)                 # steady window in reference coordinates (covers ~7.5% zoom)
 CU_WIN = {"left": (0, 1080), "right": (840, 1080), "center": (420, 1080)}     # closeup windows in the 1920 frame (exclude the other face)
 
 
@@ -191,22 +193,120 @@ def _tag(c, outfit=None):
     return c.get("tag") or ("the " + " ".join(c["look"].replace("a ", "", 1).split(",")[0].split()[:6]))
 
 
-def _conv_still(bg, cast, out):
+def _conv_still(bg, cast, out, size=None):
     """Reference still: two characters facing each other (left uses side_talk, right uses side_listen mirrored), or one centred."""
     from PIL import Image, ImageOps
+    CONV_W, CONV_H = size or (globals()["CONV_W"], globals()["CONV_H"])
     B = Image.open(bg).convert("RGB").resize((CONV_W, CONV_H))
     def put(img, x, hpx, top, mirror=False):
         ch = Image.open(img).convert("RGBA")
         if mirror: ch = ImageOps.mirror(ch)
         ch = ch.resize((max(1, int(ch.width * hpx / ch.height)), hpx)); bb = ch.getbbox() or (0, 0, ch.width, ch.height)
         B.paste(ch, (int(CONV_W * x - ch.width / 2), int(top) - bb[1]), ch)
+    k = CONV_H / 704                              # layouts were designed at 704 px high
+    close = getattr(_conv_still, "variant", 0) % 2 == 1   # alternate scenes: medium two-shot / closer two-shot (camera variety, no digital zoom)
+    hb, tb, hm, tm, xb, xm = (1150, 40, 1120, 52, 0.36, 0.64) if not close else (1380, 30, 1345, 42, 0.35, 0.65)
     if len(cast) >= 2:
-        put(_pose_img_any(assets.art_id(cast[0]["char"], cast[0].get("outfit")), "side_talk"), 0.36, 1150, 40)
-        put(_pose_img_any(assets.art_id(cast[1]["char"], cast[1].get("outfit")), "side_listen"), 0.64, 1120, 52, mirror=True)
+        put(_pose_img_any(assets.art_id(cast[0]["char"], cast[0].get("outfit")), "side_listen"), xb, int(hb * k), int(tb * k))   # calm start pose (talk art grins)
+        put(_pose_img_any(assets.art_id(cast[1]["char"], cast[1].get("outfit")), "side_listen"), xm, int(hm * k), int(tm * k), mirror=True)
     else:
-        put(_pose_img_any(assets.art_id(cast[0]["char"], cast[0].get("outfit")), "talk"), 0.5, 1150, 40)
+        put(_pose_img_any(assets.art_id(cast[0]["char"], cast[0].get("outfit")), "talk"), 0.5, int(hb * k), int(tb * k))
     B.save(out); return out
 
+
+
+
+# ---------------------------------------------------------------- 6c: LongCat-Video-Avatar 1.6 conversation takes (show episodes)
+LC_SIZE = (1664, 960)          # conditioning image (LongCat renders 832x480 at '480p'; same aspect)
+LC_FPS, LC_NF, LC_NC = 25, 93, 13
+
+
+def longcat_available():
+    return os.path.exists(os.path.join(C.ROOT, ".venv-longcat", "bin", "python")) and \
+        os.path.isdir(os.path.join(C.ROOT, "engines", "LongCat-Video", "weights", "LongCat-Video-Avatar-1.6", "base_model_int8"))
+
+
+def stage_longcat(proj, sc):
+    """Every two-person stage scene is ONE continuous LongCat take: each character driven by their own voice track (correct speaker,
+    real lip-sync), acting directions per ~3 s segment from the script's act/react notes, stronger direction-following on segments
+    with a silent reaction beat. All scenes render in one batch (models loaded once). Output: talk/<scene>.json manifests."""
+    import librosa
+    chars = {c["id"]: c for c in sc["characters"]}
+    envs = {e["id"]: e for e in sc["environments"]}
+    d = f"{proj}/talk/longcat"; os.makedirs(d, exist_ok=True)
+    scenes = [s for s in sc["scenes"] if s["kind"] == "stage" and len(s.get("cast", [])) == 2 and envs.get(s.get("environment"), {}).get("_file")]
+    jobs, meta = [], {}
+    NEG = ("photorealistic, live action, 3D render, blurred details, subtitles, text, watermark, worst quality, low quality, JPEG artifacts, ugly, "
+           "extra fingers, poorly drawn hands, poorly drawn faces, deformed, disfigured, misshapen limbs, fused fingers, still picture, frozen, "
+           "both people talking at the same time, camera zoom, camera shake, messy background, three legs, many people in the background")
+    for idx, s in enumerate(scenes):
+        lines = _j(f"{proj}/audio/{s['id']}.lines.json") or []
+        if not lines: continue
+        cast = s["cast"][:2]; L_, R_ = cast[0]["char"], cast[1]["char"]
+        end = s["_dur"] + TAIL + 2.6
+        SR = 16000; n = int(end * SR)
+        tr = {L_: np.zeros(n, np.float32), R_: np.zeros(n, np.float32)}
+        for ln in lines:
+            if ln["speaker"] not in tr: continue
+            a, _ = librosa.load(f"{proj}/audio/lines/{ln['key']}.wav", sr=SR)
+            i0 = int(ln["start"] * SR); tr[ln["speaker"]][i0:i0 + len(a)] = a[:max(0, n - i0)]
+        for k, v in tr.items(): sf.write(f"{d}/{s['id']}_{k}.wav", v, SR)
+        _conv_still.variant = idx
+        cond = _conv_still(envs[s["environment"]]["_file"], cast, f"{d}/{s['id']}_cond.png", size=LC_SIZE)
+        W, H = LC_SIZE
+        bbox = {"person1": [int(0.03 * H), int(0.16 * W), H, int(0.52 * W)], "person2": [int(0.04 * H), int(0.48 * W), H, int(0.84 * W)]}
+        place = envs[s["environment"]]["prompt"].split(":")[0].split(".")[0].lower()
+        tag = lambda cid: _tag(chars[cid], next((c.get("outfit") for c in cast if c["char"] == cid), None))
+        base = (f"Static camera, two-shot in {place}. {tag(L_)} (left) and {tag(R_)} (right) stand facing each other and talk; they look "
+                f"at each other with natural eye contact. Polished 2D anime-style animated series, expressive faces, natural subtle acting, "
+                f"natural hand gestures; the listener reacts with facial expressions and keeps their mouth closed. ")
+        n_frames = int(end * LC_FPS); n_seg = 1 + max(0, math.ceil((n_frames - LC_NF) / (LC_NF - LC_NC)))
+        beats = []
+        for i, ln in enumerate(lines):
+            src = s["lines"][i] if i < len(s["lines"]) else {}
+            nxt = lines[i + 1]["start"] if i + 1 < len(lines) else end
+            sp = ln["speaker"]; other = R_ if sp == L_ else L_
+            act = src.get("act") or f"{tag(sp)} {DEFAULT_ACT.get(src.get('emotion', 'neutral'), 'talks naturally')}"
+            react = src.get("react") or f"{tag(other)} listens and reacts naturally, mouth closed"
+            beats.append((ln["start"], ln["end"], f"{act}; {react}", False))
+            if src.get("pause_after") and float(src["pause_after"]) >= 0.5:   # silent reaction beat after the line
+                beats.append((ln["end"], nxt, f"silence: {react}; nobody speaks, both mouths closed", True))
+        prompts, guide = [], {}
+        for k in range(n_seg):
+            t0 = (k * (LC_NF - LC_NC) + (LC_NC if k else 0)) / LC_FPS; t1 = (k * (LC_NF - LC_NC) + LC_NF) / LC_FPS
+            ov = [(b0, min(t1, b1 + 0.3) - max(t0, b0) + (5 if silent else 0), txt, silent) for b0, b1, txt, silent in beats if min(t1, b1 + 0.3) > max(t0, b0)]
+            ov = sorted(sorted(ov, key=lambda x: -x[1])[:2], key=lambda x: x[0]) or [(0, 1, beats[-1][2], False)]
+            prompts.append(base + " Then ".join(o[2] for o in ov) + ".")
+            if any(o[3] for o in ov): guide[str(k)] = 3.0
+        inp = {"prompt": prompts[0], "segment_prompts": prompts, "negative_prompt": NEG, "cond_image": os.path.abspath(cond),
+               "cond_audio": {"person1": os.path.abspath(f"{d}/{s['id']}_{L_}.wav"), "person2": os.path.abspath(f"{d}/{s['id']}_{R_}.wav")},
+               "audio_type": "para", "bbox": bbox}
+        sig = hashlib.md5(json.dumps(inp, sort_keys=True).encode() + open(cond, "rb").read() +
+                          b"".join(open(f"{d}/{s['id']}_{k}.wav", "rb").read() for k in (L_, R_))).hexdigest()[:10]
+        json.dump(inp, open(f"{d}/{s['id']}_input.json", "w"), indent=1)
+        out = os.path.abspath(f"{d}/{s['id']}_{sig}.mp4")
+        jobs.append({"input_json": os.path.abspath(f"{d}/{s['id']}_input.json"), "num_segments": n_seg, "out": out,
+                     "seed": int(sig[:6], 16), "clean_audio": True, "segment_text_guidance": guide})
+        meta[s["id"]] = (out, end)
+    todo = [j for j in jobs if not os.path.exists(j["out"])]
+    if todo:
+        comfy.free(); llm.unload()
+        jf = os.path.abspath(f"{d}/jobs.json"); json.dump(todo, open(jf, "w"), indent=1)
+        log(proj, f"longcat: rendering {len(todo)} scene(s), {sum(j['num_segments'] for j in todo)} segments")
+        r = subprocess.run([os.path.join(C.ROOT, "tools", "longcat_batch.sh"), jf], stdout=open(f"{d}/batch.log", "a"), stderr=subprocess.STDOUT)
+        if r.returncode: log(proj, f"longcat: batch exited {r.returncode} — see {d}/batch.log")
+    done = set()
+    for sid, (out, end) in meta.items():
+        if not os.path.exists(out): log(proj, f"longcat: {sid} missing -> falls back"); continue
+        hd = out.replace(".mp4", "_hd30.mp4")
+        if not os.path.exists(hd):     # 25 -> 30 fps with motion interpolation (smooth playback, no 3:2 judder), then HD scale
+            subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", out, "-t", f"{end:.3f}", "-an",
+                            "-vf", f"minterpolate=fps={C.FPS}:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1,scale=1920:1080:flags=lanczos,unsharp=5:5:0.6",
+                            "-c:v", "libx264", "-crf", "16", "-pix_fmt", "yuv420p", hd], check=True)
+        json.dump([{"video": hd, "start": 0.0, "end": round(end, 3)}], open(f"{proj}/talk/{sid}.json", "w"), indent=1)
+        done.add(sid)
+    log(proj, f"longcat: {len(done)}/{len(meta)} scenes animated")
+    return done
 
 def _pose_img_any(cid, want):
     rig = _j(os.path.join(C.CHAR_LIB, assets.slug(cid), "rig.json")) or {}
@@ -221,6 +321,31 @@ DEFAULT_ACT = {"excited": "talks excitedly, eyes bright", "happy": "smiles and t
                "confident": "talks confidently", "sad": "talks quietly, a little deflated", "angry": "talks with controlled irritation",
                "neutral": "talks naturally"}
 
+
+
+def _cu_window(video, side, t0, t1, w=1080):
+    """Closeup window (x, y, width) in the 1920x1080 stabilised shot that follows the speaker's actual face (characters lean and
+    move): the face sits near the middle, the other person's face is kept out of frame, headroom above the head."""
+    from PIL import Image
+    from .qc import models as QM
+    heads = []
+    for t in (t0 + 0.2, (t0 + t1) / 2, max(t0, t1 - 0.3)):
+        f = f"{video}.cu_{t:.2f}.png"
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{t:.3f}", "-i", video, "-frames:v", "1", "-update", "1", f], check=True)
+        im = Image.open(f).convert("RGB"); os.remove(f)
+        hs = [d[2] for d in QM.detect(im, "a human head.", 0.3) if (d[2][3] - d[2][1]) < 0.7 * im.size[1]]
+        if hs: heads.append(sorted(hs, key=lambda b: (b[0] + b[2]) / 2))
+    if not heads: x, w0 = CU_WIN[side]; return (x, 30, w0)
+    sel = [hs[0] if side == "left" else hs[-1] for hs in heads] if side in ("left", "right") else [max(hs, key=lambda b: b[3] - b[1]) for hs in heads]
+    oth = [hs[-1] if side == "left" else hs[0] for hs in heads if len(hs) > 1] if side in ("left", "right") else []
+    fx = sum((b[0] + b[2]) / 2 for b in sel) / len(sel); top = min(b[1] for b in sel); bot = max(b[3] for b in sel)
+    x = int(fx - w / 2)
+    if oth and side == "left": x = min(x, int(min(b[0] for b in oth)) - 12 - w)        # keep the other face out
+    if oth and side == "right": x = max(x, int(max(b[2] for b in oth)) + 12)
+    x = max(0, min(1920 - w, x))
+    if not (x <= min(b[0] for b in sel) and x + w >= max(b[2] for b in sel)): x = max(0, min(1920 - w, int(fx - w / 2)))  # face must stay whole
+    h = int(w * 9 / 16); y = max(0, min(1080 - h, int(top - 0.12 * h)))
+    return (int(x), int(y), w)
 
 def stage_conversation(proj, sc):
     """Show episodes: every stage scene is ONE continuous conversation. Each line is an LTX shot that starts from the previous
@@ -243,7 +368,7 @@ def stage_conversation(proj, sc):
         raw = os.path.join(TALK_CACHE, key + ".mp4")
         if not os.path.exists(raw):
             out = talk.clip(sh["start"], sh["aud"], sh["prompt"], f"{proj}/work/talk", f"{sh['scene']}_{sh['i']}_a{attempt}", sh["secs"],
-                            seed=sh["seed"] + 7919 * attempt, neg=talk.NEG_SCENE)
+                            seed=sh["seed"] + 7919 * attempt, neg=talk.NEG_SCENE, w=CONV_W, h=CONV_H)
             shutil.copy(out, raw); talk.fix_doubled(raw)
         stab = os.path.join(TALK_CACHE, key + f"_stab_{sh['crop_sig']}.mp4")
         last = stab.rsplit(".", 1)[0] + "_last.png"
@@ -258,7 +383,8 @@ def stage_conversation(proj, sc):
         lines = _j(f"{proj}/audio/{s['id']}.lines.json") or []
         wav = f"{proj}/audio/{s['id']}.wav"
         if not lines or not os.path.exists(wav): continue
-        ref = _conv_still(envs[s["environment"]]["_file"], cast, f"{proj}/work/talk/{s['id']}_ref.png")
+        _conv_still.variant = scenes.index(s)
+        ref = _conv_still(envs[s["environment"]]["_file"], cast, f"{proj}/work/talk/{s['id']}_ref_hd{_conv_still.variant % 2}.png")
         side = {c["char"]: ("left" if k == 0 else "right") for k, c in enumerate(cast)} if len(cast) >= 2 else {cast[0]["char"]: "center"}
         outfit = {c["char"]: c.get("outfit") for c in cast}
         place = envs[s["environment"]]["prompt"].split(":")[0].split(".")[0].lower()
@@ -283,13 +409,13 @@ def stage_conversation(proj, sc):
                 talking = (src.get("act") or "they share a quiet look and react naturally to what is being said") + ". Nobody on screen speaks; mouths closed."
                 silent = True
             two = len(cast) >= 2
-            prompt = ((f"Two people having a conversation in {place}, medium two-shot from mid-thigh up, they look at each other. " if two else
+            prompt = ((f"Two people having a conversation in {place}, two-shot, they look at each other. When a person finishes speaking they close their mouth and listen. " if two else
                        f"One person in {place}, medium shot. ") + talking +
                       " Natural, subtle acting: blinking, small head movements, expressions change gradually and stay. "
                       "Static locked-off camera, no zoom. " + style + ", natural hands with five fingers, hands mostly relaxed.")
             sh = {"scene": s["id"], "i": i, "start": start, "ref": ref, "aud": aud, "secs": secs, "prompt": prompt, "a": round(a, 3), "b": round(b, 3),
                   "seed": int(hashlib.md5((sp + ln["text"] + s["environment"]).encode()).hexdigest()[:7], 16),
-                  "crop": CONV_CROP, "crop_sig": "c2", "side": side.get(sp), "silent": silent, "n": len(cast),
+                  "crop": CONV_CROP, "crop_sig": "hd1", "side": side.get(sp), "silent": silent, "n": len(cast),
                   "shot": src.get("shot", "two_shot"), "pause_after": src.get("pause_after"),
                   "listener_side": side.get(others[0]) if others and others[0] in side else None,
                   "refs": [_pose_img_any(assets.art_id(c["char"], c.get("outfit")), "neutral") for c in cast], "desc": f"{len(cast)} people talking in {place}"}
@@ -334,18 +460,19 @@ def stage_conversation(proj, sc):
         for sh in [x for x in shots if x["scene"] == sid]:
             if not sh.get("stab"): continue
             def cut(t0, t1, side, tag):
-                o = f"{proj}/talk/{sid}_{sh['i']}_{tag}_{hashlib.md5(sh['stab'].encode()).hexdigest()[:8]}.mp4"
+                win = _cu_window(sh["stab"], side, t0, t1) if side in CU_WIN else None
+                o = f"{proj}/talk/{sid}_{sh['i']}_{tag}_{hashlib.md5((sh['stab'] + str(win)).encode()).hexdigest()[:8]}.mp4"
                 if not os.path.exists(o):
                     vf = "scale=1920:1080"
-                    if side in CU_WIN:
-                        x, w = CU_WIN[side]; vf = f"crop={w}:{int(w * 9 / 16)}:{x}:30,scale=1920:1080:flags=lanczos"
+                    if win:
+                        x, y, w = win; vf = f"crop={w}:{int(w * 9 / 16)}:{x}:{y},scale=1920:1080:flags=lanczos"
                     subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{t0:.3f}", "-i", sh["stab"], "-t", f"{t1 - t0:.3f}", "-vf", vf, "-an",
                                     "-c:v", "libx264", "-crf", "17", "-pix_fmt", "yuv420p", "-r", str(C.FPS), o], check=True)
                 return o
             dur = sh["b"] - sh["a"]
-            cu = sh["side"] if sh["shot"] == "closeup" and sh["side"] else None
-            beat = float(sh["pause_after"] or 0)
-            if beat >= 0.6 and sh["listener_side"] and dur - beat > 0.8:
+            cu = None                                   # HD: no crop-zoom closeups (they went soft); variety comes from scene compositions
+            beat = 0.0
+            if False:
                 split = dur - beat + 0.1                     # reaction: hold on the listener during the beat
                 man.append({"video": cut(0, split, cu, "a"), "start": sh["a"], "end": round(sh["a"] + split, 3)})
                 man.append({"video": cut(split, dur, sh["listener_side"], "r"), "start": round(sh["a"] + split, 3), "end": sh["b"]})
@@ -367,7 +494,18 @@ def stage_talk(proj, sc):
     new seeds (max 3 attempts, best kept). Writes talk/<scene>.json = [{video, start, end}] and talk/ANIMATION_QC.json;
     a scene whose best shot still has a CRITICAL problem falls back to the cut-out puppets."""
     from .qc import animcheck as A, core as QC
-    done = stage_conversation(proj, sc) if sc.get("show") else set()
+    from . import h3
+    engine = os.environ.get("TALK_ENGINE", "h3" if h3.available() else "ltx")
+    if sc.get("show") and engine == "h3":
+        from .h3stage import stage_h3
+        done = stage_h3(proj, sc)
+        left = [s for s in sc["scenes"] if s["id"] not in done and s["kind"] == "stage" and s.get("cast")]
+        if left: done |= stage_conversation(proj, {**sc, "scenes": left})      # anything H3 could not do (writes its own QC report)
+    elif sc.get("show") and longcat_available() and engine == "longcat":
+        done = stage_longcat(proj, sc)
+        done |= stage_conversation(proj, {**sc, "scenes": [s for s in sc["scenes"] if s["id"] not in done]})   # anything LongCat could not do
+    else:
+        done = stage_conversation(proj, sc) if sc.get("show") else set()
     chars = {c["id"]: c for c in sc["characters"]}
     envs = {e["id"]: e for e in sc["environments"]}
     os.makedirs(f"{proj}/talk", exist_ok=True); os.makedirs(f"{proj}/work/talk", exist_ok=True)
@@ -491,7 +629,7 @@ def stage_sound(proj, sc):
         else: cur = {"mood": s["music"], "scenes": [s["id"]]}; beds.append(cur)
     for b in beds:  # pre-generate while ComfyUI is warm
         secs = sum(next(x for x in sc["scenes"] if x["id"] == i)["_dur"] for i in b["scenes"])
-        if secs >= 6: audio.music(b["mood"], secs + 4)
+        if secs >= 6 and b["mood"] != "none": audio.music(b["mood"], secs + 4)
     comfy.free()
     log(proj, f"sound: {n} sfx, {len(beds)} music beds, ambience for {len(sc['environments'])} environments")
     return beds
@@ -563,7 +701,8 @@ def build_props(proj, sc):
     for i, s in enumerate(scenes):
         nxt = scenes[i + 1]["transition"] if i + 1 < len(scenes) else "cut"
         overlap = XFADE[nxt][1]
-        frames = max(int(C.FPS * 1.6), math.ceil((s["_dur"] + TAIL + overlap + (s.get("_tail") or (1.2 if s is sc["scenes"][-1] else 0))) * C.FPS))
+        frames = max(int(C.FPS * 1.6), math.ceil((s["_dur"] + TAIL + overlap + (s.get("_tail") or (1.2 if s is sc["scenes"][-1] else 0))) * C.FPS),
+                     math.ceil((float(s.get("hold") or 0) + overlap) * C.FPS))
         W = _j(f"{proj}/audio/{s['id']}.words.json") or {"words": []}
         words = W["words"]
         lines = _j(f"{proj}/audio/{s['id']}.lines.json") or []
@@ -630,7 +769,8 @@ def build_props(proj, sc):
         kind = s["kind"] if not (s["kind"] == "hero" and not hv) else ("stage" if cast else "title_card")
         intro = [] if kind != "stage" else [c["char"] for c in cast if c["char"] not in seen and any(l["speaker"] == c["char"] for l in s["lines"])]
         seen.update(intro)
-        props.append({"id": s["id"], "kind": kind, "durationInFrames": frames,
+        props.append({"id": s["id"], "kind": kind, "durationInFrames": frames, "fps": C.FPS, "width": C.W, "height": C.H,
+                      "screen": s.get("screen") if kind == "screen" else None, "topText": s.get("top_text") or [],
                       "names": names, "introduce": intro, "sources": srcs, "brand": C.BRAND,
                       "background": bg if kind != "title_card" else last_bg, "cast": cast if kind == "stage" and not shots else [], "shots": shots,
                       "lines": lines, "words": words, "beats": beats,
@@ -696,10 +836,15 @@ def qc(proj, sc, props):
     problems, prev_bg = [], None
     for s, p in zip(sc["scenes"], props):
         a, sr = sf.read(f"{proj}/audio/{s['id']}.wav")
-        if len(a) < sr * 0.5 or np.abs(a).max() < 0.01: problems.append((s["id"], "audio", "dialogue missing or silent"))
+        if s["lines"] and (len(a) < sr * 0.5 or np.abs(a).max() < 0.01):   # scenes with no lines are silent on purpose (held beats)
+            problems.append((s["id"], "audio", "dialogue missing or silent"))
+        ws = (_j(f"{proj}/audio/{s['id']}.words.json") or {}).get("words", [])
         for ln in _j(f"{proj}/audio/{s['id']}.lines.json") or []:
             d = ln["end"] - ln["start"]; n = len(ln["text"].split())
-            if d > 0 and not (1.1 < n / d < 4.8): problems.append((s["id"], "audio", f"line '{ln['text'][:30]}' speech rate {n / d:.1f} w/s (TTS glitch?)"))
+            inl = [w for w in ws if ln["start"] - 0.05 <= w["startMs"] / 1000 <= ln["end"] + 0.05]
+            span = (inl[-1]["endMs"] - inl[0]["startMs"]) / 1000 if len(inl) >= 2 else d   # spoken part: a scripted '...' pause is not slow speech
+            slow, fast = span > 0 and n / span <= 1.1, d > 0 and n / d >= 4.8           # too fast: whole line (short quick lines are fine)
+            if slow or fast: problems.append((s["id"], "audio", f"line '{ln['text'][:30]}' speech rate {n / (span if slow else d):.1f} w/s (TTS glitch?)"))
         out = f"{proj}/renders/{s['id']}.mp4"
         if not os.path.exists(out): problems.append((s["id"], "render", "missing render")); continue
         w, h, n = probe(out)
@@ -718,9 +863,10 @@ def qc(proj, sc, props):
 
 
 def repair(proj, sc, problems):
-    for sid, area, _ in problems:
+    for sid, area, msg in problems:
         if area == "audio":
-            for ln in _j(f"{proj}/audio/{sid}.lines.json") or []:
+            m = re.search(r"line '(.*?)' speech rate", msg)
+            for ln in [l for l in _j(f"{proj}/audio/{sid}.lines.json") or [] if not m or l["text"].startswith(m.group(1))]:
                 for ext in (".wav", ".words.json", ".visemes.json"):
                     f = f"{proj}/audio/lines/{ln['key']}{ext}"
                     if os.path.exists(f): os.remove(f)
@@ -837,7 +983,7 @@ def stage_master(proj, sc, props, beds):
         lastp = next(p for p in props if p["id"] == b["scenes"][-1])
         en = starts[b["scenes"][-1]] + lastp["durationInFrames"] / C.FPS
         secs = sum(next(x for x in sc["scenes"] if x["id"] == i)["_dur"] for i in b["scenes"])
-        if secs < 6: continue
+        if secs < 6 or b["mood"] == "none": continue
         tl.append({"file": audio.music(b["mood"], secs + 4), "start": st, "dur": en - st, "kind": "music", "gain_db": (sc.get("mix") or {}).get("music_db", -15)})
     comfy.free()
     mix = audio.mix(tl, total, f"{proj}/work/mix.wav")
@@ -917,7 +1063,8 @@ def make_video(topic, minutes=6, approve=False, rerender=None, run_qc=True, revi
         return proj
     open(f"{proj}/APPROVED", "w").write(time.ctime())
     raw = _j(f"{proj}/script.json")
-    if ending.ensure_outro(raw, topic):            # every video gets a wrap-up + sign-off ending
+    C.set_format(raw.get("format", "landscape"))
+    if not raw.get("no_outro") and ending.ensure_outro(raw, topic):            # every video gets a wrap-up + sign-off ending
         _j(f"{proj}/script.json", raw); log(proj, f"ending: added outro -> {raw['scenes'][-1]['lines'][-1]['text']}")
     sc = script.validate(raw)
     hard = [p for p in sc["_problems"] if "environment as the previous" not in p and "environments; need" not in p]
@@ -936,6 +1083,8 @@ def make_video(topic, minutes=6, approve=False, rerender=None, run_qc=True, revi
         if not problems: break
         log(proj, f"QC found {len(problems)} problem(s): {problems[:6]} -> repairing (attempt {attempt + 1})")
         ids = repair(proj, sc, problems)
+        if any(a == "audio" for _, a, _ in problems):
+            stage_talk(proj, sc)                  # re-voiced lines change the timing: re-animate (H3 cache is keyed on the audio)
         props = build_props(proj, sc)
         stage_render(proj, props, only=ids)
     problems = qc(proj, sc, props)

@@ -1,0 +1,500 @@
+{
+ "title": "Robert Pattinson Is Taking All the Jobs?",
+ "thumbnail_text": "HE TOOK BOND",
+ "description": "Robert Pattinson is the new James Bond, and the internet thinks he's coming for everyone's job, Ryan's included. Maya explains how Bond is really cast, what Amazon paid for 007, and the economics of superstars: why one actor gets every big role, why stars don't guarantee hits, and why your job is probably safe.",
+ "characters": [
+  {
+   "id": "maya",
+   "name": "Maya",
+   "look": "a confident, beautiful young woman in her mid twenties with fair skin with a warm peachy undertone, long voluminous wavy dark brown hair, warm brown eyes, gold hoop earrings, a knowing half-smile, olive green utility shirt-jacket with rolled sleeves over a cream top, high-waisted black wide-leg trousers with a black belt, black wristwatch, white sneakers",
+   "voice": "A friendly woman in her late twenties with a smooth, natural, mellow voice, relaxed conversational pace, neutral American accent, easy warmth and a quiet sense of humour, like a favourite podcast host.",
+   "role": "",
+   "real_person": false,
+   "tag": "the woman with long wavy hair in the olive green jacket",
+   "outfits": {
+    "evening": {
+     "desc": "cosy cream cable-knit sweater tucked into high-waisted black wide-leg trousers, long chocolate-brown cardigan coat",
+     "tag": "the woman with long wavy hair in the cosy cream cable-knit sweater tucked into high-waisted black wide-leg trousers"
+    },
+    "smart_casual": {
+     "desc": "chocolate-brown tailored blazer over a cream silk blouse, black straight trousers",
+     "tag": "the woman with long wavy hair in the chocolate-brown tailored blazer"
+    },
+    "office": {
+     "desc": "olive green tailored trouser suit with a cream fitted knit top",
+     "tag": "the woman with long wavy hair in the olive green tailored trouser suit with cream fitted knit top"
+    },
+    "date_night": {
+     "desc": "black satin midi slip dress with a cropped olive green tailored jacket over the shoulders",
+     "tag": "the woman with long wavy hair in the black satin midi slip dress with cropped olive green tailored jacket"
+    },
+    "party": {
+     "desc": "chocolate-brown satin wrap dress, knee length",
+     "tag": "the woman with long wavy hair in the chocolate-brown satin wrap dress"
+    },
+    "winter": {
+     "desc": "long black wool coat over an olive turtleneck, chocolate-brown tailored trousers",
+     "tag": "the woman with long wavy hair in the long black wool coat"
+    },
+    "summer": {
+     "desc": "olive green linen midi shirt-dress with a thin muted gold belt",
+     "tag": "the woman with long wavy hair in the olive green linen midi shirt-dress with thin muted gold belt"
+    },
+    "rain": {
+     "desc": "classic olive trench coat over a cream knit and black trousers",
+     "tag": "the woman with long wavy hair in the classic olive trench coat"
+    },
+    "home": {
+     "desc": "oversized cream knit sweater, olive lounge trousers, hair in a loose bun",
+     "tag": "the woman with long wavy hair in the oversized cream knit sweater"
+    },
+    "gym": {
+     "desc": "olive green sports top and matching leggings, cream zip-up jacket, hair in a high ponytail",
+     "tag": "the woman with long wavy hair in the olive green sports top and matching leggings"
+    },
+    "formal": {
+     "desc": "floor-length olive green satin gown with a muted gold belt, hair styled in soft waves",
+     "tag": "the woman with long wavy hair in the floor-length olive green satin gown with muted gold belt"
+    },
+    "denim": {
+     "desc": "light blue denim jacket over a white fitted t-shirt, high-waisted black wide-leg trousers with a black belt",
+     "tag": "the woman with long wavy hair in the light blue denim jacket"
+    }
+   },
+   "tts": {
+    "engine": "chatterbox",
+    "ref": "library/voices/maya/reference.wav"
+   },
+   "style": "vibrant modern 2D anime-inspired character illustration, like a polished animated series character sheet, clean confident dark outlines, warm cel shading with soft highlights, large expressive brown eyes, attractive appealing faces, natural adult proportions, rich saturated colours"
+  },
+  {
+   "id": "benny",
+   "name": "Ryan",
+   "look": "a cheerful young man in his mid twenties with fair skin with a warm peachy undertone, thick curly dark brown hair, big expressive brown eyes, a wide confident grin, burnt-orange zip-up hoodie worn open over a white t-shirt, black crossbody bag strap across his chest, black wristwatch, navy blue cargo trousers, white and orange sneakers",
+   "voice": "A charming young man in his late twenties with a warm, pleasant male voice, friendly and sincere, energetic and very expressive, casual neutral English accent, natural comedic timing.",
+   "role": "",
+   "real_person": false,
+   "tag": "the young man with curly hair in the orange hoodie",
+   "outfits": {
+    "evening": {
+     "desc": "dark brown bomber jacket over a grey crew-neck t-shirt, black slim jeans",
+     "tag": "the young man with curly hair in the dark brown bomber jacket"
+    },
+    "smart_casual": {
+     "desc": "navy unstructured blazer over a cream knit polo, charcoal tailored trousers",
+     "tag": "the young man with curly hair in the navy unstructured blazer"
+    },
+    "office": {
+     "desc": "light blue oxford shirt with sleeves rolled, navy chinos, burnt-orange knit tie loosened",
+     "tag": "the young man with curly hair in the light blue oxford shirt with sleeves rolled"
+    },
+    "date_night": {
+     "desc": "charcoal knit polo shirt tucked into cream pleated trousers, brown suede bomber",
+     "tag": "the young man with curly hair in the charcoal knit polo shirt tucked into cream pleated trousers"
+    },
+    "party": {
+     "desc": "burnt-orange short-sleeve camp-collar shirt with a subtle cream wave pattern, black straight trousers",
+     "tag": "the young man with curly hair in the burnt-orange short-sleeve camp-collar shirt with subtle cream wave pattern"
+    },
+    "winter": {
+     "desc": "navy padded puffer jacket over a burnt-orange hoodie, charcoal wool trousers",
+     "tag": "the young man with curly hair in the navy padded puffer jacket"
+    },
+    "summer": {
+     "desc": "cream short-sleeve linen shirt open over a burnt-orange t-shirt, navy shorts",
+     "tag": "the young man with curly hair in the cream short-sleeve linen shirt open"
+    },
+    "rain": {
+     "desc": "navy hooded rain jacket over a cream hoodie, charcoal joggers",
+     "tag": "the young man with curly hair in the navy hooded rain jacket"
+    },
+    "home": {
+     "desc": "faded burnt-orange oversized t-shirt, grey sweatpants",
+     "tag": "the young man with curly hair in the faded burnt-orange oversized t-shirt"
+    },
+    "gym": {
+     "desc": "navy athletic t-shirt, charcoal training shorts, burnt-orange zip-up track jacket tied at the waist",
+     "tag": "the young man with curly hair in the navy athletic t-shirt"
+    },
+    "formal": {
+     "desc": "navy slim two-piece suit, crisp white shirt, burnt-orange silk tie, brown leather belt",
+     "tag": "the young man with curly hair in the navy slim two-piece suit"
+    },
+    "luckycat": {
+     "desc": "plain white t-shirt with a small simple golden-yellow lucky-cat face icon printed on the chest (flat yellow and white cartoon cat face, no text), burnt-orange hoodie tied around his waist, navy cargo trousers",
+     "tag": "the young man with curly hair in the plain white t-shirt with small simple golden-yellow lucky-cat face icon printed on the chest (flat yellow and white cartoon cat face"
+    }
+   },
+   "tts": {
+    "engine": "qwen_custom",
+    "speaker": "Ryan",
+    "model": "models/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "base_direction": "A charismatic young guy in his mid-twenties, natural and conversational like a real actor improvising, at a lively natural conversational pace; never an announcer, never cartoonish, never slow or drawn out."
+   },
+   "style": "vibrant modern 2D anime-inspired character illustration, like a polished animated series character sheet, clean confident dark outlines, warm cel shading with soft highlights, large expressive brown eyes, attractive appealing faces, natural adult proportions, rich saturated colours"
+  },
+  {
+   "id": "dana",
+   "name": "Dana",
+   "role": "Ryan's team lead",
+   "real_person": false,
+   "tag": "the team lead with short dark hair and glasses",
+   "look": "a composed, sharp woman in her early forties with fair skin, short neat dark hair, rectangular glasses, a navy blazer over a white blouse, a lanyard with an ID badge",
+   "voice": "A composed woman in her early forties, dry and deadpan, low-to-mid pitch, unhurried, neutral American accent, very understated.",
+   "style": "vibrant modern 2D anime-inspired character illustration, like a polished animated series character sheet, clean confident dark outlines, warm cel shading with soft highlights, large expressive brown eyes, attractive appealing faces, natural adult proportions, rich saturated colours"
+  }
+ ],
+ "environments": [
+  {
+   "id": "ryan_flat",
+   "prompt": "Ryan's small cosy city apartment living room in the evening: a sofa with a laptop on it, a bookshelf and a framed poster on the back wall, a television on the side wall, a floor lamp with warm light",
+   "ambience": "quiet apartment hum, distant traffic",
+   "style": "hand-painted 2D anime background art like a modern Japanese animated film (painted, illustrated, NOT photographic, not 3D), warm cinematic light, rich but soft colours, clean shapes, gentle depth, realistic perspective, no people, wide 16:9 composition, open clear floor across the foreground, furniture and props only along the back wall and the far left/right edges, nothing in the lower centre, eye-level camera. Absolutely no text: no signs with letters, no logos, no writing on boards, screens, menus or paper (screens and signs are blank or show simple pictures only)",
+   "_file": "/home/mundax/Documents/REL/ExplainerStudio/library/backgrounds_news/ryan_flat_a9a12c.png",
+   "_text_ok": "83a272e1df10"
+  },
+  {
+   "id": "coffee_shop",
+   "prompt": "a bright neighbourhood coffee shop: counter and espresso machine along the back wall, pendant lights, small tables at the far edges, big window with soft daylight",
+   "ambience": "light cafe chatter, espresso machine hiss",
+   "style": "hand-painted 2D anime background art like a modern Japanese animated film (painted, illustrated, NOT photographic, not 3D), warm cinematic light, rich but soft colours, clean shapes, gentle depth, realistic perspective, no people, wide 16:9 composition, open clear floor across the foreground, furniture and props only along the back wall and the far left/right edges, nothing in the lower centre, eye-level camera. Absolutely no text: no signs with letters, no logos, no writing on boards, screens, menus or paper (screens and signs are blank or show simple pictures only)",
+   "_file": "/home/mundax/Documents/REL/ExplainerStudio/library/backgrounds_news/coffee_shop_3bafa1.png",
+   "_text_ok": "3172ee76f8a6"
+  },
+  {
+   "id": "office",
+   "prompt": "a bright open-plan office: rows of desks with monitors along the back wall, a large office printer at the far left edge, plants, a whiteboard, big windows with daylight",
+   "ambience": "office murmur, keyboard typing, distant printer",
+   "style": "hand-painted 2D anime background art like a modern Japanese animated film (painted, illustrated, NOT photographic, not 3D), warm cinematic light, rich but soft colours, clean shapes, gentle depth, realistic perspective, no people, wide 16:9 composition, open clear floor across the foreground, furniture and props only along the back wall and the far left/right edges, nothing in the lower centre, eye-level camera. Absolutely no text: no signs with letters, no logos, no writing on boards, screens, menus or paper (screens and signs are blank or show simple pictures only)"
+  }
+ ],
+ "scenes": [
+  {
+   "kind": "stage",
+   "environment": "ryan_flat",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left",
+     "outfit": "home"
+    },
+    {
+     "char": "maya",
+     "position": "right",
+     "outfit": "evening"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "benny",
+     "text": "Maya. I need you to check my CV before Robert Pattinson sees it.",
+     "emotion": "worried",
+     "pose": "worried",
+     "shot": "two_shot",
+     "act": "the young man on the left hunches over a laptop on the sofa, typing fast",
+     "react": "the woman on the right stands holding a coffee mug, one eyebrow raised, mouth closed"
+    },
+    {
+     "speaker": "maya",
+     "text": "Why would Robert Pattinson read your CV?",
+     "emotion": "confused",
+     "pose": "shrug",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "He's Batman. Since Monday, he's also James Bond. He is clearly working his way down a list.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "So your fear is that a movie star secretly wants your spreadsheets.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "benny",
+     "text": "Everybody wants my spreadsheets.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "closeup"
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s01",
+   "narration": "Maya. I need you to check my CV before Robert Pattinson sees it. Why would Robert Pattinson read your CV? He's Batman. Since Monday, he's also James Bond. He is clearly working his way down a list. So your fear is that a movie star secretly wants your spreadsheets. Everybody wants my spreadsheets.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 20.589416666666665,
+   "_qc_retakes": {
+    "43d13e2ea5": 2
+   }
+  },
+  {
+   "kind": "chart",
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "Why one actor gets every big role",
+    "mode": "stats",
+    "items": [
+     {
+      "value": "$8.5bn",
+      "label": "what Amazon paid for MGM, Bond included"
+     },
+     {
+      "value": "1 film",
+      "label": "reaches millions of people at once"
+     },
+     {
+      "value": "1981",
+      "label": "Sherwin Rosen: the economics of superstars"
+     }
+    ]
+   },
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Economists saw this coming in 1981. When one performance reaches millions, studios want the best they can get, at almost any price.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "detail"
+    }
+   ],
+   "transition": "zoom",
+   "music": "upbeat",
+   "beats": [],
+   "id": "s02",
+   "environment": "",
+   "cast": [],
+   "narration": "Economists saw this coming in 1981. When one performance reaches millions, studios want the best they can get, at almost any price.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "hero_prompt": "",
+   "sfx": [],
+   "_dur": 8.066770833333333
+  },
+  {
+   "kind": "stage",
+   "environment": "coffee_shop",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left"
+    },
+    {
+     "char": "maya",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "benny",
+     "text": "Ten cheaper Bonds sounds like a great deal to me.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "Ten cheaper Bonds is a stag party.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "benny",
+     "text": "So is my job safe?",
+     "emotion": "worried",
+     "pose": "worried",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "He can be in a million cinemas at once, Ryan. He cannot be in your Tuesday meeting.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "closeup"
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s03",
+   "narration": "Ten cheaper Bonds sounds like a great deal to me. Ten cheaper Bonds is a stag party. So is my job safe? He can be in a million cinemas at once, Ryan. He cannot be in your Tuesday meeting.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "_dur": 13.375083333333334
+  },
+  {
+   "kind": "title_card",
+   "title_text": "Full Episode on YouTube",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "The full story is on our YouTube channel. Link in bio.",
+     "emotion": "happy",
+     "pose": "happy",
+     "shot": "two_shot"
+    }
+   ],
+   "transition": "fade",
+   "music": "upbeat",
+   "id": "s04",
+   "environment": "",
+   "cast": [],
+   "narration": "The full story is on our YouTube channel. Link in bio.",
+   "beats": [],
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "sfx": [],
+   "_dur": 3.0196875
+  },
+  {
+   "id": "s05",
+   "kind": "title_card",
+   "environment": "",
+   "cast": [],
+   "_outro": true,
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "While casting lists shift fast, real-world spreadsheets remain stubbornly human. Subscribe now for more economic breakdowns.",
+     "emotion": "happy",
+     "pose": "neutral",
+     "shot": "detail"
+    }
+   ],
+   "beats": [
+    {
+     "at_word": "watching",
+     "type": "keyword",
+     "text": "THANKS!"
+    }
+   ],
+   "title_text": "Thanks for Watching",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": null,
+   "transition": "fade",
+   "sfx": [],
+   "music": "upbeat",
+   "narration": "While casting lists shift fast, real-world spreadsheets remain stubbornly human. Subscribe now for more economic breakdowns.",
+   "_dur": 6.138083333333333
+  }
+ ],
+ "sources": [
+  "https://variety.com/2026/film/global/robert-pattinson-new-james-bond-007-1236946655/",
+  "https://www.bbc.co.uk/news/articles/cwx2ev0pxmvjo",
+  "https://www.bbc.com/news/articles/c50mep10dek7o",
+  "https://www.indiatoday.in/movies/hollywood/story/robert-pattinsons-007-era-begins-with-memes-job-stealing-jokes-and-twilight-recall-3040524-2026-11-17",
+  "https://abcnews.com/GMA/Culture/robert-pattinson-new-james-bond-amazon-mgm-studios/story?id=135776275",
+  "https://en.wikipedia.org/wiki/Portrayal_of_James_Bond_in_film",
+  "https://www.jstor.org/stable/1803469",
+  "http://marshallinside.usc.edu/mweinstein/teaching/fbe552/552secure/notes/devany%20new%20one.pdf"
+ ],
+ "show": "Ryan Figures It Out",
+ "tags": [],
+ "narrator_voice": "maya",
+ "seo": {
+  "title": "Robert Pattinson Is Taking All The Jobs?",
+  "description": "Robert Pattinson is now both Batman and James Bond, sparking fears about his impact on the industry and your job security. Economists explain how studios chase top talent at any cost, why this trend started in 1981, and whether one star can really replace human meetings.",
+  "tags": [
+   "economics explained",
+   "maya",
+   "why is robert pattinson taking all the jobs",
+   "entertainment news today 2026",
+   "robert pattinson taking all jobs explained",
+   "entertainment news",
+   "ryan pattinson jobs reel",
+   "ryan pattinson jobs reel explained",
+   "news explained",
+   "world news 2026",
+   "ryan",
+   "what is ten cheaper bonds",
+   "latest celebrity economics",
+   "james bond vs batman casting shift",
+   "celebrity economy",
+   "robert pattinson",
+   "will james bond replace batman",
+   "film industry updates 2026",
+   "film industry analysis"
+  ],
+  "hashtags": [
+   "#economics",
+   "#robertpattinson",
+   "#jamesbond",
+   "#filmmaking"
+  ],
+  "tags_v": 2
+ },
+ "_problems": [
+  "only 3 environments; need 4-6 distinct locations"
+ ]
+}

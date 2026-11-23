@@ -1,0 +1,20 @@
+{
+ "engine": "Qwen3-TTS CustomVoice preset Aiden",
+ "profiles": {
+  "normal": "Casual and natural.",
+  "distracted": "Muffled and distracted, clearly busy with something else, casual."
+ },
+ "emotion_to_profile": {
+  "neutral": "normal"
+ },
+ "pace_words_per_sec": {
+  "normal": [
+   2.6,
+   3.6
+  ],
+  "distracted": [
+   2.4,
+   3.5
+  ]
+ }
+}

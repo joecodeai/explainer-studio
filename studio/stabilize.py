@@ -56,10 +56,8 @@ def stabilize(video, ref_png, out, crop, size=(1920, 1080), smooth=5):
     lastw = None
     for f, M in zip(frames, A):
         inv = cv2.invertAffineTransform(M)                       # frame -> ref
-        warped = cv2.warpAffine(f, inv, (W, H), flags=cv2.INTER_CUBIC, borderMode=cv2.BORDER_CONSTANT, borderValue=0)
-        mask = cv2.warpAffine(np.full((H, W), 255, np.uint8), inv, (W, H), flags=cv2.INTER_NEAREST)
-        mask = cv2.erode(mask, np.ones((5, 5), np.uint8))
-        full = np.where(mask[..., None] > 0, warped, ref)        # outside what the model still shows: the reference still
+        # outside what the model still shows: stretch the frame's own edge (pasting the reference still there left a visible seam)
+        full = cv2.warpAffine(f, inv, (W, H), flags=cv2.INTER_CUBIC, borderMode=cv2.BORDER_REPLICATE)
         lastw = full
         win = full[y:y + h, x:x + w]
         proc.stdin.write(cv2.resize(win, size, interpolation=cv2.INTER_CUBIC).tobytes())

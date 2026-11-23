@@ -1,0 +1,42 @@
+{
+ "A_current": {
+  "identity_consistency(min sim to centroid)": 0.91,
+  "mean_sim": 0.948,
+  "word_error": 0.013,
+  "pitch_movement_mean": 4.73,
+  "pitch_movement_spread_across_emotions": 0.7,
+  "pace_spread_words_per_s": 0.59
+ },
+ "B1_new": {
+  "identity_consistency(min sim to centroid)": 0.921,
+  "mean_sim": 0.948,
+  "word_error": 0.013,
+  "pitch_movement_mean": 4.84,
+  "pitch_movement_spread_across_emotions": 0.93,
+  "pace_spread_words_per_s": 0.89
+ },
+ "B2_new": {
+  "identity_consistency(min sim to centroid)": 0.914,
+  "mean_sim": 0.948,
+  "word_error": 0.0,
+  "pitch_movement_mean": 5.2,
+  "pitch_movement_spread_across_emotions": 0.83,
+  "pace_spread_words_per_s": 0.52
+ },
+ "C_Aiden": {
+  "identity_consistency(min sim to centroid)": 0.837,
+  "mean_sim": 0.917,
+  "word_error": 0.016,
+  "pitch_movement_mean": 4.31,
+  "pitch_movement_spread_across_emotions": 0.85,
+  "pace_spread_words_per_s": 0.85
+ },
+ "C_Ryan": {
+  "identity_consistency(min sim to centroid)": 0.861,
+  "mean_sim": 0.913,
+  "word_error": 0.009,
+  "pitch_movement_mean": 5.03,
+  "pitch_movement_spread_across_emotions": 0.6,
+  "pace_spread_words_per_s": 0.57
+ }
+}

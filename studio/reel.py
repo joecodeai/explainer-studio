@@ -214,7 +214,8 @@ def voice_beats(proj, c):
     d = os.path.join(proj, "reel", "voice")
     scenes = [{"id": f"b{k}", "lines": [{"speaker": "narrator", "text": b["text"]}]} for k, b in enumerate(c["beats"]) if b["type"] == "vo"]
     scenes.append({"id": "cta", "lines": [{"speaker": "narrator", "text": c["cta"]}]})
-    V.narrate({"characters": [], "scenes": scenes}, d)
+    sc = json.load(open(os.path.join(proj, "script.json")))      # the show's narrator (Maya), not the generic default voice
+    V.narrate({"characters": sc.get("characters", []), "narrator_voice": sc.get("narrator_voice"), "scenes": scenes}, d)
     for k, b in enumerate(c["beats"]):
         if b["type"] == "vo": b["wav"] = os.path.join(d, f"b{k}.wav")
     return os.path.join(d, "cta.wav")
@@ -573,6 +574,8 @@ def make(proj, force=False):
         else:
             c = plan(tl, topic, sc["title"], feedback)
             if not c: break
+            json.dump({**state, "v": 2, "plan": {k: c[k] for k in ("beats", "hook", "cta", "caption", "hashtags") if k in c}},
+                      open(state_p, "w"), indent=1)           # keep the plan: a crash later must not cost another ~20 min of planning
         llm.unload(); tries += 1
         log(proj, f"try {tries}: {len(c['beats'])} beats ({sum(b['type'] == 'bite' for b in c['beats'])} soundbites), hook \"{c['hook']}\"")
         meta = render(proj, tl, c, out)

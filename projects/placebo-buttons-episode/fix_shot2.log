@@ -1,0 +1,52 @@
+[15:23:21] === placebo buttons episode (6 min) ===
+[15:23:21] research: 11 sources
+[15:25:44] voice: 5.2 min of dialogue, 4 distinct voices
+[15:25:44] character benny (office): 7 poses/expressions
+[15:25:46] character maya: 7 poses/expressions
+[15:25:46] character dana: 4 poses/expressions
+[15:25:46] character benny (home): 8 poses/expressions
+[15:25:47] character maya (home): 7 poses/expressions
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+[15:25:52] h3: 40 shots for 22 scenes (26 continue a take)
+[15:25:52] h3: 30 accepted shot(s) reused as they are, 10 to render
+[15:27:41] h3 s20#2 two (continues take) 11.0s attempt 1: 108s
+[15:28:41] h3 s20#3 two (continues take) 7.0s attempt 1: 54s
+[15:30:34] h3 s22#0 two (continues take) 11.9s attempt 1: 108s
+[15:31:16] h3 s22#1 two (continues take) 4.9s attempt 1: 36s
+[15:32:20] h3 s23#0 two (continues take) 7.6s attempt 1: 60s
+[15:34:12] h3 s23#1 two (continues take) 11.9s attempt 1: 108s
+[15:34:55] h3 s23#2 two (continues take) 4.6s attempt 1: 36s
+[15:36:04] h3 s25#0 two (continues take) 8.3s attempt 1: 66s
+[15:37:39] h3 s25#1 two (continues take) 10.5s attempt 1: 90s
+[15:40:10] h3 s25#2 two (continues take) 14.0s attempt 1: 144s
+/home/mundax/Documents/REL/ExplainerStudio/.venv/lib/python3.13/site-packages/transformers/models/grounding_dino/processing_grounding_dino.py:98: FutureWarning: The key `labels` is will return integer ids in `GroundingDinoProcessor.post_process_grounded_object_detection` output since v4.51.0. Use `text_labels` instead to retrieve string object names.
+  warnings.warn(self.message, FutureWarning)
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+/home/mundax/Documents/REL/ExplainerStudio/.venv/lib/python3.13/site-packages/transformers/models/grounding_dino/processing_grounding_dino.py:98: FutureWarning: The key `labels` is will return integer ids in `GroundingDinoProcessor.post_process_grounded_object_detection` output since v4.51.0. Use `text_labels` instead to retrieve string object names.
+  warnings.warn(self.message, FutureWarning)
+/home/mundax/Documents/REL/ExplainerStudio/.venv/lib/python3.13/site-packages/transformers/models/grounding_dino/processing_grounding_dino.py:98: FutureWarning: The key `labels` is will return integer ids in `GroundingDinoProcessor.post_process_grounded_object_detection` output since v4.51.0. Use `text_labels` instead to retrieve string object names.
+  warnings.warn(self.message, FutureWarning)
+/home/mundax/Documents/REL/ExplainerStudio/.venv/lib/python3.13/site-packages/transformers/models/grounding_dino/processing_grounding_dino.py:98: FutureWarning: The key `labels` is will return integer ids in `GroundingDinoProcessor.post_process_grounded_object_detection` output since v4.51.0. Use `text_labels` instead to retrieve string object names.
+  warnings.warn(self.message, FutureWarning)
+/home/mundax/Documents/REL/ExplainerStudio/.venv/lib/python3.13/site-packages/transformers/models/grounding_dino/processing_grounding_dino.py:98: FutureWarning: The key `labels` is will return integer ids in `GroundingDinoProcessor.post_process_grounded_object_detection` output since v4.51.0. Use `text_labels` instead to retrieve string object names.
+  warnings.warn(self.message, FutureWarning)
+/home/mundax/Documents/REL/ExplainerStudio/.venv/lib/python3.13/site-packages/transformers/models/grounding_dino/processing_grounding_dino.py:98: FutureWarning: The key `labels` is will return integer ids in `GroundingDinoProcessor.post_process_grounded_object_detection` output since v4.51.0. Use `text_labels` instead to retrieve string object names.
+  warnings.warn(self.message, FutureWarning)
+/home/mundax/Documents/REL/ExplainerStudio/.venv/lib/python3.13/site-packages/transformers/models/grounding_dino/processing_grounding_dino.py:98: FutureWarning: The key `labels` is will return integer ids in `GroundingDinoProcessor.post_process_grounded_object_detection` output since v4.51.0. Use `text_labels` instead to retrieve string object names.
+  warnings.warn(self.message, FutureWarning)
+/home/mundax/Documents/REL/ExplainerStudio/.venv/lib/python3.13/site-packages/transformers/models/grounding_dino/processing_grounding_dino.py:98: FutureWarning: The key `labels` is will return integer ids in `GroundingDinoProcessor.post_process_grounded_object_detection` output since v4.51.0. Use `text_labels` instead to retrieve string object names.
+  warnings.warn(self.message, FutureWarning)
+/home/mundax/Documents/REL/ExplainerStudio/.venv/lib/python3.13/site-packages/transformers/models/grounding_dino/processing_grounding_dino.py:98: FutureWarning: The key `labels` is will return integer ids in `GroundingDinoProcessor.post_process_grounded_object_detection` output since v4.51.0. Use `text_labels` instead to retrieve string object names.
+  warnings.warn(self.message, FutureWarning)
+/home/mundax/Documents/REL/ExplainerStudio/.venv/lib/python3.13/site-packages/transformers/models/grounding_dino/processing_grounding_dino.py:98: FutureWarning: The key `labels` is will return integer ids in `GroundingDinoProcessor.post_process_grounded_object_detection` output since v4.51.0. Use `text_labels` instead to retrieve string object names.
+  warnings.warn(self.message, FutureWarning)
+[15:41:47] h3: 22/22 scenes animated; QC 40/40 shots clean
+[15:41:47] sound: 0 sfx, 1 music beds, ambience for 5 environments
+[15:41:47] render: 4 scene(s)
+[15:42:52] master: 11 of 77 segments re-encoded
+[15:48:06] master: /home/mundax/Documents/REL/ExplainerStudio/projects/placebo-buttons-episode/placebo-buttons-episode.mp4 (5.4 min)
+[15:48:28] review: /home/mundax/Documents/REL/ExplainerStudio/projects/placebo-buttons-episode/review/REVIEW.md  fails=0 warns=0 sheets=6
+[15:48:30] QC stage 1: frames
+[15:48:31] QC stage 1: transitions
+[15:48:37] QC stage 1: audio

@@ -4,7 +4,8 @@ import hashlib, json, math, os, subprocess, time
 from dataclasses import dataclass, field, asdict
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-W, H, FPS = 1920, 1080, 30
+from .. import config as _C
+W, H, FPS = 1920, 1080, _C.FPS
 
 SEVERITIES = ["CRITICAL", "HIGH", "MEDIUM", "LOW"]
 WEIGHT = {"CRITICAL": 40, "HIGH": 12, "MEDIUM": 4, "LOW": 1}

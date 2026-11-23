@@ -1,0 +1,9 @@
+{
+ "name": "dana",
+ "design": "A composed woman in her early forties, dry and deadpan, low-to-mid pitch, unhurried, neutral American accent, very understated. Speaking naturally in English, expressive and conversational.",
+ "language": "English",
+ "instruct": "A composed woman in her early forties, dry and deadpan, low-to-mid pitch, unhurried, neutral American accent, very understated. Speaking naturally in English, expressive and conversational. IMPORTANT: this is clearly an adult WOMAN's voice \u2014 female pitch and timbre, never a male voice.",
+ "f0": 212.6,
+ "gender": "female",
+ "redesigns": 0
+}

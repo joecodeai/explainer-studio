@@ -1,0 +1,1 @@
+[{"input_json": "/home/mundax/Documents/REL/ExplainerStudio/tests/quick10/lc_input.json", "num_segments": 3, "out": "/home/mundax/Documents/REL/ExplainerStudio/tests/quick10/longcat480.mp4", "seed": 42, "clean_audio": true, "segment_text_guidance": {"2": 3.0}}]

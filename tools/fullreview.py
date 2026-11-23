@@ -136,7 +136,7 @@ for s in sc["scenes"]:
     if s.get("lines") and len(words) < sum(len(l["text"].split()) for l in s["lines"]) * 0.9:
         add("fail", "text", f"captions missing words in {s['id']}", starts[s["id"]])
     end_ms = max([w["endMs"] for w in words] or [0])
-    if props.get("durationInFrames") and end_ms / 1000 > props["durationInFrames"] / 30 + 0.05:
+    if props.get("durationInFrames") and end_ms / 1000 > props["durationInFrames"] / props.get("fps", 30) + 0.05:
         add("fail", "audio", f"speech runs past the end of scene {s['id']} (clipped words)", starts[s["id"]])
 
 # ---------- 5. layout checks from props ----------

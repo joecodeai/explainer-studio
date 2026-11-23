@@ -37,7 +37,7 @@ def voice_profiles(sc):
     prof = {"narrator": dict(C.NARRATOR)}
     for c in sc["characters"]:
         prof[c["id"]] = {"name": c["id"], "design": f"{c['voice']} Speaking naturally in English, expressive and conversational.",
-                         "language": "English"}
+                         "language": "English", **({"tts": c["tts"]} if c.get("tts") else {})}
     nv = sc.get("narrator_voice")         # a show can make one of its characters the narrator (same voice on and off screen)
     if nv in prof and nv != "narrator": prof["narrator"] = dict(prof[nv])
     return prof
@@ -128,8 +128,12 @@ def check_library(profiles):
     return bad
 
 
+_SPK_TAG = {}          # speaker -> voice engine tag (set by narrate), so a voice change never reuses old cached lines
+
+
 def _line_key(speaker, text):
-    return hashlib.md5((f"{speaker}|{text}" + ("|cb" if ENGINE == "chatterbox" else "")).encode()).hexdigest()[:10]
+    tag = _SPK_TAG.get(speaker) or ("cb" if ENGINE == "chatterbox" else "")
+    return hashlib.md5((f"{speaker}|{text}" + (f"|{tag}" if tag else "")).encode()).hexdigest()[:10]
 
 
 def line_pitch_wrong(sc, out_dir, profiles, n=5):
@@ -150,14 +154,68 @@ def line_pitch_wrong(sc, out_dir, profiles, n=5):
 ENGINE = os.environ.get("TTS_ENGINE") or ("chatterbox" if os.path.exists(os.path.join(C.ROOT, ".venv-tts", "bin", "python")) else "qwen")
 
 
+def _qwen_custom(todo, profiles):
+    """Speakers with tts.engine == 'qwen_custom' (Ryan = preset 'Ryan'): fixed built-in identity + a written acting direction per
+    line (library/voices/<id>/delivery.json). 3 takes per line; studio/tts_pick.py keeps the take closest to the character's anchor
+    recording that says every word and moves the pitch the way the emotion needs."""
+    import subprocess, tempfile, torch
+    from qwen_tts import Qwen3TTSModel
+    jobs = []
+    by_model = {}
+    for spk in todo: by_model.setdefault(profiles[spk]["tts"]["model"], []).append(spk)
+    for model, spks in by_model.items():
+      m = Qwen3TTSModel.from_pretrained(os.path.join(C.ROOT, model), device_map="cuda:0", dtype=torch.bfloat16)
+      for spk in spks:
+        items = todo[spk]
+        t = profiles[spk]["tts"]; vdir = os.path.join(C.VOICE_LIB, profiles[spk]["name"]); os.makedirs(vdir, exist_ok=True)
+        dl = json.load(open(os.path.join(vdir, "delivery.json"))) if os.path.exists(os.path.join(vdir, "delivery.json")) else {"profiles": {}, "emotion_to_profile": {}}
+        design = t.get("engine") == "qwen_design"        # a voice made from a description: identity = design text + anchor pick
+        clone = t.get("engine") == "qwen_clone"          # a voice cloned from ONE approved recording: identical timbre on every line
+        if clone:
+            cp = m.create_voice_clone_prompt(ref_audio=os.path.join(C.ROOT, t["ref_audio"]), ref_text=open(os.path.join(C.ROOT, t["ref_text"])).read().strip())
+            gen = lambda text, instr: m.generate_voice_clone(text=text, language="English", voice_clone_prompt=cp)
+        elif design:
+            gen = lambda text, instr: m.generate_voice_design(text=text, language="English", instruct=(t["design"] + " " + instr).strip())
+        else:
+            gen = lambda text, instr: m.generate_custom_voice(text=text, language="English", speaker=t["speaker"], instruct=instr)
+        anchor = os.path.join(C.ROOT, t["ref_audio"]) if clone else os.path.join(vdir, "anchor_design.wav" if design else f"anchor_{t['speaker']}.wav")
+        if not os.path.exists(anchor):                     # the identity reference every take is compared against
+            torch.manual_seed(1)
+            w, sr = gen(REF_TEXT, dl["profiles"].get("normal", ""))
+            sf.write(anchor, w[0], sr)
+        for ln, f in items:
+            prof = ln.get("delivery") or (ln.get("voice") if ln.get("voice") in dl["profiles"] else None) or dl["emotion_to_profile"].get(ln.get("emotion", "neutral"), "normal")
+            direction = ln.get("direction") or dl["profiles"].get(prof, "")
+            takes = []
+            for k in range(6 if design else 4):            # clone: 4 takes differ only in delivery, never in voice            # a designed voice drifts more per take: more takes, closest to the anchor wins
+                torch.manual_seed(int(hashlib.md5((ln["text"] + str(k)).encode()).hexdigest()[:8], 16))
+                w, sr = gen(_pron(ln["text"].replace("*", "")), (t.get("base_direction", "") + " " + direction).strip())
+                tf = f"{f}.take{k}.wav"; sf.write(tf, w[0], sr); takes.append(tf)
+            jobs.append({"text": ln["text"].replace("*", ""), "emotion": ln.get("voice") or ln.get("emotion", "neutral"), "takes": takes, "anchor": anchor, "out": f + ".cb.wav",
+                         "rate": dl.get("pace_words_per_sec", {}).get(prof, [0, 99])})
+      del m; gc.collect(); torch.cuda.empty_cache()
+    jf = tempfile.NamedTemporaryFile("w", suffix=".json", delete=False); json.dump(jobs, jf); jf.close()
+    subprocess.run([os.path.join(C.ROOT, ".venv-tts", "bin", "python"), os.path.join(C.ROOT, "studio", "tts_pick.py"), jf.name], check=True)
+    for j in jobs:
+        f = j["out"][:-len(".cb.wav")]
+        w, sr = sf.read(j["out"], dtype="float32")
+        raw = f + ".raw.wav"; sf.write(raw, _trim(w, sr), sr); _clean(raw, f); os.remove(raw); os.remove(j["out"])
+        for tf in j["takes"]: os.remove(tf)
+
+
 def _chatterbox(todo, profiles):
-    """Every line cloned from the speaker's ONE reference (fixed identity); emotion only changes delivery. Runs in .venv-tts."""
+    """Every line cloned from the speaker's ONE reference (fixed identity); emotion only changes delivery. Runs in .venv-tts.
+    Speakers configured for another engine (tts.engine) are routed there."""
     import subprocess, tempfile
+    qc = {k: v for k, v in todo.items() if profiles[k].get("tts", {}).get("engine") in ("qwen_custom", "qwen_design", "qwen_clone")}
+    if qc: _qwen_custom(qc, profiles)
+    todo = {k: v for k, v in todo.items() if k not in qc}
+    if not todo: return
     jobs, outs = [], []
     for spk, items in todo.items():
         ref = os.path.join(C.VOICE_LIB, profiles[spk]["name"], "reference.wav")
         for ln, f in items:
-            jobs.append({"text": _pron(ln["text"].replace("*", "")), "ref": ref, "emotion": ln.get("emotion", "neutral"), "out": f + ".cb.wav"})
+            jobs.append({"text": _pron(ln["text"].replace("*", "")), "ref": ref, "emotion": ln.get("voice") or ln.get("emotion", "neutral"), "out": f + ".cb.wav"})
             outs.append(f)
     jf = tempfile.NamedTemporaryFile("w", suffix=".json", delete=False); json.dump(jobs, jf); jf.close()
     subprocess.run([os.path.join(C.ROOT, ".venv-tts", "bin", "python"), os.path.join(C.ROOT, "studio", "tts_cb.py"), jf.name], check=True)
@@ -185,14 +243,47 @@ def _pace_lines(files, texts):
     del m; gc.collect()
 
 
+TEMPO_BASE = 2.95          # shared conversational tempo (words/second of actual speech) for EVERY character
+TEMPO_EMO = {"excited": 1.15, "surprised": 1.0, "happy": 1.05, "confident": 1.02, "neutral": 1.0, "sarcastic": 0.95,
+             "confused": 0.9, "worried": 1.03, "sad": 0.9, "angry": 1.05,
+             "deadpan": 0.95, "dry": 0.97, "amused": 1.0, "curious": 0.98, "awkward": 0.93, "professional": 1.03, "concerned": 1.0,
+             "tired": 0.9, "distracted": 0.95, "rationalising": 0.97, "fake_ill": 0.88, "formal": 1.0, "defeated": 0.88,
+             "under_breath": 0.95, "earnest": 1.08, "research": 1.08, "deflated": 0.9}
+
+
+def _match_tempo(items):
+    """items: [(wav, text, emotion)]. Nudge each line toward one shared tempo (baseline x emotion), so all characters talk at a
+    similar, natural pace: pitch-preserving WSOLA, at most -13%/+15%, pauses scale with the speech."""
+    import subprocess
+    for f, text, emo in items:
+        a, sr = sf.read(f, dtype="float32")
+        sil, _ = pace._silences(a, sr, 0.12)
+        speech = max(0.3, len(a) / sr - sum(y - x for x, y in sil))
+        words = len(re.findall(r"[A-Za-z0-9']+", text))
+        if words < 3: continue                     # one- or two-word lines: leave the actor's timing alone
+        rate = words / speech; target = TEMPO_BASE * TEMPO_EMO.get(emo, 1.0)
+        k = max(0.87, min(1.15, target / rate))
+        if abs(k - 1) < 0.04: continue
+        tmp = f + ".tempo.wav"
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", f, "-af", f"atempo={k:.3f}", "-ar", str(sr), tmp], check=True)
+        os.replace(tmp, f)
+        for c in glob.glob(f.replace(".wav", ".words*.json")): os.remove(c)
+
+
 def narrate(sc, out_dir, _round=0):
     """Generate every line (cached by speaker+text), clean it, assemble one wav + line timing per scene.
     Voices that come out as the wrong gender (library reference OR the actual lines) are redesigned and re-voiced (max 2 rounds)."""
     os.makedirs(os.path.join(out_dir, "lines"), exist_ok=True)
     profiles = voice_profiles(sc)
+    for k, p in profiles.items():
+        t = p.get("tts") or {}
+        if t.get("engine") == "qwen_custom": _SPK_TAG[k] = f"qc_{t['speaker']}"
+        if t.get("engine") == "qwen_design": _SPK_TAG[k] = "qd_" + hashlib.md5(t["design"].encode()).hexdigest()[:6]   # new voice = new cache
+        if t.get("engine") == "qwen_clone": _SPK_TAG[k] = "ql_" + hashlib.md5(open(os.path.join(C.ROOT, t["ref_audio"]), "rb").read()).hexdigest()[:6]
     spoken = {ln["speaker"] for s in sc["scenes"] for ln in s["lines"]}
-    ref_bad = [k for k in check_library(profiles) if k in spoken] if _round < 2 else []
-    line_bad = [k for k in line_pitch_wrong(sc, out_dir, profiles) if k in spoken] if _round < 2 else []
+    locked = {k for k, p in profiles.items() if p.get("tts")}     # voices the user chose (show cast): never redesigned or re-voiced for 'gender'
+    ref_bad = [k for k in check_library(profiles) if k in spoken and k not in locked] if _round < 2 else []
+    line_bad = [k for k in line_pitch_wrong(sc, out_dir, profiles) if k in spoken and k not in locked] if _round < 2 else []
     redesign = set(ref_bad) | (set(line_bad) if _round > 0 else set())     # round 0: lines wrong but reference ok -> just re-voice
     wrong = sorted(redesign | set(line_bad))
     if wrong:
@@ -238,6 +329,7 @@ def narrate(sc, out_dir, _round=0):
         del m; gc.collect(); torch.cuda.empty_cache()
     if todo:
         _pace_lines([f for items in todo.values() for _, f in items], {f: ln["text"] for items in todo.values() for ln, f in items})
+        _match_tempo([(f, ln["text"].replace("*", ""), ln.get("voice") or ln.get("emotion", "neutral")) for items in todo.values() for ln, f in items])
         if _round < 1 and line_pitch_wrong(sc, out_dir, profiles):
             return narrate(sc, out_dir, _round + 1)
     # assemble scenes
@@ -251,6 +343,9 @@ def narrate(sc, out_dir, _round=0):
             timing.append({"speaker": ln["speaker"], "start": round(t, 3), "end": round(t + len(a) / sr, 3), "text": ln["text"],
                            "key": _line_key(ln["speaker"], ln["text"])})
             parts.append(a); t += len(a) / sr; prev = ln
+        hold = float(s.get("hold") or 0)          # silent visual beats (empty office, a held look): the scene lasts at least this long
+        if hold > t:
+            parts.append(np.zeros(int(48000 * (hold - t)), np.float32)); t = hold
         sf.write(os.path.join(out_dir, f"{s['id']}.wav"), np.concatenate(parts) if parts else np.zeros(4800, np.float32), 48000)
         json.dump(timing, open(os.path.join(out_dir, f"{s['id']}.lines.json"), "w"), indent=1)
         s["_dur"] = t

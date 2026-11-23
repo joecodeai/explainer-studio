@@ -1,0 +1,61 @@
+{
+ "duration": 34.29,
+ "timeline": [
+  {
+   "i": 0,
+   "spk": "benny",
+   "start": 0.3,
+   "end": 7.74,
+   "text": "Okay, so here's how it works. In Japan, everything costs thousands. Thousands! So the yen must be super valuable."
+  },
+  {
+   "i": 1,
+   "spk": "maya",
+   "start": 7.89,
+   "end": 9.29,
+   "silent": true
+  },
+  {
+   "i": 2,
+   "spk": "benny",
+   "start": 9.29,
+   "end": 12.22,
+   "text": "...What? Why are you doing the eyebrow?"
+  },
+  {
+   "i": 3,
+   "spk": "maya",
+   "start": 12.54,
+   "end": 19.85,
+   "text": "Ryan. It's the opposite. Prices look big because each yen is tiny. One yen is a little over half a cent."
+  },
+  {
+   "i": 4,
+   "spk": "benny",
+   "start": 20.25,
+   "end": 21.98,
+   "text": "Half a... cent?"
+  },
+  {
+   "i": 5,
+   "spk": "benny",
+   "start": 22.23,
+   "end": 26.45,
+   "text": "So I've been bragging about being rich... in pennies."
+  },
+  {
+   "i": 6,
+   "spk": "maya",
+   "start": 26.95,
+   "end": 27.9,
+   "text": "Tiny pennies, Ryan."
+  },
+  {
+   "i": 7,
+   "spk": "benny",
+   "start": 28.3,
+   "end": 33.09,
+   "text": "Okay, but they're very nice pennies. Some of them have holes in them!"
+  }
+ ]
+}

@@ -1,0 +1,160 @@
+{
+ "engine": "Qwen3-TTS CustomVoice 1.7B, speaker Ryan",
+ "profiles": {
+  "normal": "Relaxed, friendly, natural conversational rhythm, like chatting with his best friend.",
+  "excited": "Excited and quick, words tumbling out a little faster, bright energy that comes from genuine delight, not shouting.",
+  "surprise": "Genuinely caught off guard: a short beat, then the words come out slower with a rising, disbelieving tone.",
+  "confusion": "Puzzled, a small hesitation, pitch rising at the end as if asking himself, natural pace.",
+  "sarcasm": "Dry and understated, a little smile in the voice, deliberate pause before the key word.",
+  "embarrassment": "Quietly embarrassed, a little hesitant, voice dropping slightly, a small awkward laugh, at a natural pace (not slow).",
+  "frustration": "Controlled irritation, clipped words, an exasperated breath, never shouting.",
+  "curiosity": "Leaning in, interested, light and open, a slight rise on questions.",
+  "confidence": "Relaxed and assured, steady pace, sure of himself, a little swagger.",
+  "overconfidence": "Breezy and very sure of himself about something he has wrong, explaining it like an obvious fact, quick and playful, emphasis on the big word.",
+  "nervousness": "Nervous, quick little laugh, words a bit rushed, trying to sound fine.",
+  "disbelief": "Flat disbelief, repeating it back as if it cannot be real, natural pace.",
+  "laughter": "Laughing as he speaks, warm genuine chuckle breaking into the words.",
+  "whisper": "Whispering, conspiratorial, leaning in, a little guilty.",
+  "serious": "Calm and clear, sincere, explaining something he finally understands, natural pace.",
+  "storytelling": "Animated storyteller, building the moment, varying pace, pausing before the punchline.",
+  "dramatic": "A big, believable reaction, a gasp of air before the words, but still natural, not theatrical.",
+  "teasing": "Smug and playful, teasing, a grin in the voice.",
+  "deadpan": "Completely matter-of-fact and sincere, flat even pitch, no smile in the voice, no emphasis on any funny word, as if stating an obvious practical fact. Natural pace, does not pause for a laugh.",
+  "rationalising": "Calm, articulate and slightly deliberate, choosing his words carefully, genuinely convinced his reasoning is sound. Earnest, a touch defensive, never smug, never jokey.",
+  "earnest": "Genuine personal enthusiasm, a little quicker and brighter, like sharing something he really cares about with a friend. Believable adult excitement, not childish, not shouting.",
+  "research": "Focused and quick, reading out a useful finding, professional words said naturally, a small lift of interest on the detail that supports his case.",
+  "fake_ill": "Trying to sound unwell without much practice: slightly rough, lower, a little too careful and controlled, polite and formal, like he is managing his voice. Not a cartoon cough, not exaggerated; words still clearly articulated.",
+  "formal": "Polite, controlled and slightly restrained, speaking to his manager, consciously managing his tone, professional and brief.",
+  "awkward": "A small hesitation before the words, slightly too casual, fishing for information while pretending not to, a little stilted. No stammering, no laugh.",
+  "under_breath": "Quiet, lower volume, talking to himself rather than to anyone, conversational and dry, not a whisper; every consonant still clearly articulated.",
+  "defeated": "Tired and quietly resigned, low energy, mildly defeated, no outrage, just accepting a small disaster that became a big one.",
+  "deflated": "Quiet and a little disappointed, softer, almost sincere, a small sigh of a man who liked his own idea."
+ },
+ "emotion_to_profile": {
+  "neutral": "normal",
+  "excited": "excited",
+  "surprised": "surprise",
+  "confused": "confusion",
+  "sarcastic": "sarcasm",
+  "sad": "embarrassment",
+  "angry": "frustration",
+  "worried": "nervousness",
+  "happy": "laughter",
+  "confident": "confidence"
+ },
+ "usage": "Each script line may set 'voice' (a performance style: a profile here for Ryan, a Chatterbox STYLE for others), 'direction' (free text) or 'delivery'; otherwise its emotion picks a profile.",
+ "pace_words_per_sec": {
+  "excited": [
+   3.1,
+   4.2
+  ],
+  "normal": [
+   2.6,
+   3.4
+  ],
+  "surprise": [
+   2.2,
+   3.2
+  ],
+  "confusion": [
+   2.2,
+   3.1
+  ],
+  "sarcasm": [
+   2.4,
+   3.2
+  ],
+  "embarrassment": [
+   2.3,
+   3.1
+  ],
+  "frustration": [
+   2.8,
+   3.6
+  ],
+  "curiosity": [
+   2.6,
+   3.4
+  ],
+  "confidence": [
+   2.7,
+   3.5
+  ],
+  "overconfidence": [
+   2.8,
+   3.7
+  ],
+  "nervousness": [
+   2.9,
+   3.9
+  ],
+  "disbelief": [
+   2.0,
+   3.0
+  ],
+  "laughter": [
+   2.6,
+   3.6
+  ],
+  "whisper": [
+   2.4,
+   3.3
+  ],
+  "serious": [
+   2.5,
+   3.2
+  ],
+  "storytelling": [
+   2.6,
+   3.5
+  ],
+  "dramatic": [
+   2.4,
+   3.4
+  ],
+  "teasing": [
+   2.6,
+   3.5
+  ],
+  "deadpan": [
+   2.4,
+   3.2
+  ],
+  "rationalising": [
+   2.4,
+   3.2
+  ],
+  "earnest": [
+   2.9,
+   3.8
+  ],
+  "research": [
+   2.9,
+   3.8
+  ],
+  "fake_ill": [
+   2.1,
+   2.9
+  ],
+  "formal": [
+   2.5,
+   3.3
+  ],
+  "awkward": [
+   2.2,
+   3.1
+  ],
+  "under_breath": [
+   2.3,
+   3.1
+  ],
+  "defeated": [
+   2.0,
+   2.9
+  ],
+  "deflated": [
+   2.1,
+   3.0
+  ]
+ }
+}

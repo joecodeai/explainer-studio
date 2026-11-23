@@ -1,0 +1,375 @@
+GPT2InferenceModel has generative capabilities, as `prepare_inputs_for_generation` is explicitly overwritten. However, it doesn't directly inherit from `GenerationMixin`. From 👉v4.50👈 onwards, `PreTrainedModel` will NOT inherit from `GenerationMixin`, and this model will lose the ability to call `generate` and other related functions.
+  - If you're using `trust_remote_code=True`, you can get rid of this warning by loading the model with an auto class. See https://huggingface.co/docs/transformers/en/model_doc/auto#auto-classes
+  - If you are the owner of the model architecture code, please modify your model class such that it inherits from `GenerationMixin` (after `PreTrainedModel`, otherwise you'll get an exception).
+  - If you are not the owner of the model architecture class, please contact the model code owner to update it.
+W1118 11:02:22.133000 831595 .venv/lib/python3.11/site-packages/torch/utils/cpp_extension.py:2425] TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+W1118 11:02:22.133000 831595 .venv/lib/python3.11/site-packages/torch/utils/cpp_extension.py:2425] If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'] to specific architectures.
+>> GPT weights restored from: checkpoints/gpt.pth
+[1/3] /usr/bin/nvcc --generate-dependencies-with-compile --dependency-output anti_alias_activation_cuda.cuda.o.d -DTORCH_EXTENSION_NAME=anti_alias_activation_cuda -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1018\" -isystem /home/mundax/Documents/REL/ExplainerStudio/engines/index-tts/.venv/lib/python3.11/site-packages/torch/include -isystem /home/mundax/Documents/REL/ExplainerStudio/engines/index-tts/.venv/lib/python3.11/site-packages/torch/include/torch/csrc/api/include -isystem /home/mundax/.local/share/uv/python/cpython-3.11.13-linux-x86_64-gnu/include/python3.11 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_120,code=compute_120 -gencode=arch=compute_120,code=sm_120 --compiler-options '-fPIC' -O3 --use_fast_math -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda -std=c++17 -c /home/mundax/Documents/REL/ExplainerStudio/engines/index-tts/indextts/s2mel/modules/bigvgan/alias_free_activation/cuda/anti_alias_activation_cuda.cu -o anti_alias_activation_cuda.cuda.o 
+FAILED: [code=1] anti_alias_activation_cuda.cuda.o 
+/usr/bin/nvcc --generate-dependencies-with-compile --dependency-output anti_alias_activation_cuda.cuda.o.d -DTORCH_EXTENSION_NAME=anti_alias_activation_cuda -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1018\" -isystem /home/mundax/Documents/REL/ExplainerStudio/engines/index-tts/.venv/lib/python3.11/site-packages/torch/include -isystem /home/mundax/Documents/REL/ExplainerStudio/engines/index-tts/.venv/lib/python3.11/site-packages/torch/include/torch/csrc/api/include -isystem /home/mundax/.local/share/uv/python/cpython-3.11.13-linux-x86_64-gnu/include/python3.11 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_120,code=compute_120 -gencode=arch=compute_120,code=sm_120 --compiler-options '-fPIC' -O3 --use_fast_math -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda -std=c++17 -c /home/mundax/Documents/REL/ExplainerStudio/engines/index-tts/indextts/s2mel/modules/bigvgan/alias_free_activation/cuda/anti_alias_activation_cuda.cu -o anti_alias_activation_cuda.cuda.o 
+nvcc fatal   : Unsupported gpu architecture 'compute_120'
+[2/3] c++ -MMD -MF anti_alias_activation.o.d -DTORCH_EXTENSION_NAME=anti_alias_activation_cuda -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1018\" -isystem /home/mundax/Documents/REL/ExplainerStudio/engines/index-tts/.venv/lib/python3.11/site-packages/torch/include -isystem /home/mundax/Documents/REL/ExplainerStudio/engines/index-tts/.venv/lib/python3.11/site-packages/torch/include/torch/csrc/api/include -isystem /home/mundax/.local/share/uv/python/cpython-3.11.13-linux-x86_64-gnu/include/python3.11 -fPIC -std=c++17 -O3 -c /home/mundax/Documents/REL/ExplainerStudio/engines/index-tts/indextts/s2mel/modules/bigvgan/alias_free_activation/cuda/anti_alias_activation.cpp -o anti_alias_activation.o 
+ninja: build stopped: subcommand failed.
+>> Failed to load custom CUDA kernel for BigVGAN. Falling back to torch.
+RuntimeError("Error building extension 'anti_alias_activation_cuda'")
+>> Downloading w2v-bert-2.0 to checkpoints/hf_cache/w2v-bert-2.0...
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Fetching 6 files:  17%|█▋        | 1/6 [00:00<00:04,  1.17it/s]Fetching 6 files:  67%|██████▋   | 4/6 [01:29<00:48, 24.05s/it]Fetching 6 files:  83%|████████▎ | 5/6 [01:30<00:17, 17.75s/it]Fetching 6 files: 100%|██████████| 6/6 [01:30<00:00, 15.11s/it]
+2026-11-18 11:04:29,466 WETEXT INFO building fst for zh_normalizer ...
+2026-11-18 11:04:41,583 WETEXT INFO done
+2026-11-18 11:04:41,583 WETEXT INFO fst path: /home/mundax/Documents/REL/ExplainerStudio/engines/index-tts/indextts/utils/tagger_cache/zh_tn_tagger.fst
+2026-11-18 11:04:41,583 WETEXT INFO           /home/mundax/Documents/REL/ExplainerStudio/engines/index-tts/indextts/utils/tagger_cache/zh_tn_verbalizer.fst
+2026-11-18 11:04:41,585 WETEXT INFO found existing fst: /home/mundax/Documents/REL/ExplainerStudio/engines/index-tts/.venv/lib/python3.11/site-packages/tn/en_tn_tagger.fst
+2026-11-18 11:04:41,585 WETEXT INFO                     /home/mundax/Documents/REL/ExplainerStudio/engines/index-tts/.venv/lib/python3.11/site-packages/tn/en_tn_verbalizer.fst
+2026-11-18 11:04:41,585 WETEXT INFO skip building fst for en_normalizer ...
+Passing a tuple of `past_key_values` is deprecated and will be removed in Transformers v4.53.0. You should pass an instance of `Cache` instead, e.g. `past_key_values=DynamicCache.from_legacy_cache(past_key_values)`.
+>> Downloading MaskGCT semantic codec to checkpoints/hf_cache/semantic_codec_model.safetensors...
+>> Downloading CAMPPlus to checkpoints/hf_cache/campplus_cn_common.bin...
+>> Downloading BigVGAN to checkpoints/hf_cache/bigvgan...
+>> All auxiliary models ready.
+>> semantic_codec weights restored from: checkpoints/codec.pth
+>> semantic_codec weights restored cost:  0.5974837180001487
+cfm loaded
+length_regulator loaded
+>> s2mel weights restored from: checkpoints/s2mel.pth
+>> campplus_model weights restored from: checkpoints/hf_cache/campplus_cn_common.bin
+Loading config.json from local directory
+Loading weights from local directory
+Removing weight norm...
+>> bigvgan weights restored from: checkpoints/hf_cache/bigvgan
+>> starting inference...
+detected emotion vectors from text: {'happy': 0.3, 'angry': 0.0, 'sad': 0.0, 'afraid': 0.0, 'disgusted': 0.0, 'melancholic': 0.0, 'surprised': 0.0, 'calm': 0.7}
+scaled emotion vectors to 0.6x: [0.18, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.42]
+text after normalization: You have annual leave.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:02,  8.93it/s] 40%|████      | 10/25 [00:00<00:00, 51.91it/s] 72%|███████▏  | 18/25 [00:00<00:00, 61.63it/s]100%|██████████| 25/25 [00:00<00:00, 58.83it/s]
+torch.Size([1, 51712])
+>> gpt_gen_time: 0.51 seconds
+>> s2mel_time: 0.43 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 2.97 seconds
+>> Generated audio length: 2.35 seconds
+>> RTF: 1.2666
+>> wav file saved to: /home/mundax/Documents/REL/ExplainerStudio/projects/gta6-voice-test/maya_ab/E_0.raw.wav
+idx E_0.raw.wav
+>> starting inference...
+scaled emotion vectors to 0.8x: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.6]
+text after normalization: You have annual leave.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 32%|███▏      | 8/25 [00:00<00:00, 72.21it/s] 64%|██████▍   | 16/25 [00:00<00:00, 73.04it/s] 96%|█████████▌| 24/25 [00:00<00:00, 73.24it/s]100%|██████████| 25/25 [00:00<00:00, 73.11it/s]
+torch.Size([1, 46592])
+>> gpt_gen_time: 0.35 seconds
+>> s2mel_time: 0.35 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 0.73 seconds
+>> Generated audio length: 2.11 seconds
+>> RTF: 0.3458
+>> wav file saved to: /home/mundax/Documents/REL/ExplainerStudio/projects/gta6-voice-test/maya_ab/F_0.raw.wav
+idx F_0.raw.wav
+>> starting inference...
+text after normalization: You have annual leave.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s]  8%|▊         | 2/25 [00:00<00:01, 19.84it/s] 40%|████      | 10/25 [00:00<00:00, 53.19it/s] 72%|███████▏  | 18/25 [00:00<00:00, 62.04it/s]100%|██████████| 25/25 [00:00<00:00, 60.11it/s]
+torch.Size([1, 60672])
+>> gpt_gen_time: 0.44 seconds
+>> s2mel_time: 0.42 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 0.90 seconds
+>> Generated audio length: 2.75 seconds
+>> RTF: 0.3273
+>> wav file saved to: /home/mundax/Documents/REL/ExplainerStudio/projects/gta6-voice-test/maya_ab/G_0.raw.wav
+idx G_0.raw.wav
+>> starting inference...
+detected emotion vectors from text: {'happy': 0.0, 'angry': 0.0, 'sad': 0.0, 'afraid': 0.0, 'disgusted': 0.0, 'melancholic': 0.0, 'surprised': 0.1, 'calm': 0.9}
+scaled emotion vectors to 0.6x: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.06, 0.54]
+text after normalization: And tomorrow?
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 36%|███▌      | 9/25 [00:00<00:00, 85.39it/s] 72%|███████▏  | 18/25 [00:00<00:00, 79.15it/s]100%|██████████| 25/25 [00:00<00:00, 78.60it/s]
+torch.Size([1, 35072])
+>> gpt_gen_time: 0.26 seconds
+>> s2mel_time: 0.32 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.33 seconds
+>> Generated audio length: 1.59 seconds
+>> RTF: 0.8333
+>> wav file saved to: /home/mundax/Documents/REL/ExplainerStudio/projects/gta6-voice-test/maya_ab/E_1.raw.wav
+idx E_1.raw.wav
+>> starting inference...
+scaled emotion vectors to 0.8x: [0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.24, 0.4]
+text after normalization: And tomorrow?
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 36%|███▌      | 9/25 [00:00<00:00, 85.36it/s] 72%|███████▏  | 18/25 [00:00<00:00, 79.08it/s]100%|██████████| 25/25 [00:00<00:00, 78.57it/s]
+torch.Size([1, 36096])
+>> gpt_gen_time: 0.27 seconds
+>> s2mel_time: 0.32 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 0.63 seconds
+>> Generated audio length: 1.64 seconds
+>> RTF: 0.3828
+>> wav file saved to: /home/mundax/Documents/REL/ExplainerStudio/projects/gta6-voice-test/maya_ab/F_1.raw.wav
+idx F_1.raw.wav
+>> starting inference...
+text after normalization: And tomorrow?
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 36%|███▌      | 9/25 [00:00<00:00, 84.76it/s] 72%|███████▏  | 18/25 [00:00<00:00, 78.89it/s]100%|██████████| 25/25 [00:00<00:00, 78.42it/s]
+torch.Size([1, 37632])
+>> gpt_gen_time: 0.30 seconds
+>> s2mel_time: 0.32 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 0.66 seconds
+>> Generated audio length: 1.71 seconds
+>> RTF: 0.3845
+>> wav file saved to: /home/mundax/Documents/REL/ExplainerStudio/projects/gta6-voice-test/maya_ab/G_1.raw.wav
+idx G_1.raw.wav
+>> starting inference...
+detected emotion vectors from text: {'happy': 0.0, 'angry': 0.0, 'sad': 0.0, 'afraid': 0.0, 'disgusted': 0.0, 'melancholic': 0.0, 'surprised': 0.0, 'calm': 1.0}
+scaled emotion vectors to 0.6x: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.6]
+text after normalization: You are not ill.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 36%|███▌      | 9/25 [00:00<00:00, 85.31it/s] 72%|███████▏  | 18/25 [00:00<00:00, 78.99it/s]100%|██████████| 25/25 [00:00<00:00, 78.37it/s]
+torch.Size([1, 37632])
+>> gpt_gen_time: 0.29 seconds
+>> s2mel_time: 0.32 seconds
+>> bigvgan_time: 0.02 seconds
+>> Total inference time: 1.37 seconds
+>> Generated audio length: 1.71 seconds
+>> RTF: 0.8041
+>> wav file saved to: /home/mundax/Documents/REL/ExplainerStudio/projects/gta6-voice-test/maya_ab/E_2.raw.wav
+idx E_2.raw.wav
+>> starting inference...
+scaled emotion vectors to 0.8x: [0.12, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.48]
+text after normalization: You are not ill.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 36%|███▌      | 9/25 [00:00<00:00, 84.77it/s] 72%|███████▏  | 18/25 [00:00<00:00, 78.47it/s]100%|██████████| 25/25 [00:00<00:00, 78.15it/s]
+torch.Size([1, 40448])
+>> gpt_gen_time: 0.31 seconds
+>> s2mel_time: 0.32 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 0.66 seconds
+>> Generated audio length: 1.83 seconds
+>> RTF: 0.3625
+>> wav file saved to: /home/mundax/Documents/REL/ExplainerStudio/projects/gta6-voice-test/maya_ab/F_2.raw.wav
+idx F_2.raw.wav
+>> starting inference...
+text after normalization: You are not ill.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 36%|███▌      | 9/25 [00:00<00:00, 82.36it/s] 72%|███████▏  | 18/25 [00:00<00:00, 76.77it/s]100%|██████████| 25/25 [00:00<00:00, 76.10it/s]
+torch.Size([1, 51712])
+>> gpt_gen_time: 0.38 seconds
+>> s2mel_time: 0.33 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 0.75 seconds
+>> Generated audio length: 2.35 seconds
+>> RTF: 0.3197
+>> wav file saved to: /home/mundax/Documents/REL/ExplainerStudio/projects/gta6-voice-test/maya_ab/G_2.raw.wav
+idx G_2.raw.wav
+>> starting inference...
+detected emotion vectors from text: {'happy': 0.0, 'angry': 0.0, 'sad': 0.0, 'afraid': 0.0, 'disgusted': 0.0, 'melancholic': 0.0, 'surprised': 0.1, 'calm': 0.9}
+scaled emotion vectors to 0.6x: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.06, 0.54]
+text after normalization: You are planning to develop a medical condition.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 36%|███▌      | 9/25 [00:00<00:00, 78.95it/s] 68%|██████▊   | 17/25 [00:00<00:00, 72.72it/s]100%|██████████| 25/25 [00:00<00:00, 71.02it/s]100%|██████████| 25/25 [00:00<00:00, 72.08it/s]
+torch.Size([1, 83456])
+>> gpt_gen_time: 0.60 seconds
+>> s2mel_time: 0.35 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 1.72 seconds
+>> Generated audio length: 3.78 seconds
+>> RTF: 0.4540
+>> wav file saved to: /home/mundax/Documents/REL/ExplainerStudio/projects/gta6-voice-test/maya_ab/E_3.raw.wav
+idx E_3.raw.wav
+>> starting inference...
+scaled emotion vectors to 0.8x: [0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.24, 0.4]
+text after normalization: You are planning to develop a medical condition.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 36%|███▌      | 9/25 [00:00<00:00, 78.73it/s] 68%|██████▊   | 17/25 [00:00<00:00, 72.84it/s]100%|██████████| 25/25 [00:00<00:00, 70.61it/s]100%|██████████| 25/25 [00:00<00:00, 71.76it/s]
+torch.Size([1, 85248])
+>> gpt_gen_time: 0.61 seconds
+>> s2mel_time: 0.35 seconds
+>> bigvgan_time: 0.04 seconds
+>> Total inference time: 1.02 seconds
+>> Generated audio length: 3.87 seconds
+>> RTF: 0.2644
+>> wav file saved to: /home/mundax/Documents/REL/ExplainerStudio/projects/gta6-voice-test/maya_ab/F_3.raw.wav
+idx F_3.raw.wav
+>> starting inference...
+text after normalization: You are planning to develop a medical condition.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 28%|██▊       | 7/25 [00:00<00:00, 69.49it/s] 56%|█████▌    | 14/25 [00:00<00:00, 62.53it/s] 84%|████████▍ | 21/25 [00:00<00:00, 60.60it/s]100%|██████████| 25/25 [00:00<00:00, 61.00it/s]
+torch.Size([1, 94976])
+>> gpt_gen_time: 0.69 seconds
+>> s2mel_time: 0.42 seconds
+>> bigvgan_time: 0.04 seconds
+>> Total inference time: 1.17 seconds
+>> Generated audio length: 4.31 seconds
+>> RTF: 0.2714
+>> wav file saved to: /home/mundax/Documents/REL/ExplainerStudio/projects/gta6-voice-test/maya_ab/G_3.raw.wav
+idx G_3.raw.wav
+>> starting inference...
+detected emotion vectors from text: {'happy': 0.0, 'angry': 0.0, 'sad': 0.0, 'afraid': 0.0, 'disgusted': 0.0, 'melancholic': 0.0, 'surprised': 0.0, 'calm': 1.0}
+scaled emotion vectors to 0.6x: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.6]
+text after normalization: Let me know what you come down with.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 36%|███▌      | 9/25 [00:00<00:00, 81.25it/s] 72%|███████▏  | 18/25 [00:00<00:00, 75.29it/s]100%|██████████| 25/25 [00:00<00:00, 74.80it/s]
+torch.Size([1, 60672])
+>> gpt_gen_time: 0.44 seconds
+>> s2mel_time: 0.34 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.52 seconds
+>> Generated audio length: 2.75 seconds
+>> RTF: 0.5532
+>> wav file saved to: /home/mundax/Documents/REL/ExplainerStudio/projects/gta6-voice-test/maya_ab/E_4.raw.wav
+idx E_4.raw.wav
+>> starting inference...
+scaled emotion vectors to 0.8x: [0.12, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.48]
+text after normalization: Let me know what you come down with.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 36%|███▌      | 9/25 [00:00<00:00, 81.96it/s] 72%|███████▏  | 18/25 [00:00<00:00, 76.12it/s]100%|██████████| 25/25 [00:00<00:00, 75.59it/s]
+torch.Size([1, 61440])
+>> gpt_gen_time: 0.45 seconds
+>> s2mel_time: 0.33 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 0.83 seconds
+>> Generated audio length: 2.79 seconds
+>> RTF: 0.2963
+>> wav file saved to: /home/mundax/Documents/REL/ExplainerStudio/projects/gta6-voice-test/maya_ab/F_4.raw.wav
+idx F_4.raw.wav
+>> starting inference...
+text after normalization: Let me know what you come down with.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 36%|███▌      | 9/25 [00:00<00:00, 79.78it/s] 68%|██████▊   | 17/25 [00:00<00:00, 74.43it/s]100%|██████████| 25/25 [00:00<00:00, 72.95it/s]100%|██████████| 25/25 [00:00<00:00, 73.87it/s]
+torch.Size([1, 70400])
+>> gpt_gen_time: 0.51 seconds
+>> s2mel_time: 0.34 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 0.89 seconds
+>> Generated audio length: 3.19 seconds
+>> RTF: 0.2799
+>> wav file saved to: /home/mundax/Documents/REL/ExplainerStudio/projects/gta6-voice-test/maya_ab/G_4.raw.wav
+idx G_4.raw.wav
+>> starting inference...
+detected emotion vectors from text: {'happy': 0.0, 'angry': 0.0, 'sad': 0.0, 'afraid': 0.0, 'disgusted': 0.0, 'melancholic': 0.0, 'surprised': 0.0, 'calm': 1.0}
+scaled emotion vectors to 0.6x: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.6]
+text after normalization: September. I booked it the day they announced the date.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 36%|███▌      | 9/25 [00:00<00:00, 78.91it/s] 68%|██████▊   | 17/25 [00:00<00:00, 72.78it/s]100%|██████████| 25/25 [00:00<00:00, 71.07it/s]100%|██████████| 25/25 [00:00<00:00, 72.11it/s]
+torch.Size([1, 79104])
+>> gpt_gen_time: 0.57 seconds
+>> s2mel_time: 0.35 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.67 seconds
+>> Generated audio length: 3.59 seconds
+>> RTF: 0.4658
+>> wav file saved to: /home/mundax/Documents/REL/ExplainerStudio/projects/gta6-voice-test/maya_ab/E_5.raw.wav
+idx E_5.raw.wav
+>> starting inference...
+scaled emotion vectors to 0.8x: [0.12, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.48]
+text after normalization: September. I booked it the day they announced the date.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 36%|███▌      | 9/25 [00:00<00:00, 78.88it/s] 68%|██████▊   | 17/25 [00:00<00:00, 73.00it/s]100%|██████████| 25/25 [00:00<00:00, 71.09it/s]100%|██████████| 25/25 [00:00<00:00, 72.16it/s]
+torch.Size([1, 83456])
+>> gpt_gen_time: 0.61 seconds
+>> s2mel_time: 0.35 seconds
+>> bigvgan_time: 0.04 seconds
+>> Total inference time: 1.01 seconds
+>> Generated audio length: 3.78 seconds
+>> RTF: 0.2681
+>> wav file saved to: /home/mundax/Documents/REL/ExplainerStudio/projects/gta6-voice-test/maya_ab/F_5.raw.wav
+idx F_5.raw.wav
+>> starting inference...
+text after normalization: September. I booked it the day they announced the date.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 28%|██▊       | 7/25 [00:00<00:00, 69.79it/s] 56%|█████▌    | 14/25 [00:00<00:00, 60.64it/s] 84%|████████▍ | 21/25 [00:00<00:00, 58.17it/s]100%|██████████| 25/25 [00:00<00:00, 58.89it/s]
+torch.Size([1, 96768])
+>> gpt_gen_time: 0.69 seconds
+>> s2mel_time: 0.43 seconds
+>> bigvgan_time: 0.04 seconds
+>> Total inference time: 1.18 seconds
+>> Generated audio length: 4.39 seconds
+>> RTF: 0.2699
+>> wav file saved to: /home/mundax/Documents/REL/ExplainerStudio/projects/gta6-voice-test/maya_ab/G_5.raw.wav
+idx G_5.raw.wav
+>> starting inference...
+detected emotion vectors from text: {'happy': 0.0, 'angry': 0.0, 'sad': 0.0, 'afraid': 0.0, 'disgusted': 0.0, 'melancholic': 0.0, 'surprised': 0.0, 'calm': 1.0}
+scaled emotion vectors to 0.6x: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.6]
+text after normalization: number That is for when you are ill.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 36%|███▌      | 9/25 [00:00<00:00, 80.55it/s] 72%|███████▏  | 18/25 [00:00<00:00, 74.74it/s]100%|██████████| 25/25 [00:00<00:00, 74.27it/s]
+torch.Size([1, 69376])
+>> gpt_gen_time: 0.50 seconds
+>> s2mel_time: 0.34 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.59 seconds
+>> Generated audio length: 3.15 seconds
+>> RTF: 0.5047
+>> wav file saved to: /home/mundax/Documents/REL/ExplainerStudio/projects/gta6-voice-test/maya_ab/E_6.raw.wav
+idx E_6.raw.wav
+>> starting inference...
+scaled emotion vectors to 0.8x: [0.12, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.48]
+text after normalization: number That is for when you are ill.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 36%|███▌      | 9/25 [00:00<00:00, 80.82it/s] 72%|███████▏  | 18/25 [00:00<00:00, 74.87it/s]100%|██████████| 25/25 [00:00<00:00, 74.23it/s]
+torch.Size([1, 72192])
+>> gpt_gen_time: 0.53 seconds
+>> s2mel_time: 0.34 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 0.92 seconds
+>> Generated audio length: 3.27 seconds
+>> RTF: 0.2801
+>> wav file saved to: /home/mundax/Documents/REL/ExplainerStudio/projects/gta6-voice-test/maya_ab/F_6.raw.wav
+idx F_6.raw.wav
+>> starting inference...
+text after normalization: number That is for when you are ill.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 36%|███▌      | 9/25 [00:00<00:00, 78.71it/s] 68%|██████▊   | 17/25 [00:00<00:00, 72.89it/s]100%|██████████| 25/25 [00:00<00:00, 71.07it/s]100%|██████████| 25/25 [00:00<00:00, 72.11it/s]
+torch.Size([1, 85248])
+>> gpt_gen_time: 0.63 seconds
+>> s2mel_time: 0.35 seconds
+>> bigvgan_time: 0.04 seconds
+>> Total inference time: 1.03 seconds
+>> Generated audio length: 3.87 seconds
+>> RTF: 0.2661
+>> wav file saved to: /home/mundax/Documents/REL/ExplainerStudio/projects/gta6-voice-test/maya_ab/G_6.raw.wav
+idx G_6.raw.wav
+>> starting inference...
+detected emotion vectors from text: {'happy': 0.0, 'angry': 0.0, 'sad': 0.0, 'afraid': 0.0, 'disgusted': 0.0, 'melancholic': 0.0, 'surprised': 0.0, 'calm': 1.0}
+scaled emotion vectors to 0.6x: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.6]
+text after normalization: There is still time.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 36%|███▌      | 9/25 [00:00<00:00, 85.39it/s] 72%|███████▏  | 18/25 [00:00<00:00, 78.79it/s]100%|██████████| 25/25 [00:00<00:00, 78.19it/s]
+torch.Size([1, 40448])
+>> gpt_gen_time: 0.30 seconds
+>> s2mel_time: 0.32 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.37 seconds
+>> Generated audio length: 1.83 seconds
+>> RTF: 0.7475
+>> wav file saved to: /home/mundax/Documents/REL/ExplainerStudio/projects/gta6-voice-test/maya_ab/E_7.raw.wav
+idx E_7.raw.wav
+>> starting inference...
+scaled emotion vectors to 0.8x: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.72]
+text after normalization: There is still time.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 36%|███▌      | 9/25 [00:00<00:00, 83.28it/s] 72%|███████▏  | 18/25 [00:00<00:00, 76.86it/s]100%|██████████| 25/25 [00:00<00:00, 76.50it/s]
+torch.Size([1, 42240])
+>> gpt_gen_time: 0.31 seconds
+>> s2mel_time: 0.33 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 0.68 seconds
+>> Generated audio length: 1.92 seconds
+>> RTF: 0.3542
+>> wav file saved to: /home/mundax/Documents/REL/ExplainerStudio/projects/gta6-voice-test/maya_ab/F_7.raw.wav
+idx F_7.raw.wav
+>> starting inference...
+text after normalization: There is still time.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 36%|███▌      | 9/25 [00:00<00:00, 81.31it/s] 72%|███████▏  | 18/25 [00:00<00:00, 75.38it/s]100%|██████████| 25/25 [00:00<00:00, 74.89it/s]
+torch.Size([1, 65024])
+>> gpt_gen_time: 0.47 seconds
+>> s2mel_time: 0.34 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 0.85 seconds
+>> Generated audio length: 2.95 seconds
+>> RTF: 0.2884
+>> wav file saved to: /home/mundax/Documents/REL/ExplainerStudio/projects/gta6-voice-test/maya_ab/G_7.raw.wav
+idx G_7.raw.wav

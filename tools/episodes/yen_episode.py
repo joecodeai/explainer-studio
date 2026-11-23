@@ -1,4 +1,4 @@
-"""Builds script.json for 'Benny Became a Millionaire in Japan (He Didn't)' (hand-written show episode)."""
+"""Builds script.json for 'Ryan Became a Millionaire in Japan (He Didn't)' (hand-written show episode)."""
 import json, sys, os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 from studio import script
@@ -33,11 +33,11 @@ SCENES = [
    L(CL, "One hundred and fifty-six thousand, sir.", "happy")], tr="cut"),
  stage("airport_exchange", BM, [
    L(B, "Maya. Maya! Are you sitting down?", "excited", act="the young man on the left rushes to the woman, clutching a thick stack of banknotes"),
-   L(M, "I'm standing, Benny. We're in an airport.", "sarcastic", "closeup"),
+   L(M, "I'm standing, Ryan. We're in an airport.", "sarcastic", "closeup"),
    L(B, "I'm a millionaire.", "excited", "closeup", pause=0.8, react="the woman on the right just looks at him, one eyebrow slowly rising, mouth closed"),
    L(M, "You're a hundred-and-fifty-six-thousand-aire.", "sarcastic", "closeup"),
    L(B, "Okay, but that's so close.", "happy", pause=0.6)]),
- card("Benny Figures It Out", [L(N, "He's not a millionaire. But he's about to find out why Japan feels so cheap right now.", "neutral")], tr="wipe"),
+ card("Ryan Figures It Out", [L(N, "He's not a millionaire. But he's about to find out why Japan feels so cheap right now.", "neutral")], tr="wipe"),
  # act 1
  hero("A cosy little Tokyo ramen shop entrance on a narrow street at midday, a fabric curtain hanging at the door, steam drifting out, warm light, a few people walking by",
       [L(N, "Day one. First stop: lunch.", "neutral")], tr="fade"),
@@ -58,7 +58,7 @@ SCENES = [
      react="the young man on the left freezes, confused, mouth closed")]),
  stage("ramen_shop", BM, [
    L(B, "Maya, he won't take my money.", "confused"),
-   L(M, "You don't tip in Japan. Good service is just... the service. He's not being modest, Benny. He's being polite.", "neutral"),
+   L(M, "You don't tip in Japan. Good service is just... the service. He's not being modest, Ryan. He's being polite.", "neutral"),
    L(B, "So I just insulted a man... with coins.", "worried", "closeup", pause=0.5),
    L(M, "Very politely, though.", "sarcastic", "closeup")]),
  stage("ramen_shop", BM, [
@@ -84,9 +84,9 @@ SCENES = [
    L(M, "You're part of a statistic.", "sarcastic", "closeup"),
    L(B, "A record-breaking statistic.", "confident", "closeup", pause=0.6)]),
  # act 2
- card("Why So Cheap?", [L(N, "Which raises the question Benny has been avoiding. Why is the yen so cheap?", "neutral")]),
+ card("Why So Cheap?", [L(N, "Which raises the question Ryan has been avoiding. Why is the yen so cheap?", "neutral")]),
  hero("A quiet Tokyo side street at night, a brightly lit convenience store glowing warmly, a row of vending machines, light rain reflections on the pavement",
-      [L(N, "That night, outside a convenience store, Benny came up with a theory.", "neutral")]),
+      [L(N, "That night, outside a convenience store, Ryan came up with a theory.", "neutral")]),
  stage("konbini_street", BM, [
    L(B, "I figured it out. Their money is too pretty. So they printed too much of it.", "confident", act="the young man on the left holds up a banknote, explaining proudly"),
    L(M, "That's not it.", "sarcastic", "closeup"),
@@ -154,23 +154,23 @@ SCENES = [
    L(B, "Wait. If they do it again, my sale ends.", "worried"),
    L(M, "Maybe. For a while. Nobody knows when. Not even Tokyo.", "neutral"),
    L(B, "Then I have to spend everything. Tonight.", "excited", "closeup"),
-   L(M, "Benny. That is not the lesson.", "sarcastic", "closeup"),
+   L(M, "Ryan. That is not the lesson.", "sarcastic", "closeup"),
    L(B, "It's a lesson.", "confident", pause=0.5, act="the young man on the left grabs his jacket and turns to leave")]),
  hero("A colourful Tokyo souvenir shop at night packed with shelves of small lucky cat figurines, one gigantic golden lucky cat statue in the middle with its paw raised",
       [L(N, "He did not spend everything. He spent most of it. On one thing.", "sarcastic")], beats=[{"at_word": "thing", "type": "keyword", "text": "ONE THING"}]),
  stage("souvenir_shop", BM, [
    L(B, "Maya. Meet Lucky.", "happy", act="the young man on the left proudly gestures at something big beside him, grinning"),
-   L(M, "Benny. That cat is taller than you.", "surprised", "closeup"),
+   L(M, "Ryan. That cat is taller than you.", "surprised", "closeup"),
    L(B, "It waves. All the time. That's luck, Maya.", "confident"),
    L(M, "That's a battery.", "sarcastic", "closeup", pause=0.6)]),
  stage("hotel_room", BM, [
    L(B, "He fits. Mostly.", "happy", act="the young man on the left gestures proudly toward the window"),
-   L(M, "He's blocking the window, Benny.", "sarcastic"),
+   L(M, "He's blocking the window, Ryan.", "sarcastic"),
    L(B, "He's protecting us.", "confident"),
    L(M, "From what?", "confused", "closeup"),
    L(B, "Bad luck. And... sunlight.", "confident", "closeup", pause=0.6)]),
  # act 4
- card("The Other Side", [L(N, "The next day, Benny went back to the ramen shop. This time, he listened.", "neutral")], music="sad"),
+ card("The Other Side", [L(N, "The next day, Ryan went back to the ramen shop. This time, he listened.", "neutral")], music="sad"),
  stage("ramen_shop", BK, [
    L(B, "Can I ask you something? Is the cheap yen good for you?", "neutral"),
    L(CH, "For tourists, maybe. For me, everything from overseas costs more. Fuel. Flour. Even some of the pork.", "worried",
@@ -185,7 +185,7 @@ SCENES = [
    L(B, "So my sale... is his price rise.", "sad"),
    L(M, "...Yeah. That's exactly it.", "surprised", pause=0.6),
    L(B, "And if Japan raises interest rates, money comes back, and the yen gets stronger. My sale ends. But his flour gets cheaper.", "thinking" if False else "confident"),
-   L(M, "Benny. That's actually right.", "surprised", "closeup", pause=0.7, react="the young man on the left slowly breaks into a proud smile, mouth closed"),
+   L(M, "Ryan. That's actually right.", "surprised", "closeup", pause=0.7, react="the young man on the left slowly breaks into a proud smile, mouth closed"),
    L(B, "I know things.", "confident", "closeup"),
    L(B, "So is anyone in Japan winning?", "confused"),
    L(M, "Some exporters. Companies that sell abroad earn dollars, and those dollars turn into more yen back home.", "neutral"),
@@ -213,8 +213,8 @@ SCENES = [
    L(M, "There's no next time.", "sarcastic", "closeup"),
    L(B, "Wait. Why is my phone buzzing?", "confused", act="the young man on the left looks down at his buzzing phone"),
    L(B, "Maya... what's a foreign transaction fee?", "worried", pause=0.8),
-   L(M, "...Next week, Benny.", "sarcastic", "closeup")]),
- card("See You Next Time", [L(N, "Thanks for watching. Subscribe, because Benny's credit card statement is on its way.", "happy")], tr="fade"),
+   L(M, "...Next week, Ryan.", "sarcastic", "closeup")]),
+ card("See You Next Time", [L(N, "Thanks for watching. Subscribe, because Ryan's credit card statement is on its way.", "happy")], tr="fade"),
 ]
 
 ENVS = [
@@ -246,12 +246,12 @@ def dress(scenes):
                 if o: c["outfit"] = o
     return scenes
 
-def build(proj, scenes=SCENES, title="Benny Became a Millionaire in Japan (He Didn't)"):
+def build(proj, scenes=SCENES, title="Ryan Became a Millionaire in Japan (He Didn't)"):
     sh = script.load_show()
     scenes = dress(json.loads(json.dumps(scenes)))
     research = json.load(open(os.path.join(proj, "research.json")))
     d = {"title": title, "thumbnail_text": "I'M RICH?", "description":
-         "Benny changes $1,000 at a Tokyo airport and thinks he's a millionaire. Maya walks him through why the yen is so cheap, why Japan "
+         "Ryan changes $1,000 at a Tokyo airport and thinks he's a millionaire. Maya walks him through why the yen is so cheap, why Japan "
          "spent a record ¥27 trillion defending it, and who pays the price for his ramen discount.",
          "characters": [{"id": c["id"], "name": c["name"], "look": c["look"], "voice": c["voice"], "role": c.get("role", ""), "real_person": False} for c in sh["cast"]] + CHARS,
          "environments": ENVS, "scenes": json.loads(json.dumps(scenes)), "sources": [s["url"] for s in research["sources"]], "show": sh["name"]}

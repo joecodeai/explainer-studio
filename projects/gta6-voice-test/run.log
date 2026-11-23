@@ -1,0 +1,199 @@
+/bin/sh: 1: sox: not found
+SoX could not be found!
+
+    If you do not have SoX, proceed here:
+     - - - http://sox.sourceforge.net/ - - -
+
+    If you do (or think that you should) have SoX, double-check your
+    path variables.
+    
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+/home/mundax/Documents/REL/ExplainerStudio/.venv-tts/lib/python3.11/site-packages/perth/perth_net/__init__.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_filename
+pick 266dd3e75f.wav.cb.wav [rationalising] sim 0.842 wer 0.00 pitch 4.5 rate 2.0 | sim 0.830 wer 0.00 pitch 4.8 rate 3.1 * | sim 0.805 wer 0.00 pitch 3.1 rate 2.6 | sim 0.861 wer 0.00 pitch 4.1 rate 2.2
+   tightened x1.13 (rate 2.1 -> 2.4)
+pick f82a331f3c.wav.cb.wav [rationalising] sim 0.861 wer 0.00 pitch 5.3 rate 2.1 * | sim 0.832 wer 0.00 pitch 6.3 rate 1.7 | sim 0.793 wer 0.00 pitch 4.1 rate 1.9 | sim 0.843 wer 0.00 pitch 3.4 rate 2.0
+pick 7a05f276c3.wav.cb.wav [deadpan] sim 0.847 wer 0.00 pitch 3.3 rate 2.0 | sim 0.820 wer 0.00 pitch 4.5 rate 2.1 | sim 0.843 wer 0.00 pitch 4.3 rate 2.4 * | sim 0.830 wer 0.00 pitch 4.0 rate 1.9
+   tightened x1.15 (rate 1.6 -> 1.8)
+pick 8e6d0aa3c4.wav.cb.wav [deadpan] sim 0.799 wer 0.00 pitch 5.5 rate 2.6 | sim 0.729 wer 0.00 pitch 4.4 rate 2.2 | sim 0.731 wer 0.20 pitch 7.6 rate 1.5 | sim 0.867 wer 0.00 pitch 5.6 rate 1.6 *
+pick 6e027995ee.wav.cb.wav [rationalising] sim 0.816 wer 0.00 pitch 4.6 rate 2.4 * | sim 0.821 wer 0.00 pitch 5.9 rate 1.5 | sim 0.721 wer 0.00 pitch 3.8 rate 1.9 | sim 0.796 wer 0.00 pitch 6.4 rate 1.7
+pick 3a2ffe85ed.wav.cb.wav [fake_ill] sim 0.872 wer 0.00 pitch 4.8 rate 3.0 * | sim 0.835 wer 0.06 pitch 5.3 rate 4.0 | sim 0.872 wer 0.00 pitch 3.4 rate 4.0 | sim 0.838 wer 0.00 pitch 3.7 rate 3.7
+pick 18436dd165.wav.cb.wav [fake_ill] sim 0.894 wer 0.14 pitch 3.2 rate 2.2 | sim 0.902 wer 0.14 pitch 5.2 rate 2.5 | sim 0.883 wer 0.29 pitch 6.2 rate 1.9 | sim 0.903 wer 0.14 pitch 3.4 rate 2.4 *
+   tightened x1.15 (rate 1.9 -> 2.2)
+pick b32ed61ac0.wav.cb.wav [formal] sim 0.632 wer 0.00 pitch 3.1 rate 2.2 | sim 0.768 wer 0.00 pitch 5.2 rate 1.5 | sim 0.816 wer 0.00 pitch 3.2 rate 1.9 * | sim 0.670 wer 0.00 pitch 7.9 rate 2.7
+   tightened x1.15 (rate 1.0 -> 1.2)
+pick e91d3514fc.wav.cb.wav [formal] sim 0.760 wer 0.00 pitch 2.8 rate 0.9 | sim 0.780 wer 0.00 pitch 4.8 rate 1.0 * | sim 0.762 wer 1.00 pitch 2.2 rate 0.4 | sim 0.767 wer 0.00 pitch 5.1 rate 1.0
+pick b1b89f977d.wav.cb.wav [under_breath] sim 0.771 wer 0.00 pitch 3.3 rate 1.9 | sim 0.790 wer 0.00 pitch 3.1 rate 3.2 | sim 0.837 wer 0.00 pitch 3.5 rate 3.4 * | sim 0.851 wer 0.00 pitch 3.2 rate 1.9
+   tightened x1.15 (rate 1.3 -> 1.5)
+pick 9e2b7b945a.wav.cb.wav [fake_ill] sim 0.766 wer 0.00 pitch 4.9 rate 1.5 | sim 0.818 wer 0.00 pitch 5.4 rate 1.3 * | sim 0.739 wer 0.00 pitch 4.1 rate 1.4 | sim 0.746 wer 0.00 pitch 1.0 rate 1.7
+   tightened x1.15 (rate 1.1 -> 1.3)
+pick 733c4289dc.wav.cb.wav [deadpan] sim 0.735 wer 0.00 pitch 7.8 rate 1.0 | sim 0.773 wer 0.00 pitch 6.0 rate 1.1 * | sim 0.710 wer 11.00 pitch 2.9 rate 0.2 | sim 0.745 wer 0.00 pitch 7.2 rate 0.8
+   tightened x1.15 (rate 1.9 -> 2.2)
+pick 9291fb0cd5.wav.cb.wav [under_breath] sim 0.885 wer 0.00 pitch 3.7 rate 2.1 | sim 0.930 wer 0.00 pitch 4.6 rate 1.9 * | sim 0.818 wer 0.00 pitch 4.5 rate 2.8 | sim 0.815 wer 0.00 pitch 4.0 rate 2.2
+pick 2a8363515a.wav.cb.wav [deadpan] sim 0.801 wer 0.00 pitch 2.7 rate 2.2 | sim 0.892 wer 0.00 pitch 3.8 rate 2.6 * | sim 0.826 wer 0.00 pitch 6.3 rate 2.8 | sim 0.869 wer 0.00 pitch 4.2 rate 3.1
+pick d86634d7c5.wav.cb.wav [deadpan] sim 0.847 wer 0.00 pitch 4.3 rate 2.4 * | sim 0.857 wer 0.00 pitch 3.0 rate 2.2 | sim 0.876 wer 0.00 pitch 5.0 rate 2.4 | sim 0.852 wer 0.00 pitch 5.1 rate 2.6
+pick ddc5065b77.wav.cb.wav [under_breath] sim 0.750 wer 0.00 pitch 4.6 rate 2.3 | sim 0.791 wer 0.14 pitch 5.4 rate 2.0 | sim 0.782 wer 0.00 pitch 5.7 rate 3.2 | sim 0.797 wer 0.00 pitch 4.2 rate 3.1 *
+/home/mundax/Documents/REL/ExplainerStudio/.venv-tts/lib/python3.11/site-packages/perth/perth_net/__init__.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_filename
+/home/mundax/Documents/REL/ExplainerStudio/.venv-tts/lib/python3.11/site-packages/diffusers/models/lora.py:393: FutureWarning: `LoRACompatibleLinear` is deprecated and will be removed in version 1.0.0. Use of `LoRACompatibleLinear` is deprecated. Please switch to PEFT backend by installing PEFT: `pip install peft`.
+  deprecate("LoRACompatibleLinear", "1.0.0", deprecation_message)
+/home/mundax/.local/share/uv/python/cpython-3.11.18-linux-x86_64-gnu/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+LlamaModel is using LlamaSdpaAttention, but `torch.nn.functional.scaled_dot_product_attention` does not support `output_attentions=True`. Falling back to the manual attention implementation, but specifying the manual implementation will be required from Transformers version v5.0.0 onwards. This warning can be removed using the argument `attn_implementation="eager"` when loading the model.
+loaded PerthNet (Implicit) at step 250,000
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+Sampling:   1%|          | 9/1000 [00:00<00:11, 86.71it/s]Sampling:   2%|▏         | 24/1000 [00:00<00:07, 123.19it/s]Sampling:   4%|▍         | 39/1000 [00:00<00:07, 134.46it/s]Sampling:   5%|▌         | 51/1000 [00:00<00:07, 132.22it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   2%|▏         | 15/1000 [00:00<00:06, 145.96it/s]Sampling:   3%|▎         | 30/1000 [00:00<00:06, 148.26it/s]Sampling:   4%|▍         | 43/1000 [00:00<00:06, 148.32it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   2%|▏         | 15/1000 [00:00<00:06, 146.06it/s]Sampling:   3%|▎         | 31/1000 [00:00<00:06, 148.72it/s]Sampling:   5%|▍         | 46/1000 [00:00<00:06, 149.26it/s]Sampling:   5%|▍         | 47/1000 [00:00<00:06, 148.67it/s]
+tts 5c54d35e15.wav.cb.wav [distracted] sim 0.835 wer 0.00 pitch 3.0 | sim 0.859 wer 0.25 pitch 2.6 | sim 0.853 wer 0.00 pitch 2.6 *
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   2%|▏         | 15/1000 [00:00<00:06, 144.89it/s]Sampling:   2%|▏         | 24/1000 [00:00<00:06, 145.84it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   2%|▏         | 15/1000 [00:00<00:06, 146.26it/s]Sampling:   3%|▎         | 30/1000 [00:00<00:06, 147.87it/s]Sampling:   5%|▍         | 46/1000 [00:00<00:06, 148.99it/s]Sampling:   5%|▍         | 48/1000 [00:00<00:06, 148.46it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|          | 12/1000 [00:00<00:08, 115.94it/s]Sampling:   2%|▏         | 23/1000 [00:00<00:07, 128.80it/s]
+tts 1331529505.wav.cb.wav [curious] sim 0.839 wer 1.00 pitch 4.2 | sim 0.813 wer 0.00 pitch 4.6 | sim 0.831 wer 0.00 pitch 3.1 *
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|          | 10/1000 [00:00<00:10, 98.01it/s]Sampling:   2%|▎         | 25/1000 [00:00<00:07, 126.61it/s]Sampling:   3%|▎         | 30/1000 [00:00<00:07, 125.59it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   2%|▏         | 15/1000 [00:00<00:06, 143.19it/s]Sampling:   2%|▎         | 25/1000 [00:00<00:06, 143.78it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   2%|▏         | 15/1000 [00:00<00:06, 143.63it/s]Sampling:   3%|▎         | 30/1000 [00:00<00:06, 144.57it/s]Sampling:   4%|▍         | 38/1000 [00:00<00:06, 144.57it/s]
+tts bf421b6c45.wav.cb.wav [dry] sim 0.813 wer 0.00 pitch 3.1 | sim 0.830 wer 0.33 pitch 2.5 | sim 0.860 wer 0.00 pitch 3.4 *
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|          | 12/1000 [00:00<00:08, 115.19it/s]Sampling:   3%|▎         | 27/1000 [00:00<00:07, 133.13it/s]Sampling:   4%|▍         | 42/1000 [00:00<00:06, 138.35it/s]Sampling:   6%|▌         | 57/1000 [00:00<00:06, 140.52it/s]Sampling:   6%|▌         | 59/1000 [00:00<00:06, 137.35it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|          | 12/1000 [00:00<00:08, 117.46it/s]Sampling:   3%|▎         | 28/1000 [00:00<00:07, 137.20it/s]Sampling:   4%|▍         | 44/1000 [00:00<00:06, 143.17it/s]Sampling:   6%|▌         | 60/1000 [00:00<00:06, 146.35it/s]Sampling:   7%|▋         | 72/1000 [00:00<00:06, 143.85it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   2%|▏         | 15/1000 [00:00<00:06, 141.41it/s]Sampling:   3%|▎         | 31/1000 [00:00<00:06, 146.59it/s]Sampling:   5%|▍         | 47/1000 [00:00<00:06, 148.29it/s]Sampling:   6%|▌         | 60/1000 [00:00<00:06, 147.84it/s]
+tts 070da4d660.wav.cb.wav [curious] sim 0.897 wer 0.00 pitch 2.6 * | sim 0.852 wer 0.00 pitch 3.2 | sim 0.834 wer 0.00 pitch 2.9
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|▏         | 14/1000 [00:00<00:07, 139.36it/s]Sampling:   3%|▎         | 29/1000 [00:00<00:06, 142.96it/s]Sampling:   4%|▍         | 44/1000 [00:00<00:06, 144.00it/s]Sampling:   5%|▌         | 53/1000 [00:00<00:06, 143.62it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|          | 12/1000 [00:00<00:08, 116.05it/s]Sampling:   3%|▎         | 27/1000 [00:00<00:07, 133.64it/s]Sampling:   4%|▍         | 42/1000 [00:00<00:06, 139.50it/s]Sampling:   5%|▍         | 49/1000 [00:00<00:06, 137.37it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|          | 12/1000 [00:00<00:08, 116.39it/s]Sampling:   3%|▎         | 27/1000 [00:00<00:07, 134.12it/s]Sampling:   4%|▍         | 41/1000 [00:00<00:07, 133.97it/s]Sampling:   5%|▌         | 54/1000 [00:00<00:06, 136.23it/s]
+tts 0baf0d639f.wav.cb.wav [dry] sim 0.851 wer 0.00 pitch 3.1 | sim 0.886 wer 0.00 pitch 4.0 * | sim 0.854 wer 0.00 pitch 3.5
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|▏         | 14/1000 [00:00<00:07, 138.77it/s]Sampling:   3%|▎         | 29/1000 [00:00<00:06, 142.52it/s]Sampling:   4%|▍         | 44/1000 [00:00<00:06, 143.70it/s]Sampling:   6%|▌         | 59/1000 [00:00<00:06, 144.60it/s]Sampling:   7%|▋         | 74/1000 [00:00<00:06, 145.06it/s]Sampling:   9%|▊         | 86/1000 [00:00<00:06, 145.03it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|▏         | 14/1000 [00:00<00:07, 139.08it/s]Sampling:   3%|▎         | 29/1000 [00:00<00:06, 143.04it/s]Sampling:   4%|▍         | 44/1000 [00:00<00:06, 144.50it/s]Sampling:   6%|▌         | 59/1000 [00:00<00:06, 145.29it/s]Sampling:   7%|▋         | 74/1000 [00:00<00:06, 145.91it/s]Sampling:   8%|▊         | 83/1000 [00:00<00:06, 145.05it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|          | 12/1000 [00:00<00:08, 114.03it/s]Sampling:   3%|▎         | 27/1000 [00:00<00:07, 131.43it/s]Sampling:   4%|▍         | 42/1000 [00:00<00:06, 137.14it/s]Sampling:   6%|▌         | 57/1000 [00:00<00:06, 139.92it/s]Sampling:   7%|▋         | 72/1000 [00:00<00:06, 141.37it/s]Sampling:   8%|▊         | 82/1000 [00:00<00:06, 138.88it/s]
+tts 2a5753f85a.wav.cb.wav [dry] sim 0.922 wer 0.00 pitch 2.2 * | sim 0.890 wer 0.00 pitch 2.6 | sim 0.884 wer 0.00 pitch 3.5
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|▏         | 14/1000 [00:00<00:07, 139.88it/s]Sampling:   3%|▎         | 29/1000 [00:00<00:06, 143.40it/s]Sampling:   4%|▍         | 44/1000 [00:00<00:06, 144.56it/s]Sampling:   6%|▌         | 59/1000 [00:00<00:06, 145.28it/s]Sampling:   7%|▋         | 74/1000 [00:00<00:06, 145.65it/s]Sampling:   8%|▊         | 79/1000 [00:00<00:06, 144.80it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   2%|▏         | 15/1000 [00:00<00:07, 140.62it/s]Sampling:   3%|▎         | 30/1000 [00:00<00:06, 143.21it/s]Sampling:   4%|▍         | 45/1000 [00:00<00:06, 144.06it/s]Sampling:   6%|▌         | 60/1000 [00:00<00:06, 144.61it/s]Sampling:   6%|▋         | 63/1000 [00:00<00:06, 143.95it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|          | 12/1000 [00:00<00:08, 119.77it/s]Sampling:   3%|▎         | 27/1000 [00:00<00:07, 135.68it/s]Sampling:   4%|▍         | 42/1000 [00:00<00:06, 140.93it/s]Sampling:   6%|▌         | 57/1000 [00:00<00:06, 143.25it/s]Sampling:   7%|▋         | 72/1000 [00:00<00:06, 144.52it/s]Sampling:   7%|▋         | 73/1000 [00:00<00:06, 141.46it/s]
+tts dc851351d7.wav.cb.wav [dry] sim 0.891 wer 0.00 pitch 3.8 | sim 0.923 wer 0.00 pitch 2.2 | sim 0.919 wer 0.00 pitch 2.2 *
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   2%|▏         | 15/1000 [00:00<00:06, 143.68it/s]Sampling:   3%|▎         | 30/1000 [00:00<00:06, 144.58it/s]Sampling:   4%|▎         | 37/1000 [00:00<00:06, 144.38it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|          | 12/1000 [00:00<00:08, 118.49it/s]Sampling:   3%|▎         | 27/1000 [00:00<00:07, 135.10it/s]Sampling:   4%|▎         | 36/1000 [00:00<00:07, 135.72it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   2%|▏         | 15/1000 [00:00<00:06, 144.11it/s]Sampling:   3%|▎         | 30/1000 [00:00<00:06, 144.65it/s]Sampling:   4%|▍         | 38/1000 [00:00<00:06, 144.72it/s]
+tts b435c5ebf7.wav.cb.wav [deadpan] sim 0.867 wer 0.00 pitch 3.3 * | sim 0.880 wer 0.00 pitch 3.5 | sim 0.884 wer 0.00 pitch 3.4
+WARNING:root:Reference mel length is not equal to 2 * reference token length.
+
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|          | 12/1000 [00:00<00:08, 115.48it/s]Sampling:   3%|▎         | 27/1000 [00:00<00:07, 133.20it/s]Sampling:   4%|▍         | 42/1000 [00:00<00:06, 139.04it/s]Sampling:   5%|▍         | 49/1000 [00:00<00:06, 136.87it/s]
+WARNING:root:Reference mel length is not equal to 2 * reference token length.
+
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|          | 12/1000 [00:00<00:08, 115.50it/s]Sampling:   3%|▎         | 27/1000 [00:00<00:07, 133.33it/s]Sampling:   4%|▎         | 35/1000 [00:00<00:07, 133.66it/s]
+WARNING:root:Reference mel length is not equal to 2 * reference token length.
+
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|          | 12/1000 [00:00<00:08, 115.97it/s]Sampling:   3%|▎         | 27/1000 [00:00<00:07, 135.67it/s]Sampling:   4%|▍         | 43/1000 [00:00<00:06, 142.54it/s]Sampling:   5%|▌         | 51/1000 [00:00<00:06, 140.26it/s]
+tts 65434bf2c6.wav.cb.wav [concerned] sim 0.818 wer 0.00 pitch 2.9 | sim 0.851 wer 0.00 pitch 2.8 * | sim 0.851 wer 0.00 pitch 2.4
+WARNING:root:Reference mel length is not equal to 2 * reference token length.
+
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|          | 12/1000 [00:00<00:08, 114.37it/s]Sampling:   3%|▎         | 27/1000 [00:00<00:07, 132.34it/s]Sampling:   4%|▍         | 42/1000 [00:00<00:06, 138.37it/s]Sampling:   6%|▌         | 57/1000 [00:00<00:06, 141.59it/s]Sampling:   7%|▋         | 72/1000 [00:00<00:06, 143.49it/s]Sampling:   9%|▊         | 87/1000 [00:00<00:06, 144.64it/s]Sampling:  10%|█         | 102/1000 [00:00<00:06, 144.81it/s]Sampling:  12%|█▏        | 118/1000 [00:00<00:06, 146.98it/s]Sampling:  13%|█▎        | 134/1000 [00:00<00:05, 148.30it/s]Sampling:  14%|█▍        | 145/1000 [00:01<00:05, 144.16it/s]
+WARNING:root:Reference mel length is not equal to 2 * reference token length.
+
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|▏         | 14/1000 [00:00<00:07, 137.64it/s]Sampling:   3%|▎         | 29/1000 [00:00<00:06, 144.51it/s]Sampling:   4%|▍         | 45/1000 [00:00<00:06, 147.69it/s]Sampling:   6%|▌         | 61/1000 [00:00<00:06, 149.25it/s]Sampling:   8%|▊         | 77/1000 [00:00<00:06, 149.84it/s]Sampling:   9%|▉         | 93/1000 [00:00<00:06, 150.37it/s]Sampling:  11%|█         | 109/1000 [00:00<00:05, 150.63it/s]Sampling:  12%|█▎        | 125/1000 [00:00<00:05, 150.81it/s]Sampling:  14%|█▍        | 141/1000 [00:00<00:05, 150.99it/s]Sampling:  15%|█▍        | 149/1000 [00:00<00:05, 149.59it/s]
+WARNING:root:Reference mel length is not equal to 2 * reference token length.
+
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|▏         | 14/1000 [00:00<00:07, 137.41it/s]Sampling:   3%|▎         | 29/1000 [00:00<00:06, 144.51it/s]Sampling:   4%|▍         | 44/1000 [00:00<00:06, 146.77it/s]Sampling:   6%|▌         | 59/1000 [00:00<00:06, 148.01it/s]Sampling:   7%|▋         | 74/1000 [00:00<00:06, 148.50it/s]Sampling:   9%|▉         | 89/1000 [00:00<00:06, 149.00it/s]Sampling:  10%|█         | 104/1000 [00:00<00:06, 149.15it/s]Sampling:  12%|█▏        | 119/1000 [00:00<00:05, 149.21it/s]Sampling:  13%|█▎        | 134/1000 [00:00<00:05, 149.04it/s]Sampling:  15%|█▍        | 149/1000 [00:01<00:05, 149.15it/s]Sampling:  15%|█▌        | 153/1000 [00:01<00:05, 148.21it/s]
+tts d6f98cf216.wav.cb.wav [professional] sim 0.927 wer 0.00 pitch 2.5 | sim 0.925 wer 0.05 pitch 2.4 * | sim 0.933 wer 0.00 pitch 3.1
+WARNING:root:Reference mel length is not equal to 2 * reference token length.
+
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   2%|▏         | 15/1000 [00:00<00:06, 142.52it/s]Sampling:   3%|▎         | 30/1000 [00:00<00:06, 145.75it/s]Sampling:   4%|▍         | 45/1000 [00:00<00:06, 146.65it/s]Sampling:   4%|▍         | 45/1000 [00:00<00:06, 145.83it/s]
+WARNING:root:Reference mel length is not equal to 2 * reference token length.
+
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   2%|▏         | 15/1000 [00:00<00:07, 140.62it/s]Sampling:   3%|▎         | 30/1000 [00:00<00:06, 144.41it/s]Sampling:   4%|▍         | 45/1000 [00:00<00:06, 142.78it/s]Sampling:   5%|▍         | 48/1000 [00:00<00:06, 142.62it/s]
+WARNING:root:Reference mel length is not equal to 2 * reference token length.
+
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   2%|▏         | 15/1000 [00:00<00:06, 143.59it/s]Sampling:   3%|▎         | 30/1000 [00:00<00:06, 146.42it/s]Sampling:   4%|▍         | 45/1000 [00:00<00:06, 146.78it/s]Sampling:   5%|▍         | 49/1000 [00:00<00:06, 146.25it/s]
+tts 49fcde5e66.wav.cb.wav [professional] sim 0.890 wer 0.00 pitch 3.3 | sim 0.883 wer 0.00 pitch 3.8 | sim 0.896 wer 0.00 pitch 2.0 *
+WARNING:root:Reference mel length is not equal to 2 * reference token length.
+
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|          | 12/1000 [00:00<00:08, 113.79it/s]Sampling:   3%|▎         | 27/1000 [00:00<00:07, 132.26it/s]Sampling:   4%|▍         | 42/1000 [00:00<00:06, 137.95it/s]Sampling:   6%|▌         | 57/1000 [00:00<00:06, 141.18it/s]Sampling:   7%|▋         | 72/1000 [00:00<00:06, 143.07it/s]Sampling:   9%|▊         | 87/1000 [00:00<00:06, 144.42it/s]Sampling:  10%|█         | 102/1000 [00:00<00:06, 145.24it/s]Sampling:  12%|█▏        | 115/1000 [00:00<00:06, 141.94it/s]
+WARNING:root:Reference mel length is not equal to 2 * reference token length.
+
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|▏         | 14/1000 [00:00<00:07, 134.09it/s]Sampling:   3%|▎         | 29/1000 [00:00<00:06, 143.15it/s]Sampling:   4%|▍         | 44/1000 [00:00<00:06, 146.12it/s]Sampling:   6%|▌         | 60/1000 [00:00<00:06, 147.87it/s]Sampling:   8%|▊         | 75/1000 [00:00<00:06, 148.51it/s]Sampling:   9%|▉         | 90/1000 [00:00<00:06, 148.99it/s]Sampling:  10%|█         | 105/1000 [00:00<00:06, 149.14it/s]Sampling:  11%|█         | 109/1000 [00:00<00:06, 147.53it/s]
+WARNING:root:Reference mel length is not equal to 2 * reference token length.
+
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|▏         | 14/1000 [00:00<00:07, 135.73it/s]Sampling:   3%|▎         | 29/1000 [00:00<00:06, 143.46it/s]Sampling:   4%|▍         | 44/1000 [00:00<00:06, 146.08it/s]Sampling:   6%|▌         | 59/1000 [00:00<00:06, 147.25it/s]Sampling:   7%|▋         | 74/1000 [00:00<00:06, 148.09it/s]Sampling:   9%|▉         | 89/1000 [00:00<00:06, 148.63it/s]Sampling:  10%|█         | 104/1000 [00:00<00:06, 148.86it/s]Sampling:  11%|█         | 111/1000 [00:00<00:06, 147.38it/s]
+tts 0bcb5cc600.wav.cb.wav [professional] sim 0.932 wer 0.00 pitch 3.4 | sim 0.931 wer 0.00 pitch 3.4 | sim 0.928 wer 0.00 pitch 3.1 *
+WARNING:root:Reference mel length is not equal to 2 * reference token length.
+
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   2%|▏         | 15/1000 [00:00<00:06, 142.66it/s]Sampling:   2%|▎         | 25/1000 [00:00<00:06, 142.89it/s]
+WARNING:root:Reference mel length is not equal to 2 * reference token length.
+
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   2%|▏         | 15/1000 [00:00<00:06, 142.35it/s]Sampling:   2%|▏         | 24/1000 [00:00<00:06, 142.63it/s]
+WARNING:root:Reference mel length is not equal to 2 * reference token length.
+
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|          | 12/1000 [00:00<00:06, 141.26it/s]
+tts 3a2cd230d4.wav.cb.wav [professional] sim 0.671 wer 0.00 pitch 3.5 | sim 0.650 wer 0.00 pitch 2.9 * | sim 0.606 wer 0.00 pitch 4.7
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   2%|▏         | 15/1000 [00:00<00:06, 141.18it/s]Sampling:   3%|▎         | 30/1000 [00:00<00:06, 145.40it/s]Sampling:   4%|▍         | 45/1000 [00:00<00:06, 146.01it/s]Sampling:   5%|▌         | 50/1000 [00:00<00:06, 145.39it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|          | 12/1000 [00:00<00:08, 113.41it/s]Sampling:   3%|▎         | 27/1000 [00:00<00:07, 132.56it/s]Sampling:   4%|▍         | 39/1000 [00:00<00:07, 134.35it/s]
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|          | 12/1000 [00:00<00:08, 117.39it/s]Sampling:   3%|▎         | 27/1000 [00:00<00:07, 134.03it/s]Sampling:   4%|▍         | 42/1000 [00:00<00:06, 139.49it/s]Sampling:   5%|▌         | 52/1000 [00:00<00:06, 137.91it/s]
+tts 48bac68cb4.wav.cb.wav [distracted] sim 0.856 wer 0.20 pitch 2.0 | sim 0.880 wer 0.00 pitch 2.2 * | sim 0.876 wer 0.20 pitch 2.3
+
+********
+Warning: flash-attn is not installed. Will only run the manual PyTorch version. Please install flash-attn for faster inference.
+********
+ 
+done projects/gta6-voice-test/VOICE_TEST.wav

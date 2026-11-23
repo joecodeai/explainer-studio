@@ -1,0 +1,92 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: C,Montserrat ExtraBold,86,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,0,0,1,7,2,2,80,80,560,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.40,0:00:02.08,C,,0,0,0,,IN 1814,
+Dialogue: 0,0:00:02.08,0:00:02.70,C,,0,0,0,,A STREET IN
+Dialogue: 0,0:00:02.70,0:00:03.56,C,,0,0,0,,LONDON WAS HIT
+Dialogue: 0,0:00:03.56,0:00:04.28,C,,0,0,0,,BY A WAVE
+Dialogue: 0,0:00:04.28,0:00:05.11,C,,0,0,0,,OF BEER.
+Dialogue: 0,0:00:05.38,0:00:06.40,C,,0,0,0,,AT THE HORSE
+Dialogue: 0,0:00:06.40,0:00:07.41,C,,0,0,0,,SHOE BREWERY ON
+Dialogue: 0,0:00:07.41,0:00:08.43,C,,0,0,0,,TOTTENHAM COURT ROAD,
+Dialogue: 0,0:00:08.43,0:00:09.45,C,,0,0,0,,A GIANT WOODEN
+Dialogue: 0,0:00:09.45,0:00:10.47,C,,0,0,0,,VAT OF DARK
+Dialogue: 0,0:00:10.47,0:00:11.48,C,,0,0,0,,PORTER STOOD MORE
+Dialogue: 0,0:00:11.48,0:00:12.50,C,,0,0,0,,THAN TWENTY FEET
+Dialogue: 0,0:00:12.50,0:00:13.09,C,,0,0,0,,TALL.
+Dialogue: 0,0:00:13.28,0:00:14.64,C,,0,0,0,,THAT AFTERNOON,
+Dialogue: 0,0:00:14.64,0:00:14.90,C,,0,0,0,,ONE OF THE
+Dialogue: 0,0:00:14.90,0:00:16.08,C,,0,0,0,,IRON HOOPS HOLDING
+Dialogue: 0,0:00:16.08,0:00:17.16,C,,0,0,0,,IT TOGETHER SLIPPED
+Dialogue: 0,0:00:17.16,0:00:17.88,C,,0,0,0,,OFF.
+Dialogue: 0,0:00:17.88,0:00:18.84,C,,0,0,0,,A CLERK WAS
+Dialogue: 0,0:00:18.84,0:00:19.78,C,,0,0,0,,TOLD NOT TO
+Dialogue: 0,0:00:19.78,0:00:20.91,C,,0,0,0,,WORRY ABOUT IT.
+Dialogue: 0,0:00:21.10,0:00:21.86,C,,0,0,0,,ABOUT AN HOUR
+Dialogue: 0,0:00:21.86,0:00:22.52,C,,0,0,0,,LATER,
+Dialogue: 0,0:00:22.52,0:00:23.51,C,,0,0,0,,THE VAT BURST.
+Dialogue: 0,0:00:23.76,0:00:24.94,C,,0,0,0,,IT SMASHED OPEN
+Dialogue: 0,0:00:24.94,0:00:25.82,C,,0,0,0,,THE VATS AROUND
+Dialogue: 0,0:00:25.82,0:00:26.40,C,,0,0,0,,IT,
+Dialogue: 0,0:00:26.40,0:00:26.90,C,,0,0,0,,AND MORE THAN
+Dialogue: 0,0:00:26.90,0:00:27.84,C,,0,0,0,,A MILLION LITRES
+Dialogue: 0,0:00:27.84,0:00:29.04,C,,0,0,0,,OF BEER TORE
+Dialogue: 0,0:00:29.04,0:00:30.20,C,,0,0,0,,THROUGH THE BREWERY'S
+Dialogue: 0,0:00:30.20,0:00:31.09,C,,0,0,0,,BACK WALL.
+Dialogue: 0,0:00:31.34,0:00:31.98,C,,0,0,0,,A WAVE OF
+Dialogue: 0,0:00:31.98,0:00:33.28,C,,0,0,0,,BEER AROUND FIFTEEN
+Dialogue: 0,0:00:33.28,0:00:34.38,C,,0,0,0,,FEET HIGH POURED
+Dialogue: 0,0:00:34.38,0:00:35.28,C,,0,0,0,,INTO THE SLUM
+Dialogue: 0,0:00:35.28,0:00:36.43,C,,0,0,0,,OF ST GILES.
+Dialogue: 0,0:00:36.71,0:00:37.79,C,,0,0,0,,WHOLE FAMILIES THERE
+Dialogue: 0,0:00:37.79,0:00:39.25,C,,0,0,0,,LIVED IN CELLARS.
+Dialogue: 0,0:00:39.25,0:00:40.05,C,,0,0,0,,THE BEER POURED
+Dialogue: 0,0:00:40.05,0:00:40.90,C,,0,0,0,,STRAIGHT IN.
+Dialogue: 0,0:00:41.04,0:00:42.13,C,,0,0,0,,EIGHT PEOPLE DIED.
+Dialogue: 0,0:00:42.13,0:00:43.22,C,,0,0,0,,SOME WERE MOURNERS
+Dialogue: 0,0:00:43.22,0:00:44.31,C,,0,0,0,,AT A LITTLE
+Dialogue: 0,0:00:44.31,0:00:45.03,C,,0,0,0,,BOY'S WAKE.
+Dialogue: 0,0:00:45.03,0:00:46.12,C,,0,0,0,,ONE WAS A
+Dialogue: 0,0:00:46.12,0:00:46.84,C,,0,0,0,,FOURTEEN-YEAR-OLD BARMAID,
+Dialogue: 0,0:00:46.84,0:00:47.93,C,,0,0,0,,BURIED WHEN A
+Dialogue: 0,0:00:47.93,0:00:49.27,C,,0,0,0,,WALL CAME DOWN.
+Dialogue: 0,0:00:49.57,0:00:50.65,C,,0,0,0,,OKAY.
+Dialogue: 0,0:00:50.65,0:00:51.47,C,,0,0,0,,I THOUGHT THIS
+Dialogue: 0,0:00:51.47,0:00:52.17,C,,0,0,0,,WAS GOING TO
+Dialogue: 0,0:00:52.17,0:00:52.81,C,,0,0,0,,BE A FUNNY
+Dialogue: 0,0:00:52.81,0:00:53.46,C,,0,0,0,,ONE.
+Dialogue: 0,0:00:53.70,0:00:54.45,C,,0,0,0,,YOU MIGHT HAVE
+Dialogue: 0,0:00:54.45,0:00:55.38,C,,0,0,0,,HEARD THAT CROWDS
+Dialogue: 0,0:00:55.38,0:00:56.26,C,,0,0,0,,RUSHED OUT TO
+Dialogue: 0,0:00:56.26,0:00:57.16,C,,0,0,0,,DRINK IT.
+Dialogue: 0,0:00:57.16,0:00:58.20,C,,0,0,0,,THE NEWSPAPERS OF
+Dialogue: 0,0:00:58.20,0:00:59.20,C,,0,0,0,,THE TIME DON'T
+Dialogue: 0,0:00:59.20,0:01:00.27,C,,0,0,0,,SAY THAT.
+Dialogue: 0,0:01:00.27,0:01:01.45,C,,0,0,0,,THEY DESCRIBE NEIGHBOURS
+Dialogue: 0,0:01:01.45,0:01:02.45,C,,0,0,0,,DIGGING THROUGH THE
+Dialogue: 0,0:01:02.45,0:01:03.83,C,,0,0,0,,RUBBLE FOR SURVIVORS.
+Dialogue: 0,0:01:04.29,0:01:05.81,C,,0,0,0,,AT THE INQUEST,
+Dialogue: 0,0:01:05.81,0:01:06.73,C,,0,0,0,,THE JURY CALLED
+Dialogue: 0,0:01:06.73,0:01:07.43,C,,0,0,0,,IT AN ACT
+Dialogue: 0,0:01:07.43,0:01:08.39,C,,0,0,0,,OF GOD.
+Dialogue: 0,0:01:08.39,0:01:09.39,C,,0,0,0,,THE BREWERY PAID
+Dialogue: 0,0:01:09.39,0:01:10.41,C,,0,0,0,,NOTHING,
+Dialogue: 0,0:01:10.41,0:01:11.05,C,,0,0,0,,AND EVEN GOT
+Dialogue: 0,0:01:11.05,0:01:11.89,C,,0,0,0,,THE TAX ON
+Dialogue: 0,0:01:11.89,0:01:12.87,C,,0,0,0,,ITS LOST BEER
+Dialogue: 0,0:01:12.87,0:01:13.76,C,,0,0,0,,REFUNDED.
+Dialogue: 0,0:01:13.89,0:01:14.77,C,,0,0,0,,THE BREWERY KEPT
+Dialogue: 0,0:01:14.77,0:01:15.67,C,,0,0,0,,GOING FOR ANOTHER
+Dialogue: 0,0:01:15.67,0:01:16.99,C,,0,0,0,,HUNDRED YEARS.
+Dialogue: 0,0:01:16.99,0:01:17.77,C,,0,0,0,,TODAY,
+Dialogue: 0,0:01:17.77,0:01:18.57,C,,0,0,0,,A THEATRE STANDS
+Dialogue: 0,0:01:18.57,0:01:19.63,C,,0,0,0,,ON THE SPOT.
+Dialogue: 0,0:01:19.63,0:01:21.00,C,,0,0,0,,SUBSCRIBE FOR MORE.

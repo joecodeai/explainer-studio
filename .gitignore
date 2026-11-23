@@ -58,3 +58,15 @@ projects/*/review/sheets/
 .idea/
 .vscode/
 .venv-tts/
+engines/
+.venv-longcat/
+
+# Generated media in projects (2026-11-23)
+projects/**/*.mp4
+projects/**/*.mov
+projects/**/*.png
+projects/**/*.jpg
+projects/**/*.wav
+projects/**/*.flac
+projects/**/*.mp3
+*.bak*

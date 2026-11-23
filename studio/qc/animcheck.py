@@ -61,17 +61,19 @@ def _runs(idx, gap=2):
     return out
 
 
-def _numeric(F, g, fps):
-    d = np.abs(np.diff(g, axis=0)).mean(axis=(1, 2))                       # d[k] = change from frame k to k+1
+def _numeric(F, g, fps, step=1):
+    """step=2 for animation drawn 'on twos' (each drawing held 2 frames): compare frames 2 apart, so the held drawings do not
+    read as alternating jumps, while a real glitch (cut, flash, melt) still spikes."""
+    d = np.abs(g[step:] - g[:-step]).mean(axis=(1, 2))                    # d[k] = change from frame k to k+step
     med = float(np.median(d)) if len(d) else 0.0
-    thr = max(3.0, 4 * med + 1.5)
-    spikes = [k + 1 for k in range(len(d)) if d[k] > thr]
+    thr = max(3.0, 4 * med + 1.5) * (1.6 if step > 1 else 1.0)
+    spikes = [k + step for k in range(len(d)) if d[k] > thr]
     flagged = set()
-    for a, b in _runs(spikes, 1):
+    for a, b in _runs(spikes, step):
         k = a
-        flash = 0 < k < len(g) - 1 and np.abs(g[k + 1] - g[k - 1]).mean() < 0.5 * d[k - 1]
+        flash = step <= k < len(g) - step and np.abs(g[k + step] - g[k - step]).mean() < 0.5 * d[k - step]
         F.append(_f("HIGH", "glitch", f"{'single-frame flash' if flash else 'sudden jump'} at frames {a}-{b} "
-                    f"(change {d[k - 1]:.1f} vs typical {med:.1f})", a, fps)); flagged.update(range(max(0, a - 1), b + 2))
+                    f"(change {d[k - step]:.1f} vs typical {med:.1f})", a, fps)); flagged.update(range(max(0, a - step), b + 2))
     L = g.mean(axis=(1, 2)); dl = np.abs(np.diff(L))
     fl = [k + 1 for k in range(len(dl)) if dl[k] > 5.0]
     for a, b in _runs(fl, 2):
@@ -89,21 +91,21 @@ def _boxes(M, img, q, th):
     return [(s, b) for s, _, b in M.detect(img, q, th)]
 
 
-def _lipsync(F, g, fps, faces, env, silent):
+def _lipsync(F, g, fps, faces, env, silent, step=1):
     """faces: {frame: (x0,y0,x1,y1)} at analysis resolution for the speaker (solo) or each face (group, list)."""
     if not faces: return
     ks = sorted(faces); n = len(g)
     def box_at(i):
         j = min(ks, key=lambda k: abs(k - i)); return faces[j]
     mouth, upper = np.zeros(n), np.zeros(n)
-    for i in range(1, n):
+    for i in range(step, n):
         x0, y0, x1, y1 = [int(v) for v in box_at(i)]
         fh, fw = y1 - y0, x1 - x0
         if fh < 12 or fw < 10: continue
         my0, my1, mx0, mx1 = y0 + int(fh * 0.60), y0 + int(fh * 0.88), x0 + int(fw * 0.25), x0 + int(fw * 0.75)
         uy0, uy1 = y0 + int(fh * 0.15), y0 + int(fh * 0.45)
-        mouth[i] = np.abs(g[i, my0:my1, mx0:mx1] - g[i - 1, my0:my1, mx0:mx1]).mean()
-        upper[i] = np.abs(g[i, uy0:uy1, mx0:mx1] - g[i - 1, uy0:uy1, mx0:mx1]).mean()
+        mouth[i] = np.abs(g[i, my0:my1, mx0:mx1] - g[i - step, my0:my1, mx0:mx1]).mean()
+        upper[i] = np.abs(g[i, uy0:uy1, mx0:mx1] - g[i - step, uy0:uy1, mx0:mx1]).mean()
     r = mouth / (upper + 0.6)
     if silent:
         if np.mean(r[1:]) > 1.8 and np.mean(mouth[1:]) > 1.2:
@@ -131,7 +133,8 @@ def _lipsync(F, g, fps, faces, env, silent):
 
 
 VLM_PROMPT = ("These are numbered frames (the number is in the top-left corner) from a short AI-animated clip in a clean editorial "
-              "illustration style: {desc}. Inspect every frame carefully for GENERATION GLITCHES only: extra, missing or fused fingers, "
+              "illustration style: {desc}. Inspect every frame carefully for GENERATION GLITCHES only (a normal hand has FIVE fingers: four "
+              "fingers plus a thumb - only six or more, or clearly missing/fused fingers, is a glitch): extra, missing or fused fingers, "
               "hands or limbs; distorted, melting, smeared or duplicated faces; eyes or mouth in the wrong place or deformed; body parts "
               "merging with the background or with objects; a person or object appearing, vanishing or changing identity/clothes; "
               "garbled text or letters; sudden style change. Do NOT report the illustration style itself, the slow camera push-in, "
@@ -149,7 +152,7 @@ def _grid(imgs, labels, out, cols=3):
     G.save(out); return out
 
 
-def check_shot(video, audio, desc, n_people, refs=(), silent=False, work=None, vlm=True, cfg=None, speaker_side=None, vlm_every=1):
+def check_shot(video, audio, desc, n_people, refs=(), silent=False, work=None, vlm=True, cfg=None, speaker_side=None, vlm_every=1, twos=False):
     """video: the generated mp4; audio: the wav it was conditioned on; desc: who/what is in the shot; n_people: expected people;
     refs: reference images of the characters (identity); silent: True for listening/group shots."""
     from PIL import Image
@@ -158,7 +161,7 @@ def check_shot(video, audio, desc, n_people, refs=(), silent=False, work=None, v
     cp = video + ".qc.json"
     if os.path.exists(cp):
         c = json.load(open(cp))
-        if c.get("hash") == h and (c.get("vlm") or not vlm): return c
+        if c.get("hash") == h and (c.get("vlm") or not vlm) and c.get("twos", False) == twos: return c
     work = work or os.path.dirname(video); os.makedirs(work, exist_ok=True)
     fps = _probe_fps(video)
     rgb = frames(video); g = rgb.astype(np.float32).mean(axis=3)
@@ -166,7 +169,7 @@ def check_shot(video, audio, desc, n_people, refs=(), silent=False, work=None, v
     if n < 10:
         res = {"hash": h, "findings": [_f("CRITICAL", "glitch", f"clip has only {n} frames")], "score": 10, "ok": False, "vlm": vlm}
         json.dump(res, open(cp, "w"), indent=1); return res
-    flagged = _numeric(F, g, fps)
+    flagged = _numeric(F, g, fps, 2 if twos else 1)
     # sampled frames: people, identity, faces
     step = max(1, int(round(fps / VLM_FPS)))
     samp = list(range(0, n, step))
@@ -180,7 +183,9 @@ def check_shot(video, audio, desc, n_people, refs=(), silent=False, work=None, v
         fb = [b for s, b in _boxes(M, ims[i], "a human head.", 0.3) if (b[3] - b[1]) < 0.35 * H and (b[2] - b[0]) < 0.3 * W]
         if fb:
             if speaker_side and not silent:          # conversation two-shot: the speaker is the left- or right-most head
-                faces[i] = (min if speaker_side == "left" else max)(fb, key=lambda b: (b[0] + b[2]) / 2)
+                b = (min if speaker_side == "left" else max)(fb, key=lambda b: (b[0] + b[2]) / 2)
+                cx = (b[0] + b[2]) / 2                # only head found may be the OTHER person (e.g. a headlamp hides the speaker's)
+                if (cx < W / 2) == (speaker_side == "left"): faces[i] = b
             elif not silent: faces[i] = max(fb, key=lambda b: (b[2] - b[0]) * (b[3] - b[1]))
             else: faces[i] = fb[0]
     wrong = [i for i in samp if counts[i] != n_people]
@@ -212,7 +217,7 @@ def check_shot(video, audio, desc, n_people, refs=(), silent=False, work=None, v
             if drop:
                 F.append(_f("HIGH", "identity", f"character stops looking like their reference art (similarity {float(s.min()):.2f} vs {base:.2f}) "
                             f"from frame {drop[0]}", drop[0], fps)); flagged.update(drop)
-    _lipsync(F, g, fps, faces, _env(audio, fps, n), silent)
+    _lipsync(F, g, fps, faces, _env(audio, fps, n), silent, 2 if twos else 1)
     # vision model: every sampled frame + every flagged frame, 6 per grid, then confirm each report on the full frame
     if vlm:
         from .stage2 import ask
@@ -248,7 +253,7 @@ def check_shot(video, audio, desc, n_people, refs=(), silent=False, work=None, v
                 if os.path.exists(fp): os.remove(fp)
     score = sum(SEV_W[f["severity"]] for f in F)
     res = {"hash": h, "findings": F, "score": score, "ok": not any(f["severity"] in ("CRITICAL", "HIGH") for f in F),
-           "frames": n, "fps": fps, "vlm": vlm}
+           "frames": n, "fps": fps, "vlm": vlm, "twos": twos}
     json.dump(res, open(cp, "w"), indent=1)
     return res
 

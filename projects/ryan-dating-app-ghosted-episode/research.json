@@ -1,0 +1,30 @@
+{
+ "topic": "Ryan Figures It Out: why Ryan keeps getting ghosted \u2014 how dating apps decide who you see",
+ "sources": [
+  {
+   "title": "Key findings about online dating in the U.S.",
+   "url": "https://www.pewresearch.org/short-reads/2023/02/02/key-findings-about-online-dating-in-the-u-s/",
+   "text": "30% of U.S. adults say they have ever used a dating site or app (survey of 6,034 adults, July 5-17, 2022). About half of those under 30 (53%) report having ever used a dating site or app. About one-in-ten partnered adults met their current partner through a dating site or app. 53% of online dating users describe their experience as very or somewhat positive and 46% as very or somewhat negative."
+  },
+  {
+   "title": "From Looking for Love to Swiping the Field: Online Dating in the U.S.",
+   "url": "https://www.pewresearch.org/internet/2023/02/02/from-looking-for-love-to-swiping-the-field-online-dating-in-the-u-s/",
+   "text": "79% of online dating users under 30 say they have used Tinder. OkCupid, eharmony and Hinge have each been used by roughly one-in-five online dating users."
+  },
+  {
+   "title": "Finding Love on a First Data: Matching Algorithms in Online Dating (Harvard Data Science Review, Sharabi 2022)",
+   "url": "https://hdsr.mitpress.mit.edu/pub/i4eb4e8b",
+   "text": "Online dating has become the most common way for couples to meet in the United States (Rosenfeld et al., 2019). Collaborative filtering algorithms recommend based on the behaviors of users with similar tastes; matching algorithms consider whether interest will be well received. Tinder uses the Elo system from chess to rate desirability; a right swipe from someone desirable has the greatest impact. Tinder claims to have retired Elo scores (Tinder, 2019). At Hinge, the Gale-Shapley algorithm (1962) is used to recommend compatible matches; matches are stable if no two people would rather be with each other. Lloyd Shapley and Alvin Roth won the 2012 Nobel Memorial Prize in Economic Science for their work with the Gale-Shapley algorithm."
+  },
+  {
+   "title": "When choice is demotivating (Iyengar & Lepper, Journal of Personality and Social Psychology, 2000)",
+   "url": "https://doi.org/10.1037/0022-3514.79.6.995",
+   "text": "In a supermarket tasting study, an extensive display of 24 jams attracted more shoppers than a limited display of 6, but only 3% of those at the extensive display bought a jar versus 30% at the limited display."
+  },
+  {
+   "title": "Powering Tinder \u2014 The Method Behind Our Matching (Tinder blog, 2019)",
+   "url": "https://blog.gotinder.com/powering-tinder-r-the-method-behind-our-matching/",
+   "text": "Tinder said in March 2019 that the Elo score is an outdated measure in its algorithm and it no longer relies on it."
+  }
+ ]
+}

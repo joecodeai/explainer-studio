@@ -1,0 +1,1614 @@
+{
+ "title": "Why Ryan Keeps Getting Ghosted (The Algorithm Knows)",
+ "thumbnail_text": "200 SWIPES. 0 MATCHES",
+ "description": "Ryan swipes right on everyone and can't work out why nobody matches. Maya explains how dating apps really decide who you see — Tinder's old chess-style Elo score, Hinge's Nobel-prize 'stable matching' maths, and why too many choices make people choose nothing.",
+ "characters": [
+  {
+   "id": "maya",
+   "name": "Maya",
+   "look": "a confident, beautiful young woman in her mid twenties with fair skin with a warm peachy undertone, long voluminous wavy dark brown hair, warm brown eyes, gold hoop earrings, a knowing half-smile, olive green utility shirt-jacket with rolled sleeves over a cream top, high-waisted black wide-leg trousers with a black belt, black wristwatch, white sneakers",
+   "voice": "A friendly woman in her late twenties with a smooth, natural, mellow voice, relaxed conversational pace, neutral American accent, easy warmth and a quiet sense of humour, like a favourite podcast host.",
+   "role": "",
+   "real_person": false,
+   "tag": "the woman with long wavy hair in the olive green jacket",
+   "outfits": {
+    "evening": {
+     "desc": "cosy cream cable-knit sweater tucked into high-waisted black wide-leg trousers, long chocolate-brown cardigan coat",
+     "tag": "the woman with long wavy hair in the cosy cream cable-knit sweater tucked into high-waisted black wide-leg trousers"
+    },
+    "smart_casual": {
+     "desc": "chocolate-brown tailored blazer over a cream silk blouse, black straight trousers",
+     "tag": "the woman with long wavy hair in the chocolate-brown tailored blazer"
+    },
+    "office": {
+     "desc": "olive green tailored trouser suit with a cream fitted knit top",
+     "tag": "the woman with long wavy hair in the olive green tailored trouser suit with cream fitted knit top"
+    },
+    "date_night": {
+     "desc": "black satin midi slip dress with a cropped olive green tailored jacket over the shoulders",
+     "tag": "the woman with long wavy hair in the black satin midi slip dress with cropped olive green tailored jacket"
+    },
+    "party": {
+     "desc": "chocolate-brown satin wrap dress, knee length",
+     "tag": "the woman with long wavy hair in the chocolate-brown satin wrap dress"
+    },
+    "winter": {
+     "desc": "long black wool coat over an olive turtleneck, chocolate-brown tailored trousers",
+     "tag": "the woman with long wavy hair in the long black wool coat"
+    },
+    "summer": {
+     "desc": "olive green linen midi shirt-dress with a thin muted gold belt",
+     "tag": "the woman with long wavy hair in the olive green linen midi shirt-dress with thin muted gold belt"
+    },
+    "rain": {
+     "desc": "classic olive trench coat over a cream knit and black trousers",
+     "tag": "the woman with long wavy hair in the classic olive trench coat"
+    },
+    "home": {
+     "desc": "oversized cream knit sweater, olive lounge trousers, hair in a loose bun",
+     "tag": "the woman with long wavy hair in the oversized cream knit sweater"
+    },
+    "gym": {
+     "desc": "olive green sports top and matching leggings, cream zip-up jacket, hair in a high ponytail",
+     "tag": "the woman with long wavy hair in the olive green sports top and matching leggings"
+    },
+    "formal": {
+     "desc": "floor-length olive green satin gown with a muted gold belt, hair styled in soft waves",
+     "tag": "the woman with long wavy hair in the floor-length olive green satin gown with muted gold belt"
+    },
+    "denim": {
+     "desc": "light blue denim jacket over a white fitted t-shirt, high-waisted black wide-leg trousers with a black belt",
+     "tag": "the woman with long wavy hair in the light blue denim jacket"
+    }
+   },
+   "tts": {
+    "engine": "chatterbox",
+    "ref": "library/voices/maya/reference.wav"
+   },
+   "style": "vibrant modern 2D anime-inspired character illustration, like a polished animated series character sheet, clean confident dark outlines, warm cel shading with soft highlights, large expressive brown eyes, attractive appealing faces, natural adult proportions, rich saturated colours"
+  },
+  {
+   "id": "benny",
+   "name": "Ryan",
+   "look": "a cheerful young man in his mid twenties with fair skin with a warm peachy undertone, thick curly dark brown hair, big expressive brown eyes, a wide confident grin, burnt-orange zip-up hoodie worn open over a white t-shirt, black crossbody bag strap across his chest, black wristwatch, navy blue cargo trousers, white and orange sneakers",
+   "voice": "A charming young man in his late twenties with a warm, pleasant male voice, friendly and sincere, energetic and very expressive, casual neutral English accent, natural comedic timing.",
+   "role": "",
+   "real_person": false,
+   "tag": "the young man with curly hair in the orange hoodie",
+   "outfits": {
+    "evening": {
+     "desc": "dark brown bomber jacket over a grey crew-neck t-shirt, black slim jeans",
+     "tag": "the young man with curly hair in the dark brown bomber jacket"
+    },
+    "smart_casual": {
+     "desc": "navy unstructured blazer over a cream knit polo, charcoal tailored trousers",
+     "tag": "the young man with curly hair in the navy unstructured blazer"
+    },
+    "office": {
+     "desc": "light blue oxford shirt with sleeves rolled, navy chinos, burnt-orange knit tie loosened",
+     "tag": "the young man with curly hair in the light blue oxford shirt with sleeves rolled"
+    },
+    "date_night": {
+     "desc": "charcoal knit polo shirt tucked into cream pleated trousers, brown suede bomber",
+     "tag": "the young man with curly hair in the charcoal knit polo shirt tucked into cream pleated trousers"
+    },
+    "party": {
+     "desc": "burnt-orange short-sleeve camp-collar shirt with a subtle cream wave pattern, black straight trousers",
+     "tag": "the young man with curly hair in the burnt-orange short-sleeve camp-collar shirt with subtle cream wave pattern"
+    },
+    "winter": {
+     "desc": "navy padded puffer jacket over a burnt-orange hoodie, charcoal wool trousers",
+     "tag": "the young man with curly hair in the navy padded puffer jacket"
+    },
+    "summer": {
+     "desc": "cream short-sleeve linen shirt open over a burnt-orange t-shirt, navy shorts",
+     "tag": "the young man with curly hair in the cream short-sleeve linen shirt open"
+    },
+    "rain": {
+     "desc": "navy hooded rain jacket over a cream hoodie, charcoal joggers",
+     "tag": "the young man with curly hair in the navy hooded rain jacket"
+    },
+    "home": {
+     "desc": "faded burnt-orange oversized t-shirt, grey sweatpants",
+     "tag": "the young man with curly hair in the faded burnt-orange oversized t-shirt"
+    },
+    "gym": {
+     "desc": "navy athletic t-shirt, charcoal training shorts, burnt-orange zip-up track jacket tied at the waist",
+     "tag": "the young man with curly hair in the navy athletic t-shirt"
+    },
+    "formal": {
+     "desc": "navy slim two-piece suit, crisp white shirt, burnt-orange silk tie, brown leather belt",
+     "tag": "the young man with curly hair in the navy slim two-piece suit"
+    },
+    "luckycat": {
+     "desc": "plain white t-shirt with a small simple golden-yellow lucky-cat face icon printed on the chest (flat yellow and white cartoon cat face, no text), burnt-orange hoodie tied around his waist, navy cargo trousers",
+     "tag": "the young man with curly hair in the plain white t-shirt with small simple golden-yellow lucky-cat face icon printed on the chest (flat yellow and white cartoon cat face"
+    }
+   },
+   "tts": {
+    "engine": "qwen_custom",
+    "speaker": "Ryan",
+    "model": "models/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "base_direction": "A charismatic young guy in his mid-twenties, natural and conversational like a real actor improvising, at a lively natural conversational pace; never an announcer, never cartoonish, never slow or drawn out."
+   },
+   "style": "vibrant modern 2D anime-inspired character illustration, like a polished animated series character sheet, clean confident dark outlines, warm cel shading with soft highlights, large expressive brown eyes, attractive appealing faces, natural adult proportions, rich saturated colours"
+  },
+  {
+   "id": "zoe",
+   "name": "Zoe",
+   "role": "",
+   "real_person": false,
+   "tag": "the young woman with short curly hair in the mustard cardigan",
+   "look": "a friendly, confident young woman in her mid twenties with fair skin, short curly auburn hair, freckles, warm smile, mustard yellow cardigan over a white top, dark jeans, small silver earrings",
+   "voice": "A friendly young woman in her mid-twenties with a bright, playful, slightly husky voice, warm and quick-witted, casual neutral American accent.",
+   "style": "vibrant modern 2D anime-inspired character illustration, like a polished animated series character sheet, clean confident dark outlines, warm cel shading with soft highlights, large expressive brown eyes, attractive appealing faces, natural adult proportions, rich saturated colours"
+  }
+ ],
+ "environments": [
+  {
+   "id": "flat",
+   "prompt": "Ryan's small cosy city apartment living room: a comfy sofa against the back wall, a goldfish bowl on a side table, plants, a lamp, warm evening light",
+   "ambience": "quiet apartment hum, distant traffic",
+   "style": "hand-painted 2D anime background art like a modern Japanese animated film (painted, illustrated, NOT photographic, not 3D), warm cinematic light, rich but soft colours, clean shapes, gentle depth, realistic perspective, no people, wide 16:9 composition, open clear floor across the foreground, furniture and props only along the back wall and the far left/right edges, nothing in the lower centre, eye-level camera. Absolutely no text: no signs with letters, no logos, no writing on boards, screens, menus or paper (screens and signs are blank or show simple pictures only)"
+  },
+  {
+   "id": "coffee_shop",
+   "prompt": "a bright neighbourhood coffee shop: counter and espresso machine along the back wall, pendant lights, small tables at the far edges, big window with soft daylight",
+   "ambience": "light cafe chatter, espresso machine hiss",
+   "style": "hand-painted 2D anime background art like a modern Japanese animated film (painted, illustrated, NOT photographic, not 3D), warm cinematic light, rich but soft colours, clean shapes, gentle depth, realistic perspective, no people, wide 16:9 composition, open clear floor across the foreground, furniture and props only along the back wall and the far left/right edges, nothing in the lower centre, eye-level camera. Absolutely no text: no signs with letters, no logos, no writing on boards, screens, menus or paper (screens and signs are blank or show simple pictures only)"
+  },
+  {
+   "id": "grocery_aisle",
+   "prompt": "a bright friendly supermarket aisle: long shelves of colourful jam jars along the back, a small tasting table at the far left edge, clean floor",
+   "ambience": "supermarket murmur, soft background music, trolley wheels",
+   "style": "hand-painted 2D anime background art like a modern Japanese animated film (painted, illustrated, NOT photographic, not 3D), warm cinematic light, rich but soft colours, clean shapes, gentle depth, realistic perspective, no people, wide 16:9 composition, open clear floor across the foreground, furniture and props only along the back wall and the far left/right edges, nothing in the lower centre, eye-level camera. Absolutely no text: no signs with letters, no logos, no writing on boards, screens, menus or paper (screens and signs are blank or show simple pictures only)"
+  },
+  {
+   "id": "cafe_date",
+   "prompt": "a charming small cafe in the evening: warm string lights, a few small round tables at the far edges, plants, a window with city lights",
+   "ambience": "soft cafe chatter, clinking cups, gentle music",
+   "style": "hand-painted 2D anime background art like a modern Japanese animated film (painted, illustrated, NOT photographic, not 3D), warm cinematic light, rich but soft colours, clean shapes, gentle depth, realistic perspective, no people, wide 16:9 composition, open clear floor across the foreground, furniture and props only along the back wall and the far left/right edges, nothing in the lower centre, eye-level camera. Absolutely no text: no signs with letters, no logos, no writing on boards, screens, menus or paper (screens and signs are blank or show simple pictures only)"
+  }
+ ],
+ "scenes": [
+  {
+   "kind": "stage",
+   "environment": "flat",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left",
+     "outfit": "home"
+    },
+    {
+     "char": "maya",
+     "position": "right",
+     "outfit": "evening"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "benny",
+     "text": "Right. Right. Right. Right. Right.",
+     "emotion": "excited",
+     "pose": "arms_up",
+     "shot": "two_shot",
+     "act": "the young man on the left sits forward, swiping fast on his phone with his thumb, totally focused",
+     "react": "the woman on the right watches him, slowly lowering her coffee cup, mouth closed"
+    },
+    {
+     "speaker": "maya",
+     "text": "Ryan. Are you even looking at them?",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "No time. It's a numbers game, Maya. Two hundred right swipes today. Zero matches. But statistically, it's coming.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "two_shot",
+     "pause_after": 0.7,
+     "react": "the woman on the right stares at him in silence, one eyebrow rising, mouth closed"
+    },
+    {
+     "speaker": "maya",
+     "text": "Statistically... you might be the reason.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup"
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s01",
+   "narration": "Right. Right. Right. Right. Right. Ryan. Are you even looking at them? No time. It's a numbers game, Maya. Two hundred right swipes today. Zero matches. But statistically, it's coming. Statistically... you might be the reason.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "title_card",
+   "title_text": "Ryan Figures It Out",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "He thinks dating apps are a numbers game. They're not. They're watching.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    }
+   ],
+   "transition": "wipe",
+   "music": "upbeat",
+   "id": "s02",
+   "environment": "",
+   "cast": [],
+   "narration": "He thinks dating apps are a numbers game. They're not. They're watching.",
+   "beats": [],
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "kind": "stage",
+   "environment": "flat",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left",
+     "outfit": "home"
+    },
+    {
+     "char": "maya",
+     "position": "right",
+     "outfit": "evening"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "benny",
+     "text": "Okay, but how does this affect me? Is it just me? Is everyone this unlucky?",
+     "emotion": "worried",
+     "pose": "worried",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "You're not alone. You're just very... dedicated.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "Thank you.",
+     "emotion": "happy",
+     "pose": "happy",
+     "shot": "two_shot",
+     "pause_after": 0.5
+    },
+    {
+     "speaker": "maya",
+     "text": "That wasn't a compliment.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup"
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s03",
+   "narration": "Okay, but how does this affect me? Is it just me? Is everyone this unlucky? You're not alone. You're just very... dedicated. Thank you. That wasn't a compliment.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "chart",
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "Online dating in the US (Pew Research, 2023)",
+    "mode": "stats",
+    "items": [
+     {
+      "value": "30%",
+      "label": "of US adults have used a dating site or app"
+     },
+     {
+      "value": "53%",
+      "label": "of adults under 30 have"
+     },
+     {
+      "value": "1 in 10",
+      "label": "partnered adults met their partner on one"
+     }
+    ]
+   },
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "According to Pew Research, three in ten American adults have used a dating site or app, and more than half of people under thirty. About one in ten partnered adults met their partner that way.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "detail"
+    }
+   ],
+   "transition": "zoom",
+   "music": "upbeat",
+   "beats": [],
+   "id": "s04",
+   "environment": "",
+   "cast": [],
+   "narration": "According to Pew Research, three in ten American adults have used a dating site or app, and more than half of people under thirty. About one in ten partnered adults met their partner that way.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "kind": "stage",
+   "environment": "flat",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left",
+     "outfit": "home"
+    },
+    {
+     "char": "maya",
+     "position": "right",
+     "outfit": "evening"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "benny",
+     "text": "One in ten! So it works.",
+     "emotion": "excited",
+     "pose": "arms_up",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "For some people. Users are split almost down the middle: fifty-three percent say it's been positive, forty-six percent say negative.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "So it's a coin flip.",
+     "emotion": "confused",
+     "pose": "shrug",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "A coin flip... where the coin is also judging you.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup",
+     "pause_after": 0.6
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s05",
+   "narration": "One in ten! So it works. For some people. Users are split almost down the middle: fifty-three percent say it's been positive, forty-six percent say negative. So it's a coin flip. A coin flip... where the coin is also judging you.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "hero",
+   "hero_prompt": "A cosy neighbourhood coffee shop in the afternoon, warm light through big windows, a few empty tables, steam rising from cups",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "The next day, Maya took Ryan for coffee. And a lesson.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    }
+   ],
+   "transition": "fade",
+   "music": "upbeat",
+   "beats": [],
+   "id": "s06",
+   "environment": "",
+   "cast": [],
+   "narration": "The next day, Maya took Ryan for coffee. And a lesson.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "sfx": []
+  },
+  {
+   "kind": "stage",
+   "environment": "coffee_shop",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left"
+    },
+    {
+     "char": "maya",
+     "position": "right",
+     "outfit": "smart_casual"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "maya",
+     "text": "Here's the thing. The app isn't just showing you random people. It's learning from everything you do.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot",
+     "act": "the woman on the right leans in and explains, tapping the table lightly"
+    },
+    {
+     "speaker": "benny",
+     "text": "Like what?",
+     "emotion": "confused",
+     "pose": "shrug",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "Who you like. Who likes you back. And you just told it you like... everyone.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "I'm open-minded.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "two_shot",
+     "pause_after": 0.6
+    },
+    {
+     "speaker": "maya",
+     "text": "You're a spam account with hair.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup"
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s07",
+   "narration": "Here's the thing. The app isn't just showing you random people. It's learning from everything you do. Like what? Who you like. Who likes you back. And you just told it you like... everyone. I'm open-minded. You're a spam account with hair.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "stage",
+   "environment": "coffee_shop",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left"
+    },
+    {
+     "char": "maya",
+     "position": "right",
+     "outfit": "smart_casual"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "maya",
+     "text": "Tinder used to rank people with something called an Elo score.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "Elo? Like the band?",
+     "emotion": "confused",
+     "pose": "shrug",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "Like chess. The same system that ranks chess players.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "So if a really popular person swipes right on me... that's like beating a grandmaster?",
+     "emotion": "surprised",
+     "pose": "surprised",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "Exactly. Tinder says it doesn't rely on that score anymore. But the idea stuck.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s08",
+   "narration": "Tinder used to rank people with something called an Elo score. Elo? Like the band? Like chess. The same system that ranks chess players. So if a really popular person swipes right on me... that's like beating a grandmaster? Exactly. Tinder says it doesn't rely on that score anymore. But the idea stuck.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "chart",
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "How the apps rank you",
+    "mode": "timeline",
+    "items": [
+     {
+      "value": "Elo",
+      "label": "chess-style score Tinder once used; it says it retired it in 2019"
+     },
+     {
+      "value": "Gale-Shapley",
+      "label": "1962 'stable matching' maths Hinge says it uses"
+     },
+     {
+      "value": "2012",
+      "label": "Nobel prize in economics for stable matching (Shapley and Roth)"
+     }
+    ]
+   },
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Hinge says it uses something else: the Gale-Shapley algorithm, a piece of maths from 1962 for making stable matches. The work behind it won a Nobel prize in economics in 2012.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "detail"
+    }
+   ],
+   "transition": "zoom",
+   "music": "upbeat",
+   "beats": [],
+   "id": "s09",
+   "environment": "",
+   "cast": [],
+   "narration": "Hinge says it uses something else: the Gale-Shapley algorithm, a piece of maths from 1962 for making stable matches. The work behind it won a Nobel prize in economics in 2012.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "kind": "stage",
+   "environment": "coffee_shop",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left"
+    },
+    {
+     "char": "maya",
+     "position": "right",
+     "outfit": "smart_casual"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "benny",
+     "text": "A Nobel prize? For dating?",
+     "emotion": "surprised",
+     "pose": "surprised",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "maya",
+     "text": "For matching. Medical students with hospitals. Kidney donors with patients. And now... you.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "So a Nobel prize winner is personally trying to find me a girlfriend.",
+     "emotion": "excited",
+     "pose": "arms_up",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "And he's struggling.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup",
+     "pause_after": 0.7
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s10",
+   "narration": "A Nobel prize? For dating? For matching. Medical students with hospitals. Kidney donors with patients. And now... you. So a Nobel prize winner is personally trying to find me a girlfriend. And he's struggling.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "stage",
+   "environment": "coffee_shop",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left"
+    },
+    {
+     "char": "maya",
+     "position": "right",
+     "outfit": "smart_casual"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "maya",
+     "text": "Stable means nobody would rather swap. You get matched with someone who'd also pick you back.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot",
+     "act": "the woman on the right explains, moving two sugar packets together on the table"
+    },
+    {
+     "speaker": "benny",
+     "text": "So if I like everyone...",
+     "emotion": "confused",
+     "pose": "shrug",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "...the app learns nothing useful about you. You become noise.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "I've been noise. For three months.",
+     "emotion": "sad",
+     "pose": "worried",
+     "shot": "two_shot",
+     "pause_after": 0.6,
+     "act": "the young man on the left slowly lowers his head onto his hand"
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s11",
+   "narration": "Stable means nobody would rather swap. You get matched with someone who'd also pick you back. So if I like everyone... ...the app learns nothing useful about you. You become noise. I've been noise. For three months.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "hero",
+   "hero_prompt": "A colourful supermarket aisle with a long tasting table covered in rows of jam jars of every colour, bright friendly light",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Maya had one more lesson. It involved jam.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "two_shot"
+    }
+   ],
+   "transition": "fade",
+   "music": "upbeat",
+   "beats": [],
+   "id": "s12",
+   "environment": "",
+   "cast": [],
+   "narration": "Maya had one more lesson. It involved jam.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "sfx": []
+  },
+  {
+   "kind": "stage",
+   "environment": "grocery_aisle",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left"
+    },
+    {
+     "char": "maya",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "benny",
+     "text": "Why are we in the jam aisle?",
+     "emotion": "confused",
+     "pose": "shrug",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "Because of a famous experiment. One table had twenty-four jams. Another had six.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot",
+     "act": "the woman on the right gestures along the shelves of jam jars"
+    },
+    {
+     "speaker": "benny",
+     "text": "Twenty-four. Obviously. More jam, more joy.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "More people stopped at the big table. But only three percent bought anything.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "And the small table?",
+     "emotion": "confused",
+     "pose": "shrug",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "Thirty percent.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup",
+     "pause_after": 0.7,
+     "react": "the young man on the left blinks slowly at the jars, mouth closed"
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s13",
+   "narration": "Why are we in the jam aisle? Because of a famous experiment. One table had twenty-four jams. Another had six. Twenty-four. Obviously. More jam, more joy. More people stopped at the big table. But only three percent bought anything. And the small table? Thirty percent.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "chart",
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "The jam study (Iyengar & Lepper, 2000)",
+    "mode": "stats",
+    "items": [
+     {
+      "value": "24 jams",
+      "label": "more shoppers stopped, but 3% bought"
+     },
+     {
+      "value": "6 jams",
+      "label": "fewer stopped, but 30% bought"
+     }
+    ]
+   },
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Psychologists call it choice overload. With too many options, people often choose nothing at all. Endless profiles can work the same way.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "detail"
+    }
+   ],
+   "transition": "zoom",
+   "music": "upbeat",
+   "beats": [],
+   "id": "s14",
+   "environment": "",
+   "cast": [],
+   "narration": "Psychologists call it choice overload. With too many options, people often choose nothing at all. Endless profiles can work the same way.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "kind": "stage",
+   "environment": "grocery_aisle",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left"
+    },
+    {
+     "char": "maya",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "benny",
+     "text": "So two hundred swipes a day is... twenty-four jams.",
+     "emotion": "confused",
+     "pose": "shrug",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "Two hundred jams, Ryan.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "That's a lot of jam.",
+     "emotion": "sad",
+     "pose": "worried",
+     "shot": "closeup",
+     "pause_after": 0.6
+    },
+    {
+     "speaker": "maya",
+     "text": "Fewer swipes. More attention. Actually read the profile.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "Read. The profile. Okay. Okay, I can do that.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "two_shot"
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s15",
+   "narration": "So two hundred swipes a day is... twenty-four jams. Two hundred jams, Ryan. That's a lot of jam. Fewer swipes. More attention. Actually read the profile. Read. The profile. Okay. Okay, I can do that.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "stage",
+   "environment": "flat",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left",
+     "outfit": "home"
+    },
+    {
+     "char": "maya",
+     "position": "right",
+     "outfit": "evening"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "maya",
+     "text": "Now. Your photos.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot",
+     "act": "the woman on the right holds out her hand for his phone"
+    },
+    {
+     "speaker": "benny",
+     "text": "They're great! That one's me holding a fish.",
+     "emotion": "excited",
+     "pose": "arms_up",
+     "shot": "two_shot",
+     "act": "the young man on the left proudly shows her his phone"
+    },
+    {
+     "speaker": "maya",
+     "text": "Ryan, every man on this app is holding a fish.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "benny",
+     "text": "...It was a very big fish.",
+     "emotion": "sad",
+     "pose": "worried",
+     "shot": "two_shot",
+     "pause_after": 0.6
+    },
+    {
+     "speaker": "maya",
+     "text": "Pick one clear photo where you're smiling. And write something that someone can actually reply to.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s16",
+   "narration": "Now. Your photos. They're great! That one's me holding a fish. Ryan, every man on this app is holding a fish. ...It was a very big fish. Pick one clear photo where you're smiling. And write something that someone can actually reply to.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "stage",
+   "environment": "flat",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left",
+     "outfit": "home"
+    },
+    {
+     "char": "maya",
+     "position": "right",
+     "outfit": "evening"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "benny",
+     "text": "Okay. New bio: I make an excellent instant ramen, and I'm looking for someone to argue with about the best flavour.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "...That's actually good.",
+     "emotion": "surprised",
+     "pose": "surprised",
+     "shot": "closeup",
+     "pause_after": 0.6
+    },
+    {
+     "speaker": "benny",
+     "text": "I know things.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "maya",
+     "text": "You know one thing.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "two_shot"
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s17",
+   "narration": "Okay. New bio: I make an excellent instant ramen, and I'm looking for someone to argue with about the best flavour. ...That's actually good. I know things. You know one thing.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "title_card",
+   "title_text": "One Week Later",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "One week later. Fewer swipes. Better photo. And for the first time... a match.",
+     "emotion": "happy",
+     "pose": "happy",
+     "shot": "two_shot"
+    }
+   ],
+   "transition": "wipe",
+   "music": "upbeat",
+   "id": "s18",
+   "environment": "",
+   "cast": [],
+   "narration": "One week later. Fewer swipes. Better photo. And for the first time... a match.",
+   "beats": [],
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "kind": "stage",
+   "environment": "cafe_date",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left",
+     "outfit": "date_night"
+    },
+    {
+     "char": "zoe",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "zoe",
+     "text": "So, you're the ramen guy?",
+     "emotion": "happy",
+     "pose": "happy",
+     "shot": "two_shot",
+     "act": "the young woman on the right smiles and sits down across from him"
+    },
+    {
+     "speaker": "benny",
+     "text": "I am the ramen guy. Ask me anything.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "zoe",
+     "text": "Best flavour?",
+     "emotion": "happy",
+     "pose": "happy",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "Spicy miso. Not up for debate.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "two_shot",
+     "pause_after": 0.5
+    },
+    {
+     "speaker": "zoe",
+     "text": "Okay... I'm going to debate it.",
+     "emotion": "happy",
+     "pose": "happy",
+     "shot": "closeup"
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s19",
+   "narration": "So, you're the ramen guy? I am the ramen guy. Ask me anything. Best flavour? Spicy miso. Not up for debate. Okay... I'm going to debate it.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "stage",
+   "environment": "cafe_date",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left",
+     "outfit": "date_night"
+    },
+    {
+     "char": "zoe",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "benny",
+     "text": "Can I be honest? I used to swipe right on everyone.",
+     "emotion": "worried",
+     "pose": "worried",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "zoe",
+     "text": "Everyone?",
+     "emotion": "surprised",
+     "pose": "surprised",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "Two hundred a day. My friend Maya said I was noise.",
+     "emotion": "sad",
+     "pose": "worried",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "zoe",
+     "text": "I like that you read my profile. You asked about my dog.",
+     "emotion": "happy",
+     "pose": "happy",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "He looked like a very good boy.",
+     "emotion": "happy",
+     "pose": "happy",
+     "shot": "closeup",
+     "pause_after": 0.5
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s20",
+   "narration": "Can I be honest? I used to swipe right on everyone. Everyone? Two hundred a day. My friend Maya said I was noise. I like that you read my profile. You asked about my dog. He looked like a very good boy.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "stage",
+   "environment": "flat",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left",
+     "outfit": "home"
+    },
+    {
+     "char": "maya",
+     "position": "right",
+     "outfit": "evening"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "benny",
+     "text": "Maya. She wants a second date.",
+     "emotion": "excited",
+     "pose": "arms_up",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "See? Fewer jams.",
+     "emotion": "happy",
+     "pose": "happy",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "Fewer jams. More ramen.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "That's not the lesson.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "benny",
+     "text": "It's a lesson.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "two_shot",
+     "pause_after": 0.6
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s21",
+   "narration": "Maya. She wants a second date. See? Fewer jams. Fewer jams. More ramen. That's not the lesson. It's a lesson.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "stage",
+   "environment": "flat",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left",
+     "outfit": "home"
+    },
+    {
+     "char": "maya",
+     "position": "right",
+     "outfit": "evening"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "benny",
+     "text": "Okay, real question. What's the worst dating profile line you've ever seen? Comments. Go.",
+     "emotion": "excited",
+     "pose": "arms_up",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "maya",
+     "text": "Please don't say 'holding a fish'.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "Wait. She just texted. 'Have you ever been to a wedding?'",
+     "emotion": "surprised",
+     "pose": "surprised",
+     "shot": "two_shot",
+     "act": "the young man on the left looks down at his buzzing phone"
+    },
+    {
+     "speaker": "benny",
+     "text": "Maya... what do I wear to a wedding?",
+     "emotion": "worried",
+     "pose": "worried",
+     "shot": "two_shot",
+     "pause_after": 0.8
+    },
+    {
+     "speaker": "maya",
+     "text": "...Next week, Ryan.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup"
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s22",
+   "narration": "Okay, real question. What's the worst dating profile line you've ever seen? Comments. Go. Please don't say 'holding a fish'. Wait. She just texted. 'Have you ever been to a wedding?' Maya... what do I wear to a wedding? ...Next week, Ryan.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "title_card",
+   "title_text": "See You Next Time",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Thanks for watching. Subscribe, because Ryan's dating life is just getting started.",
+     "emotion": "happy",
+     "pose": "happy",
+     "shot": "two_shot"
+    }
+   ],
+   "transition": "fade",
+   "music": "upbeat",
+   "id": "s23",
+   "environment": "",
+   "cast": [],
+   "narration": "Thanks for watching. Subscribe, because Ryan's dating life is just getting started.",
+   "beats": [],
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "sfx": []
+  }
+ ],
+ "sources": [
+  "https://www.pewresearch.org/short-reads/2023/02/02/key-findings-about-online-dating-in-the-u-s/",
+  "https://www.pewresearch.org/internet/2023/02/02/from-looking-for-love-to-swiping-the-field-online-dating-in-the-u-s/",
+  "https://hdsr.mitpress.mit.edu/pub/i4eb4e8b",
+  "https://doi.org/10.1037/0022-3514.79.6.995",
+  "https://blog.gotinder.com/powering-tinder-r-the-method-behind-our-matching/"
+ ],
+ "show": "Ryan Figures It Out",
+ "tags": [],
+ "narrator_voice": "maya"
+}

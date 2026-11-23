@@ -1,0 +1,25 @@
+{
+ "engine": "Qwen3-TTS VoiceDesign",
+ "profiles": {
+  "normal": "Pleasant and efficient, natural pace.",
+  "professional": "Brisk, pleasant and efficient, mid-task and slightly distracted, every request sounds small and normal.",
+  "concerned": "Brief genuine sympathy, then straight back to business."
+ },
+ "emotion_to_profile": {
+  "neutral": "normal"
+ },
+ "pace_words_per_sec": {
+  "normal": [
+   2.6,
+   3.6
+  ],
+  "professional": [
+   2.7,
+   3.7
+  ],
+  "concerned": [
+   2.4,
+   3.4
+  ]
+ }
+}

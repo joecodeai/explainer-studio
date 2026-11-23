@@ -1,7 +1,7 @@
-"""Benny & Maya wardrobe — source of truth for library/wardrobe.json and WARDROBE.md.
+"""Ryan & Maya wardrobe — source of truth for library/wardrobe.json and WARDROBE.md.
 
 General outfits that work for ANY topic (money, dating, career, social life, travel, news), not tied to countries.
-- Benny: modern youthful streetwear — bombers, layered tees, relaxed tailored trousers, interesting sneakers, watch, crossbody bag.
+- Ryan: modern youthful streetwear — bombers, layered tees, relaxed tailored trousers, interesting sneakers, watch, crossbody bag.
   Signature colours: burnt orange, navy, cream, charcoal, brown.
 - Maya: elegant, fashion-forward — tailored jackets and trousers, dresses, refined layering, tasteful jewellery (gold hoops are her
   constant). Signature colours: olive green, cream, chocolate brown, black, muted gold.
@@ -22,14 +22,14 @@ def O(char, oid, use, season, desc, accessories, footwear, palette, fabrics, not
               "footwear": footwear, "palette": palette, "fabrics": fabrics, "notes": notes})
 
 
-# ---------------------------------------------------------------- Benny
+# ---------------------------------------------------------------- Ryan
 O("benny", "signature", "default / everyday", "spring, autumn", "burnt-orange zip-up hoodie worn open over a white t-shirt, navy blue cargo trousers",
   "black crossbody bag strap, black wristwatch", "white and orange sneakers", ["burnt orange", "white", "navy"], "cotton fleece, twill",
   "The character-sheet look. Default when nothing else applies.")
 O("benny", "evening", "evenings out, city at night", "autumn, spring", "dark brown bomber jacket over a grey crew-neck t-shirt, black slim jeans",
   "black wristwatch, black crossbody bag", "white leather sneakers", ["brown", "charcoal", "black"], "nylon, cotton, denim")
 O("benny", "smart_casual", "meetings, nice restaurant, meeting the parents", "all", "navy unstructured blazer over a cream knit polo, charcoal tailored trousers",
-  "brown leather watch strap", "brown suede loafers", ["navy", "cream", "charcoal", "brown"], "wool-blend, knit", "Benny trying to look grown-up.")
+  "brown leather watch strap", "brown suede loafers", ["navy", "cream", "charcoal", "brown"], "wool-blend, knit", "Ryan trying to look grown-up.")
 O("benny", "office", "job, interviews, work stories", "all", "light blue oxford shirt with sleeves rolled, navy chinos, burnt-orange knit tie loosened",
   "black wristwatch, brown leather backpack", "brown leather sneakers", ["light blue", "navy", "burnt orange", "brown"], "cotton oxford, twill",
   "The slightly-too-casual tie is the joke.")
@@ -87,11 +87,11 @@ ANIM_POSES = ["neutral", "talk", "side_talk", "side_listen", "walking", "sitting
 def write():
     db = {"version": 2, "views": VIEWS, "animation_poses": ANIM_POSES, "outfits": W, "index": {o["id"]: o for o in W}}
     json.dump(db, open(os.path.join(ROOT, "library", "wardrobe.json"), "w"), indent=1, ensure_ascii=False)
-    md = ["# Benny & Maya — wardrobe\n",
+    md = ["# Ryan & Maya — wardrobe\n",
           "General outfits for any topic. ID = `<character>_<outfit>`; in a script use `cast[].outfit = \"<outfit>\"`. Drawings (front/side/back + "
           "animation poses: talking, facing each other, walking, sitting, reactions) are built by `tools/build_wardrobe.py` into "
           "`library/characters_news/<character>_o_<outfit>/`, always from the character's base drawing so face, hair and proportions stay identical.\n",
-          "**Benny** — streetwear; burnt orange, navy, cream, charcoal, brown.  \n**Maya** — elegant tailoring; olive, cream, chocolate brown, black, muted gold.\n"]
+          "**Ryan** — streetwear; burnt orange, navy, cream, charcoal, brown.  \n**Maya** — elegant tailoring; olive, cream, chocolate brown, black, muted gold.\n"]
     for who in ("benny", "maya"):
         md.append(f"\n## {who.title()}\n\n| ID | Use | Season | Outfit | Accessories | Footwear | Palette | Fabrics | Notes |\n|---|---|---|---|---|---|---|---|---|")
         for o in [x for x in W if x["char"] == who]:

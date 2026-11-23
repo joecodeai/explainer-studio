@@ -5,6 +5,7 @@ import { Character, SLOT, CHAR_H, FEET_Y, posX } from "./Character";
 import { Captions } from "./Captions";
 import { MapScene } from "./MapScene";
 import { T } from "./theme";
+import { ScreenInsert, TopText } from "./Screens";
 
 type Cam = { s: number; x: number; y: number };
 
@@ -244,17 +245,19 @@ export const Scene: React.FC<SceneProps> = (p) => {
         {p.background && <Img src={staticFile(p.background)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "saturate(1.05)" }} />}
         {p.cast.map((m, i) => <Character key={m.char} m={m} index={i} cast={p.cast} lines={p.lines} enter={false} />)}
       </Camera>}
+      {p.kind === "screen" && p.screen && <ScreenInsert s={p.screen} />}
       {p.kind === "map" && p.map && <MapScene map={p.map} accent={p.accent} />}
       {p.kind === "title_card" && <TitleCard text={p.titleText} chapter={p.chapter} accent={p.accent} bg={p.background} />}
       {p.kind === "chart" && p.chart && <Chart chart={p.chart} accent={p.accent} />}
       {p.kind === "hero" && p.heroVideo && <AbsoluteFill style={{ transform: `scale(${1.02 + frame * 0.0006})` }}>
         <OffthreadVideo src={staticFile(p.heroVideo)} muted playbackRate={p.heroRate || 1} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
       </AbsoluteFill>}
-      <Grade />
+      {p.kind !== "screen" && <Grade />}
       {p.kind !== "title_card" && <BeatLayer beats={p.beats} accent={p.accent} spot={spot} />}
       {p.kind === "stage" && <NameTag p={p} />}
       {(p.kind === "chart" || p.kind === "map") && <SourceTag text={p.sources} />}
       {p.kind !== "title_card" && <Brand text={p.brand} />}
+      {p.topText && p.topText.length > 0 && <TopText items={p.topText} />}
       <Captions words={p.words} accent={p.accent} colors={p.speakerColors} />
     </AbsoluteFill>
   );

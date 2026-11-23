@@ -5,9 +5,9 @@ from . import config as C, llm
 
 EMOTIONS = ["neutral", "happy", "excited", "angry", "worried", "surprised", "confused", "sad", "confident", "sarcastic"]
 SHOTS = ["wide", "two_shot", "closeup", "detail"]
-KINDS = ["stage", "map", "title_card", "chart", "hero"]
+KINDS = ["stage", "map", "title_card", "chart", "hero", "screen"]   # screen = on-screen UI insert (laptop, phone, chat, cards)
 TRANSITIONS = ["cut", "slide", "zoom", "wipe", "whip", "fade"]
-MUSIC = ["tense", "upbeat", "sad", "epic", "comedic", "mysterious"]
+MUSIC = ["tense", "upbeat", "sad", "epic", "comedic", "mysterious", "none"]   # none = silence (a beat that needs it)
 BEATS = ["keyword", "number", "label"]
 ICONS = ["ship", "plane", "truck", "money", "none"]
 EMOTION_POSE = {"neutral": "talk", "happy": "happy", "excited": "arms_up", "angry": "angry", "worried": "worried",
@@ -157,14 +157,14 @@ def normalize(d):
             pose = ln.get("pose") if ln.get("pose") in C.POSES else EMOTION_POSE[emo]
             shot = ln.get("shot") if ln.get("shot") in SHOTS else "two_shot"
             s["lines"].append({"speaker": spk, "text": " ".join(str(ln["text"]).split()), "emotion": emo, "pose": pose, "shot": shot,
-                               **{k: ln[k] for k in ("pause_after", "act", "react") if ln.get(k) not in (None, "")}})
+                               **{k: ln[k] for k in ("pause_after", "act", "react", "voice", "direction", "delivery", "offscreen") if ln.get(k) not in (None, "")}})
         if s["kind"] in ("map", "chart", "title_card", "hero"):
             for ln in s["lines"]: ln["speaker"] = "narrator" if s["kind"] != "hero" else ln["speaker"]
         # a character who speaks in a stage scene must be on stage
         if s["kind"] == "stage":
             onstage = {c["char"] for c in s["cast"]}
             for ln in s["lines"]:
-                if ln["speaker"] != "narrator" and ln["speaker"] not in onstage and len(s["cast"]) < 3:
+                if ln["speaker"] != "narrator" and ln["speaker"] not in onstage and not ln.get("offscreen") and len(s["cast"]) < 3:
                     s["cast"].append({"char": ln["speaker"], "position": "center"}); onstage.add(ln["speaker"])
             pos = ["left", "right"] if len(s["cast"]) == 2 else ["left", "center", "right"] if len(s["cast"]) == 3 else ["center"]
             for c, p in zip(s["cast"], pos): c["position"] = p
@@ -208,7 +208,7 @@ def normalize(d):
         if s.get("music") not in MUSIC: s["music"] = "upbeat"
         s["sfx"] = [x for x in s.get("sfx", []) if isinstance(x, dict) and x.get("sound")][:3]
         for x in s["sfx"]: x.setdefault("at_word", "start")
-    d["scenes"] = [s for s in d["scenes"] if s["lines"]]
+    d["scenes"] = [s for s in d["scenes"] if s["lines"] or s.get("hold")]     # a held silent beat (s["hold"]) is a real scene
     return d
 
 
@@ -312,18 +312,11 @@ EPISODE STRUCTURE
    question for the comments (a character line is allowed here: "Would you have cancelled the trip? Tell me in the comments."),
    then the narrator signs off ("Subscribe — {lead['name']} has a lot more to learn.").
 
-HUMOUR
-- Character comedy, not stand-up: the joke is {lead['name']}'s logic, reactions and over-confidence, and the narrator's understatement.
-- What works (use these): {lead['name']}'s misplaced priorities ("I could eat ramen three times a day."); oddly specific
-  confessions ("I read the headline. And one comment. The comment was very upset."); a dry 2-5 word reply from the
-  narrator/co-lead that lands the joke ("Put the suitcase down." / "Dividend is a fish."); small running details from his life
-  (his goldfish Dividend, his love of free stuff, ramen) called back later; a tag line after a joke instead of a bigger joke;
-  the episode's opening mistake paid off in the final scene; {lead['name']} accidentally being half right.
-- Aim for 8-12 genuine laughs per episode, spread out; every stage scene should have at least one.
-- NEVER (it sounds cringe / AI-written): puns or wordplay on the topic; "Well, well, well"; "Ah yes, the classic..."; "plot twist";
-  "spoiler alert"; "talk about..."; "buckle up"; "let that sink in"; jokes that explain themselves; characters laughing at their own
-  jokes; meta lines about the show or episode; forced pop-culture or meme references; more than one exclamation mark per scene;
-  "game-changer", "literally", "vibes"; random "LOL"-style quirkiness. Real people talk in short, plain sentences — write like that.
+HUMOUR — follow the show's humor guide exactly (the user's rules):
+{open(os.path.join(C.LIBRARY, "HUMOR_GUIDE.md")).read()}
+- The engine of the comedy is still character: {lead['name']}'s confident wrong logic and sincerity (deadpan), {nar['name'] if nar else 'the narrator'}'s dry,
+  understated corrections and subtle roasts, and the facts themselves being stranger than his theory. Callbacks and a payoff of the
+  opening mistake in the final scene. Never have characters laugh at their own jokes; no meta lines about the show.
 - A {lead['name']} reaction or exchange every ~20-30 s. Jokes must sound spontaneous and conversational, never a written punchline.
   Vary them. Never reuse stock phrases. One joke at a time.
 - {lead['name']} is dumb but never cruel, sexist or offensive; he is likeable and he genuinely learns.
@@ -351,7 +344,7 @@ def apply_show(d, sh):
     chars = [c for c in d["characters"] if c["id"] not in fixed]
     for cid, c in fixed.items():
         if cid in used or cid == sh["cast"][0]["id"]:
-            chars.insert(0, {k: c[k] for k in ("id", "name", "look", "voice", "role", "real_person")} | {k: c[k] for k in ("tag", "outfits") if c.get(k)})
+            chars.insert(0, {k: c[k] for k in ("id", "name", "look", "voice", "role", "real_person")} | {k: c[k] for k in ("tag", "outfits", "tts") if c.get(k)})
     for c in chars: c["style"] = sh["style"]
     for e in d.get("environments", []):
         if sh.get("bg_style"): e["style"] = sh["bg_style"]

@@ -1,0 +1,2717 @@
+{
+ "title": "Ryan Became a Millionaire in Japan (He Didn't)",
+ "thumbnail_text": "I'M RICH?",
+ "description": "Ryan changes $1,000 at a Tokyo airport and thinks he's a millionaire. Maya walks him through why the yen is so cheap, why Japan spent a record ¥27 trillion defending it, and who pays the price for his ramen discount.",
+ "characters": [
+  {
+   "id": "maya",
+   "name": "Maya",
+   "look": "a confident, beautiful young woman in her mid twenties with fair skin with a warm peachy undertone, long voluminous wavy dark brown hair, warm brown eyes, gold hoop earrings, a knowing half-smile, olive green utility shirt-jacket with rolled sleeves over a cream top, high-waisted black wide-leg trousers with a black belt, black wristwatch, white sneakers",
+   "voice": "A friendly woman in her late twenties with a smooth, natural, mellow voice, relaxed conversational pace, neutral American accent, easy warmth and a quiet sense of humour, like a favourite podcast host.",
+   "role": "",
+   "real_person": false,
+   "tag": "the woman with long wavy hair in the olive green jacket",
+   "outfits": {
+    "evening": {
+     "desc": "cosy cream cable-knit sweater tucked into high-waisted black wide-leg trousers, long chocolate-brown cardigan coat",
+     "tag": "the woman with long wavy hair in the cosy cream cable-knit sweater tucked into high-waisted black wide-leg trousers"
+    },
+    "smart_casual": {
+     "desc": "chocolate-brown tailored blazer over a cream silk blouse, black straight trousers",
+     "tag": "the woman with long wavy hair in the chocolate-brown tailored blazer"
+    },
+    "office": {
+     "desc": "olive green tailored trouser suit with a cream fitted knit top",
+     "tag": "the woman with long wavy hair in the olive green tailored trouser suit with cream fitted knit top"
+    },
+    "date_night": {
+     "desc": "black satin midi slip dress with a cropped olive green tailored jacket over the shoulders",
+     "tag": "the woman with long wavy hair in the black satin midi slip dress with cropped olive green tailored jacket"
+    },
+    "party": {
+     "desc": "chocolate-brown satin wrap dress, knee length",
+     "tag": "the woman with long wavy hair in the chocolate-brown satin wrap dress"
+    },
+    "winter": {
+     "desc": "long black wool coat over an olive turtleneck, chocolate-brown tailored trousers",
+     "tag": "the woman with long wavy hair in the long black wool coat"
+    },
+    "summer": {
+     "desc": "olive green linen midi shirt-dress with a thin muted gold belt",
+     "tag": "the woman with long wavy hair in the olive green linen midi shirt-dress with thin muted gold belt"
+    },
+    "rain": {
+     "desc": "classic olive trench coat over a cream knit and black trousers",
+     "tag": "the woman with long wavy hair in the classic olive trench coat"
+    },
+    "home": {
+     "desc": "oversized cream knit sweater, olive lounge trousers, hair in a loose bun",
+     "tag": "the woman with long wavy hair in the oversized cream knit sweater"
+    },
+    "gym": {
+     "desc": "olive green sports top and matching leggings, cream zip-up jacket, hair in a high ponytail",
+     "tag": "the woman with long wavy hair in the olive green sports top and matching leggings"
+    },
+    "formal": {
+     "desc": "floor-length olive green satin gown with a muted gold belt, hair styled in soft waves",
+     "tag": "the woman with long wavy hair in the floor-length olive green satin gown with muted gold belt"
+    },
+    "denim": {
+     "desc": "light blue denim jacket over a white fitted t-shirt, high-waisted black wide-leg trousers with a black belt",
+     "tag": "the woman with long wavy hair in the light blue denim jacket"
+    }
+   },
+   "tts": {
+    "engine": "chatterbox",
+    "ref": "library/voices/maya/reference.wav"
+   },
+   "style": "vibrant modern 2D anime-inspired character illustration, like a polished animated series character sheet, clean confident dark outlines, warm cel shading with soft highlights, large expressive brown eyes, attractive appealing faces, natural adult proportions, rich saturated colours"
+  },
+  {
+   "id": "benny",
+   "name": "Ryan",
+   "look": "a cheerful young man in his mid twenties with fair skin with a warm peachy undertone, thick curly dark brown hair, big expressive brown eyes, a wide confident grin, burnt-orange zip-up hoodie worn open over a white t-shirt, black crossbody bag strap across his chest, black wristwatch, navy blue cargo trousers, white and orange sneakers",
+   "voice": "A charming young man in his late twenties with a warm, pleasant male voice, friendly and sincere, energetic and very expressive, casual neutral English accent, natural comedic timing.",
+   "role": "",
+   "real_person": false,
+   "tag": "the young man with curly hair in the orange hoodie",
+   "outfits": {
+    "evening": {
+     "desc": "dark brown bomber jacket over a grey crew-neck t-shirt, black slim jeans",
+     "tag": "the young man with curly hair in the dark brown bomber jacket"
+    },
+    "smart_casual": {
+     "desc": "navy unstructured blazer over a cream knit polo, charcoal tailored trousers",
+     "tag": "the young man with curly hair in the navy unstructured blazer"
+    },
+    "office": {
+     "desc": "light blue oxford shirt with sleeves rolled, navy chinos, burnt-orange knit tie loosened",
+     "tag": "the young man with curly hair in the light blue oxford shirt with sleeves rolled"
+    },
+    "date_night": {
+     "desc": "charcoal knit polo shirt tucked into cream pleated trousers, brown suede bomber",
+     "tag": "the young man with curly hair in the charcoal knit polo shirt tucked into cream pleated trousers"
+    },
+    "party": {
+     "desc": "burnt-orange short-sleeve camp-collar shirt with a subtle cream wave pattern, black straight trousers",
+     "tag": "the young man with curly hair in the burnt-orange short-sleeve camp-collar shirt with subtle cream wave pattern"
+    },
+    "winter": {
+     "desc": "navy padded puffer jacket over a burnt-orange hoodie, charcoal wool trousers",
+     "tag": "the young man with curly hair in the navy padded puffer jacket"
+    },
+    "summer": {
+     "desc": "cream short-sleeve linen shirt open over a burnt-orange t-shirt, navy shorts",
+     "tag": "the young man with curly hair in the cream short-sleeve linen shirt open"
+    },
+    "rain": {
+     "desc": "navy hooded rain jacket over a cream hoodie, charcoal joggers",
+     "tag": "the young man with curly hair in the navy hooded rain jacket"
+    },
+    "home": {
+     "desc": "faded burnt-orange oversized t-shirt, grey sweatpants",
+     "tag": "the young man with curly hair in the faded burnt-orange oversized t-shirt"
+    },
+    "gym": {
+     "desc": "navy athletic t-shirt, charcoal training shorts, burnt-orange zip-up track jacket tied at the waist",
+     "tag": "the young man with curly hair in the navy athletic t-shirt"
+    },
+    "formal": {
+     "desc": "navy slim two-piece suit, crisp white shirt, burnt-orange silk tie, brown leather belt",
+     "tag": "the young man with curly hair in the navy slim two-piece suit"
+    },
+    "luckycat": {
+     "desc": "plain white t-shirt with a small simple golden-yellow lucky-cat face icon printed on the chest (flat yellow and white cartoon cat face, no text), burnt-orange hoodie tied around his waist, navy cargo trousers",
+     "tag": "the young man with curly hair in the plain white t-shirt with small simple golden-yellow lucky-cat face icon printed on the chest (flat yellow and white cartoon cat face"
+    }
+   },
+   "tts": {
+    "engine": "qwen_custom",
+    "speaker": "Ryan",
+    "model": "models/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "base_direction": "A charismatic young guy in his mid-twenties, natural and conversational like a real actor improvising, at a lively natural conversational pace; never an announcer, never cartoonish, never slow or drawn out."
+   },
+   "style": "vibrant modern 2D anime-inspired character illustration, like a polished animated series character sheet, clean confident dark outlines, warm cel shading with soft highlights, large expressive brown eyes, attractive appealing faces, natural adult proportions, rich saturated colours"
+  },
+  {
+   "id": "exchange_clerk",
+   "name": "Clerk",
+   "role": "",
+   "real_person": false,
+   "tag": "the clerk in the navy uniform",
+   "look": "a polite young Japanese woman in her twenties, neat dark hair in a bun, navy blue airline-style uniform with a white blouse and small scarf, friendly professional smile",
+   "voice": "A polite young Japanese woman in her twenties, soft, clear and professional, gentle Japanese accent in English, calm and friendly.",
+   "style": "vibrant modern 2D anime-inspired character illustration, like a polished animated series character sheet, clean confident dark outlines, warm cel shading with soft highlights, large expressive brown eyes, attractive appealing faces, natural adult proportions, rich saturated colours"
+  },
+  {
+   "id": "ramen_chef",
+   "name": "Chef",
+   "role": "Ramen chef",
+   "real_person": false,
+   "tag": "the chef in the white headband",
+   "look": "a kind Japanese man in his fifties, short greying hair, white headband, dark navy cook's jacket, white apron, warm crinkly-eyed smile",
+   "voice": "A kind Japanese man in his fifties, warm, gentle and slightly gravelly, Japanese accent in English, calm unhurried pace.",
+   "style": "vibrant modern 2D anime-inspired character illustration, like a polished animated series character sheet, clean confident dark outlines, warm cel shading with soft highlights, large expressive brown eyes, attractive appealing faces, natural adult proportions, rich saturated colours"
+  }
+ ],
+ "environments": [
+  {
+   "id": "airport_exchange",
+   "prompt": "a bright modern Tokyo airport arrivals hall with a currency exchange counter along the back, glass partitions, travellers' luggage trolleys at the far edges, soft daylight",
+   "ambience": "airport hall murmur, distant announcements",
+   "style": "hand-painted 2D anime background art like a modern Japanese animated film (painted, illustrated, NOT photographic, not 3D), warm cinematic light, rich but soft colours, clean shapes, gentle depth, realistic perspective, no people, wide 16:9 composition, open clear floor across the foreground, furniture and props only along the back wall and the far left/right edges, nothing in the lower centre, eye-level camera. Absolutely no text: no signs with letters, no logos, no writing on boards, screens, menus or paper (screens and signs are blank or show simple pictures only)"
+  },
+  {
+   "id": "ramen_shop",
+   "prompt": "a cosy small Tokyo ramen shop interior: wooden counter along the back wall, steam rising from big pots, paper lanterns, a ticket vending machine at the far left edge, warm light",
+   "ambience": "ramen shop bustle, broth bubbling, quiet slurping",
+   "style": "hand-painted 2D anime background art like a modern Japanese animated film (painted, illustrated, NOT photographic, not 3D), warm cinematic light, rich but soft colours, clean shapes, gentle depth, realistic perspective, no people, wide 16:9 composition, open clear floor across the foreground, furniture and props only along the back wall and the far left/right edges, nothing in the lower centre, eye-level camera. Absolutely no text: no signs with letters, no logos, no writing on boards, screens, menus or paper (screens and signs are blank or show simple pictures only)"
+  },
+  {
+   "id": "konbini_street",
+   "prompt": "a quiet Tokyo street at night outside a brightly lit convenience store, vending machines at the far edges, wet pavement reflecting warm lights",
+   "ambience": "quiet city night, distant traffic, light rain",
+   "style": "hand-painted 2D anime background art like a modern Japanese animated film (painted, illustrated, NOT photographic, not 3D), warm cinematic light, rich but soft colours, clean shapes, gentle depth, realistic perspective, no people, wide 16:9 composition, open clear floor across the foreground, furniture and props only along the back wall and the far left/right edges, nothing in the lower centre, eye-level camera. Absolutely no text: no signs with letters, no logos, no writing on boards, screens, menus or paper (screens and signs are blank or show simple pictures only)"
+  },
+  {
+   "id": "hotel_room",
+   "prompt": "a compact neat Tokyo hotel room at night: bed along the back wall, a TV glowing on the side wall, city lights through the window, warm lamp light",
+   "ambience": "quiet hotel room hum, faint TV",
+   "style": "hand-painted 2D anime background art like a modern Japanese animated film (painted, illustrated, NOT photographic, not 3D), warm cinematic light, rich but soft colours, clean shapes, gentle depth, realistic perspective, no people, wide 16:9 composition, open clear floor across the foreground, furniture and props only along the back wall and the far left/right edges, nothing in the lower centre, eye-level camera. Absolutely no text: no signs with letters, no logos, no writing on boards, screens, menus or paper (screens and signs are blank or show simple pictures only)"
+  },
+  {
+   "id": "souvenir_shop",
+   "prompt": "a colourful Tokyo souvenir shop at night: shelves of lucky cat figurines and toys along the back wall, a giant golden lucky cat statue at the far right edge, warm bright light",
+   "ambience": "shop chatter, soft chimes",
+   "style": "hand-painted 2D anime background art like a modern Japanese animated film (painted, illustrated, NOT photographic, not 3D), warm cinematic light, rich but soft colours, clean shapes, gentle depth, realistic perspective, no people, wide 16:9 composition, open clear floor across the foreground, furniture and props only along the back wall and the far left/right edges, nothing in the lower centre, eye-level camera. Absolutely no text: no signs with letters, no logos, no writing on boards, screens, menus or paper (screens and signs are blank or show simple pictures only)"
+  }
+ ],
+ "scenes": [
+  {
+   "kind": "stage",
+   "environment": "airport_exchange",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left"
+    },
+    {
+     "char": "exchange_clerk",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "benny",
+     "text": "Hi! Hello. Konnichiwa! I'd like to change one thousand dollars, please.",
+     "emotion": "excited",
+     "pose": "arms_up",
+     "shot": "two_shot",
+     "act": "the young man on the left slides a few dollar bills across the counter, beaming",
+     "react": "the clerk in the navy uniform on the right smiles politely, mouth closed"
+    },
+    {
+     "speaker": "exchange_clerk",
+     "text": "Of course. After our fee... that's one hundred and fifty-six thousand yen.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot",
+     "pause_after": 0.9,
+     "act": "the clerk in the navy uniform on the right counts a thick stack of banknotes and pushes it toward him",
+     "react": "the young man on the left stares at the stack, his smile slowly freezing, eyes widening, mouth closed"
+    },
+    {
+     "speaker": "benny",
+     "text": "...How many thousand?",
+     "emotion": "surprised",
+     "pose": "surprised",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "exchange_clerk",
+     "text": "One hundred and fifty-six thousand, sir.",
+     "emotion": "happy",
+     "pose": "happy",
+     "shot": "two_shot"
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s01",
+   "narration": "Hi! Hello. Konnichiwa! I'd like to change one thousand dollars, please. Of course. After our fee... that's one hundred and fifty-six thousand yen. ...How many thousand? One hundred and fifty-six thousand, sir.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "stage",
+   "environment": "airport_exchange",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left"
+    },
+    {
+     "char": "maya",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "benny",
+     "text": "Maya. Maya! Are you sitting down?",
+     "emotion": "excited",
+     "pose": "arms_up",
+     "shot": "two_shot",
+     "act": "the young man on the left rushes to the woman, clutching a thick stack of banknotes"
+    },
+    {
+     "speaker": "maya",
+     "text": "I'm standing, Ryan. We're in an airport.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "benny",
+     "text": "I'm a millionaire.",
+     "emotion": "excited",
+     "pose": "arms_up",
+     "shot": "closeup",
+     "pause_after": 0.8,
+     "react": "the woman on the right just looks at him, one eyebrow slowly rising, mouth closed"
+    },
+    {
+     "speaker": "maya",
+     "text": "You're a hundred-and-fifty-six-thousand-aire.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "benny",
+     "text": "Okay, but that's so close.",
+     "emotion": "happy",
+     "pose": "happy",
+     "shot": "two_shot",
+     "pause_after": 0.6
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s02",
+   "narration": "Maya. Maya! Are you sitting down? I'm standing, Ryan. We're in an airport. I'm a millionaire. You're a hundred-and-fifty-six-thousand-aire. Okay, but that's so close.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "title_card",
+   "title_text": "Ryan Figures It Out",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "He's not a millionaire. But he's about to find out why Japan feels so cheap right now.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    }
+   ],
+   "transition": "wipe",
+   "music": "upbeat",
+   "id": "s03",
+   "environment": "",
+   "cast": [],
+   "narration": "He's not a millionaire. But he's about to find out why Japan feels so cheap right now.",
+   "beats": [],
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "kind": "hero",
+   "hero_prompt": "A cosy little Tokyo ramen shop entrance on a narrow street at midday, a fabric curtain hanging at the door, steam drifting out, warm light, a few people walking by",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Day one. First stop: lunch.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    }
+   ],
+   "transition": "fade",
+   "music": "upbeat",
+   "beats": [],
+   "id": "s04",
+   "environment": "",
+   "cast": [],
+   "narration": "Day one. First stop: lunch.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "sfx": []
+  },
+  {
+   "kind": "stage",
+   "environment": "ramen_shop",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left"
+    },
+    {
+     "char": "maya",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "maya",
+     "text": "You order at the machine. Pick a button, pay, and give the ticket to the chef.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot",
+     "act": "the woman on the right points toward the side, explaining patiently"
+    },
+    {
+     "speaker": "benny",
+     "text": "Which one's the most expensive?",
+     "emotion": "excited",
+     "pose": "arms_up",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "Why is that your first question?",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "benny",
+     "text": "Because I'm rich now, Maya. The special. Fifteen hundred yen. Three of them.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "two_shot",
+     "act": "the young man on the left proudly presses a button three times with one finger"
+    },
+    {
+     "speaker": "maya",
+     "text": "Three?",
+     "emotion": "confused",
+     "pose": "shrug",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "benny",
+     "text": "One for you, one for me... and one for confidence.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "closeup",
+     "pause_after": 0.8,
+     "react": "the woman on the right closes her eyes for a moment, holding back a smile, mouth closed"
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s05",
+   "narration": "You order at the machine. Pick a button, pay, and give the ticket to the chef. Which one's the most expensive? Why is that your first question? Because I'm rich now, Maya. The special. Fifteen hundred yen. Three of them. Three? One for you, one for me... and one for confidence.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "stage",
+   "environment": "ramen_shop",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left"
+    },
+    {
+     "char": "ramen_chef",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "ramen_chef",
+     "text": "Three specials. Enjoy.",
+     "emotion": "happy",
+     "pose": "happy",
+     "shot": "two_shot",
+     "act": "the chef in the white headband on the right sets steaming bowls on the counter and smiles"
+    },
+    {
+     "speaker": "benny",
+     "text": "Thank you so much. This is for you.",
+     "emotion": "happy",
+     "pose": "happy",
+     "shot": "two_shot",
+     "act": "the young man on the left slides a few coins across the counter toward the chef"
+    },
+    {
+     "speaker": "ramen_chef",
+     "text": "Ah, no, no. Thank you, but no.",
+     "emotion": "surprised",
+     "pose": "surprised",
+     "shot": "two_shot",
+     "act": "the chef on the right gently slides the coins back with a polite little bow"
+    },
+    {
+     "speaker": "benny",
+     "text": "No, please. I insist.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "two_shot",
+     "act": "the young man on the left slides the coins back again, smiling"
+    },
+    {
+     "speaker": "ramen_chef",
+     "text": "Really. It's okay.",
+     "emotion": "happy",
+     "pose": "happy",
+     "shot": "two_shot",
+     "pause_after": 0.7,
+     "act": "the chef on the right slides the coins back once more, still smiling, and bows",
+     "react": "the young man on the left freezes, confused, mouth closed"
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s06",
+   "narration": "Three specials. Enjoy. Thank you so much. This is for you. Ah, no, no. Thank you, but no. No, please. I insist. Really. It's okay.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "stage",
+   "environment": "ramen_shop",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left"
+    },
+    {
+     "char": "maya",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "benny",
+     "text": "Maya, he won't take my money.",
+     "emotion": "confused",
+     "pose": "shrug",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "You don't tip in Japan. Good service is just... the service. He's not being modest, Ryan. He's being polite.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "So I just insulted a man... with coins.",
+     "emotion": "worried",
+     "pose": "worried",
+     "shot": "closeup",
+     "pause_after": 0.5
+    },
+    {
+     "speaker": "maya",
+     "text": "Very politely, though.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup"
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s07",
+   "narration": "Maya, he won't take my money. You don't tip in Japan. Good service is just... the service. He's not being modest, Ryan. He's being polite. So I just insulted a man... with coins. Very politely, though.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "stage",
+   "environment": "ramen_shop",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left"
+    },
+    {
+     "char": "maya",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "benny",
+     "text": "Okay. Fifteen hundred yen for this bowl. In real money, that's...",
+     "emotion": "confused",
+     "pose": "shrug",
+     "shot": "two_shot",
+     "act": "the young man on the left looks down at his phone, doing maths"
+    },
+    {
+     "speaker": "maya",
+     "text": "About nine dollars and forty cents.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "Nine forty? For this? Back home, I'd pay twice that. At least.",
+     "emotion": "surprised",
+     "pose": "surprised",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "maya",
+     "text": "Because right now, one dollar buys you almost a hundred and sixty yen.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s08",
+   "narration": "Okay. Fifteen hundred yen for this bowl. In real money, that's... About nine dollars and forty cents. Nine forty? For this? Back home, I'd pay twice that. At least. Because right now, one dollar buys you almost a hundred and sixty yen.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "map",
+   "map": {
+    "label": "Your dollar buys more yen",
+    "countries": [
+     "United States",
+     "Japan"
+    ],
+    "places": [
+     {
+      "name": "Washington",
+      "lat": 38.9,
+      "lon": -77.04
+     },
+     {
+      "name": "Tokyo",
+      "lat": 35.68,
+      "lon": 139.69
+     }
+    ],
+    "routes": []
+   },
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "This month, the dollar climbed as high as a hundred and fifty-nine point nine four yen, its strongest against the yen in more than two months. Traders treat one-sixty as a line in the sand.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "wide"
+    }
+   ],
+   "transition": "zoom",
+   "music": "upbeat",
+   "beats": [
+    {
+     "at_word": "climbed",
+     "type": "number",
+     "text": "¥159.94 per $1"
+    }
+   ],
+   "id": "s09",
+   "environment": "",
+   "cast": [],
+   "narration": "This month, the dollar climbed as high as a hundred and fifty-nine point nine four yen, its strongest against the yen in more than two months. Traders treat one-sixty as a line in the sand.",
+   "title_text": "",
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "kind": "stage",
+   "environment": "ramen_shop",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left"
+    },
+    {
+     "char": "maya",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "benny",
+     "text": "So Japan is on sale.",
+     "emotion": "excited",
+     "pose": "arms_up",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "For you.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "benny",
+     "text": "For me. Specifically.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "For anyone holding dollars. And a lot of people noticed.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s10",
+   "narration": "So Japan is on sale. For you. For me. Specifically. For anyone holding dollars. And a lot of people noticed.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "chart",
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "Visitors to Japan",
+    "mode": "stats",
+    "items": [
+     {
+      "value": "42.7 million",
+      "label": "foreign visitors in 2025, a record"
+     },
+     {
+      "value": "¥9.5 trillion",
+      "label": "spent by visitors in 2025, a record"
+     },
+     {
+      "value": "¥7.06 trillion",
+      "label": "spent Jan–Sep 2026, another record"
+     }
+    ]
+   },
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Last year, a record forty-two point seven million foreign visitors came to Japan, and spent a record nine and a half trillion yen. This year, they'd already spent over seven trillion by September.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "detail"
+    }
+   ],
+   "transition": "zoom",
+   "music": "upbeat",
+   "beats": [],
+   "id": "s11",
+   "environment": "",
+   "cast": [],
+   "narration": "Last year, a record forty-two point seven million foreign visitors came to Japan, and spent a record nine and a half trillion yen. This year, they'd already spent over seven trillion by September.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "kind": "stage",
+   "environment": "ramen_shop",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left"
+    },
+    {
+     "char": "maya",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "benny",
+     "text": "So I'm part of a trend.",
+     "emotion": "happy",
+     "pose": "happy",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "You're part of a statistic.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "benny",
+     "text": "A record-breaking statistic.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "closeup",
+     "pause_after": 0.6
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s12",
+   "narration": "So I'm part of a trend. You're part of a statistic. A record-breaking statistic.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "title_card",
+   "title_text": "Why So Cheap?",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Which raises the question Ryan has been avoiding. Why is the yen so cheap?",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    }
+   ],
+   "transition": "slide",
+   "music": "upbeat",
+   "id": "s13",
+   "environment": "",
+   "cast": [],
+   "narration": "Which raises the question Ryan has been avoiding. Why is the yen so cheap?",
+   "beats": [],
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "kind": "hero",
+   "hero_prompt": "A quiet Tokyo side street at night, a brightly lit convenience store glowing warmly, a row of vending machines, light rain reflections on the pavement",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "That night, outside a convenience store, Ryan came up with a theory.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    }
+   ],
+   "transition": "fade",
+   "music": "upbeat",
+   "beats": [],
+   "id": "s14",
+   "environment": "",
+   "cast": [],
+   "narration": "That night, outside a convenience store, Ryan came up with a theory.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "sfx": []
+  },
+  {
+   "kind": "stage",
+   "environment": "konbini_street",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left",
+     "outfit": "evening"
+    },
+    {
+     "char": "maya",
+     "position": "right",
+     "outfit": "evening"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "benny",
+     "text": "I figured it out. Their money is too pretty. So they printed too much of it.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "two_shot",
+     "act": "the young man on the left holds up a banknote, explaining proudly"
+    },
+    {
+     "speaker": "maya",
+     "text": "That's not it.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "benny",
+     "text": "Maya, it has art on it. Who wouldn't print more of that?",
+     "emotion": "confused",
+     "pose": "shrug",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "Okay. Hold these.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot",
+     "act": "the woman on the right hands him two paper coffee cups"
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s15",
+   "narration": "I figured it out. Their money is too pretty. So they printed too much of it. That's not it. Maya, it has art on it. Who wouldn't print more of that? Okay. Hold these.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "stage",
+   "environment": "konbini_street",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left",
+     "outfit": "evening"
+    },
+    {
+     "char": "maya",
+     "position": "right",
+     "outfit": "evening"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "maya",
+     "text": "This cup is America. This one is Japan. Your money goes wherever it earns more interest.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot",
+     "act": "the woman on the right taps one cup, then the other"
+    },
+    {
+     "speaker": "benny",
+     "text": "And America pays more.",
+     "emotion": "confused",
+     "pose": "shrug",
+     "shot": "two_shot",
+     "act": "the young man on the left holds two coffee cups and looks from one to the other"
+    },
+    {
+     "speaker": "maya",
+     "text": "A lot more. America's central bank rate is around four percent. Japan's is one and a quarter.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "Four... versus one and a quarter.",
+     "emotion": "confused",
+     "pose": "shrug",
+     "shot": "two_shot",
+     "pause_after": 0.5,
+     "act": "the young man on the left weighs the two cups in his hands, frowning"
+    },
+    {
+     "speaker": "maya",
+     "text": "If you were money, which cup would you jump into?",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "benny",
+     "text": "The four one. Obviously.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "closeup",
+     "pause_after": 0.5
+    },
+    {
+     "speaker": "maya",
+     "text": "That's exactly what money does. And the four might go even higher.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "Why would it go higher?",
+     "emotion": "surprised",
+     "pose": "surprised",
+     "shot": "closeup"
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s16",
+   "narration": "This cup is America. This one is Japan. Your money goes wherever it earns more interest. And America pays more. A lot more. America's central bank rate is around four percent. Japan's is one and a quarter. Four... versus one and a quarter. If you were money, which cup would you jump into? The four one. Obviously. That's exactly what money does. And the four might go even higher. Why would it go higher?",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "chart",
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "US inflation surprise",
+    "mode": "stats",
+    "items": [
+     {
+      "value": "0.4%",
+      "label": "US price rise in October (forecast 0.3%)"
+     },
+     {
+      "value": "100%",
+      "label": "market odds of a December Fed rate hike (CME FedWatch)"
+     }
+    ]
+   },
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "America only started raising rates again in September, its first hike in more than three years. Then US prices rose zero point four percent in October, hotter than the zero point three that was expected. Markets now see a one hundred percent chance that the Federal Reserve raises rates in December.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "detail"
+    }
+   ],
+   "transition": "zoom",
+   "music": "upbeat",
+   "beats": [],
+   "id": "s17",
+   "environment": "",
+   "cast": [],
+   "narration": "America only started raising rates again in September, its first hike in more than three years. Then US prices rose zero point four percent in October, hotter than the zero point three that was expected. Markets now see a one hundred percent chance that the Federal Reserve raises rates in December.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "kind": "map",
+   "map": {
+    "label": "Money chases higher rates",
+    "countries": [
+     "United States",
+     "Japan"
+    ],
+    "places": [
+     {
+      "name": "Washington",
+      "lat": 38.9,
+      "lon": -77.04
+     },
+     {
+      "name": "Tokyo",
+      "lat": 35.68,
+      "lon": 139.69
+     }
+    ],
+    "routes": [
+     {
+      "from": "Tokyo",
+      "to": "Washington",
+      "via": [],
+      "label": "money",
+      "icon": "money",
+      "blocked": false
+     }
+    ]
+   },
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "So money flows toward the higher rates, and the dollar index hit a nineteen-month high.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "wide"
+    }
+   ],
+   "transition": "zoom",
+   "music": "upbeat",
+   "beats": [
+    {
+     "at_word": "nineteen-month",
+     "type": "label",
+     "text": "19-MONTH HIGH"
+    }
+   ],
+   "id": "s18",
+   "environment": "",
+   "cast": [],
+   "narration": "So money flows toward the higher rates, and the dollar index hit a nineteen-month high.",
+   "title_text": "",
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "kind": "stage",
+   "environment": "konbini_street",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left",
+     "outfit": "evening"
+    },
+    {
+     "char": "maya",
+     "position": "right",
+     "outfit": "evening"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "benny",
+     "text": "So money goes where it's treated best.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "Like you, and the bank that gave you a free pen.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "It was a really good pen.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "closeup",
+     "pause_after": 0.6
+    },
+    {
+     "speaker": "maya",
+     "text": "I know. You've shown me. Twice.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup"
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s19",
+   "narration": "So money goes where it's treated best. Like you, and the bank that gave you a free pen. It was a really good pen. I know. You've shown me. Twice.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "title_card",
+   "title_text": "Tokyo Strikes Back",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Japan, meanwhile, was not enjoying the sale.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "two_shot"
+    }
+   ],
+   "transition": "slide",
+   "music": "upbeat",
+   "id": "s20",
+   "environment": "",
+   "cast": [],
+   "narration": "Japan, meanwhile, was not enjoying the sale.",
+   "beats": [],
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "kind": "stage",
+   "environment": "hotel_room",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left",
+     "outfit": "evening"
+    },
+    {
+     "char": "maya",
+     "position": "right",
+     "outfit": "evening"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "benny",
+     "text": "Maya. The guy on TV looks upset.",
+     "emotion": "worried",
+     "pose": "worried",
+     "shot": "two_shot",
+     "act": "the young man on the left points toward the side of the room, worried"
+    },
+    {
+     "speaker": "maya",
+     "text": "That's Atsushi Mimura. He's Japan's top currency official.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s21",
+   "narration": "Maya. The guy on TV looks upset. That's Atsushi Mimura. He's Japan's top currency official.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "hero",
+   "hero_prompt": "A Japanese government ministry building in Tokyo at dusk, office windows glowing, a tense calm mood, dramatic sky",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "This week, he warned that the yen was moving too fast, and said it was too early to forget what happened this summer.",
+     "emotion": "worried",
+     "pose": "worried",
+     "shot": "two_shot"
+    }
+   ],
+   "transition": "fade",
+   "music": "tense",
+   "beats": [
+    {
+     "at_word": "fast",
+     "type": "keyword",
+     "text": "TOO FAST"
+    }
+   ],
+   "id": "s22",
+   "environment": "",
+   "cast": [],
+   "narration": "This week, he warned that the yen was moving too fast, and said it was too early to forget what happened this summer.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "sfx": []
+  },
+  {
+   "kind": "stage",
+   "environment": "hotel_room",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left",
+     "outfit": "evening"
+    },
+    {
+     "char": "maya",
+     "position": "right",
+     "outfit": "evening"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "benny",
+     "text": "Why say it's too fast? Why not just say stop?",
+     "emotion": "confused",
+     "pose": "shrug",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "Because Tokyo has a script. First, they say the moves are too rapid. Then they say they're watching closely. Then... they act.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "So it's like my mom counting to three.",
+     "emotion": "confused",
+     "pose": "shrug",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "maya",
+     "text": "Exactly like your mom. With trillions of yen.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup",
+     "pause_after": 0.5
+    }
+   ],
+   "transition": "cut",
+   "music": "tense",
+   "beats": [],
+   "sfx": [],
+   "id": "s23",
+   "narration": "Why say it's too fast? Why not just say stop? Because Tokyo has a script. First, they say the moves are too rapid. Then they say they're watching closely. Then... they act. So it's like my mom counting to three. Exactly like your mom. With trillions of yen.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "stage",
+   "environment": "hotel_room",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left",
+     "outfit": "evening"
+    },
+    {
+     "char": "maya",
+     "position": "right",
+     "outfit": "evening"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "maya",
+     "text": "And it kind of works. Right after he spoke, the yen bounced back a little.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "He just talked, and it moved?",
+     "emotion": "surprised",
+     "pose": "surprised",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "maya",
+     "text": "It's called verbal intervention.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "I do that. With my plants.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "closeup",
+     "pause_after": 0.7,
+     "react": "the woman on the right stares at him, then slowly shakes her head, mouth closed"
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s24",
+   "narration": "And it kind of works. Right after he spoke, the yen bounced back a little. He just talked, and it moved? It's called verbal intervention. I do that. With my plants.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "stage",
+   "environment": "hotel_room",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left",
+     "outfit": "evening"
+    },
+    {
+     "char": "maya",
+     "position": "right",
+     "outfit": "evening"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "benny",
+     "text": "Okay. So what happened this summer?",
+     "emotion": "surprised",
+     "pose": "surprised",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "Twice this year, the yen getting close to one-sixty came right before the real thing. Japan fought back. The government sold dollars and bought yen. A lot of yen.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "By itself?",
+     "emotion": "confused",
+     "pose": "shrug",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "Not always. One of those operations was done together with the United States.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "America helped? That's nice.",
+     "emotion": "happy",
+     "pose": "happy",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "Very neighbourly.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "benny",
+     "text": "So how much is a lot?",
+     "emotion": "confused",
+     "pose": "shrug",
+     "shot": "two_shot"
+    }
+   ],
+   "transition": "cut",
+   "music": "tense",
+   "beats": [],
+   "sfx": [],
+   "id": "s25",
+   "narration": "Okay. So what happened this summer? Twice this year, the yen getting close to one-sixty came right before the real thing. Japan fought back. The government sold dollars and bought yen. A lot of yen. By itself? Not always. One of those operations was done together with the United States. America helped? That's nice. Very neighbourly. So how much is a lot?",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "chart",
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "Japan defending the yen, summer 2026",
+    "mode": "stats",
+    "items": [
+     {
+      "value": "¥15.4 trillion",
+      "label": "spent on July 30, July 31 and August 3"
+     },
+     {
+      "value": "¥7.98 trillion",
+      "label": "on July 30 alone, a one-day record"
+     },
+     {
+      "value": "¥27 trillion+",
+      "label": "total this year (old record: about ¥15 trillion, 2024)"
+     }
+    ]
+   },
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Over three days, fifteen point four trillion yen. July thirtieth alone was almost eight trillion, a one-day record. That pushed this year's total past twenty-seven trillion. The old record, set in 2024, was about fifteen.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "detail"
+    }
+   ],
+   "transition": "zoom",
+   "music": "tense",
+   "beats": [],
+   "id": "s26",
+   "environment": "",
+   "cast": [],
+   "narration": "Over three days, fifteen point four trillion yen. July thirtieth alone was almost eight trillion, a one-day record. That pushed this year's total past twenty-seven trillion. The old record, set in 2024, was about fifteen.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "kind": "stage",
+   "environment": "hotel_room",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left",
+     "outfit": "evening"
+    },
+    {
+     "char": "maya",
+     "position": "right",
+     "outfit": "evening"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "benny",
+     "text": "Twenty-seven trillion?",
+     "emotion": "surprised",
+     "pose": "surprised",
+     "shot": "closeup",
+     "pause_after": 0.5
+    },
+    {
+     "speaker": "maya",
+     "text": "And within a month, the yen slid back toward one-sixty anyway.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "They spent twenty-seven trillion, and it just... came back?",
+     "emotion": "confused",
+     "pose": "shrug",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "Markets don't send thank-you notes.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup"
+    }
+   ],
+   "transition": "cut",
+   "music": "tense",
+   "beats": [],
+   "sfx": [],
+   "id": "s27",
+   "narration": "Twenty-seven trillion? And within a month, the yen slid back toward one-sixty anyway. They spent twenty-seven trillion, and it just... came back? Markets don't send thank-you notes.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "stage",
+   "environment": "hotel_room",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left",
+     "outfit": "evening"
+    },
+    {
+     "char": "maya",
+     "position": "right",
+     "outfit": "evening"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "benny",
+     "text": "Wait. If they do it again, my sale ends.",
+     "emotion": "worried",
+     "pose": "worried",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "Maybe. For a while. Nobody knows when. Not even Tokyo.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "Then I have to spend everything. Tonight.",
+     "emotion": "excited",
+     "pose": "arms_up",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "maya",
+     "text": "Ryan. That is not the lesson.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "benny",
+     "text": "It's a lesson.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "two_shot",
+     "pause_after": 0.5,
+     "act": "the young man on the left grabs his jacket and turns to leave"
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s28",
+   "narration": "Wait. If they do it again, my sale ends. Maybe. For a while. Nobody knows when. Not even Tokyo. Then I have to spend everything. Tonight. Ryan. That is not the lesson. It's a lesson.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "hero",
+   "hero_prompt": "A colourful Tokyo souvenir shop at night packed with shelves of small lucky cat figurines, one gigantic golden lucky cat statue in the middle with its paw raised",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "He did not spend everything. He spent most of it. On one thing.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "two_shot"
+    }
+   ],
+   "transition": "fade",
+   "music": "upbeat",
+   "beats": [
+    {
+     "at_word": "thing",
+     "type": "keyword",
+     "text": "ONE THING"
+    }
+   ],
+   "id": "s29",
+   "environment": "",
+   "cast": [],
+   "narration": "He did not spend everything. He spent most of it. On one thing.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "sfx": []
+  },
+  {
+   "kind": "stage",
+   "environment": "souvenir_shop",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left",
+     "outfit": "evening"
+    },
+    {
+     "char": "maya",
+     "position": "right",
+     "outfit": "evening"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "benny",
+     "text": "Maya. Meet Lucky.",
+     "emotion": "happy",
+     "pose": "happy",
+     "shot": "two_shot",
+     "act": "the young man on the left proudly gestures at something big beside him, grinning"
+    },
+    {
+     "speaker": "maya",
+     "text": "Ryan. That cat is taller than you.",
+     "emotion": "surprised",
+     "pose": "surprised",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "benny",
+     "text": "It waves. All the time. That's luck, Maya.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "That's a battery.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup",
+     "pause_after": 0.6
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s30",
+   "narration": "Maya. Meet Lucky. Ryan. That cat is taller than you. It waves. All the time. That's luck, Maya. That's a battery.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "stage",
+   "environment": "hotel_room",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left",
+     "outfit": "evening"
+    },
+    {
+     "char": "maya",
+     "position": "right",
+     "outfit": "evening"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "benny",
+     "text": "He fits. Mostly.",
+     "emotion": "happy",
+     "pose": "happy",
+     "shot": "two_shot",
+     "act": "the young man on the left gestures proudly toward the window"
+    },
+    {
+     "speaker": "maya",
+     "text": "He's blocking the window, Ryan.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "He's protecting us.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "From what?",
+     "emotion": "confused",
+     "pose": "shrug",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "benny",
+     "text": "Bad luck. And... sunlight.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "closeup",
+     "pause_after": 0.6
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s31",
+   "narration": "He fits. Mostly. He's blocking the window, Ryan. He's protecting us. From what? Bad luck. And... sunlight.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "title_card",
+   "title_text": "The Other Side",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "The next day, Ryan went back to the ramen shop. This time, he listened.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    }
+   ],
+   "transition": "slide",
+   "music": "sad",
+   "id": "s32",
+   "environment": "",
+   "cast": [],
+   "narration": "The next day, Ryan went back to the ramen shop. This time, he listened.",
+   "beats": [],
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "kind": "stage",
+   "environment": "ramen_shop",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left",
+     "outfit": "luckycat"
+    },
+    {
+     "char": "ramen_chef",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "benny",
+     "text": "Can I ask you something? Is the cheap yen good for you?",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "ramen_chef",
+     "text": "For tourists, maybe. For me, everything from overseas costs more. Fuel. Flour. Even some of the pork.",
+     "emotion": "worried",
+     "pose": "worried",
+     "shot": "two_shot",
+     "act": "the chef in the white headband on the right sighs gently and explains, wiping the counter"
+    },
+    {
+     "speaker": "benny",
+     "text": "Oh.",
+     "emotion": "worried",
+     "pose": "worried",
+     "shot": "closeup",
+     "pause_after": 0.6
+    }
+   ],
+   "transition": "cut",
+   "music": "sad",
+   "beats": [],
+   "sfx": [],
+   "id": "s33",
+   "narration": "Can I ask you something? Is the cheap yen good for you? For tourists, maybe. For me, everything from overseas costs more. Fuel. Flour. Even some of the pork. Oh.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "chart",
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "The other side of a weak yen",
+    "mode": "stats",
+    "items": [
+     {
+      "value": "7.1%",
+      "label": "rise in Japan's wholesale prices, October"
+     },
+     {
+      "value": "Q3",
+      "label": "Japan's economy shrank, first drop in four quarters"
+     },
+     {
+      "value": "8% → 1%",
+      "label": "food tax cut being debated by lawmakers"
+     }
+    ]
+   },
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "A weak yen makes imported fuel, food and raw materials more expensive. Japan's wholesale prices rose seven point one percent in October. The economy shrank last quarter, its first drop in four quarters. Lawmakers are even debating cutting the tax on food from eight percent to one.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "detail"
+    }
+   ],
+   "transition": "zoom",
+   "music": "sad",
+   "beats": [],
+   "id": "s34",
+   "environment": "",
+   "cast": [],
+   "narration": "A weak yen makes imported fuel, food and raw materials more expensive. Japan's wholesale prices rose seven point one percent in October. The economy shrank last quarter, its first drop in four quarters. Lawmakers are even debating cutting the tax on food from eight percent to one.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "kind": "stage",
+   "environment": "ramen_shop",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left",
+     "outfit": "luckycat"
+    },
+    {
+     "char": "maya",
+     "position": "right",
+     "outfit": "denim"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "benny",
+     "text": "So my sale... is his price rise.",
+     "emotion": "sad",
+     "pose": "worried",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "...Yeah. That's exactly it.",
+     "emotion": "surprised",
+     "pose": "surprised",
+     "shot": "two_shot",
+     "pause_after": 0.6
+    },
+    {
+     "speaker": "benny",
+     "text": "And if Japan raises interest rates, money comes back, and the yen gets stronger. My sale ends. But his flour gets cheaper.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "Ryan. That's actually right.",
+     "emotion": "surprised",
+     "pose": "surprised",
+     "shot": "closeup",
+     "pause_after": 0.7,
+     "react": "the young man on the left slowly breaks into a proud smile, mouth closed"
+    },
+    {
+     "speaker": "benny",
+     "text": "I know things.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "benny",
+     "text": "So is anyone in Japan winning?",
+     "emotion": "confused",
+     "pose": "shrug",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "Some exporters. Companies that sell abroad earn dollars, and those dollars turn into more yen back home.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "So they're like me at the airport.",
+     "emotion": "happy",
+     "pose": "happy",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "Except their millions are real.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup"
+    }
+   ],
+   "transition": "cut",
+   "music": "upbeat",
+   "beats": [],
+   "sfx": [],
+   "id": "s35",
+   "narration": "So my sale... is his price rise. ...Yeah. That's exactly it. And if Japan raises interest rates, money comes back, and the yen gets stronger. My sale ends. But his flour gets cheaper. Ryan. That's actually right. I know things. So is anyone in Japan winning? Some exporters. Companies that sell abroad earn dollars, and those dollars turn into more yen back home. So they're like me at the airport. Except their millions are real.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "chart",
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "What to watch",
+    "mode": "timeline",
+    "items": [
+     {
+      "value": "Dec 9",
+      "label": "US Fed decides: markets price a hike at 100%"
+     },
+     {
+      "value": "Dec 17–18",
+      "label": "Bank of Japan meets: some expect 1.25% → 1.5%"
+     }
+    ]
+   },
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "So, what to watch. On December ninth, the Federal Reserve decides whether the gap gets wider. On December seventeenth and eighteenth, the Bank of Japan meets, and some analysts expect it to raise its rate from one and a quarter to one and a half percent. That gap is what decides where the yen goes next.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "detail"
+    }
+   ],
+   "transition": "zoom",
+   "music": "upbeat",
+   "beats": [],
+   "id": "s36",
+   "environment": "",
+   "cast": [],
+   "narration": "So, what to watch. On December ninth, the Federal Reserve decides whether the gap gets wider. On December seventeenth and eighteenth, the Bank of Japan meets, and some analysts expect it to raise its rate from one and a quarter to one and a half percent. That gap is what decides where the yen goes next.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "kind": "title_card",
+   "title_text": "Going Home",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Five days later.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    }
+   ],
+   "transition": "wipe",
+   "music": "upbeat",
+   "id": "s37",
+   "environment": "",
+   "cast": [],
+   "narration": "Five days later.",
+   "beats": [],
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "sfx": []
+  },
+  {
+   "kind": "stage",
+   "environment": "airport_exchange",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left",
+     "outfit": "luckycat"
+    },
+    {
+     "char": "exchange_clerk",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "benny",
+     "text": "Hi again! I'd like to change my yen back to dollars, please.",
+     "emotion": "happy",
+     "pose": "happy",
+     "shot": "two_shot",
+     "act": "the young man on the left places a few coins on the counter"
+    },
+    {
+     "speaker": "exchange_clerk",
+     "text": "Of course. How much?",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "Four hundred yen. I also have a cat, but I'm keeping him.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "two_shot",
+     "pause_after": 0.6,
+     "react": "the clerk on the right blinks politely, mouth closed"
+    },
+    {
+     "speaker": "exchange_clerk",
+     "text": "That's about two dollars, sir.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s38",
+   "narration": "Hi again! I'd like to change my yen back to dollars, please. Of course. How much? Four hundred yen. I also have a cat, but I'm keeping him. That's about two dollars, sir.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "stage",
+   "environment": "airport_exchange",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left",
+     "outfit": "luckycat"
+    },
+    {
+     "char": "maya",
+     "position": "right",
+     "outfit": "denim"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "benny",
+     "text": "I was a millionaire for five days.",
+     "emotion": "sad",
+     "pose": "worried",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "maya",
+     "text": "A hundred-and-fifty-six-thousand-aire.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "benny",
+     "text": "Still so close.",
+     "emotion": "happy",
+     "pose": "happy",
+     "shot": "closeup",
+     "pause_after": 0.6
+    },
+    {
+     "speaker": "maya",
+     "text": "And you learned something.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot"
+    },
+    {
+     "speaker": "benny",
+     "text": "I did. Weak yen, cheap Japan, expensive flour for the chef. And never buy a cat that's taller than you.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "two_shot"
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s39",
+   "narration": "I was a millionaire for five days. A hundred-and-fifty-six-thousand-aire. Still so close. And you learned something. I did. Weak yen, cheap Japan, expensive flour for the chef. And never buy a cat that's taller than you.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "stage",
+   "environment": "airport_exchange",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left",
+     "outfit": "luckycat"
+    },
+    {
+     "char": "maya",
+     "position": "right",
+     "outfit": "denim"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "benny",
+     "text": "Okay, real question. What would you buy first with a hundred and fifty-six thousand yen? Tell me in the comments. I need ideas for next time.",
+     "emotion": "excited",
+     "pose": "arms_up",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "maya",
+     "text": "There's no next time.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup"
+    },
+    {
+     "speaker": "benny",
+     "text": "Wait. Why is my phone buzzing?",
+     "emotion": "confused",
+     "pose": "shrug",
+     "shot": "two_shot",
+     "act": "the young man on the left looks down at his buzzing phone"
+    },
+    {
+     "speaker": "benny",
+     "text": "Maya... what's a foreign transaction fee?",
+     "emotion": "worried",
+     "pose": "worried",
+     "shot": "two_shot",
+     "pause_after": 0.8
+    },
+    {
+     "speaker": "maya",
+     "text": "...Next week, Ryan.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "closeup"
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s40",
+   "narration": "Okay, real question. What would you buy first with a hundred and fifty-six thousand yen? Tell me in the comments. I need ideas for next time. There's no next time. Wait. Why is my phone buzzing? Maya... what's a foreign transaction fee? ...Next week, Ryan.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "title_card",
+   "title_text": "See You Next Time",
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "Thanks for watching. Subscribe, because Ryan's credit card statement is on its way.",
+     "emotion": "happy",
+     "pose": "happy",
+     "shot": "two_shot"
+    }
+   ],
+   "transition": "fade",
+   "music": "upbeat",
+   "id": "s41",
+   "environment": "",
+   "cast": [],
+   "narration": "Thanks for watching. Subscribe, because Ryan's credit card statement is on its way.",
+   "beats": [],
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": "",
+   "sfx": []
+  }
+ ],
+ "sources": [
+  "https://www.forexfactory.com/news/1435932-japans-mimura-warns-yen-moves-are-too-rapid",
+  "https://ednews.net/en/japanese-yen-nears-160-per-dollar-as-us-rate-hike-bets-strengthen/",
+  "https://finance.biggo.com/news/7eacf28b-5b7b-433b-a071-939fb944af1c",
+  "https://www.fxstreet.com/news/usd-jpy-intervention-risk-near-160-societe-generale-202611120948",
+  "https://finance.yahoo.com/markets/currencies/articles/hot-us-inflation-drags-yen-083554526.html",
+  "https://www.tmgm.com/en/analysis/market-news/article/japanese-yen-recovers-from-two-month-low-as-boj-rate-hike-bets-meet-intervention-risk-202611120207",
+  "https://www.nippon.com/en/articles/-/19199",
+  "https://www.scmp.com/week-asia/lifestyle-culture/article/3341078/has-japans-tourism-peaked-row-china-set-slow-arrivals-record-high",
+  "https://japantoday.com/category/national/update1-foreign-visitors%27-spending-in-japan-hits-record-7-tril.-yen-in-jan.-sept",
+  "https://finance.biggo.com/news/0d755075-c36c-46d1-a678-db465075076c",
+  "https://newsonjapan.com/article/151378.php",
+  "https://www.cnbc.com/2026/10/23/japan-inflation-september-highest-in-2026.html"
+ ],
+ "show": "Ryan Figures It Out",
+ "tags": [],
+ "narrator_voice": "maya"
+}

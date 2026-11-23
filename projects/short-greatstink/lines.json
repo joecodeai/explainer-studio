@@ -1,0 +1,145 @@
+[
+ {
+  "id": "g01",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "In the summer of 1858, London smelled so bad that the newspapers gave it a name. The Great Stink.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "g02",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "A heatwave had hit the city, and the River Thames was basically an open sewer.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "g03",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "London had just fallen in love with the flushing toilet. And almost all of it ended up in the river.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "g04",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Which was also where a lot of Londoners got their drinking water.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "g05",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "disbelief",
+    "text": "Please tell me they fixed that part first.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "g06",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Right beside the river stood the brand new Houses of Parliament. The smell came in through every window.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "g07",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Staff hung curtains soaked in chemicals over the windows to block it out. It did not work.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "g08",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Back then, doctors believed bad smells caused diseases like cholera. So the politicians thought the air itself could kill them.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "g09",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Suddenly, a sewer plan they had put off for years was approved in just eighteen days.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "g10",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Engineer Joseph Bazalgette built more than a thousand miles of sewers under London.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "g11",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "He even made the pipes bigger than they needed to be, just in case. Much of his system is still working today.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "g12",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "And here's the twist. Cholera actually spreads through dirty water, not bad smells.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "g13",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "dry",
+    "text": "So by fixing a smell, London accidentally beat cholera too. Subscribe for more.",
+    "emotion": "neutral"
+   }
+  ]
+ }
+]

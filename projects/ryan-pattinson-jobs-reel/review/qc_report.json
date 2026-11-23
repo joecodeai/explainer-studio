@@ -1,0 +1,104 @@
+{
+ "passed": true,
+ "scores": {
+  "Visual quality": 100.0,
+  "Character consistency": 100.0,
+  "Physical positioning": 100.0,
+  "Animation quality": 93.6,
+  "Audio quality": 97.6,
+  "Lip synchronization": 100.0,
+  "Subtitle accuracy": 93.6,
+  "Scene continuity": 100.0,
+  "Semantic accuracy": 100.0,
+  "Overall": 98.3
+ },
+ "pass_score": 85,
+ "findings": [
+  {
+   "category": "voice",
+   "severity": "MEDIUM",
+   "description": "benny's voice pitch jumps +5.2 semitones on this line",
+   "start": 18.621,
+   "end": null,
+   "scene": "s01",
+   "confidence": 0.6,
+   "fix": "retake_line",
+   "fix_args": {
+    "scene": "s01",
+    "key": "43d13e2ea5"
+   },
+   "recommendation": "",
+   "source": "stage1",
+   "status": "open",
+   "frame": 447,
+   "auto_fixable": true
+  },
+  {
+   "category": "animation",
+   "severity": "MEDIUM",
+   "description": "animated shot s01 line 3 (glitch): sudden jump at frames 8-20 (change 9.2 vs typical 1.0)",
+   "start": 18.95,
+   "end": null,
+   "scene": "s01",
+   "confidence": 0.8,
+   "fix": null,
+   "fix_args": {},
+   "recommendation": "regenerate this shot: delete it from talk/ and re-run, or ./fix with a FEEDBACK note",
+   "source": "stage1",
+   "status": "open",
+   "frame": 455,
+   "auto_fixable": false
+  },
+  {
+   "category": "text",
+   "severity": "MEDIUM",
+   "description": "chart text missing/misread: ['what Amazon paid for MGM, Bond included', 'Sherwin Rosen: the economics of superstars'] (read ['Why one actor gets every big role', '$8.5bn', '1 film', '1981', 'what Amazon paid for', 'reaches millions of people', 'Sherwin Rosen: the', 'MGM, Bond included', 'at once', 'economics of superstars'])",
+   "start": 29.15,
+   "end": null,
+   "scene": "s02",
+   "confidence": 0.7,
+   "fix": null,
+   "fix_args": {},
+   "recommendation": "check chart labels/values in script.json",
+   "source": "stage1",
+   "status": "open",
+   "frame": 700,
+   "auto_fixable": false
+  },
+  {
+   "category": "animation",
+   "severity": "MEDIUM",
+   "description": "animated shot s03 line 0 (people): person size jumps (x0.58) at frame 84",
+   "start": 32.71,
+   "end": null,
+   "scene": "s03",
+   "confidence": 0.8,
+   "fix": null,
+   "fix_args": {},
+   "recommendation": "regenerate this shot: delete it from talk/ and re-run, or ./fix with a FEEDBACK note",
+   "source": "stage1",
+   "status": "open",
+   "frame": 785,
+   "auto_fixable": false
+  },
+  {
+   "category": "subtitle",
+   "severity": "MEDIUM",
+   "description": "subtitles out of sync with speech (median 715 ms, worst 1780 ms)",
+   "start": 37.802,
+   "end": null,
+   "scene": "s03",
+   "confidence": 0.9,
+   "fix": "retime_subtitles",
+   "fix_args": {
+    "scene": "s03"
+   },
+   "recommendation": "",
+   "source": "stage1",
+   "status": "open",
+   "frame": 907,
+   "auto_fixable": true
+  }
+ ],
+ "fix_history": []
+}

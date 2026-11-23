@@ -1,0 +1,508 @@
+[
+ {
+  "line": "v1_hook#0",
+  "spk": "maya",
+  "tag": "narration",
+  "dur": 10.3,
+  "wps": 2.92,
+  "range": [
+   2.5,
+   3.4
+  ],
+  "wer": 0.0,
+  "flags": [],
+  "heard": ""
+ },
+ {
+  "line": "v1_hook#1",
+  "spk": "maya",
+  "tag": "dry",
+  "dur": 4.5,
+  "wps": 2.95,
+  "range": [
+   2.3,
+   3.3
+  ],
+  "wer": 0.0,
+  "flags": [],
+  "heard": ""
+ },
+ {
+  "line": "v1_hook#2",
+  "spk": "maya",
+  "tag": "narration",
+  "dur": 13.5,
+  "wps": 2.72,
+  "range": [
+   2.5,
+   3.4
+  ],
+  "wer": 0.028,
+  "flags": [],
+  "heard": ""
+ },
+ {
+  "line": "v1_hook#3",
+  "spk": "maya",
+  "tag": "deadpan",
+  "dur": 7.8,
+  "wps": 2.79,
+  "range": [
+   2.2,
+   3.1
+  ],
+  "wer": 0.0,
+  "flags": [],
+  "heard": ""
+ },
+ {
+  "line": "v1_hook#4",
+  "spk": "maya",
+  "tag": "narration",
+  "dur": 6.3,
+  "wps": 3.07,
+  "range": [
+   2.5,
+   3.4
+  ],
+  "wer": 0.0,
+  "flags": [],
+  "heard": ""
+ },
+ {
+  "line": "v2_dentist#0",
+  "spk": "maya",
+  "tag": "narration",
+  "dur": 2.6,
+  "wps": 3.25,
+  "range": [
+   2.5,
+   3.4
+  ],
+  "wer": 0.0,
+  "flags": [],
+  "heard": ""
+ },
+ {
+  "line": "v2_dentist#1",
+  "spk": "maya",
+  "tag": "dry",
+  "dur": 6.1,
+  "wps": 2.75,
+  "range": [
+   2.3,
+   3.3
+  ],
+  "wer": 0.0,
+  "flags": [],
+  "heard": ""
+ },
+ {
+  "line": "v2_dentist#2",
+  "spk": "maya",
+  "tag": "narration",
+  "dur": 12.9,
+  "wps": 2.87,
+  "range": [
+   2.5,
+   3.4
+  ],
+  "wer": 0.0,
+  "flags": [],
+  "heard": ""
+ },
+ {
+  "line": "v3_letter#0",
+  "spk": "maya",
+  "tag": "dry",
+  "dur": 15.6,
+  "wps": 2.54,
+  "range": [
+   2.3,
+   3.3
+  ],
+  "wer": 0.0,
+  "flags": [],
+  "heard": ""
+ },
+ {
+  "line": "v3_letter#1",
+  "spk": "maya",
+  "tag": "narration",
+  "dur": 13.4,
+  "wps": 2.82,
+  "range": [
+   2.5,
+   3.4
+  ],
+  "wer": 0.0,
+  "flags": [],
+  "heard": ""
+ },
+ {
+  "line": "v3_letter#2",
+  "spk": "benny",
+  "tag": "disbelief",
+  "dur": 2.3,
+  "wps": 2.75,
+  "range": [
+   2.0,
+   3.0
+  ],
+  "wer": 0.0,
+  "flags": [],
+  "heard": ""
+ },
+ {
+  "line": "v3_letter#3",
+  "spk": "maya",
+  "tag": "dry",
+  "dur": 4.8,
+  "wps": 2.94,
+  "range": [
+   2.3,
+   3.3
+  ],
+  "wer": 0.0,
+  "flags": [],
+  "heard": ""
+ },
+ {
+  "line": "v4_team#0",
+  "spk": "maya",
+  "tag": "narration",
+  "dur": 17.3,
+  "wps": 2.86,
+  "range": [
+   2.5,
+   3.4
+  ],
+  "wer": 0.041,
+  "flags": [],
+  "heard": ""
+ },
+ {
+  "line": "v4_team#1",
+  "spk": "maya",
+  "tag": "amused",
+  "dur": 4.4,
+  "wps": 3.12,
+  "range": [
+   2.4,
+   3.4
+  ],
+  "wer": 0.077,
+  "flags": [],
+  "heard": ""
+ },
+ {
+  "line": "v4_team#2",
+  "spk": "benny",
+  "tag": "deadpan",
+  "dur": 4.5,
+  "wps": 2.73,
+  "range": [
+   2.4,
+   3.2
+  ],
+  "wer": 0.0,
+  "flags": [],
+  "heard": ""
+ },
+ {
+  "line": "v4_team#3",
+  "spk": "maya",
+  "tag": "dry",
+  "dur": 2.2,
+  "wps": 2.97,
+  "range": [
+   2.3,
+   3.3
+  ],
+  "wer": 0.0,
+  "flags": [],
+  "heard": ""
+ },
+ {
+  "line": "v5_party#0",
+  "spk": "maya",
+  "tag": "dry",
+  "dur": 10.3,
+  "wps": 2.89,
+  "range": [
+   2.3,
+   3.3
+  ],
+  "wer": 0.034,
+  "flags": [],
+  "heard": ""
+ },
+ {
+  "line": "v5_party#1",
+  "spk": "benny",
+  "tag": "awkward",
+  "dur": 3.6,
+  "wps": 2.27,
+  "range": [
+   2.2,
+   3.1
+  ],
+  "wer": 0.0,
+  "flags": [],
+  "heard": ""
+ },
+ {
+  "line": "v5_party#2",
+  "spk": "maya",
+  "tag": "deadpan",
+  "dur": 3.1,
+  "wps": 2.7,
+  "range": [
+   2.2,
+   3.1
+  ],
+  "wer": 0.0,
+  "flags": [],
+  "heard": ""
+ },
+ {
+  "line": "v5_party#3",
+  "spk": "maya",
+  "tag": "tired",
+  "dur": 7.8,
+  "wps": 2.53,
+  "range": [
+   2.1,
+   3.0
+  ],
+  "wer": 0.053,
+  "flags": [],
+  "heard": ""
+ },
+ {
+  "line": "v6_rancher#0",
+  "spk": "maya",
+  "tag": "dry",
+  "dur": 13.2,
+  "wps": 2.7,
+  "range": [
+   2.3,
+   3.3
+  ],
+  "wer": 0.0,
+  "flags": [],
+  "heard": ""
+ },
+ {
+  "line": "v6_rancher#1",
+  "spk": "maya",
+  "tag": "amused",
+  "dur": 4.6,
+  "wps": 2.64,
+  "range": [
+   2.4,
+   3.4
+  ],
+  "wer": 0.0,
+  "flags": [],
+  "heard": ""
+ },
+ {
+  "line": "v6_rancher#2",
+  "spk": "maya",
+  "tag": "narration",
+  "dur": 12.2,
+  "wps": 2.83,
+  "range": [
+   2.5,
+   3.4
+  ],
+  "wer": 0.0,
+  "flags": [],
+  "heard": ""
+ },
+ {
+  "line": "v6_rancher#3",
+  "spk": "maya",
+  "tag": "narration",
+  "dur": 1.4,
+  "wps": 3.28,
+  "range": [
+   2.5,
+   3.4
+  ],
+  "wer": 0.0,
+  "flags": [],
+  "heard": ""
+ },
+ {
+  "line": "v7_fire#0",
+  "spk": "maya",
+  "tag": "dry",
+  "dur": 3.5,
+  "wps": 2.94,
+  "range": [
+   2.3,
+   3.3
+  ],
+  "wer": 0.0,
+  "flags": [],
+  "heard": ""
+ },
+ {
+  "line": "v7_fire#1",
+  "spk": "maya",
+  "tag": "narration",
+  "dur": 10.4,
+  "wps": 2.86,
+  "range": [
+   2.5,
+   3.4
+  ],
+  "wer": 0.034,
+  "flags": [],
+  "heard": ""
+ },
+ {
+  "line": "v7_fire#2",
+  "spk": "maya",
+  "tag": "deadpan",
+  "dur": 9.0,
+  "wps": 2.73,
+  "range": [
+   2.2,
+   3.1
+  ],
+  "wer": 0.0,
+  "flags": [],
+  "heard": ""
+ },
+ {
+  "line": "v7_fire#3",
+  "spk": "maya",
+  "tag": "narration",
+  "dur": 12.0,
+  "wps": 2.89,
+  "range": [
+   2.5,
+   3.4
+  ],
+  "wer": 0.0,
+  "flags": [],
+  "heard": ""
+ },
+ {
+  "line": "v7_fire#4",
+  "spk": "maya",
+  "tag": "dry",
+  "dur": 2.4,
+  "wps": 3.04,
+  "range": [
+   2.3,
+   3.3
+  ],
+  "wer": 0.0,
+  "flags": [],
+  "heard": ""
+ },
+ {
+  "line": "v8_payoff#0",
+  "spk": "benny",
+  "tag": "deflated",
+  "dur": 5.8,
+  "wps": 2.45,
+  "range": [
+   2.1,
+   3.0
+  ],
+  "wer": 0.0,
+  "flags": [],
+  "heard": ""
+ },
+ {
+  "line": "v8_payoff#1",
+  "spk": "maya",
+  "tag": "dry",
+  "dur": 3.8,
+  "wps": 2.67,
+  "range": [
+   2.3,
+   3.3
+  ],
+  "wer": 0.0,
+  "flags": [],
+  "heard": ""
+ },
+ {
+  "line": "v8_payoff#2",
+  "spk": "maya",
+  "tag": "narration",
+  "dur": 14.9,
+  "wps": 2.75,
+  "range": [
+   2.5,
+   3.4
+  ],
+  "wer": 0.024,
+  "flags": [],
+  "heard": ""
+ },
+ {
+  "line": "v8_payoff#3",
+  "spk": "maya",
+  "tag": "narration",
+  "dur": 2.3,
+  "wps": 3.27,
+  "range": [
+   2.5,
+   3.4
+  ],
+  "wer": 0.0,
+  "flags": [],
+  "heard": ""
+ },
+ {
+  "line": "v8_payoff#4",
+  "spk": "maya",
+  "tag": "dry",
+  "dur": 11.7,
+  "wps": 2.7,
+  "range": [
+   2.3,
+   3.3
+  ],
+  "wer": 0.0,
+  "flags": [],
+  "heard": ""
+ },
+ {
+  "line": "v9_end#0",
+  "spk": "maya",
+  "tag": "narration",
+  "dur": 12.0,
+  "wps": 2.63,
+  "range": [
+   2.5,
+   3.4
+  ],
+  "wer": 0.129,
+  "flags": [
+   "words off (13%)"
+  ],
+  "heard": "The  idea  of  burning  Japan's  wooden  cities  didn't  end  with  the  bats.  In  March  1945,  American  bombers  fire  bombed  Tokyo  with  ordinary  incendiaries.  In  a  single  night,  about  100 ,000  people  were  killed."
+ },
+ {
+  "line": "v9_end#1",
+  "spk": "maya",
+  "tag": "dry",
+  "dur": 7.6,
+  "wps": 2.85,
+  "range": [
+   2.3,
+   3.3
+  ],
+  "wer": 0.0,
+  "flags": [],
+  "heard": ""
+ }
+]

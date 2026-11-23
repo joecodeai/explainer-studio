@@ -1,0 +1,15 @@
+{
+ "name": "tom",
+ "design": "a man in his thirties Speaking naturally in English, expressive and conversational.",
+ "language": "English",
+ "tts": {
+  "engine": "qwen_custom",
+  "model": "models/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "speaker": "Aiden",
+  "base_direction": ""
+ },
+ "instruct": "a man in his thirties Speaking naturally in English, expressive and conversational.",
+ "f0": 156.5,
+ "gender": "male",
+ "redesigns": 0
+}

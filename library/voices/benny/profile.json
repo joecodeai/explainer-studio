@@ -2,6 +2,12 @@
  "name": "benny",
  "design": "A charming young man in his late twenties with a warm, pleasant male voice, friendly and sincere, energetic and very expressive, casual neutral English accent, natural comedic timing. Speaking naturally in English, expressive and conversational.",
  "language": "English",
+ "tts": {
+  "engine": "qwen_custom",
+  "speaker": "Ryan",
+  "model": "models/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "base_direction": "A charismatic young guy in his mid-twenties, natural and conversational like a real actor improvising, at a lively natural conversational pace; never an announcer, never cartoonish, never slow or drawn out."
+ },
  "instruct": "A charming young man in his late twenties, relaxed warm male voice, medium pitch, lively and expressive, friendly neutral English accent, like a popular YouTube host.",
  "f0": 144.4,
  "gender": "male",

@@ -1,8 +1,8 @@
-# Benny & Maya — wardrobe
+# Ryan & Maya — wardrobe
 
 General outfits for any topic. ID = `<character>_<outfit>`; in a script use `cast[].outfit = "<outfit>"`. Drawings (front/side/back + animation poses: talking, facing each other, walking, sitting, reactions) are built by `tools/build_wardrobe.py` into `library/characters_news/<character>_o_<outfit>/`, always from the character's base drawing so face, hair and proportions stay identical.
 
-**Benny** — streetwear; burnt orange, navy, cream, charcoal, brown.  
+**Ryan** — streetwear; burnt orange, navy, cream, charcoal, brown.  
 **Maya** — elegant tailoring; olive, cream, chocolate brown, black, muted gold.
 
 
@@ -12,7 +12,7 @@ General outfits for any topic. ID = `<character>_<outfit>`; in a script use `cas
 |---|---|---|---|---|---|---|---|---|
 | `benny_signature` | default / everyday | spring, autumn | burnt-orange zip-up hoodie worn open over a white t-shirt, navy blue cargo trousers | black crossbody bag strap, black wristwatch | white and orange sneakers | burnt orange, white, navy | cotton fleece, twill | The character-sheet look. Default when nothing else applies. |
 | `benny_evening` | evenings out, city at night | autumn, spring | dark brown bomber jacket over a grey crew-neck t-shirt, black slim jeans | black wristwatch, black crossbody bag | white leather sneakers | brown, charcoal, black | nylon, cotton, denim |  |
-| `benny_smart_casual` | meetings, nice restaurant, meeting the parents | all | navy unstructured blazer over a cream knit polo, charcoal tailored trousers | brown leather watch strap | brown suede loafers | navy, cream, charcoal, brown | wool-blend, knit | Benny trying to look grown-up. |
+| `benny_smart_casual` | meetings, nice restaurant, meeting the parents | all | navy unstructured blazer over a cream knit polo, charcoal tailored trousers | brown leather watch strap | brown suede loafers | navy, cream, charcoal, brown | wool-blend, knit | Ryan trying to look grown-up. |
 | `benny_office` | job, interviews, work stories | all | light blue oxford shirt with sleeves rolled, navy chinos, burnt-orange knit tie loosened | black wristwatch, brown leather backpack | brown leather sneakers | light blue, navy, burnt orange, brown | cotton oxford, twill | The slightly-too-casual tie is the joke. |
 | `benny_date_night` | dates, romance episodes | all | charcoal knit polo shirt tucked into cream pleated trousers, brown suede bomber | silver chain, black wristwatch | white leather sneakers | charcoal, cream, brown | knit, suede | His best effort. |
 | `benny_party` | parties, celebrations | all | burnt-orange short-sleeve camp-collar shirt with a subtle cream wave pattern, black straight trousers | wristwatch | chunky cream sneakers | burnt orange, cream, black | rayon, twill |  |

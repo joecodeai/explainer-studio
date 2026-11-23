@@ -1,0 +1,29 @@
+{
+ "prompt": "Static camera, medium two-shot in a cosy Japanese ramen shop. A young man with curly dark hair in an orange hoodie (left) and a young woman with long wavy dark hair in an olive green jacket (right) stand facing each other and talk; they look at each other, natural eye contact. Polished 2D anime-style animated series, expressive faces, natural subtle acting, natural hand gestures, the listener reacts with facial expressions and keeps her or his mouth closed. the young man on the left explains with total confidence, leaning in slightly, counting on his fingers and gesturing toward the woman; the woman on the right listens with a small amused smile that slowly fades into a sceptical look, mouth closed.",
+ "segment_prompts": [
+  "Static camera, medium two-shot in a cosy Japanese ramen shop. A young man with curly dark hair in an orange hoodie (left) and a young woman with long wavy dark hair in an olive green jacket (right) stand facing each other and talk; they look at each other, natural eye contact. Polished 2D anime-style animated series, expressive faces, natural subtle acting, natural hand gestures, the listener reacts with facial expressions and keeps her or his mouth closed. the young man on the left explains with total confidence, leaning in slightly, counting on his fingers and gesturing toward the woman; the woman on the right listens with a small amused smile that slowly fades into a sceptical look, mouth closed.",
+  "Static camera, medium two-shot in a cosy Japanese ramen shop. A young man with curly dark hair in an orange hoodie (left) and a young woman with long wavy dark hair in an olive green jacket (right) stand facing each other and talk; they look at each other, natural eye contact. Polished 2D anime-style animated series, expressive faces, natural subtle acting, natural hand gestures, the listener reacts with facial expressions and keeps her or his mouth closed. the young man on the left explains with total confidence, leaning in slightly, counting on his fingers and gesturing toward the woman; the woman on the right listens with a small amused smile that slowly fades into a sceptical look, mouth closed.",
+  "Static camera, medium two-shot in a cosy Japanese ramen shop. A young man with curly dark hair in an orange hoodie (left) and a young woman with long wavy dark hair in an olive green jacket (right) stand facing each other and talk; they look at each other, natural eye contact. Polished 2D anime-style animated series, expressive faces, natural subtle acting, natural hand gestures, the listener reacts with facial expressions and keeps her or his mouth closed. the young man on the left explains with total confidence, leaning in slightly, counting on his fingers and gesturing toward the woman; the woman on the right listens with a small amused smile that slowly fades into a sceptical look, mouth closed Then the woman on the right says nothing, looks straight at him and clearly raises ONE eyebrow high, a sceptical look, arms folding; the young man on the left notices her look, stops gesturing mid-air and pauses, his confident smile freezing."
+ ],
+ "negative_prompt": "photorealistic, live action, 3D render, blurred details, subtitles, text, watermark, worst quality, low quality, JPEG artifacts, ugly, extra fingers, poorly drawn hands, poorly drawn faces, deformed, disfigured, misshapen limbs, fused fingers, still picture, frozen, both people talking at the same time, camera zoom, camera shake, messy background, three legs, many people in the background",
+ "cond_image": "/home/mundax/Documents/REL/ExplainerStudio/tests/acting_scene/cond.png",
+ "cond_audio": {
+  "person1": "/home/mundax/Documents/REL/ExplainerStudio/tests/quick10/track_benny.wav",
+  "person2": "/home/mundax/Documents/REL/ExplainerStudio/tests/quick10/track_maya.wav"
+ },
+ "audio_type": "para",
+ "bbox": {
+  "person1": [
+   40,
+   200,
+   768,
+   600
+  ],
+  "person2": [
+   50,
+   680,
+   768,
+   1000
+  ]
+ }
+}

@@ -1,10 +1,10 @@
 {
- "name": "Benny Figures It Out",
+ "name": "Ryan Figures It Out",
  "style": "vibrant modern 2D anime-inspired character illustration, like a polished animated series character sheet, clean confident dark outlines, warm cel shading with soft highlights, large expressive brown eyes, attractive appealing faces, natural adult proportions, rich saturated colours",
  "cast": [
   {
    "id": "benny",
-   "name": "Benny",
+   "name": "Ryan",
    "role": "",
    "real_person": false,
    "look": "a cheerful young man in his mid twenties with fair skin with a warm peachy undertone, thick curly dark brown hair, big expressive brown eyes, a wide confident grin, burnt-orange zip-up hoodie worn open over a white t-shirt, black crossbody bag strap across his chest, black wristwatch, navy blue cargo trousers, white and orange sneakers",
@@ -61,7 +61,21 @@
      "tag": "the young man with curly hair in the plain white t-shirt with small simple golden-yellow lucky-cat face icon printed on the chest (flat yellow and white cartoon cat face"
     }
    },
-   "colors": "BRIGHT BURNT-ORANGE hoodie (orange, NOT green), white t-shirt, NAVY BLUE cargo trousers; fair skin with a warm peachy undertone (natural, not pale)"
+   "colors": "BRIGHT BURNT-ORANGE hoodie (orange, NOT green), white t-shirt, NAVY BLUE cargo trousers; fair skin with a warm peachy undertone (natural, not pale)",
+   "tts": {
+    "engine": "qwen_clone",
+    "model": "models/Qwen3-TTS-12Hz-1.7B-Base",
+    "ref_audio": "library/voices/benny/ref_locked.wav",
+    "ref_text": "library/voices/benny/ref_locked.txt",
+    "base_direction": "",
+    "chosen": "2026-11-21 user: lock every voice -> cloned from Ryan's approved anchor (Qwen preset 'Ryan')",
+    "previous": {
+     "engine": "qwen_custom",
+     "speaker": "Ryan",
+     "model": "models/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+     "base_direction": "A young man in his mid-twenties, natural and conversational like a real actor in an understated workplace sitcom; he takes himself seriously and never performs a joke. Natural conversational pace; never an announcer, never cartoonish, never slow or drawn out."
+    }
+   }
   },
   {
    "id": "maya",
@@ -70,7 +84,7 @@
    "real_person": false,
    "look": "a confident, beautiful young woman in her mid twenties with fair skin with a warm peachy undertone, long voluminous wavy dark brown hair, warm brown eyes, gold hoop earrings, a knowing half-smile, olive green utility shirt-jacket with rolled sleeves over a cream top, high-waisted black wide-leg trousers with a black belt, black wristwatch, white sneakers",
    "voice": "A friendly woman in her late twenties with a smooth, natural, mellow voice, relaxed conversational pace, neutral American accent, easy warmth and a quiet sense of humour, like a favourite podcast host.",
-   "bio": "Benny's smart, quick-witted best friend AND the show's narrator: she tells the story in voice-over and corrects Benny on screen. Fond of him, playfully sarcastic, always right about the facts.",
+   "bio": "Ryan's smart, quick-witted best friend AND the show's narrator: she tells the story in voice-over and corrects Ryan on screen. Fond of him, playfully sarcastic, always right about the facts.",
    "tag": "the woman with long wavy hair in the olive green jacket",
    "outfits": {
     "evening": {
@@ -107,11 +121,11 @@
     },
     "home": {
      "desc": "oversized cream knit sweater, olive lounge trousers, hair in a loose bun",
-     "tag": "the woman with long wavy hair in the oversized cream knit sweater"
+     "tag": "the woman with her hair in a loose bun in the oversized cream knit sweater"
     },
     "gym": {
      "desc": "olive green sports top and matching leggings, cream zip-up jacket, hair in a high ponytail",
-     "tag": "the woman with long wavy hair in the olive green sports top and matching leggings"
+     "tag": "the woman with her hair in a high ponytail in the olive green sports top and matching leggings"
     },
     "formal": {
      "desc": "floor-length olive green satin gown with a muted gold belt, hair styled in soft waves",
@@ -120,9 +134,28 @@
     "denim": {
      "desc": "light blue denim jacket over a white fitted t-shirt, high-waisted black wide-leg trousers with a black belt",
      "tag": "the woman with long wavy hair in the light blue denim jacket"
+    },
+    "pyjamas": {
+     "desc": "soft sage-green long-sleeve two-piece pyjama set with long trousers, fluffy cream slippers, hair in a loose messy bun",
+     "tag": "the woman with her hair in a loose messy bun in the sage-green pyjamas"
     }
    },
-   "colors": "OLIVE GREEN shirt-jacket, cream top, BLACK trousers; fair skin with a warm peachy undertone (natural, not pale)"
+   "colors": "OLIVE GREEN shirt-jacket, cream top, BLACK trousers; fair skin with a warm peachy undertone (natural, not pale)",
+   "tts": {
+    "engine": "qwen_clone",
+    "model": "models/Qwen3-TTS-12Hz-1.7B-Base",
+    "ref_audio": "library/voices/maya/ref_locked.wav",
+    "ref_text": "library/voices/maya/ref_locked.txt",
+    "base_direction": "",
+    "chosen": "2026-11-21 user: 'i like the third shot, make it for everything' -> every line cloned from that take (bat-bomb voice test line 3)",
+    "previous": {
+     "engine": "qwen_design",
+     "model": "models/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+     "design": "A woman in her late twenties with a low, warm, slightly husky voice, relaxed and unhurried, neutral American accent, dry and quietly amused; a real actress in an understated workplace sitcom, natural and conversational, never theatrical.",
+     "base_direction": "",
+     "chosen": "2026-11-18 voice test option I (user pick); previous: chatterbox reference.wav"
+    }
+   }
   }
  ],
  "active": true,

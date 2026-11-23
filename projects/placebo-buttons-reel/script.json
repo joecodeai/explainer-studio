@@ -1,0 +1,767 @@
+{
+ "title": "This Button Has Done Nothing Since 1990",
+ "thumbnail_text": "DOES NOTHING",
+ "description": "You press 'close door' in the lift, the button at the crossing and the office thermostat. Most of them do nothing. Ryan finds out why: the 1990 lift law, New York's 2,500 placebo crossing buttons, London's daytime crossings, the dummy thermostats contractors admit to, the click your phone fakes, the noise electric cars must make, the illusion of control, and the sugar pills that work even when you know.",
+ "characters": [
+  {
+   "id": "maya",
+   "name": "Maya",
+   "look": "a confident, beautiful young woman in her mid twenties with fair skin with a warm peachy undertone, long voluminous wavy dark brown hair, warm brown eyes, gold hoop earrings, a knowing half-smile, olive green utility shirt-jacket with rolled sleeves over a cream top, high-waisted black wide-leg trousers with a black belt, black wristwatch, white sneakers",
+   "voice": "A friendly woman in her late twenties with a smooth, natural, mellow voice, relaxed conversational pace, neutral American accent, easy warmth and a quiet sense of humour, like a favourite podcast host.",
+   "role": "",
+   "real_person": false,
+   "tag": "the woman with long wavy hair in the olive green jacket",
+   "outfits": {
+    "evening": {
+     "desc": "cosy cream cable-knit sweater tucked into high-waisted black wide-leg trousers, long chocolate-brown cardigan coat",
+     "tag": "the woman with long wavy hair in the cosy cream cable-knit sweater tucked into high-waisted black wide-leg trousers"
+    },
+    "smart_casual": {
+     "desc": "chocolate-brown tailored blazer over a cream silk blouse, black straight trousers",
+     "tag": "the woman with long wavy hair in the chocolate-brown tailored blazer"
+    },
+    "office": {
+     "desc": "olive green tailored trouser suit with a cream fitted knit top",
+     "tag": "the woman with long wavy hair in the olive green tailored trouser suit with cream fitted knit top"
+    },
+    "date_night": {
+     "desc": "black satin midi slip dress with a cropped olive green tailored jacket over the shoulders",
+     "tag": "the woman with long wavy hair in the black satin midi slip dress with cropped olive green tailored jacket"
+    },
+    "party": {
+     "desc": "chocolate-brown satin wrap dress, knee length",
+     "tag": "the woman with long wavy hair in the chocolate-brown satin wrap dress"
+    },
+    "winter": {
+     "desc": "long black wool coat over an olive turtleneck, chocolate-brown tailored trousers",
+     "tag": "the woman with long wavy hair in the long black wool coat"
+    },
+    "summer": {
+     "desc": "olive green linen midi shirt-dress with a thin muted gold belt",
+     "tag": "the woman with long wavy hair in the olive green linen midi shirt-dress with thin muted gold belt"
+    },
+    "rain": {
+     "desc": "classic olive trench coat over a cream knit and black trousers",
+     "tag": "the woman with long wavy hair in the classic olive trench coat"
+    },
+    "home": {
+     "desc": "oversized cream knit sweater, olive lounge trousers, hair in a loose bun",
+     "tag": "the woman with long wavy hair in the oversized cream knit sweater"
+    },
+    "gym": {
+     "desc": "olive green sports top and matching leggings, cream zip-up jacket, hair in a high ponytail",
+     "tag": "the woman with long wavy hair in the olive green sports top and matching leggings"
+    },
+    "formal": {
+     "desc": "floor-length olive green satin gown with a muted gold belt, hair styled in soft waves",
+     "tag": "the woman with long wavy hair in the floor-length olive green satin gown with muted gold belt"
+    },
+    "denim": {
+     "desc": "light blue denim jacket over a white fitted t-shirt, high-waisted black wide-leg trousers with a black belt",
+     "tag": "the woman with long wavy hair in the light blue denim jacket"
+    },
+    "pyjamas": {
+     "desc": "soft sage-green long-sleeve two-piece pyjama set with long trousers, fluffy cream slippers, hair in a loose messy bun",
+     "tag": "the woman with long wavy hair in the sage-green pyjamas"
+    }
+   },
+   "tts": {
+    "engine": "qwen_design",
+    "model": "models/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "design": "A woman in her late twenties with a low, warm, slightly husky voice, relaxed and unhurried, neutral American accent, dry and quietly amused; a real actress in an understated workplace sitcom, natural and conversational, never theatrical.",
+    "base_direction": "",
+    "chosen": "2026-11-18 voice test option I (user pick); previous: chatterbox reference.wav"
+   },
+   "style": "vibrant modern 2D anime-inspired character illustration, like a polished animated series character sheet, clean confident dark outlines, warm cel shading with soft highlights, large expressive brown eyes, attractive appealing faces, natural adult proportions, rich saturated colours"
+  },
+  {
+   "id": "benny",
+   "name": "Ryan",
+   "look": "a cheerful young man in his mid twenties with fair skin with a warm peachy undertone, thick curly dark brown hair, big expressive brown eyes, a wide confident grin, burnt-orange zip-up hoodie worn open over a white t-shirt, black crossbody bag strap across his chest, black wristwatch, navy blue cargo trousers, white and orange sneakers",
+   "voice": "A charming young man in his late twenties with a warm, pleasant male voice, friendly and sincere, energetic and very expressive, casual neutral English accent, natural comedic timing.",
+   "role": "",
+   "real_person": false,
+   "tag": "the young man with curly hair in the orange hoodie",
+   "outfits": {
+    "evening": {
+     "desc": "dark brown bomber jacket over a grey crew-neck t-shirt, black slim jeans",
+     "tag": "the young man with curly hair in the dark brown bomber jacket"
+    },
+    "smart_casual": {
+     "desc": "navy unstructured blazer over a cream knit polo, charcoal tailored trousers",
+     "tag": "the young man with curly hair in the navy unstructured blazer"
+    },
+    "office": {
+     "desc": "light blue oxford shirt with sleeves rolled, navy chinos, burnt-orange knit tie loosened",
+     "tag": "the young man with curly hair in the light blue oxford shirt with sleeves rolled"
+    },
+    "date_night": {
+     "desc": "charcoal knit polo shirt tucked into cream pleated trousers, brown suede bomber",
+     "tag": "the young man with curly hair in the charcoal knit polo shirt tucked into cream pleated trousers"
+    },
+    "party": {
+     "desc": "burnt-orange short-sleeve camp-collar shirt with a subtle cream wave pattern, black straight trousers",
+     "tag": "the young man with curly hair in the burnt-orange short-sleeve camp-collar shirt with subtle cream wave pattern"
+    },
+    "winter": {
+     "desc": "navy padded puffer jacket over a burnt-orange hoodie, charcoal wool trousers",
+     "tag": "the young man with curly hair in the navy padded puffer jacket"
+    },
+    "summer": {
+     "desc": "cream short-sleeve linen shirt open over a burnt-orange t-shirt, navy shorts",
+     "tag": "the young man with curly hair in the cream short-sleeve linen shirt open"
+    },
+    "rain": {
+     "desc": "navy hooded rain jacket over a cream hoodie, charcoal joggers",
+     "tag": "the young man with curly hair in the navy hooded rain jacket"
+    },
+    "home": {
+     "desc": "faded burnt-orange oversized t-shirt, grey sweatpants",
+     "tag": "the young man with curly hair in the faded burnt-orange oversized t-shirt"
+    },
+    "gym": {
+     "desc": "navy athletic t-shirt, charcoal training shorts, burnt-orange zip-up track jacket tied at the waist",
+     "tag": "the young man with curly hair in the navy athletic t-shirt"
+    },
+    "formal": {
+     "desc": "navy slim two-piece suit, crisp white shirt, burnt-orange silk tie, brown leather belt",
+     "tag": "the young man with curly hair in the navy slim two-piece suit"
+    },
+    "luckycat": {
+     "desc": "plain white t-shirt with a small simple golden-yellow lucky-cat face icon printed on the chest (flat yellow and white cartoon cat face, no text), burnt-orange hoodie tied around his waist, navy cargo trousers",
+     "tag": "the young man with curly hair in the plain white t-shirt with small simple golden-yellow lucky-cat face icon printed on the chest (flat yellow and white cartoon cat face"
+    }
+   },
+   "tts": {
+    "engine": "qwen_custom",
+    "speaker": "Ryan",
+    "model": "models/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "base_direction": "A young man in his mid-twenties, natural and conversational like a real actor in an understated workplace sitcom; he takes himself seriously and never performs a joke. Natural conversational pace; never an announcer, never cartoonish, never slow or drawn out."
+   },
+   "style": "vibrant modern 2D anime-inspired character illustration, like a polished animated series character sheet, clean confident dark outlines, warm cel shading with soft highlights, large expressive brown eyes, attractive appealing faces, natural adult proportions, rich saturated colours"
+  },
+  {
+   "id": "dana",
+   "name": "Dana",
+   "look": "a composed, sharp woman in her early forties with fair skin, short neat dark hair, rectangular glasses, a navy blazer over a white blouse, a lanyard with an ID badge",
+   "voice": "A composed woman in her early forties, low-to-mid pitch, efficient and pleasant, neutral American accent.",
+   "role": "Ryan's team lead",
+   "real_person": false,
+   "tts": {
+    "engine": "qwen_design",
+    "model": "models/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "base_direction": "",
+    "design": "A composed woman in her early forties, low-to-mid pitch, efficient and pleasant, neutral American accent; a real, busy team manager, natural and conversational, never theatrical."
+   },
+   "style": "vibrant modern 2D anime-inspired character illustration, like a polished animated series character sheet, clean confident dark outlines, warm cel shading with soft highlights, large expressive brown eyes, attractive appealing faces, natural adult proportions, rich saturated colours",
+   "tag": "the team lead with short dark hair and glasses"
+  }
+ ],
+ "environments": [
+  {
+   "id": "lift",
+   "prompt": "inside a small modern office lift: brushed steel walls, a steel handrail, a small round-button panel on the far right wall, soft white ceiling light, closed steel doors at the back",
+   "ambience": "quiet lift hum",
+   "style": "hand-painted 2D anime background art like a modern Japanese animated film (painted, illustrated, NOT photographic, not 3D), warm cinematic light, rich but soft colours, clean shapes, gentle depth, realistic perspective, no people, wide 16:9 composition, open clear floor across the foreground, furniture and props only along the back wall and the far left/right edges, nothing in the lower centre, eye-level camera. Absolutely no text: no signs with letters, no logos, no writing on boards, screens, menus or paper (screens and signs are blank or show simple pictures only)"
+  },
+  {
+   "id": "lift_lobby",
+   "prompt": "an office lift lobby in the morning: two brushed steel lift doors on the back wall with a small call-button panel between them, a potted plant at the far left edge, polished floor, cool daylight",
+   "ambience": "quiet building lobby",
+   "style": "hand-painted 2D anime background art like a modern Japanese animated film (painted, illustrated, NOT photographic, not 3D), warm cinematic light, rich but soft colours, clean shapes, gentle depth, realistic perspective, no people, wide 16:9 composition, open clear floor across the foreground, furniture and props only along the back wall and the far left/right edges, nothing in the lower centre, eye-level camera. Absolutely no text: no signs with letters, no logos, no writing on boards, screens, menus or paper (screens and signs are blank or show simple pictures only)"
+  },
+  {
+   "id": "crossing",
+   "prompt": "a city pavement at a pedestrian crossing in the morning: a traffic-light pole with a yellow push-button box at the far right edge, a striped crossing and a road behind, brick buildings and a few trees, soft daylight, no cars close by",
+   "ambience": "city street, distant traffic, birds",
+   "style": "hand-painted 2D anime background art like a modern Japanese animated film (painted, illustrated, NOT photographic, not 3D), warm cinematic light, rich but soft colours, clean shapes, gentle depth, realistic perspective, no people, wide 16:9 composition, open clear floor across the foreground, furniture and props only along the back wall and the far left/right edges, nothing in the lower centre, eye-level camera. Absolutely no text: no signs with letters, no logos, no writing on boards, screens, menus or paper (screens and signs are blank or show simple pictures only)"
+  },
+  {
+   "id": "office",
+   "prompt": "a bright open-plan office: rows of desks with monitors along the back wall, a small white wall thermostat on a pillar at the far right edge, plants, big windows with daylight",
+   "ambience": "office murmur, keyboard typing",
+   "style": "hand-painted 2D anime background art like a modern Japanese animated film (painted, illustrated, NOT photographic, not 3D), warm cinematic light, rich but soft colours, clean shapes, gentle depth, realistic perspective, no people, wide 16:9 composition, open clear floor across the foreground, furniture and props only along the back wall and the far left/right edges, nothing in the lower centre, eye-level camera. Absolutely no text: no signs with letters, no logos, no writing on boards, screens, menus or paper (screens and signs are blank or show simple pictures only)"
+  },
+  {
+   "id": "flat_evening",
+   "prompt": "a small cosy city apartment in the evening: an open-plan living room with a sofa on the right, a small kitchen table with two chairs on the left, a bookshelf and a framed poster on the back wall, warm floor-lamp light, dark blue window",
+   "ambience": "quiet apartment hum, distant traffic",
+   "style": "hand-painted 2D anime background art like a modern Japanese animated film (painted, illustrated, NOT photographic, not 3D), warm cinematic light, rich but soft colours, clean shapes, gentle depth, realistic perspective, no people, wide 16:9 composition, open clear floor across the foreground, furniture and props only along the back wall and the far left/right edges, nothing in the lower centre, eye-level camera. Absolutely no text: no signs with letters, no logos, no writing on boards, screens, menus or paper (screens and signs are blank or show simple pictures only)"
+  }
+ ],
+ "scenes": [
+  {
+   "kind": "screen",
+   "environment": "",
+   "cast": [],
+   "screen": {
+    "type": "panel",
+    "style": "lift",
+    "buttons": [
+     {
+      "label": "OPEN"
+     },
+     {
+      "label": "CLOSE",
+      "hot": true
+     }
+    ],
+    "presses": [
+     0.15,
+     0.4,
+     0.62,
+     0.85,
+     1.05,
+     1.3,
+     1.5,
+     1.72,
+     1.95,
+     2.2,
+     2.45
+    ]
+   },
+   "lines": [
+    {
+     "speaker": "benny",
+     "text": "Every second counts.",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "two_shot",
+     "act": "speaks seriously with a calm, neutral face, no smile",
+     "voice": "rationalising"
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "hold": 2.8,
+   "top_text": [
+    {
+     "text": "This button has done nothing since 1990.",
+     "at": 0.1
+    }
+   ],
+   "id": "s01",
+   "narration": "Every second counts.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "stage",
+   "environment": "lift",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left",
+     "outfit": "office"
+    },
+    {
+     "char": "maya",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "maya",
+     "text": "That button doesn't do anything.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "two_shot",
+     "act": "speaks seriously with a calm, neutral face, no smile",
+     "voice": "dry"
+    },
+    {
+     "speaker": "benny",
+     "text": "It does for me.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot",
+     "pause_after": 0.9,
+     "act": "keeps pressing a button off to the side without looking",
+     "voice": "deadpan"
+    },
+    {
+     "speaker": "benny",
+     "text": "See?",
+     "emotion": "confident",
+     "pose": "point",
+     "shot": "two_shot",
+     "act": "speaks seriously with a calm, neutral face, no smile",
+     "voice": "rationalising"
+    },
+    {
+     "speaker": "maya",
+     "text": "They were closing anyway.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "two_shot",
+     "act": "speaks seriously with a calm, neutral face, no smile",
+     "voice": "dry"
+    },
+    {
+     "speaker": "benny",
+     "text": "Because I asked.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot",
+     "act": "speaks seriously with a calm, neutral face, no smile",
+     "voice": "deadpan"
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s02",
+   "narration": "That button doesn't do anything. It does for me. See? They were closing anyway. Because I asked.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "screen",
+   "environment": "",
+   "cast": [],
+   "screen": {
+    "type": "panel",
+    "style": "crossing",
+    "buttons": [
+     {
+      "label": "PUSH",
+      "hot": true
+     }
+    ],
+    "presses": [
+     0.3,
+     0.7,
+     1.1,
+     1.5
+    ],
+    "caption": "NYC, 2004: 2,500 of 3,250 crossing buttons were placebos"
+   },
+   "lines": [
+    {
+     "speaker": "maya",
+     "text": "In London, during the day, the button has no effect. It works between midnight and seven a.m.",
+     "emotion": "sarcastic",
+     "pose": "shrug",
+     "shot": "two_shot",
+     "act": "speaks seriously with a calm, neutral face, no smile",
+     "voice": "dry"
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s03",
+   "narration": "In London, during the day, the button has no effect. It works between midnight and seven a.m.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "stage",
+   "environment": "crossing",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left",
+     "outfit": "office"
+    },
+    {
+     "char": "maya",
+     "position": "right"
+    }
+   ],
+   "lines": [
+    {
+     "speaker": "benny",
+     "text": "So I'm only in charge between midnight and seven.",
+     "emotion": "sad",
+     "pose": "worried",
+     "shot": "two_shot",
+     "act": "checks his watch, then looks at the crossing button",
+     "voice": "deflated"
+    }
+   ],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "id": "s04",
+   "narration": "So I'm only in charge between midnight and seven.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "stage",
+   "environment": "office",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "center",
+     "outfit": "office"
+    }
+   ],
+   "lines": [],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "hold": 1.8,
+   "action": "turns a small wall thermostat dial down without stopping, then walks on",
+   "id": "s05",
+   "narration": "",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "screen",
+   "environment": "",
+   "cast": [],
+   "screen": {
+    "type": "panel",
+    "style": "thermostat",
+    "reading": [
+     {
+      "at": 0,
+      "text": "23°"
+     },
+     {
+      "at": 0.4,
+      "text": "19°"
+     }
+    ]
+   },
+   "lines": [],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "hold": 1.1,
+   "id": "s06",
+   "narration": "",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "stage",
+   "environment": "office",
+   "cast": [
+    {
+     "char": "dana",
+     "position": "center"
+    }
+   ],
+   "lines": [],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "hold": 1.8,
+   "action": "turns a small wall thermostat dial back up without stopping, then walks on",
+   "id": "s07",
+   "narration": "",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "screen",
+   "environment": "",
+   "cast": [],
+   "screen": {
+    "type": "panel",
+    "style": "thermostat",
+    "reading": [
+     {
+      "at": 0,
+      "text": "19°"
+     },
+     {
+      "at": 0.4,
+      "text": "23°"
+     }
+    ]
+   },
+   "lines": [],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "hold": 1.1,
+   "id": "s08",
+   "narration": "",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "screen",
+   "environment": "",
+   "cast": [],
+   "screen": {
+    "type": "card",
+    "lines": [
+     {
+      "text": "51 of 70 heating contractors admitted installing dummy thermostats.",
+      "at": 0,
+      "size": 56
+     },
+     {
+      "text": "ACHR News, 2003",
+      "at": 0.8,
+      "size": 34,
+      "color": "#9aa8c6"
+     }
+    ],
+    "dark": true
+   },
+   "lines": [],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "hold": 2.8,
+   "id": "s09",
+   "narration": "",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "stage",
+   "environment": "office",
+   "cast": [
+    {
+     "char": "benny",
+     "position": "left",
+     "outfit": "office"
+    },
+    {
+     "char": "dana",
+     "position": "right"
+    }
+   ],
+   "lines": [],
+   "transition": "cut",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "hold": 3.4,
+   "action": "the young man on the left slowly pulls the small thermostat off the wall and stares at the bare wall behind it; the woman on the right stops and stares too, both mouths closed",
+   "id": "s10",
+   "narration": "",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  },
+  {
+   "kind": "screen",
+   "environment": "",
+   "cast": [],
+   "screen": {
+    "type": "card",
+    "lines": [
+     {
+      "text": "Which button do YOU still press?",
+      "at": 0
+     },
+     {
+      "text": "Ryan Figures It Out · link in bio",
+      "at": 1.6,
+      "size": 40
+     }
+    ],
+    "dark": true
+   },
+   "lines": [
+    {
+     "speaker": "narrator",
+     "text": "The full episode's on YouTube. Press the link. That one works.",
+     "emotion": "neutral",
+     "pose": "talk",
+     "shot": "two_shot",
+     "voice": "narration"
+    }
+   ],
+   "transition": "fade",
+   "music": "comedic",
+   "beats": [],
+   "sfx": [],
+   "hold": 4.6,
+   "id": "s11",
+   "narration": "The full episode's on YouTube. Press the link. That one works.",
+   "title_text": "",
+   "map": {
+    "label": "",
+    "countries": [],
+    "places": [],
+    "routes": []
+   },
+   "chart": {
+    "labels": [],
+    "values": [],
+    "unit": "",
+    "title": "",
+    "mode": "bars",
+    "items": []
+   },
+   "hero_prompt": ""
+  }
+ ],
+ "sources": [
+  "https://fox8.com/news/nexstar-media-wire/does-the-elevators-door-close-button-actually-do-anything/",
+  "https://www.nytimes.com/2004/02/27/nyregion/for-exercise-in-new-york-futility-push-button.html",
+  "https://www.bbc.com/news/magazine-23869955",
+  "https://www.achrnews.com/articles/92414-placebo-stats",
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC9292938/",
+  "https://www.hbs.edu/ris/Publication%20Files/Norton_Michael_The%20labor%20illusion%20How%20operational_f4269b70-3732-4fc4-8113-72d0c47533e0.pdf",
+  "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0015591",
+  "https://www.gsb.stanford.edu/insights/behavioral-impact-higher-price",
+  "https://single-market-economy.ec.europa.eu/news/electric-and-hybrid-cars-new-rules-noise-emitting-protect-vulnerable-road-users-2019-07-03_en",
+  "https://www.cnet.com/roadshow/auto-tech/bmw-m5-generates-fake-engine-noise-using-stereo/",
+  "https://tile.loc.gov/storage-services/service/ll/llglrd/2019669583/2019669583.pdf"
+ ],
+ "show": "Ryan Figures It Out",
+ "format": "vertical",
+ "no_outro": true,
+ "tags": [],
+ "narrator_voice": "maya"
+}

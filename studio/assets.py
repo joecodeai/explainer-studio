@@ -147,7 +147,7 @@ def build_background(b):
     out = os.path.join(C.BG_LIB, key + ".png")
     if not os.path.exists(out):
         p = imagegen.t2i(f"{b.get('style') or C.BG_STYLE}. {b['prompt']}", os.path.join(C.BG_LIB, "_tmp"), key, 1920, 1088)
-        Image.open(p).convert("RGB").resize((C.W, C.H), Image.LANCZOS).save(out)
+        Image.open(p).convert("RGB").resize((1920, 1080), Image.LANCZOS).save(out)
     return out
 
 

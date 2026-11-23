@@ -1,0 +1,8 @@
+file '/home/mundax/Documents/REL/ExplainerStudio/tests/acting_scene/ltx/cut0.mp4'
+file '/home/mundax/Documents/REL/ExplainerStudio/tests/acting_scene/ltx/cut1.mp4'
+file '/home/mundax/Documents/REL/ExplainerStudio/tests/acting_scene/ltx/cut2.mp4'
+file '/home/mundax/Documents/REL/ExplainerStudio/tests/acting_scene/ltx/cut3.mp4'
+file '/home/mundax/Documents/REL/ExplainerStudio/tests/acting_scene/ltx/cut4.mp4'
+file '/home/mundax/Documents/REL/ExplainerStudio/tests/acting_scene/ltx/cut5.mp4'
+file '/home/mundax/Documents/REL/ExplainerStudio/tests/acting_scene/ltx/cut6.mp4'
+file '/home/mundax/Documents/REL/ExplainerStudio/tests/acting_scene/ltx/cut7.mp4'
