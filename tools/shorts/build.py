@@ -379,12 +379,13 @@ def do_thumb():
     from PIL import ImageEnhance
     im = ImageEnhance.Color(ImageEnhance.Brightness(im).enhance(1.08)).enhance(1.05)     # punchier than the video frames
     lines = th["text"].split("|"); fs = 118 if LAND else 150
-    if LAND:                                          # text along the bottom over a dark fade, so faces stay visible
+    bottom = LAND or th.get("pos") == "bottom"
+    if bottom:                                        # text along the bottom over a dark fade, so faces stay visible
         g = Image.new("L", (1, thh)); g.putdata([int(200 * max(0, (yy - thh * 0.55) / (thh * 0.45))) for yy in range(thh)])
         im = Image.composite(Image.new("RGB", (tw, thh), "black"), im, g.resize((tw, thh)))
     d = ImageDraw.Draw(im)
     font = ImageFont.truetype("studio/fonts_reel/Montserrat-ExtraBold.ttf", fs)
-    y = thh - int(len(lines) * fs * 1.12) - 30 if LAND else 170
+    y = thh - int(len(lines) * fs * 1.12) - (30 if LAND else 260) if bottom else 170
     for k, ln in enumerate(lines):
         while d.textlength(ln, font=font) > tw - 80 and fs > 40:
             fs -= 6; font = ImageFont.truetype("studio/fonts_reel/Montserrat-ExtraBold.ttf", fs)

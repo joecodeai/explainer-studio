@@ -46,7 +46,7 @@ SHOTS = [
          "other pan holding a big bag of gold coins floating high. No people.",
       mv="The scale wobbles gently, the heavy pan with the single coin sinks a little lower and the bag of gold rises. Static camera."),
 ]
-THUMB = dict(text="BAD|DECISIONS?", refs=["jo"],
+THUMB = dict(pos="bottom", text="BAD|DECISIONS?", refs=["jo"],
              kf="Vertical: the woman from the reference holding her open purse upside down with a shocked face, while a cash machine beside her "
                 "has stuck out a small mechanical hand and is holding out its palm towards her, one coin falling into it. Bright terracotta "
                 "background. Exactly one person.")
