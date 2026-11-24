@@ -1,0 +1,31 @@
+TITLE
+If a Robot Could Do Your Job for Half the Price, Should Your Boss Hire It?
+
+DESCRIPTION
+If a machine can do a job for less, why pay a person? It sounds like simple maths, but it's one of the biggest arguments of our time. We look at both sides: power looms and cash machines, the Luddites and the hand-loom weavers, Klarna's AI experiment, and what the research actually says. Then: cheaper for whom?
+
+Chapters
+0:00 The question
+0:37 How many jobs are exposed?
+1:12 The case for efficiency
+4:21 The case for employment
+6:13 The Klarna experiment
+7:03 Is it even cheaper?
+7:41 Cheaper for whom?
+8:04 What could be done
+8:54 The verdict
+
+Sources
+- IMF blog, K. Georgieva, "AI Will Transform the Global Economy" (14 Jan 2024)
+- Goldman Sachs, "The Potentially Large Effects of Artificial Intelligence on Economic Growth" (Mar 2023)
+- World Economic Forum, Future of Jobs Report 2025
+- J. Bessen, "Toil and Technology", IMF Finance & Development (Mar 2015)
+- E. Brynjolfsson, D. Li, L. Raymond, "Generative AI at Work", NBER w31161 / QJE (2025)
+- M. Svanberg, N. Thompson et al., "Beyond AI Exposure", MIT FutureTech (2024)
+- Customer Experience Dive (2025) and Fast Company (Jan 2026) on Klarna
+- Kela, Finland's basic income experiment 2017–2018
+
+#AI #FutureOfWork #Automation #Jobs #Economics #Debate
+
+TAGS
+should ai replace workers, ai replacing jobs, will ai take my job, ai and jobs, future of work, automation, automation and jobs, ai job loss, jobs ai will replace, ai vs humans, robots taking jobs, efficiency vs employment, ai debate, ai economics, luddites, klarna ai, robot tax, universal basic income, basic income, imf ai, ai layoffs, ai unemployment, artificial intelligence, chatgpt jobs, future of jobs, economics explained, animated explainer, funny explainer, ai 2026, ai news

@@ -88,7 +88,12 @@ def ref_view(path):
     if os.path.exists(out): return out
     im = Image.open(path).convert("RGB"); w, h = im.size
     if w < h * 1.3: return path
-    im.crop((0, 0, int(w * 0.25), h)).save(out); return out
+    arr = np.asarray(im).astype(int); m = np.abs(arr - arr[5, 5]).sum(2) > 40; cols = m.any(0); xs = np.where(cols)[0]
+    if not len(xs): im.crop((0, 0, int(w * 0.25), h)).save(out); return out
+    s0 = e0 = xs[0]                                   # first run of content columns = the front view (a fixed 25% cut can miss it)
+    while e0 + 1 < w and cols[e0 + 1:e0 + 12].any(): e0 += 1
+    rows = np.where(m[:, s0:e0 + 1].any(1))[0]
+    im.crop((max(0, s0 - 20), max(0, rows[0] - 20), min(w, e0 + 20), min(h, rows[-1] + 20))).save(out); return out
 
 
 def sel(arg): return [s for s in SHOTS if not arg or s["id"] in arg.split(",")]
@@ -144,7 +149,7 @@ def do_anim(arg="", seed=21):
     os.makedirs(f"{OUT}/clips", exist_ok=True)
     tl = json.load(open(f"{OUT}/timeline.json")); idx = {x["id"]: i for i, x in enumerate(tl)}
     for s in sorted(sel(arg), key=lambda s: s["eng"] != "ltx"):
-        if s["eng"] in ("card", "still"): continue           # CPU shots: do_cpu
+        if s["eng"] in ("card", "still") or s["id"] not in idx: continue           # CPU shots: do_cpu; unvoiced shots: later
         out = f"{OUT}/clips/{s['id']}_{s['eng']}_s{seed}.mp4"
         if os.path.exists(out): continue
         secs = max(5, int(np.ceil(seg_len(idx[s["id"]], tl)[1] + 0.5)))
@@ -186,7 +191,8 @@ def do_cpu(arg="", seed=21):
     """Cards and still shots (keyframe + smooth camera move) need no GPU: render them in parallel."""
     from multiprocessing import Pool
     tl = json.load(open(f"{OUT}/timeline.json")); idx = {x["id"]: i for i, x in enumerate(tl)}; os.makedirs(f"{OUT}/clips", exist_ok=True)
-    jobs = [(s, f"{OUT}/clips/{s['id']}_{s['eng']}_s{seed}.mp4", seg_len(idx[s["id"]], tl)[1] + 0.3) for s in sel(arg) if s["eng"] in ("card", "still")]
+    jobs = [(s, f"{OUT}/clips/{s['id']}_{s['eng']}_s{seed}.mp4", seg_len(idx[s["id"]], tl)[1] + 0.3) for s in sel(arg) if s["eng"] in ("card", "still")
+            and s["id"] in idx and (s["eng"] == "card" or os.path.exists(f"{OUT}/keyframes/{s['id']}.png"))]   # skip shots not voiced/drawn yet
     jobs = [j for j in jobs if not os.path.exists(j[1])]; t0 = time.time()
     with Pool(min(12, max(1, len(jobs)))) as pool:
         for o in pool.imap_unordered(cpu_job, jobs): print("clip", o, flush=True)
@@ -352,6 +358,54 @@ def do_mix():
                     "-vf", f"subtitles={OUT}/captions.ass:fontsdir={os.path.abspath('studio/fonts_reel')}", "-af", "loudnorm=I=-14:TP=-1.5:LRA=9",
                     "-c:v", "libx264", "-crf", "17", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-shortest", final], check=True)
     print("done", final, "%.1fs" % total, flush=True)
+    do_export()
+
+
+def do_thumb():
+    """Thumbnail from topic THUMB: a fresh flat keyframe plus big outlined text ("LINE1|LINE2", 2nd line yellow). 1280x720 or 1080x1920."""
+    from PIL import Image, ImageDraw, ImageFont, ImageFilter
+    th = T.THUMB; os.makedirs(f"{OUT}/thumb", exist_ok=True); raw = f"{OUT}/thumb/raw.png"
+    if not os.path.exists(raw):
+        h3.free(); comfy.start()
+        full = f"{STYLE} {FRAME} eye-catching YouTube thumbnail illustration, bold simple composition, big expressive faces. {th['kf']}"
+        rp = [ref_view(REFS[r]) for r in th.get("refs", [])]
+        got = (imagegen.edit(full, rp, f"{OUT}/thumb", "raw", KW, KH, seed=77, fixed_size=True) if rp
+               else imagegen.t2i(full, f"{OUT}/thumb", "raw", KW, KH, seed=77))
+        shutil.move(got, raw)
+    tw, thh = (1280, 720) if LAND else (1080, 1920)
+    im = Image.open(raw).convert("RGB"); sc = max(tw / im.width, thh / im.height)
+    im = im.resize((int(im.width * sc), int(im.height * sc)), Image.LANCZOS)
+    im = im.crop(((im.width - tw) // 2, (im.height - thh) // 2, (im.width - tw) // 2 + tw, (im.height - thh) // 2 + thh))
+    from PIL import ImageEnhance
+    im = ImageEnhance.Color(ImageEnhance.Brightness(im).enhance(1.08)).enhance(1.05)     # punchier than the video frames
+    lines = th["text"].split("|"); fs = 118 if LAND else 150
+    if LAND:                                          # text along the bottom over a dark fade, so faces stay visible
+        g = Image.new("L", (1, thh)); g.putdata([int(200 * max(0, (yy - thh * 0.55) / (thh * 0.45))) for yy in range(thh)])
+        im = Image.composite(Image.new("RGB", (tw, thh), "black"), im, g.resize((tw, thh)))
+    d = ImageDraw.Draw(im)
+    font = ImageFont.truetype("studio/fonts_reel/Montserrat-ExtraBold.ttf", fs)
+    y = thh - int(len(lines) * fs * 1.12) - 30 if LAND else 170
+    for k, ln in enumerate(lines):
+        while d.textlength(ln, font=font) > tw - 80 and fs > 40:
+            fs -= 6; font = ImageFont.truetype("studio/fonts_reel/Montserrat-ExtraBold.ttf", fs)
+        x = 40 if LAND else (tw - d.textlength(ln, font=font)) / 2
+        d.text((x, y), ln, font=font, fill="#FFD84D" if k else "white", stroke_width=max(6, fs // 11), stroke_fill="black")
+        y += int(fs * 1.12)
+    out = f"{OUT}/thumbnail.jpg"; im.save(out, quality=92); print("thumb", out, flush=True)
+
+
+def do_export():
+    """Finished files go to VIDEOS/<FOLDER>/<YouTube Video|Reel>/ (video hard-linked, upload text copied); projects/ is only the workspace."""
+    kind = "YouTube Video" if LAND else "Reel"; dst = os.path.join("VIDEOS", getattr(T, "FOLDER", TOPIC), kind); os.makedirs(dst, exist_ok=True)
+    final = f"{OUT}/{TOPIC.upper()}_{'VIDEO' if LAND else 'SHORT'}.mp4"; name = getattr(T, "FOLDER", TOPIC) + (" - YouTube Video" if LAND else " - Reel")
+    if os.path.exists(final):
+        v = os.path.join(dst, name + ".mp4")
+        if os.path.exists(v): os.remove(v)
+        os.link(final, v)
+    if os.path.exists(f"{OUT}/thumbnail.jpg"): shutil.copy(f"{OUT}/thumbnail.jpg", os.path.join(dst, "Thumbnail.jpg"))
+    for t in ("YOUTUBE_VIDEO.txt", "YOUTUBE_SHORT.txt"):
+        if os.path.exists(f"{OUT}/{t}"): shutil.copy(f"{OUT}/{t}", os.path.join(dst, "Upload text.txt"))
+    print("exported", dst, flush=True)
 
 
 if __name__ == "__main__":
@@ -361,4 +415,4 @@ if __name__ == "__main__":
         do_voice(); do_refs(); do_kf(); do_anim(); do_cpu(); do_sheets(); do_mix()
     else:
         {"voice": do_voice, "refs": do_refs, "kf": lambda: do_kf(arg), "anim": lambda: do_anim(arg, seed), "cpu": lambda: do_cpu(arg, seed),
-         "sheets": do_sheets, "mix": do_mix}[st]()
+         "sheets": do_sheets, "mix": do_mix, "export": do_export, "thumb": do_thumb}[st]()

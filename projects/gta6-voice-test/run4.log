@@ -1,38 +1,0 @@
-/bin/sh: 1: sox: not found
-SoX could not be found!
-
-    If you do not have SoX, proceed here:
-     - - - http://sox.sourceforge.net/ - - -
-
-    If you do (or think that you should) have SoX, double-check your
-    path variables.
-    
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-/home/mundax/Documents/REL/ExplainerStudio/.venv-tts/lib/python3.11/site-packages/perth/perth_net/__init__.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
-  from pkg_resources import resource_filename
-pick 9291fb0cd5.wav.cb.wav [under_breath] sim 0.834 wer 0.00 pitch 2.9 rate 1.9 | sim 0.847 wer 0.00 pitch 4.9 rate 2.7 | sim 0.876 wer 0.00 pitch 2.9 rate 2.6 * | sim 0.850 wer 0.00 pitch 3.6 rate 2.1
-/home/mundax/Documents/REL/ExplainerStudio/.venv-tts/lib/python3.11/site-packages/perth/perth_net/__init__.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
-  from pkg_resources import resource_filename
-/home/mundax/Documents/REL/ExplainerStudio/.venv-tts/lib/python3.11/site-packages/diffusers/models/lora.py:393: FutureWarning: `LoRACompatibleLinear` is deprecated and will be removed in version 1.0.0. Use of `LoRACompatibleLinear` is deprecated. Please switch to PEFT backend by installing PEFT: `pip install peft`.
-  deprecate("LoRACompatibleLinear", "1.0.0", deprecation_message)
-/home/mundax/.local/share/uv/python/cpython-3.11.18-linux-x86_64-gnu/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
-  self.gen = func(*args, **kwds)
-LlamaModel is using LlamaSdpaAttention, but `torch.nn.functional.scaled_dot_product_attention` does not support `output_attentions=True`. Falling back to the manual attention implementation, but specifying the manual implementation will be required from Transformers version v5.0.0 onwards. This warning can be removed using the argument `attn_implementation="eager"` when loading the model.
-loaded PerthNet (Implicit) at step 250,000
-Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
-Sampling:   1%|          | 12/1000 [00:00<00:08, 117.29it/s]Sampling:   3%|▎         | 27/1000 [00:00<00:07, 132.84it/s]Sampling:   4%|▍         | 42/1000 [00:00<00:07, 136.74it/s]Sampling:   6%|▌         | 56/1000 [00:00<00:06, 136.65it/s]Sampling:   7%|▋         | 70/1000 [00:00<00:06, 136.61it/s]Sampling:   7%|▋         | 73/1000 [00:00<00:06, 134.96it/s]
-Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|▏         | 14/1000 [00:00<00:07, 137.83it/s]Sampling:   3%|▎         | 29/1000 [00:00<00:06, 141.95it/s]Sampling:   4%|▍         | 44/1000 [00:00<00:06, 142.97it/s]Sampling:   6%|▌         | 59/1000 [00:00<00:06, 143.51it/s]Sampling:   6%|▌         | 59/1000 [00:00<00:06, 142.63it/s]
-Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|▏         | 14/1000 [00:00<00:07, 138.37it/s]Sampling:   3%|▎         | 29/1000 [00:00<00:06, 142.23it/s]Sampling:   4%|▍         | 44/1000 [00:00<00:06, 143.86it/s]Sampling:   6%|▌         | 59/1000 [00:00<00:06, 144.41it/s]Sampling:   6%|▋         | 64/1000 [00:00<00:06, 143.59it/s]
-Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|▏         | 14/1000 [00:00<00:07, 134.15it/s]Sampling:   3%|▎         | 29/1000 [00:00<00:06, 139.60it/s]Sampling:   4%|▍         | 44/1000 [00:00<00:06, 142.12it/s]Sampling:   6%|▌         | 59/1000 [00:00<00:06, 143.06it/s]Sampling:   7%|▋         | 74/1000 [00:00<00:06, 143.60it/s]Sampling:   8%|▊         | 76/1000 [00:00<00:06, 142.29it/s]
-Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|▏         | 14/1000 [00:00<00:07, 137.03it/s]Sampling:   3%|▎         | 29/1000 [00:00<00:06, 141.69it/s]Sampling:   4%|▍         | 44/1000 [00:00<00:06, 143.15it/s]Sampling:   6%|▌         | 59/1000 [00:00<00:06, 144.02it/s]Sampling:   7%|▋         | 67/1000 [00:00<00:06, 143.14it/s]
-Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   1%|▏         | 14/1000 [00:00<00:07, 135.74it/s]Sampling:   3%|▎         | 29/1000 [00:00<00:06, 139.97it/s]Sampling:   4%|▍         | 44/1000 [00:00<00:06, 141.51it/s]Sampling:   6%|▌         | 59/1000 [00:00<00:06, 142.20it/s]Sampling:   6%|▋         | 64/1000 [00:00<00:06, 141.35it/s]
-tts d72208d1ea.wav.cb.wav [dry] sim 0.883 wer 0.00 pitch 4.4 rate 5.2 * | sim 0.828 wer 0.00 pitch 2.8 rate 5.3 | sim 0.845 wer 0.00 pitch 3.2 rate 5.8 | sim 0.882 wer 0.00 pitch 4.3 rate 5.3 | sim 0.816 wer 0.00 pitch 3.6 rate 5.5 | sim 0.848 wer 0.00 pitch 3.5 rate 5.8
-
-********
-Warning: flash-attn is not installed. Will only run the manual PyTorch version. Please install flash-attn for faster inference.
-********
- 
-done projects/gta6-voice-test/VOICE_TEST.wav

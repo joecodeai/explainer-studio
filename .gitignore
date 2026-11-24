@@ -70,3 +70,8 @@ projects/**/*.wav
 projects/**/*.flac
 projects/**/*.mp3
 *.bak*
+
+# Finished videos live outside git (keep upload texts)
+VIDEOS/**/*.mp4
+VIDEOS/**/*.jpg
+projects/**/thumb/
