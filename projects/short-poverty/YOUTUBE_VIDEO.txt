@@ -1,0 +1,34 @@
+TITLE
+Are Poor People Poor Because of Bad Decisions?
+
+DESCRIPTION
+In America, a bank can charge you $35 for not having enough money. So are poor people poor because of bad choices, or because being poor is unbelievably expensive? We audit both sides: the "success sequence", the marshmallow test and what it really measured, the scarcity experiments with New Jersey shoppers and Indian sugarcane farmers, payday loans and the poverty premium, where you're born, Raj Chetty's Moving to Opportunity research, and what happens when you just give people cash. Then: the honest verdict.
+
+Chapters
+(filled after the edit)
+
+Sources
+- CFPB, "Data Point: Checking account overdraft" (2014) and "Overdraft and Nonsufficient Fund Fees" (Dec 2023)
+- R. Haskins & I. Sawhill, "Creating an Opportunity Society" (Brookings, 2009), via ACF/OPRE "Success Sequence: A Synthesis of the Literature" (2020)
+- W. Wang & W. B. Wilcox, "The Millennial Success Sequence" (AEI/IFS, 2017)
+- Congressional Research Service, "Poverty in the United States in 2022" (R48055)
+- T. Watts, G. Duncan & H. Quan, "Revisiting the Marshmallow Test", Psychological Science (2018)
+- C. Kidd, H. Palmeri & R. Aslin, "Rational snacking", Cognition (2013)
+- A. Mani, S. Mullainathan, E. Shafir & J. Zhao, "Poverty Impedes Cognitive Function", Science (2013)
+- S. Mullainathan & E. Shafir, "Scarcity: Why Having Too Little Means So Much" (2013)
+- T. Pratchett, "Men at Arms" (1993)
+- CFPB on payday loan costs; Pew Charitable Trusts, "Payday Lending in America" (2012)
+- Fair By Design & University of Bristol PFRC, "Paying More for Less: The Poverty Premium in 2026"
+- B. Milanovic, "Global Inequality of Opportunity", Review of Economics and Statistics (2015)
+- UN SDG Report 2025 / World Bank June 2025 poverty line update
+- R. Chetty et al., "Where is the Land of Opportunity?", QJE (2014)
+- R. Chetty, N. Hendren & L. Katz, "The Effects of Exposure to Better Neighborhoods on Children", AER (2016); HUD Moving to Opportunity
+- US Census Bureau, "Dynamics of Economic Well-Being: Poverty 2009-2011" (P70-137)
+- D. Evans & A. Popova, "Cash Transfers and Temptation Goods", World Bank (2014)
+- J. Haushofer & J. Shapiro, QJE (2016); D. Egger et al., "General Equilibrium Effects of Cash Transfers", Econometrica (2022)
+- OpenResearch Unconditional Cash Study (2024)
+
+#Poverty #Economics #Money #PovertyPremium #Explained #Debate
+
+TAGS
+are poor people poor because of bad decisions, why are poor people poor, poverty explained, causes of poverty, is poverty a choice, cost of being poor, poverty premium, boots theory, sam vimes boots theory, payday loans, overdraft fees, scarcity mindset, success sequence, marshmallow test, raj chetty, moving to opportunity, social mobility, american dream, cash transfers, universal basic income, givedirectly, inequality, personal finance, economics explained, animated explainer, poverty

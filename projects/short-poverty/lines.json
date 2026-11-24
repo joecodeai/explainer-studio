@@ -1,0 +1,728 @@
+[
+ {
+  "id": "p00",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Are poor people poor because they make bad decisions? Possibly. Although in America, a bank can charge you thirty-five dollars for not having enough money.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p01",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "It's called an overdraft fee. In 2014, America's consumer watchdog worked out that a typical overdraft, treated as a loan, has an annual interest rate of about seventeen thousand percent.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p02",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "deadpan",
+    "text": "Can I get that rate on my savings?",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p03",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "So today, let's audit a popular opinion. The idea that people are poor mainly because of the choices they make. We'll look at the evidence for it, the evidence against it, and the bill.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p04",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "First, the case for. And it isn't a silly one. Choices clearly matter. Leaving school early, not working, or having children before you can support them all make life harder. Few researchers dispute that.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p05",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "In 2009, the Brookings researchers Ron Haskins and Isabel Sawhill popularised what's now called the success sequence. Finish high school, work full time, and marry before having children.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p06",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Of the households that managed all three, about two percent were poor. Of the households that managed none, seventy-six percent were.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p07",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "A 2017 study of millennials found the same pattern. Ninety-seven percent of those who followed the sequence weren't poor by their late twenties and early thirties.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p08",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Those numbers get quoted a lot. Usually by someone who followed the sequence, and would like you to know about it.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p09",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "And work really is the big one. In 2022, fewer than two percent of working-age Americans who worked full time all year were in poverty. Brookings researchers found that of the three steps, a full-time job made by far the biggest difference.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p10",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "So the decisions argument goes like this. Poverty isn't random. It's strongly linked to things people do. And telling people that nothing they do makes a difference isn't kindness. It's a polite way of giving up on them.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p11",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Now the audit. First, a correlation isn't a cause. People who manage school, steady work and marriage are often people who already had a stable home, a job nearby, and someone to help with the kids.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p12",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "A 2020 review for the US government said much the same. The links are clear. Whether the sequence itself causes the results is much less clear.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p13",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Getting full-time work is partly a choice. It's also whether anyone nearby is hiring, whether the bus runs at six in the morning, and who looks after your kids.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p14",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Or take the most famous experiment about self-control, the marshmallow test. A small child gets one marshmallow now, or two if they can wait. The original studies, at Stanford University's nursery school, suggested the patient kids did better later in life.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p15",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "In a 2013 study, an adult first made the children a promise. For some children, the adult kept it. For others, they didn't.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p16",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "The children whose adult had kept the promise waited about twelve minutes for the second marshmallow. The ones who'd just been let down waited about three.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p17",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "That isn't a lack of self-control. If the adults around you break their promises, eating the marshmallow now is the sensible choice. It's the only one you're sure of.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p18",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "In 2018, a much bigger study of more than nine hundred children found the link to later success was half the original size. Once family background and home life were taken into account, it shrank by about two thirds.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p19",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "deadpan",
+    "text": "So the marshmallow was a background check.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p20",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "But maybe the question is the wrong way round. Maybe being poor changes how people decide. That's what the economist Sendhil Mullainathan and the psychologist Eldar Shafir set out to test.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p21",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "At a shopping mall in New Jersey, they asked shoppers to imagine their car needed repairs. For some, the bill was a hundred and fifty dollars. For others, fifteen hundred. Then everyone did a reasoning test.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p22",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "With the small bill, richer and poorer shoppers did about equally well. With the big bill, the poorer shoppers' scores dropped.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p23",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "The drop was about as big as the effect of losing a full night's sleep. And nothing had actually happened. They were only imagining the bill.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p24",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Next, they went to India, to sugarcane farmers who get most of their money once a year, at harvest.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p25",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Before the harvest, money is tight and loans pile up. After it, they've got cash. The same farmers did noticeably worse on the tests before the harvest than after.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p26",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "They hadn't become less intelligent and then cleverer again a few weeks later. Their minds were simply busy with money. The researchers call it a bandwidth tax.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p27",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "It helps explain things that look like bad decisions from the outside. A missed appointment. A form filled in wrong. A bill paid late. When your head is full of this week, next year is hard to plan for.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p28",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Most people know a mild version of this. In the week before a big deadline, you forget birthdays and eat cereal for dinner. Now imagine the deadline never ends.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p29",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Then there's the price of being poor. In his 1993 novel Men at Arms, Terry Pratchett gave a city guard a theory about boots. Good boots cost fifty dollars and last ten years. Cheap ones cost ten and fall apart in a season or two.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p30",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Over ten years, the poor man spends a hundred dollars on boots and still has wet feet. People now call it the boots theory. It may be the only well-known economic idea first explained by a fictional policeman.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p31",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Real life has plenty of boots. A typical payday loan in America charges fifteen dollars for every hundred you borrow for two weeks. Over a year, that's a rate of almost four hundred percent.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p32",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Pew found the average borrower borrows three hundred and seventy-five dollars at a time, stays in debt about five months a year, and pays around five hundred and twenty dollars in fees.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p33",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "The decisions side has a point here. Payday loans are a terrible deal. And most borrowers in Pew's survey used them for regular bills like rent and food, not emergencies.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p34",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "But that's also the problem. If your income doesn't cover the rent, the choice isn't between a payday loan and a sensible savings plan. It's between a payday loan and something worse.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p35",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "In Britain, University of Bristol researchers found that nineteen in twenty low-income households pay a poverty premium. On average, three hundred and eighty pounds a year extra for the same essentials.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p36",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "It comes from prepayment energy meters, pricier insurance, high-cost credit, and shopping at small local branches instead of big cheap supermarkets.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p37",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Bulk buying is a classic. The giant pack of toilet roll is cheaper per roll. But you need the money for the giant pack, somewhere to keep it, and ideally a car to get it home.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p38",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "deadpan",
+    "text": "Money's cheaper if you've already got some.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p39",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Then there's the decision none of us got to make. Where we were born.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p40",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "The economist Branko Milanovic estimated that more than half of the differences in income between people around the world can be explained by the country they live in.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p41",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "And about ninety-seven percent of people still live in the country they were born in. So the biggest financial decision most people ever face was made before they were born, by nobody.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p42",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "In 2025, around eight hundred million people lived in extreme poverty, on less than three dollars a day. That isn't eight hundred million people all making the same mistake.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p43",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Even inside one rich country, where you grow up matters. The economist Raj Chetty and his team followed millions of American children into adulthood.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p44",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "A child from the poorest fifth of families had a four point four percent chance of reaching the richest fifth if they grew up in Charlotte, North Carolina. In San Jose, California, it was nearly thirteen percent.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p45",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Same country. Same currency. Same flag. Roughly three times the odds.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p46",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Of course, you could argue that families in some places just make worse choices. Which is why it helps that there was an experiment.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p47",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "In the 1990s, an American programme called Moving to Opportunity offered families in public housing vouchers to move to lower-poverty neighbourhoods.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p48",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "About four thousand six hundred families signed up, in Baltimore, Boston, Chicago, Los Angeles and New York. Who got the vouchers was decided at random, like a lottery.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p49",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Years later, Chetty's team checked on the children. Those who moved before thirteen earned thirty-one percent more in their mid-twenties than those who didn't get the chance.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p50",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "The families had all applied for the same chance. Only the street was different. For teenagers who moved, the benefit didn't show up at all, possibly because moving at that age is disruptive.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p51",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Poverty also isn't a fixed group of people. Between 2009 and 2011, almost a third of Americans spent at least two months in poverty. Only three and a half percent were poor the whole time.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p52",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Which means poverty is often something that happens to people, not something they are. A lost job, an illness, a break-up, a car that won't start. Things that happen to people who make good decisions too.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p53",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Here's a fairly direct test. If bad choices were the main problem, then giving people money should mostly be wasted. Researchers have tried it many times.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p54",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "In 2014, a World Bank review of nineteen studies looked at whether cash transfers get spent on alcohol and tobacco. Almost every result showed either no change, or a fall.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p55",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "In rural Kenya, the charity GiveDirectly gives poor families large one-off cash grants. In an early study, people mostly spent the money on food, livestock, furniture and metal roofs.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p56",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "A later study gave about a thousand dollars each to more than ten thousand households. For every dollar given, local economic activity rose by about two and a half dollars, because the shops that got the money spent it too.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p57",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "To be fair, cash isn't magic. In a big American study, a thousand people got a thousand dollars a month for three years. They worked a little over an hour less each week than the comparison group, and earned about five percent less from their jobs.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p58",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Money mostly gets spent on what people say they need. Which is roughly what you'd expect if the main problem was a lack of money.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p59",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "So, are poor people poor because of bad decisions?",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p60",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Sometimes, partly. Choices do matter, and the success sequence isn't wrong that finishing school, steady work and a stable family make poverty much less likely.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p61",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "But those choices are made on a very uneven board. Where you're born, where you grow up, what happens to you, and what poverty itself costs all shape the options before anyone decides anything.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p62",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "And being poor makes good decisions harder and bad ones more expensive. When a rich person makes a mistake, it's an anecdote. When a poor person makes one, it comes with a late fee.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p63",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "deadpan",
+    "text": "Plus thirty-five dollars.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p64",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "So maybe the better question isn't whether poor people make bad decisions. Everyone does. It's why some people's bad decisions cost so much more.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "p65",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Tell us in the comments what you think. And subscribe. It's free, which, as we've learned, is unusually generous.",
+    "emotion": "neutral"
+   }
+  ]
+ }
+]

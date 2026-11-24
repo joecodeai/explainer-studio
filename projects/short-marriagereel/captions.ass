@@ -1,0 +1,78 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: C,Montserrat ExtraBold,86,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,0,0,1,7,2,2,80,80,560,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.40,0:00:01.28,C,,0,0,0,,FOUR IN TEN
+Dialogue: 0,0:00:01.28,0:00:02.64,C,,0,0,0,,AMERICANS SAY MARRIAGE
+Dialogue: 0,0:00:02.64,0:00:04.50,C,,0,0,0,,IS BECOMING OBSOLETE.
+Dialogue: 0,0:00:04.50,0:00:05.20,C,,0,0,0,,AND YET PEOPLE
+Dialogue: 0,0:00:05.20,0:00:06.02,C,,0,0,0,,STILL SPEND THE
+Dialogue: 0,0:00:06.02,0:00:06.64,C,,0,0,0,,PRICE OF A
+Dialogue: 0,0:00:06.64,0:00:07.46,C,,0,0,0,,CAR ON ONE
+Dialogue: 0,0:00:07.46,0:00:08.44,C,,0,0,0,,AFTERNOON TO DO
+Dialogue: 0,0:00:08.44,0:00:08.86,C,,0,0,0,,IT.
+Dialogue: 0,0:00:08.86,0:00:09.70,C,,0,0,0,,SO WHICH IS
+Dialogue: 0,0:00:09.70,0:00:10.17,C,,0,0,0,,IT?
+Dialogue: 0,0:00:10.21,0:00:10.93,C,,0,0,0,,IN 2021,
+Dialogue: 0,0:00:10.93,0:00:12.02,C,,0,0,0,,A RECORD QUARTER
+Dialogue: 0,0:00:12.02,0:00:13.10,C,,0,0,0,,OF AMERICAN FORTY-YEAR-OLDS
+Dialogue: 0,0:00:13.10,0:00:14.19,C,,0,0,0,,HAD NEVER MARRIED.
+Dialogue: 0,0:00:14.19,0:00:15.27,C,,0,0,0,,PEOPLE MARRY LATER,
+Dialogue: 0,0:00:15.27,0:00:16.36,C,,0,0,0,,AND MORE COUPLES
+Dialogue: 0,0:00:16.36,0:00:17.70,C,,0,0,0,,JUST LIVE TOGETHER.
+Dialogue: 0,0:00:17.83,0:00:18.45,C,,0,0,0,,BUT FOR MOST
+Dialogue: 0,0:00:18.45,0:00:19.45,C,,0,0,0,,OF HISTORY,
+Dialogue: 0,0:00:19.45,0:00:20.57,C,,0,0,0,,MARRIAGE WASN'T ABOUT
+Dialogue: 0,0:00:20.57,0:00:21.29,C,,0,0,0,,LOVE.
+Dialogue: 0,0:00:21.29,0:00:21.73,C,,0,0,0,,IT WAS ABOUT
+Dialogue: 0,0:00:21.73,0:00:22.73,C,,0,0,0,,PROPERTY,
+Dialogue: 0,0:00:22.73,0:00:24.67,C,,0,0,0,,ALLIANCES AND SURVIVAL.
+Dialogue: 0,0:00:24.67,0:00:25.05,C,,0,0,0,,FOR A LOT
+Dialogue: 0,0:00:25.05,0:00:25.75,C,,0,0,0,,OF WOMEN,
+Dialogue: 0,0:00:25.75,0:00:26.15,C,,0,0,0,,IT WAS THE
+Dialogue: 0,0:00:26.15,0:00:27.19,C,,0,0,0,,ONLY OPTION ON
+Dialogue: 0,0:00:27.19,0:00:27.78,C,,0,0,0,,THE MENU.
+Dialogue: 0,0:00:27.93,0:00:28.73,C,,0,0,0,,NOW WOMEN CAN
+Dialogue: 0,0:00:28.73,0:00:29.31,C,,0,0,0,,WORK,
+Dialogue: 0,0:00:29.31,0:00:30.37,C,,0,0,0,,OWN PROPERTY AND
+Dialogue: 0,0:00:30.37,0:00:31.15,C,,0,0,0,,BORROW MONEY ON
+Dialogue: 0,0:00:31.15,0:00:31.97,C,,0,0,0,,THEIR OWN.
+Dialogue: 0,0:00:31.97,0:00:32.49,C,,0,0,0,,MOST OF THE
+Dialogue: 0,0:00:32.49,0:00:33.57,C,,0,0,0,,REASONS MARRIAGE WAS
+Dialogue: 0,0:00:33.57,0:00:34.88,C,,0,0,0,,NECESSARY HAVE GONE.
+Dialogue: 0,0:00:34.99,0:00:35.99,C,,0,0,0,,AND THE AVERAGE
+Dialogue: 0,0:00:35.99,0:00:36.98,C,,0,0,0,,AMERICAN WEDDING NOW
+Dialogue: 0,0:00:36.98,0:00:37.98,C,,0,0,0,,COSTS THIRTY-FOUR THOUSAND
+Dialogue: 0,0:00:37.98,0:00:38.31,C,,0,0,0,,DOLLARS.
+Dialogue: 0,0:00:38.31,0:00:39.31,C,,0,0,0,,SO PLENTY OF
+Dialogue: 0,0:00:39.31,0:00:40.22,C,,0,0,0,,COUPLES WAIT.
+Dialogue: 0,0:00:40.34,0:00:41.36,C,,0,0,0,,BUT HERE'S THE
+Dialogue: 0,0:00:41.36,0:00:41.70,C,,0,0,0,,TWIST.
+Dialogue: 0,0:00:41.70,0:00:42.72,C,,0,0,0,,SIXTY-NINE PERCENT OF
+Dialogue: 0,0:00:42.72,0:00:43.74,C,,0,0,0,,NEVER-MARRIED AMERICANS AGED
+Dialogue: 0,0:00:43.74,0:00:44.76,C,,0,0,0,,EIGHTEEN TO THIRTY-FOUR
+Dialogue: 0,0:00:44.76,0:00:45.77,C,,0,0,0,,STILL WANT TO
+Dialogue: 0,0:00:45.77,0:00:46.45,C,,0,0,0,,MARRY SOMEDAY.
+Dialogue: 0,0:00:46.45,0:00:47.47,C,,0,0,0,,AND DIVORCE RATES
+Dialogue: 0,0:00:47.47,0:00:48.49,C,,0,0,0,,ARE DOWN A
+Dialogue: 0,0:00:48.49,0:00:49.75,C,,0,0,0,,LOT SINCE 1980.
+Dialogue: 0,0:00:49.91,0:00:50.47,C,,0,0,0,,SO,
+Dialogue: 0,0:00:50.47,0:00:51.19,C,,0,0,0,,NOT DEAD.
+Dialogue: 0,0:00:51.19,0:00:51.98,C,,0,0,0,,JUST PICKIER.
+Dialogue: 0,0:00:52.01,0:00:53.17,C,,0,0,0,,MARRIAGE ISN'T BECOMING
+Dialogue: 0,0:00:53.17,0:00:54.29,C,,0,0,0,,OBSOLETE.
+Dialogue: 0,0:00:54.29,0:00:55.59,C,,0,0,0,,IT'S BECOMING OPTIONAL.
+Dialogue: 0,0:00:55.59,0:00:56.39,C,,0,0,0,,FEWER PEOPLE DO
+Dialogue: 0,0:00:56.39,0:00:56.79,C,,0,0,0,,IT,
+Dialogue: 0,0:00:56.79,0:00:57.43,C,,0,0,0,,LATER,
+Dialogue: 0,0:00:57.43,0:00:58.23,C,,0,0,0,,AND FOR LOVE.
+Dialogue: 0,0:00:58.23,0:00:58.91,C,,0,0,0,,THE FULL STORY
+Dialogue: 0,0:00:58.91,0:00:59.41,C,,0,0,0,,IS ON OUR
+Dialogue: 0,0:00:59.41,0:00:59.96,C,,0,0,0,,CHANNEL.

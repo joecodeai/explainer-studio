@@ -1,0 +1,8 @@
+file '/home/mundax/Documents/REL/ExplainerStudio/projects/short-marriagereel/seg/00.mp4'
+file '/home/mundax/Documents/REL/ExplainerStudio/projects/short-marriagereel/seg/01.mp4'
+file '/home/mundax/Documents/REL/ExplainerStudio/projects/short-marriagereel/seg/02.mp4'
+file '/home/mundax/Documents/REL/ExplainerStudio/projects/short-marriagereel/seg/03.mp4'
+file '/home/mundax/Documents/REL/ExplainerStudio/projects/short-marriagereel/seg/04.mp4'
+file '/home/mundax/Documents/REL/ExplainerStudio/projects/short-marriagereel/seg/05.mp4'
+file '/home/mundax/Documents/REL/ExplainerStudio/projects/short-marriagereel/seg/06.mp4'
+file '/home/mundax/Documents/REL/ExplainerStudio/projects/short-marriagereel/seg/07.mp4'
