@@ -16,7 +16,10 @@ from studio.hero import NEG
 TOPIC = sys.argv[1]
 T = importlib.import_module(f"topics.{TOPIC}")
 OUT = f"projects/short-{TOPIC}"
-W_, H_ = 1080, 1920
+LAND = getattr(T, "LANDSCAPE", False)          # 16:9 long video instead of a 9:16 Short
+W_, H_ = (1920, 1080) if LAND else (1080, 1920)
+KW, KH = (1344, 768) if LAND else (768, 1344)
+FRAME = "16:9 widescreen" if LAND else "9:16 vertical"
 GAP, HEAD = getattr(T, "GAP", 0.3), 0.4
 TAIL = getattr(T, "TAIL", 3.0)
 STYLE = ("2D hand-drawn animated feature film still, cel-shaded characters with clean confident ink outlines and soft painted shading, "
@@ -30,7 +33,7 @@ ONCE = " The reference images show ONE character each: draw each referenced char
 LOOK = ("2D hand-drawn animated feature film, cel-shaded characters with clean ink outlines, painted backgrounds, "
         "smooth fluid professional character animation with weight, anticipation and follow-through, cinematic camera.")
 STYLE = getattr(T, "STYLE", STYLE); ENV_STYLE = getattr(T, "ENV_STYLE", ENV_STYLE); LOOK = getattr(T, "LOOK", LOOK)
-LTX_W, LTX_H = getattr(T, "LTX_WH", (704, 1280))        # flat 2D renders at half size and is upscaled in the mix
+LTX_W, LTX_H = getattr(T, "LTX_WH", (896, 512) if LAND else (704, 1280))        # flat 2D renders at half size and is upscaled in the mix
 REFS = {"ryan": "library/show_refs/benny_front.png", "ryan_face": "library/show_refs/benny_face.png"}
 REFS.update({c: f"{OUT}/refs/{c}.png" for c in getattr(T, "CHARS", {})})
 M, R = "maya", "benny"
@@ -50,13 +53,14 @@ def do_voice():
     chars = [{k: c[k] for k in ("id", "name", "look", "voice") if k in c} | ({"tts": c["tts"]} if c.get("tts") else {}) for c in sh["cast"]]
     for c in chars:                                   # topic-level voice reference (same identity, different read), e.g. Maya's lively lock
         if c["id"] in getattr(T, "VOICE_REF", {}): c["tts"] = dict(c["tts"], **T.VOICE_REF[c["id"]])
-    scenes = [{"id": s["id"], "lines": [{"speaker": s["spk"], "voice": s.get("tag", "narration"), "text": s["text"], "emotion": "neutral"}]} for s in SHOTS]
+    scenes = [{"id": s["id"], "lines": [{"speaker": s["spk"], "voice": s.get("tag", "narration"), "text": s["text"], "emotion": "neutral"}]} for s in SHOTS
+              if not os.path.exists(wav(s))]                 # only lines without audio yet (added shots)
     os.makedirs(f"{OUT}/audio", exist_ok=True)
     json.dump(scenes, open(f"{OUT}/lines.json", "w"), indent=1)
-    voice.narrate({"characters": chars, "narrator_voice": sh.get("narrator"), "scenes": scenes}, f"{OUT}/audio")
+    if scenes: voice.narrate({"characters": chars, "narrator_voice": sh.get("narrator"), "scenes": scenes}, f"{OUT}/audio")
     if TEMPO != 1.0:
         for s in SHOTS:
-            subprocess.run(["ffmpeg", "-nostdin", "-y", "-v", "error", "-i", f"{OUT}/audio/{s['id']}.wav", "-af", f"atempo={TEMPO}", wav(s)], check=True)
+            if not os.path.exists(wav(s)): subprocess.run(["ffmpeg", "-nostdin", "-y", "-v", "error", "-i", f"{OUT}/audio/{s['id']}.wav", "-af", f"atempo={TEMPO}", wav(s)], check=True)
     t, tl = HEAD, []
     for s in SHOTS:
         d = sf.info(wav(s)).duration
@@ -97,12 +101,12 @@ def do_kf(arg=""):
         p = f"{OUT}/keyframes/{s['id']}.png"
         if os.path.exists(p): continue
         refs = s.get("refs", [])
-        if s.get("env"): full = f"{ENV_STYLE} 9:16 vertical cinematic film frame. {s['kf']}{NO_PEOPLE}"
-        else: full = f"{STYLE} 9:16 vertical cinematic film frame. {s['kf']}" + (ONCE if refs else "")
+        if s.get("env"): full = f"{ENV_STYLE} {FRAME} cinematic film frame. {s['kf']}{NO_PEOPLE}"
+        else: full = f"{STYLE} {FRAME} cinematic film frame. {s['kf']}" + (ONCE if refs else "")
         rp = [ref_view(REFS[r]) for r in refs]
         seed = 501 + int(hashlib.md5(s["kf"].encode()).hexdigest()[:4], 16) % 1000
-        got = (imagegen.edit(full, rp, f"{OUT}/keyframes", s["id"], 768, 1344, seed=seed, fixed_size=True) if rp
-               else imagegen.t2i(full, f"{OUT}/keyframes", s["id"], 768, 1344, seed=seed))
+        got = (imagegen.edit(full, rp, f"{OUT}/keyframes", s["id"], KW, KH, seed=seed, fixed_size=True) if rp
+               else imagegen.t2i(full, f"{OUT}/keyframes", s["id"], KW, KH, seed=seed))
         shutil.move(got, p); print("kf", p, flush=True)
 
 
@@ -140,6 +144,7 @@ def do_anim(arg="", seed=21):
     os.makedirs(f"{OUT}/clips", exist_ok=True)
     tl = json.load(open(f"{OUT}/timeline.json")); idx = {x["id"]: i for i, x in enumerate(tl)}
     for s in sorted(sel(arg), key=lambda s: s["eng"] != "ltx"):
+        if s["eng"] in ("card", "still"): continue           # CPU shots: do_cpu
         out = f"{OUT}/clips/{s['id']}_{s['eng']}_s{seed}.mp4"
         if os.path.exists(out): continue
         secs = max(5, int(np.ceil(seg_len(idx[s["id"]], tl)[1] + 0.5)))
@@ -163,22 +168,58 @@ def do_anim(arg="", seed=21):
                 talk = s["spk"] == R
                 audio = wav(s) if talk else silent(f"{OUT}/silent_{secs}.wav", secs)
                 h3.render(out, keyframe=kf, refs=[kf] if getattr(T, "H3_REF_KF", False) else [REFS[x] for x in s.get("refs", [])], audio=audio, prompt=f"{s['mv']} {LOOK}",
-                          size=(768, 1344), seconds=secs, seed=seed, mode="flex", anchor_audio=talk)
+                          size=(KW, KH), seconds=secs, seed=seed, mode="flex", anchor_audio=talk)
             print("clip", out, "%.0fs" % (time.time() - t0), flush=True)
         except Exception as e:
             print("FAILED", s["id"], repr(e)[:300], flush=True)
     comfy.free(); h3.free()
 
 
+def cpu_job(job):
+    s, out, L = job
+    if s["eng"] == "card": card(s["card"], out, L)
+    else: still(f"{OUT}/keyframes/{s['id']}.png", out, L, s.get("mv", "in"))
+    return out
+
+
+def do_cpu(arg="", seed=21):
+    """Cards and still shots (keyframe + smooth camera move) need no GPU: render them in parallel."""
+    from multiprocessing import Pool
+    tl = json.load(open(f"{OUT}/timeline.json")); idx = {x["id"]: i for i, x in enumerate(tl)}; os.makedirs(f"{OUT}/clips", exist_ok=True)
+    jobs = [(s, f"{OUT}/clips/{s['id']}_{s['eng']}_s{seed}.mp4", seg_len(idx[s["id"]], tl)[1] + 0.3) for s in sel(arg) if s["eng"] in ("card", "still")]
+    jobs = [j for j in jobs if not os.path.exists(j[1])]; t0 = time.time()
+    with Pool(min(12, max(1, len(jobs)))) as pool:
+        for o in pool.imap_unordered(cpu_job, jobs): print("clip", o, flush=True)
+    print("cpu shots %d in %.0fs" % (len(jobs), time.time() - t0), flush=True)
+
+
+def still(kf, out, seconds, mv="in", fps=24):
+    """Keyframe with a slow, smooth camera move (push in / pull out / drift) plus a gentle float, so it never sits frozen."""
+    from PIL import Image
+    im = Image.open(kf).convert("RGB"); sw, sh = im.size; n = int(seconds * fps)
+    p = subprocess.Popen(["ffmpeg", "-nostdin", "-y", "-v", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W_}x{H_}", "-r", str(fps), "-i", "-",
+                          "-c:v", "libx264", "-preset", "veryfast", "-crf", "17", "-pix_fmt", "yuv420p", out], stdin=subprocess.PIPE)
+    base = max(W_ / sw, H_ / sh)
+    for k in range(n):
+        u = k / max(1, n - 1); e = 0.5 - 0.5 * np.cos(np.pi * u); t = k / fps
+        z = {"in": 1.0 + 0.10 * e, "out": 1.10 - 0.10 * e}.get(mv, 1.08) + 0.004 * np.sin(2 * np.pi * t / 5)
+        dx = {"left": 0.035 * (1 - 2 * e), "right": -0.035 * (1 - 2 * e)}.get(mv, 0.0) * sw
+        dy = 0.004 * sh * np.sin(2 * np.pi * t / 6.5)
+        sc = 1 / (base * z); cx, cy = sw / 2 + dx, sh / 2 + dy
+        fr = im.transform((W_, H_), Image.AFFINE, (sc, 0, cx - sc * W_ / 2, 0, sc, cy - sc * H_ / 2), resample=Image.BICUBIC)
+        p.stdin.write(fr.tobytes())
+    p.stdin.close(); p.wait()
+
+
 def card(c, out, seconds, fps=24):
     """Motion-graphic card (no AI): flat background, a big word/number pops in, a small line fades in under it, slow push-in."""
     from PIL import Image, ImageDraw, ImageFont
-    fdir = "studio/fonts_reel"; big = ImageFont.truetype(f"{fdir}/Montserrat-ExtraBold.ttf", c.get("size", 300))
+    fdir = "studio/fonts_reel"; big = ImageFont.truetype(f"{fdir}/Montserrat-ExtraBold.ttf", c.get("size", 260 if LAND else 300))
     small = ImageFont.truetype(f"{fdir}/Montserrat-ExtraBold.ttf", 64)
     bg, fg, acc = c.get("bg", "#2E4A62"), c.get("fg", "#F6EBD9"), c.get("accent", "#F2A65A")
-    n = int(seconds * fps); cy = 760
+    n = int(seconds * fps); cy = H_ // 2 - (60 if LAND else 200); dy_small = 200 if LAND else 260
     p = subprocess.Popen(["ffmpeg", "-nostdin", "-y", "-v", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W_}x{H_}", "-r", str(fps), "-i", "-",
-                          "-c:v", "libx264", "-crf", "16", "-pix_fmt", "yuv420p", out], stdin=subprocess.PIPE)
+                          "-c:v", "libx264", "-preset", "veryfast", "-crf", "16", "-pix_fmt", "yuv420p", out], stdin=subprocess.PIPE)
     for k in range(n):
         t = k / fps; im = Image.new("RGB", (W_, H_), bg); d = ImageDraw.Draw(im)
         ring = tuple(min(255, int(int(bg[i:i + 2], 16) * 1.15)) for i in (1, 3, 5))
@@ -196,7 +237,7 @@ def card(c, out, seconds, fps=24):
             im.paste(layer, (0, 0), a)
         if c.get("small") and t > 0.4:
             a = min(1, (t - 0.4) / 0.4); col = tuple(int(int(bg[i:i + 2], 16) * (1 - a) + int(acc[i:i + 2], 16) * a) for i in (1, 3, 5))
-            d.text((W_ / 2, cy + 260 + int(20 * (1 - a))), c["small"], font=small, fill=col, anchor="mm")
+            d.text((W_ / 2, cy + dy_small + int(20 * (1 - a))), c["small"], font=small, fill=col, anchor="mm")
         p.stdin.write(im.tobytes())
     p.stdin.close(); p.wait()
 
@@ -249,10 +290,10 @@ def line_words(s):
 
 def captions(tl, total):
     def ts(t): h, m = divmod(t, 3600); m, s = divmod(m, 60); return f"{int(h)}:{int(m):02d}:{s:05.2f}"
-    head = ("[Script Info]\nScriptType: v4.00+\nPlayResX: 1080\nPlayResY: 1920\n\n[V4+ Styles]\n"
+    head = (f"[Script Info]\nScriptType: v4.00+\nPlayResX: {W_}\nPlayResY: {H_}\n\n[V4+ Styles]\n"
             "Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, "
             "ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding\n"
-            "Style: C,Montserrat ExtraBold,86,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,0,0,1,7,2,2,80,80,560,1\n\n"
+            + ("Style: C,Montserrat ExtraBold,64," if LAND else "Style: C,Montserrat ExtraBold,86,") + "&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,0,0,1,7,2,2,80,80," + ("70" if LAND else "560") + ",1\n\n"
             "[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n")
     ev = []
     for x, s in zip(tl, SHOTS):
@@ -291,9 +332,9 @@ def do_mix():
         o = f"{OUT}/seg/{i:02d}.mp4"
         vf = slow + f"scale={W_}:{H_}:force_original_aspect_ratio=increase:flags=lanczos,crop={W_}:{H_},fps=24" + (f",tpad=stop_mode=clone:stop_duration={pad:.3f}" if pad > 0 else "")
         subprocess.run(["ffmpeg", "-nostdin", "-y", "-v", "error", "-ss", str(skip), "-i", clip, "-t", f"{L:.3f}", "-an", "-vf", vf,
-                        "-c:v", "libx264", "-crf", "16", "-pix_fmt", "yuv420p", o], check=True)
+                        "-c:v", "libx264", "-preset", "veryfast", "-crf", "16", "-pix_fmt", "yuv420p", o], check=True)
         lst.append(f"file '{os.path.abspath(o)}'")
-        if s["eng"] == "card": src = load(sfx(s.get("sfx") or "quiet room tone", int(np.ceil(L)) + 1)); lvl = -24
+        if s["eng"] in ("card", "still"): src = load(sfx(s.get("sfx") or "quiet room tone", int(np.ceil(L)) + 1)); lvl = -24
         elif h3like: src = load(sfx(s.get("sfx") or "quiet small apartment room tone", int(np.ceil(L)) + 1)); lvl = -32 if s["spk"] == R else -24
         else: src = load(clip); lvl = -20
         src = src[: int(L * sr)]; a0 = int(s0 * sr)
@@ -306,7 +347,7 @@ def do_mix():
     open(f"{OUT}/seg/list.txt", "w").write("\n".join(lst))
     subprocess.run(["ffmpeg", "-nostdin", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", f"{OUT}/seg/list.txt", "-c", "copy", f"{OUT}/picture.mp4"], check=True)
     open(f"{OUT}/captions.ass", "w").write(captions(tl, total))
-    final = f"{OUT}/{TOPIC.upper()}_SHORT.mp4"
+    final = f"{OUT}/{TOPIC.upper()}_{'VIDEO' if LAND else 'SHORT'}.mp4"
     subprocess.run(["ffmpeg", "-nostdin", "-y", "-v", "error", "-i", f"{OUT}/picture.mp4", "-i", f"{OUT}/mix.wav",
                     "-vf", f"subtitles={OUT}/captions.ass:fontsdir={os.path.abspath('studio/fonts_reel')}", "-af", "loudnorm=I=-14:TP=-1.5:LRA=9",
                     "-c:v", "libx264", "-crf", "17", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-shortest", final], check=True)
@@ -317,7 +358,7 @@ if __name__ == "__main__":
     st = sys.argv[2]; arg = sys.argv[3] if len(sys.argv) > 3 else ""
     seed = int(sys.argv[4]) if len(sys.argv) > 4 else 21
     if st == "all":
-        do_voice(); do_refs(); do_kf(); do_anim(); do_sheets(); do_mix()
+        do_voice(); do_refs(); do_kf(); do_anim(); do_cpu(); do_sheets(); do_mix()
     else:
-        {"voice": do_voice, "refs": do_refs, "kf": lambda: do_kf(arg), "anim": lambda: do_anim(arg, seed),
+        {"voice": do_voice, "refs": do_refs, "kf": lambda: do_kf(arg), "anim": lambda: do_anim(arg, seed), "cpu": lambda: do_cpu(arg, seed),
          "sheets": do_sheets, "mix": do_mix}[st]()

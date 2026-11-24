@@ -187,7 +187,7 @@ def _qwen_custom(todo, profiles):
             prof = ln.get("delivery") or (ln.get("voice") if ln.get("voice") in dl["profiles"] else None) or dl["emotion_to_profile"].get(ln.get("emotion", "neutral"), "normal")
             direction = ln.get("direction") or dl["profiles"].get(prof, "")
             takes = []
-            for k in range(6 if design else 4):            # clone: 4 takes differ only in delivery, never in voice            # a designed voice drifts more per take: more takes, closest to the anchor wins
+            for k in range(6 if design else int(os.environ.get("VOICE_TAKES", 4))):            # clone: 4 takes differ only in delivery, never in voice            # a designed voice drifts more per take: more takes, closest to the anchor wins
                 torch.manual_seed(int(hashlib.md5((ln["text"] + str(k)).encode()).hexdigest()[:8], 16))
                 w, sr = gen(_pron(ln["text"].replace("*", "")), (t.get("base_direction", "") + " " + direction).strip())
                 tf = f"{f}.take{k}.wav"; sf.write(tf, w[0], sr); takes.append(tf)
