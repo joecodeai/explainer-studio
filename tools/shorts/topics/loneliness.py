@@ -119,7 +119,7 @@ SHOTS = [
          "her, looking at an old landline telephone on the side table. Exactly one person."),
  dict(id="l14", spk=M, eng="still", mv="out", sfx="Tokyo street at night, a train passing, light rain",
       text="In 2021, Japan followed with a minister of its own. During the pandemic, the number of suicides there had risen for the first time in eleven years.",
-      kf="A quiet Tokyo side street at night in light rain, glowing paper lanterns and lit vending machines, a single person with an "
+      kf="A quiet Tokyo side street at night in light rain, plain glowing round lanterns and softly lit house windows, a single person with an "
          "umbrella walking past. Exactly one person."),
  dict(id="l15", spk=M, eng="still", mv="in", env=True, sfx="city street at night, rain, a bus pulling away",
       text="So the problem is real, it's large, and it now has its own place in government. The harder question is whether modern life is what's causing it.",
