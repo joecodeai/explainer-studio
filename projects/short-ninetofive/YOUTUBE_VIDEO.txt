@@ -5,7 +5,14 @@ DESCRIPTION
 In 1930, John Maynard Keynes predicted his grandchildren would work fifteen hours a week. Most of us hit fifteen hours by Tuesday afternoon. So is the nine-to-five a trap? We look at where the forty-hour week actually came from (Henry Ford, the 1938 Fair Labor Standards Act), Parkinson's law, the commute, Gallup's engagement numbers, the UK and Iceland four-day week trials, and how hours differ between countries. Then the other side: business failure rates, sick pay, health insurance, and what a 1930s Austrian village found happens when the work disappears. Then an honest verdict.
 
 Chapters
-(filled after the edit)
+0:00 The 15-hour week
+0:35 Where the 40-hour week came from
+1:53 Keynes and the missing free time
+3:43 Parkinson's law
+4:44 Commutes, bosses and engagement
+6:02 What happens when people work less
+8:05 The case for a steady job
+9:44 The verdict
 
 Sources
 - Our World in Data, "Are we working more than ever?" (Huberman & Minns 2005 data)

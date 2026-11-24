@@ -1,0 +1,695 @@
+[
+ {
+  "id": "l00",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "We now have more ways to talk to each other than at any point in human history. And in 2018, Britain decided it needed a minister for loneliness.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l01",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Video calls, group chats, instant messages. On paper, nobody has ever been less alone. In practice, a lot of evenings look like this.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l02",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "So is modern society actually making us lonelier? It's one of those questions where everyone already knows the answer. They just don't agree on what it is.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l03",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "So let's look at the case that it is, the case that it isn't, and what actually seems to help. But first, what do we even mean by lonely?",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l04",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Loneliness isn't the same as being alone. The World Health Organization describes it as the painful gap between the social connections you want and the ones you actually have.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l05",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Which means you can feel lonely at a wedding with two hundred guests, and perfectly content on your own in a cabin. Being alone is a situation. Loneliness is a feeling.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l06",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "In 2023, the US Surgeon General, Vivek Murthy, issued an official advisory warning of an epidemic of loneliness and isolation. Roughly half of American adults said they'd experienced loneliness.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l07",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Surgeons General usually issue warnings about things like smoking. This one was about not having enough people to talk to. It pointed out that loneliness is more widespread than smoking, diabetes or obesity.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l07b",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Murthy compares loneliness to hunger or thirst. A signal from your body that something you need is missing. Which also makes it a lot less embarrassing. Nobody thinks being hungry is a character flaw.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l08",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Then it made the comparison that got quoted everywhere. Lacking social connection, it said, carries a risk of early death similar to smoking up to fifteen cigarettes a day.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l09",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "That figure comes from a big review of a hundred and forty-eight studies. People with stronger social ties had about a fifty percent better chance of survival over the course of the studies. It's a rough comparison, not an exact exchange rate. But it isn't small.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l10",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "And it isn't just an American thing. In 2025, a World Health Organization commission estimated that one in six people worldwide is affected by loneliness.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l11",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "It linked loneliness to an estimated eight hundred and seventy-one thousand deaths a year. That's about a hundred every hour.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l12",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Governments have noticed. In 2018, Britain gave one of its ministers responsibility for loneliness, carrying on work the MP Jo Cox had cared about deeply before she was killed. Most ministries deal with roads, taxes or hospitals. This one was handed a feeling.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l13",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "At the time, the government cited research suggesting more than nine million people in the UK always or often felt lonely. Around two hundred thousand older people hadn't had a conversation with a friend or relative in over a month.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l14",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "In 2021, Japan followed with a minister of its own. During the pandemic, the number of suicides there had risen for the first time in eleven years.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l15",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "So the problem is real, it's large, and it now has its own place in government. The harder question is whether modern life is what's causing it.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l16",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "The case for yes starts with how we spend our time. In 2003, Americans spent about an hour a day with friends in person. By 2020, it was twenty minutes.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l17",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Over the same years, time spent alone went up by about twenty-four hours a month. That's like gaining an extra day every month, spent entirely in your own company.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l18",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "To be fair, 2020 was a pandemic year. But the drop began long before lockdown, and it was steepest for fifteen to twenty-four year olds. Their time with friends fell by nearly seventy percent.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l19",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Households have shrunk too. In 1960, thirteen percent of American households were a single person. By 2022, it was twenty-nine percent.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l20",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Living alone isn't the same as being lonely. Plenty of people choose it and love it. But in studies of older adults, those who live alone do tend to report more loneliness.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l21",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "None of this is a new worry. Back in 1995, the political scientist Robert Putnam noticed something strange about bowling.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l22",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Between 1980 and 1993, the number of Americans who went bowling rose by about ten percent. But bowling in organised leagues fell by forty percent.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l23",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "People were still bowling. They just weren't doing it in teams, with the same faces every week, the kind of group where somebody notices if you don't turn up. He later turned it into a book called Bowling Alone.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l24",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "His argument was that Americans were drifting away from clubs, churches, unions and neighbourhood groups. The places where you used to see the same people without having to arrange anything.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l25",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "And modern convenience keeps quietly removing the small encounters. Food, shopping, banking and films now arrive without anyone needing to say a word.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l26",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "deadpan",
+    "text": "The self-checkout talks to me. Mostly accusations.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l27",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Then there's the phone. In his 2024 bestseller The Anxious Generation, the social psychologist Jonathan Haidt argues that smartphones and social media rewired childhood, swapping time with friends for time on screens.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l28",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "And there's some experimental support. In a 2018 University of Pennsylvania study, students who cut their social media to about thirty minutes a day for three weeks reported less loneliness and depression than those who didn't.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l29",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Which makes a certain sense. Social media lets you watch your friends having a great time without you, in high definition, from bed.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l30",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "So, case closed? Not quite. When researchers try to measure loneliness itself over time, rather than how we spend our time, the picture gets surprisingly murky.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l31",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "A 2021 analysis combined studies of young adults from 1976 to 2019. Loneliness did go up. Slightly. The lead researcher described the increase as relatively small.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l32",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Another study of older Americans found loneliness barely changed between 2005 and 2016. And people born more recently were, if anything, a little less lonely than those born earlier.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l33",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "The WHO's own numbers complicate things too. About twenty-four percent of people in low-income countries say they feel lonely. In high-income countries, it's around eleven.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l34",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "If wealthy, gadget-filled modern life were the main cause, you'd expect that the other way round. The WHO suggests poverty can limit the time and places people have to meet.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l35",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "And the past wasn't one long village party. The historian Fay Bound Alberti argues that loneliness, as we use the word now, is a fairly modern idea. Before about 1800, she says, the language for it barely existed.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l36",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "People in the past certainly felt alone. And a tight-knit village is very sociable, right up until you fall out with half of it.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l37",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "The phone debate is far from settled either. In 2019, Oxford researchers analysed data on more than three hundred and fifty thousand young people. Technology use explained at most zero point four percent of the variation in their wellbeing.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l38",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "To put that in context, they compared it with other habits in the same surveys. Regularly eating potatoes had almost the same association. Wearing glasses was worse.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l39",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "deadpan",
+    "text": "Nobody's writing a bestseller about potatoes.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l40",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "When Haidt's book came out, the psychologist Candice Odgers reviewed it in the journal Nature. She argued most of the evidence is correlational. Maybe phones make people unhappy. Or maybe unhappy people spend more time on their phones.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l41",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Haidt replied that experimental studies back him up, and that his critics haven't offered a better explanation for when the decline began. The argument continues. Mostly, it has to be said, online.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l42",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "And phones connect people too. A grandmother can video call grandchildren on the other side of the world. A teenager who feels like the only one of their kind in a small town can find people who get them.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l43",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "So the honest answer on the trend is this. Probably somewhat lonelier, for some groups, but less dramatically than the headlines suggest. What nobody really disputes is how much connection matters.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l44",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "The Harvard Study of Adult Development has followed the same people since 1938. It began with Harvard students, including a young John F. Kennedy, and later took in hundreds of boys from some of Boston's poorest neighbourhoods.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l45",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Its director, Robert Waldinger, says the clearest lesson is that good relationships keep us happier and healthier.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l46",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "The men most satisfied with their relationships at fifty were the healthiest at eighty. Their cholesterol in middle age was a worse predictor of how they'd age.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l47",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Which is oddly good news. You can't choose your genes. You can reply to a message.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l48",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "The catch is that friendship takes time. A 2018 study by Jeffrey Hall estimated it takes about fifty hours together to go from acquaintance to casual friend, ninety to become friends, and over two hundred to become close friends.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l49",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "deadpan",
+    "text": "That explains a lot about my thirties.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l50",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "School and university hand you those hours for free. After that, you mostly have to build them in on purpose. Which is harder when every adult you know is busy until roughly March.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l51",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "The encouraging part is that we're bad at predicting how connection will go. In a 2014 study, commuters on trains into Chicago were asked to talk to a stranger. They expected it to be worse than sitting quietly. They actually enjoyed their journey more.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l52",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "deadpan",
+    "text": "I'm still not talking to people on trains.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l53",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Another study found that after chatting with someone new, people consistently underestimate how much the other person liked them. The researchers called it the liking gap. Your inner critic, it turns out, is a poor judge of character.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l54",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Some places are building small conversations back in on purpose. In 2019, the Dutch supermarket chain Jumbo introduced chat checkouts. Slower tills, for anyone who'd rather have a proper natter than rush.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l55",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "And the official advice is refreshingly unglamorous. Murthy suggests about fifteen minutes a day reaching out to someone. The advisory adds: join a group that meets regularly, help other people, and don't check your phone during meals with friends.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l56",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Which, if you think about it, is roughly a description of a bowling league.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l57",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "So, is modern society making us more lonely?",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l58",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Partly. We spend much less time with friends in person, more of us live alone, and a lot of the small everyday encounters have been designed out of our lives. That part is real.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l59",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "But the evidence that loneliness itself has exploded is weaker than the headlines suggest. Poorer countries report more of it than rich ones, and the case against phones is still being argued.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l60",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Maybe the fairest version is this. Modern life doesn't force us to be lonely. It just no longer forces us not to be. Connection used to come built in. Now it's something you have to choose.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l61",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "So reply to that message. Tell us in the comments who you're going to call. And subscribe. We'll keep you company.",
+    "emotion": "neutral"
+   }
+  ]
+ }
+]
