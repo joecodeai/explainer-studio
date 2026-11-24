@@ -1,0 +1,717 @@
+[
+ {
+  "id": "n00",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "In 1930, a famous economist predicted that by now we'd only need to work fifteen hours a week. Most of us have done fifteen hours by Tuesday afternoon.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n01",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "So is the nine-to-five a trap? Depending on who you ask online, it's either a slow prison with a pension, or the only sensible thing a grown-up can do. The people calling it a trap are quite often selling a course on how to escape it.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n02",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Let's look at it properly. Where the forty-hour week came from, what it costs, what happens when people try something else, and what the escape videos leave out.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n03",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "First, some perspective. In 1870, factory workers in most industrial countries put in sixty to seventy hours a week. Nine to five would have sounded like a holiday.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n04",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "In 1817, the reformer Robert Owen came up with a slogan. Eight hours labour, eight hours recreation, eight hours rest. It was catchy. It took about a hundred years for governments to agree with it.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n05",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "In 1919, the brand new International Labour Organization made the eight-hour day its very first convention. Eight hours a day, forty-eight a week. Which still meant working Saturdays.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n06",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "One of the first big employers to go further was Henry Ford, who in 1926 moved his factory workers to five days and forty hours.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n07",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Ford wasn't being sentimental. He argued that rested workers were more productive, and that people with free time would buy more things. Such as cars.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n08",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "The modern weekend, in other words, was partly a sales strategy.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n09",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "In America, the Fair Labor Standards Act of 1938 made employers pay overtime after forty-four hours a week. By 1940 that had dropped to forty, and it hasn't moved since.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n10",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "The nine-to-five, then, isn't an ancient law of nature. It's a deal struck about a hundred years ago, between people who wanted shorter days and people who owned factories.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n11",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Then most of us stopped working in factories. The deal stayed exactly where it was.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n12",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "And at the time, everyone assumed the week would keep shrinking. In 1930, the economist John Maynard Keynes wrote an essay called Economic Possibilities for our Grandchildren.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n13",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "He predicted that within a hundred years, people in rich countries would be four to eight times better off. And he worried that the big problem of the future would be what to do with all the free time.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n14",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "His suggestion was three-hour shifts, or a fifteen-hour week. Not because we'd need the money, but because a little work would stop us getting bored.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n15",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "On the money, he was remarkably close. By 2011, British income per person was already about five times its 1931 level. On the hours, it went less well.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n16",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "When the radio show Planet Money went looking for Keynes's grandchildren, they found he didn't have any. The closest they got was his sister's grandson, who said he used to work about fifteen hours. A day.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n17",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "deadpan",
+    "text": "Right number. Wrong unit.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n18",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Keynes himself, according to his family, died from working too hard.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n19",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Where did all the free time go? We did get some. In Britain, men's working hours fell by more than a quarter between 1931 and 2011. But a lot of our extra leisure arrived at the end of life, in one big lump called retirement.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n20",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "The Harvard economist Richard Freeman points out another problem. The better paid you are, the harder it is to stop. At two hundred dollars an hour, a day at the beach is a very expensive day at the beach.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n21",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Some workers were offered the time directly. In 1930, the cereal maker W. K. Kellogg moved his Michigan factory to six-hour shifts, so he could hire more people during the Depression.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n22",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Some departments kept six-hour shifts for over fifty years. But after long pressure from management, the last one voted to go back to eight hours in 1985. Time had been losing to money for quite a while.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n23",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "There's also a less flattering theory. In 1955, a naval historian called Cyril Northcote Parkinson wrote a satirical essay for The Economist. It starts with a law.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n24",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Work expands so as to fill the time available for its completion.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n25",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "His example is an elderly lady who spends an entire day sending one postcard to her niece in Bognor Regis. An hour finding the postcard, another hunting for her glasses, and twenty minutes deciding whether to take an umbrella to the postbox.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n26",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "His serious example was the British Admiralty. Between 1914 and 1928, the number of capital ships in service fell from sixty-two to twenty.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n27",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Over the same years, the number of Admiralty officials went up from two thousand to three thousand five hundred and sixty-nine. Fewer ships. More people looking after them.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n28",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "deadpan",
+    "text": "Somebody had to schedule the meetings.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n29",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Parkinson was writing satire. People have been quoting it seriously ever since, usually in meetings. It's also the core of the case against a fixed working day. If the day is eight hours long, the work has a way of becoming eight hours long.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n30",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Then there's the part of the working day nobody pays you for. In 2025, the average American commute was about twenty-seven minutes each way.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n31",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "That's almost an hour a day. Over a working year, that's about five extra working weeks, spent mostly looking at the back of someone else's car.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n32",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "In one study, more than nine hundred working women in Texas rated their daily activities. Commuting came last for enjoyment. Working came second to last.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n33",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "They also rated the people they spent time with. The boss came last. The only thing that scored lower was being completely on their own.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n34",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "And the job itself? Gallup's latest State of the Global Workplace report found that only twenty percent of employees worldwide are engaged at work.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n35",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Sixty-four percent are not engaged, which roughly means present, polite and mentally somewhere else. Sixteen percent are actively disengaged. And forty percent said they'd felt a lot of stress the day before.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n36",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Gallup puts the cost of all that low engagement at around ten trillion dollars in lost productivity. Which is a lot of money to spend on not quite being there.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n37",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "That's the case for the trap. A schedule built for nineteen-twenties factories, applied to jobs where nobody's output is measured in cars. Hours that fill themselves up. An unpaid hour in traffic. And a lot of people who are there, but not really.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n38",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "What happens when people just work less? In 2022, sixty-one British companies and about two thousand nine hundred staff tried a four-day week for six months, with no cut in pay.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n39",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Afterwards, fifty-six of the companies kept it going, and eighteen made it permanent. Revenue stayed broadly the same. The number of people leaving fell by more than half.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n40",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Sick days fell by sixty-five percent. Some of that is people being less worn out. Some of it, presumably, is that the dentist is now open on your day off.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n41",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Iceland had already run public-sector trials between 2015 and 2019, with more than two thousand five hundred workers. They were reported around the world as a four-day week. They were actually five shorter days, of thirty-five or thirty-six hours.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n42",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "deadpan",
+    "text": "So, a four-day week. Over five days.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n43",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Either way, it stuck. About eighty-six percent of Iceland's workforce has since moved to shorter hours, or gained the right to ask for them.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n44",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Before everyone emails HR, the catches. The British companies volunteered, there was no proper control group, and most results were self-reported. And firms that sign up tend to be the ones that already think it'll work.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n45",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "A bigger 2025 study across six countries did use comparison companies, and still found real drops in burnout. But most of the people in it worked in offices. It's easier to squeeze a week of emails into four days than a week of bus routes.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n46",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Hours also vary a lot between countries. In 2025, the OECD put the average German worker at about thirteen hundred and thirty hours a year. The average American, about eighteen hundred.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n47",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "In Mexico, it was around twenty-two hundred. The OECD warns these figures aren't perfectly comparable, but the gap between Germany and Mexico is still about twenty-two forty-hour weeks a year.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n48",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Part of the difference is holidays. German law guarantees at least twenty days of paid leave, and collective agreements typically give around thirty. American federal law guarantees none.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n49",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "None of this is a law of physics. It's a choice each country makes, usually without anyone noticing they've made it.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n50",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "So far, the nine-to-five isn't looking great. But the escape videos tend to skip a few things, starting with the obvious alternative. Working for yourself.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n51",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "According to the US Bureau of Labor Statistics, about twenty percent of new businesses don't survive their first year. About half are gone within five.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n52",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Working for yourself also means nobody pays you to be ill. In Britain, the self-employed can't get Statutory Sick Pay. In America, they pay both halves of Social Security and Medicare tax, fifteen point three percent.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n53",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "And in America, a job usually comes with health insurance. Employer plans cover almost a hundred and fifty-seven million people. In 2025, the average family plan cost about twenty-seven thousand dollars, and employers paid most of it.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n54",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "deadpan",
+    "text": "So the trap comes with dental.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n55",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "There's also something less obvious. In 1929, the textile factory in the Austrian village of Marienthal closed, and nearly every family in the village was hit by unemployment. Researchers moved in to study what happened.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n56",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "They found the unemployed men walked more slowly down the street, and stopped more often. Eighty-eight out of a hundred weren't wearing a watch.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n57",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "The researchers called all that free time a tragic gift. A job, it turns out, doesn't only pay you. It gives the day a shape, people to talk to, and a reason to put trousers on.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n58",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "To be fair to the people who leave, the self-employed do tend to be more satisfied with their work, even after accounting for income and hours. Economists Matthias Benz and Bruno Frey put it down to independence.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n59",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "That might be the real point. What people seem to dislike isn't work. It's having no say over when, where and how they do it.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n60",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "So, is working nine to five a trap?",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n61",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Not really. The forty-hour week was a victory. People fought for it, and it was a huge improvement on seventy. The trap, if there is one, is treating a deal from the nineteen-twenties as if it were a law of nature.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n62",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "For a lot of people, a steady job is exactly the point. Security, colleagues, a pension, and a clear line where work stops. If that's you, it isn't a trap. It's a good deal, and you're allowed to like it.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n63",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "But if your job is mostly about being seen at a desk until five, the evidence suggests the hours could be shorter, the commute could be optional, and the work would probably still get done. Possibly sooner.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "n64",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Tell us in the comments: is your nine-to-five a trap or a good deal? And subscribe. It takes less time than your commute.",
+    "emotion": "neutral"
+   }
+  ]
+ }
+]

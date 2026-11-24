@@ -5,7 +5,14 @@ DESCRIPTION
 In America, a bank can charge you $35 for not having enough money. So are poor people poor because of bad choices, or because being poor is unbelievably expensive? We audit both sides: the "success sequence", the marshmallow test and what it really measured, the scarcity experiments with New Jersey shoppers and Indian sugarcane farmers, payday loans and the poverty premium, where you're born, Raj Chetty's Moving to Opportunity research, and what happens when you just give people cash. Then: the honest verdict.
 
 Chapters
-(filled after the edit)
+0:00 The $35 question
+0:33 The case for bad decisions
+1:46 The audit
+3:14 How scarcity changes decisions
+4:42 The price of being poor
+6:26 Where you're born
+8:34 What happens when you give people money
+9:40 The verdict
 
 Sources
 - CFPB, "Data Point: Checking account overdraft" (2014) and "Overdraft and Nonsufficient Fund Fees" (Dec 2023)

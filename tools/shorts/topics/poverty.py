@@ -152,11 +152,11 @@ SHOTS = [
       text="The drop was about as big as the effect of losing a full night's sleep. And nothing had actually happened. They were only imagining the bill.",
       kf="A person sitting up in bed at night with wide tired eyes, a small grey car parked at the end of the bed like a pet, moonlight "
          "through the window. Exactly one person."),
- dict(id="p24", spk=M, eng="ltx", refs=["farmer"],
+ dict(id="p24", spk=M, eng="still", mv="in", sfx="quiet outdoor ambience, birds, distant traffic", refs=["farmer"],
       text="Next, they went to India, to sugarcane farmers who get most of their money once a year, at harvest.",
       kf="The man from the reference standing in a tall green sugarcane field under a bright sun, holding a long curved harvesting knife, "
          "bundles of cut cane at his feet. Exactly one person.",
-      mv="The man wipes his brow with the towel from his shoulder and looks out across the swaying sugarcane. Static camera. "
+      mv_ltx="The man wipes his brow with the towel from his shoulder and looks out across the swaying sugarcane. Static camera. "
          "Exactly one person; he keeps the same face and clothes."),
  dict(id="p25", spk=M, eng="still", mv="in", refs=["farmer"], sfx="village courtyard, birds, a distant tractor",
       text="Before the harvest, money is tight and loans pile up. After it, they've got cash. The same farmers did noticeably worse on the tests before the harvest than after.",
@@ -243,11 +243,11 @@ SHOTS = [
       text="Of course, you could argue that families in some places just make worse choices. Which is why it helps that there was an experiment.",
       kf="The man from the reference standing in front of a big map pinned to a wall, confidently pointing at one spot with his coffee cup, "
          "while a small sticky note on the map behind him is about to fall off. Exactly one person."),
- dict(id="p47", spk=M, eng="ltx", refs=["jo"],
+ dict(id="p47", spk=M, eng="still", mv="right", sfx="quiet outdoor ambience, birds, distant traffic", refs=["jo"],
       text="In the 1990s, an American programme called Moving to Opportunity offered families in public housing vouchers to move to lower-poverty neighbourhoods.",
       kf="The woman from the reference and a small child carrying cardboard boxes out of a tall grey apartment block towards a small moving "
          "van parked on the street. Exactly one adult and one small child.",
-      mv="The woman and the child carry the boxes to the van and the woman lifts one into the back. " + P1),
+      mv_ltx="The woman and the child carry the boxes to the van and the woman lifts one into the back. " + P1),
  dict(id="p48", spk=M, eng="still", mv="right", env=True, sfx="community hall, a raffle drum turning, murmuring",
       text="About four thousand six hundred families signed up, in Baltimore, Boston, Chicago, Los Angeles and New York. Who got the vouchers was decided at random, like a lottery.",
       kf="A big wooden raffle drum full of small paper house shapes on a table in a community hall, rows of empty folding chairs in front "
@@ -290,7 +290,7 @@ SHOTS = [
          "calmly at the street. Exactly one person."),
  dict(id="p58", spk=M, eng="still", mv="in", sfx="quiet kitchen, a kettle clicking off",
       text="Money mostly gets spent on what people say they need. Which is roughly what you'd expect if the main problem was a lack of money.",
-      kf="A simple kitchen table with a paid bill, a bag of groceries, a pair of new children's school shoes and a small calculator, morning "
+      kf="A simple kitchen table with a bag of groceries, a pair of new children's school shoes and a small calculator, morning "
          "light through the window. No people.", env=True),
  # --- verdict
  dict(id="p59", spk=M, eng="still", mv="out", env=True, sfx="quiet office, a desk lamp humming",
