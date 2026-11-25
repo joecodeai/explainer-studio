@@ -1,0 +1,17 @@
+{
+ "name": "brayden",
+ "design": "Loud, bright, energetic American man in his late twenties, fast and punchy, smiling, confident baritone; completely sincere hype. Speaking naturally in English, expressive and conversational.",
+ "language": "English",
+ "tts": {
+  "engine": "qwen_clone",
+  "model": "models/Qwen3-TTS-12Hz-1.7B-Base",
+  "base_direction": "",
+  "ref_audio": "library/voices/brayden/ref_locked.wav",
+  "ref_text": "library/voices/brayden/ref_locked.txt",
+  "chosen": "2026-11-25 user picked design take E"
+ },
+ "instruct": "Loud, bright, energetic American man in his late twenties, fast and punchy, smiling, confident baritone; completely sincere hype. Speaking naturally in English, expressive and conversational. IMPORTANT: this is clearly an adult MAN's voice \u2014 low-to-mid male pitch, masculine chest resonance, never a female or child voice.",
+ "f0": 127.1,
+ "gender": "male",
+ "redesigns": 0
+}

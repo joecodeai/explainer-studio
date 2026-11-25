@@ -1,0 +1,86 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: C,Montserrat ExtraBold,86,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,0,0,1,7,2,2,80,80,560,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.40,0:00:01.14,C,,0,0,0,,GOOD MORNING.
+Dialogue: 0,0:00:01.14,0:00:02.26,C,,0,0,0,,IT'S FOUR A.M.
+Dialogue: 0,0:00:02.26,0:00:03.00,C,,0,0,0,,RIGHT NOW,
+Dialogue: 0,0:00:03.00,0:00:03.74,C,,0,0,0,,YOU'RE ASLEEP.
+Dialogue: 0,0:00:03.74,0:00:04.86,C,,0,0,0,,THAT'S WHY YOU'RE
+Dialogue: 0,0:00:04.86,0:00:05.23,C,,0,0,0,,BROKE.
+Dialogue: 0,0:00:05.23,0:00:06.34,C,,0,0,0,,I'VE ALREADY HAD
+Dialogue: 0,0:00:06.34,0:00:07.46,C,,0,0,0,,A COLD SHOWER,
+Dialogue: 0,0:00:07.46,0:00:08.57,C,,0,0,0,,A HOT SHOWER,
+Dialogue: 0,0:00:08.57,0:00:09.69,C,,0,0,0,,AND AN ARGUMENT
+Dialogue: 0,0:00:09.69,0:00:11.05,C,,0,0,0,,WITH A SWAN.
+Dialogue: 0,0:00:11.12,0:00:13.28,C,,0,0,0,,SOMEWHERE RIGHT NOW,
+Dialogue: 0,0:00:13.28,0:00:13.84,C,,0,0,0,,A MAN IS
+Dialogue: 0,0:00:13.84,0:00:14.54,C,,0,0,0,,TELLING YOU TO
+Dialogue: 0,0:00:14.54,0:00:15.20,C,,0,0,0,,WAKE UP AT
+Dialogue: 0,0:00:15.20,0:00:15.72,C,,0,0,0,,FOUR IN THE
+Dialogue: 0,0:00:15.72,0:00:16.56,C,,0,0,0,,MORNING SO YOU
+Dialogue: 0,0:00:16.56,0:00:17.24,C,,0,0,0,,CAN BE RICH
+Dialogue: 0,0:00:17.24,0:00:18.15,C,,0,0,0,,LIKE HIM.
+Dialogue: 0,0:00:18.26,0:00:19.24,C,,0,0,0,,HE'LL EVEN TELL
+Dialogue: 0,0:00:19.24,0:00:19.82,C,,0,0,0,,YOU HOW HE
+Dialogue: 0,0:00:19.82,0:00:21.12,C,,0,0,0,,MADE HIS MONEY.
+Dialogue: 0,0:00:21.12,0:00:21.90,C,,0,0,0,,IT WAS SELLING
+Dialogue: 0,0:00:21.90,0:00:23.07,C,,0,0,0,,YOU THIS VIDEO.
+Dialogue: 0,0:00:23.86,0:00:24.83,C,,0,0,0,,I'M STILL WATCHING.
+Dialogue: 0,0:00:25.57,0:00:26.25,C,,0,0,0,,PUT THE WEEKEND
+Dialogue: 0,0:00:26.25,0:00:26.71,C,,0,0,0,,DOWN,
+Dialogue: 0,0:00:26.71,0:00:27.17,C,,0,0,0,,RYAN.
+Dialogue: 0,0:00:27.17,0:00:28.17,C,,0,0,0,,SLOWLY.
+Dialogue: 0,0:00:28.17,0:00:28.97,C,,0,0,0,,NOBODY HAS TO
+Dialogue: 0,0:00:28.97,0:00:29.66,C,,0,0,0,,GET HURT.
+Dialogue: 0,0:00:32.46,0:00:33.46,C,,0,0,0,,GOOD NEWS.
+Dialogue: 0,0:00:33.46,0:00:34.32,C,,0,0,0,,WE'VE MOVED WEEKENDS
+Dialogue: 0,0:00:34.32,0:00:35.16,C,,0,0,0,,TO A SUBSCRIPTION
+Dialogue: 0,0:00:35.16,0:00:35.90,C,,0,0,0,,MODEL.
+Dialogue: 0,0:00:35.90,0:00:37.22,C,,0,0,0,,WEEKEND PLUS ADDS
+Dialogue: 0,0:00:37.22,0:00:37.94,C,,0,0,0,,SUNDAY,
+Dialogue: 0,0:00:37.94,0:00:38.42,C,,0,0,0,,BUT THE SUNDAY
+Dialogue: 0,0:00:38.42,0:00:39.32,C,,0,0,0,,EVENING DREAD IS
+Dialogue: 0,0:00:39.32,0:00:40.33,C,,0,0,0,,BILLED SEPARATELY.
+Dialogue: 0,0:00:40.56,0:00:41.14,C,,0,0,0,,HOW DO I
+Dialogue: 0,0:00:41.14,0:00:41.85,C,,0,0,0,,CANCEL?
+Dialogue: 0,0:00:42.05,0:00:43.21,C,,0,0,0,,CANCELLATIONS ARE DONE
+Dialogue: 0,0:00:43.21,0:00:44.19,C,,0,0,0,,IN PERSON.
+Dialogue: 0,0:00:44.19,0:00:45.04,C,,0,0,0,,ON A SATURDAY.
+Dialogue: 0,0:00:46.05,0:00:47.00,C,,0,0,0,,THE AVERAGE SIDE
+Dialogue: 0,0:00:47.00,0:00:47.96,C,,0,0,0,,HUSTLE EARNS EIGHT
+Dialogue: 0,0:00:47.96,0:00:48.91,C,,0,0,0,,HUNDRED AND EIGHTY-FIVE
+Dialogue: 0,0:00:48.91,0:00:49.86,C,,0,0,0,,DOLLARS A MONTH.
+Dialogue: 0,0:00:49.86,0:00:50.82,C,,0,0,0,,THE MEDIAN EARNS
+Dialogue: 0,0:00:50.82,0:00:51.45,C,,0,0,0,,TWO HUNDRED.
+Dialogue: 0,0:00:51.45,0:00:52.40,C,,0,0,0,,THE AVERAGE IS
+Dialogue: 0,0:00:52.40,0:00:53.36,C,,0,0,0,,A LIAR STANDING
+Dialogue: 0,0:00:53.36,0:00:54.31,C,,0,0,0,,NEXT TO A
+Dialogue: 0,0:00:54.31,0:00:54.88,C,,0,0,0,,MILLIONAIRE.
+Dialogue: 0,0:00:55.13,0:00:55.97,C,,0,0,0,,KIDNEYS.
+Dialogue: 0,0:00:55.97,0:00:56.31,C,,0,0,0,,TWO OF YOU,
+Dialogue: 0,0:00:56.31,0:00:56.97,C,,0,0,0,,DOING THE SAME
+Dialogue: 0,0:00:56.97,0:00:57.69,C,,0,0,0,,JOB.
+Dialogue: 0,0:00:57.69,0:00:58.65,C,,0,0,0,,THAT'S A REDUNDANCY
+Dialogue: 0,0:00:58.65,0:00:59.42,C,,0,0,0,,SITUATION.
+Dialogue: 0,0:00:59.69,0:01:00.41,C,,0,0,0,,HE FIRED A
+Dialogue: 0,0:01:00.41,0:01:00.92,C,,0,0,0,,KIDNEY.
+Dialogue: 0,0:01:01.72,0:01:02.08,C,,0,0,0,,OH,
+Dialogue: 0,0:01:02.08,0:01:03.17,C,,0,0,0,,AND HIS FOUR
+Dialogue: 0,0:01:03.17,0:01:03.53,C,,0,0,0,,A.M.
+Dialogue: 0,0:01:03.53,0:01:04.26,C,,0,0,0,,SUNRISE VIDEOS?
+Dialogue: 0,0:01:04.26,0:01:05.34,C,,0,0,0,,FILMED AT FOUR
+Dialogue: 0,0:01:05.34,0:01:06.43,C,,0,0,0,,IN THE AFTERNOON.
+Dialogue: 0,0:01:06.43,0:01:07.52,C,,0,0,0,,THE SUNRISE IS
+Dialogue: 0,0:01:07.52,0:01:08.49,C,,0,0,0,,A LAMP.
+Dialogue: 0,0:01:08.59,0:01:09.46,C,,0,0,0,,STILL COUNTS.
+Dialogue: 0,0:01:09.53,0:01:10.69,C,,0,0,0,,THE FULL VIDEO
+Dialogue: 0,0:01:10.69,0:01:11.19,C,,0,0,0,,IS ON OUR
+Dialogue: 0,0:01:11.19,0:01:11.74,C,,0,0,0,,CHANNEL.

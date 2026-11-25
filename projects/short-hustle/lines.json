@@ -1,0 +1,937 @@
+[
+ {
+  "id": "c01",
+  "lines": [
+   {
+    "speaker": "brayden",
+    "voice": "narration",
+    "text": "Good morning. It's four a.m. Right now, you're asleep. That's why you're broke. I've been up since three. I've already had a cold shower, a hot shower, and an argument with a swan.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "c02",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Somewhere right now, a man is standing next to a very clean car, telling you to wake up at four in the morning so you can be rich like him.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "c03",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "And if you watch to the end, he'll tell you exactly how he made his money.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "c04",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "It was selling you this video.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "c05",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "narration",
+    "text": "I'm still watching.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "c06",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "So. Is hustle culture a scam?",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "g01",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Hustle culture is the belief that success comes from working all the time, sleeping as little as possible, and turning every hobby you enjoy into a business you don't.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "g02",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Its best customers are people who are already exhausted, being told the problem is that they aren't exhausted enough.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "g03",
+  "lines": [
+   {
+    "speaker": "brayden",
+    "voice": "narration",
+    "text": "Rise and grind.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "g04",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "He has a slogan for waking up. Most people just make a noise.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "g06",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "And it isn't just guys with ring lights. In 2019, Alibaba's founder Jack Ma called China's nine-nine-six schedule a huge blessing. Nine a.m. to nine p.m., six days a week.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "g07",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "I wanted to know what that looks like from the inside. So I asked Gerald.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "w01",
+  "lines": [
+   {
+    "speaker": "gerald",
+    "voice": "narration",
+    "text": "Hi, Ryan. I'm Gerald, from People and Culture. Nobody's in trouble. I just want to talk. Let's start small. Saturday. You don't need all of Saturday. Do you?",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "w02",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "narration",
+    "text": "I... sort of use it.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "w03",
+  "lines": [
+   {
+    "speaker": "gerald",
+    "voice": "narration",
+    "text": "Of course. And that's completely valid. What if you kept the morning, and we just quietly looked after the afternoon for you?",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "w05",
+  "lines": [
+   {
+    "speaker": "gerald",
+    "voice": "narration",
+    "text": "Put the weekend down, Ryan. Slowly. Nobody has to get hurt.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "w07",
+  "lines": [
+   {
+    "speaker": "gerald",
+    "voice": "narration",
+    "text": "Good news, though. You can get it back. We've moved weekends to a subscription model. Weekend Lite gives you Saturday morning, with occasional emails. Weekend Plus adds Sunday, but the Sunday evening dread is billed separately. And Weekend Pro includes the afternoon you just gave me.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "w08",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "narration",
+    "text": "I just gave you that.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "w09",
+  "lines": [
+   {
+    "speaker": "gerald",
+    "voice": "narration",
+    "text": "And now you can have it back. Monthly.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "w10",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "narration",
+    "text": "Can I just... have the one I had before?",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "w11",
+  "lines": [
+   {
+    "speaker": "gerald",
+    "voice": "narration",
+    "text": "That plan's been discontinued. But we've kept your memories of it in a premium folder.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "w12",
+  "lines": [
+   {
+    "speaker": "inner",
+    "voice": "narration",
+    "text": "He's good.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "w13",
+  "lines": [
+   {
+    "speaker": "gerald",
+    "voice": "narration",
+    "text": "And if you'd rather sleep when you're dead, we've partnered with a lovely cemetery. Staff get ten percent off.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "w15",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "narration",
+    "text": "How do I cancel?",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "w16",
+  "lines": [
+   {
+    "speaker": "gerald",
+    "voice": "narration",
+    "text": "Cancellations are done in person. On a Saturday.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "f01",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Then there's the sacred early morning. Robin Sharma's 2018 book The 5 AM Club sold millions of copies telling people to get up before the sun.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "f02",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "I tried it, actually. Day one, I did yoga. Day two, I journaled. On day three, I woke up at five, looked at the ceiling, and said no out loud. To nobody.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "f03",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "It's the most honest I've ever been.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "d01",
+  "lines": [
+   {
+    "speaker": "brayden",
+    "voice": "narration",
+    "text": "Four a.m., awake. Four oh five, ice bath. Four thirty, I read one page of a book about reading. Five, I tell the mirror it's a winner.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "d03",
+  "lines": [
+   {
+    "speaker": "brayden",
+    "voice": "narration",
+    "text": "Six, I film my morning routine. Seven, I edit my morning routine. Nine, I post my morning routine.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "d04",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "So the main thing his morning produces is a video of his morning.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "d05",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "narration",
+    "text": "I tried it once. Got up at four, cold shower, and by six I'd done everything I needed to do that day. Then I realised everyone I needed was asleep. So I just sat in my kitchen. Fully dressed. Like a butler with no house.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "d07",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Effort does matter, to be fair. The famous ten thousand hour rule comes from the psychologist Anders Ericsson's research on experts, although he said there was nothing magic about the number.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "d08",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Ten thousand hours. That's...",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "d09",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "No, I had something for this.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "d10",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "It's gone. I got up at five.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "s01",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Side hustles are real. In 2025, Bankrate found about twenty-seven percent of American adults had one. For plenty of them, it's how the rent gets paid.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "s02",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "The average side hustle earns eight hundred and eighty-five dollars a month.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "s03",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "The median, the person exactly in the middle, earns two hundred.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "s04",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "The average is a liar standing next to a millionaire.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "s06",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Then there's multi-level marketing, where you sell products and recruit your friends to sell them too.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "s08",
+  "lines": [
+   {
+    "speaker": "inner",
+    "voice": "narration",
+    "text": "Text your ex. Sell her a candle.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "s09",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "narration",
+    "text": "No.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "s10",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "In 2018, an AARP Foundation survey of people who'd joined one found forty-seven percent lost money. Twenty-seven percent broke even.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "s11",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "narration",
+    "text": "So a quarter of them did unpaid work.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "s12",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Enthusiastically.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "b01",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "And all those extra hours have to come from somewhere. For Brayden, they come out of the night. Which, unfortunately, his body was using.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "b02",
+  "lines": [
+   {
+    "speaker": "brayden",
+    "voice": "narration",
+    "text": "Team. Let's talk about sleep. Every night, eight hours, gone. No revenue. No content. I'm not paying you to lie there in the dark.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "b04",
+  "lines": [
+   {
+    "speaker": "brayden",
+    "voice": "narration",
+    "text": "Heart. Love the energy. You're getting more responsibility.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "b05b",
+  "lines": [
+   {
+    "speaker": "brayden",
+    "voice": "narration",
+    "text": "Liver, I've seen your numbers. You're on a performance plan.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "b07",
+  "lines": [
+   {
+    "speaker": "brayden",
+    "voice": "narration",
+    "text": "Kidneys. Two of you, doing the same job. That's a redundancy situation.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "b09",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "He fired a kidney.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "b10",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Sorry. The actual science. In 2000, Australian researchers found that after seventeen to nineteen hours awake, people did some tests as badly as someone with a blood alcohol level of zero point zero five percent.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "b11",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "So a man who got up at four is, by ten p.m., cognitively two glasses of wine into a wedding. Except nobody's dancing, and he's trying to sell you a webinar.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "b12",
+  "lines": [
+   {
+    "speaker": "brayden",
+    "voice": "narration",
+    "text": "Sleep is a mindset.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "b13",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "It isn't. Researchers think one of the things sleep does is clear waste out of the brain. Skip it, and you're running the whole operation on yesterday's rubbish.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "b14",
+  "lines": [
+   {
+    "speaker": "brayden",
+    "voice": "narration",
+    "text": "Where do you think you're going?",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "b16",
+  "lines": [
+   {
+    "speaker": "inner",
+    "voice": "narration",
+    "text": "Breathwork. Ninety-nine dollars.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "b17",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Absolutely not.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "k01",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "More hours don't even mean more work. The Stanford economist John Pencavel studied British munitions workers in the First World War. Their output at seventy hours a week was barely different from their output at fifty-six.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "k02",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Those extra fourteen hours produced nothing. They were just looking busy. A craft that workers have since refined into the little green available dot next to their name.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "k04",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "And sometimes it isn't funny at all. In 2021, the World Health Organization and the International Labour Organization estimated that long working hours led to seven hundred and forty-five thousand deaths from stroke and heart disease in 2016.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "i01",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "So why does any of this feel true?",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "i02",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "This is the hustle success story. And this...",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "i04",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "...is everyone else.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "i06",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Ryan?",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "i07",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "narration",
+    "text": "It was a lockdown thing.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "i08",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "In the Second World War, the statistician Abraham Wald was shown bombers covered in bullet holes, and asked where to add armour. He pointed out that the planes hit everywhere else never came back to be counted.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "i09",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "If hustle gurus had been in charge, they'd have armoured the bullet holes and called it a mindset.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "i10",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "You only ever hear from the guy on top. Nobody hosts a podcast called How I Lost Everything Selling Phone Cases.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "i11",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Although honestly, I'd listen.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "x01",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "And where there's a dream, there's a course. In 2024, the US Federal Trade Commission went after schemes selling passive income from AI-powered online stores. Customers paid tens of thousands of dollars. For nearly all of them, the FTC said, the money never arrived.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "x03",
+  "lines": [
+   {
+    "speaker": "brayden",
+    "voice": "narration",
+    "text": "You know you've made it when the government knows your name.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "y01",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "People are pushing back. In 2021, a post about lying flat went viral in China. Doing the absolute minimum, on purpose.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "y03",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "And in 2019, Microsoft Japan closed its offices every Friday in August. Sales per employee went up almost forty percent.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "y04",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "So, wellness.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "y05",
+  "lines": [
+   {
+    "speaker": "gerald",
+    "voice": "narration",
+    "text": "We hear you. So we've installed a beanbag, and booked a one-hour webinar on resilience. It's during your lunch break.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "y07",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "narration",
+    "text": "Is the beanbag mandatory?",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "y08",
+  "lines": [
+   {
+    "speaker": "gerald",
+    "voice": "narration",
+    "text": "Of course not. It's optional. Like the weekend.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "v01",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "So is hustle culture a scam? Not the work. Work is real, and some people genuinely love building things at midnight. Good for them.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "v02",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "The scam is the packaging. Exhaustion sold as a personality, survivors sold as proof, and your insecurity sold back to you at a monthly rate.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "v04",
+  "lines": [
+   {
+    "speaker": "brayden",
+    "voice": "narration",
+    "text": "Link in bio.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "v05",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Oh, and Brayden's four a.m. videos?",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "v07",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Filmed at four in the afternoon. The sunrise is a lamp.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "v08",
+  "lines": [
+   {
+    "speaker": "brayden",
+    "voice": "narration",
+    "text": "Still counts.",
+    "emotion": "neutral"
+   }
+  ]
+ }
+]

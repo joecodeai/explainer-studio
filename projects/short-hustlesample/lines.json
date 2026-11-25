@@ -1,0 +1,123 @@
+[
+ {
+  "id": "v00",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Somewhere right now, a man is standing next to a very clean car, telling you to wake up at four in the morning so you can be rich like him.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "v01",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "And if you watch until the end, he'll tell you exactly how he made his money. It was selling you this video.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "v02",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "deadpan",
+    "text": "He's not wrong. I'm still watching.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "v03",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "A year later, Jack Ma, the founder of Alibaba, said China's nine-nine-six schedule was a huge blessing. That's nine in the morning to nine at night, six days a week. A blessing in the same way a second mortgage is a fun surprise.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "v04",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "deadpan",
+    "text": "Seventy-two hours a week. I've had weeks like that. They're called holidays with my family.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "v05",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "That sounds great. Until you see the median, which is the person exactly in the middle. Two hundred dollars a month.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "v06",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "deadpan",
+    "text": "So the typical side hustle is a slightly nicer coffee budget.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "v07",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "deadpan",
+    "text": "So if you get up at four, you're basically tipsy by bedtime.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "v08",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "It's called survivorship bias. And it's the entire business model of the success video. You only ever hear from the guy who made it. Nobody films the morning routine of the guy whose dropshipping store sold three phone cases.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "v09",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "deadpan",
+    "text": "Passive income. Active losing.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "v10",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "The evidence is fairly boring. Work hard on things that matter. Rest on purpose. Sleep is not for the weak. Sleep is for people who'd like to still be productive on Thursday.",
+    "emotion": "neutral"
+   }
+  ]
+ }
+]

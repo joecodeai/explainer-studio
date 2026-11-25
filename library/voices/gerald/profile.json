@@ -1,0 +1,17 @@
+{
+ "name": "gerald",
+ "design": "Soft, warm, unhurried middle-aged British man; extremely polite, hostage-negotiator calm, never raises his voice. Speaking naturally in English, expressive and conversational.",
+ "language": "English",
+ "tts": {
+  "engine": "qwen_clone",
+  "model": "models/Qwen3-TTS-12Hz-1.7B-Base",
+  "base_direction": "",
+  "ref_audio": "library/voices/gerald/ref_locked.wav",
+  "ref_text": "library/voices/gerald/ref_locked.txt",
+  "chosen": "2026-11-25 user picked design take A"
+ },
+ "instruct": "Soft, warm, unhurried middle-aged British man; extremely polite, hostage-negotiator calm, never raises his voice. Speaking naturally in English, expressive and conversational. IMPORTANT: this is clearly an adult MAN's voice \u2014 low-to-mid male pitch, masculine chest resonance, never a female or child voice.",
+ "f0": 111.3,
+ "gender": "male",
+ "redesigns": 0
+}

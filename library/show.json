@@ -156,6 +156,57 @@
      "chosen": "2026-11-18 voice test option I (user pick); previous: chatterbox reference.wav"
     }
    }
+  },
+  {
+   "id": "brayden",
+   "name": "Brayden",
+   "role": "",
+   "real_person": false,
+   "look": "a hustle-culture influencer: tanned man in his late twenties, slicked-back blond hair, huge white grin, tight black t-shirt, gold watch, white sneakers",
+   "voice": "Loud, bright, energetic American man in his late twenties, fast and punchy, smiling, confident baritone; completely sincere hype.",
+   "bio": "recurring cast (2026-11-25, library/CREATIVE_BIBLE.md)",
+   "tts": {
+    "engine": "qwen_clone",
+    "model": "models/Qwen3-TTS-12Hz-1.7B-Base",
+    "base_direction": "",
+    "ref_audio": "library/voices/brayden/ref_locked.wav",
+    "ref_text": "library/voices/brayden/ref_locked.txt",
+    "chosen": "2026-11-25 user picked design take E"
+   }
+  },
+  {
+   "id": "gerald",
+   "name": "Gerald",
+   "role": "",
+   "real_person": false,
+   "look": "a corporate People-and-Culture manager: middle-aged man, neat grey side-parted hair, round glasses, beige cardigan over a pale blue shirt and tie, lanyard, gentle smile",
+   "voice": "Soft, warm, unhurried middle-aged British man; extremely polite, hostage-negotiator calm, never raises his voice.",
+   "bio": "recurring cast (2026-11-25, library/CREATIVE_BIBLE.md)",
+   "tts": {
+    "engine": "qwen_clone",
+    "model": "models/Qwen3-TTS-12Hz-1.7B-Base",
+    "base_direction": "",
+    "ref_audio": "library/voices/gerald/ref_locked.wav",
+    "ref_text": "library/voices/gerald/ref_locked.txt",
+    "chosen": "2026-11-25 user picked design take A"
+   }
+  },
+  {
+   "id": "inner",
+   "name": "Inner Voice",
+   "role": "",
+   "real_person": false,
+   "look": "no body: an intrusive thought (shown as a tiny impish shadow or not at all)",
+   "voice": "Breathy, impish close-mic whisper; mischievous, delighted with terrible ideas.",
+   "bio": "recurring cast (2026-11-25, library/CREATIVE_BIBLE.md)",
+   "tts": {
+    "engine": "qwen_clone",
+    "model": "models/Qwen3-TTS-12Hz-1.7B-Base",
+    "base_direction": "",
+    "ref_audio": "library/voices/inner/ref_locked.wav",
+    "ref_text": "library/voices/inner/ref_locked.txt",
+    "chosen": "2026-11-25 user picked design take C"
+   }
   }
  ],
  "active": true,

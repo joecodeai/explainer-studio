@@ -1,0 +1,1069 @@
+[
+ {
+  "id": "c01",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "In 2022, BMW started offering British drivers heated front seats. For fifteen pounds a month.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "c03",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "The heaters were already inside the seats. Fitted at the factory. Customers weren't paying for heat. They were paying for permission.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "c04",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "narration",
+    "text": "It's right there. It's like sitting on a radiator that isn't speaking to me.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "c05",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "In 2023, BMW dropped the idea. Not many people signed up.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "c06",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Not many.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "c09",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "narration",
+    "text": "I'm still paying for Weekend Plus.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "c10",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "He hasn't had a weekend since he signed up. He works Saturdays now. To pay for Weekend Plus.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "c11",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "So. Why is everything a subscription now?",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "h01",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Subscriptions used to be for things that actually run out. Milk. Newspapers.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "h02",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Then, in 2013, Adobe announced that new versions of Photoshop would only come by subscription.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "h04",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "narration",
+    "text": "I had one of those. You put it on a shelf, and it was just yours.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "h05",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Then cars. Printers. Toothbrushes.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "h06",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "And companies worked out that their most valuable customer isn't the one who loves the product. It's the one who's forgotten about it.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "h07",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "To be fair, some of it is brilliant. Nearly any song you can think of, on a bus, for a monthly fee. Teenage me would have wept.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "h08",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "I also pay for a meditation app. I've opened it twice. Every morning it sends me a notification reminding me to breathe.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "h09",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "I still breathe. But now it's out of spite.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "q01",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "In 2022, the research firm C plus R gave a thousand Americans ten seconds to guess what they spent on subscriptions each month.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "q02",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "The average guess was eighty-six dollars.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "q03",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Then they listed every subscription, one by one.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "q04",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "The average came to two hundred and nineteen.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "q05",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "And forty-two percent admitted they'd stopped using something they were still paying for.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "q06",
+  "lines": [
+   {
+    "speaker": "inner",
+    "voice": "narration",
+    "text": "Don't open the statement. If you don't look, it's free.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "f01",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "So who is signing us up for all this?",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "f02",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "In 2006, two economists published a study of three American gyms.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "f03",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Members paying over seventy dollars a month went, on average, four point three times a month.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "f04",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "That's more than seventeen dollars a visit. A ten-visit pass would have cost them ten.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "f05",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Their best explanation was overconfidence. People sign up for a much more disciplined version of themselves.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "f06",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Everyone has one. He's the reason there's a yoga mat behind your door, still in its plastic.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "f08",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "This is Ryan's. Future Ryan.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "f09",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "He gets up at six, he's read the terms and conditions, and he signed Ryan up for the gym. And the meal kit. And the language app.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "f11",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "narration",
+    "text": "He made a risotto. On a Tuesday. I didn't know you were allowed.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "f12",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Ryan pays for all of it. Future Ryan uses all of it.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "f14",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "narration",
+    "text": "He speaks Portuguese now. I hear him on the phone, laughing. I don't know what about.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "f15",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Then Future Ryan met someone. At the gym.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "f16",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Ryan's gym.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "f17",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Last month, Future Ryan moved to Lisbon.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "f18",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "He left a lovely note. He didn't cancel anything.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "f19",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "narration",
+    "text": "He's taken the air fryer.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "r01",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "So Ryan decided to cancel everything. He started with Weekend Plus, which can only be cancelled in person, on a Saturday.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "r02",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "So he took a Saturday off. Unpaid.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "r04",
+  "lines": [
+   {
+    "speaker": "gerald",
+    "voice": "narration",
+    "text": "Ryan. Come in. Nobody's in trouble. I've moved to Retention.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "r05",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "narration",
+    "text": "I'd like to cancel Weekend Plus, please.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "r06",
+  "lines": [
+   {
+    "speaker": "gerald",
+    "voice": "narration",
+    "text": "Of course. That's completely valid. Can I ask why?",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "r07",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "narration",
+    "text": "I have to work weekends to pay for it.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "r08",
+  "lines": [
+   {
+    "speaker": "gerald",
+    "voice": "narration",
+    "text": "So what I'm hearing is, you love it so much, you work for it.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "r09",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "That's not what he said.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "r10",
+  "lines": [
+   {
+    "speaker": "gerald",
+    "voice": "narration",
+    "text": "What if we paused it? You'd keep paying, but the weekends would stop.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "r11",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "narration",
+    "text": "That's what's happening now.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "r13",
+  "lines": [
+   {
+    "speaker": "gerald",
+    "voice": "narration",
+    "text": "It's been asking about you.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "r14",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "narration",
+    "text": "Is it eating?",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "r15",
+  "lines": [
+   {
+    "speaker": "gerald",
+    "voice": "narration",
+    "text": "It gets Sunday evenings.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "r16",
+  "lines": [
+   {
+    "speaker": "inner",
+    "voice": "narration",
+    "text": "Fake your death.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "r17",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "narration",
+    "text": "What if I died?",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "r18",
+  "lines": [
+   {
+    "speaker": "gerald",
+    "voice": "narration",
+    "text": "Then we'd need you to come in. In person.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "r19",
+  "lines": [
+   {
+    "speaker": "gerald",
+    "voice": "narration",
+    "text": "Of course, if you're sure, cancellations are just through there. Take your time. Most people do.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l01",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "That part was made up.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l02",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "This part isn't. In 2023, the US Federal Trade Commission sued Amazon over Prime.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l03",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "It said cancelling took four pages, six clicks and fifteen options, and that inside Amazon this was known as the Iliad Flow.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l04",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "The Iliad is a poem about a war that lasts ten years. Somebody chose that name. For the way out.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l05",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "The FTC said Amazon's leaders slowed or rejected changes that would have made cancelling easier, because those changes hurt the bottom line.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l06",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "In its words, the process existed \"not to enable subscribers to cancel, but to stop them.\"",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l07",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "In 2025, Amazon settled for two and a half billion dollars, without admitting wrongdoing.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l08",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Adobe was sued too.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l09",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "The government said that cancelling in your first year could cost half of what you had left to pay, and that the warning was in small print, or behind tiny icons you had to hover over.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "l10",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "In March 2026, Adobe agreed to settle for a hundred and fifty million dollars. Half of it was a fine. The other half was paid in free Adobe.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "k01",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "In 2024, the FTC adopted a rule that cancelling had to be as easy as signing up.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "k02",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "In July 2025, six days before businesses had to comply, a federal appeals court threw it out. The FTC had skipped a required cost analysis.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "k04",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "The law Amazon settled under still stands. And in March 2026, the FTC started again. From the beginning.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "o01",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Meanwhile, the newest idea is charging monthly for things you've already bought.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "o02",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "In January 2024, HP's chief executive told CNBC that the company's long-term objective was \"to make printing a subscription.\"",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "o03",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "He also said a customer who doesn't print enough, or doesn't use HP's supplies, is \"a bad investment.\"",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "o05",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "narration",
+    "text": "I've never been an investment before. I don't think I'm doing very well.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "o06",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "And if you cancel HP's Instant Ink, the cartridges already in your printer stop working at the end of the billing cycle.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "o08",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Which is usually when someone online says: you'll own nothing, and be happy.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "o10",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "It isn't a secret plan. It comes from a short World Economic Forum video in 2016, based on an essay by the Danish politician Ida Auken, imagining life in a city in 2030.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "o11",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "She later wrote that it wasn't her utopia, just a scenario to get people talking.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "o12",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "The internet decided it was a threat.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "o13",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Brayden decided it was a goal.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "b01",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "Nine days later, Ryan went round with a housewarming present.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "b03",
+  "lines": [
+   {
+    "speaker": "brayden",
+    "voice": "narration",
+    "text": "Bro! The door's on the premium tier. Window's free. Mind the roses, they're rented.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "b05",
+  "lines": [
+   {
+    "speaker": "brayden",
+    "voice": "narration",
+    "text": "I don't own anything anymore. Sofa's on demand. Even my hairline's on a subscription. Ownership is an anchor. I'm a boat.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "b07",
+  "lines": [
+   {
+    "speaker": "brayden",
+    "voice": "narration",
+    "text": "Fridge light's on pause. Keeps me hungry.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "b08",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "narration",
+    "text": "Where do you sit?",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "b09",
+  "lines": [
+   {
+    "speaker": "brayden",
+    "voice": "narration",
+    "text": "Sitting's on the Plus plan. I stand. Standing's free.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "b12",
+  "lines": [
+   {
+    "speaker": "inner",
+    "voice": "narration",
+    "text": "Lie down. Make it worth it.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "b14",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "narration",
+    "text": "It's like visiting someone who's been burgled. And they're proud of it.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "b15",
+  "lines": [
+   {
+    "speaker": "brayden",
+    "voice": "narration",
+    "text": "And for nine ninety-nine a month, you can subscribe to me. You get my mornings. Most of them are filmed in the afternoon.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "b17",
+  "lines": [
+   {
+    "speaker": "brayden",
+    "voice": "narration",
+    "text": "I can't take that. Then I'd own it.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "v01",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "So, why is everything a subscription now? Partly because some things genuinely work better that way. I'm keeping my music.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "v02",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "But mostly because a subscription is a bet on three things. That you'll forget. That you'll overestimate the person you're about to become. And that leaving will be just annoying enough to put off until next month.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "v06",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "A decent test is whether you'd sign up again today, at today's price. If you wouldn't, it's not a subscription anymore. It's a monthly charge you keep for sentimental reasons.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "v08",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "narration",
+    "text": "Sorry.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "v09",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "narration",
+    "text": "Sorry.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "v10",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "narration",
+    "text": "Really sorry about this one.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "v11",
+  "lines": [
+   {
+    "speaker": "maya",
+    "voice": "narration",
+    "text": "It took him the whole evening.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "v13",
+  "lines": [
+   {
+    "speaker": "benny",
+    "voice": "narration",
+    "text": "This one's mine.",
+    "emotion": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "v15",
+  "lines": [
+   {
+    "speaker": "gerald",
+    "voice": "narration",
+    "text": "Hi Ryan. It's Gerald. Nobody's in trouble. We noticed you'd left, so we've signed you up for Weekend Lite. The first month's completely free.",
+    "emotion": "neutral"
+   }
+  ]
+ }
+]

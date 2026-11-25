@@ -1,0 +1,17 @@
+{
+ "name": "inner",
+ "design": "Breathy, impish close-mic whisper; mischievous, delighted with terrible ideas. Speaking naturally in English, expressive and conversational.",
+ "language": "English",
+ "tts": {
+  "engine": "qwen_clone",
+  "model": "models/Qwen3-TTS-12Hz-1.7B-Base",
+  "base_direction": "",
+  "ref_audio": "library/voices/inner/ref_locked.wav",
+  "ref_text": "library/voices/inner/ref_locked.txt",
+  "chosen": "2026-11-25 user picked design take C"
+ },
+ "instruct": "Breathy, impish close-mic whisper; mischievous, delighted with terrible ideas. Speaking naturally in English, expressive and conversational.",
+ "f0": 287.1,
+ "gender": null,
+ "redesigns": 0
+}

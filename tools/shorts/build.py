@@ -43,7 +43,10 @@ SHOTS = T.SHOTS
 TEMPO = getattr(T, "TEMPO", 1.0)          # whole-line speed-up (never pauses inside a line)
 
 
-def wav(s): return f"{OUT}/audio/{s['id']}" + (".t.wav" if TEMPO != 1.0 else ".wav")
+def tempo_of(s): return TEMPO.get(s["spk"], 1.0) if isinstance(TEMPO, dict) else TEMPO      # per-speaker speed (dict) or one speed
+def wav(s): return f"{OUT}/audio/{s['id']}" + (".t.wav" if isinstance(TEMPO, dict) or TEMPO != 1.0 else ".wav")
+def spoken(s): return bool(s.get("text"))                                    # silent shots (text "") are visual-only, length = s["dur"]
+WHISPER = "highpass=f=170,lowpass=f=9500,acompressor=threshold=-24dB:ratio=3,aecho=0.7:0.6:18:0.12"   # inner voice: close, inside-the-head
 
 
 # ---------------------------------------------------------------- voice
@@ -54,17 +57,19 @@ def do_voice():
     for c in chars:                                   # topic-level voice reference (same identity, different read), e.g. Maya's lively lock
         if c["id"] in getattr(T, "VOICE_REF", {}): c["tts"] = dict(c["tts"], **T.VOICE_REF[c["id"]])
     scenes = [{"id": s["id"], "lines": [{"speaker": s["spk"], "voice": s.get("tag", "narration"), "text": s["text"], "emotion": "neutral"}]} for s in SHOTS
-              if not os.path.exists(wav(s))]                 # only lines without audio yet (added shots)
+              if spoken(s) and not os.path.exists(wav(s))]                 # only lines without audio yet (added shots)
     os.makedirs(f"{OUT}/audio", exist_ok=True)
     json.dump(scenes, open(f"{OUT}/lines.json", "w"), indent=1)
     if scenes: voice.narrate({"characters": chars, "narrator_voice": sh.get("narrator"), "scenes": scenes}, f"{OUT}/audio")
-    if TEMPO != 1.0:
+    if isinstance(TEMPO, dict) or TEMPO != 1.0:
         for s in SHOTS:
-            if not os.path.exists(wav(s)): subprocess.run(["ffmpeg", "-nostdin", "-y", "-v", "error", "-i", f"{OUT}/audio/{s['id']}.wav", "-af", f"atempo={TEMPO}", wav(s)], check=True)
+            if spoken(s) and not os.path.exists(wav(s)):
+                af = f"atempo={tempo_of(s)}" + ("," + WHISPER if s["spk"] == "inner" else "")
+                subprocess.run(["ffmpeg", "-nostdin", "-y", "-v", "error", "-i", f"{OUT}/audio/{s['id']}.wav", "-af", af, wav(s)], check=True)
     t, tl = HEAD, []
-    for s in SHOTS:
-        d = sf.info(wav(s)).duration
-        tl.append({"id": s["id"], "start": round(t, 3), "dur": round(d, 3)}); t += d + GAP
+    for s in SHOTS:                                   # hold = animation-only seconds after the line (reveals, reactions)
+        d = sf.info(wav(s)).duration if spoken(s) else float(s.get("dur", 2.0))
+        tl.append({"id": s["id"], "start": round(t, 3), "dur": round(d, 3)}); t += d + GAP + float(s.get("hold", 0))
     json.dump(tl, open(f"{OUT}/timeline.json", "w"), indent=1)
     print("speech total %.1fs, video %.1fs" % (sum(x["dur"] for x in tl), t - GAP + TAIL), flush=True)
 
@@ -170,7 +175,7 @@ def do_anim(arg="", seed=21):
                 ltx(kf, s["mv"], out, min(secs, 10), seed)
             else:
                 comfy.free()
-                talk = s["spk"] == R
+                talk = s["spk"] not in (M, "inner") and spoken(s)        # any on-screen character lip-syncs their own line
                 audio = wav(s) if talk else silent(f"{OUT}/silent_{secs}.wav", secs)
                 h3.render(out, keyframe=kf, refs=[kf] if getattr(T, "H3_REF_KF", False) else [REFS[x] for x in s.get("refs", [])], audio=audio, prompt=f"{s['mv']} {LOOK}",
                           size=(KW, KH), seconds=secs, seed=seed, mode="flex", anchor_audio=talk)
@@ -303,6 +308,7 @@ def captions(tl, total):
             "[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n")
     ev = []
     for x, s in zip(tl, SHOTS):
+        if not spoken(s): continue
         chunks, cur = [], []
         for w in line_words(s):
             cur.append(w)
@@ -328,7 +334,7 @@ def do_mix():
     speech, amb = np.zeros(n, np.float32), np.zeros(n, np.float32)
     os.makedirs(f"{OUT}/seg", exist_ok=True); lst = []; h3.free(); comfy.start()
     for i, (x, s) in enumerate(zip(tl, SHOTS)):
-        a = load(wav(s)); st = int(x["start"] * sr); speech[st:st + len(a)] += a[: n - st]
+        if spoken(s): a = load(wav(s)); st = int(x["start"] * sr); speech[st:st + len(a)] += a[: n - st]
         s0, L = seg_len(i, tl); clip = clip_for(s, pick); h3like = "_h3_" in clip; skip = 0.125 if h3like else 0.0
         cd = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", clip], capture_output=True, text=True).stdout)
         pad = max(0.0, L - (cd - skip)); slow = ""
@@ -341,7 +347,7 @@ def do_mix():
                         "-c:v", "libx264", "-preset", "veryfast", "-crf", "16", "-pix_fmt", "yuv420p", o], check=True)
         lst.append(f"file '{os.path.abspath(o)}'")
         if s["eng"] in ("card", "still"): src = load(sfx(s.get("sfx") or "quiet room tone", int(np.ceil(L)) + 1)); lvl = -24
-        elif h3like: src = load(sfx(s.get("sfx") or "quiet small apartment room tone", int(np.ceil(L)) + 1)); lvl = -32 if s["spk"] == R else -24
+        elif h3like: src = load(sfx(s.get("sfx") or "quiet small apartment room tone", int(np.ceil(L)) + 1)); lvl = -32 if s["spk"] not in (M, "inner") else -24
         else: src = load(clip); lvl = -20
         src = src[: int(L * sr)]; a0 = int(s0 * sr)
         if len(src):
