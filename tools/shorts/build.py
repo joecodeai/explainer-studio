@@ -295,8 +295,21 @@ def line_words(s):
     ws = [w for sg in _asr.transcribe(load(wav(s), 16000), language="en", word_timestamps=True, beam_size=5)[0] for w in sg.words]
     sw = s["text"].split()
     if len(ws) == len(sw): return [{"w": a, "s": w.start, "e": w.end} for a, w in zip(sw, ws)]
-    s0, e0 = (ws[0].start, ws[-1].end) if ws else (0, sf.info(wav(s)).duration); st = (e0 - s0) / len(sw)
-    return [{"w": w, "s": s0 + k * st, "e": s0 + (k + 1) * st} for k, w in enumerate(sw)]
+    s0, e0 = (ws[0].start, ws[-1].end) if ws else (0, sf.info(wav(s)).duration)
+    import difflib, re as _re                                   # counts differ ("four" vs "4"): align, interpolate the gaps
+    nz = lambda x: _re.sub(r"[^a-z0-9]", "", x.lower())
+    T = [None] * len(sw)
+    for m in difflib.SequenceMatcher(None, [nz(x) for x in sw], [nz(w.word) for w in ws], autojunk=False).get_matching_blocks():
+        for k in range(m.size): T[m.a + k] = (ws[m.b + k].start, ws[m.b + k].end)
+    i = 0
+    while i < len(sw):
+        if T[i]: i += 1; continue
+        j = i
+        while j < len(sw) and not T[j]: j += 1
+        lo = T[i - 1][1] if i else s0; hi = T[j][0] if j < len(sw) else e0; st = max(0.0, hi - lo) / (j - i)
+        for k in range(i, j): T[k] = (lo + (k - i) * st, lo + (k - i + 1) * st)
+        i = j
+    return [{"w": w, "s": a, "e": b} for w, (a, b) in zip(sw, T)]
 
 
 def captions(tl, total):
