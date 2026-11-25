@@ -1,0 +1,68 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: C,Montserrat ExtraBold,84,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,0,0,1,7,2,2,120,160,600,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.18,0:00:00.72,C,,0,0,0,,I'M GERALD,
+Dialogue: 0,0:00:00.72,0:00:01.80,C,,0,0,0,,FROM PEOPLE AND
+Dialogue: 0,0:00:01.80,0:00:02.78,C,,0,0,0,,CULTURE.
+Dialogue: 0,0:00:02.78,0:00:04.16,C,,0,0,0,,NOBODY'S IN TROUBLE.
+Dialogue: 0,0:00:04.16,0:00:04.60,C,,0,0,0,,I JUST WANT
+Dialogue: 0,0:00:04.60,0:00:05.56,C,,0,0,0,,TO TALK.
+Dialogue: 0,0:00:05.56,0:00:06.98,C,,0,0,0,,LET'S START SMALL.
+Dialogue: 0,0:00:06.98,0:00:07.94,C,,0,0,0,,SATURDAY.
+Dialogue: 0,0:00:07.94,0:00:08.42,C,,0,0,0,,YOU DON'T NEED
+Dialogue: 0,0:00:08.42,0:00:09.82,C,,0,0,0,,ALL OF SATURDAY.
+Dialogue: 0,0:00:09.82,0:00:10.33,C,,0,0,0,,DO YOU?
+Dialogue: 0,0:00:10.46,0:00:10.72,C,,0,0,0,,I...
+Dialogue: 0,0:00:10.72,0:00:12.36,C,,0,0,0,,SORT OF USE
+Dialogue: 0,0:00:12.36,0:00:12.81,C,,0,0,0,,IT.
+Dialogue: 0,0:00:12.94,0:00:14.04,C,,0,0,0,,OF COURSE.
+Dialogue: 0,0:00:14.04,0:00:14.98,C,,0,0,0,,AND THAT'S COMPLETELY
+Dialogue: 0,0:00:14.98,0:00:15.92,C,,0,0,0,,VALID.
+Dialogue: 0,0:00:15.92,0:00:16.40,C,,0,0,0,,WHAT IF YOU
+Dialogue: 0,0:00:16.40,0:00:17.30,C,,0,0,0,,KEPT THE MORNING,
+Dialogue: 0,0:00:17.30,0:00:18.18,C,,0,0,0,,AND WE JUST
+Dialogue: 0,0:00:18.18,0:00:19.56,C,,0,0,0,,QUIETLY LOOKED AFTER
+Dialogue: 0,0:00:19.56,0:00:20.52,C,,0,0,0,,THE AFTERNOON FOR
+Dialogue: 0,0:00:20.52,0:00:20.90,C,,0,0,0,,YOU?
+Dialogue: 0,0:00:21.03,0:00:21.71,C,,0,0,0,,PUT THE WEEKEND
+Dialogue: 0,0:00:21.71,0:00:22.17,C,,0,0,0,,DOWN,
+Dialogue: 0,0:00:22.17,0:00:22.62,C,,0,0,0,,RYAN.
+Dialogue: 0,0:00:22.62,0:00:23.62,C,,0,0,0,,SLOWLY.
+Dialogue: 0,0:00:23.62,0:00:24.43,C,,0,0,0,,NOBODY HAS TO
+Dialogue: 0,0:00:24.43,0:00:25.12,C,,0,0,0,,GET HURT.
+Dialogue: 0,0:00:28.82,0:00:29.44,C,,0,0,0,,GOOD NEWS,
+Dialogue: 0,0:00:29.44,0:00:29.88,C,,0,0,0,,THOUGH.
+Dialogue: 0,0:00:29.88,0:00:30.24,C,,0,0,0,,YOU CAN GET
+Dialogue: 0,0:00:30.24,0:00:31.18,C,,0,0,0,,IT BACK.
+Dialogue: 0,0:00:31.18,0:00:32.04,C,,0,0,0,,WE'VE MOVED WEEKENDS
+Dialogue: 0,0:00:32.04,0:00:32.86,C,,0,0,0,,TO A SUBSCRIPTION
+Dialogue: 0,0:00:32.86,0:00:33.78,C,,0,0,0,,MODEL.
+Dialogue: 0,0:00:33.78,0:00:33.79,C,,0,0,0,,WEEKEND
+Dialogue: 0,0:00:33.97,0:00:35.21,C,,0,0,0,,WEEKEND PLUS ADDS
+Dialogue: 0,0:00:35.21,0:00:36.01,C,,0,0,0,,SUNDAY,
+Dialogue: 0,0:00:36.01,0:00:36.53,C,,0,0,0,,BUT THE SUNDAY
+Dialogue: 0,0:00:36.53,0:00:37.59,C,,0,0,0,,EVENING DREAD IS
+Dialogue: 0,0:00:37.59,0:00:39.03,C,,0,0,0,,BILLED SEPARATELY.
+Dialogue: 0,0:00:39.03,0:00:39.81,C,,0,0,0,,AND WEEKEND PRO
+Dialogue: 0,0:00:39.81,0:00:40.97,C,,0,0,0,,INCLUDES THE AFTERNOON
+Dialogue: 0,0:00:40.97,0:00:41.67,C,,0,0,0,,YOU JUST GAVE
+Dialogue: 0,0:00:41.67,0:00:42.03,C,,0,0,0,,ME.
+Dialogue: 0,0:00:42.15,0:00:43.03,C,,0,0,0,,I JUST GAVE
+Dialogue: 0,0:00:43.03,0:00:43.82,C,,0,0,0,,YOU THAT.
+Dialogue: 0,0:00:43.95,0:00:44.71,C,,0,0,0,,AND NOW YOU
+Dialogue: 0,0:00:44.71,0:00:45.17,C,,0,0,0,,CAN HAVE IT
+Dialogue: 0,0:00:45.17,0:00:45.89,C,,0,0,0,,BACK.
+Dialogue: 0,0:00:45.89,0:00:46.44,C,,0,0,0,,MONTHLY.
+Dialogue: 0,0:00:46.69,0:00:47.27,C,,0,0,0,,HOW DO I
+Dialogue: 0,0:00:47.27,0:00:47.98,C,,0,0,0,,CANCEL?
+Dialogue: 0,0:00:48.22,0:00:49.38,C,,0,0,0,,CANCELLATIONS ARE DONE
+Dialogue: 0,0:00:49.38,0:00:50.36,C,,0,0,0,,IN PERSON.
+Dialogue: 0,0:00:50.36,0:00:51.21,C,,0,0,0,,ON A SATURDAY.

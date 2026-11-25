@@ -1,149 +1,116 @@
 [
  {
-  "id": "r01",
-  "lines": [
-   {
-    "speaker": "brayden",
-    "voice": "narration",
-    "text": "Good morning. It's four a.m. Right now, you're asleep. That's why you're broke. I've already had a cold shower, a hot shower, and an argument with a swan.",
-    "emotion": "neutral"
-   }
-  ]
- },
- {
-  "id": "r02",
+  "id": "q02",
   "lines": [
    {
     "speaker": "maya",
     "voice": "narration",
-    "text": "Somewhere right now, a man is telling you to wake up at four in the morning so you can be rich like him.",
+    "text": "In 2019, Alibaba's founder called a nine a.m. to nine p.m., six-day week a huge blessing. Gerald, from People and Culture, has a gentler approach.",
     "emotion": "neutral"
    }
   ]
  },
  {
-  "id": "r03",
+  "id": "q03",
   "lines": [
    {
-    "speaker": "maya",
+    "speaker": "gerald",
     "voice": "narration",
-    "text": "He'll even tell you how he made his money. It was selling you this video.",
+    "text": "Hi, Ryan. I'm Gerald, from People and Culture. Nobody's in trouble. I just want to talk. Let's start small. Saturday. You don't need all of Saturday. Do you?",
     "emotion": "neutral"
    }
   ]
  },
  {
-  "id": "r04",
+  "id": "q04",
   "lines": [
    {
     "speaker": "benny",
     "voice": "narration",
-    "text": "I'm still watching.",
+    "text": "I... sort of use it.",
     "emotion": "neutral"
    }
   ]
  },
  {
-  "id": "r05",
+  "id": "q05",
   "lines": [
    {
     "speaker": "gerald",
     "voice": "narration",
-    "text": "Put the weekend down, Ryan. Slowly. Nobody has to get hurt.",
+    "text": "Of course. And that's completely valid. What if you kept the morning, and we just quietly looked after the afternoon for you?",
     "emotion": "neutral"
    }
   ]
  },
  {
-  "id": "r07",
-  "lines": [
-   {
-    "speaker": "gerald",
-    "voice": "narration",
-    "text": "Good news. We've moved weekends to a subscription model. Weekend Plus adds Sunday, but the Sunday evening dread is billed separately.",
-    "emotion": "neutral"
-   }
-  ]
- },
- {
-  "id": "r08",
+  "id": "q08",
   "lines": [
    {
     "speaker": "benny",
     "voice": "narration",
-    "text": "How do I cancel?",
+    "text": "I just gave you that.",
     "emotion": "neutral"
    }
   ]
  },
  {
-  "id": "r09",
+  "id": "q09",
   "lines": [
    {
     "speaker": "gerald",
     "voice": "narration",
-    "text": "Cancellations are done in person. On a Saturday.",
+    "text": "And now you can have it back. Monthly.",
     "emotion": "neutral"
    }
   ]
  },
  {
-  "id": "r10",
+  "id": "q10",
   "lines": [
    {
-    "speaker": "maya",
+    "speaker": "benny",
     "voice": "narration",
-    "text": "The average side hustle earns eight hundred and eighty-five dollars a month. The median earns two hundred. The average is a liar standing next to a millionaire.",
+    "text": "Can I just... have the one I had before?",
     "emotion": "neutral"
    }
   ]
  },
  {
-  "id": "r11",
+  "id": "q11",
   "lines": [
    {
-    "speaker": "brayden",
+    "speaker": "gerald",
     "voice": "narration",
-    "text": "Kidneys. Two of you, doing the same job. That's a redundancy situation.",
+    "text": "That plan's been discontinued. But we've kept your memories of it in a premium folder.",
     "emotion": "neutral"
    }
   ]
  },
  {
-  "id": "r12",
+  "id": "q12",
   "lines": [
    {
-    "speaker": "maya",
+    "speaker": "inner",
     "voice": "narration",
-    "text": "He fired a kidney.",
+    "text": "He's good.",
     "emotion": "neutral"
    }
   ]
  },
  {
-  "id": "r13",
+  "id": "q13",
   "lines": [
    {
-    "speaker": "maya",
+    "speaker": "gerald",
     "voice": "narration",
-    "text": "Oh, and his four a.m. sunrise videos? Filmed at four in the afternoon. The sunrise is a lamp.",
+    "text": "And if you'd rather sleep when you're dead, we've partnered with a lovely cemetery. Staff get ten percent off.",
     "emotion": "neutral"
    }
   ]
  },
  {
-  "id": "r14",
-  "lines": [
-   {
-    "speaker": "brayden",
-    "voice": "narration",
-    "text": "Still counts.",
-    "emotion": "neutral"
-   }
-  ]
- },
- {
-  "id": "r15",
+  "id": "q16",
   "lines": [
    {
     "speaker": "maya",

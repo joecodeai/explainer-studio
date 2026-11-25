@@ -1,0 +1,59 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: C,Montserrat ExtraBold,84,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,0,0,1,7,2,2,120,160,600,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.40,0:00:01.04,C,,0,0,0,,GOOD MORNING.
+Dialogue: 0,0:00:01.04,0:00:02.00,C,,0,0,0,,IT'S FOUR A.M.
+Dialogue: 0,0:00:02.00,0:00:02.64,C,,0,0,0,,RIGHT NOW,
+Dialogue: 0,0:00:02.64,0:00:03.28,C,,0,0,0,,YOU'RE ASLEEP.
+Dialogue: 0,0:00:03.28,0:00:04.24,C,,0,0,0,,THAT'S WHY YOU'RE
+Dialogue: 0,0:00:04.24,0:00:04.56,C,,0,0,0,,BROKE.
+Dialogue: 0,0:00:04.56,0:00:05.52,C,,0,0,0,,I'VE BEEN UP
+Dialogue: 0,0:00:05.52,0:00:06.16,C,,0,0,0,,SINCE THREE.
+Dialogue: 0,0:00:06.16,0:00:07.12,C,,0,0,0,,I'VE ALREADY HAD
+Dialogue: 0,0:00:07.12,0:00:08.08,C,,0,0,0,,A COLD SHOWER,
+Dialogue: 0,0:00:08.08,0:00:09.04,C,,0,0,0,,A HOT SHOWER,
+Dialogue: 0,0:00:09.04,0:00:10.00,C,,0,0,0,,AND AN ARGUMENT
+Dialogue: 0,0:00:10.00,0:00:11.21,C,,0,0,0,,WITH A SWAN.
+Dialogue: 0,0:00:11.97,0:00:12.60,C,,0,0,0,,FOUR A.M.,
+Dialogue: 0,0:00:12.60,0:00:12.92,C,,0,0,0,,AWAKE.
+Dialogue: 0,0:00:12.92,0:00:13.87,C,,0,0,0,,FOUR OH FIVE,
+Dialogue: 0,0:00:13.87,0:00:14.50,C,,0,0,0,,ICE BATH.
+Dialogue: 0,0:00:14.50,0:00:15.13,C,,0,0,0,,FOUR THIRTY,
+Dialogue: 0,0:00:15.13,0:00:16.08,C,,0,0,0,,I READ ONE
+Dialogue: 0,0:00:16.08,0:00:17.03,C,,0,0,0,,PAGE OF A
+Dialogue: 0,0:00:17.03,0:00:17.98,C,,0,0,0,,BOOK ABOUT READING.
+Dialogue: 0,0:00:17.98,0:00:18.29,C,,0,0,0,,FIVE,
+Dialogue: 0,0:00:18.29,0:00:19.24,C,,0,0,0,,I TELL THE
+Dialogue: 0,0:00:19.24,0:00:20.19,C,,0,0,0,,MIRROR IT'S A
+Dialogue: 0,0:00:20.19,0:00:20.76,C,,0,0,0,,WINNER.
+Dialogue: 0,0:00:24.22,0:00:25.06,C,,0,0,0,,SIX,
+Dialogue: 0,0:00:25.06,0:00:25.62,C,,0,0,0,,I FILM MY
+Dialogue: 0,0:00:25.62,0:00:26.66,C,,0,0,0,,MORNING ROUTINE.
+Dialogue: 0,0:00:26.66,0:00:27.50,C,,0,0,0,,SEVEN,
+Dialogue: 0,0:00:27.50,0:00:27.96,C,,0,0,0,,I EDIT MY
+Dialogue: 0,0:00:27.96,0:00:29.14,C,,0,0,0,,MORNING ROUTINE.
+Dialogue: 0,0:00:29.14,0:00:29.62,C,,0,0,0,,NINE,
+Dialogue: 0,0:00:29.62,0:00:30.28,C,,0,0,0,,I POST MY
+Dialogue: 0,0:00:30.28,0:00:31.09,C,,0,0,0,,MORNING ROUTINE.
+Dialogue: 0,0:00:31.39,0:00:32.01,C,,0,0,0,,SO THE MAIN
+Dialogue: 0,0:00:32.01,0:00:32.87,C,,0,0,0,,THING HIS MORNING
+Dialogue: 0,0:00:32.87,0:00:34.05,C,,0,0,0,,PRODUCES IS A
+Dialogue: 0,0:00:34.05,0:00:34.83,C,,0,0,0,,VIDEO OF HIS
+Dialogue: 0,0:00:34.83,0:00:35.36,C,,0,0,0,,MORNING.
+Dialogue: 0,0:00:36.42,0:00:36.77,C,,0,0,0,,OH,
+Dialogue: 0,0:00:36.77,0:00:37.83,C,,0,0,0,,AND BRAYDEN'S FOUR
+Dialogue: 0,0:00:37.83,0:00:38.19,C,,0,0,0,,A.M.
+Dialogue: 0,0:00:38.19,0:00:38.79,C,,0,0,0,,VIDEOS?
+Dialogue: 0,0:00:42.34,0:00:43.34,C,,0,0,0,,FILMED AT FOUR
+Dialogue: 0,0:00:43.34,0:00:44.60,C,,0,0,0,,IN THE AFTERNOON.
+Dialogue: 0,0:00:44.60,0:00:45.42,C,,0,0,0,,THE SUNRISE IS
+Dialogue: 0,0:00:45.42,0:00:46.11,C,,0,0,0,,A LAMP.
+Dialogue: 0,0:00:46.82,0:00:47.68,C,,0,0,0,,STILL COUNTS.

@@ -1,0 +1,54 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: C,Montserrat ExtraBold,84,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,0,0,1,7,2,2,120,160,600,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:02.88,0:00:03.44,C,,0,0,0,,TEAM.
+Dialogue: 0,0:00:03.44,0:00:04.10,C,,0,0,0,,LET'S TALK ABOUT
+Dialogue: 0,0:00:04.10,0:00:04.51,C,,0,0,0,,SLEEP.
+Dialogue: 0,0:00:04.51,0:00:05.62,C,,0,0,0,,EVERY NIGHT,
+Dialogue: 0,0:00:05.62,0:00:06.18,C,,0,0,0,,EIGHT HOURS,
+Dialogue: 0,0:00:06.18,0:00:07.06,C,,0,0,0,,GONE.
+Dialogue: 0,0:00:07.06,0:00:08.15,C,,0,0,0,,NO REVENUE.
+Dialogue: 0,0:00:08.15,0:00:08.98,C,,0,0,0,,NO CONTENT.
+Dialogue: 0,0:00:08.98,0:00:09.45,C,,0,0,0,,I'M NOT PAYING
+Dialogue: 0,0:00:09.45,0:00:09.95,C,,0,0,0,,YOU TO LIE
+Dialogue: 0,0:00:09.95,0:00:10.54,C,,0,0,0,,THERE IN THE
+Dialogue: 0,0:00:10.54,0:00:11.11,C,,0,0,0,,DARK.
+Dialogue: 0,0:00:11.35,0:00:12.13,C,,0,0,0,,HEART.
+Dialogue: 0,0:00:12.13,0:00:12.75,C,,0,0,0,,LOVE THE ENERGY.
+Dialogue: 0,0:00:12.75,0:00:13.41,C,,0,0,0,,YOU'RE GETTING MORE
+Dialogue: 0,0:00:13.41,0:00:14.28,C,,0,0,0,,RESPONSIBILITY.
+Dialogue: 0,0:00:17.29,0:00:18.07,C,,0,0,0,,LIVER,
+Dialogue: 0,0:00:18.07,0:00:18.65,C,,0,0,0,,I'VE SEEN YOUR
+Dialogue: 0,0:00:18.65,0:00:19.47,C,,0,0,0,,NUMBERS.
+Dialogue: 0,0:00:19.47,0:00:19.89,C,,0,0,0,,YOU'RE ON A
+Dialogue: 0,0:00:19.89,0:00:21.02,C,,0,0,0,,PERFORMANCE PLAN.
+Dialogue: 0,0:00:23.43,0:00:24.27,C,,0,0,0,,KIDNEYS.
+Dialogue: 0,0:00:24.27,0:00:24.61,C,,0,0,0,,TWO OF YOU,
+Dialogue: 0,0:00:24.61,0:00:25.27,C,,0,0,0,,DOING THE SAME
+Dialogue: 0,0:00:25.27,0:00:25.99,C,,0,0,0,,JOB.
+Dialogue: 0,0:00:25.99,0:00:26.95,C,,0,0,0,,THAT'S A REDUNDANCY
+Dialogue: 0,0:00:26.95,0:00:27.72,C,,0,0,0,,SITUATION.
+Dialogue: 0,0:00:31.29,0:00:32.01,C,,0,0,0,,HE FIRED A
+Dialogue: 0,0:00:32.01,0:00:32.52,C,,0,0,0,,KIDNEY.
+Dialogue: 0,0:00:33.48,0:00:34.14,C,,0,0,0,,SLEEP IS A
+Dialogue: 0,0:00:34.14,0:00:34.79,C,,0,0,0,,MINDSET.
+Dialogue: 0,0:00:35.04,0:00:35.88,C,,0,0,0,,IT ISN'T.
+Dialogue: 0,0:00:35.88,0:00:37.02,C,,0,0,0,,RESEARCHERS THINK ONE
+Dialogue: 0,0:00:37.02,0:00:37.54,C,,0,0,0,,OF THE THINGS
+Dialogue: 0,0:00:37.54,0:00:38.60,C,,0,0,0,,SLEEP DOES IS
+Dialogue: 0,0:00:38.60,0:00:39.58,C,,0,0,0,,CLEAR WASTE OUT
+Dialogue: 0,0:00:39.58,0:00:40.66,C,,0,0,0,,OF THE BRAIN.
+Dialogue: 0,0:00:40.66,0:00:41.34,C,,0,0,0,,SKIP IT,
+Dialogue: 0,0:00:41.34,0:00:41.74,C,,0,0,0,,AND YOU'RE RUNNING
+Dialogue: 0,0:00:41.74,0:00:42.88,C,,0,0,0,,THE WHOLE OPERATION
+Dialogue: 0,0:00:42.88,0:00:44.35,C,,0,0,0,,ON YESTERDAY'S RUBBISH.
+Dialogue: 0,0:00:44.68,0:00:45.02,C,,0,0,0,,WHERE DO YOU
+Dialogue: 0,0:00:45.02,0:00:45.95,C,,0,0,0,,THINK YOU'RE GOING?

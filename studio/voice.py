@@ -198,9 +198,11 @@ def _qwen_custom(todo, profiles):
     subprocess.run([os.path.join(C.ROOT, ".venv-tts", "bin", "python"), os.path.join(C.ROOT, "studio", "tts_pick.py"), jf.name], check=True)
     for j in jobs:
         f = j["out"][:-len(".cb.wav")]
+        if not os.path.exists(j["out"]): continue      # duplicate line text (same cache file) already handled by an earlier job
         w, sr = sf.read(j["out"], dtype="float32")
         raw = f + ".raw.wav"; sf.write(raw, _trim(w, sr), sr); _clean(raw, f); os.remove(raw); os.remove(j["out"])
-        for tf in j["takes"]: os.remove(tf)
+        for tf in j["takes"]:
+            if os.path.exists(tf): os.remove(tf)
 
 
 def _chatterbox(todo, profiles):

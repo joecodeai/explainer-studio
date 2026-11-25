@@ -13,3 +13,4 @@ file '/home/mundax/Documents/REL/ExplainerStudio/projects/short-hustlereel/seg/1
 file '/home/mundax/Documents/REL/ExplainerStudio/projects/short-hustlereel/seg/12.mp4'
 file '/home/mundax/Documents/REL/ExplainerStudio/projects/short-hustlereel/seg/13.mp4'
 file '/home/mundax/Documents/REL/ExplainerStudio/projects/short-hustlereel/seg/14.mp4'
+file '/home/mundax/Documents/REL/ExplainerStudio/projects/short-hustlereel/seg/15.mp4'
