@@ -1,4 +1,31 @@
-# REEL RULES: permanent, set by the owner on 2026-11-25 (second revision)
+# REEL RULES: permanent, set by the owner on 2026-11-25 (third revision, which overrides anything below)
+
+## Story first, runtime second: ONE situation, never a summary
+- **Do not summarise the episode.** Pick ONE complete storyline, situation or character interaction from the long video and turn it into a miniature episode.
+- **One central situation.** Follow one main character or one connected interaction. Other characters appear only when they naturally enter that story; never jump between characters because each has a funny moment.
+- **Cause before effect.** Never show a reaction before its cause, or a punchline before its setup. Every action needs a clear reason.
+- **Keep connecting moments.** Glances, doors, hesitations and reactions stay when the next scene depends on them. Don't strip quiet shots to save seconds.
+- **No unexplained jumps.** Every cut must answer at least one question: What happened next? What did the character do in response? How did the problem get worse? What new information did we learn?
+- **Don't overload it.** One main comedic premise, allowed to develop. No combining storylines, stacking statistics or piling up running gags.
+- **Natural pacing.** Never speed up Maya or remove all the pauses. Give each shot time to be understood, read and enjoyed. It should feel deliberate, not frantic.
+- **Duration.** Never force 60 s. If the story needs 70–80 s, say so; otherwise pick a shorter story.
+
+## Process, every time
+1. Present THREE single-story concepts (not finished Shorts), and say which has the strongest natural continuity and why.
+2. Write a chronological storyboard for the best one: `VIDEOS/<Title>/REEL STORYBOARD.md`. For every shot give:
+   - what the viewer sees
+   - what the viewer hears
+   - what the viewer learns
+   - why it follows the previous shot
+   - what question pulls the viewer to the next shot
+   - how long it stays on screen
+   - its framing
+3. Read the storyboard through as one story. Then test it muted (is the progression clear from the pictures?) and audio-only (does it work as a continuous conversation or narration?).
+4. **Do not render until the owner approves.** Then build with `tools/shorts/promo.py` and do the shot-by-shot visual QC.
+
+The vertical-framing and technical rules below still apply in full.
+
+---
 These work alongside `CREATIVE_BIBLE.md`. They apply to every long-form video.
 
 ## ONE promotional Reel per episode, not three Shorts

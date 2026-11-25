@@ -97,9 +97,10 @@ SHOTS = [
  silent("c07", KF_BRAY_SEAT, 3.0, refs=["brayden"], mv="in", sfx="a car heater fan humming, a contented sigh"),
  card("c08", "", "MONTHLY", "GYM · MEAL KIT · LANGUAGE APP · WEEKEND PLUS", dur=2.0, sfx="a phone buzzing inside a cold car"),
  s("c09", R, "I'm still paying for Weekend Plus.",
-   "Close-up inside a cold car: a gloved thumb hovering over a phone screen that shows a simple list of coloured rows, small app-icon blobs "
-   "and grey bars.", mv="in", sfx="inside a cold parked car, wind"),
- s("c10", M, "He hasn't had a weekend since he signed up. He works Saturdays now. To pay for Weekend Plus.", KF_CAFE, refs=RY, hold=1.0,
+   "Close-up inside a cold parked car: one hand in a black winter glove, with an orange hoodie cuff, holds a phone whose screen shows a "
+   "simple list of coloured rows, small app-icon blobs and grey bars. Only that one hand is visible.", env=True, mv="in",
+   sfx="inside a cold parked car, wind"),
+ s("c10", M, "He hasn't had a weekend since he signed up. He works Saturdays now. To pay for Weekend Plus.", KF_CAFE.replace("tired, drying", "tired, lips together, drying"), refs=RY, hold=1.0,
    sfx="small café on a Saturday, a coffee machine hissing"),
  card("c11", "So. Why is everything a subscription now?", "NOW?", "WHY IS EVERYTHING A SUBSCRIPTION", bg="#3C5A50", hold=1.5),
  # ---------------- HOW WE GOT HERE
@@ -269,7 +270,7 @@ SHOTS = [
  s("o01", M, "Meanwhile, the newest idea is charging monthly for things you've already bought.",
    "A plain desktop printer on a home desk with a small coin slot on its side.", env=True, mv="in", sfx="quiet home office"),
  s("o02", M, "In January 2024, HP's chief executive told CNBC that the company's long-term objective was \"to make printing a subscription.\"",
-   "A businessman in a dark suit being interviewed in a television studio with a snowy mountain backdrop, talking confidently." + ONE,
+   "A businessman in a dark suit sitting alone on a television studio set, talking confidently towards the camera, a large snowy-mountain picture on the backdrop behind him." + ONE,
    mv="right", sfx="quiet TV studio, faint camera whirr"),
  card("o03", "He also said a customer who doesn't print enough, or doesn't use HP's supplies, is \"a bad investment.\"", "BAD", "INVESTMENT · HP CEO, 2024",
       bg="#5A3C3C", sfx="quiet TV studio"),
@@ -350,7 +351,7 @@ SHOTS = [
    sfx="quiet room, cards sliding on felt"),
  silent("v03", "A phone standing upright on a kitchen table, propped against the wall with its screen facing the wall.", 0.7, env=True, mv="in",
         sfx="quiet kitchen at night"),
- silent("v04", FUT + "standing on a sunny Lisbon balcony, happily hugging an air fryer, colourful tiled houses behind him." + ONE, 0.7,
+ silent("v04", FUT + "standing alone on a sunny Lisbon balcony, happily hugging an air fryer in both arms, colourful tiled houses far behind him." + ONE, 0.7,
         refs=["futureryan"], mv="in", sfx="sunny city, gulls, a tram bell"),
  silent("v05", KF_RAIN, 0.7, refs=RY, mv="in", sfx="rainy city street on a Monday morning, traffic"),
  s("v06", M, "A decent test is whether you'd sign up again today, at today's price. If you wouldn't, it's not a subscription anymore. It's a monthly charge you keep for sentimental reasons.",
@@ -368,8 +369,8 @@ SHOTS = [
  h("v13", R, "This one's mine.", RYAN + "sitting at his kitchen table in the evening, one hand resting on an old white radiator under the window, "
    "small sincere smile.", "He rests his hand on the radiator and speaks softly, almost moved.", hold=1.0,
    sfx="an old radiator ticking as it warms, quiet kitchen at night"),
- silent("v14", "A phone buzzing on a kitchen table, its screen showing an incoming call with a round photo of the smiling man from the reference.",
-        1.0, refs=["gerald"], mv="in", sfx="a phone buzzing on a wooden table"),
+ silent("v14", "Close-up of a phone buzzing on an empty wooden kitchen table, its screen showing an incoming call; the caller photo is a tiny round picture of a smiling grey-haired man with round glasses and a beige cardigan. The room around the table is empty.",
+        1.0, env=True, mv="in", sfx="a phone buzzing on a wooden table"),
  s("v15", G, "Hi Ryan. It's Gerald. Nobody's in trouble. We noticed you'd left, so we've signed you up for Weekend Lite. The first month's completely free.",
    KF_RY_RADIATOR, refs=RY, mv="in", hold=1.5, sfx="an old radiator ticking, a phone call on speaker, quiet kitchen"),
  silent("v16", KF_FOX_END, 3.0, env=True, eng="ltx", sfx="a single soft heater click, a quiet car interior, faint winter wind outside",
