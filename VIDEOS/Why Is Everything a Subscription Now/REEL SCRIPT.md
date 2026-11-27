@@ -9,7 +9,7 @@ Every line except the call to action is already recorded in the episode, word fo
 ---
 
 **[0:00–0:06] HOOK**
-MAYA: "In 2022, BMW started offering British drivers heated front seats. For fifteen pounds a month."
+MAYA: "In 2022, BMW started offering British drivers heated front seats. For about eighteen dollars a month."
 [Ryan freezing in his little grey car, breath fogging. On the bonnet, the fox is curled up on the warm engine, blissful.]
 
 **[0:07–0:11]**
@@ -45,7 +45,7 @@ MAYA (new): "Watch the full video on our channel."
 
 ## Why this story
 - **One problem:** Ryan pays for things he can't use. It escalates: he can't cancel, and he can't even die.
-- **The hook is real and surprising:** BMW heated seats for £15 a month. Ryan's radiator line makes it personal.
+- **The hook is real and surprising:** BMW heated seats for about $18 a month. Ryan's radiator line makes it personal.
 - **The payoff calls back to the opening:** the fox ends up in the warm seat Ryan won't pay for, for free.
 - **Held back for the episode:**
   - Future Ryan

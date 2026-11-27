@@ -86,8 +86,8 @@ SFX_RET = "quiet office, air conditioning hum"
 
 SHOTS = [
  # ---------------- COLD OPEN: THE HEATED SEAT
- s("c01", M, "In 2022, BMW started offering British drivers heated front seats. For fifteen pounds a month.", KF_CAR, refs=RY, sfx=SFX_LOT),
- card("c02", "", "£15", "HEATED SEATS · A MONTH · BMW UK 2022", dur=1.5, sfx="frosty car park, wind"),
+ s("c01", M, "In 2022, BMW started offering British drivers heated front seats. For about eighteen dollars a month.", KF_CAR, refs=RY, sfx=SFX_LOT),
+ card("c02", "", "$18", "HEATED SEATS · A MONTH · BMW UK 2022", dur=1.5, sfx="frosty car park, wind"),
  s("c03", M, "The heaters were already inside the seats. Fitted at the factory. Customers weren't paying for heat. They were paying for permission.",
    KF_XRAY, env=True, hold=0.5, sfx="quiet car interior, a faint electrical hum"),
  h("c04", R, "It's right there. It's like sitting on a radiator that isn't speaking to me.", KF_RADIATOR, MV_RADIATOR, hold=1.0,
@@ -376,7 +376,7 @@ SHOTS = [
  silent("v16", KF_FOX_END, 3.0, env=True, eng="ltx", sfx="a single soft heater click, a quiet car interior, faint winter wind outside",
         motion=MV_FOX_END),
 ]
-THUMB = dict(text="£15 A MONTH|FOR MY OWN SEAT?", refs=RY,
+THUMB = dict(text="$18 A MONTH|FOR MY OWN SEAT?", refs=RY,
              kf=RYAN + "shivering in the driver's seat of a small plain grey car on a frosty morning, the seat glowing warm orange beneath him "
                 "with one tiny gold padlock on it, gloves on, breath fogging, big worried eyes; " + FOX + " curled up asleep on the warm "
                 "bonnet. Exactly one person.")

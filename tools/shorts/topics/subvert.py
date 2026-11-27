@@ -13,7 +13,7 @@ LTX_WH = (512, 896)
 V = "Vertical portrait composition, the subject filling the tall frame. "
 SHOTS = [
     # HOOK. MAYA: BMW heated seats for £15 a month -- Ryan freezing; the fox curled up on the warm bonnet
-    s("c01", M, "In 2022, BMW started offering British drivers heated front seats. For fifteen pounds a month.", V + KF_CAR, refs=RY, sfx=SFX_LOT),
+    s("c01", M, "In 2022, BMW started offering British drivers heated front seats. For about eighteen dollars a month.", V + KF_CAR, refs=RY, sfx=SFX_LOT),
     # RYAN (lip-sync): "It's right there. It's like sitting on a radiator that isn't speaking to me."
     h("c04", R, "It's right there. It's like sitting on a radiator that isn't speaking to me.", V + KF_RADIATOR, MV_RADIATOR, hold=0.6,
       sfx="inside a cold parked car, winter wind outside"),

@@ -368,6 +368,7 @@ def do_mix():
         if s["eng"] in ("card", "still"): src = load(sfx(s.get("sfx") or "quiet room tone", int(np.ceil(L)) + 1)); lvl = -24
         elif h3like: src = load(sfx(s.get("sfx") or "quiet small apartment room tone", int(np.ceil(L)) + 1)); lvl = -32 if s["spk"] not in (M, "inner") else -24
         else: src = load(clip); lvl = -20
+        lvl = s.get("sfx_db", lvl)                      # per-shot override, e.g. a silent beat whose generated room tone murmurs
         src = src[: int(L * sr)]; a0 = int(s0 * sr)
         if len(src):
             fade = min(len(src) // 2, int(0.25 * sr)); env = np.ones(len(src), np.float32)

@@ -294,3 +294,6 @@ THUMB = dict(text="RICH BY|4AM?", refs=["brayden"],
              kf="The man from the reference grinning with two huge thumbs up in front of a shiny red sports car at sunrise; a rental key-tag "
                 "dangles from the car key in his hand; " + FOX + " sits on the car roof behind him looking unimpressed. Exactly one person.")
 TAIL = 1.0
+
+for _s in SHOTS:                                   # the door beat's generated room tone has a voice-like murmur: keep it near silent
+    if _s["id"] == "w04": _s["sfx_db"] = -46

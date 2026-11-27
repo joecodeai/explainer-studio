@@ -42,19 +42,19 @@
 | 17 | "Nobody's in trouble. I've moved to Claims." | **KEEP**: Gerald keeps changing departments (Retention last episode) |
 | 18 | "Did the water come from above or below?" … "So, sideways." | **KEEP**: absurd sequence 2 |
 | 19 | "A photo of the kitchen before there was water in it" | **KEEP**, with a cut to Brayden photographing his empty flat |
-| 20 | Damage £240, excess £250, *and* your price goes up | **KEEP**: the sequence payoff, and a real mechanic |
-| 21 | Sydnor: $100 a year to save $500 at a ~5% claim rate | **KEEP**: the best "deeper" fact |
+| 20 | Damage $240, deductible $250, *and* your price goes up | **KEEP**: the sequence payoff, and a real mechanic |
+| 21 | Sydnor: $100 a year to save $500 at a 3.7% claim rate | **KEEP**: the best "deeper" fact |
 | 22 | "We're not scared of disaster. We're scared of a medium-sized bill." | **KEEP** |
-| 23 | Ryan insures a £12 kettle, then asks to insure the protection plan | **KEEP**: Ryan's own ridiculous moment |
+| 23 | Ryan insures a $15 kettle, then asks to insure the protection plan | **KEEP**: Ryan's own ridiculous moment |
 | 24 | Brayden: "Insurance is for people who plan to fail." | **KEEP** |
-| 25 | BraydenGuard: £49 a month, and a motivational voice note if anything bad happens | **KEEP**: absurd sequence 3 |
+| 25 | BraydenGuard: $49 a month, and a motivational voice note if anything bad happens | **KEEP**: absurd sequence 3 |
 | 26 | Brayden's own claim: the rental car in a pond, the swan on the roof; "Denied. That swan was a mindset." | **KEEP**: callbacks to the hustle episode |
-| 27 | Price walking and the 2022 ban, with Gerald "not allowed to" reward loyalty | **KEEP** |
+| 27 | Price walking and the 2022 ban, with Gerald "not allowed to" reward loyalty | **KEEP**: a British story told for a global audience, with dollars |
 | 28 | The fox owns the tower | **KEEP**: the final reveal |
 | 29 | "Insurance doesn't believe in Brayden": his application is declined (dangerous hobbies: arguing with swans) | **ADDED in QC**: gives Brayden a *reason* before his company (cause before effect) and teaches adverse selection |
 | 30 | Brayden's voice note: "Your house didn't burn down. It made room." | **ADDED in QC**: the guru logic is the target, not the customer |
 | 31 | Gerald: "So you were aware it contained water." | **ADDED in QC**: one more claim escalation |
-| 32 | Maya's travel insurance for a weekend in Bristol | **ADDED in QC**: Maya anecdote (her variety) |
+| 32 | Maya's travel insurance for a weekend in Ohio | **ADDED in QC**: Maya anecdote (her variety) |
 | — | Insuring body parts (Betty Grable's legs, etc.) | **CUT**: popular but shaky sourcing, and a tangent |
 | — | Hammurabi / Chinese merchants spreading cargo | **CUT**: weakly sourced; Lloyd's is enough history |
 | — | The RAND health insurance experiment (moral hazard) | **CUT**: true and interesting, but it's a second statistics block. Saved for a health episode. |
@@ -114,7 +114,7 @@
 [Ryan's kitchen, morning. Ryan at the table with a mug, staring at his banking app. On the wall, a calendar covered in ticks. Outside the window, the fox is asleep in a recycling box.]
 🔊 a clock ticking, a fridge hum
 
-**MAYA** *(deadpan, plain)*: For eleven years, Ryan has paid a stranger thirty-eight pounds a month, in case something terrible happens to him.
+**MAYA** *(deadpan, plain)*: For eleven years, Ryan has paid a stranger forty-five dollars a month, in case something terrible happens to him.
 
 **MAYA** *(dry)*: Nothing has.
 
@@ -139,11 +139,11 @@
 
 [One by one, people drop a coin in.] 🔊 coins plinking
 
-**MAYA**: A hundred families each put in a pound. Nobody knows whose house will catch fire this year. But somebody's usually does.
+**MAYA**: A hundred families each put in a dollar. Nobody knows whose house will catch fire this year. But somebody's usually does.
 
 [One house catches fire. The bucket tips; coins fly over and rebuild the house.] (hold 1.5 s)
 
-**MAYA**: So when it happens, the bucket pays. Nobody loses everything. Everybody loses a pound.
+**MAYA**: So when it happens, the bucket pays. Nobody loses everything. Everybody loses a dollar.
 
 ◇OVER: Ryan watching the bucket, nodding slowly · **RYAN** *(working it out)*: So it's a group chat. With money.
 
@@ -177,7 +177,7 @@
 
 **MAYA**: An insurer can lose money on the insurance itself and still do very nicely on the investing. Which is how the bucket got a tower.
 
-◇OVER: Ryan on the ground, tiny, looking up · **RYAN**: And the people with the pounds?
+◇OVER: Ryan on the ground, tiny, looking up · **RYAN**: And the people with the dollars?
 
 **MAYA** *(dry)*: They got a letter.
 
@@ -192,7 +192,7 @@
 
 [A quill signs name after name under a drawing of a ship.]
 
-**MAYA**: That coffee house became Lloyd's of London. And in 1912, it had insured a ship called the Titanic, for a million pounds.
+**MAYA**: That coffee house became Lloyd's of London. And in 1912, it had insured a ship called the Titanic, for a million pounds. Nearly five million dollars, back then.
 
 (beat)
 
@@ -257,7 +257,7 @@
 
 **MAYA** *(dry)*: Some people do.
 
-◇OVER: Gerald, smiling · **GERALD**: Good news. Your claim's approved. The damage is two hundred and forty pounds. Your excess is two hundred and fifty.
+◇OVER: Gerald, smiling · **GERALD**: Good news. Your claim's approved. The damage is two hundred and forty dollars. Your deductible is two hundred and fifty.
 
 (beat)
 
@@ -270,25 +270,25 @@
 [Ryan on the chair, water at his shins. The sock drifts past a third time.] (silence 1.5 s)
 
 #### THE EXPENSIVE FEAR (5:16–6:34)
-**MAYA** *(conversational)*: That number, the bit you pay yourself, is called the excess here, or the deductible in the US. And it turns out we're very strange about it.
+**MAYA** *(conversational)*: That number, the bit you pay yourself, is called the deductible. And it turns out we're very strange about it.
 
 **MAYA**: In 2010, the economist Justin Sydnor studied home insurance customers in the US. Many of them paid about a hundred dollars a year extra to bring their deductible down from a thousand dollars to five hundred.
 
 [Card: big **$100 A YEAR** / small **TO SAVE $500 · IF YOU CLAIM**]
 
-**MAYA**: Fewer than one in twenty made a claim in a year. So that hundred dollars bought, on average, about twenty-five dollars of protection.
+**MAYA**: Only about four in a hundred of them made a claim in a year. So that hundred dollars bought, on average, less than twenty dollars of protection.
 
 **MAYA**: Sydnor's paper calls the level of risk aversion this implies "implausibly large."
 
 **MAYA** *(dry, quiet)*: We're not scared of disaster. We're scared of a medium-sized bill.
 
-**MAYA** *(conversational anecdote, a little embarrassed)*: I once bought travel insurance for a weekend in Bristol. I still don't know what I thought was going to happen in Bristol.
+**MAYA** *(conversational anecdote, a little embarrassed)*: I once bought travel insurance for a weekend in Ohio. I still don't know what I thought was going to happen in Ohio.
 
-[Maya's hand (no face) holding a printed policy in front of a sunny, completely peaceful Bristol harbour; one seagull.] (hold 1.0 s)
+[Maya's hand (no face) holding a printed policy in front of a sunny, completely peaceful small-town Ohio main street; one pigeon.] (hold 1.0 s)
 
-[An electrical shop. Ryan holds a small kettle (price tag £12). A salesman beside him holds up a laminated card: KETTLE CARE+ · £4.99 a month.]
+[An electrical shop. Ryan holds a small kettle (price tag $15). A salesman beside him holds up a laminated card: KETTLE CARE+ · $4.99 a month.]
 
-**MAYA**: Which is how Ryan ended up with a three-year protection plan on a twelve-pound kettle.
+**MAYA**: Which is how Ryan ended up with a three-year protection plan on a fifteen-dollar kettle.
 
 ◇OVER: Ryan, holding the kettle like a baby · **RYAN** *(sincere)*: It's peace of mind.
 
@@ -315,7 +315,7 @@
 
 [Phone screen, a slick ad: **BRAYDENGUARD**]
 
-◇OVER: the ad · **BRAYDEN** *(fast, salesman)*: You pay me forty-nine pounds a month, and if anything bad happens, I send you a motivational voice note.
+◇OVER: the ad · **BRAYDEN** *(fast, salesman)*: You pay me forty-nine dollars a month, and if anything bad happens, I send you a motivational voice note.
 
 **MAYA**: Eleven people signed up.
 
@@ -348,18 +348,20 @@
 #### THE LOYALTY PENALTY (7:35–8:21)
 **MAYA**: There's one more trick, and for years it was perfectly legal.
 
-**MAYA**: In the UK, if you stayed with the same home or car insurer, your price would quietly creep up, year after year, while new customers got the cheap deal. The industry called it "price walking."
+**MAYA**: In Britain, if you stayed with the same home or car insurer, your price would quietly creep up, year after year, while new customers got the cheap deal. The industry called it "price walking."
 
 [Ryan on a treadmill; a price tag above his head ticks up with every step. Behind glass, new customers sip champagne.]
 
-**MAYA**: In January 2022, the regulator banned it. A renewal price can't be higher than what a new customer would pay. The Financial Conduct Authority estimated that would save people four point two billion pounds over ten years.
+**MAYA**: In January 2022, the regulator banned it. A renewal price can't be higher than what a new customer would pay. Britain's Financial Conduct Authority estimated that would save people over five billion dollars in ten years.
 
 ◇OVER: Gerald at his desk, holding a thank-you card · **GERALD** *(warm)*: We've noticed you've been very loyal, Ryan.
 
 ★LIPSYNC · **GERALD** *(gently regretful)*: We're not allowed to do anything about that anymore.
 
 #### THE VERDICT AND THE REVEAL (8:21–9:16)
-**MAYA** *(fair, plain)*: And to be fair, the bucket mostly does pay. In 2024, UK car insurers paid out a record eleven point seven billion pounds, across two point four million claims.
+**MAYA** *(fair, plain)*: And to be fair, the bucket mostly does pay. In 2024, natural disasters alone cost insurers a hundred and thirty-seven billion dollars worldwide.
+
+**MAYA** *(sincere, quieter)*: And more than half of the damage from those disasters wasn't insured at all.
 
 **MAYA** *(sincere, slower)*: So, how does insurance work? Everybody pays a little, so that the unlucky few don't lose everything. It's a bet you're hoping to lose.
 
@@ -466,16 +468,18 @@
 |---|---|---|
 | Lloyd's coffee house, first recorded mention 1688, on Tower Street; shipping information | Lloyd's, "Coffee and commerce 1652–1811" (lloyds.com) | ✔ verified |
 | "Underwriter" = names written under the risk | Lloyd's history pages; Wesemann, "Edward Lloyd's Coffee House"; RiskResource | ✔ widely documented (the sources are secondary histories) |
-| Titanic insured for £1m; paid in full within 30 days | Lloyd's, "Lloyd's and the Titanic" (lloyds.com, plus the PDF) | ✔ verified |
+| Titanic insured for £1m (nearly $5m then); paid in full within 30 days | Lloyd's, "Lloyd's and the Titanic" (lloyds.com, plus the PDF). Conversion at the 1912 rate of about $4.86 per £ | ✔ verified |
 | Great Fire 1666; Barbon's Fire Office 1680; fire marks; one house in ten insured by 1690 | London Museum, "How the Great Fire of London created insurance"; Insurance Museum, "Rising from the ashes" | ✔ verified |
 | Insurers ran their own fire brigades | Firemark.com history; Insurance Museum | ✔ verified |
 | The "brigades watched uninsured houses burn" story | — | ⚠ deliberately **not** asserted. The script only says "You'll hear that…" and makes a joke about fire spreading |
 | Berkshire Hathaway float $171bn at the end of 2024 | Berkshire Hathaway 2024 shareholder letter (Feb 2025) | ✔ verified |
 | Sydnor (2010): customers paid about $100 extra (avg $99.85) to move from a $1,000 to a $500 deductible; risk aversion "implausibly large" | Sydnor, "(Over)insuring Modest Risks", AEJ: Applied Economics 2(4), 2010 (abstract on aeaweb.org; $99.85 in the JSTOR text) | ✔ verified |
-| Claim rate under 5% a year, so about $25 of expected value | The same paper (claim rate around 5%) | ⚠ **confirm the exact table value** before render. The script says "fewer than one in twenty", which holds if the rate is under 5% |
-| FCA price-walking ban from 1 January 2022; renewal ≤ new-customer price; £4.2bn over 10 years | FCA press release, "FCA confirms measures to protect customers from the loyalty penalty…" | ✔ verified |
-| UK car insurers paid out a record £11.7bn in 2024 across 2.4 million claims | ABI, "Motor claims hit record £11.7 billion in 2024" | ✔ verified |
+| Claim rate for $500-deductible customers: 3.7% a year, so about $18.50 of expected value | The same paper (JSTOR text: "The claim rate for new customers who held the $500 deductible was 3.7…") | ✔ verified. The script says "about four in a hundred" and "less than twenty dollars" |
+| FCA price-walking ban from 1 January 2022; renewal ≤ new-customer price; £4.2bn over 10 years ("over five billion dollars") | FCA press release, "FCA confirms measures to protect customers from the loyalty penalty…". Converted at about $1.25–1.35 per £, so over $5bn | ✔ verified |
+| Global insured losses from natural catastrophes $137bn in 2024; economic losses $318bn, 57% uninsured | Swiss Re Institute, sigma 1/2025 ("Natural catastrophes: insured losses on trend to USD 145 billion in 2025") | ✔ verified |
 | Adverse selection: people most likely to claim are keenest to buy, which is why insurers ask questions | Standard insurance economics (Akerlof 1970, "The Market for Lemons"; Rothschild & Stiglitz 1976) | ✔ a concept, described in general terms |
+
+**Currency:** global audience, so dollars throughout (owner's rule, 2026-11-27). Pound figures are quoted only where history or an official source uses them, with dollars alongside.
 
 **Fiction, kept clearly fictional:**
 - Ryan's policy and claim
@@ -490,7 +494,7 @@
 - **Strongest:**
   - the cold-open reversal
   - "So… sideways."
-  - the £240 / £250 claim payoff
+  - the $240 / $250 claim payoff
   - "Can I insure the plan?"
   - Brayden echoing "The money's just sitting there" and then denying his own claim
 - **Weakest / at risk:**
@@ -502,4 +506,4 @@
   - 8 lip-sync shots, 4 motion clips, the rest stills and two cards.
   - Within the 75-minute budget if the keyframes behave.
   - The flood and pond scenes are new sets, so expect one keyframe redo.
-- **Before render:** confirm the Sydnor claim-rate table value.
+- **Before render:** the Sydnor claim rate is confirmed (3.7%), and the line was corrected from "about $25" to "less than twenty dollars".
