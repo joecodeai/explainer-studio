@@ -225,8 +225,14 @@ def still(kf, out, seconds, mv="in", fps=24):
 def card(c, out, seconds, fps=24):
     """Motion-graphic card (no AI): flat background, a big word/number pops in, a small line fades in under it, slow push-in."""
     from PIL import Image, ImageDraw, ImageFont
-    fdir = "studio/fonts_reel"; big = ImageFont.truetype(f"{fdir}/Montserrat-ExtraBold.ttf", c.get("size", 260 if LAND else 300))
-    small = ImageFont.truetype(f"{fdir}/Montserrat-ExtraBold.ttf", 64)
+    fdir = "studio/fonts_reel"; F = f"{fdir}/Montserrat-ExtraBold.ttf"
+
+    def fit(text, size, maxw):                                         # shrink until the text fits inside the frame width
+        f = ImageFont.truetype(F, size)
+        while size > 20 and f.getlength(text) > maxw: size -= 4; f = ImageFont.truetype(F, size)
+        return f
+    big = fit(c["big"], c.get("size", 260 if LAND else 300), W_ * 0.88)
+    small = fit(c.get("small", ""), 64, W_ - 140)
     bg, fg, acc = c.get("bg", "#2E4A62"), c.get("fg", "#F6EBD9"), c.get("accent", "#F2A65A")
     n = int(seconds * fps); cy = H_ // 2 - (60 if LAND else 200); dy_small = 200 if LAND else 260
     p = subprocess.Popen(["ffmpeg", "-nostdin", "-y", "-v", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W_}x{H_}", "-r", str(fps), "-i", "-",
