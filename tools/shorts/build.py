@@ -269,9 +269,19 @@ def do_sheets():
 
 
 # ---------------------------------------------------------------- mix
+SYNTH_TONES = {"quiet room tone", "quiet small apartment room tone"}   # generated versions of these murmured like speech: synthesize instead
+
+
 def sfx(prompt, seconds):
     from studio import config as C
     d = os.path.join(C.SOUND_LIB, "sfx_natural"); os.makedirs(d, exist_ok=True)
+    if prompt.strip().lower() in SYNTH_TONES:                    # clean room tone: soft brown noise, no voices possible
+        out = os.path.join(d, "synth_" + hashlib.md5(f"{prompt}|{seconds}".encode()).hexdigest()[:12] + ".flac")
+        if not os.path.exists(out):
+            subprocess.run(["ffmpeg", "-nostdin", "-y", "-v", "error", "-f", "lavfi", "-i",
+                            f"anoisesrc=color=brown:amplitude=0.25:duration={seconds}:sample_rate=48000:seed=7",
+                            "-af", "highpass=f=40,lowpass=f=700", out], check=True)
+        return out
     out = os.path.join(d, hashlib.md5(f"{prompt}|{seconds}".encode()).hexdigest()[:12] + ".flac")
     if os.path.exists(out): return out
     api = W.load("sa3_sfx")
