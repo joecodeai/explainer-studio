@@ -12,6 +12,7 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 sys.path.insert(0, ROOT); sys.path.insert(0, os.path.dirname(__file__)); os.chdir(ROOT)
 from studio import comfy, h3, imagegen, voice, script, workflows as W
 from studio.hero import NEG
+import autoclean  # noqa: E402  (tools/shorts/autoclean.py)
 
 TOPIC = sys.argv[1]
 T = importlib.import_module(f"topics.{TOPIC}")
@@ -37,6 +38,19 @@ LTX_W, LTX_H = getattr(T, "LTX_WH", (896, 512) if LAND else (704, 1280))        
 REFS = {"ryan": "library/show_refs/benny_front.png", "ryan_face": "library/show_refs/benny_face.png",
         "maya": "library/show_refs/maya_front.png", "maya_face": "library/show_refs/maya_face.png"}   # Maya on camera: design E, locked 2026-11-27
 REFS.update({c: f"{OUT}/refs/{c}.png" for c in getattr(T, "CHARS", {})})
+REFS.update(getattr(T, "REFS3D", {}))        # 3D look (topics/show3d.py): fixed cast + set plates in library/show_refs3d/
+SET_REFS = getattr(T, "SET_REFS", {})          # keyframe phrase -> set plate / fox reference, added automatically
+SET_NOTE = " The location reference shows only the set: copy its room, props, lighting and colours for the background, never copy people from it."
+
+
+def refs_for(s):
+    refs = list(s.get("refs", []))
+    for phrase, key in SET_REFS.items():
+        if phrase in s["kf"] and key not in refs and not (s.get("close") and key.startswith("set_")): refs.append(key)   # close-ups: a set plate forces a wide shot
+    return refs
+
+
+def ref_img(r): return REFS[r] if r.startswith("set_") else ref_view(REFS[r])
 M, R = "maya", "benny"
 SHOTS = T.SHOTS
 
@@ -111,14 +125,17 @@ def do_kf(arg=""):
         if s["eng"] == "card": continue
         p = f"{OUT}/keyframes/{s['id']}.png"
         if os.path.exists(p): continue
-        refs = s.get("refs", [])
+        refs = refs_for(s)
         if s.get("env"): full = f"{ENV_STYLE} {FRAME} cinematic film frame. {s['kf']}{NO_PEOPLE}"
         else: full = f"{STYLE} {FRAME} cinematic film frame. {s['kf']}" + (ONCE if refs else "")
-        rp = [ref_view(REFS[r]) for r in refs]
+        if any(r.startswith("set_") for r in refs): full += SET_NOTE
+        rp = [ref_img(r) for r in refs]
         seed = 501 + int(hashlib.md5(s["kf"].encode()).hexdigest()[:4], 16) % 1000
         got = (imagegen.edit(full, rp, f"{OUT}/keyframes", s["id"], KW, KH, seed=seed, fixed_size=True) if rp
                else imagegen.t2i(full, f"{OUT}/keyframes", s["id"], KW, KH, seed=seed))
         shutil.move(got, p); print("kf", p, flush=True)
+        fixed = autoclean.clean(p, keep_dir=f"{OUT}/keyframes/_orig")
+        if fixed: print("  autoclean", s["id"], fixed, flush=True)
 
 
 # ---------------------------------------------------------------- animation
@@ -405,10 +422,10 @@ def do_thumb():
     if not os.path.exists(raw):
         h3.free(); comfy.start()
         full = f"{STYLE} {FRAME} eye-catching YouTube thumbnail illustration, bold simple composition, big expressive faces. {th['kf']}"
-        rp = [ref_view(REFS[r]) for r in th.get("refs", [])]
+        rp = [ref_img(r) for r in th.get("refs", [])]
         got = (imagegen.edit(full, rp, f"{OUT}/thumb", "raw", KW, KH, seed=77, fixed_size=True) if rp
                else imagegen.t2i(full, f"{OUT}/thumb", "raw", KW, KH, seed=77))
-        shutil.move(got, raw)
+        shutil.move(got, raw); autoclean.clean(raw, keep_dir=f"{OUT}/thumb/_orig")
     tw, thh = (1280, 720) if LAND else (1080, 1920)
     im = Image.open(raw).convert("RGB"); sc = max(tw / im.width, thh / im.height)
     im = im.resize((int(im.width * sc), int(im.height * sc)), Image.LANCZOS)

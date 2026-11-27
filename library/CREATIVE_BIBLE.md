@@ -168,3 +168,26 @@ Never:
 - force a character into a scene
 - change a character's personality without asking
 - forget that animation is part of the comedy
+
+## The look: stylised 3D (locked 2026-11-27)
+From "How Do ATMs Actually Work?" onward, every new video and Reel uses the stylised 3D feature-film look (Pixar-like). The owner chose it from 13 style options. The four finished 2D videos stay as they are.
+
+**Maya:** 3D option 1.
+- Big hazel-brown eyes, bright friendly smile, rosy cheeks.
+- Fair light skin with a soft warm peach glow.
+- Long wavy dark brown hair, gold hoops, olive overshirt over a cream top.
+
+**One lock for everything:**
+- New topics import their style, cast, sets and helpers from `tools/shorts/topics/show3d.py`.
+- The references live in `library/show_refs3d/`, made by `tools/cast3d.py`. This includes the set plates for the studio, office, kitchen, flat and night street.
+- The builder attaches the matching set plate whenever a shot uses that set.
+
+**Consistency rules:**
+- Lighting, palette and render quality come only from `show3d.STYLE`.
+- Never mix in 2D-era references.
+- Maya's on-camera shots are close-ups from the chest up in the daylight studio. `maya()` sets `close=True`, so no set plate is attached, because a plate forces a wide shot. A wide shot makes the H3 lip-sync jump to a close-up mid-clip.
+- Night lighting belongs only to the street set's own wording; the shared lighting line has no night clause.
+
+**Green specks:** `tools/shorts/autoclean.py` runs on every keyframe and thumbnail. Still check the blobscan crops by eye during QC.
+
+**Production time** is unchanged: the same Qwen-Image, H3 and LTX engines, with only the prompts and references changed. Measured on the test: 222 s for a 9-second Maya line and about 112 s for a short line, the same as 2D.

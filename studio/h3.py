@@ -44,7 +44,8 @@ def start():
 
 
 def free():
-    if up():
+    if up():                                     # a job left running by a killed build would otherwise keep ~30 GB of VRAM
+        requests.post(f"{URL}/interrupt", timeout=30); requests.post(f"{URL}/queue", json={"clear": True}, timeout=30)
         requests.post(f"{URL}/free", json={"unload_models": True, "free_memory": True}, timeout=60)
 
 
