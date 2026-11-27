@@ -1,36 +1,22 @@
-"""ONE promotional Reel for 'Is Hustle Culture a Scam?' (library/SHORTS_RULES.md, 2026-11-25). Cut by tools/shorts/promo.py.
-Story: a hustle guru promises that getting up at 4 a.m. is why he's rich; his routine is so empty even his reflection walks out,
-he 'restructures' his own organs to cut sleep and fires a kidney, and then we learn his 4 a.m. sunrise is a desk lamp at
-4 p.m. The real 4 a.m. belongs to the fox. The question 'Is hustle culture a scam?' is asked and left open for the episode.
-Framing (from frame inspection): FULL = whole 16:9 frame over blur; f = width fraction kept (BOX), x = its centre."""
+"""Hustle Culture Reel, v2 (approved 2026-11-25): ONE situation, "HR Took My Weekend". Storyboard:
+VIDEOS/Is Hustle Culture a Scam/REEL STORYBOARD.md. The whole Gerald/Ryan scene w01-w16 in its original order, full length,
+nothing sped up. v1 (montage across the episode) is kept as hustlepromo_v1_montage.py. Built by tools/shorts/promo.py."""
 from topics.hustle import FOLDER  # noqa: F401
-REEL = dict(title="He Gets Up at 4 AM. It Cost Him a Kidney", pieces=[
-    # HOOK: guru at "4 a.m." – fox (left) and swan (right) are both gags -> FULL
-    dict(id="c01", trim=(0.3, 0), f=[(0, 0.7), (0.55, 0.7), (0.72, 1.0), (1, 1.0)], x=[(0, 0.59), (0.55, 0.59), (0.72, 0.5), (1, 0.5)]),  # close on his face for the hook, pull back to FULL as the swan line starts
-    # QUESTION: title card, text spans the middle half -> BOX
-    dict(id="c06", f=0.62, trim=(0, 0.35)),
-    # SETUP: the routine. One character, hands 0.3-0.7 -> BOX
-    dict(id="d01", f=0.6, x=0.52),
-    # Even his reflection quits: man left, reflection walks out right -> FULL
-    dict(id="d02"),
-    # ESCALATION: "Team. Let's talk about sleep." -> BOX on Brayden
-    dict(id="b02", f=0.6, x=0.5),
-    # reveal: the team is his organs. Whole table matters -> FULL
-    dict(id="b03"),
-    # both kidneys -> BOX keeping both
-    dict(id="b07", f=0.66, x=0.49),
-    # one kidney leaves with its box towards the left edge -> FULL
-    dict(id="b08"),
-    # "He fired a kidney." empty chair, slow push-in
-    dict(id="b09", f=(0.62, 0.54), x=0.5),
-    # PAYOFF: his 4 a.m. videos
-    dict(id="v05", f=0.6, x=0.5),
-    # wide reveal: lamp (left), Brayden, school bus in daylight (right) -> FULL
-    dict(id="v06"),
-    # lamp with sweet wrapper + daylight blinds -> BOX keeping both
-    dict(id="v07", f=0.8, x=0.45),
-    # "Still counts." lamp + thumbs up
-    dict(id="v08", f=0.75, x=0.42),
-    # BUTTON: the real 4 a.m. belongs to the fox -> FULL
-    dict(id="v09", trim=(0, 0.6), f=(1.0, 0.82), x=(0.5, 0.52)),
+REEL = dict(title="HR Took My Weekend", pieces=[
+    dict(id="w01", f=0.9, x=0.5),                        # Gerald, tissues, sun picture; hook "Nobody's in trouble"
+    dict(id="w02", f=0.66, x=0.48, clean=True),            # Ryan: "I... sort of use it."
+    dict(id="w03", f=0.86, x=0.5),                         # "quietly looked after the afternoon"
+    dict(id="w04", f=0.8, x=0.55, gain=-14),               # quiet beat: the door, the way out (its generated room tone murmurs: -14 dB)
+    dict(id="w05", f=0.75, x=0.5, clean=True),             # "Put the weekend down, Ryan. Slowly."
+    dict(id="w06"),                                        # FULL: the sun slides across the table between two hands
+    dict(id="w07", f=(0.7, 0.62), x=0.42, clean=True),     # the subscription tiers, slow push-in on Gerald + card
+    dict(id="w08", f=0.62, x=0.5),                         # "I just gave you that."
+    dict(id="w09", f=0.86, x=0.5),                         # "And now you can have it back. Monthly."
+    dict(id="w10", f=0.62, x=0.5),                         # "Can I just... have the one I had before?"
+    dict(id="w11", f=0.62, x=0.47),                        # "discontinued ... premium folder" on Ryan's face
+    dict(id="w12", f=0.6, x=0.52, hold=0.5),               # the imp: "He's good." (held so it registers)
+    dict(id="w13", f=0.7, x=0.45, clean=True),             # the cemetery offer
+    dict(id="w14", f=0.85, x=0.5),                         # the brochure (ball pit has real green/purple balls: no cleaning)
+    dict(id="w15", f=0.62, x=0.5, clean=True),             # "How do I cancel?"
+    dict(id="w16", f=0.66, x=0.5),                         # "Cancellations are done in person. On a Saturday." + hold
 ])

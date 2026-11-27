@@ -85,3 +85,9 @@ It was also our best-received character (Gerald) in your notes. The earlier Shor
 3. **Background colour shifts:** in shots 3, 10 and 16 the background warms or cools during the line (orange to teal). This is in the long video too and reads as mood lighting, but you'll see it.
 4. **Specks:** the image model's small coloured specks (found today across our videos) appear in this scene on shots 2, 5, 7, 13, 14 and 15. The Reel will clean them frame by frame.
 5. **Ending:** no title card and no "watch the full video". It ends on Gerald's smile. The upload caption names the episode. If you'd prefer a 3 s "Is hustle culture a scam?" card after the hold, say so.
+
+## Rendered (approved by owner: "Approve, render 79 s")
+- **File:** `Reel/HR Took My Weekend.mp4`, 1080×1920, 79.4 s. Cover: `Reel/Thumbnail.jpg`. Upload text and tags (477 characters): `Reel/Upload text.txt`. Spec: `tools/shorts/topics/hustlepromo.py`.
+- **Visual QC, all 16 shots:** characters, hands and props are in frame. Shots 1, 3 and 9 were widened to keep both the tissue box and the sun picture. No frames bleed from neighbouring shots. Specks were cleaned frame by frame on shots 2, 5, 7, 13 and 15, and the tissue-box speck on shot 5 is confirmed gone. Shot 14 was left alone because the ball pit has real green and purple balls.
+- **Audio QC:** a whisper transcript of the final file matches all 16 lines, in order and complete. The door beat's generated room tone had a voice-like murmur at −32 dB; it's now −14 dB lower, effectively silent (this murmur is also in the long video at 01:38). The imp's "He's good." is held 0.5 s.
+- **Loudness:** −15.3 LUFS, true peak −1.3 dB. The platforms normalise to −14.

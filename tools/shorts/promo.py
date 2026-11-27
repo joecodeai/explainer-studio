@@ -11,6 +11,9 @@ Every frame is composed in Python, so no shot is blindly centre-cropped. A piece
   dict(id="b03", h=0.9, y=0.45)       also crop to h of the source height, centred at y (removes empty floor / sky)
   dict(id="w07", words=(0, 14))       only words 0..14 of the line (sentence-level trims only); tail= / lead= seconds
   dict(id="v06", sub=(0.0, 1.5))      only seconds 0..1.5 of the piece (sequential framing: same shot twice, two framings)
+  dict(id="w12", hold=0.5)            freeze the last frame 0.5 s (silence) so a quick beat registers
+  dict(id="w04", gain=-14)            # audio gain in dB for this piece (silent beats whose generated ambience murmurs)
+  dict(id="w05", clean=True)          inpaint the image model's colour specks on every frame (never on shots with real small green/purple things)
 Captions sit BELOW the picture in the blurred band when there is room, otherwise on the lower third, never in the bottom
 UI band (y > 1540) and never on the right-side buttons. Output: VIDEOS/<FOLDER>/Reel/<title>.mp4 + a QC sheet per piece.
 """
@@ -87,6 +90,25 @@ def cap_y(p):
     return CAP_TOP_MAX                                          # one consistent caption line, under every boxed picture
 
 
+SPECK = [((128, 90, 70), (165, 255, 255)), ((30, 70, 60), (55, 255, 230))]
+
+
+def despeck(fr):
+    """Inpaint the image model's stray colour specks (small isolated olive-green / purple dots), as tools/shorts/despeckle.py."""
+    hsv = cv2.cvtColor(fr, cv2.COLOR_BGR2HSV); mask = None
+    for lo, hi in SPECK:
+        m = cv2.morphologyEx(cv2.inRange(hsv, np.array(lo), np.array(hi)), cv2.MORPH_OPEN, np.ones((3, 3), np.uint8))
+        n, lab, st, _ = cv2.connectedComponentsWithStats(m)
+        for k in range(1, n):
+            x, y, w, h, a = st[k]
+            if not (40 <= a <= 0.0015 * SW * SH_) or max(w, h) > 3 * min(w, h) or a < 0.55 * w * h: continue
+            x0, y0 = max(0, x - 8), max(0, y - 8); sub = m[y0:y + h + 8, x0:x + w + 8]; blob = (lab[y0:y + h + 8, x0:x + w + 8] == k)
+            if (sub[~blob] > 0).mean() > 0.15: continue
+            if mask is None: mask = np.zeros(m.shape, np.uint8)
+            cv2.rectangle(mask, (x - 4, y - 4), (x + w + 4, y + h + 4), 255, -1)
+    return cv2.inpaint(fr, mask, 6, cv2.INPAINT_TELEA) if mask is not None else fr
+
+
 def ass_time(t): h, m = divmod(t, 3600); m, s = divmod(m, 60); return f"{int(h)}:{int(m):02d}:{s:05.2f}"
 
 
@@ -106,13 +128,17 @@ def main():
         for j in range(n):
             buf = dec.stdout.read(SW * SH_ * 3)
             fr = np.frombuffer(buf, np.uint8).reshape(SH_, SW, 3) if len(buf) == SW * SH_ * 3 else last
+            if p.get("clean") and fr is not last: fr = despeck(fr)
             last = fr; out = compose(fr, p, j / max(1, n - 1)); enc.stdin.write(out.tobytes())
             if j in (0, n // 2, n - 1): qc.append((k, p["id"], j, out))
         dec.wait()
+        hf = int(round(p.get("hold", 0) * FPS))                 # freeze the last frame so a quick beat can register
+        for _ in range(hf): enc.stdin.write(out.tobytes())
         clip = mix[int(a * SR):int(a * SR) + int(d * SR)].copy(); fd = min(len(clip) // 2, int(0.025 * SR))
         if fd: clip[:fd] *= np.linspace(0, 1, fd); clip[-fd:] *= np.linspace(1, 0, fd)
-        aud.append(clip)
-        s = SH[p["id"]]
+        if p.get("gain"): clip *= 10 ** (p["gain"] / 20)                  # e.g. quiet a generated ambience that murmurs
+        aud.append(clip); aud.append(np.zeros(int(hf / FPS * SR), np.float32))
+        s = SH[p["id"]]; dt = d + hf / FPS
         if B.spoken(s):
             st = tl[idx[p["id"]]]["start"]; ws = [w for w in words(p["id"]) if a - 0.05 <= st + w["s"] <= b]
             chunks, cur = [], []
@@ -123,9 +149,9 @@ def main():
             for j, c in enumerate(chunks):
                 s0 = t + max(0, st + c[0]["s"] - a)
                 s1 = t + ((st + chunks[j + 1][0]["s"] - a) if j + 1 < len(chunks) else (st + c[-1]["e"] - a + 0.3))
-                ev.append(f"Dialogue: 0,{ass_time(s0)},{ass_time(min(s1, t + d))},C,,0,0,{cap_y(p)},,{' '.join(w['w'] for w in c).upper()}")
+                ev.append(f"Dialogue: 0,{ass_time(s0)},{ass_time(min(s1, t + dt))},C,,0,0,{cap_y(p)},,{' '.join(w['w'] for w in c).upper()}")
         print(f"{k:2d} {p['id']:5s} {a:7.2f}-{b:7.2f}  {d:5.2f}s  at {t:5.1f}s", flush=True)
-        t += d; nf += n
+        t += dt; nf += n + hf
     enc.stdin.close(); enc.wait()
     wav = f"{WD}/reel.wav"; sf.write(wav, np.concatenate(aud), SR)
     ass = f"{WD}/reel.ass"                                      # Alignment 8 = top-centre; per-line MarginV is the caption's top y
@@ -136,8 +162,12 @@ def main():
         "[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n" + "\n".join(ev) + "\n")
     dst = os.path.join("VIDEOS", getattr(B.T, "FOLDER", TOPIC), "Reel"); os.makedirs(dst, exist_ok=True)
     final = os.path.join(dst, f"{R['title']}.mp4")
+    meas = subprocess.run(["ffmpeg", "-nostdin", "-i", wav, "-af", "loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json", "-f", "null", "-"],
+                          capture_output=True, text=True).stderr                  # two-pass loudness: measure, then normalise linearly
+    m = json.loads(meas[meas.rindex("{"):meas.rindex("}") + 1])
+    lnorm = f"volume={-14 - float(m['input_i']):.2f}dB,alimiter=limit=0.78:attack=2:release=60:level=false"   # gain towards -14 LUFS; peaks held ~-2.2 dBFS so AAC stays under -1 dBTP
     subprocess.run(["ffmpeg", "-nostdin", "-y", "-v", "error", "-i", pic, "-i", wav, "-vf",
-                    f"subtitles={ass}:fontsdir={os.path.abspath('studio/fonts_reel')}", "-af", "loudnorm=I=-14:TP=-1.5:LRA=9",
+                    f"subtitles={ass}:fontsdir={os.path.abspath('studio/fonts_reel')}", "-af", lnorm,
                     "-c:v", "libx264", "-crf", "18", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
                     "-movflags", "+faststart", final], check=True)
     # QC: first / middle / last composed frame of every piece (before captions), 9 per row
