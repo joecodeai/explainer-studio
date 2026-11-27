@@ -43,16 +43,18 @@ SHOTS = [
  h("c03", R, "Eleven years. Not even a small flood.", KF_RY_CLOSE + "genuinely aggrieved.", "He speaks quietly, genuinely aggrieved, shaking his head slightly.", sfx=SFX_K),
  s("c04", I, "Leave the bath running.", KF_RY_CLOSE + "uneasy, while " + SHADOW + "." + ONE, refs=RY, sfx=SFX_K),
  s("c05", R, "No.", RYAN + "close-up, turning his head to frown firmly at the tiny dark imp on his shoulder, who looks disappointed." + ONE, refs=RY, hold=0.6, sfx=SFX_K),
+ s("c05b", M, "He did check whether it was covered, though.", KF_RY_CLOSE + "glancing sideways, a little guilty." + ONE, refs=RY, hold=0.5,
+   sfx=SFX_K),
  s("c06", M, "Insurance is the only thing you buy hoping it's a complete waste of money. And if it isn't, you have to prove it.",
-   "A very thick paper insurance policy document lying on a kitchen table next to a mug, with dozens of coloured sticky tabs poking out of it." + NO_TEXT,
+   "A very thick stack of plain blank paper pages held together by a big black binder clip, seen from the side on a kitchen table next to a mug, dozens of coloured sticky tabs poking out of its edge." + NO_TEXT,
    env=True, sfx=SFX_K),
- card("c07", "So. How does insurance actually work?", "INSURANCE?", "HOW DOES IT ACTUALLY WORK", bg="#2E4A62", hold=0.8),
+ card("c07", "So. How does insurance actually work?", "INSURANCE?", "HOW DOES IT ACTUALLY WORK", bg="#2E4A62", hold=1.5),
  # ---------------- ABSURD SEQUENCE 1: THE BUCKET
  s("u01", M, "It starts with a bucket.", VILLAGE + ", gleaming in the sun.", env=True, mv="in", sfx=SFX_V),
  s("u02", M, "A hundred families each put in a dollar. Nobody knows whose house will catch fire this year. But somebody's usually does.",
    VILLAGE + "; a long happy queue of small simple villagers drops one gold coin each into the bucket.", mv="right", sfx="coins plinking into a tin bucket, a village square"),
  silent("u03", VILLAGE + "; one small house nearby has bright orange flames on its roof, and the big tin bucket is tipped over on its side, a stream "
-        "of gold coins pouring out towards the burning house.", 2.5, env=True, eng="ltx", sfx="a small fire crackling, coins pouring",
+        "of gold coins pouring out towards the burning house.", 3.0, env=True, eng="ltx", sfx="a small fire crackling, coins pouring",
         motion="The flames on the roof flicker; gold coins tumble out of the tipped bucket towards the house. Static camera."),
  s("u04", M, "So when it happens, the bucket pays. Nobody loses everything. Everybody loses a dollar.",
    "The same small village house, rebuilt and shiny new with a big red ribbon on the door; small simple villagers clapping; the big tin bucket "
@@ -72,7 +74,7 @@ SHOTS = [
  s("u10", M, "Then the bucket needed an office. Then a logo. Then a mascot.",
    "A neat little office building in the village square, the big tin bucket visible through its front window; on its roof a big round logo of a "
    "tin bucket with a fox's face." + NO_TEXT, env=True, mv="out", sfx=SFX_V),
- silent("u11", "A big billboard above the village rooftops showing " + FOX + " in a tiny business suit, waving cheerfully." + NO_TEXT, 1.5, env=True,
+ silent("u11", "A big billboard above the village rooftops showing " + FOX + " in a tiny business suit, waving cheerfully." + NO_TEXT, 2.5, env=True,
         sfx="a village square, a jingle-like chime"),
  s("u12", M, "And then Gerald noticed something. Money goes into the bucket every month. Fires happen... occasionally.",
    GER + "in a small office, looking down into a huge tin bucket overflowing with gold coins, eyebrows raised." + ONE, refs=["gerald"], sfx=SFX_G),
@@ -83,14 +85,14 @@ SHOTS = [
    refs=["gerald"], mv="right", sfx="a busy trading floor, a cash register ding"),
  dict(silent("u15", "The neat little office building in the village square with a tin-bucket logo on its roof, beside a much taller glass tower "
              "under construction; small villagers looking up." + NO_TEXT, 0, env=True, eng="ltx", sfx="a long creak, construction, a lift ding",
-             motion="The building grows upward floor by floor into a tall gleaming tower. Static camera."),
+             motion="The building grows upward floor by floor into a tall gleaming tower. Static camera.", ), hold=1.0,
       text="At the end of 2024, Warren Buffett's company, Berkshire Hathaway, was holding a hundred and seventy-one billion dollars of float."),
  s("u16", M, "An insurer can lose money on the insurance itself and still do very nicely on the investing. Which is how the bucket got a tower.",
    "A city skyline at dusk; the tallest tower in the middle has a giant shiny tin bucket on its very top." + NO_TEXT, env=True, mv="out", sfx="a city at dusk"),
  s("u17", R, "And the people with the dollars?", RYAN_FULL + "standing tiny at the foot of an enormous gleaming glass tower, looking up, holding one coin." + ONE,
    refs=RY, sfx="a windy city street"),
  s("u18", M, "They got a letter.", "An opened envelope on a doormat; the letter inside shows one big red upward-pointing arrow." + NO_TEXT,
-   env=True, hold=1.0, sfx="a letterbox flap clacking, paper landing"),
+   env=True, hold=1.5, sfx="a letterbox flap clacking, paper landing"),
  # ---------------- HOW WE GOT HERE
  s("w01", M, "The bucket isn't new. In the 1680s, London ship owners met at Edward Lloyd's coffee house, on Tower Street, because it had the best shipping gossip in the city.",
    "A crowded 17th-century London coffee house: men in long wigs and coats sitting at wooden tables with coffee cups, reading shipping lists, "
@@ -102,8 +104,8 @@ SHOTS = [
    "A huge elegant four-funnel ocean liner sailing on a calm sea at sunset, smoke trailing from its funnels." + NO_TEXT, env=True, mv="right",
    hold=0.5, sfx="calm sea, a distant ship's horn"),
  s("w04", M, "It paid out in full, within thirty days.", "An old leather ledger open on a desk beside a neat stack of old banknotes and a red wax seal."
-   + NO_TEXT, env=True, hold=0.3, sfx="a quiet old office, a clock ticking"),
- card("w05", "Thirty days? My phone claim's been open since March.", "DAY 214", "PHONE CLAIM · STILL OPEN", spk=R, bg="#5A3C3C", hold=0.5,
+   + NO_TEXT, env=True, hold=1.0, sfx="a quiet old office, a clock ticking"),
+ card("w05", "Thirty days? My phone claim's been open since March.", "DAY 214", "PHONE CLAIM · STILL OPEN", spk=R, bg="#5A3C3C", hold=1.0,
       sfx="quiet room tone"),
  s("w06", M, "Fire insurance also came from a disaster. After the Great Fire of 1666 destroyed most of the City of London, a builder called Nicholas Barbon opened the Fire Office, in 1680.",
    "Old 17th-century London rooftops and church spires under a sky still hazy with grey smoke; new timber houses being built." + NO_TEXT,
@@ -121,7 +123,7 @@ SHOTS = [
       text="Which brings us back to Ryan. Last Tuesday, his washing machine flooded the kitchen."),
  s("k02", R, "Finally.", RYAN + "close-up, standing on a chair in a flooded kitchen, a small guilty smile, almost happy." + ONE, refs=RY, hold=0.4, sfx=SFX_F),
  s("k03", M, "He rang the bucket.", "Close-up of a phone screen showing a call on hold, with a big simple music-note icon and a spinning circle."
-   + NO_TEXT, env=True, hold=2.0, sfx="tinny cheerful hold music"),
+   + NO_TEXT, env=True, hold=3.0, sfx="tinny cheerful hold music"),
  h("k04", G, "Ryan. Nobody's in trouble. I've moved to Claims.", ger("warm reassuring smile."), "He speaks softly and reassuringly, smiling.", sfx=SFX_G),
  s("k05", G, "Let's take this one step at a time. Did the water come from above, or below?", KF_GER_PEN, refs=["gerald"], sfx=SFX_G),
  s("k06", R, "From the washing machine.", KF_RY_CHAIR, refs=RY, sfx=SFX_F),
@@ -153,7 +155,7 @@ SHOTS = [
  s("k26", G, "And because you made a claim, your price will go up next year.", ger("his warmest smile yet, leaning very slightly forward.") + ONE,
    refs=["gerald"], sfx=SFX_G),
  silent("k27", RYAN_FULL + "standing on a chair in his flooded kitchen, water up to his shins, phone lowered, staring into space; a single sock drifts "
-        "past." + ONE, 2.0, refs=RY, mv="out", sfx="a flooded kitchen, slow dripping, silence"),
+        "past." + ONE, 3.5, refs=RY, mv="out", sfx="a flooded kitchen, slow dripping, silence"),
  # ---------------- THE EXPENSIVE FEAR
  s("x01", M, "That number, the bit you pay yourself, is called the deductible. And it turns out we're very strange about it.",
    "An insurance policy page on a desk with one number circled again and again in thick red pen, a coffee ring next to it." + NO_TEXT, env=True, sfx="quiet room tone"),
@@ -161,7 +163,7 @@ SHOTS = [
    "A sunny American suburban street of neat detached houses with green lawns and white picket fences." + NO_TEXT, env=True, mv="right",
    sfx="a quiet suburban street, a lawnmower in the distance"),
  card("x03", "Only about four in a hundred of them made a claim in a year. So that hundred dollars bought, on average, less than twenty dollars of protection.",
-      "$100 A YEAR", "BUYS LESS THAN $20 OF PROTECTION", bg="#5A3C3C", hold=0.6),
+      "$100 A YEAR", "BUYS LESS THAN $20 OF PROTECTION", bg="#5A3C3C", hold=1.2),
  s("x04", M, "Sydnor's paper calls the level of risk aversion this implies \"implausibly large.\"",
    "An academic economics journal lying open on a desk under a lamp, a magnifying glass resting on it." + NO_TEXT, env=True, sfx="a quiet library"),
  s("x05", M, "We're not scared of disaster. We're scared of a medium-sized bill.",
@@ -169,7 +171,7 @@ SHOTS = [
    sfx="a quiet living room, a clock ticking"),
  s("x06", M, "I once bought travel insurance for a weekend in Ohio. I still don't know what I thought was going to happen in Ohio.",
    "A peaceful, sunny small-town American main street with low brick shops and one pigeon on the pavement; in the foreground one hand holds "
-   "up a printed travel insurance policy. Only that one hand is visible." + NO_TEXT, env=True, hold=1.0, sfx="a sleepy small-town street, one pigeon cooing"),
+   "up a plain folded blank paper ticket. Only that one hand is visible." + NO_TEXT, env=True, hold=1.5, sfx="a sleepy small-town street, one pigeon cooing"),
  s("x07", M, "Which is how Ryan ended up with a three-year protection plan on a fifteen-dollar kettle.",
    RYAN + "in an electrical shop holding a small cheap kettle; beside him a smiling salesman in a shop polo shirt holds up a laminated card with a "
    "big plus sign and a smiling kettle icon. Exactly two people." + NO_TEXT, refs=RY, mv="in", sfx="a quiet electrical shop, beeping tills"),
@@ -178,6 +180,18 @@ SHOTS = [
  s("x09", I, "Insure the plan.", RYAN + "close-up in an electrical shop holding a small kettle, while " + SHADOW + "." + ONE, refs=RY, sfx="a quiet electrical shop"),
  s("x10", R, "...Can I insure the plan?", RYAN + "in an electrical shop holding a small kettle, turning hopefully to a salesman in a shop polo shirt, "
    "whose eyes light up with delight. Exactly two people." + ONE.replace(" Exactly one person.", ""), refs=RY, hold=1.0, sfx="a quiet electrical shop, a till chime"),
+ # ---- moral hazard (added for the 8-minute mark, owner-approved 2026-11-27)
+ s("x11", M, "Insurance also changes how we behave. Economists call it moral hazard.",
+   RYAN_FULL + "standing at the top of a staircase cheerfully juggling his phone in the air with one hand, completely unbothered." + ONE, refs=RY,
+   mv="in", sfx="a quiet hallway, a phone being tossed and caught"),
+ s("x12", R, "It's covered.", RYAN + "close-up at the top of a staircase, smiling serenely, his phone mid-air above his hand." + ONE, refs=RY, hold=0.8,
+   sfx="a quiet hallway"),
+ s("x13", M, "In the 1970s, the RAND Corporation gave thousands of American families different health insurance plans. Families who had to pay most of their own medical bills spent about forty percent less than families who got their care free.",
+   "A 1970s doctor's waiting room with orange plastic chairs, wood-panelled walls and a few families waiting patiently, magazines on a low table."
+   + NO_TEXT, mv="right", sfx="a quiet waiting room, a clock ticking"),
+ s("x14", M, "And for the average person, they weren't measurably less healthy. Though the poorest and sickest did better on some conditions with free care.",
+   "A kind doctor gently listening to an older patient's chest with a stethoscope in a calm, sunny consulting room. Exactly two people." + NO_TEXT,
+   mv="in", hold=0.5, sfx="a calm consulting room"),
  # ---------------- ABSURD SEQUENCE 3: BRAYDENGUARD
  s("y01", M, "Brayden doesn't believe in insurance.", BRAY + "standing proudly beside a shiny red sports car, arms crossed, grinning; a car key with a "
    "rental key-tag dangles from his hand." + ONE, refs=["brayden"], sfx="a quiet street, birds"),
@@ -190,12 +204,13 @@ SHOTS = [
    "at camera, delighted.", "He points at the camera and speaks loudly and delightedly.", sfx="a quiet street, birds"),
  s("y05", M, "So he started his own insurance company.", BRAY + "standing proudly in front of a big shiny banner with a golden shield logo."
    + ONE + NO_TEXT, refs=["brayden"], sfx="a small crowd, a party popper"),
- s("y06", B, "You pay me forty-nine dollars a month, and if anything bad happens, I send you a motivational voice note.",
-   "A phone screen showing a slick app with a golden shield logo and a round photo of a grinning blond man giving a thumbs up." + NO_TEXT,
-   env=True, mv="in", sfx="an upbeat app notification sound"),
+ card("y06", "You pay me forty-nine dollars a month, and if anything bad happens, I send you a motivational voice note.", "BRAYDENGUARD",
+      "$49 A MONTH · MOTIVATIONAL VOICE NOTES", spk=B, bg="#3C5A50", sfx="an upbeat app notification sound"),
  s("y07", M, "Eleven people signed up.", "A small tin bucket on a pavement with exactly eleven gold coins at the bottom." + NO_TEXT, env=True,
    sfx="a few coins plinking"),
  s("y08", B, "Hey, champ. Your house didn't burn down. It made room.", "A phone screen showing a chat: a small fire emoji message, then an incoming "
+   "voice message shown as a long waveform bar." + NO_TEXT, env=True, hold=0.4, sfx="a phone notification, a gym echo"),
+ s("y08b", B, "Champ. Your car got stolen? Now you've got legs.", "A phone screen showing a chat: a small car emoji message, then another incoming "
    "voice message shown as a long waveform bar." + NO_TEXT, env=True, hold=0.4, sfx="a phone notification, a gym echo"),
  s("y09", M, "It was, technically, a bucket.", BRAY + "staring down into a small tin bucket of gold coins on the pavement, thinking hard." + ONE,
    refs=["brayden"], sfx="a quiet street"),
@@ -203,12 +218,12 @@ SHOTS = [
    env=True, sfx="coins glinting, a soft chime"),
  h("y11", B, "Bro. The money's just sitting there.", BRAY + "looking down into a small tin bucket of coins, hushed, awed, eyes wide.",
    "He whispers in awe, eyes wide, looking down.", sfx="a quiet street"),
- silent("y12", BRAY + "driving away in a second shiny red sports car, waving; an empty tin bucket left on the pavement behind." + ONE, 1.5,
+ silent("y12", BRAY + "driving away in a second shiny red sports car, waving; an empty tin bucket left on the pavement behind." + ONE, 2.0,
         refs=["brayden"], mv="right", sfx="a sports car engine roaring away, then silence"),
  s("y13", M, "Two weeks later, the first claim came in.", "A phone on a table lighting up with one new notification bell icon." + NO_TEXT,
    env=True, sfx="a phone notification ping"),
  silent("y14", "A shiny red sports car upside down in a park pond, wheels in the air, and a big white swan standing proudly on top of it." + NO_TEXT,
-        3.0, env=True, eng="ltx", sfx="a pond, ducks, a swan hissing", motion="The swan spreads its wings wide on top of the upturned car; gentle "
+        4.5, env=True, eng="ltx", sfx="a pond, ducks, a swan hissing", motion="The swan spreads its wings wide on top of the upturned car; gentle "
         "ripples on the pond. Static camera."),
  s("y15", M, "It was Brayden's.", BRAY + "standing soaking wet beside a park pond, dripping, holding his phone, a swan behind him." + ONE,
    refs=["brayden"], hold=0.6, sfx="a pond, dripping water"),
@@ -223,14 +238,18 @@ SHOTS = [
  s("z03", M, "In January 2022, the regulator banned it. A renewal price can't be higher than what a new customer would pay. Britain's Financial Conduct Authority estimated that would save people over five billion dollars in ten years.",
    "A big wooden judge's gavel coming down on a price tag on a desk." + NO_TEXT, env=True, mv="in", sfx="a gavel bang, a quiet room"),
  s("z04", G, "We've noticed you've been very loyal, Ryan.", ger("holding up a small thank-you card, warm.") + ONE + NO_TEXT, refs=["gerald"], sfx=SFX_G),
- h("z05", G, "We're not allowed to do anything about that anymore.", ger("gently regretful, a little sad."), "He speaks gently and regretfully.",
+ h("z05", G, "We're not allowed to do anything about that anymore.", ger("gently regretful, a little sad, eyes lowered."), "He speaks gently and regretfully.",
+   hold=1.0, sfx=SFX_G),
+ s("z06", R, "Can I cancel, then?", KF_GER_SMILE, refs=["gerald"], sfx=SFX_G),
+ s("z07", G, "Of course. Cancellations are done in person.", ger("his warmest smile yet, leaning very slightly forward.") + ONE, refs=["gerald"],
    hold=0.6, sfx=SFX_G),
+ s("z08", G, "On a Saturday.", ger("his warmest smile yet, leaning very slightly forward.") + ONE, refs=["gerald"], hold=1.0, sfx=SFX_G),
  # ---------------- THE VERDICT AND THE REVEAL
  s("v01", M, "And to be fair, the bucket mostly does pay. In 2024, natural disasters alone cost insurers a hundred and thirty-seven billion dollars worldwide.",
    "A small town after a storm, seen from above: repair crews in hi-vis fixing roofs, new blue tarps, a crane, sunshine returning." + NO_TEXT,
    env=True, mv="right", sfx="distant hammering, a quiet town"),
  s("v02", M, "And more than half of the damage from those disasters wasn't insured at all.", "A quiet, damaged suburban street in early morning "
-   "light after a storm, fallen branches, nobody around." + NO_TEXT, env=True, hold=0.8, sfx="a quiet morning after a storm, birds"),
+   "light after a storm, fallen branches, nobody around." + NO_TEXT, env=True, hold=1.2, sfx="a quiet morning after a storm, birds"),
  s("v03", M, "So, how does insurance work? Everybody pays a little, so that the unlucky few don't lose everything. It's a bet you're hoping to lose.",
    VILLAGE + " at sunrise; small simple villagers dropping coins into the bucket one by one.", mv="in", sfx="a village at dawn, coins plinking"),
  s("v04", M, "The trick is choosing which bets to make. Insure the things that would ruin you: your home, your car, your health, the people who depend on you. For the small stuff, like the kettle, the phone screen or that extra five hundred dollars, you can be your own bucket.",
@@ -240,9 +259,31 @@ SHOTS = [
    "a small smile.", "He speaks quietly and contentedly, a small smile.", sfx=SFX_K),
  s("v06", M, "Nobody's quite sure who owns the bucket.", "The top-floor penthouse office of a tall tower, city lights through huge windows: behind a "
    "huge desk " + FOX + " in a tiny business suit sits with its feet up, counting gold coins, while " + GER.replace("waist-up, ", "").replace("The man", "the man")
-   + "stands beside it politely offering a cup of tea." + NO_TEXT, refs=["gerald"], mv="in", hold=2.0, sfx="a quiet penthouse, a teacup clink"),
+   + "stands beside it politely offering a cup of tea." + NO_TEXT, refs=["gerald"], mv="in", hold=3.0, sfx="a quiet penthouse, a teacup clink"),
 ]
 THUMB = dict(text="$240 DAMAGE|$250 DEDUCTIBLE", refs=RY,
              kf=RYAN + "standing on a kitchen chair in his flooded kitchen holding his phone to his ear, shocked, big worried eyes; a sock floating on the "
                 "water; outside the glass patio door " + FOX + " floats past in a tiny inflatable swim ring. Exactly one person.")
 TAIL = 1.0
+
+# ---------------- MAYA ON CAMERA (owner, 2026-11-27: "show Maya… start videos with her and keep showing her"; design E)
+MAYA = ("Flat 2D vector illustration of the young woman from the reference redrawn in a simple flat explainer style, attractive and warm, big "
+        "expressive eyes, light warm-tan skin, clear well-drawn eyes and face: long wavy dark brown hair, gold hoop earrings, olive-green overshirt over a cream top, waist-up, ")
+STUDIO = "in a cosy, stylish presenter's studio with a warm desk lamp, a bookshelf, a potted plant and a big window behind her, "
+_ON = {
+    "c01": "sitting on the edge of a desk facing camera with a knowing half-smile, telling a story; through the window behind her " + FOX + " is asleep, curled up in a blue recycling box.",
+    "c06": "leaning on the desk towards camera, eyebrows raised, amused, one hand gesturing.",
+    "u01": "holding up a small shiny tin bucket next to her face, smiling.",
+    "u07": "a sincere warm smile, one hand on her chest.",
+    "x05": "deadpan, calm, arms folded, looking straight at camera with a dry little smile.",
+    "x06": "laughing a little, embarrassed, holding up a plain blank paper ticket.",
+    "y01": "arms crossed, deadpan, a tiny smirk, looking straight at camera.",
+    "z01": "leaning towards camera, conspiratorial, one finger raised.",
+    "v03": "close-up, sitting at the desk, warm and sincere, smiling, both palms open.",
+}
+for _s in SHOTS:
+    if _s["id"] in _ON:
+        _s.update(eng="h3", kf=MAYA + STUDIO + _ON[_s["id"]] + ONE, refs=["maya", "maya_face"], onscreen=True,
+                  mv="She speaks to camera naturally and warmly, with small expressive head movements and hand gestures. Static camera. "
+                     "Exactly one person; same face and clothes.")
+

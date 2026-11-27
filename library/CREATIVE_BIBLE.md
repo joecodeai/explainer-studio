@@ -33,6 +33,17 @@ Never force a joke into a serious moment. Not every line needs a punchline. Cont
 | **GERALD** (the corporate menace) | Middle-aged man, soft British, warm and unhurried. | **Hostage-negotiator calm.** His phrases: "Of course", "That's completely valid", "Nobody is in trouble", "Let's take this one step at a time", "That's a wonderful opportunity". The more disturbing the line, the softer he gets. Never shouts. Not one-note: give him new situations and inventive corporate behaviour, and don't overuse him. |
 | **INNER VOICE** | Breathy, impish, close-mic whisper. | Terrible intrusive ideas. Rare, short, unexpected and inappropriate. Never filler. |
 
+**Maya on camera (owner, 2026-11-27):** Maya is now the channel's visible host, not only a voice. She's appealing and polished, and she keeps viewers watching.
+- **Look:** design **E**, locked: long wavy dark brown hair, gold hoop earrings, olive-green overshirt over a cream top, light warm-tan skin. The references are `library/show_refs/maya_front.png` and `maya_face.png`.
+- **Set:** a recurring cosy presenter's studio (desk lamp, bookshelf, plant, big window). The fox can appear outside the window.
+- **Where she appears:**
+  - Every video and every Reel **opens on her** (the hook line).
+  - She returns on camera at section turns, for her own anecdotes, for key one-line punches, and for the verdict.
+  - Plan about 8–10 on-camera lines per video, each ideally 6 s or less.
+  - Her longer explanations still play over the visuals.
+- **Build:** shots with `onscreen=True`, `eng="h3"`, refs `["maya", "maya_face"]` (see `topics/insurance.py`).
+- **Lip-sync budget:** about 16–18 lip-sync shots per video, Maya's included.
+
 The cast can talk to background characters (shop staff, a neighbour, a passer-by, an angry swan), which keeps scenes from being only these five.
 
 ## 4. Length and pacing

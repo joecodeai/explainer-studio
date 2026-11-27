@@ -34,7 +34,8 @@ LOOK = ("2D hand-drawn animated feature film, cel-shaded characters with clean i
         "smooth fluid professional character animation with weight, anticipation and follow-through, cinematic camera.")
 STYLE = getattr(T, "STYLE", STYLE); ENV_STYLE = getattr(T, "ENV_STYLE", ENV_STYLE); LOOK = getattr(T, "LOOK", LOOK)
 LTX_W, LTX_H = getattr(T, "LTX_WH", (896, 512) if LAND else (704, 1280))        # flat 2D renders at half size and is upscaled in the mix
-REFS = {"ryan": "library/show_refs/benny_front.png", "ryan_face": "library/show_refs/benny_face.png"}
+REFS = {"ryan": "library/show_refs/benny_front.png", "ryan_face": "library/show_refs/benny_face.png",
+        "maya": "library/show_refs/maya_front.png", "maya_face": "library/show_refs/maya_face.png"}   # Maya on camera: design E, locked 2026-11-27
 REFS.update({c: f"{OUT}/refs/{c}.png" for c in getattr(T, "CHARS", {})})
 M, R = "maya", "benny"
 SHOTS = T.SHOTS
@@ -175,7 +176,7 @@ def do_anim(arg="", seed=21):
                 ltx(kf, s["mv"], out, min(secs, 10), seed)
             else:
                 comfy.free()
-                talk = s["spk"] not in (M, "inner") and spoken(s)        # any on-screen character lip-syncs their own line
+                talk = spoken(s) and (s["spk"] not in (M, "inner") or s.get("onscreen", False))   # on-screen characters (and on-camera Maya) lip-sync
                 audio = wav(s) if talk else silent(f"{OUT}/silent_{secs}.wav", secs)
                 h3.render(out, keyframe=kf, refs=[kf] if getattr(T, "H3_REF_KF", False) else [REFS[x] for x in s.get("refs", [])], audio=audio, prompt=f"{s['mv']} {LOOK}",
                           size=(KW, KH), seconds=secs, seed=seed, mode="flex", anchor_audio=talk)

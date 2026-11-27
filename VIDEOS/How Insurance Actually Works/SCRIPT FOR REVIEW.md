@@ -1,4 +1,4 @@
-# HOW INSURANCE ACTUALLY WORKS (script for review, v1 after the quality-control pass)
+# HOW INSURANCE ACTUALLY WORKS (approved script; v1.2 as produced: dollars, plus the 8-minute top-up)
 - **Working title:** "How Insurance Actually Works (It's a Bet You Want to Lose)"
 - **Format:** 16:9 long video, about 10 minutes. Same cast and style family as the last two episodes.
 - **Status:** NOT rendered. Waiting for your review.
@@ -123,6 +123,8 @@
 ◇OVER: Ryan close-up, a tiny dark imp on his shoulder · **INNER VOICE** *(whisper)*: Leave the bath running.
 
 ◇OVER: same · **RYAN** *(firm, instant)*: No.
+
+◇OVER: Ryan glancing sideways, a little guilty · **MAYA** *(dry)*: He did check whether it was covered, though. *(added to pass 8:00)*
 
 (beat)
 
@@ -300,6 +302,15 @@
 
 [The salesman's eyes light up.] (hold 1.0 s)
 
+**MAYA**: Insurance also changes how we behave. Economists call it moral hazard. *(added for the 8-minute mark, approved 2026-11-27)*
+[Ryan at the top of the stairs, cheerfully juggling his phone.]
+
+◇OVER: Ryan, phone mid-air · **RYAN** *(serene)*: It's covered.
+
+**MAYA**: In the 1970s, the RAND Corporation gave thousands of American families different health insurance plans. Families who had to pay most of their own medical bills spent about forty percent less than families who got their care free.
+
+**MAYA** *(fair, quiet)*: And for the average person, they weren't measurably less healthy. Though the poorest and sickest did better on some conditions with free care.
+
 #### ABSURD SEQUENCE 3: BRAYDENGUARD (6:34–7:35)
 **MAYA**: Brayden doesn't believe in insurance.
 
@@ -322,6 +333,8 @@
 [A customer's phone: a house-fire emoji message, then an incoming voice note from Brayden.]
 
 ◇OVER: the voice note's waveform · **BRAYDEN** *(voice note, gym-echo, sincere)*: Hey, champ. Your house didn't burn down. It made room.
+
+◇OVER: a second voice note · **BRAYDEN** *(voice note)*: Champ. Your car got stolen? Now you've got legs. *(added)*
 
 (beat)
 
@@ -357,6 +370,14 @@
 ◇OVER: Gerald at his desk, holding a thank-you card · **GERALD** *(warm)*: We've noticed you've been very loyal, Ryan.
 
 ★LIPSYNC · **GERALD** *(gently regretful)*: We're not allowed to do anything about that anymore.
+
+◇OVER: Gerald · **RYAN** *(hopeful)*: Can I cancel, then? *(added: the cross-episode callback)*
+
+◇OVER: Gerald, warmest smile · **GERALD**: Of course. Cancellations are done in person.
+
+(beat)
+
+◇OVER: same · **GERALD** *(softest)*: On a Saturday.
 
 #### THE VERDICT AND THE REVEAL (8:21–9:16)
 **MAYA** *(fair, plain)*: And to be fair, the bucket mostly does pay. In 2024, natural disasters alone cost insurers a hundred and thirty-seven billion dollars worldwide.
@@ -477,6 +498,7 @@
 | Claim rate for $500-deductible customers: 3.7% a year, so about $18.50 of expected value | The same paper (JSTOR text: "The claim rate for new customers who held the $500 deductible was 3.7…") | ✔ verified. The script says "about four in a hundred" and "less than twenty dollars" |
 | FCA price-walking ban from 1 January 2022; renewal ≤ new-customer price; £4.2bn over 10 years ("over five billion dollars") | FCA press release, "FCA confirms measures to protect customers from the loyalty penalty…". Converted at about $1.25–1.35 per £, so over $5bn | ✔ verified |
 | Global insured losses from natural catastrophes $137bn in 2024; economic losses $318bn, 57% uninsured | Swiss Re Institute, sigma 1/2025 ("Natural catastrophes: insured losses on trend to USD 145 billion in 2025") | ✔ verified |
+| RAND Health Insurance Experiment (1970s–80s): families paying most of their bills (95% coinsurance) spent about 39% less than families on free care; no substantial health effect for the average participant; the poorest and sickest did better on some conditions with free care | RAND Research Brief RB9174; Aron-Dine, Einav & Finkelstein, "The RAND Health Insurance Experiment, Three Decades Later" (J. Econ. Perspectives 2013, PMC3943162) | ✔ verified |
 | Adverse selection: people most likely to claim are keenest to buy, which is why insurers ask questions | Standard insurance economics (Akerlof 1970, "The Market for Lemons"; Rothschild & Stiglitz 1976) | ✔ a concept, described in general terms |
 
 **Currency:** global audience, so dollars throughout (owner's rule, 2026-11-27). Pound figures are quoted only where history or an official source uses them, with dollars alongside.
