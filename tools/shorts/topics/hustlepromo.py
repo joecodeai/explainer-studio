@@ -1,22 +1,24 @@
-"""Hustle Culture Reel, v2 (approved 2026-11-25): ONE situation, "HR Took My Weekend". Storyboard:
-VIDEOS/Is Hustle Culture a Scam/REEL STORYBOARD.md. The whole Gerald/Ryan scene w01-w16 in its original order, full length,
-nothing sped up. v1 (montage across the episode) is kept as hustlepromo_v1_montage.py. Built by tools/shorts/promo.py."""
+"""Hustle Culture Reel v4: "The 4 AM Morning Routine" -- the owner's Brayden script (2026-11-27), an intro to the episode.
+Owner: "do it in reel format vertical without cutting anything" -> every shot FULL frame (whole 16:9 over blur), every existing
+line played complete. New Maya lines x02-x05 (topics/hustlecta.py) play over existing pictures; their original audio is muted.
+Earlier versions: hustlepromo_v1_montage.py, hustlepromo_v2_fullscene.py, hustlepromo_v3_weekend.py."""
 from topics.hustle import FOLDER  # noqa: F401
-REEL = dict(title="HR Took My Weekend", pieces=[
-    dict(id="w01", f=0.9, x=0.5),                        # Gerald, tissues, sun picture; hook "Nobody's in trouble"
-    dict(id="w02", f=0.66, x=0.48, clean=True),            # Ryan: "I... sort of use it."
-    dict(id="w03", f=0.86, x=0.5),                         # "quietly looked after the afternoon"
-    dict(id="w04", f=0.8, x=0.55, gain=-14),               # quiet beat: the door, the way out (its generated room tone murmurs: -14 dB)
-    dict(id="w05", f=0.75, x=0.5, clean=True),             # "Put the weekend down, Ryan. Slowly."
-    dict(id="w06"),                                        # FULL: the sun slides across the table between two hands
-    dict(id="w07", f=(0.7, 0.62), x=0.42, clean=True),     # the subscription tiers, slow push-in on Gerald + card
-    dict(id="w08", f=0.62, x=0.5),                         # "I just gave you that."
-    dict(id="w09", f=0.86, x=0.5),                         # "And now you can have it back. Monthly."
-    dict(id="w10", f=0.62, x=0.5),                         # "Can I just... have the one I had before?"
-    dict(id="w11", f=0.62, x=0.47),                        # "discontinued ... premium folder" on Ryan's face
-    dict(id="w12", f=0.6, x=0.52, hold=0.5),               # the imp: "He's good." (held so it registers)
-    dict(id="w13", f=0.7, x=0.45, clean=True),             # the cemetery offer
-    dict(id="w14", f=0.85, x=0.5),                         # the brochure (ball pit has real green/purple balls: no cleaning)
-    dict(id="w15", f=0.62, x=0.5, clean=True),             # "How do I cancel?"
-    dict(id="w16", f=0.66, x=0.5),                         # "Cancellations are done in person. On a Saturday." + hold
+A = "projects/short-hustlecta/audio/"
+REEL = dict(title="The 4 AM Morning Routine", pieces=[
+    # HOOK  BRAYDEN: "It's four a.m. Right now, you're asleep. That's why you're broke."
+    dict(id="c01", words=(2, 12), lead=0.2, tail=0.35),
+    # MAYA (new): "Brayden has already had a cold shower, a hot shower, and an argument with a swan."  -- the same shot continues; the swan flares up
+    dict(id="c01", sub=(5.29, 11.84), vo=dict(wav=A + "x02.t.wav", text="Brayden has already had a cold shower, a hot shower, and an argument with a swan.", at=0.35, tail=0.6)),
+    # BRAYDEN: "Four a.m., awake. Four oh five, ice bath. Four thirty, I read one page of a book about reading. Five, I tell the mirror it's a winner."
+    dict(id="d01"),
+    # His reflection quietly packs a suitcase and leaves
+    dict(id="d02"),
+    # MAYA (new): "Six, he films his morning routine. Seven, he edits ... Nine, he posts ..."  -- over his ring-light still; a beat after it
+    dict(id="d03", vo=dict(wav=A + "x03.t.wav", text="Six, he films his morning routine. Seven, he edits his morning routine. Nine, he posts his morning routine.", at=0.3, tail=1.0)),
+    # MAYA: "So the main thing his morning produces is a video of his morning."
+    dict(id="d04"),
+    # CTA  MAYA (new): "But here's the real question. Is working harder actually making you richer, or just more tired?"  -- Brayden asleep in his car
+    dict(id="v03", vo=dict(wav=A + "x04.t.wav", text="But here's the real question. Is working harder actually making you richer, or just more tired?", at=0.3, tail=0.7)),
+    # MAYA (new): "Watch the full video on our channel."  -- end card
+    dict(id="c06", vo=dict(wav=A + "x05.t.wav", text="Watch the full video on our channel.", at=0.35, tail=1.3)),
 ])

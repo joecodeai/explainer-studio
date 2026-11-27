@@ -12,6 +12,9 @@ Every frame is composed in Python, so no shot is blindly centre-cropped. A piece
   dict(id="w07", words=(0, 14))       only words 0..14 of the line (sentence-level trims only); tail= / lead= seconds
   dict(id="v06", sub=(0.0, 1.5))      only seconds 0..1.5 of the piece (sequential framing: same shot twice, two framings)
   dict(id="w12", hold=0.5)            freeze the last frame 0.5 s (silence) so a quick beat registers
+  dict(id="w04", src="projects/short-hustle/clips/w04_still_s21.mp4")   picture from another file (e.g. a repaired clip)
+  dict(id="w11", sub=(3.5, 5.2), mute=True)   a silent reaction hold reusing part of a shot (no audio, no captions)
+  dict(id="c06", vo=dict(wav=".../x01.t.wav", text="...", at=0.3, tail=0.8))   new voice-over (own captions); last frame held to fit
   dict(id="w04", gain=-14)            # audio gain in dB for this piece (silent beats whose generated ambience murmurs)
   dict(id="w05", clean=True)          inpaint the image model's colour specks on every frame (never on shots with real small green/purple things)
 Captions sit BELOW the picture in the blurred band when there is room, otherwise on the lower third, never in the bottom
@@ -122,7 +125,7 @@ def main():
     for k, p in enumerate(R["pieces"]):
         a, b = span(p); n = max(1, int(round((b - a) * FPS))); d = n / FPS
         s0 = B.seg_len(idx[p["id"]], tl)[0]                    # read the shot's own segment: no bleed from neighbouring shots
-        dec = subprocess.Popen(["ffmpeg", "-nostdin", "-v", "error", "-ss", f"{a - s0:.3f}", "-i", f"{OUT}/seg/{idx[p['id']]:02d}.mp4", "-frames:v", str(n),
+        dec = subprocess.Popen(["ffmpeg", "-nostdin", "-v", "error", "-ss", f"{a - s0:.3f}", "-i", p.get("src") or f"{OUT}/seg/{idx[p['id']]:02d}.mp4", "-frames:v", str(n),
                                 "-f", "rawvideo", "-pix_fmt", "bgr24", "-"], stdout=subprocess.PIPE)
         last = None
         for j in range(n):
@@ -132,14 +135,32 @@ def main():
             last = fr; out = compose(fr, p, j / max(1, n - 1)); enc.stdin.write(out.tobytes())
             if j in (0, n // 2, n - 1): qc.append((k, p["id"], j, out))
         dec.wait()
+        vo = p.get("vo")
+        if vo:                                                  # new voice-over over this picture: freeze the last frame until it ends
+            vw = B.load(vo["wav"], SR).astype(np.float32); at = vo.get("at", 0.3)
+            p["hold"] = max(p.get("hold", 0), at + len(vw) / SR + vo.get("tail", 0.8) - d)
         hf = int(round(p.get("hold", 0) * FPS))                 # freeze the last frame so a quick beat can register
         for _ in range(hf): enc.stdin.write(out.tobytes())
         clip = mix[int(a * SR):int(a * SR) + int(d * SR)].copy(); fd = min(len(clip) // 2, int(0.025 * SR))
         if fd: clip[:fd] *= np.linspace(0, 1, fd); clip[-fd:] *= np.linspace(1, 0, fd)
         if p.get("gain"): clip *= 10 ** (p["gain"] / 20)                  # e.g. quiet a generated ambience that murmurs
-        aud.append(clip); aud.append(np.zeros(int(hf / FPS * SR), np.float32))
+        if p.get("mute") or vo: clip *= 0.0                                # silent reaction hold / picture under a new voice-over
+        piece = np.concatenate([clip, np.zeros(int(hf / FPS * SR), np.float32)])
         s = SH[p["id"]]; dt = d + hf / FPS
-        if B.spoken(s):
+        if vo:
+            o = int(at * SR); piece[o:o + len(vw)] += vw[:max(0, len(piece) - o)]
+            ow = B.wav; B.wav = lambda _s: vo["wav"]                       # reuse the builder's aligned word timing on the new line
+            vws = B.line_words({"id": "vo", "text": vo["text"], "spk": "maya"}); B.wav = ow
+            cs, cur = [], []
+            for w in vws:
+                cur.append(w)
+                if len(cur) == 3 or re.search(r"[.,?!]$", w["w"]): cs.append(cur); cur = []
+            if cur: cs.append(cur)
+            for j, c in enumerate(cs):
+                e0 = t + at + c[0]["s"]; e1 = t + at + (cs[j + 1][0]["s"] if j + 1 < len(cs) else c[-1]["e"] + 0.4)
+                ev.append(f"Dialogue: 0,{ass_time(e0)},{ass_time(min(e1, t + dt))},C,,0,0,{cap_y(p)},,{' '.join(w['w'] for w in c).upper()}")
+        aud.append(piece)
+        if B.spoken(s) and not vo and not p.get("mute"):
             st = tl[idx[p["id"]]]["start"]; ws = [w for w in words(p["id"]) if a - 0.05 <= st + w["s"] <= b]
             chunks, cur = [], []
             for w in ws:
