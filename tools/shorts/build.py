@@ -470,4 +470,5 @@ if __name__ == "__main__":
         do_voice(); do_refs(); do_kf(); do_anim(); do_cpu(); do_sheets(); do_mix()
     else:
         {"voice": do_voice, "refs": do_refs, "kf": lambda: do_kf(arg), "anim": lambda: do_anim(arg, seed), "cpu": lambda: do_cpu(arg, seed),
-         "sheets": do_sheets, "mix": do_mix, "export": do_export, "thumb": do_thumb}[st]()
+         "sheets": do_sheets, "mix": do_mix, "export": do_export, "thumb": do_thumb,
+         "qc": lambda: subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "qc_auto.py"), TOPIC])}[st]()

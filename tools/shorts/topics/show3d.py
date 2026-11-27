@@ -12,17 +12,24 @@ REFS3D = {"maya": R3 + "maya.png", "maya_face": R3 + "maya_face.png", "ryan": R3
           "set_flat": R3 + "set_flat.png", "set_street": R3 + "set_street.png"}
 CHARS = {}                     # no per-project t2i refs: the cast is fixed in REFS3D
 
+ANATOMY = ("Correct anatomy: exactly five fingers on each hand, natural proportions, symmetrical eyes, hands resting on or holding objects "
+           "without merging into them, bodies sitting on chairs and standing on floors with solid contact and soft contact shadows, nothing "
+           "intersecting furniture.")   # QC_CHECKLIST sections 1, 3, 7 (PREVENT)
 PALETTE = "Colour palette: warm cream, honey wood, soft teal, coin gold, deep navy and soft coral, with natural skin tones."
 LIGHT = ("Lighting: bright soft key light from the upper left, warm fill, gentle warm rim light, soft global illumination, soft contact shadows.")
 STYLE = ("High-quality stylised 3D animated feature-film render like a modern Pixar film: appealing stylised characters with big expressive eyes "
          "and soft rounded features, smooth clean materials, subtle depth of field, clean uncluttered sets, a bright and inviting image. "
          + LIGHT + " " + PALETTE + " The whole image, characters and background alike, is this 3D animated-film render. "
-         "Clean bare skin and hands with no marks, no paint, no stickers, no green spots. Absolutely no text, letters, numbers, logos or badges anywhere.")
+         "Clean bare skin and hands with no marks, no paint, no stickers, no green spots. " + ANATOMY + " Absolutely no text, letters, numbers, "
+         "logos or badges anywhere.")
 ENV_STYLE = ("High-quality stylised 3D animated feature-film render like a modern Pixar film: smooth clean materials, subtle depth of field, clean "
              "uncluttered set, a bright and inviting image. " + LIGHT + " " + PALETTE + " Show only what the description names. There are NO people "
              "of any kind. Absolutely no text, letters, numbers, logos or badges anywhere.")
 LOOK = ("Stylised 3D animated feature film like a modern Pixar film, smooth expressive character animation with weight and follow-through, soft "
-        "cinematic lighting, characters keep their exact design, skin tone and colours, no morphing, no flicker, no camera shake.")
+        "cinematic lighting, characters keep their exact design, face, skin tone, hair, clothes and accessories, no morphing, no flicker, no camera "
+        "shake, no sudden zoom or cut inside the shot. Correct anatomy: five fingers on each hand, hands and bodies never pass through furniture, "
+        "feet stay planted on the floor, objects stay in the hand that holds them and never appear or vanish, steady consistent lighting and shadows. "
+        "The mouth moves only while speaking and rests closed in pauses.")
 ONE = " Exactly one person."
 
 # ---- cast (each line names the reference it relies on)
